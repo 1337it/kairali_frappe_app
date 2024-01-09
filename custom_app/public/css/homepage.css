@@ -26,7 +26,6 @@
 }
 /* Layout main section */
 .page-wrapper .layout-main-section{
- box-shadow:0px 0px 14px 5px #ededed;
  border-style:solid;
  border-width:0.5px;
  border-color:#c4c4c4;
@@ -47,12 +46,35 @@
  background-size:cover;
 }
 
+
+/* Layout main section */
+.page-wrapper .layout-main-section{
+ box-shadow:0px 0px 14px 5px rgba(0,0,0,0.09);
+ border-style:solid;
+ border-width:0.5px;
+ border-color:#c4c4c4;
+}
+
+/* Layout side section */
+.page-wrapper .layout-side-section{
+ transform:translatex(0px) translatey(0px);
+ background-color:#ffffff;
+ box-shadow:0px 0px 16px 1px rgba(0,0,0,0.16);
+}
+
+/* Content Division */
+#page-Workspaces{
+ background-image:url("https://images.unsplash.com/photo-1611659934318-06fd70ced53c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNTc5fDB8MXxzZWFyY2h8N3x8cGF0dGVybiUyMHdoaXRlfGVufDB8fHx8MTcwNDc5ODMxMHww&ixlib=rb-4.0.3&q=80&w=2560");
+ transform:translatex(0px) translatey(0px);
+ background-size:cover;
+}
+
 @media (min-width:992px){
 
  /* Layout side section */
  .page-wrapper .layout-side-section{
-  height:741px !important;
   max-width:33%;
+  height:85vh !important;
  }
  
 }
