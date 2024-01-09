@@ -2,7 +2,6 @@
 #page-Workspaces{
  transform:translatex(0px) translatey(0px);
  height:49px;
- margin-bottom:0px;
 }
 
 /* Page body */
@@ -10,9 +9,10 @@
  margin-left:0px;
  margin-right:0px;
  transform:translatex(0px) translatey(0px);
- height:0px;
  padding-left:0px;
  padding-right:0px;
+ position:relative;
+ top:0px;
 }
 
 /* Row */
@@ -23,7 +23,7 @@
  background-color:rgba(142,158,171,0.19);
  background-image:linear-gradient(92deg, #bbd2c5 0%, #536976 100%);
  transform:translatex(0px) translatey(0px);
- box-shadow:0px 0px 9px 4px rgba(51,60,68,0.27);
+ box-shadow:none;
  z-index:10;
  position:static;
 }
@@ -32,6 +32,8 @@
 #page-Workspaces .page-head .container{
  margin-left:0px;
  margin-right:0px;
+ padding-left:0px;
+ padding-right:0px;
 }
 
 /* Container */
@@ -44,16 +46,6 @@
 /* Layout main section wrapper */
 .page-wrapper .layout-main .layout-main-section-wrapper{
  background-image:linear-gradient(to top, #8e9eab 0%, #eef2f3 0%);
-}
-
-/* Heading */
-.title-area div h3{
- color:#000000;
- font-weight:600;
- font-size:25px;
- letter-spacing:1px;
- text-shadow:rgba(0, 0, 0, 0.3) 0px 1px 1px;
- text-align:left;
 }
 
 /* Layout main section wrapper */
@@ -86,18 +78,16 @@
 /* Body */
 body{
  width:100vw;
-}
-
-/* Form Division */
-.main-section .navbar .container .navbar-collapse form{
- width:100% !important;
+ overflow:visible;
 }
 
 /* Navbar collapse */
 .navbar .navbar-collapse{
- justify-content:flex-end;
  align-self:auto;
+ justify-content:flex-end;
  transform:translatex(0px) translatey(0px);
+ align-items:center;
+ flex-direction:row;
 }
 
 /* Navbar search */
@@ -114,11 +104,7 @@ body{
 /* Image */
 .navbar .navbar-home img{
  display:inline-block;
-}
-
-/* Image */
-.main-section .navbar .container .navbar-home img{
- width:100% !important;
+ margin-left:0px;
 }
 
 /* Layout main section */
@@ -151,6 +137,29 @@ body{
 /* Page wrapper */
 #page-Workspaces .page-body .page-wrapper{
  transform:translatex(0px) translatey(0px);
+}
+
+/* Form Division */
+.navbar .navbar-collapse form{
+ transform:translatex(0px) translatey(0px);
+ flex-wrap:wrap;
+ justify-content:center !important;
+}
+
+/* Menu */
+#navbar-breadcrumbs{
+ margin-left:-16px;
+ padding-left:10px;
+}
+
+/* Form Division */
+.main-section .navbar .container .navbar-collapse form{
+ width:auto !important;
+}
+
+/* Page body */
+.main-section #body #page-Workspaces .page-body{
+ height:auto !important;
 }
 
 @media (min-width:576px){
