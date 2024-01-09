@@ -1,8 +1,3 @@
-#page-Workspaces {
-  background-image: url("https://images.unsplash.com/photo-1598528132593-d8caf8baf450?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNTc5fDB8MXxzZWFyY2h8NjQyfHx3aGl0ZXxlbnwwfHx8fDE3MDQ3NzY5OTV8MA&ixlib=rb-4.0.3&q=80&w=2560");
-  background-size: contain;
-  transform: translatex(0px) translatey(0px);
-}
 #page-Workspaces .page-head {
   transform: translatex(0px) translatey(0px);
   background-image: linear-gradient(to right, #ece9e6 100%, #ffffff 100%);
@@ -41,6 +36,8 @@
 .page-wrapper .layout-side-section{
  transform:translatex(0px) translatey(0px);
  opacity:0.76;
+  backdrop_filter:blur(20px);
+  --webkit-backdrop_filter:blur(20px);
 }
 
 /* Content Division */
