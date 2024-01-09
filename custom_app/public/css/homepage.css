@@ -1,0 +1,31 @@
+#page-Workspaces {
+  background-image: url("https://images.unsplash.com/photo-1598528132593-d8caf8baf450?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNTc5fDB8MXxzZWFyY2h8NjQyfHx3aGl0ZXxlbnwwfHx8fDE3MDQ3NzY5OTV8MA&ixlib=rb-4.0.3&q=80&w=2560");
+  background-size: contain;
+  transform: translatex(0px) translatey(0px);
+}
+#page-Workspaces .page-head {
+  transform: translatex(0px) translatey(0px);
+  background-image: linear-gradient(to right, #ece9e6 100%, #ffffff 100%);
+  margin-bottom: 25px;
+}
+.page-wrapper .layout-side-section {
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 8px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #b5b5b5;
+  box-shadow: 0px 0px 16px 1px #ededed;
+}
+.main-section header {
+  background-color: #ffffff;
+}
+.page-head .justify-between {
+  height: 50px;
+  margin-left: -15px;
+}
