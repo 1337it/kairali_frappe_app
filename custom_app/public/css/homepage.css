@@ -256,7 +256,10 @@ body{
 }
 
 @media (min-width:1200px){
-
+body.full-width .container
+ {
+   width:100% !important;
+ }
  /* Container */
  #page-List\/Warehouse\/List .page-head .container{
   max-width:100%;
