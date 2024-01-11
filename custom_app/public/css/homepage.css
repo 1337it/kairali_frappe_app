@@ -244,8 +244,12 @@ body{
  margin-left:0px;
  margin-right:0px;
  transform:translatex(0px) translatey(0px);
- padding-right:0px;
- padding-left:0px;
+ padding-right:0px!important;
+ padding-left:0px!important;
+}
+.container{
+ padding-right:0px!important;
+ padding-left:0px!important;
 }
 
 /* Row */
