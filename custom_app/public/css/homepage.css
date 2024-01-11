@@ -17,6 +17,7 @@
 .page-wrapper .layout-side-section{
  box-shadow:-2px 6px 6px 6px rgba(116,135,138,0.44) inset;
  padding-right: 30px!important;
+  padding-left:30px!important;
 }
 
 
@@ -162,7 +163,7 @@ body{
 .navbar .navbar-collapse form{
  transform:translatex(0px) translatey(0px);
  flex-wrap:wrap;
- justify-content:center !important;
+ justify-content:flex-end !important;
 }
 
 /* Menu */
