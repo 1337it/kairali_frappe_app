@@ -273,6 +273,10 @@ body.full-width .container
  #page-List\/Warehouse\/List .page-head .container{
   max-width:100%;
  }
- 
+
+ [data-page-route=Workspaces] .layout-main {
+height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 25px);
+}
+
  
 }
