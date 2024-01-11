@@ -3,7 +3,23 @@
  transform:translatex(0px) translatey(0px);
  height:49px;
 }
+/* Navbar search */
+#navbar-search{
+ border-style:solid;
+ border-color:rgba(44,62,80,0.83);
+ border-width:0.5px;
+ background-color:#ffffff;
+ transform:translatex(0px) translatey(0px);
+ box-shadow:none;
+}
 
+/* Layout side section */
+.page-wrapper .layout-side-section{
+ box-shadow:-2px 6px 6px 6px rgba(116,135,138,0.44) inset;
+}
+
+
+ 
 /* Page body */
 #page-Workspaces .page-body{
  margin-left:0px;
