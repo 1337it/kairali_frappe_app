@@ -277,5 +277,20 @@ flex-wrap: wrap;
 margin-right: 0px!important;
 margin-left: 0px!important;
 }
+
+/* Layout main section wrapper */
+.page-wrapper .layout-main-section-wrapper{
+ color:rgb(51, 60, 68);
+ background-color:#ffffff;
+ background-image:none !important;
+ padding-right:0px;
+}
+
+/* Layout main section */
+.page-wrapper .layout-main-section{
+ color:rgb(51, 60, 68);
+ box-shadow:0px 0px 2px 0px #ffffff;
+}
+ 
  
 }
