@@ -1,6 +1,37 @@
 @media (max-width:1199px) {
 
-
+ 
+ /* Link item */
+ .codex-editor div .link-item{
+  transform:translatex(0px) translatey(0px);
+  font-size:15px !important;
+  text-align:left;
+  backdrop-filter: brightness(1.18);
+  padding-top:10px !important;
+  padding-bottom:10px !important;
+  margin-left:0px !important;
+ }
+ 
+ /* Widget */
+ .codex-editor .ce-block .ce-block__content div .widget{
+  background-color:rgba(127,140,141,0.42);
+  background-image:url("https://images.unsplash.com/photo-1510172951991-856a654063f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNTc5fDB8MXxzZWFyY2h8MjAzfHxmbGF0JTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3MDUyOTQ1NTR8MA&ixlib=rb-4.0.3&q=80&w=1130");
+  background-size:auto;
+  padding-top:25px !important;
+  padding-bottom:25px !important;
+ }
+ 
+ /* Codex editor */
+ #editorjs .codex-editor{
+  box-shadow:none;
+ }
+ 
+ /* Codex editor  redactor */
+ #editorjs .codex-editor .codex-editor__redactor{
+  margin-right:0px;
+  margin-left:0px;
+ }
+ 
  
  /* Content Division */
  #page-Workspaces{
@@ -17,12 +48,6 @@
   align-self:center;
  }
  
- /* Link item */
- .codex-editor div .link-item{
-  transform:translatex(0px) translatey(0px);
-  font-size:15px !important;
-  text-align:left;
- }
  
  /* Widget */
  .codex-editor .ce-block .ce-block__content div .widget{
@@ -51,6 +76,9 @@
 
  /* Link item */
  .codex-editor div .link-item{
+    transform:translatex(0px) translatey(0px);
+  font-size:15px !important;
+  text-align:left;
   backdrop-filter: brightness(1.18);
   padding-top:10px !important;
   padding-bottom:10px !important;
