@@ -1,5 +1,61 @@
 @media (max-width:1199px) {
 
+
+ 
+ /* Content Division */
+ #page-Workspaces{
+  background-color:#ffffff;
+ }
+ 
+ /* Block  content */
+ .codex-editor .ce-block .ce-block__content{
+  text-align:center;
+ }
+ 
+ /* Widget head */
+ .codex-editor div .widget-head{
+  align-self:center;
+ }
+ 
+ /* Link item */
+ .codex-editor div .link-item{
+  transform:translatex(0px) translatey(0px);
+  font-size:15px !important;
+  text-align:left;
+ }
+ 
+ /* Widget */
+ .codex-editor .ce-block .ce-block__content div .widget{
+  background-color:rgba(127,140,141,0.42);
+  background-image:url("https://images.unsplash.com/photo-1510172951991-856a654063f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNTc5fDB8MXxzZWFyY2h8MjAzfHxmbGF0JTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3MDUyOTQ1NTR8MA&ixlib=rb-4.0.3&q=80&w=1130");
+  background-size:auto;
+  padding-top:25px !important;
+  padding-bottom:25px !important;
+ }
+ 
+ /* Ellipsis */
+ .codex-editor .widget-head .ellipsis{
+  font-size:18px;
+ }
+ 
+ /* Bold Tag */
+ .codex-editor span b{
+  font-size:24px;
+ }
+ 
+ /* Icon */
+ .codex-editor .widget-head .icon-xs{
+  transform:scale(1.5);
+ }
+ 
+
+ /* Link item */
+ .codex-editor div .link-item{
+  backdrop-filter: brightness(1.18);
+  padding-top:10px !important;
+  padding-bottom:10px !important;
+  margin-left:0px !important;
+ }
  *::-webkit-scrollbar {
 display: none!important;
 }
