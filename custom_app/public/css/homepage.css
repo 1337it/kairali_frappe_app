@@ -545,6 +545,17 @@ margin-bottom: 0px;
   font-size:18px;
  }
  
- 
+ .result .list-row-container > .level{
+ background-color:#ffffff;
+ font-weight:300;
+ font-size:14px;
+}
+
+
+ /* Frappe card */
+ .page-wrapper .frappe-card{
+  padding-right:30px;
+  transform:translatex(0px) translatey(0px);
+ }
  
 }
