@@ -493,6 +493,61 @@ margin-left: 0px!important;
 margin-bottom: 0px;
 }
  
+/* Import Google Fonts */
+@import url("//fonts.googleapis.com/css2?family=Heebo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/* Widget */
+.codex-editor .ce-block .ce-block__content div .widget{
+ transform:translatex(0px) translatey(0px);
+ background-color:#ffffff !important;
+ border-top-left-radius:5px;
+ border-top-right-radius:5px;
+ border-bottom-left-radius:5px;
+ border-bottom-right-radius:5px;
+ padding-left:15px;
+ padding-right:15px;
+}
+
+/* Division */
+.codex-editor .ce-block .ce-block__content > div{
+ text-align:left;
+}
+
+/* Layout main section wrapper */
+.page-wrapper .layout-main-section-wrapper{
+ background-color:#f0f3f4;
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Layout main section */
+.page-wrapper .layout-main-section{
+ background-color:#f0f3f4;
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Widget */
+
+
+/* Ellipsis */
+.codex-editor .widget-head .ellipsis{
+ font-weight:500;
+ color:#424242;
+ height:20px;
+ font-family:'Heebo', sans-serif;
+}
+
+
+ /* Widget */
+ .codex-editor .ce-block .ce-block__content div .widget{
+  padding-top:15px;
+  padding-bottom:15px;
+ }
+ 
+ /* Ellipsis */
+ .codex-editor .widget-head .ellipsis{
+  font-size:18px;
+ }
+ 
  
  
 }
