@@ -594,6 +594,13 @@ margin-bottom: 0px;
   transform:translatex(0px) translatey(0px);
  }
  
+/* Comment box */
+.form-footer .after-save .comment-box{
+ margin-left:30px;
+ margin-right:30px;
+ margin-top:50px;
+ box-shadow:none;
+}
 
 
  
