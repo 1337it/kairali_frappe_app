@@ -564,5 +564,37 @@ margin-bottom: 0px;
   padding-right:30px;
   transform:translatex(0px) translatey(0px);
  }
+
+/* Widget */
+.codex-editor .ce-block .ce-block__content div .widget{
+ box-shadow:0px 0px 23px 1px rgba(51,60,68,0.18);
+}
+
+/* Widget */
+.codex-editor .ce-block .widget{
+ background-color:#ffffff;
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Widget head */
+.codex-editor div .widget-head{
+ justify-content:center;
+ align-self:auto;
+}
+
+/* Span Tag */
+.codex-editor .ce-header span{
+ display:flex;
+ justify-content:center;
+}
+
+
+ /* Widget */
+ .codex-editor .ce-block .ce-block__content div .widget{
+  transform:translatex(0px) translatey(0px);
+ }
+ 
+
+
  
 }
