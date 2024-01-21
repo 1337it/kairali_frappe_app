@@ -625,6 +625,9 @@ margin-bottom: 0px;
 html, body {
 background-color: #f0f2f3;
 }
- 
+
+ .page-wrapper .layout-main-section-wrapper {
+overflow-y: auto;
+}
  
 }
