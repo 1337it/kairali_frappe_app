@@ -602,6 +602,27 @@ margin-bottom: 0px;
  box-shadow:none;
 }
 
+/* Comment box */
+.form-footer .after-save .comment-box{
+ background-color:transparent;
+}
 
+/* Editor */
+.comment-input-wrapper .frappe-control .ql-editor{
+ background-color:#ffffff;
+}
+
+/* Row */
+.page-wrapper .form-page .form-section{
+ box-shadow:none;
+}
+
+/* Form page */
+.page-wrapper .form-page{
+ box-shadow:0px 1px 20px 1px #c6c6c6 !important;
+}
+
+
+ 
  
 }
