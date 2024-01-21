@@ -631,11 +631,11 @@ overflow-y: auto;
 }
 
  .form-tabs-sticky-down {
-    top: calc(var(--navbar-height) - 60px);
+    top: calc(var(--navbar-height) - 60px)!important;
 }
 
  .form-tabs-sticky-up {
-    top: calc(var(--navbar-height) + 25px);
+    top: calc(var(--navbar-height) + 25px)!important;
 }
  
 }
