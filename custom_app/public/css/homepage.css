@@ -629,5 +629,13 @@ background-color: #f0f2f3;
  .page-wrapper .layout-main-section-wrapper {
 overflow-y: auto;
 }
+
+ .form-tabs-sticky-down {
+    top: calc(var(--navbar-height) - 60px);
+}
+
+ .form-tabs-sticky-up {
+    top: calc(var(--navbar-height) + 25px);
+}
  
 }
