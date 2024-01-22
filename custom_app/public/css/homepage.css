@@ -717,5 +717,11 @@ overflow-y: auto;
 background: #ffffff;
 filter: saturate(200%);
 }
+
+ #navbar-breadcrumbs li a{
+ font-size:18px;
+ color:#3f3f3f;
+ font-weight:400;
+}
  
 }
