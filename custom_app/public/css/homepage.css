@@ -713,8 +713,9 @@ overflow-y: auto;
 
 
 /* Kanban */
-.frappe-list .result .kanban{
- background-color:#ffffff;
+.frappe-list .result .kanban {
+background: #ffffff;
+filter: saturate(200%);
 }
  
 }
