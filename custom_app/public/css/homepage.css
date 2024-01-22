@@ -696,9 +696,6 @@ overflow-y: auto;
 }
 
 /* Layout main section wrapper */
-.page-wrapper .layout-main-section-wrapper{
- background-color:#ffffff;
-}
 
 /* Content Division */
 .kanban .kanban-cards .kanban-card{
