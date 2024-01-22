@@ -643,11 +643,6 @@ overflow-y: auto;
   z-index:-1!important;
  }
 
- /* Layout main section */
-.page-wrapper .layout-main-section{
- background-color:#ffffff;
-}
-
 /* Kanban column title */
 .kanban .kanban-column-header .kanban-column-title{
  display:table-cell;
