@@ -639,5 +639,8 @@ overflow-y: auto;
  .form-tabs-sticky-up {
     top: calc(var(--navbar-height) + 25px)!important;
 }
+ #freeze{
+  z-index:-1!important;
+ }
  
 }
