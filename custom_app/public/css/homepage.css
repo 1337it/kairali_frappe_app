@@ -209,6 +209,14 @@ display: none!important;
   padding-left:15px!important;
 }
 
+.row{
+display: flex;
+flex-wrap: wrap;
+margin-right: 0px!important;
+margin-left: 0px!important;
+}
+
+
 .navbar {
 padding-left: 20px;
 padding-right: 20px;
