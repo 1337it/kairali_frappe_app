@@ -698,8 +698,6 @@ overflow-y: auto;
 }
 
  .result .kanban .kanban-column{
- backdrop-filter: brightness(2.87);
-  -webkit-backdrop-filter: brightness(2);
  margin-left:5px;
  margin-right:5px;
  padding-left:5px;
@@ -708,6 +706,15 @@ overflow-y: auto;
  padding-bottom:5px;
  margin-top:5px;
  margin-bottom:5px;
+  border-width:0.5px;
+ border-color:#d8d8d8;
+ border-style:dotted;
+}
+
+
+/* Kanban */
+.frappe-list .result .kanban{
+ background-color:#ffffff;
 }
  
 }
