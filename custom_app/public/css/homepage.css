@@ -725,7 +725,6 @@ filter: saturate(200%);
 }
  /* Layout main section wrapper */
 [data-page-route^="List/Task"] .page-wrapper .layout-main-section-wrapper{
- background-image:url("https://images.unsplash.com/photo-1484136540910-d66bb475348d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNTc5fDB8MXxzZWFyY2h8NDh8fGF1dG8lMjBzcGFyZSUyMHBhcnRzfGVufDB8fHx8MTcwNjA1OTc0MHww&ixlib=rb-4.0.3&q=80&w=2560") !important;
  background-color:transparent;
  background-size:cover;
 }
