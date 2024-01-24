@@ -741,7 +741,7 @@ filter: saturate(200%);
  transform:translatex(0px) translatey(0px);
 }
  .page-wrapper .frappe-list .result .kanban .kanban-column .kanban-cards .kanban-card-wrapper .kanban-card{
- background-color:transparent !important;
+ background-color: rgba(228, 228, 228, 0.55) !important;
 }
 
 /* Content Division */
