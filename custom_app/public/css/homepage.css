@@ -725,6 +725,7 @@ filter: saturate(200%);
 }
  /* Layout main section wrapper */
 [data-page-route^="List/Task"] .page-wrapper .layout-main-section-wrapper{
+ background-image:url("https://speedwayauto.online/files/df%20(4).jpg") !important;
  background-color:transparent;
  background-size:cover;
 }
