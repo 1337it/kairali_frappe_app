@@ -749,5 +749,24 @@ filter: saturate(200%);
  backdrop-filter:blur(20px);
  -webkit-backdrop-filter:blur(20px);
 }
+
+.new-timeline .activity-title {
+padding-left: 30px;
+padding-right: 10px;
+}
+
+.form-footer {
+padding: 30px;
+}
+.comment-box .comment-input-container .frappe-control .ql-editor {
+background-color: #ffffff!important;
+}
+.form-footer .after-save .comment-box {
+margin-left: 30px;
+margin-right: 30px;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+ 
  
 }
