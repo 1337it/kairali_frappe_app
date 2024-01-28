@@ -458,7 +458,7 @@ body.full-width .container
   max-width:100%;
  }
  .page-wrapper .layout-main-section-wrapper{
-height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 30px);
+height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 10px);
 }
 
 [data-page-route=Workspaces] .layout-main {
@@ -732,6 +732,7 @@ filter: saturate(500%);
 /* Layout main section */
 [data-page-route^="List/Task"] .page-wrapper .layout-main-section{
  background-color:transparent;
+ height:100%;
 }
 
 /* Kanban */
