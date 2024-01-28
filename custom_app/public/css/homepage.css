@@ -714,8 +714,7 @@ overflow-y: auto;
 
 /* Kanban */
 .frappe-list .result .kanban {
-background: #ffffff;
-filter: saturate(200%);
+filter: saturate(500%);
 }
 
  #navbar-breadcrumbs li a{
@@ -737,7 +736,7 @@ filter: saturate(200%);
 
 /* Kanban */
 .frappe-list .result .kanban{
- background-color:rgba(255,255,255,0.3);
+ background-color:rgba(255,255,255,0);
  transform:translatex(0px) translatey(0px);
 }
  .page-wrapper .frappe-list .result .kanban .kanban-column .kanban-cards .kanban-card-wrapper .kanban-card{
