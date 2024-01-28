@@ -462,7 +462,7 @@ height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 10px);
 }
 
 [data-page-route=Workspaces] .layout-main {
-height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 25px);
+height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 10px);
 }
 *::-webkit-scrollbar {
 width: 6px;
