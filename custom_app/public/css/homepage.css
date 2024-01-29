@@ -808,7 +808,7 @@ border-top-left-radius: 10px!important;
  border-bottom-right-radius: 10px!important;
 border-bottom-left-radius: 10px!important;
 position: fixed;
-width: calc(16.6667% - 60px)!important;
+width: auto!important;
 background-color: rgba(0, 0, 0, 0.82)!important;
 box-shadow: 0px 0px 23px 1px rgba(51,60,68,0.18)!important;
 left: 30px!important;
@@ -895,7 +895,8 @@ color: #ffffff!important;
 
 .raven-chat-view .raven-chat-view-container .raven-chat-input {
 position: fixed;
-bottom: 30px;
+bottom: 30px!important;
+ left: 30px!important;
 display: flex!important;
 gap: .5rem!important;
 min-height: 60px!important;
