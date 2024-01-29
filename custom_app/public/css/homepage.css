@@ -772,7 +772,7 @@ margin-bottom: 30px;
 
 .raven-logo:after {
 font-weight: 300;
-font-size: 1.4rem;
+font-size: 0!important;
 color: #ffffff;
 padding-right: 0px!important;
 content: url("/files/chat.png")!important;
@@ -852,9 +852,9 @@ height: 30px!important;
 }
 
 .raven-header .open-raven-button svg {
-fill: #ffffff!important;
-height: 25px!important;
-width: 25px!important;
+fill: #959191!important;
+height: 30px!important;
+width: 30px!important;
 }
 
 .raven-channel-list h4 {
