@@ -779,10 +779,18 @@ margin-bottom: 30px;
  {
   z-index:-1;
  }
+   [data-page-route^="Form"] .page-title .sidebar-toggle-btn
+ {
+  z-index:-1;
+ }
 
 #page-Workspaces {
  height:0;
 display: block!important;
+}
+ .page-wrapper .layout-side-section
+ {
+  display: block!important;
 }
 
 .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
