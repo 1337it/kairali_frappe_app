@@ -809,32 +809,33 @@ height: 100%!important;
 fill: whitesmoke!important;
 }
 .raven-chat {
-border-top-right-radius: 10px!important;
-border-top-left-radius: 10px!important;
-border-bottom-right-radius: 10px!important;
-border-bottom-left-radius: 10px!important;
+border-top-right-radius: 0px!important;
+border-top-left-radius: 0px!important;
+border-bottom-right-radius: 0px!important;
+border-bottom-left-radius: 0px!important;
 position: fixed;
- border:0.5px solid white!important;
+ border:none!important;
 width: auto!important;
-background-color: rgba(0, 0, 0, 0.85)!important;
-box-shadow: 0px 0px 15px 1px rgba(51,60,68,0.88)!important;
+background-color: transparent!important;
 left: 30px!important;
 bottom: 30px!important;
-backdrop-filter: blur(5px)!important;
--webkit-backdrop-filter: blur(5px)!important;
 }
 
 .raven-container[data-open-state=true] {
 overflow: hidden;
  height:50vh!important;
 width: 30vw!important;
+ backdrop-filter: blur(5px)!important;
+-webkit-backdrop-filter: blur(5px)!important;
+ background-color: rgba(0, 0, 0, 0.85)!important;
+box-shadow: 0px 0px 15px 1px rgba(51,60,68,0.88)!important;
 }
 .raven-container[data-open-state=true] .raven-header {
 border-bottom: 1px solid var(--border-color);
 width:30vw!important;
 }
- .raven-container[data-open-state=true] {
-height: var(--raven-expanded-height);
+ .raven-container[data-open-state=false] {
+height: 60px!important;
 overflow: hidden;
 width: 30vw!important;
 }
