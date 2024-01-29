@@ -770,20 +770,19 @@ margin-top: 30px;
 margin-bottom: 30px;
 
 }
- 
+
  [data-page-route="Workspaces"] .page-title .sidebar-toggle-btn
  {
-  z-index:999!important;
+  z-index:999;
  }
- 
+
 #page-Workspaces {
 display: block!important;
- height: 0px;
 }
 
 .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
-z-index: 999!important;
+width: 20% !important;
+z-index: 99;
 }
-
  
 }
