@@ -771,9 +771,9 @@ margin-bottom: 30px;
 }
 
  .raven-logo:after {
-font-weight: 700;
+font-weight: 300;
 font-size: 1.4rem;
-color: var(--heading-color);
+color: #ffffff;
 padding-right: 4px;
 content: "Connect"!important;
   visibility:visible;
@@ -796,40 +796,118 @@ width: 100%!important;
  .raven-chat-view .raven-chat-view-container {
 width: 100%!important;
 }
- .raven-chat-view .raven-chat-view-container .raven-chat-input {
-position: fixed;
-bottom: 0;
-display: flex;
-gap: .5rem;
-min-height: 60px!important;
-padding: 10px!important;
-border-top: 1px solid var(--border-color);
-width: 30%!important;
-left: 50px!important!important;
-  bottom:50px!important!important;
-}
  .btn.icon-btn, div#driver-popover-item .driver-popover-footer button.icon-btn {
 height: 100%!important;
 }
  .raven-chat-view .raven-chat-view-container .raven-chat-input .send-button svg {
 fill: whitesmoke!important;
 }
- .raven-chat {
+.raven-chat {
+ border-top-right-radius: 10px!important;
+border-top-left-radius: 10px!important;
+ border-bottom-right-radius: 10px!important;
+border-bottom-left-radius: 10px!important;
 position: fixed;
-width: auto!important;
-background-color: rgba(255,255,255,0.8)!important;
-box-shadow:0px 0px 23px 1px rgba(51,60,68,0.18)!important;
-left: 50px!important;
-  bottom:50px!important;
-backdrop-filter:blur(5px)!important;
- -webkit-backdrop-filter:blur(5px)!important;
+width: calc(16.6667% - 60px)!important;
+background-color: rgba(0, 0, 0, 0.82)!important;
+box-shadow: 0px 0px 23px 1px rgba(51,60,68,0.18)!important;
+left: 30px!important;
+bottom: 30px!important;
+backdrop-filter: blur(5px)!important;
+-webkit-backdrop-filter: blur(5px)!important;
 }
 
 .raven-container[data-open-state=true] {
-height: var(--raven-expanded-height);
 overflow: hidden;
  height:50vh!important;
 width: 30vw!important;
 }
- 
+.raven-container[data-open-state=true] .raven-header {
+border-bottom: 1px solid var(--border-color);
+width:30vw!important;
+}
+ .raven-container[data-open-state=true] {
+height: var(--raven-expanded-height);
+overflow: hidden;
+width: 30vw!important;
+}
+
+.raven-header .back-button svg {
+fill: var(--teal-50)!important;
+width: 30px!important;
+height: 30px!important;
+}
+
+.raven-header .open-raven-button svg {
+fill: #ffffff!important;
+height: 25px!important;
+width: 25px!important;
+}
+
+.raven-channel-list h4 {
+font-size: .7rem!important;
+font-weight: 300!important;
+text-transform: uppercase;
+color: var(--blue-400)!important;
+padding: .5rem .4rem;
+margin: 0;
+}
+
+.raven-channel-list-item {
+padding: .3rem .5rem;
+display: flex;
+width: 100%;
+background-color: rgba(235, 235, 235, 0.17)!important;
+gap: .5rem;
+justify-content: space-between;
+align-items: center;
+border: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.39)!important;
+cursor: pointer;
+}
+
+.raven-channel-list-item .raven-channel-icon {
+height: 1.8rem;
+display: flex;
+fill: #ffffff!important;
+align-items: center;
+justify-content: center;
+width: 1.8rem!important;
+}
+
+.raven-channel-list-item .channel-label {
+color: var(--btn-default-bg)!important;
+font-weight: 300!important;
+font-family: Arial!important;
+}
+
+.message-item .raven-message-item-header .raven-message-item-header-time {
+font-size: .7rem!important;
+padding-left: .3rem;
+margin-left: .3rem;
+border-left: 1px solid var(--border-color);
+color: #c9c9c9!important;
+}
+
+.raven-tiptap-renderer {
+color: #ffffff!important;
+}
+
+.raven-chat-view .raven-chat-view-container .raven-chat-input {
+position: fixed;
+bottom: 30px;
+display: flex!important;
+gap: .5rem!important;
+min-height: 60px!important;
+padding: 6px!important;
+border-top: 1px solid var(--border-color)!important;
+width: var(--raven-content-width)!important;
+}
+.raven-channel-header-name {
+font-weight: 200!important;
+font-size: 16px!important;
+color: var(--teal-50)!important;
+}
+
+
 }
