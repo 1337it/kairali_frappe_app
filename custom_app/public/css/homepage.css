@@ -770,11 +770,9 @@ margin-top: 30px;
 margin-bottom: 30px;
 
 }
-[data-page-route=List]{
-[data-page-route=Workspaces] #page-Workspaces {
-height: 0;
+[data-page-route=List] #page-Workspaces {
+height: 0px!important;
 display: block!important;
-}
 }
  
 .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
