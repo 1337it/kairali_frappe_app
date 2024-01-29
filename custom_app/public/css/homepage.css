@@ -831,7 +831,7 @@ backdrop-filter:blur(5px)!important;
 .raven-container[data-open-state=true] {
 height: var(--raven-expanded-height);
 overflow: hidden;
- height:50vh!important
+ height:50vh!important;
 width: 30vw!important;
 }
  
