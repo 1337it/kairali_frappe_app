@@ -770,17 +770,10 @@ margin-top: 30px;
 margin-bottom: 30px;
 
 }
-[data-page-route^="List"] .page-wrapper .layout-side-section
- {
-  min-width:20%;
- }
- [data-page-route^="List"] .page-title .sidebar-toggle-btn
- {
- display:none;
- }
+ 
  [data-page-route="Workspaces"] .page-title .sidebar-toggle-btn
  {
-  z-index:999;
+  z-index:999!important;
  }
  
 #page-Workspaces {
@@ -789,8 +782,7 @@ display: block!important;
 }
 
 .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
-width: 20% !important;
-z-index: 99;
+z-index: 999!important;
 }
 
  
