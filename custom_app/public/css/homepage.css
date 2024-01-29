@@ -949,6 +949,15 @@ color: white!important;
  .raven-container {
 transition: all .3s ease-in-out!important;
 }
-
-
+.rt-Text:where(.rt-r-size-6) {
+font-size: 0;
+--line-height: var(--line-height-6);
+--letter-spacing: var(--letter-spacing-6);
+}
+.rt-Text:where(.rt-r-size-6):after {
+font-size: var(--font-size-6);
+--line-height: var(--line-height-6);
+--letter-spacing: var(--letter-spacing-6);
+ content:"Connect"!important;
+}
 }
