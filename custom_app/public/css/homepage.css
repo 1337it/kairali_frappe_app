@@ -783,6 +783,13 @@ content: "Connect"!important;
 visibility:hidden;
   font-size:0px!important;
 }
+ .raven-logo {
+font-weight: 300!important;
+font-size: 1.4rem!important;
+color: var(--heading-color)!important;
+padding-right: 4px!important;
+font-family: Arial!important;
+}
  .raven-content-container {
 position: relative;
 width: 100%!important;
