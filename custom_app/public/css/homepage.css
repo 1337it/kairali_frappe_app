@@ -770,25 +770,5 @@ margin-top: 30px;
 margin-bottom: 30px;
 
 }
-
-.page-title .sidebar-toggle-btn
- {
-  display:none;
- }
-
-#page-Workspaces {
- height:0;
-display: block!important;
-}
-
-.page-wrapper .layout-side-section
- {
-  display: block!important;
-}
- 
-.main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
-width: 20% !important;
-z-index: 99;
-}
  
 }
