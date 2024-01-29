@@ -775,7 +775,7 @@ font-weight: 300;
 font-size: 1.4rem;
 color: #ffffff;
 padding-right: 0px!important;
-content: url("/files/icons8-chat-room-48-2.png")!important;
+content: url("/files/chat.png")!important;
 visibility: visible;
 }
 
@@ -812,6 +812,7 @@ fill: whitesmoke!important;
 border-top-right-radius: 0px!important;
 border-top-left-radius: 0px!important;
 border-bottom-right-radius: 0px!important;
+ box-shadow:none!important;
 border-bottom-left-radius: 0px!important;
 position: fixed;
  border-bottom:none!important;
