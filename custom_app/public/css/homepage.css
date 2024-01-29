@@ -776,6 +776,7 @@ font-size: 1.4rem;
 color: var(--heading-color);
 padding-right: 4px;
 content: "Connect"!important;
+  visibility:visible;
 }
 
  .raven-logo {
