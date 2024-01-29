@@ -811,9 +811,6 @@ left: 50px!important!important;
  .btn.icon-btn, div#driver-popover-item .driver-popover-footer button.icon-btn {
 height: 100%!important;
 }
-.btn.btn-default, div#driver-popover-item .driver-popover-footer button.btn-default {
-background-color: #2d2d2d!important;
-}
  .raven-chat-view .raven-chat-view-container .raven-chat-input .send-button svg {
 fill: whitesmoke!important;
 }
