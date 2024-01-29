@@ -902,7 +902,7 @@ gap: .5rem!important;
 min-height: 60px!important;
 padding: 6px!important;
 border-top: 1px solid var(--border-color)!important;
-width: var(--raven-content-width)!important;
+width: 30vw!important;
 }
 .raven-channel-header-name {
 font-weight: 200!important;
@@ -910,5 +910,16 @@ font-size: 16px!important;
 color: var(--teal-50)!important;
 }
 
+ .raven-chat-view .raven-chat-view-container .raven-chat-input textarea {
+width: 100%!important;
+max-height: 60px!important;
+background: rgba(0, 0, 0, 0.61)!important;
+color: white!important;
+}
+
+ .raven-chat-input .btn.icon-btn {
+height: 100%!important;
+background: rgba(0, 0, 0, 0.61)!important;
+}
 
 }
