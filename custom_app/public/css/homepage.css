@@ -822,8 +822,9 @@ position: fixed;
  border:none!important;
 width: auto!important;
 background-color: transparent!important;
-left: 30px!important;
+left: unset!important;
 bottom: 30px!important;
+ right: 30px!important;
 }
 
 .raven-container[data-open-state=true] {
@@ -909,7 +910,8 @@ color: #ffffff!important;
 .raven-chat-view .raven-chat-view-container .raven-chat-input {
 position: fixed;
 bottom: 30px!important;
- left: 30px!important;
+ left: unset!important;
+ right: 30px!important;
 display: flex!important;
 gap: .5rem!important;
 min-height: 60px!important;
