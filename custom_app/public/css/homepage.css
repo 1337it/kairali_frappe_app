@@ -929,7 +929,7 @@ background: rgba(0, 0, 0, 0.61)!important;
 }
 
  .raven-container[data-open-state=false] .raven-header {
-border-bottom: 1px solid var(--border-color);
+border-bottom: 0px solid var(--border-color);
 width: calc(16.6667% - 60px)!important;
 }
 .message-item .raven-message-item-header .raven-message-item-header-name {
