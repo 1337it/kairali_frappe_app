@@ -770,6 +770,17 @@ margin-top: 30px;
 margin-bottom: 30px;
 
 }
+[data-page-route=List]{
+[data-page-route=Workspaces] #page-Workspaces {
+height: 0;
+display: block!important;
+}
+}
  
+.main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
+width: 20% !important;
+z-index: 10;
+display: block!important;
+}
  
 }
