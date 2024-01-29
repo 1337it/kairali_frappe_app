@@ -788,12 +788,8 @@ margin-bottom: 30px;
  height:0;
 display: block!important;
 }
-[data-page-route^="List"] .page-wrapper .layout-side-section
- {
-  display: block!important;
-}
 
- [data-page-route^="Form"] .page-wrapper .layout-side-section
+.page-wrapper .layout-side-section
  {
   display: block!important;
 }
