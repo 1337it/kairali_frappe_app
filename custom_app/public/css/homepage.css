@@ -781,6 +781,21 @@ content: "Connect"!important;
 
  .raven-logo {
 visibility:hidden;
+  font-size:0px!important;
+}
+ .raven-chat {
+position: fixed;
+width: 16.6666667%;
+background-color: rgba(255,255,255,0.8);
+box-shadow:0px 0px 23px 1px rgba(51,60,68,0.18);
+left: 0px!important;
+backdrop-filter:blur(5px);
+ -webkit-backdrop-filter:blur(5px);
+}
+
+ .raven-container[data-open-state=true] {
+height: 50vh!important;
+overflow: hidden;
 }
  
 }
