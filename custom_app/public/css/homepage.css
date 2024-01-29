@@ -929,4 +929,25 @@ height: 100%!important;
 background: rgba(0, 0, 0, 0.61)!important;
 }
 
+ .raven-container[data-open-state=false] .raven-header {
+border-bottom: 1px solid var(--border-color);
+width: calc(16.6667% - 60px)!important;
+}
+.message-item .raven-message-item-header .raven-message-item-header-name {
+font-weight: 400!important;
+font-size: 14px!important;
+color: #b9b9b9!important;
+}
+
+ .raven-date-separator .raven-date-separator-text {
+font-size: .75rem!important;
+min-width: -moz-fit-content!important;
+min-width: fit-content!important;
+color: white!important;
+}
+
+ .raven-container {
+transition: all .3s ease-in-out!important;
+}
+
 }
