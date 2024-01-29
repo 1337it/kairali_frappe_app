@@ -771,17 +771,9 @@ margin-bottom: 30px;
 
 }
 
- [data-page-route="Workspaces"] .page-title .sidebar-toggle-btn
+.page-title .sidebar-toggle-btn
  {
-  z-index:999;
- }
-  [data-page-route^="List"] .page-title .sidebar-toggle-btn
- {
-  z-index:-1;
- }
-   [data-page-route^="Form"] .page-title .sidebar-toggle-btn
- {
-  z-index:-1;
+  display:none;
  }
 
 #page-Workspaces {
