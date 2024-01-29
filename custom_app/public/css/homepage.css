@@ -814,6 +814,10 @@ border-top-left-radius: 0px!important;
 border-bottom-right-radius: 0px!important;
 border-bottom-left-radius: 0px!important;
 position: fixed;
+ border-bottom:none!important;
+ border-top:none!important;
+ border-right:none!important;
+ border-left:none!important;
  border:none!important;
 width: auto!important;
 background-color: transparent!important;
@@ -837,7 +841,7 @@ width:30vw!important;
  .raven-container[data-open-state=false] {
 height: 60px!important;
 overflow: hidden;
-width: 30vw!important;
+width: 60px!important;
 }
 
 .raven-header .back-button svg {
