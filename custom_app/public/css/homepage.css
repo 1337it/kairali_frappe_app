@@ -816,7 +816,7 @@ border-top-left-radius: 10px!important;
 border-bottom-left-radius: 10px!important;
 position: fixed;
 width: auto!important;
-background-color: rgba(0, 0, 0, 0.82)!important;
+background-color: rgba(23, 23, 23, 0.92)!important;
 box-shadow: 0px 0px 23px 1px rgba(51,60,68,0.18)!important;
 left: 30px!important;
 bottom: 30px!important;
@@ -949,5 +949,6 @@ color: white!important;
  .raven-container {
 transition: all .3s ease-in-out!important;
 }
+
 
 }
