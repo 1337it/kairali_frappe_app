@@ -775,8 +775,13 @@ margin-bottom: 30px;
  {
   z-index:999;
  }
+  [data-page-route^="List"] .page-title .sidebar-toggle-btn
+ {
+  z-index:-1;
+ }
 
 #page-Workspaces {
+ height:0;
 display: block!important;
 }
 
