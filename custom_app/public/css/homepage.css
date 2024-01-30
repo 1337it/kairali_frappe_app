@@ -980,7 +980,7 @@ padding-block: 0rem!important;
 
 /* Header */
 .main-section header{
- width:100vw;
+ width:100%;
  justify-content:space-around;
  align-items:stretch;
 }
