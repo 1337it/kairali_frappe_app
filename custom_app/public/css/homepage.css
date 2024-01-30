@@ -978,5 +978,16 @@ justify-content: space-between;
 padding-block: 0rem!important;
 }
 
+ #headlessui-menu-item-3 {
+display: none;
+}
+
+ #headlessui-menu-item-5 {
+display: none;
+}
+ 
+ #headlessui-menu-item-4 {
+display: none;
+}
  
 }
