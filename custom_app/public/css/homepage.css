@@ -984,7 +984,12 @@ padding-block: 0rem!important;
  justify-content:space-around;
  align-items:stretch;
 }
-
+ /* Container */
+ .main-section .navbar .container{
+  width:100vw !important;
+  max-width:100vw;
+ }
+ 
 
  /* Row */
  .main-section #body #page-Workspaces .page-head .container .justify-between{
@@ -1000,5 +1005,25 @@ padding-block: 0rem!important;
  .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main{
   width:100vw !important;
  }
+
+ #page-List\/Item\/List .page-head .container{
+ margin-left:0px;
+ margin-right:0px;
+  max-width:100vw;
+}
+
+ #page-List\/Item\/List{
+ transform:translatex(0px) translatey(0px);
+ width:100vw;
+}
+
+ .main-section #body #page-List\/Item\/List .page-body{
+ width:100vw !important;
+}
+ #page-List\/Item\/List .page-body{
+ margin-left:0px;
+ margin-right:0px;
+ display:flex;
+}
  
 }
