@@ -978,24 +978,27 @@ justify-content: space-between;
 padding-block: 0rem!important;
 }
 
- #headlessui-menu-item-3 {
-display: none;
+/* Header */
+.main-section header{
+ width:100vw;
+ justify-content:space-around;
+ align-items:stretch;
 }
 
- #headlessui-menu-item-5 {
-display: none;
-}
+
+ /* Row */
+ .main-section #body #page-Workspaces .page-head .container .justify-between{
+  width:100vw !important;
+ }
  
- #headlessui-menu-item-4 {
-display: none;
-}
- .mt-10 {
-margin-top: 2.5rem;
-display: none;
-}
-
- .text-base.text-center {
-display: none;
-}
+ /* Container */
+ .main-section .navbar .container{
+  width:100vw !important;
+ }
+ 
+ /* Row */
+ .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main{
+  width:100vw !important;
+ }
  
 }
