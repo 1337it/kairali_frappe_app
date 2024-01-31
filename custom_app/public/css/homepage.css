@@ -1033,11 +1033,6 @@ padding-block: 0rem!important;
  background-color:#474747;
 }
 
-/* Header */
-.main-section header{
- background-image:linear-gradient(to right, #3c3b3f 99%, #605c3c 100%);
- border-bottom-style:none;
-}
 
 /* Row */
 .page-head .justify-between{
@@ -1128,7 +1123,7 @@ body{
 }
 
 /* Header */
-.main-section header{
+.main-section .navbar{
  background-color:#ffffff;
  background-image:none;
  transform:translatex(0px) translatey(0px);
