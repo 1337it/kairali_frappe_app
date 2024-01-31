@@ -1023,7 +1023,7 @@ padding-block: 0rem!important;
  #page-List\/Item\/List .page-body{
  margin-left:0px;
  margin-right:0px;
- display:flex;
+ display:block;
 }
 
  /* Layout side section */
@@ -1154,7 +1154,44 @@ body{
 .desk-sidebar .standard-sidebar-section .standard-sidebar-label{
  color:#cecece;
 }
+/* Button */
+.page-actions .custom-actions .ellipsis{
+ box-shadow:0px 0px 50px 1px rgba(56,56,56,0.26);
+ background-color:#6b6b6b;
+ transform:translatex(0px) translatey(0px);
+ color:#ffffff;
+}
 
+/* Button */
+.page-actions .standard-actions .btn-secondary{
+ box-shadow:0px 0px 27px 1px rgba(56,56,56,0.33);
+ background-color:#5e5e5e;
+}
+
+/* Icon */
+.standard-actions .btn-secondary .es-icon{
+ filter: brightness(10);
+}
+
+/* Span Tag */
+.standard-actions .btn-secondary .hidden-xs > span{
+ color:#ffffff;
+}
+
+/* Use */
+.sidebar-toggle-btn .sidebar-toggle-placeholder use{
+ filter: brightness(10);
+}
+
+/* Page actions */
+.page-head .justify-between .page-actions{
+ justify-content:flex-end;
+}
+
+ /* Column 4/12 */
+ .page-head .justify-between .page-title{
+  max-width:16.7%;
+ }
 
  
 }
