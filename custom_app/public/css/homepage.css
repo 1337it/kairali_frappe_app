@@ -458,7 +458,7 @@ body.full-width .container
   max-width:100%;
  }
  .page-wrapper .layout-main-section-wrapper{
-height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 10px);
+height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 60px);
 }
 
 [data-page-route=Workspaces] .layout-main {
@@ -474,7 +474,7 @@ display: none!important;
 /* Layout main section wrapper */
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
- background-color:#ffffff;
+ background-color:transparent;
  background-image:none !important;
  padding-right:0px;
 }
@@ -521,7 +521,7 @@ margin-bottom: 0px;
 
 /* Layout main section wrapper */
 .page-wrapper .layout-main-section-wrapper{
- background-color:#f0f3f4;
+ background-color:transparent;
  transform:translatex(0px) translatey(0px);
 }
 
