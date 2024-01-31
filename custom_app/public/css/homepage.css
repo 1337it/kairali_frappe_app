@@ -1114,6 +1114,47 @@ body{
  .page-wrapper .layout-side-section{
   padding-top:75px;
  }
- 
+
+ /* Row */
+.page-head .justify-between{
+ box-shadow:0px 0px 34px 13px rgba(82,82,82,0);
+ background-color:rgba(0,0,0,0);
+ backdrop-filter:blur(0.1px);
+}
+
+/* Page head */
+#page-Workspaces .page-head{
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Header */
+.main-section header{
+ background-color:#ffffff;
+ background-image:none;
+ transform:translatex(0px) translatey(0px);
+ box-shadow:0px 1px 27px 1px rgba(82,82,82,0.68);
+}
+
+/* Heading */
+.title-area div h3{
+ color:#bfbfbf;
+}
+
+/* Sidebar item label */
+.standard-sidebar-section > .sidebar-item-container > .desk-sidebar-item .sidebar-item-label{
+ color:#ffffff;
+}
+
+/* Use */
+.desk-sidebar .icon-md use{
+ filter: brightness(10);
+}
+
+/* Standard sidebar label */
+.desk-sidebar .standard-sidebar-section .standard-sidebar-label{
+ color:#cecece;
+}
+
+
  
 }
