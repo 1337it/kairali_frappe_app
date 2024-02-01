@@ -1235,5 +1235,15 @@ body{
  transform:translatex(0px) translatey(0px);
 }
 
+.text-base.font-medium.text-gray-900.leading-none {
+font-size: 0;
+visibility: hidden;
+}
+ .text-base.font-medium.text-gray-900.leading-none:after {
+font-size: 16px;
+visibility: visible;
+  content:"Drive";
+}
+
  
 }
