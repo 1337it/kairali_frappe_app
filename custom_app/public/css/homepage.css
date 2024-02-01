@@ -1391,4 +1391,9 @@ color: rgba(255, 255, 255, 0.65);
  padding-left:15px!important;
 }
 
+#global-sidebar.opened {
+left: 0;
+display: block!important;
+}
+
 }
