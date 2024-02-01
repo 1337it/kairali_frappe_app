@@ -1294,4 +1294,48 @@ display: block!important;
 [data-route^="Workspaces"] #globalmenu {
 display: none!important;
 }
+
+/* Link */
+#global-sidebarList li a{
+ padding-top:5px;
+ padding-bottom:5px;
+}
+
+/* List Item */
+#global-sidebarList li{
+ border-bottom-style:none;
+}
+
+/* Global sidebar */
+#global-sidebar{
+ background-color:#232526;
+ display:inline-block;
+ box-shadow:0px 0px 50px 0px #000000;
+ z-index:200;
+ padding-top:110px;
+}
+
+/* Sidebar item label */
+#global-sidebarList a .sidebar-item-label{
+ color:#ffffff;
+}
+
+/* Workspace overlay */
+.workspace-overlay{
+ backdrop-filter:blur(2.64px);
+ box-shadow:none;
+ z-index:199;
+}
+
+.sortable-chosen .kanban-column-title .indicator-pill{
+ border-top-left-radius:10px;
+ border-top-right-radius:10px;
+ border-bottom-left-radius:5px;
+ border-bottom-right-radius:5px;
+ filter: saturate(2.28);
+}
+
+[data-route^="List/Task/Kanban"].page-wrapper .layout-main-section{
+ height:100%;
+}
 }
