@@ -1243,4 +1243,12 @@ display: none;
 [id^="page-List"] .main-section #body #page-List\/Role\/List .page-body{
  width:100% !important;
 }
+.page-container {
+background-color: rgba(255, 255, 255, 0);
+}
+
+ .head {
+background-color: rgba(255, 255, 255, 0);
+}
+ 
 }
