@@ -1386,7 +1386,9 @@ left: 0px!important;
 .title-area div h3 {
 color: rgba(255, 255, 255, 0.65);
 }
-
-
+.page-title .title-area .title-text
+{
+ padding-left:15px!important;
+}
 
 }
