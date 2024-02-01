@@ -1341,6 +1341,8 @@ display: none!important;
 
 /* Global sidebar */
 #global-sidebar{
+  width: 16.6667%!important;
+transition: all 0.3s ease-in-out!important;
  filter: invert(0.87);
  padding-top:110px!important;
  z-index:102!important;
