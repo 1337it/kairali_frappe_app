@@ -1244,6 +1244,13 @@ font-size: 16px;
 visibility: visible;
   content:"Drive";
 }
-
- 
+#headlessui-menu-item-3 {
+display: none;
+}
+ #headlessui-menu-item-4 {
+display: none;
+}
+ #headlessui-menu-item-5 {
+display: none;
+}
 }
