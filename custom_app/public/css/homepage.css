@@ -1264,5 +1264,9 @@ filter: invert();
 background-color: #000000;
 text-decoration: none;
 }
+
+ .page-title .sidebar-toggle-btn {
+--icon-stroke: #ffffff;
+}
  
 }
