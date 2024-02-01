@@ -1302,4 +1302,7 @@ display: none!important;
 display: block!important;
 }
 
+[data-route^="Workspaces"] #globalmenu {
+display: none!important;
+}
 }
