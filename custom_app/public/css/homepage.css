@@ -1287,5 +1287,16 @@ opacity: 0!important;
 padding-left:15px!important;
   font-weight:400!important;
 }
+.page-title .sidebar-toggle-btn {
+--icon-stroke: #ffffff!important;
+display: none!important;
+}
+.page-wrapper .layout-side-section {
+display: none!important;
+}
+
+[data-page-route=Workspaces] .page-wrapper .layout-side-section {
+display: block!important;
+}
 
 }
