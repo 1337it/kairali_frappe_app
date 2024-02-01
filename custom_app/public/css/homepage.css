@@ -1338,4 +1338,27 @@ display: none!important;
 [data-route^="List/Task/Kanban"].page-wrapper .layout-main-section{
  height:100%;
 }
+
+/* Global sidebar */
+#global-sidebar{
+ filter: invert(0.87);
+ padding-top:110px;
+ z-index:100;
+ box-shadow:5px 18px 38px 1px rgba(255,255,255,0.86);
+ background-color:rgba(244,244,244,0.9);
+}
+
+/* List Item */
+#global-sidebarList li{
+ height:36px;
+ border-bottom-style:none;
+ border-bottom-width:0px;
+}
+
+/* Workspace overlay */
+.workspace-overlay{
+ z-index:99;
+ backdrop-filter:blur(2.02px);
+ background-color:rgba(0,0,0,0.39);
+}
 }
