@@ -1322,6 +1322,7 @@ top:50px!important;
  background-color:rgba(244,244,244,0.9);
   padding-left:0px!important;
  padding-right:0px!important;
+ display:block!important;
 }
 
 /* List Item */
@@ -1372,7 +1373,14 @@ display: none!important;
  display:none!important;
 }
 #global-sidebarList a .icon-lg{
- margin-left:1vw!important;
- margin-right:1vw!important;
+ margin-left:0.6vw!important;
+ margin-right:0.6vw!important;
 }
+
+.title-area div h3 {
+color: rgba(255, 255, 255, 0.65);
+}
+
+
+
 }
