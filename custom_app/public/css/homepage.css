@@ -1088,7 +1088,8 @@ body{
  
  /* Layout main section */
  .page-wrapper .layout-main-section{
-  padding-top:130px !important;
+  padding-top:50px !important;
+    top:0px!important;
  }
  
  /* Layout side section */
