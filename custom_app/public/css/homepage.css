@@ -1281,10 +1281,6 @@ padding-left:15px!important;
 }
 
 
-#globalmenu {
-display: none!important;
-}
-
 /* Link */
 #global-sidebarList li a{
  padding-top:5px;
@@ -1298,11 +1294,7 @@ display: none!important;
 
 /* Global sidebar */
 #global-sidebar{
- background-color:#232526;
- display:inline-block;
- box-shadow:0px 0px 50px 0px #000000;
- z-index:200;
- padding-top:110px;
+ padding-top:110px!important;
 }
 
 /* Sidebar item label */
@@ -1310,12 +1302,6 @@ display: none!important;
  color:#ffffff;
 }
 
-/* Workspace overlay */
-.workspace-overlay{
- backdrop-filter:blur(2.64px);
- box-shadow:none;
- z-index:199;
-}
 
 .sortable-chosen .kanban-column-title .indicator-pill{
  border-top-left-radius:10px;
@@ -1335,8 +1321,7 @@ display: none!important;
 transition: all 0.3s ease-in-out!important;
  filter: invert(0.87);
 top:50px!important;
- z-index:102!important;
- box-shadow:5px 18px 38px 1px rgba(255,255,255,0.86)!important;
+ z-index:4!important;
  background-color:rgba(244,244,244,0.9);
 }
 
@@ -1349,26 +1334,12 @@ border-bottom: none!important;
 }
 
 /* Workspace overlay */
-.workspace-overlay{
- z-index:99;
- backdrop-filter:blur(2.02px);
- background-color:rgba(0,0,0,0.39);
-}
 
 #global-sidebarList a .sidebar-item-label {
 color: #000000;
 }
 
 .workspace-overlay {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.3);
-display: none;
-z-index: 99!important;
--webkit-backdrop-filter: blur(2px);
- backdrop-filter: blur(2px);
+display: none!important;
 }
 }
