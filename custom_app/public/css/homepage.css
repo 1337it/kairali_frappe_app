@@ -1313,12 +1313,15 @@ padding-left:15px!important;
 
 /* Global sidebar */
 #global-sidebar{
+ left:0!important;
   width: 16.6667%!important;
 transition: all 0.3s ease-in-out!important;
  filter: invert(0.87);
 top:50px!important;
  z-index:4!important;
  background-color:rgba(244,244,244,0.9);
+  padding-left:0px!important;
+ padding-right:0px!important;
 }
 
 /* List Item */
@@ -1364,4 +1367,12 @@ display: none!important;
  z-index:5!important;
 }
 
+#globalmenu
+{
+ display:none!important;
+}
+#global-sidebarList a .icon-lg{
+ margin-left:1vw!important;
+ margin-right:1vw!important;
+}
 }
