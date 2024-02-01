@@ -1182,7 +1182,10 @@ fill: rgba(0, 0, 0, 0.21);
 
 /* List row container */
 .frappe-list .result .list-row-container{
- background-color:rgba(2,2,2,0.09);
+ background-color:rgba(255,255,255,0.14);
+ border-bottom-style:solid;
+ border-bottom-color:rgba(0,0,0,0.26);
+ border-bottom-width:0.5px;
 }
 
 /* Filterable */
