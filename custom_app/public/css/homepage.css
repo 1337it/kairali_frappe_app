@@ -1231,4 +1231,16 @@ display: none;
  #headlessui-menu-item-5 {
 display: none;
 }
+
+ .page-head .justify-between{
+ left:0px;
+}
+
+  [id^="page-List"] .page-body{
+  max-width:100%;
+ }
+
+[id^="page-List"] .main-section #body #page-List\/Role\/List .page-body{
+ width:100% !important;
+}
 }
