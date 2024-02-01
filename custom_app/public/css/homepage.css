@@ -1187,6 +1187,53 @@ body{
  .page-head .justify-between .page-title{
   max-width:16.7%;
  }
+/* Content Division */
+#page-List\/Item\/List{
+ background-color:rgba(255,255,255,0);
+}
+
+/* Level */
+.result .list-row-container > .level{
+ background-color:rgba(255,255,255,0);
+}
+
+/* List row container */
+.frappe-list .result .list-row-container{
+ background-color:rgba(2,2,2,0.09);
+}
+
+/* Filterable */
+.result .hidden-xs .ellipsis .filterable{
+ color:#000000;
+}
+
+/* Text muted */
+.frappe-list .result header.text-muted{
+ filter: invert(0.8);
+ margin-left:0px;
+ margin-right:0px;
+ margin-top:10px;
+ margin-bottom:2px;
+ border-top-left-radius:5px;
+ border-top-right-radius:5px;
+ border-bottom-left-radius:0px;
+ border-bottom-right-radius:0px;
+ padding-bottom:15px;
+ padding-right:20px;
+ padding-left:5px;
+}
+
+/* Standard filter section */
+.frappe-card .page-form .standard-filter-section{
+ height:36px;
+ transform:translatex(0px) translatey(0px);
+}
+
+/* Page form */
+.page-wrapper .frappe-card .page-form{
+ background-color:rgba(0,0,0,0.15);
+ transform:translatex(0px) translatey(0px);
+}
 
  
 }
