@@ -1342,9 +1342,9 @@ display: none!important;
 /* Global sidebar */
 #global-sidebar{
  filter: invert(0.87);
- padding-top:110px;
- z-index:100;
- box-shadow:5px 18px 38px 1px rgba(255,255,255,0.86);
+ padding-top:110px!important;
+ z-index:102!important;
+ box-shadow:5px 18px 38px 1px rgba(255,255,255,0.86)!important;
  background-color:rgba(244,244,244,0.9);
 }
 
@@ -1360,5 +1360,9 @@ display: none!important;
  z-index:99;
  backdrop-filter:blur(2.02px);
  background-color:rgba(0,0,0,0.39);
+}
+
+#global-sidebarList a .sidebar-item-label {
+color: #000000;
 }
 }
