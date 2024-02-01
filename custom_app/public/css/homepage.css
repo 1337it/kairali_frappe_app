@@ -1260,5 +1260,9 @@ background-color: #000000;
 /* color: black!important; */
 filter: invert();
 }
+ .standard-sidebar-item:hover {
+background-color: #000000;
+text-decoration: none;
+}
  
 }
