@@ -1342,4 +1342,23 @@ color: #000000;
 .workspace-overlay {
 display: none!important;
 }
+
+/* Layout main section wrapper */
+.page-wrapper .layout-main-section-wrapper{
+ max-width:95%!important;
+}
+
+/* Row */
+.page-wrapper .layout-main{
+ position:relative;
+ left:auto !important;
+ right:0px!important;
+ flex-direction:row!important;
+ justify-content:flex-end!important;
+}
+
+/* Frappe card */
+.page-wrapper .frappe-card{
+ z-index:5!important;
+}
 }
