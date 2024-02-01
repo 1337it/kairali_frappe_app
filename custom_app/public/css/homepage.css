@@ -1268,5 +1268,9 @@ text-decoration: none;
  .page-title .sidebar-toggle-btn {
 --icon-stroke: #ffffff!important;
 }
+
+ .widget.spacer {
+opacity: 0!important;
+}
  
 }
