@@ -824,6 +824,7 @@ width: 30vw!important;
 box-shadow: 0px 0px 15px 1px rgba(51,60,68,0.88)!important;
 }
 .raven-container[data-open-state=true] .raven-header {
+ height: 50px!important;
 border-bottom: 1px solid var(--border-color);
 width:30vw!important;
 }
