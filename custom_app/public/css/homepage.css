@@ -1157,6 +1157,8 @@ fill: rgba(0, 0, 0, 0.21);
  /* Column 4/12 */
  .page-head .justify-between .page-title{
   max-width:16.7%;
+  padding-left: 0.75vw!important;
+padding-right: 0.75vw!important;
  }
 /* Content Division */
 #page-List\/Item\/List{
@@ -1380,8 +1382,8 @@ left: 0px!important;
  display:block!important;
 }
 #global-sidebarList a .icon-lg{
- margin-left:0.5vw!important;
- margin-right:0.55vw!important;
+ margin-left:0.6vw!important;
+ margin-right:0.6vw!important;
 }
 
 .page-title .title-area .title-text
@@ -1413,6 +1415,9 @@ flex-wrap:wrap;
  display:inline-flex;
  flex-direction:column;
  justify-content:center;
+}
+#global-sidebarList li a {
+padding: 0px!important;
 }
 
 }
