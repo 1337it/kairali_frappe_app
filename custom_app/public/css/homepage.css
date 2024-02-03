@@ -1384,13 +1384,11 @@ left: 0px!important;
  margin-right:0.55vw!important;
 }
 
-.title-area div h3 {
-color: rgba(255, 255, 255, 0.65);
-}
 .page-title .title-area .title-text
 {
  padding-left:15px!important;
  max-width:13vw!important;
+ color: rgba(130, 130, 130, 1)!important;
 }
 
 #global-sidebar.opened {
