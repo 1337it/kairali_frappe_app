@@ -1390,6 +1390,7 @@ color: rgba(255, 255, 255, 0.65);
 .page-title .title-area .title-text
 {
  padding-left:15px!important;
+ max-width:13vw!important;
 }
 
 #global-sidebar.opened {
