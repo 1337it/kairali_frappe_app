@@ -831,7 +831,7 @@ width:30vw!important;
  .raven-container[data-open-state=false] {
 height: 120px!important;
 overflow: hidden;
-width: 30vw!important;
+width: 120px!important;
 }
 
 .raven-header .back-button svg {
@@ -927,7 +927,7 @@ background: rgba(0, 0, 0, 0.61)!important;
 
  .raven-container[data-open-state=false] .raven-header {
 border-bottom: 0px solid var(--border-color);
-width: 30vw!important!important;
+width: 120px!important;
 height: 120px!important;
 justify-content: end!important;
 }
