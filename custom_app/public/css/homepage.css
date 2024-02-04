@@ -1341,15 +1341,15 @@ position: fixed;
 height: 100vh!important;
 }
  #global-sidebar {
-width: 48px;
-left: 0;
+width: 48px!important;
+left: 0!important;
 padding: 0px!important;
 transition: all 0.3s ease-in-out!important;
 filter: invert(0.87);
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 6!important;
-background-color: rgba(244,244,244,1);
+background-color: rgba(244,244,244,1)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
