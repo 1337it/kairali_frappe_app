@@ -1148,9 +1148,11 @@ fill: rgba(0, 0, 0, 0.21);
 
  /* Column 4/12 */
  .page-head .justify-between .page-title{
-  max-width:16.7%;
-  padding-left: 0.75vw!important;
+max-width: calc(15vw - 65px);
+padding-left: 55px;
 padding-right: 0.75vw!important;
+display: flex;
+text-align: center;
  }
 /* Content Division */
 #page-List\/Item\/List{
@@ -1416,8 +1418,8 @@ display: none!important;
 
 .page-title .title-area .title-text
 {
- padding-left:15px!important;
- max-width:13vw!important;
+ padding-left:0px!important;
+ max-width:10vw!important;
  font-size:18px!important;
  color: rgba(130, 130, 130, 1)!important;
 }
