@@ -391,7 +391,7 @@ body{
  /* Layout side section */
  .page-wrapper .layout-side-section{
   height:auto;
-  max-width:20%;
+ max-width:48px!important;
  }
  
  /* Layout main section */
