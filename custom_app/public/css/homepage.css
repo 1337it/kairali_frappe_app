@@ -1252,7 +1252,7 @@ text-decoration: none;
 }
 
  .page-title .sidebar-toggle-btn {
---icon-stroke: #ffffff!important;
+display:none!important;
 }
 
  .widget.spacer {
@@ -1404,11 +1404,9 @@ display: none!important;
 
 #globalmenu
 {
-margin-right: 0px!important;;
-margin-left: 0px!important;
-left: 0px!important;
- display:block!important;
+ display:none!important;
 }
+ 
 #global-sidebarList a .icon-lg{
  margin-left:12px!important;
  margin-right:12px!important;
@@ -1420,6 +1418,7 @@ left: 0px!important;
 {
  padding-left:15px!important;
  max-width:13vw!important;
+ font-size:18px!important;
  color: rgba(130, 130, 130, 1)!important;
 }
 
