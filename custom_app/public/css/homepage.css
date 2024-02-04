@@ -1290,13 +1290,12 @@ padding-left:15px!important;
 }
 
 /* Global sidebar */
-#global-sidebar{
- padding-top:110px!important;
-}
 
 /* Sidebar item label */
 #global-sidebarList a .sidebar-item-label{
  color:#ffffff;
+ font-size: 16px!important;
+font-weight: 300!important;
 }
 
 
