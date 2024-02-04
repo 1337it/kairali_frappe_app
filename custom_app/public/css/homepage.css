@@ -1351,7 +1351,7 @@ display: none!important;
 
 /* Layout main section wrapper */
 .page-wrapper .layout-main-section-wrapper{
- max-width:97%!important;
+ max-width:calc(100vw - 48px)!important
 }
 
 /* Row */
@@ -1382,8 +1382,10 @@ left: 0px!important;
  display:block!important;
 }
 #global-sidebarList a .icon-lg{
- margin-left:0.6vw!important;
- margin-right:0.6vw!important;
+ margin-left:12px!important;
+ margin-right:12px!important;
+ width:26px!important;
+ height:26px!important;
 }
 
 .page-title .title-area .title-text
