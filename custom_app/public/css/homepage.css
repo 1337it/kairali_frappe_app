@@ -1310,7 +1310,7 @@ font-weight: 300!important;
 /* Global sidebar */
 #global-sidebar{
  left:0!important;
-  width: 16.6667%!important;
+  width: 15%!important;
 transition: all 0.3s ease-in-out!important;
  filter: invert(0.87);
 top:0px!important;
@@ -1415,6 +1415,9 @@ padding: 0px!important;
 
  .form-footer .btn.icon-btn.btn-default {
 display: none;
+}
+ #global-sidebar.opened:not(:hover) {
+    width: 48px!important;
 }
 
 }
