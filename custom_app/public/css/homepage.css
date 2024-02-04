@@ -1316,13 +1316,13 @@ filter: invert(0.87);
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 6!important;
-background-color: rgba(244,244,244,0.8)!important;
+background-color: rgba(244,244,244,1)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
--webkit-backdrop-filter: 20px!important;
- backdrop-filter: 20px!important;
+
 }
+ 
 #global-sidebar.opened {
 width: 48px;
 left: 0;
@@ -1358,9 +1358,6 @@ position: fixed;
 height: 100vh!important;
 }
 
- #global-sidebar {
-display: none!important;
-}
 
 /* List Item */
 #global-sidebarList li{
