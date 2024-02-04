@@ -1148,8 +1148,8 @@ fill: rgba(0, 0, 0, 0.21);
 
  /* Column 4/12 */
  .page-head .justify-between .page-title{
-max-width: calc(15vw - 65px);
-padding-left: 55px;
+max-width: calc(33.33vw - 100px)!important;
+padding-left: 80px;
 padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
@@ -1333,7 +1333,7 @@ transition: all 0.3s ease-in-out!important;
 filter: invert(0.87);
 top: 0px!important;
 padding-top: 0px!important;
-z-index: 6!important;
+z-index: 7!important;
 background-color: rgba(244,244,244,1);
 padding-left: 0px!important;
 padding-right: 0px!important;
@@ -1419,9 +1419,9 @@ display: none!important;
 .page-title .title-area .title-text
 {
  padding-left:0px!important;
- max-width:10vw!important;
- font-size:18px!important;
- color: rgba(130, 130, 130, 1)!important;
+ max-width:calc(33.3vw - 100px)!important;
+ font-size:20px!important;
+color: rgba(55, 55, 55, 1)!important;
 }
 
 
