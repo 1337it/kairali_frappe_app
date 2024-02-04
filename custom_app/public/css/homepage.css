@@ -761,13 +761,14 @@ transform: translateX(100%)!important;
 /* align-content: center; */
 /* justify-content: center; */
 }
-.raven-container[data-open-state="false"] .raven-logo {
+.raven-container[data-open-state="true"] .raven-logo:after {
 font-weight: 300;
 font-size: 18px!important;
 color: #ffffff;
 padding-right: 0px!important;
 content: "Messenger"!important;
 visibility: visible;
+ padding-left:10px!important;
 /* align-content: center; */
 /* justify-content: center; */
 }
