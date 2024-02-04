@@ -64,10 +64,6 @@ background-color: color(srgb 0.9433 0.9533 0.9575);
   padding-bottom:25px !important;
  }
  
- /* Ellipsis */
- .codex-editor .widget-head .ellipsis{
-  font-size:18px;
- }
  
  /* Bold Tag */
  .codex-editor span b{
