@@ -1457,6 +1457,7 @@ flex-wrap:wrap;
  display:inline-flex;
  flex-direction:column;
  justify-content:center;
+ width:100%!important
 }
 #global-sidebarList li a {
 padding: 0px!important;
