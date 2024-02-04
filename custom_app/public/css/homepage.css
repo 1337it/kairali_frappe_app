@@ -749,13 +749,27 @@ margin-top: 30px;
 margin-bottom: 30px;
 }
 
-.raven-logo:after {
+.raven-container[data-open-state="false"] .raven-logo {
 font-weight: 300;
 font-size: 0!important;
 color: #ffffff;
 padding-right: 0px!important;
 content: url("/files/chat.png")!important;
 visibility: visible;
+scale: 0.3;
+transform: translateX(100%)!important;
+/* align-content: center; */
+/* justify-content: center; */
+}
+.raven-container[data-open-state="false"] .raven-logo {
+font-weight: 300;
+font-size: 18px!important;
+color: #ffffff;
+padding-right: 0px!important;
+content: "Messenger"!important;
+visibility: visible;
+/* align-content: center; */
+/* justify-content: center; */
 }
 
  .raven-logo {
