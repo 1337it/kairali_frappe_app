@@ -1411,6 +1411,7 @@ flex-wrap:wrap;
 }
 #global-sidebarList li a {
 padding: 0px!important;
+ display:flex!important;
 }
 
  .form-footer .btn.icon-btn.btn-default {
