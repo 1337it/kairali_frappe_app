@@ -201,6 +201,10 @@ display: none!important;
  background-color:#ffffff;
  box-shadow:none;
 }
+
+ [data-page-route=Workspaces] .layout-main .layout-main-section {
+border: 1px none var(--border-color)!important;
+}
 /* Layout side section */
 .page-wrapper .layout-side-section{
  box-shadow:-2px 6px 6px 6px rgba(116,135,138,0.44) inset;
