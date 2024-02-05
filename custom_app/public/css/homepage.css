@@ -752,6 +752,7 @@ margin-bottom: 30px;
 .raven-container[data-open-state="false"] .raven-logo {
 font-weight: 300;
 font-size: 0!important;
+ z-index:10!important;
 color: #ffffff;
 padding-right: 0px!important;
 content: url("/files/chat.png")!important;
@@ -769,11 +770,13 @@ padding-right: 0px!important;
 content: "Messenger"!important;
 visibility: visible;
  padding-left:10px!important;
+ z-index:10!important;
 /* align-content: center; */
 /* justify-content: center; */
 }
 
  .raven-logo {
+  
 visibility:hidden;
   font-size:0px!important;
 }
@@ -819,10 +822,12 @@ background-color: transparent!important;
 left: unset!important;
 bottom: 30px!important;
  right: 30px!important;
+ z-index:10!important;
 }
 
 .raven-container[data-open-state=true] {
 overflow: hidden;
+ z-index:10!important;
  height:50vh!important;
 width: 30vw!important;
  backdrop-filter: blur(5px)!important;
@@ -834,11 +839,13 @@ box-shadow: 0px 0px 15px 1px rgba(51,60,68,0.88)!important;
  height: 50px!important;
 border-bottom: 1px solid var(--border-color);
 width:30vw!important;
+ z-index:10!important;
 }
  .raven-container[data-open-state=false] {
 height: 120px!important;
 overflow: hidden;
 width: 120px!important;
+  z-index:10!important;
 }
 
 .raven-header .back-button svg {
@@ -937,6 +944,7 @@ border-bottom: 0px solid var(--border-color);
 width: 120px!important;
 height: 120px!important;
 justify-content: end!important;
+  z-index:10!important;
 }
 .message-item .raven-message-item-header .raven-message-item-header-name {
 font-weight: 400!important;
@@ -953,6 +961,7 @@ color: white!important;
 
  .raven-container {
 transition: all .3s ease-in-out!important;
+  z-index:10!important;
 }
 .rt-Text:where(.rt-r-size-6) {
 font-size: 0;
@@ -973,6 +982,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding-block: 0rem!important;
+z-index:10!important;
 }
 
 /* Header */
