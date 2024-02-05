@@ -485,7 +485,7 @@ display: none!important;
 /* Layout main section */
 .page-wrapper .layout-main-section{
  color:rgb(51, 60, 68);
- box-shadow:0px 0px 2px 0px #ffffff;
+ box-shadow:none!important;
 }
 
 /* Content Division *
