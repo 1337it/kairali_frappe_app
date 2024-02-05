@@ -1484,4 +1484,16 @@ padding: 0px!important;
 display: none;
 }
 
+.layout-main-section.frappe-card {
+border:none!important;
+}
+.page-wrapper .layout-main-section {
+padding-top: 30px !important;
+}
+
+.list-paging-area, .footnote-area {
+border-top:none!important;
+margin-bottom: 30px!important;
+}
+
 }
