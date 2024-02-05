@@ -568,7 +568,7 @@ margin-bottom: 0px;
 
 /* Widget */
 .codex-editor .ce-block .ce-block__content div .widget{
- box-shadow:0px 0px 23px 1px rgba(51,60,68,0.18);
+ box-shadow:0px 0px 23px 1px rgba(51,60,68,0);
 }
 
 /* Widget */
