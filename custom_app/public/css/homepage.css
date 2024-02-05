@@ -89,6 +89,9 @@ background-color: color(srgb 0.9433 0.9533 0.9575);
  *::-webkit-scrollbar {
 display: none!important;
 }
+ element::-webkit-scrollbar {
+display: none!important;
+}
  /* Container */
  #page-Workspaces .page-head .container{
   margin-left:0px;
@@ -458,9 +461,11 @@ height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 60px);
 [data-page-route=Workspaces] .layout-main {
 height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 60px);
 }
-*::-webkit-scrollbar {
-width: 6px;
-height: 6px;
+
+  *::-webkit-scrollbar {
+display: none!important;
+}
+ element::-webkit-scrollbar {
 display: none!important;
 }
 
