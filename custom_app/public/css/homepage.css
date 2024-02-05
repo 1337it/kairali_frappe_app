@@ -9,7 +9,7 @@ background-color: color(srgb 0.9433 0.9533 0.9575);
  
  /* Link item */
  .codex-editor div .link-item{
-  transform:translatex(0px) translatey(0px);
+
   font-size:15px !important;
   text-align:left;
   backdrop-filter: brightness(1.18);
@@ -78,7 +78,7 @@ background-color: color(srgb 0.9433 0.9533 0.9575);
 
  /* Link item */
  .codex-editor div .link-item{
-    transform:translatex(0px) translatey(0px);
+  
   font-size:15px !important;
   text-align:left;
   backdrop-filter: brightness(1.18);
@@ -150,7 +150,7 @@ display: none!important;
  /* Codex editor */
  #editorjs .codex-editor{
   width:100%;
-  transform:translatex(0px) translatey(0px);
+
  }
  
  /* Layout side section */
@@ -177,7 +177,7 @@ display: none!important;
  /* Main section */
  .main-section{
   width:100vw;
-  transform:translatex(0px) translatey(0px);
+
  }
  
  /* Layout main section */
@@ -559,7 +559,7 @@ margin-bottom: 0px;
  /* Frappe card */
  .page-wrapper .frappe-card{
   padding-right:30px;
-  transform:translatex(0px) translatey(0px);
+
  }
 
 /* Widget */
@@ -570,7 +570,6 @@ margin-bottom: 0px;
 /* Widget */
 .codex-editor .ce-block .widget{
  background-color:#ffffff;
- transform:translatex(0px) translatey(0px);
 }
 
 /* Widget head */
@@ -588,7 +587,7 @@ margin-bottom: 0px;
 
  /* Widget */
  .codex-editor .ce-block .ce-block__content div .widget{
-  transform:translatex(0px) translatey(0px);
+
  }
  
 /* Comment box */
