@@ -524,13 +524,13 @@ margin-bottom: 0px;
 /* Layout main section wrapper */
 .page-wrapper .layout-main-section-wrapper{
  background-color:transparent;
- transform:translatex(0px) translatey(0px);
+
 }
 
 /* Layout main section */
 .page-wrapper .layout-main-section{
  background-color:#f0f3f4;
- transform:translatex(0px) translatey(0px);
+
 }
 
 /* Widget */
@@ -725,7 +725,7 @@ filter: saturate(500%);
 /* Kanban */
 .frappe-list .result .kanban{
  background-color:rgba(255,255,255,0);
- transform:translatex(0px) translatey(0px);
+
 }
  .page-wrapper .frappe-list .result .kanban .kanban-column .kanban-cards .kanban-card-wrapper .kanban-card{
  background-color: rgba(228, 228, 228, 0.55) !important;
