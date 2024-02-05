@@ -97,7 +97,7 @@ display: none!important;
   margin-left:0px;
   margin-right:0px;
   max-width:100%;
-  background-image:linear-gradient(to right, #bbd2c5 0%, #536976 100%);
+
  }
  
  /* Container */
@@ -240,8 +240,6 @@ padding-right: 10px!important;
  margin-right:0px;
  height:48px!important;
  margin-left:0px;
- background-color:rgba(142,158,171,0.19);
- background-image:linear-gradient(92deg, #bbd2c5 0%, #536976 100%);
  box-shadow:none;
  position:static;
 }
