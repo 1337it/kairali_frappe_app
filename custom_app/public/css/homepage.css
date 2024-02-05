@@ -840,7 +840,7 @@ width: 30vw!important;
  backdrop-filter: blur(5px)!important;
 -webkit-backdrop-filter: blur(5px)!important;
  background-color: rgba(0, 0, 0, 0.85)!important;
-box-shadow: 0px 0px 15px 1px rgba(51,60,68,0.88)!important;
+box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.50)!important;
 }
 .raven-container[data-open-state=true] .raven-header {
  height: 50px!important;
