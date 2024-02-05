@@ -1347,7 +1347,7 @@ background-color: rgba(244,244,244,1)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
-
+box-shadow: 0 0 5000px 5000px rgba(255, 255, 255, 0.28)!important;
 }
  
 #global-sidebar.opened {
