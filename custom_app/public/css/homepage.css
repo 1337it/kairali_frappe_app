@@ -1347,7 +1347,6 @@ transition: all 0.3s ease-in-out!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 7!important;
-background-color: rgba(255, 255, 255, 1)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
@@ -1372,82 +1371,78 @@ height: 100vh!important;
  box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.44);
 }
 
-#global-sidebarList a .sidebar-item-label {
-color: #adacac!important;
-}
-
 [data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
 color:white!important;
 }
 
 [data-route="Workspaces/Home"] [href="/app/home"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Raven"] [href="/app/raven"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Recruitment"] [href="/app/recruitment"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/ERPNext Settings"] [href="/app/erpnext-settings"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Build"] [href="/app/build"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/ERPNext Integrations"] [href="/app/erpnext-integrations"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Payroll"] [href="/app/payroll"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Manufacturing"] [href="/app/manufacturing"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Quality"] [href="/app/quality"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/HR"] [href="/app/hr"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Support"] [href="/app/support"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Projects"] [href="/app/projects"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Assets"] [href="/app/assets"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Stock"] [href="/app/stock"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Accounting"] [href="/app/accounting"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Integrations"] [href="/app/integrations"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Users"] [href="/app/users"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Tools"] [href="/app/tools"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Website"] [href="/app/website"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Buying"] [href="/app/buying"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/Selling"] [href="/app/selling"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 [data-route="Workspaces/CRM"] [href="/app/crm"] .icon-lg {
---icon-stroke: #eeeeee!important;
+--icon-stroke: #ffffff!important;
 }
 
 [data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
@@ -1589,7 +1584,7 @@ display: none!important;
  height:26px!important;
 }
 #global-sidebarList a .icon-lg{
---icon-stroke: #7e7e7e!important;
+--icon-stroke: #707070;
 }
 
 .page-title .title-area .title-text
@@ -1610,7 +1605,9 @@ flex-wrap:wrap;
 #content{
  height:100vh;
 }
-
+#global-sidebar a {
+color: #787878;
+}
 /* Global sidebar list */
 #global-sidebarList{
  flex-wrap:wrap;
