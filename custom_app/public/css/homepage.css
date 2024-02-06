@@ -1638,4 +1638,8 @@ border-top:none!important;
 margin-bottom: 30px!important;
 }
 
+#global-sidebarList li a:hover {
+background-color: #181818!important;
+}
+
 }
