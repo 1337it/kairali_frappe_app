@@ -1228,9 +1228,10 @@ padding-left: 5px;
 position: fixed;
 left: 48px;
 width: calc(100vw - 48px);
-padding-left: 40px;
+padding-left: 35px;
 padding-right: 55px;
 top:132px;
+ z-index:5;
 }
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
@@ -1244,9 +1245,9 @@ height:38px;
 
 /* Page form */
 .page-wrapper .frappe-card .page-form{
-background-color: rgba(255, 255, 255, 0.58);
-padding-left: 30px;
-padding-right: 30px;
+filter:invert();
+padding-left: 30px!important;
+padding-right: 30px!important;
 }
 
 .text-base.font-medium.text-gray-900.leading-none {
@@ -1656,13 +1657,13 @@ margin-bottom: 30px!important;
 background-color: #181818!important;
 }
 .list-row-head {
-
+background-color: #060606!important;
 height: 38px!important;
 }
 
 .page-form {
 margin: 0!important;
-border-bottom: 0.5px none grey!important;
+border-bottom: 0.5px solid grey!important;
 width: calc(100vw - 48px)!important;
 left: 48px!important;
 position: fixed!important;
