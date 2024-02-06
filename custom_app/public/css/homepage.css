@@ -1213,7 +1213,6 @@ text-align: center;
 
 /* Text muted */
 .frappe-list .result header.text-muted{
-filter: invert(0.8);
 margin-left: 0px;
 margin-right: 0px;
 margin-top: 0px;
@@ -1657,7 +1656,7 @@ margin-bottom: 30px!important;
 background-color: #181818!important;
 }
 .list-row-head {
-background-color: black!important;
+background-color: white!important;
 height: 38px!important;
 }
 
@@ -1696,7 +1695,7 @@ overflow: hidden;
 text-overflow: ellipsis;
 max-width: 100%;
 vertical-align: middle;
-color: white!important;
+color: black!important;
 }
 
 }
