@@ -1565,7 +1565,7 @@ display: none!important;
 
 /* Frappe card */
 .page-wrapper .frappe-card{
- z-index:5!important;
+ z-index:3!important;
 }
 
 .page-wrapper .layout-main .layout-main-section-wrapper
