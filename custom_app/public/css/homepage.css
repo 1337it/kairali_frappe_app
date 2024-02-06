@@ -1213,18 +1213,23 @@ text-align: center;
 
 /* Text muted */
 .frappe-list .result header.text-muted{
- filter: invert(0.8);
- margin-left:0px;
- margin-right:0px;
- margin-top:10px;
- margin-bottom:2px;
- border-top-left-radius:5px;
- border-top-right-radius:5px;
- border-bottom-left-radius:0px;
- border-bottom-right-radius:0px;
- padding-bottom:15px;
- padding-right:20px;
- padding-left:5px;
+filter: invert(0.8);
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 10px;
+margin-bottom: 2px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+padding-bottom: 15px;
+padding-right: 20px;
+padding-left: 5px;
+position: fixed;
+left: 48px;
+width: calc(100vw - 48px);
+padding-left: 40px;
+padding-right: 55px;
 }
 
 /* Standard filter section */
@@ -1234,7 +1239,9 @@ text-align: center;
 
 /* Page form */
 .page-wrapper .frappe-card .page-form{
- background-color:rgba(0,0,0,0.15);
+background-color: rgba(51, 51, 51, 1);
+padding-left: 30px;
+padding-right: 30px;
 }
 
 .text-base.font-medium.text-gray-900.leading-none {
@@ -1246,6 +1253,12 @@ font-size: 16px;
 visibility: visible;
   content:"Drive";
 }
+.page-form
+{
+ 
+ 
+}
+
 #headlessui-menu-item-3 {
 display: none;
 }
@@ -1368,7 +1381,6 @@ display: block!important;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
- box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.44);
 }
 
 [data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
@@ -1637,6 +1649,17 @@ margin-bottom: 30px!important;
 
 #global-sidebarList li a:hover {
 background-color: #181818!important;
+}
+
+
+.page-form {
+margin: 0!important;
+border-bottom: 0.5px solid grey!important;
+width: calc(100vw - 48px)!important;
+left: 48px!important;
+position: fixed!important;
+top: 97px!important;
+z-index: 5!important;
 }
 
 }
