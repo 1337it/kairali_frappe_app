@@ -1348,7 +1348,7 @@ transition: all 0.3s ease-in-out!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 7!important;
-background-color: rgba(46,46,46,1)!important;
+background-color: rgba(255, 255, 255, 1)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
@@ -1370,6 +1370,7 @@ display: block!important;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
+ box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.44);
 }
 #global-sidebarList a .sidebar-item-label {
 color: #505050!important;
@@ -1527,7 +1528,7 @@ transition: all 0.3s ease-in-out!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 6!important;
-background-color: rgba(11,11,11,1)!important;
+background-color: rgba(36, 36, 36, 1)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
