@@ -1230,16 +1230,21 @@ left: 48px;
 width: calc(100vw - 48px);
 padding-left: 40px;
 padding-right: 55px;
+top:132px;
 }
 
+.layout-main-section .frappe-list, .layout-main-section .report-wrapper {
+padding: 0!important;
+margin-top: 30px!important;;
+}
 /* Standard filter section */
 .frappe-card .page-form .standard-filter-section{
- height:36px;
+height:38px;
 }
 
 /* Page form */
 .page-wrapper .frappe-card .page-form{
-background-color: rgba(51, 51, 51, 1);
+background-color: rgba(255, 255, 255, 0.58);
 padding-left: 30px;
 padding-right: 30px;
 }
@@ -1255,8 +1260,8 @@ visibility: visible;
 }
 .page-form
 {
- 
- 
+ height:38px!important;
+ padding:0px!important;
 }
 
 #headlessui-menu-item-3 {
@@ -1650,28 +1655,31 @@ margin-bottom: 30px!important;
 #global-sidebarList li a:hover {
 background-color: #181818!important;
 }
+.list-row-head {
 
+height: 38px!important;
+}
 
 .page-form {
 margin: 0!important;
-border-bottom: 0.5px solid grey!important;
+border-bottom: 0.5px none grey!important;
 width: calc(100vw - 48px)!important;
 left: 48px!important;
 position: fixed!important;
-top: 97px!important;
+top: 96px!important;
 z-index: 5!important;
 }
 
 .awesomplete .input-with-feedback {
-background-color: #4a4a4a!important;
+border: 0.5px solid rgba(0, 0, 0, 0.3)!important;
 color: #e4e4e4!important;
-border: 0.5px solid #000000!important;
+background-color: #ffffff!important;
 }
 
 .form-control {
-border: 0.5px solid #000000!important;
+border: 0.5px solid rgba(0, 0, 0, 0.3)!important;
 color: #e4e4e4!important;
-background-color: #4a4a4a!important;
+background-color: #ffffff!important;
 }
 
 .layout-main-section .frappe-list .freeze {
