@@ -1216,7 +1216,7 @@ text-align: center;
 filter: invert(0.8);
 margin-left: 0px;
 margin-right: 0px;
-margin-top: 10px;
+margin-top: 0px;
 margin-bottom: 2px;
 border-top-left-radius: 0px;
 border-top-right-radius: 0px;
@@ -1676,6 +1676,7 @@ background-color: #4a4a4a!important;
 
 .layout-main-section .frappe-list .freeze {
 height: 34px!important;
+ min-height: 34px!important;
 opacity: 0!important;
 display: block!important;
 }
