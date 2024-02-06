@@ -1662,4 +1662,22 @@ top: 97px!important;
 z-index: 5!important;
 }
 
+.awesomplete .input-with-feedback {
+background-color: #4a4a4a!important;
+color: #e4e4e4!important;
+border: 0.5px solid #000000!important;
+}
+
+.form-control {
+border: 0.5px solid #000000!important;
+color: #e4e4e4!important;
+background-color: #4a4a4a!important;
+}
+
+.layout-main-section .frappe-list .freeze {
+height: 34px!important;
+opacity: 0!important;
+display: block!important;
+}
+
 }
