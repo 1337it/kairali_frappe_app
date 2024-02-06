@@ -1657,7 +1657,7 @@ margin-bottom: 30px!important;
 background-color: #181818!important;
 }
 .list-row-head {
-background-color: #060606!important;
+background-color: black!important;
 height: 38px!important;
 }
 
@@ -1688,6 +1688,15 @@ height: 34px!important;
  min-height: 34px!important;
 opacity: 0!important;
 display: block!important;
+}
+
+.frappe-list .ellipsis {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+max-width: 100%;
+vertical-align: middle;
+color: white!important;
 }
 
 }
