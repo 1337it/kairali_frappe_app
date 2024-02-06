@@ -746,7 +746,8 @@ padding-right: 10px;
 
 .form-footer {
 padding: 30px;
- z-index:-1;
+z-index: -1;
+display: none;
 }
 .comment-box .comment-input-container .frappe-control .ql-editor {
 background-color: #ffffff!important;
