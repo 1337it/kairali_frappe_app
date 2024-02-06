@@ -1060,7 +1060,6 @@ z-index:10!important;
 /* Layout main section */
 .page-wrapper .layout-main-section{
  position:relative;
- top:-50px;
  background-color:transparent;
  border-left-style:none !important;
 }
@@ -1629,9 +1628,6 @@ display: none;
 
 .layout-main-section.frappe-card {
 border:none!important;
-}
-.page-wrapper .layout-main-section {
-padding-top: 30px !important;
 }
 
 .list-paging-area, .footnote-area {
