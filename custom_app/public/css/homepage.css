@@ -676,6 +676,7 @@ overflow-y: auto;
  align-items:center;
  width:100% !important;
  border-radius:5px;
+ filter:saturate(20);
 }
 
 /* Link */
@@ -722,7 +723,7 @@ background: rgba(255, 255, 255, 0.26);
 
 /* Kanban */
 .frappe-list .result .kanban {
-filter: saturate(500%);
+filter: saturate(1);
 }
 
  #navbar-breadcrumbs li a{
