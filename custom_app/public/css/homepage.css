@@ -1373,6 +1373,8 @@ padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
 box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.28)!important;
+  -webkit-backdrop-filter: blur(10px);
+ backdrop-filter: blur(10px);
 }
  
 #global-sidebar.opened {
@@ -1383,13 +1385,15 @@ transition: all 0.3s ease-in-out!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 7!important;
-background-color: rgba(46,46,46,1)!important;
+background-color: rgba(27, 27, 27, 0.8)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
+ -webkit-backdrop-filter: blur(100px);
+ backdrop-filter: blur(100px);
 }
 
 [data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
