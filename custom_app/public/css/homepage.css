@@ -1739,4 +1739,9 @@ border-bottom: 0.5px dotted rgba(0, 0, 0, 0.64)!important;
 padding: var(--padding-xs);
 }
 
+.form-tab-content {
+scroll-margin-top: calc(var(--navbar-height) + 52px);
+margin-top: 50px!important;
+}
+
 }
