@@ -1244,7 +1244,6 @@ height:38px;
 
 /* Page form */
 .page-wrapper .frappe-card .page-form{
-filter:invert();
 padding-left: 30px!important;
 padding-right: 30px!important;
 }
@@ -1656,7 +1655,9 @@ margin-bottom: 30px!important;
 background-color: #181818!important;
 }
 .list-row-head {
-background-color: white!important;
+ background-color: rgba(255, 255, 255, 0.70)!important;
+ -webkit-backdrop-filter: blur(10px);
+ backdrop-filter: blur(10px);
 height: 38px!important;
 }
 
@@ -1668,6 +1669,10 @@ left: 48px!important;
 position: fixed!important;
 top: 96px!important;
 z-index: 5!important;
+ background-color: rgba(255, 255, 255, 0.70)!important;
+ -webkit-backdrop-filter: blur(10px);
+ backdrop-filter: blur(10px);
+ 
 }
 
 .awesomplete .input-with-feedback {
@@ -1678,8 +1683,13 @@ background-color: #ffffff!important;
 
 .form-control {
 border: 0.5px solid rgba(0, 0, 0, 0.3)!important;
-color: #e4e4e4!important;
+color: #3d3d3d!important;
 background-color: #ffffff!important;
+}
+.page-form .form-control {
+border: 0.5px solid rgba(0, 0, 0, 0.3)!important;
+color: #dadada!important;
+background-color: #d1d1d1!important;
 }
 
 .layout-main-section .frappe-list .freeze {
