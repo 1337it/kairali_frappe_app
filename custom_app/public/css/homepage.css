@@ -320,10 +320,10 @@ body{
  border-top-right-radius:0px;
  border-bottom-left-radius:0px;
  border-bottom-right-radius:0px;
- padding-left:30px !important;
- padding-top:30px !important;
- padding-right:30px !important;
- padding-bottom:30px !important;
+ padding-left:0px !important;
+ padding-top:0px !important;
+ padding-right:0px !important;
+ padding-bottom:0px !important;
  margin-left:0px;
 }
 
@@ -1713,8 +1713,8 @@ z-index:4!important;
 .form-tabs-list .form-tabs {
 justify-content: center!important;
 position: fixed!important;
-top: 98px!important;
-width: calc(100vw - 115px)!important;
+top: 96px!important;
+width: calc(100vw - 48px)!important;
  padding: 0px!important;
  margin: 0px!important;
 left: 48px!important;
@@ -1722,4 +1722,15 @@ background-color: rgba(255, 255, 255, 0.69)!important;
 -webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid #525252!important;
 }
+
+.std-form-layout>.form-layout>.form-page {
+border-radius: 0!important;
+border: 1px none var(--border-color)!important;
+box-shadow: none;
+background-color: rgba(255, 255, 255, 0.37);
+/* margin-top: 50px; */
+padding-left: 30px!important;
+padding-bottom: 30px!important;
+padding-right: 30px!important;
+
 }
