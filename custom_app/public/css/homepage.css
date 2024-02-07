@@ -1702,6 +1702,10 @@ max-width: 100%;
 vertical-align: middle;
 color: black!important;
 }
+.container  {
 
+max-width:100%!important;
+ 
+}
 
 }
