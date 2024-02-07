@@ -674,6 +674,7 @@ overflow-y: auto;
  justify-content:normal;
  align-items:center;
  width:100% !important;
+ border-radius:5px;
 }
 
 /* Link */
@@ -714,7 +715,7 @@ margin-bottom: 5px;
 border-width: 0.5px;
 border-color: #d8d8d8;
 border-style: none;
-background: rgba(0, 0, 0, 0.2);
+background: rgba(255, 255, 255, 0.26);
 }
 
 
@@ -1392,8 +1393,8 @@ display: block!important;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
- -webkit-backdrop-filter: blur(100px);
- backdrop-filter: blur(100px);
+ -webkit-backdrop-filter: blur(20px);
+ backdrop-filter: blur(20px);
 }
 
 [data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
@@ -1642,6 +1643,7 @@ color: #787878;
  justify-content:center;
  width:100%!important
 }
+
 #global-sidebarList li a {
 padding: 0px!important;
  display:flex!important;
@@ -1753,8 +1755,8 @@ scroll-margin-top: calc(var(--navbar-height) + 52px);
 margin-top: 70px!important;
 background-color: rgba(255, 255, 255, 0)!important;
 }
+
 [data-route^=Form] .page-wrapper .layout-main-section {
 background: rgba(255, 255, 255, 0)!important;
-
 }
 }
