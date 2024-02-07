@@ -1709,4 +1709,11 @@ max-width:100%!important;
 {
 z-index:4!important;
 }
+
+.form-tabs-list .form-tabs {
+justify-content: center!important;
+position: fixed!important;
+top: 98px!important;
+width: calc(100vw - 48px)!important;
+}
 }
