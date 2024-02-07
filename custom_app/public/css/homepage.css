@@ -401,7 +401,10 @@ body{
   width:100%;
  }
  
-
+[data-page-route^=List/Task/Kanban] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
+padding-left: 0!important;
+margin-top: 0px!important;
+}
 
  /* Layout side section */
  .page-wrapper .layout-side-section{
