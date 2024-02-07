@@ -1702,9 +1702,11 @@ vertical-align: middle;
 color: black!important;
 }
 .container  {
-
 max-width:100%!important;
- 
 }
 
+.form-tabs-list
+{
+z-index:4!important;
+}
 }
