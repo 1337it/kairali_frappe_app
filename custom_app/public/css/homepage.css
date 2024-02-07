@@ -1732,5 +1732,11 @@ background-color: rgba(255, 255, 255, 0.37);
 padding-left: 30px!important;
 padding-bottom: 30px!important;
 padding-right: 30px!important;
+}
+
+.form-dashboard-section {
+border-bottom: 0.5px dotted rgba(0, 0, 0, 0.64)!important;
+padding: var(--padding-xs);
+}
 
 }
