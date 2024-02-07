@@ -267,7 +267,7 @@ padding-right: 10px!important;
  display:inline-block;
  padding-left:30px;
  padding-top:30px;
- padding-right:30px;
+ padding-right:30px!important;
  padding-bottom:30px;
 }
  [data-route^=Form] .page-wrapper .layout-main-section-wrapper{
@@ -453,7 +453,7 @@ body{
  
  /* Container */
  .main-section #body #page-List\/Warehouse\/List .page-head .container{
-  width:100% !important;
+   width:100% !important;
  }
  
 
