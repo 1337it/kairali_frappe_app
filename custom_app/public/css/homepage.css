@@ -401,7 +401,7 @@ body{
   width:100%;
  }
  
-[data-route^=List/Task/Kanban] .layout-main-section .frappe-list {
+body[data-route^=List/Task/Kanban] .layout-main-section .frappe-list {
 padding-left: 0!important;
 margin-top: 0px!important;
 }
