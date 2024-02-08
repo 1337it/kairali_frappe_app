@@ -1678,6 +1678,7 @@ background-color: #181818!important;
  -webkit-backdrop-filter: blur(10px);
  backdrop-filter: blur(10px);
 height: 38px!important;
+ border: 0.5px solid rgba(116, 116, 116, 0.39)!important;
 }
 
 .page-form {
@@ -1781,7 +1782,9 @@ background: rgb(203, 203, 203)!important;
 background-color: rgba(255, 255, 255, 0)!important;
 }
 .btn:not(.btn-md):not(.btn-lg) {
-padding: 4px 40px!important;;
+padding: 4px 40px!important;
+ border: 0.5px solid rgba(88, 88, 88, 0.46)!important;
+ 
 }
 
 .grid-row-open .form-in-grid {
