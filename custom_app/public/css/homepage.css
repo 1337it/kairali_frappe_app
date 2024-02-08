@@ -871,7 +871,6 @@ width:30vw!important;
  .raven-container[data-open-state=false] {
 height: 120px!important;
 overflow: hidden;
-width: 120px!important;
   z-index:10!important;
 }
 
