@@ -939,9 +939,7 @@ color: #ffffff!important;
 
 .raven-chat-view .raven-chat-view-container .raven-chat-input {
 position: fixed;
-bottom: 30px!important;
  left: unset!important;
- right: 30px!important;
 display: flex!important;
 gap: .5rem!important;
 min-height: 60px!important;
