@@ -1782,5 +1782,12 @@ background: rgb(203, 203, 203)!important;
 {
 background-color: rgba(255, 255, 255, 0)!important;
 }
+.btn:not(.btn-md):not(.btn-lg) {
+padding: 4px 40px!important;;
+}
+
+.grid-row-open .form-in-grid {
+box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.40)!important;
+}
 
 }
