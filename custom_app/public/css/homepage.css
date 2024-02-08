@@ -1789,5 +1789,8 @@ box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.40)!important;
 {
 z-index:4!important;
 }
+* {
+    scrollbar-width: none;
+}
  
 }
