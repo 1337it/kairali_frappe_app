@@ -510,7 +510,7 @@ display: none!important;
 }
 
 .page-head {
-z-index: 6;
+z-index: 1000!important;
 position: fixed!important;
 top: var(--navbar-height)!important;
 margin-bottom: 0px;
@@ -1393,7 +1393,7 @@ padding: 0px!important;
 transition: all 0.3s ease-in-out!important;
 top: 0px!important;
 padding-top: 0px!important;
-z-index: 7!important;
+z-index: 700!important;
 background-color: rgba(27, 27, 27, 0.9)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
@@ -1724,10 +1724,7 @@ color: black!important;
 max-width:100%!important;
 }
 
-.form-tabs-list
-{
-z-index:4!important;
-}
+
 
 .form-tabs-list .form-tabs {
 justify-content: center!important;
@@ -1740,6 +1737,7 @@ left: 0px!important;
 background-color: rgba(255, 255, 255, 0.69)!important;
 -webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid #525252!important;
+ z-index:800!important;
 }
 
 .std-form-layout>.form-layout>.form-page {
