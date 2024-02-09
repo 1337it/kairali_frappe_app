@@ -1800,8 +1800,8 @@ z-index:4!important;
  height: calc(var(--raven-content-height) - 30vh - 78px)!important;
 }
 
-.navbar .navbar-collapse{
- margin-right:28px!important;
+.main-section .navbar .container .navbar-collapse form{
+ margin-right:60px!important;
 }
 .navbar .navbar-collapse form{
  justify-content:center !important;
