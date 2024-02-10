@@ -872,7 +872,7 @@ width:30vw!important;
  z-index:10!important;
 }
  .raven-container[data-open-state=false] {
-height: 80px!important;
+height: 1200px!important;
 overflow: hidden;
   z-index:10!important;
   min-width:80px!important
@@ -969,8 +969,8 @@ background: rgba(0, 0, 0, 0.61)!important;
 
  .raven-container[data-open-state=false] .raven-header {
 border-bottom: 0px solid var(--border-color);
-min-width: 80px!important;
-height: 80px!important;
+width: 100px!important;
+height: 100px!important;
 justify-content: end!important;
   z-index:10!important;
 }
