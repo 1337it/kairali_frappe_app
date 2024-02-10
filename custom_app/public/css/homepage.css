@@ -1810,12 +1810,23 @@ z-index:4!important;
 
 .main-section .navbar .container .navbar-collapse form{
  margin-right:60px!important;
+  margin-left:0px !important;
+  margin-right:0px !important;
 }
 .navbar .navbar-collapse form{
  justify-content:center !important;
+  max-width:40vw!important;;
 }
  .navbar-collapse .form-inline .input-group{
-  max-width:50%!important;
+  max-width:100%!important;
  }
- 
+ .navbar .navbar-collapse{
+ max-width:70vw!important;;
+ justify-content:space-between !important;
+}
+
+#navbar-breadcrumbs{
+ min-width:25%!important;;
+  display:flex!important;;
+}
 }
