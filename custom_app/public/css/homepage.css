@@ -1821,7 +1821,7 @@ z-index:4!important;
   max-width:100%!important;
  }
  .navbar .navbar-collapse{
- max-width:70vw!important;;
+ max-width:calc(70vw - 10px)!important;;
  justify-content:space-between !important;
 }
 
