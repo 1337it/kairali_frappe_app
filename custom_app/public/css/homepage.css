@@ -872,9 +872,10 @@ width:30vw!important;
  z-index:10!important;
 }
  .raven-container[data-open-state=false] {
-height: 120px!important;
+height: 80px!important;
 overflow: hidden;
   z-index:10!important;
+  min-width:80px!important
 }
 
 .raven-header .back-button svg {
@@ -968,8 +969,8 @@ background: rgba(0, 0, 0, 0.61)!important;
 
  .raven-container[data-open-state=false] .raven-header {
 border-bottom: 0px solid var(--border-color);
-width: auto!important;
-height: 120px!important;
+min-width: 80px!important;
+height: 80px!important;
 justify-content: end!important;
   z-index:10!important;
 }
@@ -1828,5 +1829,9 @@ z-index:4!important;
 #navbar-breadcrumbs{
  min-width:25%!important;;
   display:flex!important;;
+}
+
+.raven-container[data-open-state=false] .raven-content-container {
+display: none!important;
 }
 }
