@@ -516,6 +516,8 @@ top: var(--navbar-height)!important;
 margin-bottom: 0px;
 transition: .5s top;
  width:100%!important;
+ -webkit-transform:translate3d(0,0,0);
+ -webkit-backface-visibility: hidden;
 }
  
 /* Import Google Fonts */
@@ -987,6 +989,8 @@ color: white!important;
  .raven-container {
 transition: all .3s ease-in-out!important;
   z-index:10!important;
+  -webkit-transform:translate3d(0,0,0);
+ -webkit-backface-visibility: hidden;
 }
 .rt-Text:where(.rt-r-size-6) {
 font-size: 0;
@@ -1373,6 +1377,8 @@ font-weight: 300!important;
 left: 0!important;
 width: 15%!important;
 transition: all 0.3s ease-in-out!important;
+ -webkit-transform:translate3d(0,0,0);
+ -webkit-backface-visibility: hidden;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 7!important;
@@ -1549,6 +1555,8 @@ color:white!important;
 width: 48px!important;
 left: 0!important;
 padding: 0px!important;
+  -webkit-transform:translate3d(0,0,0);
+ -webkit-backface-visibility: hidden;
 transition: all 0.3s ease-in-out!important;
 top: 0px!important;
 padding-top: 0px!important;
