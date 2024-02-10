@@ -988,7 +988,7 @@ color: white!important;
 }
 
  .raven-container {
-transition: all .3s ease-in-out!important;
+transition: width .3s ease-in-out, height .3s ease-in-out!important;
   z-index:10!important;
   -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
@@ -1377,7 +1377,7 @@ font-weight: 300!important;
 #global-sidebar:hover {
 left: 0!important;
 width: 15%!important;
-transition: all 0.3s ease-in-out!important;
+transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out!important;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
 top: 0px!important;
@@ -1393,7 +1393,7 @@ box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.40), 0 0 50px 1px rgba(0, 0, 0, 0.
 width: 48px;
 left: 0;
 padding: 0px!important;
-transition: all 0.3s ease-in-out!important;
+transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 700!important;
@@ -1558,7 +1558,7 @@ left: 0!important;
 padding: 0px!important;
   -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
-transition: all 0.3s ease-in-out!important;
+transition: width 0.3s ease-in-out, box-shadow 0.3s ease-in-out!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 6!important;
