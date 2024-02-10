@@ -1802,6 +1802,9 @@ padding: 4px 40px!important;
 .grid-row-open .form-in-grid {
 box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.40)!important;
 }
+.search-bar .awesomplete ul{
+box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.40)!important;
+}
 .form-tabs-list
 {
 z-index:4!important;
