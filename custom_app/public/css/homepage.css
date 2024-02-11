@@ -1176,14 +1176,15 @@ fill: rgba(0, 0, 0, 0.21);
 /* Button */
 .page-actions .custom-actions .ellipsis{
  box-shadow:0px 0px 50px 1px rgba(56,56,56,0.26);
- background-color:#6b6b6b;
- color:#ffffff;
+ background-color:#ffffff!important;
+ color:#6b6b6b!important;
 }
 
 /* Button */
 .page-actions .standard-actions .btn-secondary{
  box-shadow:0px 0px 27px 1px rgba(56,56,56,0.33);
- background-color:#5e5e5e;
+ background-color:#ffffff!important;
+ color:#6b6b6b!important;
 }
 
 /* Icon */
