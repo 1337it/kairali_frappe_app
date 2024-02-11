@@ -292,6 +292,9 @@ padding-right: 10px!important;
 /* Row */
 .main-section #body #page-Workspaces .page-head .container .justify-between{
  width:100% !important;
+ background-image: url("/files/dotsholes.jpg")!important;
+background-size: cover!important;
+filter: opacity(0.8);
 }
 
 
@@ -1617,6 +1620,13 @@ display: none!important;
 }
 
 [data-page-route^="List"] .layout-main-section-wrapper{
+
+  background-image:url("/files/White_texture.jpg") !important;
+
+ 
+}
+
+[data-route^="Form"] .layout-main-section-wrapper{
 
   background-image:url("/files/White_texture.jpg") !important;
 }
