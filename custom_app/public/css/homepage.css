@@ -290,7 +290,7 @@ padding-right: 10px!important;
 }
 
 /* Row */
-.main-section #body #page-Workspaces .page-head .container .justify-between{
+ .page-head .container .justify-between{
  width:100% !important;
  background-image: url("/files/dotsholes.jpg")!important;
 background-size: cover!important;
