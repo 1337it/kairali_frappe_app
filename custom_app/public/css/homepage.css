@@ -1863,12 +1863,13 @@ display: none!important;
 .control-label {
 margin-bottom: 6px;
 font-size: calc(var(--text-sm) + 2px)!important;
-color: black;
+color: rgb(80, 80,80)!important;
 }
 
 .checkbox .label-area
 {
  font-size: calc(var(--text-sm) + 2px)!important;
+ color: rgb(80, 80,80)!important;
 }
 
 }
