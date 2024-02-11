@@ -1854,4 +1854,9 @@ z-index:4!important;
 .raven-container[data-open-state=false] .raven-content-container {
 display: none!important;
 }
+
+.title-area div h3{
+ text-shadow:rgba(0, 0, 0, 0.3) 0px 0.5px 0.5px!important;
+}
+
 }
