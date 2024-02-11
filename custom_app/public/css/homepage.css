@@ -1628,7 +1628,7 @@ display: none!important;
 
 [data-route^="Form"] .layout-main-section-wrapper{
 
-  background-image:url("/files/Clean_paper.jpg") !important;
+  background:white!important;
  background-size:contain!important;
 }
 
