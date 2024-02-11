@@ -1611,9 +1611,14 @@ display: none!important;
  z-index:3!important;
 }
 
-.page-wrapper .layout-main .layout-main-section-wrapper
+.page-wrapper .layout-main
 {
  background-image:url("/files/bg1.jpg")!important;
+}
+
+[data-page-route^="List"] .layout-main-section-wrapper{
+
+  background-image:url("/files/White_texture.jpg") !important;
 }
 
 #globalmenu
