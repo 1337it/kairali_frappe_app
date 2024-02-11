@@ -1628,7 +1628,8 @@ display: none!important;
 
 [data-route^="Form"] .layout-main-section-wrapper{
 
-  background-image:url("/files/White_texture.jpg") !important;
+  background-image:url("/files/Clean_paper.jpg") !important;
+ background-size:contain!important;
 }
 
 #globalmenu
