@@ -1794,10 +1794,11 @@ background: rgba(255, 255, 255, 0)!important;
 }
 .form-tabs-list .form-tabs .nav-item .nav-link {
 padding: 10px!important;
+ color:#bbbbbb!important;
 }
 .form-tabs-list .form-tabs .nav-item .nav-link.active {
 border: 0px solid var(--primary)!important;
-color: #bebebe!important;
+color: black!important;
 /* padding-left: 10px; */
 /* padding-right: 10px; */
 background: rgb(255, 255, 255)!important;
