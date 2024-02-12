@@ -1617,12 +1617,6 @@ display: none!important;
  background-image:url("/files/bg1.jpg")!important;
 }
 
-[data-page-route^="List"] .layout-main-section-wrapper{
-
-  background-image:url("/files/White_texture.jpg") !important;
-
- 
-}
 
 [data-route^="Form"] .layout-main-section-wrapper{
 
