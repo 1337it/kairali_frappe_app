@@ -1175,9 +1175,9 @@ fill: rgba(0, 0, 0, 0.21);
 }
 /* Button */
 .page-actions .custom-actions .ellipsis{
- box-shadow:0px 0px 50px 1px rgba(56,56,56,0.26);
+ box-shadow:0px 0px 50px 1px rgba(56,56,56,0);
  background-color:#ffffff!important;
- color:#6b6b6b!important;
+ color:#3d3d3d!important;
 }
 
 /* Button */
