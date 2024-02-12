@@ -1187,14 +1187,11 @@ fill: rgba(0, 0, 0, 0.21);
  color:#6b6b6b!important;
 }
 
-/* Icon */
-.standard-actions .btn-secondary .es-icon{
- filter: brightness(10);
-}
+
 
 /* Span Tag */
 .standard-actions .btn-secondary .hidden-xs > span{
- color:#ffffff;
+ color:#000000;
 }
 
 /* Use */
