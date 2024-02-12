@@ -1870,4 +1870,12 @@ color: rgb(80, 80,80)!important;
  color: rgb(80, 80,80)!important;
 }
 
+.form-section .section-head, .form-dashboard-section .section-head {
+
+font-size: calc(var(--text-lg) + 2px)!important;
+ text-align: center!important;
+ background: whitesmoke!important;
+ 
+}
+
 }
