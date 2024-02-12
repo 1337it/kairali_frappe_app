@@ -1871,5 +1871,8 @@ font-size: calc(var(--text-lg) + 2px)!important;
  background: whitesmoke!important;
  
 }
+.list-sidebar .sidebar-section {
 
+display:none!important;
+}
 }
