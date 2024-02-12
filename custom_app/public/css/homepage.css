@@ -1753,7 +1753,7 @@ width: 100vw!important;
  padding: 0px!important;
  margin: 0px!important;
 left: 0px!important;
-background-color: var(--black-overlay-800)!important;
+background-color: rgba(0,0,0,0.8)!important;
 -webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px none #525252!important;
  z-index:800!important;
