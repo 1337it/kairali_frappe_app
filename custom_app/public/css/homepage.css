@@ -1,4 +1,35 @@
- .page-head .container .justify-between{
+.layout-main .layout-side-section {
+display: none!important;
+}
+.raven-container[data-open-state=false] .back-button {
+display: none!important;
+}
+.raven-container[data-open-state=false] .open-raven-button {
+/* padding: 4px 8px; */
+display: none!important;
+}
+.sidebar-item-label {
+color: white!important;
+}
+.icon, .es-icon {
+--icon-stroke: white!important;
+}
+#global-sidebarList li {
+border-bottom: 1px none #ccc!important;
+}
+#global-sidebar {
+position: fixed;
+top: 0;
+left: -100%;
+width: 300px;
+padding: 10px;
+height: 100%;
+background-image: url("/files/menu-bg.jpg");
+transition: left 0.1s ease-in-out;
+z-index: 2001;
+overflow-y: auto;
+}
+.page-head .container .justify-between{
  width:100% !important;
  background-image: url("/files/dotsholes.jpg")!important;
 background-size: contain!important;
