@@ -1,3 +1,10 @@
+ .page-head .container .justify-between{
+ width:100% !important;
+ background-image: url("/files/dotsholes.jpg")!important;
+background-size: contain!important;
+filter: opacity(0.8);
+}
+
 [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .widget.spacer {
 height: 18px!important;
 background-color: color(srgb 0.9433 0.9533 0.9575);
