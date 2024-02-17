@@ -12,7 +12,7 @@ display: none!important;
 color: white!important;
 }
 .icon, .es-icon {
---icon-stroke: white!important;
+--icon-stroke: rgb(94, 94, 94)!important;
 }
 #global-sidebarList li {
 border-bottom: 1px none #ccc!important;
