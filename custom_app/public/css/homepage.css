@@ -10,7 +10,16 @@ display: none!important;
 }
 .raven-container[data-open-state=false] .open-raven-button {
 /* padding: 4px 8px; */
-display: none!important;
+z-index: 10!important;
+color: #ffffff;
+padding-right: 0px!important;
+content: url("/files/chat.png")!important;
+visibility: visible;
+scale: 0.3;
+transform: translateX(100%)!important;
+/* align-content: center; */
+/* justify-content: center; */
+filter: drop-shadow(0px 30px 30px rgba(0,0,0,0.4))!important;
 }
 .sidebar-item-label {
 color: white!important;
@@ -53,18 +62,7 @@ display: none!important;
 }
 
 .raven-container[data-open-state="false"] .raven-logo {
-font-weight: 300;
-font-size: 0!important;
- z-index:10!important;
-color: #ffffff;
-padding-right: 0px!important;
-content: url("/files/chat.png")!important;
-visibility: visible;
-scale: 0.3;
-transform: translateX(100%)!important;
-/* align-content: center; */
-/* justify-content: center; */
- filter: drop-shadow(0px 30px 30px rgba(0,0,0,0.4))!important;
+display: none!important;
 }
 .raven-container[data-open-state="true"] .raven-logo:after {
 font-weight: 300;
