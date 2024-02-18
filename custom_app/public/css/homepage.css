@@ -1392,7 +1392,7 @@ z-index:10!important;
 
 /* Layout main section wrapper */
 .page-wrapper .layout-main-section-wrapper{
- background-color:rgba(240,243,244,0);
+background-color: rgba(255, 255, 255, 1);
 }
 
 /* Body */
@@ -2152,5 +2152,9 @@ font-size: calc(var(--text-lg) + 2px)!important;
 .list-sidebar .sidebar-section {
 
 display:none!important;
+}
+
+[data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
+background: transparent;
 }
 }
