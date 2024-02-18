@@ -47,7 +47,6 @@ background-color: color(srgb 0.9433 0.9533 0.9575);
 body {
  margin: 0!important;
  height: 100%!important;
- overflow: hidden!important;
 }
 .page-title .sidebar-toggle-btn {
 display: none!important;
