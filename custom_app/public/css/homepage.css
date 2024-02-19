@@ -2167,4 +2167,7 @@ display:none!important;
 [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
 background: transparent;
 }
+.modal-dialog {
+max-width: 66.6vw!important;
+}
 }
