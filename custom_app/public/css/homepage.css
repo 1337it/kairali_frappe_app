@@ -1,4 +1,13 @@
-
+.modal-backdrop.show
+{
+opacity:1!important;
+ 
+}
+.modal
+{
+ -webkit-backdrop-filter: blur(5px);
+ backdrop-filter: blur(5px);
+}
 .sidebar-item-label {
 color: white!important;
 }
