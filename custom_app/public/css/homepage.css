@@ -61,7 +61,33 @@ body {
 display: none!important;
 }
 
-.raven-container[data-open-state="false"] .raven-logo {
+
+@media (max-width:1199px) {
+ .raven-container[data-open-state=false] .raven-content-container {
+display: none!important;
+}
+
+.layout-main .layout-side-section {
+display: none!important;
+}
+.raven-container[data-open-state=false] .back-button {
+display: none!important;
+}
+.raven-container[data-open-state=false] .open-raven-button {
+/* padding: 4px 8px; */
+z-index: 10!important;
+color: #ffffff;
+padding-right: 0px!important;
+content: url("/files/chat.png")!important;
+visibility: visible;
+scale: 0.3;
+transform: translateX(100%)!important;
+/* align-content: center; */
+/* justify-content: center; */
+filter: drop-shadow(0px 30px 30px rgba(0,0,0,0.4))!important;
+}
+
+ .raven-container[data-open-state="false"] .raven-logo {
 display: none!important;
 }
 .raven-container[data-open-state="true"] .raven-logo:after {
@@ -286,9 +312,6 @@ justify-content: space-between;
 padding-block: 0rem!important;
 z-index:10!important;
 }
-@media (max-width:1199px) {
-
- 
  /* Link item */
  .codex-editor div .link-item{
 
