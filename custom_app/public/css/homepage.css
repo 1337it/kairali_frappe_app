@@ -1,3 +1,7 @@
+.awesomplete>ul
+{
+ z-index:100!important;
+}
 .modal-backdrop.show
 {
 opacity:1!important;
