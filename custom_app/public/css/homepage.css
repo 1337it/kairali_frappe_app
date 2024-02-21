@@ -1996,12 +1996,12 @@ height: 38px!important;
 
 .page-form {
 margin: 0!important;
-border-bottom: 0.5px solid grey!important;
+border-bottom: 0.5px solid rgba(0,0,0,0.2)!important;
 width: calc(100vw - 48px)!important;
 left: 48px!important;
 position: fixed!important;
 top: 96px!important;
-z-index: 5!important;
+z-index: 6!important;
  background-color: rgba(255, 255, 255, 0.70)!important;
  -webkit-backdrop-filter: blur(10px);
  backdrop-filter: blur(10px);
