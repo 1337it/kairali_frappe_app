@@ -1548,13 +1548,13 @@ left: 48px;
 width: calc(100vw - 48px);
 padding-left: 35px;
 padding-right: 55px;
-top: calc(var(--page-head-height) + var(--navbar-height) + var(--input-height) - 12px);
+top: calc(var(--page-head-height) + var(--navbar-height) + var(--input-height) - 0px);
  z-index:5;
 }
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
 padding: 0!important;
-margin-top: 10px!important;
+margin-top: 50px!important;
 }
 /* Standard filter section */
 .frappe-card .page-form .standard-filter-section{
@@ -2005,6 +2005,7 @@ z-index: 6!important;
  background-color: rgba(255, 255, 255, 0.70)!important;
  -webkit-backdrop-filter: blur(10px);
  backdrop-filter: blur(10px);
+ overflow-x:scroll;
  
 }
 
