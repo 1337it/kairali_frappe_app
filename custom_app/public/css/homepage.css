@@ -1,3 +1,6 @@
+.raven-header .open-raven-button:hover {
+ background-color:transparent!important;
+}
 .awesomplete>ul
 {
  z-index:100!important;
