@@ -1,1 +1,1 @@
-var pageformheight = $('.page-form').height();
+var pageformheight = $('.page-form').css('height');
