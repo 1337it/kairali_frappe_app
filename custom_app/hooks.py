@@ -16,6 +16,7 @@ app_include_css = "/assets/custom_app/css/homepage.css"
 # include js, css files in header of web template
 web_include_css = "/assets/custom_app/css/custom_app.css"
 web_include_css = "/assets/custom_app/css/homepage.css"
+web_include_js = "/assets/custom_app/js/homepage.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "custom_app/public/scss/website"
