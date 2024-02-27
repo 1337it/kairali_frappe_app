@@ -1553,6 +1553,7 @@ padding-left: 35px;
 padding-right: 55px;
 top: calc(var(--page-head-height) + var(--navbar-height) + var(--input-height) - 0px);
  z-index:5;
+ filter:inverse();
 }
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
