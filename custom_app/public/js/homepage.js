@@ -1,1 +1,1 @@
-var pageformheight = document.querySelector('.page-form');
+var pageformheight = document.querySelector('.page-form').clientHeight;
