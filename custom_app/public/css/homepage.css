@@ -1557,7 +1557,7 @@ top: calc(var(--page-head-height) + var(--navbar-height) + var(--input-height) -
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
 padding: 0!important;
-margin-top: 50px!important;
+margin-top: var(--pageformheight)!important;
 }
 /* Standard filter section */
 .frappe-card .page-form .standard-filter-section{
