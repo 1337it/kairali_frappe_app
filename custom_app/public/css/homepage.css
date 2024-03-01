@@ -1680,7 +1680,7 @@ font-weight: 300!important;
 /* Global sidebar */
 #global-sidebar:hover {
 left: 0!important;
-width: 15%!important;
+width: auto!important;
 transition: width 0.3s ease, box-shadow 0.3s ease!important;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
@@ -1882,6 +1882,7 @@ height: 100vh!important;
  border-bottom-style:none;
  border-bottom-width:0px;
 border-bottom: none!important;
+ padding-right:40px!important;
 }
 
 /* Workspace overlay */
@@ -1965,7 +1966,6 @@ color: #787878;
  display:inline-flex;
  flex-direction:column;
  justify-content:center;
- width:100%!important
 }
 
 #global-sidebarList li a {
