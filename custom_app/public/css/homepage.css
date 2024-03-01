@@ -1662,6 +1662,7 @@ padding-left:15px!important;
 #global-sidebarList a .sidebar-item-label{
  font-size: 18px!important;
 font-weight: 300!important;
+ padding-right: 40px;
 }
 
 
@@ -1882,7 +1883,6 @@ height: 100vh!important;
  border-bottom-style:none;
  border-bottom-width:0px;
 border-bottom: none!important;
- padding-right:40px!important;
 }
 
 /* Workspace overlay */
