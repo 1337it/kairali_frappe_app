@@ -1682,7 +1682,8 @@ font-weight: 300!important;
 #global-sidebar:hover {
 left: 0!important;
 width: auto!important;
-transition: width 0.3s ease, box-shadow 0.3s ease!important;
+ max-width:200px!important;
+transition: max-width 0.2s ease, box-shadow 0.2s ease!important;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
 top: 0px!important;
@@ -1696,9 +1697,10 @@ box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.40), 0 0 50px 1px rgba(0, 0, 0, 0.
  
 #global-sidebar.opened {
 width: 48px;
+ max-width: 48px;
 left: 0;
 padding: 0px!important;
-transition: width 0.3s ease, box-shadow 0.3s ease!important;
+transition: max-width 0.2s ease, box-shadow 0.2s ease!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 700!important;
@@ -1863,7 +1865,7 @@ left: 0!important;
 padding: 0px!important;
   -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
-transition: width 0.3s ease, box-shadow 0.3s ease!important;
+transition: max-width 0.2s ease, box-shadow 0.2s ease!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 6!important;
@@ -1874,6 +1876,7 @@ display: block;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
+  max-width:48px!important;
 }
 
 
