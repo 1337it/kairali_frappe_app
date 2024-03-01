@@ -1965,6 +1965,7 @@ color: #787878;
  display:inline-flex;
  flex-direction:column;
  justify-content:center;
+ width:100%;
 }
 
 #global-sidebarList li a {
