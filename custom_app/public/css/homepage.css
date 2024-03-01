@@ -1680,8 +1680,8 @@ font-weight: 300!important;
 /* Global sidebar */
 #global-sidebar:hover {
 left: 0!important;
-width: 15%!important;
-transition: width 0.3s ease, box-shadow 0.3s ease!important;
+width: 12.666%!important;
+transition: width 0.2s ease, box-shadow 0.2s ease!important;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
 top: 0px!important;
@@ -1862,7 +1862,7 @@ left: 0!important;
 padding: 0px!important;
   -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
-transition: width 0.3s ease, box-shadow 0.3s ease!important;
+transition: width 0.2s ease, box-shadow 0.2s ease!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 6!important;
