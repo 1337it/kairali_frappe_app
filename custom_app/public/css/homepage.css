@@ -1,3 +1,6 @@
+[data-route^="print-designer"] #global-sidebar {
+display: none!important;
+}
 .raven-header .open-raven-button:hover {
  background-color:transparent!important;
 }
