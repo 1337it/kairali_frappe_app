@@ -979,6 +979,7 @@ overflow-y: auto;
 }
   [data-theme=light] .page-wrapper .layout-main-section-wrapper {
 overflow-y: auto;
+    background-color: #ffffff);
 }
 
  .form-tabs-sticky-down {
