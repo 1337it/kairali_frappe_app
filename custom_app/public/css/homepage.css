@@ -615,7 +615,7 @@ filter: opacity(0.8);
 
 [data-theme-mode="dark"] .page-head .container .justify-between{
  width:100vw !important;
- background-image: url("/files/dotsholesd.jpg")!important;
+ background-image: url("/files/dotsholesd.png")!important;
 background-size: contain!important;
 filter: opacity(0.8);
 }
