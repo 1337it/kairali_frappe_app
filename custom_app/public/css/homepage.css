@@ -1,4 +1,8 @@
- body {
+[data-page-route=Workspaces] .layout-main-section-wrapper {
+margin-top: 0px!important;
+}
+
+body {
 background-color: calc(var(--bg-color) + 1000)!important;
 }
 
@@ -818,7 +822,7 @@ display: none!important;
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
  padding-right:35px;
- padding-top:85px!important;
+ padding-top:75px!important;
   padding-left:35px!important;
 }
 
