@@ -1520,10 +1520,7 @@ text-align: center;
  border-bottom-width:0.5px;
 }
 
-/* Filterable */
-.result .hidden-xs .ellipsis .filterable{
- color:#000000;
-}
+/* Filterable *
 
 /* Text muted */
 .frappe-list .result header.text-muted{
@@ -2062,7 +2059,6 @@ overflow: hidden;
 text-overflow: ellipsis;
 max-width: 100%;
 vertical-align: middle;
-color: black!important;
 }
 .container  {
 max-width:100%!important;
