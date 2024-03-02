@@ -789,8 +789,9 @@ display: none!important;
 /* Layout main section wrapper */
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
- padding-right:15px;
- padding-top:75px!important;
+ padding-right:35px;
+ padding-top:85px!important;
+  padding-left:35px!important;
 }
 
 /* Layout main section */
