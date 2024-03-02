@@ -966,6 +966,7 @@ background-color: #f0f2f3;
 
  .page-wrapper .layout-main-section-wrapper {
 overflow-y: auto;
+  background-color: var(--gray-700);
 }
 
  .form-tabs-sticky-down {
