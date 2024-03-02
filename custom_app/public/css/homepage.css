@@ -2084,8 +2084,7 @@ border: 0.5px solid rgba(0, 0, 0, 0.3)!important;
 }
 
 .form-control {
-border: 0.5px solid rgba(0, 0, 0, 0.3)!important;
-color: #3d3d3d!important;
+border: 0.5px solid!important;
 }
 
 .layout-main-section .frappe-list .freeze {
