@@ -1456,11 +1456,6 @@ z-index:10!important;
 
 /* Header */
 
-/* Heading */
-.title-area div h3{
- color:#bfbfbf;
-}
-
 /* Sidebar item label */
 .standard-sidebar-section > .sidebar-item-container > .desk-sidebar-item .sidebar-item-label{
  color:#ffffff;
@@ -2212,7 +2207,6 @@ display: none!important;
 .control-label {
 margin-bottom: 6px;
 font-size: calc(var(--text-sm) + 2px)!important;
-color: rgb(80, 80,80)!important;
 }
 
 .checkbox .label-area
