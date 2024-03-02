@@ -30,7 +30,7 @@ color: white!important;
 #global-sidebarList li {
 border-bottom: 1px none #ccc!important;
 }
-#global-sidebar {
+[data-theme-mode="light"] #global-sidebar {
 position: fixed;
 top: 0;
 left: -100%;
@@ -38,6 +38,19 @@ width: 300px;
 padding: 10px;
 height: 100%;
 background-image: url("/files/menu-bg.jpg");
+transition: left 0.1s ease-in-out;
+z-index: 2001;
+overflow-y: auto;
+}
+
+[data-theme-mode="dark"] #global-sidebar {
+position: fixed;
+top: 0;
+left: -100%;
+width: 300px;
+padding: 10px;
+height: 100%;
+background-image: url("/files/menu-bgd.jpg");
 transition: left 0.1s ease-in-out;
 z-index: 2001;
 overflow-y: auto;
