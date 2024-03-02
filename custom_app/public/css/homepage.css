@@ -576,6 +576,7 @@ padding-right: 10px!important;
  padding-left:0px;
  padding-top:0px;
  padding-bottom:0px;
+  background-color:var(--card-bg);
 }
 
 /* Row */
@@ -675,9 +676,7 @@ body{
 }
 
 /* Widget */
-.codex-editor .ce-block .ce-block__content div .widget{
- background-color:#f9f9f9;
-}
+
 
 
 
@@ -826,7 +825,7 @@ transition: .5s top;
 
 /* Widget */
 .codex-editor .ce-block .ce-block__content div .widget{
- background-color:#ffffff !important;
+ background-color:var(--card-bg) !important;
  border-top-left-radius:5px;
  border-top-right-radius:5px;
  border-bottom-left-radius:5px;
@@ -850,7 +849,6 @@ transition: .5s top;
 /* Ellipsis */
 .codex-editor .widget-head .ellipsis{
  font-weight:500;
- color:#424242;
  height:20px;
  font-family:'Heebo', sans-serif;
 }
