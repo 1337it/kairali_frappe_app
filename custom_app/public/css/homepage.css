@@ -510,6 +510,7 @@ border-bottom-left-radius: 0!important;
 }
  [data-page-route=Workspaces] .layout-main .layout-main-section {
 border: 1px none var(--border-color)!important;
+  background-color: transparent!important;
 }
 /* Layout side section */
 .page-wrapper .layout-side-section{
@@ -789,7 +790,8 @@ display: none!important;
 /* Layout main section wrapper */
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
- padding-right:0px;
+ padding-right:15px;
+ padding-top:75px!important;
 }
 
 /* Layout main section */
