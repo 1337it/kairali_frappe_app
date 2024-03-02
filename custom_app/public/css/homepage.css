@@ -2216,7 +2216,6 @@ font-size: calc(var(--text-sm) + 2px)!important;
 .checkbox .label-area
 {
  font-size: calc(var(--text-sm) + 2px)!important;
- color: rgb(80, 80,80)!important;
 }
 
 .form-section .section-head, .form-dashboard-section .section-head {
