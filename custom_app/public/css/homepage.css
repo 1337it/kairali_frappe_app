@@ -1,3 +1,7 @@
+ body {
+background-color: calc(var(--bg-color) + 1000)!important;
+}
+
 [data-route^="print-designer"] #global-sidebar {
 display: none!important;
 }
@@ -24,9 +28,7 @@ background-color: rgba(56, 56, 56, 0.44)!important;
 .sidebar-item-label {
 color: white!important;
 }
-.icon, .es-icon {
---icon-stroke: #5e5e5e!important;
-}
+
 #global-sidebarList li {
 border-bottom: 1px none #ccc!important;
 }
@@ -519,7 +521,6 @@ display: none!important;
  border-style:solid;
  border-color:(44,62,80,0.83);
  border-width:0.5px;
- background-color:#ffffff;
  box-shadow:none;
 }
 #navbar-search[aria-expanded="true"] {
@@ -1473,23 +1474,15 @@ fill: rgba(0, 0, 0, 0.21);
 /* Button */
 .page-actions .custom-actions .ellipsis{
  box-shadow:0px 0px 50px 1px rgba(56,56,56,0);
- background-color:#ffffff!important;
- color:#3d3d3d!important;
 }
 
 /* Button */
 .page-actions .standard-actions .btn-secondary{
  box-shadow:0px 0px 27px 1px rgba(56,56,56,0.33);
- background-color:#ffffff!important;
- color:#6b6b6b!important;
 }
 
 
 
-/* Span Tag */
-.standard-actions .btn-secondary .hidden-xs > span{
- color:#000000;
-}
 
 /* Use */
 .sidebar-toggle-btn .sidebar-toggle-placeholder use{
@@ -1958,7 +1951,6 @@ display: none!important;
  padding-left:0px!important;
  max-width:calc(33.3vw - 100px)!important;
  font-size:20px!important;
-color: rgba(55, 55, 55, 1)!important;
 }
 
 
@@ -2050,7 +2042,6 @@ z-index: 6000!important;
 .awesomplete .input-with-feedback {
 border: 0.5px solid rgba(0, 0, 0, 0.3)!important;
 color: black!important;
-background-color: #ffffff!important;
 }
 
 .form-control {
