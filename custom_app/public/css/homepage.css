@@ -1,3 +1,6 @@
+* {
+scrollbar-width: 0!important;
+}
 [data-page-route=Workspaces] .layout-main-section-wrapper {
 margin-top: 0px!important;
 }
