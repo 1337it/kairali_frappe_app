@@ -35,7 +35,7 @@ scrollbar-width: none!important;
 }
 [data-page-route=Workspaces] .layout-main-section-wrapper {
 margin-top: 0px!important;
-    padding-top:78px!important;
+    padding-top:78px;
 }
 
 body {
@@ -633,7 +633,7 @@ padding-right: 10px!important;
  margin-bottom:0px;
  display:inline-block;
  padding-left:0px;
- padding-top:0px;
+ padding-top:50px;
  padding-bottom:0px;
   background-color:var(--card-bg);
 }
@@ -856,7 +856,7 @@ display: none!important;
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
  padding-right:35px;
- padding-top:48px!important;
+ padding-top:48px;
   padding-left:35px!important;
 }
 
