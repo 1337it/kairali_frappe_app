@@ -1,8 +1,6 @@
-$("meta[name='theme-color']").attr('content', '#ffffff');
-let themetag = $('html').attr('data-theme');
-if (themetag = 'dark'){
+if ($('html').attr('data-theme') == 'dark') {
 $("meta[name='theme-color']").attr('content', '#171717');
 }
-else if (themetag = 'dark'){
+else if ($('html').attr('data-theme') == 'light'){
 $("meta[name='theme-color']").attr('content', '#ffffff');
 }
