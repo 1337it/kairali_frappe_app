@@ -554,8 +554,13 @@ margin-left: 0px!important;
 
 
 .navbar {
+      -webkit-app-region: drag;
+    height: env(titlebar-area-height, 48px);
 padding-left: 10px!important;
 padding-right: 10px!important;
+}
+    .navbar .navbar-collapse {
+    padding-right: calc(100vw - env(titlebar-area-width, 100vw));
 }
  
 /* Page body */
