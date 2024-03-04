@@ -1,3 +1,6 @@
+.overlay-sidebar {
+display: none!important;
+}
 .page-wrapper {
 height: 100%;
 }
