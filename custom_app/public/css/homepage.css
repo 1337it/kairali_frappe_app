@@ -35,7 +35,7 @@ scrollbar-width: none!important;
 }
 [data-page-route=Workspaces] .layout-main-section-wrapper {
 margin-top: 0px!important;
-    padding-top:78px;
+    padding-top:78px!important;
 }
 
 body {
