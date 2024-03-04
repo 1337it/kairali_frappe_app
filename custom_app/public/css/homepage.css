@@ -23,6 +23,7 @@ height: 100%;
 }
 .navbar .navbar-brand
 {
+    left: env(titlebar-area-x, 10px)!important;
 -webkit-app-region: no-drag;
 }
 
