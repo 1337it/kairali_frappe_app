@@ -2134,7 +2134,7 @@ max-width:100%!important;
 .form-tabs-list .form-tabs {
 justify-content: center!important;
 position: fixed!important;
-top: 96px!important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 48px) !important;
 width: 100vw!important;
  padding: 0px!important;
  margin: 0px!important;
