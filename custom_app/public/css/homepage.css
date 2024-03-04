@@ -571,7 +571,8 @@ border: 1px none var(--border-color)!important;
   background-color: transparent!important;
 }
 /* Layout side section */
-.page-wrapper .layout-side-section{
+.layout-side-section{
+    display:none!important;
  box-shadow:-2px 6px 6px 6px (116,135,138,0.44) inset;
  padding-right: 15px!important;
   padding-left:15px!important;
