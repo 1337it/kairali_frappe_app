@@ -1,1 +1,1 @@
-var pageformheight = $('.page-form').css('height');
+$("meta[name='theme-color']").attr('content', '--navbar-bg');
