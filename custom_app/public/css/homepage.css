@@ -1,3 +1,7 @@
+:root
+{
+    --navbar-height: env(titlebar-area-height, --navbar-height);
+}
 .search-bar .awesomplete
 {
 -webkit-app-region: no-drag;
@@ -996,7 +1000,7 @@ overflow-y: auto;
 }
   [data-theme=light] .page-wrapper .layout-main-section-wrapper {
 overflow-y: auto;
-    background-color: #ffffff);
+    background-color: #ffffff;
 }
 
  .form-tabs-sticky-down {
