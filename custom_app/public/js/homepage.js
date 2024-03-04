@@ -1,1 +1,1 @@
-$("meta[name='theme-color']").attr('content', '--navbar-bg');
+$("meta[name='theme-color']").attr('content', 'var(--navbar-bg)');
