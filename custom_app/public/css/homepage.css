@@ -534,12 +534,6 @@ display: none!important;
  border-width:0.5px;
  box-shadow:none;
 }
-#navbar-search[aria-expanded="true"] {
-z-index: 10!important;
-height: 40px!important;
-border-bottom-right-radius: 0!important;
-border-bottom-left-radius: 0!important;
-}
  [data-page-route=Workspaces] .layout-main .layout-main-section {
 border: 1px none var(--border-color)!important;
   background-color: transparent!important;
@@ -602,7 +596,6 @@ padding-right: 10px!important;
 /* Layout main section wrapper */
 
  [data-route^=Form] .page-wrapper .layout-main-section-wrapper{
- margin-top:48px;
  margin-bottom:0px;
  display:inline-block;
  padding-left:0px;
