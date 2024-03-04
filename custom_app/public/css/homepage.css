@@ -1,3 +1,9 @@
+.page-container{
+    height:100%
+}
+#body{
+    height:100%
+}
 :root
 {
     --navbar-height: env(titlebar-area-height, --navbar-height);
@@ -843,7 +849,7 @@ display: none!important;
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
  padding-right:35px;
- padding-top:75px!important;
+ padding-top:48px!important;
   padding-left:35px!important;
 }
 
@@ -1459,11 +1465,6 @@ z-index:10!important;
 
 
 /* Body */
- 
- /* Row */
- {
-  position:fixed;
- }
  
  /* Layout main section */
  .page-wrapper .layout-main-section{
