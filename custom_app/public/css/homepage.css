@@ -1,4 +1,16 @@
+.search-bar .awesomplete
+{
+-webkit-app-region: no-drag;
+}
+.navbar .navbar-brand
+{
+-webkit-app-region: no-drag;
+}
 
+.navbar-nav
+{
+-webkit-app-region: no-drag;
+}
 html {
     scrollbar-width: none!important;
 }
