@@ -12,7 +12,7 @@ height: 100%;
 }
 :root
 {
-    --navbar-height: env(titlebar-area-height, --navbar-height);
+    --navbar-height: env(titlebar-area-height, 48px);
 }
 .search-bar .awesomplete
 {
@@ -34,7 +34,7 @@ html {
 scrollbar-width: none!important;
 }
 [data-page-route=Workspaces] .layout-main-section-wrapper {
-margin-top: 0px!important;
+margin-top: 30px!important;
 }
 
 body {
@@ -2123,7 +2123,7 @@ border: 0.5px solid!important;
 height: 34px!important;
  min-height: 34px!important;
 opacity: 0!important;
-    display:block;
+    display:block!important;
 }
 
 .frappe-list .ellipsis {
