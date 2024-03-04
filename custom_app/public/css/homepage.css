@@ -1,3 +1,9 @@
+.page-wrapper {
+height: 100%;
+}
+.page-content {
+height: 100%;
+}
 .page-container{
     height:100%
 }
@@ -1580,7 +1586,7 @@ top: calc(var(--page-head-height) + var(--navbar-height) + var(--input-height) -
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
 padding: 0!important;
-margin-top: 50px!important;
+margin-top: calc(var(--input-height) + 12px);
 }
 /* Standard filter section */
 .frappe-card .page-form .standard-filter-section{
