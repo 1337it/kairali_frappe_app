@@ -2123,6 +2123,7 @@ border: 0.5px solid!important;
 height: 34px!important;
  min-height: 34px!important;
 opacity: 0!important;
+    display:block;
 }
 
 .frappe-list .ellipsis {
@@ -2156,10 +2157,9 @@ border-bottom: 0.5px none #525252!important;
 border-radius: 0!important;
 border: 1px none var(--border-color)!important;
 box-shadow: none;
-margin-top: 80px;
-padding-left: 80px!important;
-padding-bottom: 80px!important;
-padding-right: 80px!important;
+padding-left: 50px!important;
+padding-bottom: 50px!important;
+padding-right: 50px!important;
 }
 
 .form-dashboard-section {
