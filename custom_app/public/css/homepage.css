@@ -2116,7 +2116,12 @@ z-index: 6000!important;
 border: 0.5px solid rgba(0, 0, 0, 0.3)!important;
 }
 
-.form-control {
+
+[data-theme-mode=dark] .form-control {
+border: 0.5px solid #9f9f9f!important;
+}
+
+[data-theme-mode=light] .form-control {
 border: 0.5px solid!important;
 }
 
