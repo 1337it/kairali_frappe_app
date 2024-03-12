@@ -2118,6 +2118,8 @@ z-index: 6000!important;
  max-height:500px;
  transition: max-height 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.40)!important;
+    padding-left: 30px!important;
+padding-right: 30px!important;
 }
 
 .awesomplete .input-with-feedback {
