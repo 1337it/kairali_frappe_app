@@ -106,14 +106,14 @@ overflow-y: auto;
 }
 [data-theme-mode="light"] .page-head .container .justify-between{
  width:100vw !important;
- background-image: url("/files/dotsholes.jpg")!important;
+ background:#f0f2f0!important;
 background-size: contain!important;
 filter: opacity(0.8);
 }
 
 [data-theme-mode="dark"] .page-head .container .justify-between{
  width:100vw !important;
- background-image: url("/files/dotsholesd.png")!important;
+     background:#414345!important;
 background-size: contain!important;
 filter: opacity(0.8);
 }
