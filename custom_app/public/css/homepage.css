@@ -654,14 +654,12 @@ padding-right: 10px!important;
 /* Row */
 [data-theme-mode="light"] .page-head .container .justify-between{
  width:100vw !important;
- background-image: url("/files/dotsholes.jpg")!important;
 background-size: contain!important;
 filter: opacity(0.8);
 }
 
 [data-theme-mode="dark"] .page-head .container .justify-between{
  width:100vw !important;
- background-image: url("/files/dotsholesd.png")!important;
 background-size: contain!important;
 filter: opacity(0.8);
 }
