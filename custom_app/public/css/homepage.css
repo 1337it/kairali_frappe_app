@@ -1,3 +1,6 @@
+.inline-graph .inline-graph-half .inline-graph-bar-inner.dark {
+background-color: var(--success);
+}
 .link-preview-popover .popover-content .preview-image .avatar {
 width: 220px!important;
 height: 220px!important;
@@ -136,6 +139,11 @@ display: none!important;
 
 
 @media (max-width:1199px) {
+
+[data-theme-mode="dark"] .widget {
+
+background-color: #000000!important;
+}
  .raven-container[data-open-state=false] .raven-content-container {
 display: none!important;
 }
@@ -399,8 +407,7 @@ z-index:10!important;
  /* Widget */
  .codex-editor .ce-block .ce-block__content div .widget{
   background-color:(127,140,141,0.42);
-  background-image:url("https://images.unsplash.com/photo-1510172951991-856a654063f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNTc5fDB8MXxzZWFyY2h8MjAzfHxmbGF0JTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3MDUyOTQ1NTR8MA&ixlib=rb-4.0.3&q=80&w=1130");
-  background-size:auto;
+     background-size:auto;
   padding-top:25px !important;
   padding-bottom:25px !important;
  }
@@ -418,9 +425,7 @@ z-index:10!important;
  
  
  /* Content Division */
- #page-Workspaces{
-  background-color:#ffffff;
- }
+
  
  /* Block  content */
  .codex-editor .ce-block .ce-block__content{
@@ -436,8 +441,7 @@ z-index:10!important;
  /* Widget */
  .codex-editor .ce-block .ce-block__content div .widget{
   background-color:(127,140,141,0.42);
-  background-image:url("https://images.unsplash.com/photo-1510172951991-856a654063f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzNTc5fDB8MXxzZWFyY2h8MjAzfHxmbGF0JTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3MDUyOTQ1NTR8MA&ixlib=rb-4.0.3&q=80&w=1130");
-  background-size:auto;
+     background-size:auto;
   padding-top:25px !important;
   padding-bottom:25px !important;
  }
@@ -1596,11 +1600,8 @@ top: calc(var(--page-head-height) + var(--navbar-height) + var(--input-height) -
 }
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-margin-top: calc(var(--input-height) + 15px);
-position: fixed;
-width: 100%;
-left: 0;
-padding-left: 60px;
+margin-top: calc(var(--input-height) + 50px);
+padding:0!important;
 }
 /* Standard filter section */
 .frappe-card .page-form .standard-filter-section{
@@ -2284,5 +2285,9 @@ background: transparent;
 }
 .modal-dialog {
 max-width: 66.6vw!important;
+}
+
+.stock-levels {
+padding-top: 45px!important;
 }
 }
