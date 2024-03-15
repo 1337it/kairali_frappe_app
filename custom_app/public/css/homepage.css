@@ -47,10 +47,7 @@ html {
 * {
 scrollbar-width: none!important;
 }
-[data-page-route=Workspaces] .layout-main-section-wrapper {
-margin-top: 0px!important;
-    padding-top:78px!important;
-}
+
 
 body {
 background-color: calc(var(--bg-color) + 1000)!important;
@@ -1020,7 +1017,10 @@ transition: .5s top;
 html, body {
 background-color: #f0f2f3;
 }
-
+[data-page-route=Workspaces] .layout-main-section-wrapper {
+margin-top: 0px!important;
+    padding-top:78px!important;
+}
  [data-theme=dark] .page-wrapper .layout-main-section-wrapper {
 overflow-y: auto;
   background-color: var(--gray-900);
