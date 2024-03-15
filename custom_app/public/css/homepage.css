@@ -135,8 +135,23 @@ display: none!important;
 }
 
 
-@media (max-width:1199px) {
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1199px) {
+    .container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm{
+        padding-right:0px!important;
+        padding-left:0px!important;
+    }
+    
 [data-theme-mode="dark"] .widget {
 
 background-color: #000000!important;
@@ -205,9 +220,7 @@ width: 100%!important;
  .raven-chat-view .raven-chat-view-container {
 width: 100%!important;
 }
- .btn.icon-btn, div#driver-popover-item .driver-popover-footer button.icon-btn {
-height: 100%!important;
-}
+
  .raven-chat-view .raven-chat-view-container .raven-chat-input .send-button svg {
 fill: whitesmoke!important;
 }
