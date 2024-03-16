@@ -1660,23 +1660,24 @@ text-align: center;
 /* Text muted */
 .frappe-list .result header.text-muted{
 margin-left: 0px;
-margin-right: 0px;
+margin-right: 10px;
 margin-top: 0px;
 margin-bottom: 2px;
 border-top-left-radius: 0px;
 border-top-right-radius: 0px;
 border-bottom-left-radius: 0px;
 border-bottom-right-radius: 0px;
-padding-bottom: 15px;
+padding-bottom: 23px;
 padding-right: 20px;
 padding-left: 5px;
 position: fixed;
 left: 48px;
-width: calc(100vw - 48px);
-margin-left: 35px;
-padding-right: 55px;
+width: calc(100% - 128px);
+margin-left: 40px;
+padding-right: 20px;
 top: calc(var(--page-head-height) + var(--navbar-height) + var(--input-height) - 0px);
  z-index:5;
+    border-bottom: 0.5px solid black;
 }
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
