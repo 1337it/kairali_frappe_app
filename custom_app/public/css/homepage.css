@@ -609,6 +609,17 @@ display: none!important;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
  
 @media (min-width:1200px) {/* Content Division */
 
@@ -619,8 +630,7 @@ left: -100%;
 width: 300px;
 padding: 10px;
 height: 100%;
-background-image: url("/files/menu-bg.jpg");
-transition: left 0.1s ease-in-out;
+background: var(--control-bg-on-gray);
 z-index: 2001;
 overflow-y: auto;
 }
@@ -1788,58 +1798,39 @@ font-weight: 300!important;
  height:100%;
 }
 
-/* Global sidebar */
-#global-sidebar:hover {
-left: 0!important;
-width: 12.666%!important;
-transition: width 0.2s ease, box-shadow 0.2s ease!important;
- -webkit-transform:translate3d(0,0,0);
- -webkit-backface-visibility: hidden;
-top: 0px!important;
-padding-top: 0px!important;
-z-index: 7!important;
-padding-left: 0px!important;
-padding-right: 0px!important;
-display: block!important;
-box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.40), 0 0 50px 1px rgba(0, 0, 0, 0.40)!important;
-}
+
  
 [data-theme-mode="light"] #global-sidebar.opened {
-width: 48px;
+width: 12.666vw;
 left: 0;
 padding: 0px!important;
 transition: width 0.3s ease, box-shadow 0.3s ease!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 700!important;
-background-image: url("/files/menu-bg.jpg")!important;
+background: var(--control-bg-on-gray)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
- -webkit-backdrop-filter: blur(20px);
- backdrop-filter: blur(20px);
 }
 
 [data-theme-mode="dark"] #global-sidebar.opened {
-width: 48px;
+width: 12.666vw;
 left: 0;
 padding: 0px!important;
-transition: width 0.3s ease, box-shadow 0.3s ease!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 700!important;
-background-image: url("/files/menu-bgd.jpg")!important;
+background: var(--control-bg-on-gray)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
- -webkit-backdrop-filter: blur(20px);
- backdrop-filter: blur(20px);
 }
 
 [data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
