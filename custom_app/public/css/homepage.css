@@ -1,3 +1,16 @@
+.navbar {
+height: 48px;
+background: var(--control-bg-on-gray);
+border-bottom: 1px solid var(--border-color);
+padding: 0;
+}
+.btn-primary-light {
+color: #171717;
+background-color: rgba(226, 226, 226, 0.23);
+border-color: #383838;
+box-shadow: inset 0 1px #ffffff26,0 1px 1px #00000013;
+color: var(--primary);
+}
 .modal-minimize .modal-dialog .modal-header {
 display: none;
 }
@@ -86,15 +99,13 @@ border-bottom: 1px none #ccc!important;
 
 [data-theme-mode="light"] .page-head .container .justify-between{
  
- background:#f0f2f0!important;
+ background:none!important;
 background-size: contain!important;
-filter: opacity(0.8);
 }
 
 [data-theme-mode="dark"] .page-head .container .justify-between{
-     background:#414345!important;
+     background:none!important;
 background-size: contain!important;
-filter: opacity(0.8);
 }
 
 [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .widget.spacer {
@@ -1586,9 +1597,7 @@ fill: rgba(0, 0, 0, 0.21);
  color:#cecece;
 }
 /* Button */
-.page-actions .custom-actions .ellipsis{
- box-shadow:0px 0px 50px 1px rgba(56,56,56,0);
-}
+
 
 /* Button */
 .page-actions .standard-actions .btn-secondary{
@@ -2199,9 +2208,6 @@ border: 0.5px solid rgba(0, 0, 0, 0.3)!important;
 border: 0.5px solid #9f9f9f!important;
 }
 
-[data-theme-mode=light] .form-control {
-border: 0.5px solid!important;
-}
 
 .layout-main-section .frappe-list .freeze {
 height: 34px!important;
@@ -2270,11 +2276,6 @@ background: rgb(255, 255, 255)!important;
 .grid-footer
 {
 background-color: rgba(255, 255, 255, 0)!important;
-}
-.btn:not(.btn-md):not(.btn-lg) {
-padding: 4px 20px!important;
- border: 0.5px solid rgba(88, 88, 88, 0.46)!important;
- 
 }
 
 .grid-row-open .form-in-grid {
