@@ -1797,7 +1797,7 @@ font-weight: 300!important;
  height:100%;
 }
 
-global-sidebar:hover {
+#global-sidebar:hover {
 left: 0!important;
 width: 12.666%!important;
 transition: width 0.2s ease, box-shadow 0.2s ease!important;
