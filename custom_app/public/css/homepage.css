@@ -83,40 +83,15 @@ color: white!important;
 #global-sidebarList li {
 border-bottom: 1px none #ccc!important;
 }
-[data-theme-mode="light"] #global-sidebar {
-position: fixed;
-top: 0;
-left: -100%;
-width: 300px;
-padding: 10px;
-height: 100%;
-background-image: url("/files/menu-bg.jpg");
-transition: left 0.1s ease-in-out;
-z-index: 2001;
-overflow-y: auto;
-}
 
-[data-theme-mode="dark"] #global-sidebar {
-position: fixed;
-top: 0;
-left: -100%;
-width: 300px;
-padding: 10px;
-height: 100%;
-background-image: url("/files/menu-bgd.jpg");
-transition: left 0.1s ease-in-out;
-z-index: 2001;
-overflow-y: auto;
-}
 [data-theme-mode="light"] .page-head .container .justify-between{
- width:100vw !important;
+ 
  background:#f0f2f0!important;
 background-size: contain!important;
 filter: opacity(0.8);
 }
 
 [data-theme-mode="dark"] .page-head .container .justify-between{
- width:100vw !important;
      background:#414345!important;
 background-size: contain!important;
 filter: opacity(0.8);
@@ -147,6 +122,19 @@ display: none!important;
 
 
 @media (max-width:1199px) {
+.page-head .page-head-content
+ {
+padding:15px!important;
+ }
+.navbar
+    {
+padding: 1rem 14px!important;
+
+
+        
+    }
+
+    
     .container, .container-fluid, .container-xl, .container-lg, .container-md, .container-sm{
         padding-right:0px!important;
         padding-left:0px!important;
@@ -578,7 +566,34 @@ display: none!important;
 
  
 @media (min-width:1200px) {/* Content Division */
-#page-Workspaces{
+
+[data-theme-mode="light"] #global-sidebar {
+position: fixed;
+top: 0;
+left: -100%;
+width: 300px;
+padding: 10px;
+height: 100%;
+background-image: url("/files/menu-bg.jpg");
+transition: left 0.1s ease-in-out;
+z-index: 2001;
+overflow-y: auto;
+}
+
+[data-theme-mode="dark"] #global-sidebar {
+position: fixed;
+top: 0;
+left: -100%;
+width: 300px;
+padding: 10px;
+height: 100%;
+background-image: url("/files/menu-bgd.jpg");
+transition: left 0.1s ease-in-out;
+z-index: 2001;
+overflow-y: auto;
+}
+    
+    #page-Workspaces{
  height:49px;
 }
 /* Navbar search */
