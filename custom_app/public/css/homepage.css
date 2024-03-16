@@ -1,3 +1,6 @@
+.modal-minimize .modal-dialog .modal-header {
+display: none;
+}
 .inline-graph .inline-graph-half .inline-graph-bar-inner.dark {
 background-color: var(--success);
 }
