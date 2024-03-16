@@ -1620,7 +1620,10 @@ padding:0!important;
 .frappe-card .page-form .standard-filter-section{
 height:38px;
 }
-
+.frappe-card .page-form .standard-filter-section:hover {
+height: auto;
+padding-bottom: 5px;
+}
 /* Page form */
 .page-wrapper .frappe-card .page-form{
 padding-left: 30px!important;
