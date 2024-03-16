@@ -2130,6 +2130,7 @@ background-color: #181818!important;
 }
 .list-row-head {
 height: 38px!important;
+    background-color:white;
 }
 
 [data-theme=dark] .page-form {
