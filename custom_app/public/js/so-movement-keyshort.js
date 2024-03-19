@@ -1,9 +1,9 @@
 frappe.ui.keys.add_shortcut({
-description: "Stock Ledger",
+description: "Stock Movement",
 shortcut: "ctrl+m",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-            const item_row = locals["Sales Order Item"][current_doc];
+            const item_row1 = locals["Sales Order Item"][current_doc];
     new frappe.ui.form.MultiSelectDialog({
     doctype: "Stock Ledger Entry",
     target: this.cur_frm,
@@ -34,7 +34,7 @@ shortcut: "ctrl+m",
             "incoming_rate"],
     get_query() {
         return {
-            filters: {"item_code": item_row.item_code}
+            filters: {"item_code": item_row1.item_code}
         }
     },
     action(selections) {
