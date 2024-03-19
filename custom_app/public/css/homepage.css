@@ -625,12 +625,12 @@ display: none!important;
 
 [data-theme-mode="light"] #global-sidebar {
 position: fixed;
+    background-color: rgba(18, 18, 18, 1)!important;
 top: 0;
 left: -100%;
 width: 300px;
 padding: 10px;
 height: 100%;
-background: var(--control-bg-on-gray);
 z-index: 2001;
 overflow-y: auto;
 }
@@ -643,7 +643,7 @@ left: -100%;
 width: 300px;
 padding: 10px;
 height: 100%;
-background-color:rgba(18,18,18,1)
+background-color:rgba(18,18,18,1)!important;
 transition: left 0.1s ease-in-out;
 z-index: 2001;
 overflow-y: auto;
@@ -1816,7 +1816,7 @@ transition: width 0.3s ease, box-shadow 0.3s ease!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 700!important;
-background: rgba(18, 18, 18, 1)!important!
+background-color: rgba(18, 18, 18, 1)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
