@@ -643,7 +643,7 @@ left: -100%;
 width: 300px;
 padding: 10px;
 height: 100%;
-background-image: url("/files/menu-bgd.jpg");
+background-color:rgba(18,18,18,1)
 transition: left 0.1s ease-in-out;
 z-index: 2001;
 overflow-y: auto;
@@ -1596,11 +1596,7 @@ z-index:10!important;
  color:#ffffff;
 }
 
-/* Use */
-.desk-sidebar .icon-md use {
---icon-stroke: white;
-fill: rgba(0, 0, 0, 0.21);
-}
+
 
 /* Standard sidebar label */
 .desk-sidebar .standard-sidebar-section .standard-sidebar-label{
@@ -1803,7 +1799,7 @@ transition: width 0.2s ease, box-shadow 0.2s ease!important;
  -webkit-backface-visibility: hidden;
 top: 0px!important;
 padding-top: 0px!important;
-background: rgba(36, 36, 36, 1)!important!
+background: rgba(18, 18, 18, 1)!important!
 z-index: 7!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
@@ -1820,7 +1816,7 @@ transition: width 0.3s ease, box-shadow 0.3s ease!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 700!important;
-background: rgba(36, 36, 36, 1)!important!
+background: rgba(18, 18, 18, 1)!important!
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
@@ -1837,7 +1833,7 @@ top: 0px!important;
 padding-top: 0px!important;
     transition: width 0.3s ease, box-shadow 0.3s ease!important;
 z-index: 700!important;
-background: rgba(36, 36, 36, 1)!important;
+background: rgba(18, 18, 18, 1)!important!
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
@@ -2000,7 +1996,7 @@ transition: width 0.2s ease, box-shadow 0.2s ease!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 6!important;
-background-color: rgba(36, 36, 36, 1)!important;
+background: rgba(18, 18, 18, 1)!important!
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
