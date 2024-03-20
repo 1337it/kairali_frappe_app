@@ -623,6 +623,21 @@ display: none!important;
  
 @media (min-width:1200px) {/* Content Division */
 
+    #backbutton {
+position: fixed;
+display: var();
+height: 40px;
+width: 40px;
+top: calc(4px + env(titlebar-area-height, 48px));
+left: 4px;
+z-index: 99999;
+background: url("/files/back.png");
+object-fit: cover;
+background-repeat: no-repeat;
+border: 0;
+background-size: contain;
+}
+
 [data-theme-mode="light"] #global-sidebar {
 position: fixed;
     background-color: rgba(18, 18, 18, 1)!important;
@@ -650,7 +665,7 @@ overflow-y: auto;
 }
     
     #page-Workspaces{
- height:49px;
+ height:48px;
 }
 /* Navbar search */
 #navbar-search{
