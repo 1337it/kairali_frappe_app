@@ -4,7 +4,7 @@ const backbutton = document.createElement('button')
 
       // Attach the "click" event to your button
       backbutton.addEventListener('click', () => {
-       window.history.back();
+            history.back();
       })
 
       document.body.appendChild(backbutton)
