@@ -1,6 +1,6 @@
 frappe.ui.keys.add_shortcut({
 description: "Stock Ledger",
-shortcut: "ctrl+m",
+shortcut: "shift+m",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row = locals["Sales Invoice Item"][current_doc];
