@@ -43,4 +43,4 @@ shortcut: "shift+m",
 });
 
 }
-})
+});
