@@ -3,7 +3,7 @@ const backbutton = document.createElement('button')
       backbutton.id = 'backbutton'
 
       // Attach the "click" event to your button
-      button.addEventListener('click', () => {
+      backbutton.addEventListener('click', () => {
        window.history.go(-1);
       })
 
