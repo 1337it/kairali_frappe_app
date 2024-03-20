@@ -1,6 +1,6 @@
 frappe.ui.keys.add_shortcut({
 description: "Price Breakdown",
-shortcut: "ctrl+b",
+shortcut: "ctrl+n",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row5 = locals["Sales Invoice Item"][current_doc];
