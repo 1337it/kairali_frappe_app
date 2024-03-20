@@ -32,7 +32,7 @@ const backbutton = document.createElement('button');
 
 frappe.ui.keys.add_shortcut({
 description: "Price Breakdown",
-shortcut: "alt+p",
+shortcut: "shift+p",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row5 = locals["Sales Invoice Item"][current_doc];
@@ -76,7 +76,7 @@ shortcut: "alt+p",
 
 frappe.ui.keys.add_shortcut({
 description: "Stock Ledger",
-shortcut: "alt+m",
+shortcut: "shift+m",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row = locals["Purchase Invoice Item"][current_doc];
@@ -122,7 +122,7 @@ shortcut: "alt+m",
 })
 frappe.ui.keys.add_shortcut({
 description: "Stock Ledger",
-shortcut: "alt+m",
+shortcut: "shift+m",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row = locals["Purchase Order Item"][current_doc];
@@ -168,7 +168,7 @@ shortcut: "alt+m",
 });
 frappe.ui.keys.add_shortcut({
 description: "Stock Ledger",
-shortcut: "alt+m",
+shortcut: "shift+m",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row = locals["Sales Invoice Item"][current_doc];
@@ -215,7 +215,7 @@ shortcut: "alt+m",
 
 frappe.ui.keys.add_shortcut({
 description: "Stock Movement",
-shortcut: "alt+m",
+shortcut: "shift+m",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row1 = locals["Sales Order Item"][current_doc];
