@@ -1641,7 +1641,7 @@ z-index:10!important;
  /* Column 4/12 */
  .page-head .justify-between .page-title{
 max-width: calc(33.33vw - 100px)!important;
-padding-left: 80px;
+padding-left: 0.75vw!important;
 padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
