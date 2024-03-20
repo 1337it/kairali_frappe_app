@@ -60,7 +60,7 @@ shortcut: "alt+p",
                     "custom_block_price",
                     "custom_wholesale_price",
             "modified",
-            "modified_by"
+            "modified_by"],
     get_query() {
         return {
             filters: {"item_code": item_row5.item_code}
