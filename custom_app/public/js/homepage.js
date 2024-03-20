@@ -39,14 +39,14 @@ shortcut: "alt+p",
     new frappe.ui.form.MultiSelectDialog({
     doctype: "Item Price",
     target: this.cur_frm,
-    setters: {price_list=null,
-                    price_list_rate=null,
-                    valid_from=null,
-                    valid_upto=null,
-                    custom_block_price=null,
-                    custom_wholesale_price=null,
-              modified=null,
-            modified_by=null
+    setters: {price_list:null,
+                    price_list_rate:null,
+                    valid_from:null,
+                    valid_upto:null,
+                    custom_block_price:null,
+                    custom_wholesale_price:null,
+              modified:null,
+            modified_by:null
 
               
 
