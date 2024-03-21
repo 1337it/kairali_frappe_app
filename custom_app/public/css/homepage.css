@@ -1354,10 +1354,10 @@ width:30vw!important;
  z-index:10!important;
 }
  .raven-container[data-open-state=false] {
-height: 120px!important;
+height: 48px!important;
 overflow: hidden;
   z-index:10!important;
-  min-width:80px!important
+  min-width:48px!important
 }
 
 .raven-header .back-button svg {
@@ -1488,7 +1488,7 @@ font-size: var(--font-size-6);
 
 .raven-header {
 height: 48px!important;
-padding-inline: 0.3rem!important;
+padding-inline: 0!important;
 display: flex;
 align-items: center;
 justify-content: space-between;
