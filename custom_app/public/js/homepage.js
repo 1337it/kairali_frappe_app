@@ -36,7 +36,7 @@ const drivebutton = document.createElement('button');
 
       // Attach the "click" event to your button
       drivebutton.addEventListener('click', () => {
-            window.location.href='https://speedwayauto.online/drive/home'
+            window.location.href='https://speedwayauto.online/drive'
       });
       document.body.appendChild(drivebutton);
 
