@@ -30,6 +30,16 @@ const backbutton = document.createElement('button');
       });
       document.body.appendChild(backbutton);
 
+const drivebutton = document.createElement('button');
+
+      drivebutton.id = 'drivebutton';
+
+      // Attach the "click" event to your button
+      drivebutton.addEventListener('click', () => {
+            window.location.href='https://speedwayauto.online/drive/home'
+      });
+      document.body.appendChild(drivebutton);
+
 frappe.ui.keys.add_shortcut({
 description: "Price Breakdown",
 shortcut: "shift+p",
