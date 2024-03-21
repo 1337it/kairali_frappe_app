@@ -642,7 +642,7 @@ background-size: contain;
   #drivebutton {
 position: fixed;
 display: var();
-height: 120px;
+height: 48px;
 width: 48px;
 bottom: 48px;
 left: 0px;
