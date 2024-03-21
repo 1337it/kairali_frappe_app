@@ -639,6 +639,21 @@ border: 0;
 background-size: contain;
 }
 
+  #drivebutton {
+position: fixed;
+display: var();
+height: 120px;
+width: 48px;
+bottom: 48px;
+left: 0px;
+z-index: 99999;
+background: url("/files/drive.png");
+object-fit: cover;
+background-repeat: no-repeat;
+border: 0;
+background-size: contain;
+}
+    
 [data-theme-mode="light"] #global-sidebar {
 position: fixed;
     background-color: rgba(18, 18, 18, 1)!important;
