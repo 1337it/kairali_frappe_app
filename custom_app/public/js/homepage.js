@@ -1,8 +1,8 @@
 if ($('html').attr('data-theme') == 'dark') {
-$("meta[name='theme-color']").attr('content', '#171717');
+$("meta[name='theme-color']").attr('content', '#232323');
 };
 if ($('html').attr('data-theme') == 'light'){
-$("meta[name='theme-color']").attr('content', '#ffffff');
+$("meta[name='theme-color']").attr('content', '#ededed');
 };
 
 frappe.ui.keys.add_shortcut({
