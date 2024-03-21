@@ -1260,17 +1260,18 @@ margin-bottom: 30px;
 
 .raven-container[data-open-state="false"] .raven-logo {
 font-weight: 300;
-font-size: 0!important;
- z-index:10!important;
-color: #ffffff;
-padding-right: 0px!important;
-content: url("/files/chat.png")!important;
-visibility: visible;
-scale: 0.3;
-transform: translateX(100%)!important;
-/* align-content: center; */
-/* justify-content: center; */
- filter: drop-shadow(0px 30px 30px rgba(0,0,0,0.4))!important;
+    font-size: 0 !important;
+    z-index: 10 !important;
+    color: #ffffff;
+    padding-right: 0px !important;
+    content: url("/files/chat.png") !important;
+    visibility: visible;
+    align-content: center;
+    justify-content: center;
+    filter: drop-shadow(0px 30px 30px rgba(0,0,0,0.4)) !important;
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
 }
 .raven-container[data-open-state="true"] .raven-logo:after {
 font-weight: 300;
@@ -1329,7 +1330,7 @@ position: fixed;
  border:none!important;
 width: auto!important;
 background-color: transparent!important;
-left: unset!important;
+left: 0px!important;
 bottom: 0px!important;
  right: 30px!important;
  z-index:10!important;
@@ -1449,9 +1450,8 @@ background: rgba(0, 0, 0, 0.61)!important;
 
  .raven-container[data-open-state=false] .raven-header {
 border-bottom: 0px solid var(--border-color);
-width: 100px!important;
-height: 100px!important;
-justify-content: end!important;
+width: 48px!important;
+height: 48px!important;
   z-index:10!important;
 }
 .message-item .raven-message-item-header .raven-message-item-header-name {
@@ -1486,7 +1486,7 @@ font-size: var(--font-size-6);
 }
 
 .raven-header {
-height: 60px!important;
+height: 48px!important;
 padding-inline: 0.3rem!important;
 display: flex;
 align-items: center;
