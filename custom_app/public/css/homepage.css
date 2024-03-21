@@ -286,7 +286,7 @@ width: calc(100vw - 60px)!important;
  background-color: (0, 0, 0, 0.85)!important;
 box-shadow: 0px 0px 50px 1px (0,0,0,0.50)!important;
  height: 90vh!important;
-    margin-left:60px;
+    margin-left:65px;
 }
 .raven-container[data-open-state=true] .raven-header {
  height: 50px!important;
@@ -1362,6 +1362,7 @@ width: 30vw!important;
  background-color: rgba(0, 0, 0, 0.85)!important;
 box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.50)!important;
  height: calc(var(--raven-expanded-height) - 30vh)!important;
+        margin-left:65px;
 }
 .raven-container[data-open-state=true] .raven-header {
  height: 50px!important;
