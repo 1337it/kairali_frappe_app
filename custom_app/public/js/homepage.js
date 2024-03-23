@@ -53,13 +53,10 @@ shortcut: "ctrl+n",
     new frappe.ui.form.MultiSelectDialog({
     doctype: "Item Price",
     target: this.cur_frm,
-    setters: {price_list_rate:null,
+    setters: {item_code:item_row5.item_code,
+      price_list_rate:null,
                     custom_block_price:null,
-                    custom_wholesale_price:null,
-              
-
-              
-
+                    custom_wholesale_price:null
     },
     add_filters_group: 1,
           columns: ["item_code",
@@ -70,6 +67,7 @@ shortcut: "ctrl+n",
                     "custom_block_price",
                     "custom_wholesale_price",
             "modified",
+                    "custom_20",
             "modified_by"],
     get_query() {
         return {
