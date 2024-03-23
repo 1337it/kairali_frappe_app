@@ -91,7 +91,6 @@ shortcut: "alt+p",
 description: "Stock Ledger",
 shortcut: "alt+m",
   action: () => {
-    const curdoc = ("'"+cur_frm.doctype+" Item'");
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row = locals["Sales Invoice Item"][current_doc];
     new frappe.ui.form.MultiSelectDialog({
