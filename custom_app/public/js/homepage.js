@@ -43,7 +43,7 @@ const drivebutton = document.createElement('button');
 
 frappe.ui.keys.add_shortcut({
 description: "Price Breakdown",
-shortcut: "alt+p",
+shortcut: "ctrl+n",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row5 = locals[(cur_frm.doctype +" Item")][current_doc];
