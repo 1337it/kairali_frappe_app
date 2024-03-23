@@ -41,14 +41,12 @@ const drivebutton = document.createElement('button');
       document.body.appendChild(drivebutton);
 
 
-if (cur_frm.doctype == "Sales Invoice")
-{
 frappe.ui.keys.add_shortcut({
 description: "Price Breakdown",
 shortcut: "alt+p",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-            const item_row5 = locals["Sales Invoice Item"][current_doc];
+            const item_row5 = locals[(cur_frm.doctype +" Item")][current_doc];
     new frappe.ui.form.MultiSelectDialog({
     doctype: "Item Price",
     target: this.cur_frm,
@@ -87,9 +85,10 @@ shortcut: "alt+p",
 }
 });
 
+
   frappe.ui.keys.add_shortcut({
 description: "Stock Ledger",
-shortcut: "alt+m",
+shortcut: "ctrl+m",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
             const item_row = locals["Sales Invoice Item"][current_doc];
