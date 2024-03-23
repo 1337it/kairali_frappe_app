@@ -42,22 +42,21 @@ const drivebutton = document.createElement('button');
 
 
 frappe.ui.keys.add_shortcut({
+  
 description: "Price Breakdown",
 shortcut: "ctrl+n",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-            const item_row5 = locals["Sales Invoice Item"][current_doc];
+    const curdoc = (cur_frm.doctype + " Item");
+            const item_row5 = locals[curdoc][current_doc];
+    const pricelist = cur_frm.doc.selling_price_list;
     new frappe.ui.form.MultiSelectDialog({
     doctype: "Item Price",
     target: this.cur_frm,
-    setters: {price_list:null,
-                    price_list_rate:null,
-                    valid_from:null,
-                    valid_upto:null,
+    setters: {price_list_rate:null,
                     custom_block_price:null,
                     custom_wholesale_price:null,
-              modified:null,
-            modified_by:null
+              
 
               
 
@@ -74,7 +73,7 @@ shortcut: "ctrl+n",
             "modified_by"],
     get_query() {
         return {
-            filters: {"item_code": item_row5.item_code}
+            filters: {"item_code": item_row5.item_code, "price_list": pricelist}
         }
     },
     action(selections) {
@@ -91,7 +90,8 @@ description: "Stock Ledger",
 shortcut: "ctrl+m",
   action: () => {
     const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-            const item_row = locals["Sales Invoice Item"][current_doc];
+    const curdoc = (cur_frm.doctype + " Item");
+            const item_row = locals[curdoc][current_doc];
     new frappe.ui.form.MultiSelectDialog({
     doctype: "Stock Ledger Entry",
     target: this.cur_frm,
