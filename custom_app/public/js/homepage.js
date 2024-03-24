@@ -42,98 +42,10 @@ const drivebutton = document.createElement('button');
 
 
 
-frappe.ui.keys.add_shortcut({
-description: "Stock Ledger",
-shortcut: "ctrl+m",
-  action: () => {
-    const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-     const curdoc = (cur_frm.doctype + " Item");
-            const item_row = locals[curdoc][current_doc];
- const buying_price = frappe.db.get_list('Stock Ledger Entry', {
-        fields: ['posting_date', 'voucher_type', 'voucher_no', 'qty_after_transaction', 'incoming_rate', 'outgoing_rate'],
-        filters: [
-            ["Stock Ledger Entry", 'item_code', "=", item_row.item_code]
-        ],
-        as_list: 1
-    }).then(function(val) {
-        let data = frappe.utils.dict(['posting_date', 'voucher_type', 'voucher_no', 'qty_after_transaction', 'incoming_rate', 'outgoing_rate'], val);
-        const table_fields = [
-            {
-                label: 'Posted Date',
-                fieldname: 'posting_date',
-                fieldtype: 'Data',
-                in_list_view: 1,
-                read_only: 1
-            },
-           {
-                label: 'Voucher Type',
-                fieldname: 'voucher_type',
-                fieldtype: 'Data',
-                in_list_view: 1,
-                read_only: 1
-            },
-            {
-                label: 'Voucher No',
-                fieldname: 'voucher_no',
-                fieldtype: 'Link',
-                in_list_view: 1,
-                read_only: 1
-            },
-            {
-                label: 'Qty After Transaction',
-                fieldname: 'qty_after_transaction',
-                fieldtype: 'Data',
-                in_list_view: 1,
-                read_only: 1
-              
-            },
-             {
-                label: 'Incoming Rate',
-                fieldname: 'incoming_rate',
-                fieldtype: 'Currency',
-                in_list_view: 1,
-               "columns": 1,
-                read_only: 1
-            },
-             {
-                label: 'Outgoing Rate',
-                fieldname: 'outgoing_rate',
-                fieldtype: 'Currency',
-                in_list_view: 1,
-               "columns": 1,
-                read_only: 1
-            }
-        ];
-        
-        let d = new frappe.ui.Dialog({
-            title: 'Item Movement: ' + item_row.item_code,
-            size: "large",
-            fields: [
-                {
-                    label: 'Movement',
-                    fieldname: 'items_movement',
-                    fieldtype: 'Table',
-                    fields: table_fields,
-                    options: 'Item',
-                    cannot_add_rows: 1,
-                    cannot_delete_rows : 1,
-                    data: data
-                },
-            ],
-            primary_action_label: 'Close',
-            primary_action(values) {
-                d.hide();
-             }
-        });
 
-        d.show(); 
-   d.$wrapper.find('.modal-dialog').css("width", "90%");
-    });
-}
-});
 
 frappe.ui.keys.add_shortcut({
-    shortcut: 'ctrl+l',
+    shortcut: 'ctrl+w',
     action: () => { 
             const current_doc = $('.data-row.editable-row').parent().attr("data-name");
       const curdoc = (cur_frm.doctype + " Item");
@@ -146,7 +58,7 @@ frappe.ui.keys.add_shortcut({
                 callback: function(r) {
                     if (r.message.length > 0){
                         const d = new frappe.ui.Dialog({
-                            title: __('Item Location'),
+                            title: __('Warehouse Stock Balance'),
                             width: 400
                         });
                         $(`<div class="modal-body ui-front">
@@ -194,81 +106,165 @@ frappe.ui.keys.add_shortcut({
 
 
 
-frappe.ui.keys.add_shortcut({
-description: "Price Breakdown",
-shortcut: "ctrl+n",
-  action: () => {
-    const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-     const curdoc = (cur_frm.doctype + " Item");
-    const pricelist = cur_frm.doc.selling_price_list;
-            const item_row = locals[curdoc][current_doc];
- const buying_price = frappe.db.get_list('Item Price', {
-        fields: ['item_code', 'custom_block_price', 'price_list_rate', 'custom_wholesale_price'],
-        filters: [
-            ["Item Price", 'item_code', "=", item_row.item_code],
-          ['price_list', "=", pricelist]
-        ],
-        as_list: 1
-    }).then(function(val) {
-        let data = frappe.utils.dict(["item_code", "custom_block_price", "price_list_rate", "custom_wholesale_price"], val);
-        const table_fields = [
-            {
-                label: 'Item Code',
-                fieldname: 'item_code',
-                fieldtype: 'Link',
-                options: 'Item',
-              "columns": 2,
-                in_list_view: 1,
-                read_only: 1
-            },
-           {
-                label: 'Block Price',
-                fieldname: 'custom_block_price',
-                fieldtype: 'Currency',
-                in_list_view: 1,
-             "columns": 2,
-                read_only: 1
-            },
-            {
-                label: 'Retail Price',
-                fieldname: 'price_list_rate',
-                fieldtype: 'Currency',
-                in_list_view: 1,
-              "columns": 2,
-                read_only: 1
-            },
-            {
-                label: 'Wholesale Price',
-                fieldname: 'custom_wholesale_price',
-                fieldtype: 'Currency',
-              "columns": 2,
-                in_list_view: 1,
-                read_only: 1
-            }
-        ];
-        
-        let d = new frappe.ui.Dialog({
-            title: 'Item Price: ' + item_row.item_code,
-            size: "large",
-            fields: [
-                {
-                    label: 'Items',
-                    fieldname: 'items_price',
-                    fieldtype: 'Table',
-                    fields: table_fields,
-                    options: 'Item',
-                    cannot_add_rows: 1,
-                    cannot_delete_rows : 1,
-                    data: data
-                },
-            ],
-            primary_action_label: 'Close',
-            primary_action(values) {
-                d.hide();
-             }
-        });
 
-        d.show();  
-    });
-}
+
+frappe.ui.keys.add_shortcut({
+    shortcut: 'ctrl+l',
+    action: () => { 
+            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+      const curdoc = (cur_frm.doctype + " Item");
+            const item_row = locals[curdoc][current_doc];
+            frappe.call({
+                method: 'frappe.client.get_list',
+              args :{
+              doctype: 'Stock Ledger Entry',
+			fields: ['posting_date', 'voucher_type', 'voucher_no', 'qty_after_transaction', 'incoming_rate', 'outgoing_rate'],
+                filters: [
+                    ["item_code", "=",  item_row.item_code],
+                ]
+              },
+                callback: function(r) {
+                    if (r.message.length > 0){
+                        const d = new frappe.ui.Dialog({
+                            title: __('Stock Ledger Entries'),
+                            width: 400
+                        });
+                        $(`<div class="modal-body ui-front">
+                            <h2>${item_row.item_code}</h2>
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <th>Posting Date</th>
+                                <th>Voucher Type</th>
+                                <th>Voucher No.</th>
+                                <th>Qty After Transaction</th>
+                                <th>Incoming Rate</th>
+                                <th>Outgoing Rate</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            </table>
+                        </div>`).appendTo(d.body);
+                        r.message.forEach(element => {
+                            const tbody = $(d.body).find('tbody');
+                            const tr = $(`
+                            <tr>
+                                <td>${element.posting_date}</td>
+                                <td>${element.voucher_type}</td>
+                                <td>${element.voucher_no}</td>
+                                <td>${element.qty_after_transaction}</td>
+                                <td>${element.incoming_rate}</td>
+                                <td>${element.outgoing_rate}</td>
+                            </tr>
+                            `).appendTo(tbody)
+                            tbody.find('.check-warehouse').on('change', function() {
+                                $('input.check-warehouse').not(this).prop('checked', false);  
+                            });
+                        });
+                        d.set_primary_action("Close", function() {
+       d.hide();
+                        });
+                        cur_frm.rec_dialog = d;
+                        d.show();  
+                         d.$wrapper.find('.modal-dialog').css("width", "90%");
+                    }
+              }
+            });     
+    },
+    page: this.page,
+    description: __('Get Item INFO'),
+    ignore_inputs: true,
+    
 });
+
+
+frappe.ui.keys.add_shortcut({
+    shortcut: 'ctrl+r',
+    action: () => { 
+            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+      const curdoc = (cur_frm.doctype + " Item");
+           const pricelist = cur_frm.doc.selling_price_list;
+            const item_row = locals[curdoc][current_doc];
+            frappe.call({
+                method: 'frappe.client.get_list',
+              args :{
+              doctype: 'Item Price',
+			fields: ["custom_block_price", "price_list_rate", "custom_wholesale_price"],
+                filters: [
+                    ["item_code", "=",  item_row.item_code],
+                  ["price_list", "=",  pricelist]
+                ]
+              },
+                callback: function(r) {
+                    if (r.message.length > 0){
+                        const d = new frappe.ui.Dialog({
+                            title: __('Price Breakdown'),
+                            width: 400
+                        });
+                        $(`<div class="modal-body ui-front">
+                            <h2>${item_row.item_code}</h2>
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <th>Block Price</th>
+                                <th>Retail Price</th>
+                                <th>Wholesale Price</th>
+                                <th>5%</th>
+                                <th>10%</th>
+                                <th>15%</th>
+                                <th>20%</th>
+                                <th>25%</th>
+                                <th>30%</th>
+                                <th>35%</th>
+                                <th>50%</th>
+                                <th>100%</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            </table>
+                        </div>`).appendTo(d.body);
+                        r.message.forEach(element => {
+                            const tbody = $(d.body).find('tbody');
+                            const tr = $(`
+                            <tr>
+                                <td>${element.custom_block_price}</td>
+                                <td>${element.price_list_rate}</td>
+                                <td>${element.custom_wholesale_price}</td>
+                                <td>${(item_row.rate * 1.05).toFixed(2)}</td>
+                                <td>${(item_row.rate * 1.1).toFixed(2)}</td>
+                                <td><a onclick='click(1.5);'>${(item_row.rate * 1.15).toFixed(2)}</a></td>
+                                <td>${(item_row.rate * 1.2).toFixed(2)}</td>
+                                <td>${(item_row.rate * 1.25).toFixed(2)}</td>
+                                <td>${(item_row.rate * 1.30).toFixed(2)}</td>
+                                <td>${(item_row.rate * 1.35).toFixed(2)}</td>
+                                <td>${(item_row.rate * 1.5).toFixed(2)}</td>
+                                <td>${(item_row.rate * 2).toFixed(2)}</td>
+                            </tr>
+                            `).appendTo(tbody)
+                            tbody.find('.check-warehouse').on('change', function() {
+                                $('input.check-warehouse').not(this).prop('checked', false);  
+                        });
+                        d.set_primary_action("Close", function() {
+       d.hide();
+                        });
+                        cur_frm.rec_dialog = d;
+                        d.show();  
+                         d.$wrapper.find('.modal-dialog').css("width", "90%");
+                    }
+              }
+            });     
+    },
+    page: this.page,
+    description: __('Get Item INFO'),
+    ignore_inputs: true,
+    
+});
+
+
+
+
+
+
+   
