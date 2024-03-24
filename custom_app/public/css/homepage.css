@@ -133,14 +133,19 @@ display: none!important;
 
 
 @media (max-width:1199px) {
+
+    .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: none;
+}
     #globalmenu {
 cursor: pointer;
 margin-right: 10px;
-position: fixed;
-top: 50vh;
-left: -15px;
 background-blend-mode: difference;
-background-color: black;
 color: rgba(255, 255, 255, 0);
 stroke: white;
 }
