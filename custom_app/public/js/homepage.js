@@ -234,7 +234,7 @@ frappe.ui.keys.add_shortcut({
                                 <td>${element.custom_wholesale_price}</td>
                                 <td>${(item_row.rate * 1.05).toFixed(2)}</td>
                                 <td>${(item_row.rate * 1.1).toFixed(2)}</td>
-                                <td><a onclick='click(1.5);'>${(item_row.rate * 1.15).toFixed(2)}</a></td>
+                                <td><a onclick='click(1.15);'>${(item_row.rate * 1.15).toFixed(2)}</a></td>
                                 <td>${(item_row.rate * 1.2).toFixed(2)}</td>
                                 <td>${(item_row.rate * 1.25).toFixed(2)}</td>
                                 <td>${(item_row.rate * 1.30).toFixed(2)}</td>
@@ -245,11 +245,19 @@ frappe.ui.keys.add_shortcut({
                             `).appendTo(tbody)
                             tbody.find('.check-warehouse').on('change', function() {
                                 $('input.check-warehouse').not(this).prop('checked', false);  
+                           
+                            });
+                          
                         });
                         d.set_primary_action("Close", function() {
        d.hide();
                         });
                         cur_frm.rec_dialog = d;
+                        if (c >=1){
+                        function click(c){
+                        item_row.rate = (item_row.rate*c);
+                        }
+                        }
                         d.show();  
                          d.$wrapper.find('.modal-dialog').css("width", "90%");
                     }
