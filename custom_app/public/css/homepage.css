@@ -175,8 +175,9 @@ padding:15px!important;
 padding: 1rem 14px!important;     
     }
 #global-sidebar {
+    background-color: #000000!important;
 width: 50vw!important;
-box-shadow: 12px 20px 14px 0 rgba(116, 135, 138, 0.44);
+box-shadow: 12px 20px 14px 0 rgba(0, 0, 0, 0.44);
 margin-top: 48px;
 }
     
