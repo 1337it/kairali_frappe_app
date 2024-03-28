@@ -27,9 +27,7 @@ height: 220px!important;
 .form-message {
 margin-top: 50px;
 }
-.overlay-sidebar {
-display: none!important;
-}
+
 .page-wrapper {
 height: 100%;
 }
@@ -705,10 +703,11 @@ border: 1px none var(--border-color)!important;
 }
 /* Layout side section */
 .layout-side-section{
-    display:none!important;
+    display:block!important;
  box-shadow:-2px 6px 6px 6px (116,135,138,0.44) inset;
  padding-right: 15px!important;
   padding-left:15px!important;
+    margin-left: 48px!important;
 }
 
 .row{
@@ -846,7 +845,6 @@ body{
 .page-wrapper .layout-side-section{
  background-size:cover;
  padding-top:25px;
- background-color:#ffffff;
  box-shadow:-4px 2px 18px -2px (116,135,138,0.44) inset;
  top: 0px;
 }
@@ -911,7 +909,6 @@ margin-top: 0px!important;
  /* Layout side section */
  .page-wrapper .layout-side-section{
   height:auto;
- max-width:48px!important;
  }
  
  /* Layout main section */
@@ -1571,7 +1568,6 @@ z-index:10!important;
  /* Layout side section */
 .page-wrapper .layout-side-section{
  box-shadow:-4px 2px 0px 0px #525252;
- background-color:#474747;
 }
 
 
