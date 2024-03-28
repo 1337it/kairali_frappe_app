@@ -642,7 +642,28 @@ display: none!important;
 
 
  
-@media (min-width:1200px) {/* Content Division */
+@media (min-width:1200px) {
+
+   [data-route^=Form/Item] .form-tabs-list .form-tabs {
+justify-content: center!important;
+position: fixed!important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 48px) !important;
+width: 100vw!important;
+ padding: 0px!important;
+ margin: 0px!important;
+left: 8.3%!important;
+background-color: rgba(0,0,0,0.8)!important;
+-webkit-backdrop-filter: blur(10px)!important;
+border-bottom: 0.5px none #525252!important;
+ z-index:800!important;
+}
+[data-route^=Form/Item] .page-wrapper .layout-side-section{
+ background-size:cover;
+ padding-top:25px;
+ box-shadow:-4px 2px 18px -2px (116,135,138,0.44) inset;
+ top: 0px;
+    display:block;
+}
 .form-sidebar .sidebar-image-section .sidebar-image
 {
     max-height:100%!important;
@@ -863,6 +884,7 @@ body{
  padding-top:25px;
  box-shadow:-4px 2px 18px -2px (116,135,138,0.44) inset;
  top: 0px;
+    display:none;
 }
 
 /* Page wrapper */
@@ -2220,7 +2242,7 @@ top: calc(env(titlebar-area-height, var(--navbar-height)) + 48px) !important;
 width: 100vw!important;
  padding: 0px!important;
  margin: 0px!important;
-left: 8.333%!important;
+left: 0%!important;
 background-color: rgba(0,0,0,0.8)!important;
 -webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px none #525252!important;
