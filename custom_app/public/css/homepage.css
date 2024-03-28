@@ -1,3 +1,7 @@
+.form-sidebar .sidebar-image-section
+{
+    width:100%!important;
+}
 textarea.form-control {
     height: 60px !important;
 }
@@ -703,11 +707,11 @@ border: 1px none var(--border-color)!important;
 }
 /* Layout side section */
 .layout-side-section{
-    display:block!important;
  box-shadow:-2px 6px 6px 6px (116,135,138,0.44) inset;
  padding-right: 15px!important;
   padding-left:15px!important;
     margin-left: 48px!important;
+       margin-top: 50px!important;
 }
 
 .row{
