@@ -644,7 +644,7 @@ display: none!important;
  
 @media (min-width:1200px) {
 
-   [data-route^=Form/Item].form-tabs-list .form-tabs {
+   [data-route^="Form/Item"].form-tabs-list .form-tabs {
 justify-content: center!important;
 position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 48px) !important;
@@ -657,7 +657,7 @@ background-color: rgba(0,0,0,0.8)!important;
 border-bottom: 0.5px none #525252!important;
  z-index:800!important;
 }
-[data-route^=Form/Item].page-wrapper .layout-side-section{
+[data-route^="Form/Item"].page-wrapper .layout-side-section{
  background-size:cover;
  padding-top:25px;
  box-shadow:-4px 2px 18px -2px (116,135,138,0.44) inset;
