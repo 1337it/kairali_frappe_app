@@ -643,6 +643,11 @@ display: none!important;
 
  
 @media (min-width:1200px) {
+    .dt-cell:has(.dt-cell--focus) .table
+    {
+        position:fixed;
+        right:0px;
+    }
 
    [data-route^="Form/Item/"] .form-tabs-list .form-tabs {
 justify-content: center!important;
