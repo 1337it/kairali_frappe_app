@@ -145,12 +145,25 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	# Get searchfields from meta and use in Item Link field query
 	meta = frappe.get_meta(doctype, cached=True)
 	searchfields = meta.get_search_fields()
+	itemfilters = [
+		["price_list", "=", "Standard Selling"],
+		["item_code", "=", filters.get("item_code")],
+	]
 
+	pricedet = frappe.get_value(
+		"Item Price",
+		fields=["price_list_rate"],
+		filters=itemfilters,
+		as_list=1,
+	)
 	columns = ""
 	extra_searchfields = [field for field in searchfields if field not in ["name", "description"]]
 
 	if extra_searchfields:
 		columns += ", " + ", ".join(extra_searchfields)
+
+	if pricedet:
+		columns += ", " + ", ".join(pricedet)
 
 	if "description" in searchfields:
 		columns += """, if(length(tabItem.description) > 40, \
