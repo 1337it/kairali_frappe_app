@@ -204,7 +204,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	return frappe.db.sql(
 		"""select
-			tabItem.name {columns}
+			tabItem.name
    			`tabItem Price`.price_list_rate {columns}
 		from tabItem, 'tabItem Price'
 		where tabItem.docstatus < 2
