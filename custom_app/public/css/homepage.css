@@ -356,7 +356,6 @@ width: 1.8rem!important;
 }
 
 .raven-channel-list-item .channel-label {
-color: var(--btn-default-bg)!important;
 font-weight: 300!important;
 font-family: Arial!important;
 }
