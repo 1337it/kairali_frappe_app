@@ -138,10 +138,11 @@ def tax_account_query(doctype, txt, searchfield, start, page_len, filters):
 def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=False):
 	doctype = "Item"
 	conditions = []
+
 	
 	return frappe.db.sql(
 		"""select
-			it.item_name, CONCAT('Item Code:', RPAD(NVL(it.item_code, '') , 15, SPACE(1))) as label, CONCAT('Description:', RPAD(NVL(it.description, '') , 50, SPACE(1))) as description, CONCAT('Price:', RPAD(NVL(ip.price_list_rate, '') , 8, SPACE(1))) as price, CONCAT('QTR:', RPAD(NVL(iq.actual_qty, '') , 8, SPACE(1))) as qtr
+			it.item_name, CONCAT('Item Code:', RPAD(NVL(it.item_code, '') , 15, SPACE(1))) as label, CONCAT('Description:', RPAD(NVL(it.description, '') , 50, SPACE(1))) as description, CONCAT('Price:', RPAD(NVL(ip.price_list_rate, '') , 8, SPACE(1))) as price, CONCAT('QTR:', cast((SELECT sum(sl.actual_qty) FROM `tabStock Ledger Entry` sl WHERE sl.item_code = `tabItem`.item_code AND sl.warehouse = "Stores - QTR" GROUP BY sl.item_code) AS int)) AS 'QTY'
 		from tabItem it left outer join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
 		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
   		where it.docstatus < 2
