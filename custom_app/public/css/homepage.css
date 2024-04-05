@@ -268,13 +268,13 @@ position: fixed;
 width: auto!important;
 background-color: transparent!important;
 left: unset!important;
-bottom: 0px!important;
+bottom: 80px!important;
  right: 30px!important;
  z-index:10!important;
 }
 
 .raven-container[data-open-state=true] {
-overflow: hidden;
+overflow: visible;
  z-index:1000!important;
 width: calc(100vw - 60px)!important;
  backdrop-filter: blur(5px)!important;
