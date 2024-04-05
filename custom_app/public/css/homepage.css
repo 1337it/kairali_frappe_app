@@ -2,6 +2,10 @@
     flex: 0 0 15%;
     max-width: 33.33333333%;
 }
+[data-fieldtype="HTML"] .col-xs-8 {
+    flex: 0 0 85%;
+    max-width: 33.33333333%;
+}
 .form-sidebar .sidebar-image-section
 {
     width:100%!important;
