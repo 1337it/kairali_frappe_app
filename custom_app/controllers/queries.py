@@ -160,19 +160,12 @@ SELECT `tabItem`.item_name AS `Item Name`,
 		"""select
 			it.item_name, CONCAT('Item Code:', RPAD(NVL(it.item_code, '') , 15, SPACE(1))) as label, CONCAT('Description:', RPAD(NVL(it.description, '') , 50, SPACE(1))) as description, CONCAT('Price:', RPAD(NVL(ip.price_list_rate, '') , 8, SPACE(1))) as price, CONCAT('QTR:', RPAD(NVL(sum(iq.actual_qty), '') , 8, SPACE(1))) as qtr
 		from tabItem it left outer join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
-		LEFT OUTER JOIN `tabStock Ledger Entry` iq on 
-    ON it.item_name = iq.item_code
-
-
-		where it.docstatus < 2
+		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
+  		where it.docstatus < 2
 			and it.disabled=0
 			and it.has_variants=0
 			and (it.end_of_life > %(today)s or ifnull(it.end_of_life, '0000-00-00')='0000-00-00')
 			and it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
-		order by
-			if(locate(%(_txt)s, it.item_name), locate(%(_txt)s, it.item_name), 99999),
-			it.idx desc,
-			it.item_name
    GROUP BY it.item_name,
           it.item_code,
           it.description,
