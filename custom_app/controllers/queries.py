@@ -147,22 +147,22 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	searchfields = meta.get_search_fields()
 
 	columns = ""
-	extra_searchfields = [field for field in searchfields if field not in ["name", "description"]]
+	extra_searchfields = [field for field in searchfields if field not in ["it.name", "it.description"]]
 
 	if extra_searchfields:
 		columns += ", " + ", ".join(extra_searchfields)
 
 	if "description" in searchfields:
-		columns += """, if(length(tabItem.description) > 40, \
-			concat(substr(tabItem.description, 1, 40), "..."), description) as description, `tabItem Price`.price_list_rate as price"""
+		columns += """, if(length(it.description) > 40, \
+			concat(substr(it.description, 1, 40), "..."), description) as description, ip.price_list_rate as price"""
 
 	searchfields = searchfields + [
 		field
 		for field in [
-			searchfield or "name",
-			"tabItem.item_code",
-			"tabItem.item_group",
-			"tabItem.item_name",
+			searchfield or "it.name",
+			"it.item_code",
+			"it.item_group",
+			"it.item_name",
 		]
 		if field not in searchfields
 	]
@@ -180,7 +180,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			filters_dict = {}
 			for rule in item_rules_list:
 				if rule["restrict_based_on"] == "Item":
-					rule["restrict_based_on"] = "name"
+					rule["restrict_based_on"] = "it.name"
 				filters_dict[rule.restrict_based_on] = []
 
 			for rule in item_rules_list:
@@ -200,26 +200,25 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	description_cond = ""
 	if frappe.db.count(doctype, cache=True) < 50000:
 		# scan description only if items are less than 50000
-		description_cond = "or tabItem.description LIKE %(txt)s"
+		description_cond = "or it.description LIKE %(txt)s"
 
 	return frappe.db.sql(
 		"""select
-			tabItem.name {columns}
-		from tabItem
-  		left join `tabItem Price` on `tabItem Price`.item_code = tabItem.item_code
+			it.name {columns}
+		from tabItem it left join `it Price` ip on ip.item_code = it.item_code
 
-		where tabItem.docstatus < 2
-			and tabItem.disabled=0
-			and tabItem.has_variants=0
-			and (tabItem.end_of_life > %(today)s or ifnull(tabItem.end_of_life, '0000-00-00')='0000-00-00')
-			and ({scond} or tabItem.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
+		where it.docstatus < 2
+			and it.disabled=0
+			and it.has_variants=0
+			and (it.end_of_life > %(today)s or ifnull(it.end_of_life, '0000-00-00')='0000-00-00')
+			and ({scond} or it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
 				{description_cond})
 			{fcond} {mcond}
 		order by
-			if(locate(%(_txt)s, name), locate(%(_txt)s, name), 99999),
-			if(locate(%(_txt)s, tabItem.item_name), locate(%(_txt)s, tabItem.item_name), 99999),
+			if(locate(%(_txt)s, it.name), locate(%(_txt)s, it.name), 99999),
+			if(locate(%(_txt)s, it.item_name), locate(%(_txt)s, it.item_name), 99999),
 			idx desc,
-			name, tabItem.item_name, price
+			it.name, it.item_name
 		limit %(start)s, %(page_len)s """.format(
 			columns=columns,
 			scond=searchfields,
