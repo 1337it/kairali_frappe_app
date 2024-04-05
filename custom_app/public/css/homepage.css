@@ -291,10 +291,9 @@ width:calc(100vw - 60px)!important;
  z-index:10000!important;
 }
  .raven-container[data-open-state=false] {
-height: 48px!important;
-overflow: hidden;
+height: 100px!important;
+overflow: visible;
   z-index:10!important;
-  min-width:48px!important
 }
 
 .raven-header .back-button svg {
@@ -387,7 +386,6 @@ background: (0, 0, 0, 0.61)!important;
 
  .raven-container[data-open-state=false] .raven-header {
 border-bottom: 0px solid var(--border-color);
-width: 100px!important;
 height: 100px!important;
 justify-content: end!important;
   z-index:10!important;
