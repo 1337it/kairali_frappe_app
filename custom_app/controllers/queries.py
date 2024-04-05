@@ -147,14 +147,14 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	searchfields = meta.get_search_fields()
 
 	columns = ""
-	extra_searchfields = [field for field in searchfields if field not in ["name", "description"]]
+	extra_searchfields = [field for field in searchfields if field not in ["name", "description", "price"]]
 
 	if extra_searchfields:
 		columns += ", " + ", ".join(extra_searchfields)
 
 	if "description" in searchfields:
 		columns += """, if(length(tabItem.description) > 40, \
-			concat(substr(tabItem.description, 1, 40), "..."), description) as description"""
+			concat(substr(tabItem.description, 1, 40), "..."), description) as description, `tabItem Price`.price_list_rate as price"""
 
 	searchfields = searchfields + [
 		field
@@ -204,7 +204,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	return frappe.db.sql(
 		"""select
-			tabItem.name, tabItem.description as description, `tabItem Price`.price_list_rate
+			tabItem.name {columns}
 		from tabItem
   		left join `tabItem Price` on `tabItem Price`.item_code = tabItem.item_code
 
