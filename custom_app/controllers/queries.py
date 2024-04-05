@@ -160,9 +160,9 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 		field
 		for field in [
 			searchfield or "name",
-			"item_code",
-			"item_group",
-			"item_name",
+			"tabItem.item_code",
+			"tabItem.item_group",
+			"tabItem.item_name",
 		]
 		if field not in searchfields
 	]
@@ -217,9 +217,9 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			{fcond} {mcond}
 		order by
 			if(locate(%(_txt)s, name), locate(%(_txt)s, name), 99999),
-			if(locate(%(_txt)s, item_name), locate(%(_txt)s, item_name), 99999),
+			if(locate(%(_txt)s, tabItem.item_name), locate(%(_txt)s, tabItem.item_name), 99999),
 			idx desc,
-			name, item_name
+			name, tabItem.item_name, price
 		limit %(start)s, %(page_len)s """.format(
 			columns=columns,
 			scond=searchfields,
