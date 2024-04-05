@@ -205,7 +205,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	return frappe.db.sql(
 		"""select
 			it.name {columns}
-		from tabItem it left join `it Price` ip on ip.item_code = it.item_code
+		from tabItem it left join `tabItem Price` ip on ip.item_code = it.item_code
 
 		where it.docstatus < 2
 			and it.disabled=0
