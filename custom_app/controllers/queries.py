@@ -147,7 +147,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	searchfields = meta.get_search_fields()
 
 	columns = ""
-	extra_searchfields = [field for field in searchfields if field not in ["name", "description", "price"]]
+	extra_searchfields = [field for field in searchfields if field not in ["name", "description"]]
 
 	if extra_searchfields:
 		columns += ", " + ", ".join(extra_searchfields)
