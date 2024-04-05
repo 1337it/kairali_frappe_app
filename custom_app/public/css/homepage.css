@@ -273,8 +273,8 @@ position: fixed;
 width: auto!important;
 background-color: transparent!important;
 left: unset!important;
-bottom: 5px!important;
- right: 10px!important;
+bottom: 2vh!important;
+ right: 2vw!important;
  z-index:10!important;
 }
 
