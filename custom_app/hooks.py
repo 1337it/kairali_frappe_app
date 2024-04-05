@@ -160,6 +160,7 @@ home_page = "index"
 #	"frappe.desk.doctype.event.event.get_events": "custom_app.event.get_events"
 # }
 #
+override_whitelisted_methods = {"erpnext.controllers.queries.item_query": "custom_app.controllers.queries.item_query"}
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
