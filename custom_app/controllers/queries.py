@@ -138,24 +138,7 @@ def tax_account_query(doctype, txt, searchfield, start, page_len, filters):
 def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=False):
 	doctype = "Item"
 	conditions = []
-SELECT `tabItem`.item_name AS `Item Name`,
-       `tabItem`.item_code AS `Item Code`,
-       `tabItem`.description AS `Description`,
-       `tabStock Ledger Entry`.warehouse AS `Warehouse`,
-`tabItem Price`.price_list_rate) AS `Price List Rate`,
-       sum(`tabStock Ledger Entry`.actual_qty) AS `Actual Qty`
-  FROM `tabItem` AS `tabItem`
-  LEFT OUTER JOIN `tabItem Price` AS `tabItem Price`
-    ON `tabItem`.item_code = `tabItem Price`.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` AS `tabStock Ledger Entry`
-    ON `tabItem`.item_name = `tabStock Ledger Entry`.item_code
- WHERE `tabItem`.item_code = '12-HS08'
-   AND `tabItem Price`.price_list = 'Standard Selling (Qatar)'
- GROUP BY `tabItem`.item_name,
-          `tabItem`.item_code,
-          `tabItem`.description,
-          `tabStock Ledger Entry`.warehouse
- LIMIT 100
+	
 	return frappe.db.sql(
 		"""select
 			it.item_name, CONCAT('Item Code:', RPAD(NVL(it.item_code, '') , 15, SPACE(1))) as label, CONCAT('Description:', RPAD(NVL(it.description, '') , 50, SPACE(1))) as description, CONCAT('Price:', RPAD(NVL(ip.price_list_rate, '') , 8, SPACE(1))) as price, CONCAT('QTR:', RPAD(NVL(sum(iq.actual_qty), '') , 8, SPACE(1))) as qtr
