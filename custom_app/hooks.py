@@ -34,9 +34,6 @@ web_include_js = "/assets/custom_app/js/homepage.js"
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
-doctype_js = {
-    "Sales Invoice" : "public/js/sales_invoice.js",
-}
 # Home Pages
 # ----------
 
@@ -162,7 +159,6 @@ home_page = "index"
 #	"frappe.desk.doctype.event.event.get_events": "custom_app.event.get_events"
 # }
 #
-override_whitelisted_methods = {"erpnext.controllers.queries.item_query": "custom_app.controllers.queries.item_query"}
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
