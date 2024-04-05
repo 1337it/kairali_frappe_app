@@ -143,26 +143,18 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 		"""select
 			it.item_name, if(length(it.description) > 40, \
 			concat(substr(it.description, 1, 40), "..."), it.description) as description, ip.price_list_rate as price
-		from tabItem it left join `tabItem Price` ip on ip.item_code = it.item_code
+		from tabItem it left join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
 
 		where it.docstatus < 2
 			and it.disabled=0
 			and it.has_variants=0
 			and (it.end_of_life > %(today)s or ifnull(it.end_of_life, '0000-00-00')='0000-00-00')
 			and ({scond} or it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
-				{description_cond})
-			{fcond} {mcond}
 		order by
 			if(locate(%(_txt)s, it.item_name), locate(%(_txt)s, it.item_name), 99999),
-			idx desc,
+			it.idx desc,
 			it.item_name
-		limit %(start)s, %(page_len)s """.format(
-			columns=columns,
-			scond=searchfields,
-			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
-			mcond=get_match_cond(doctype).replace("%", "%%"),
-			description_cond=description_cond,
-		),
+		limit %(start)s, %(page_len)s """,
 		{
 			"today": nowdate(),
 			"txt": "%%%s%%" % txt,
