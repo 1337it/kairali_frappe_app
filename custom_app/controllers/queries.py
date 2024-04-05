@@ -141,8 +141,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	return frappe.db.sql(
 		"""select
-			it.item_name, if(length(it.description) > 40, \
-			concat(substr(it.description, 1, 40), "..."), it.description) as description, ip.price_list_rate as price
+			it.item_name, it.item_code as code, it.description as description, ip.price_list_rate as price
 		from tabItem it left join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
 
 		where it.docstatus < 2
