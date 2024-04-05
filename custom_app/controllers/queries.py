@@ -149,7 +149,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			and it.disabled=0
 			and it.has_variants=0
 			and (it.end_of_life > %(today)s or ifnull(it.end_of_life, '0000-00-00')='0000-00-00')
-			and ({scond} or it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
+			and it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
 		order by
 			if(locate(%(_txt)s, it.item_name), locate(%(_txt)s, it.item_name), 99999),
 			it.idx desc,
