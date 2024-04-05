@@ -125,6 +125,11 @@ display: none!important;
 
 @media (max-width:1199px) {
 
+    .search-bar {
+flex: 1;
+max-width: auto!important;
+margin-left: 0 var(--margin-md);
+}
     .navbar-nav {
     display: flex;
     flex-direction: column;
@@ -200,7 +205,7 @@ display: none!important;
 z-index: 10!important;
 color: #ffffff;
 padding-right: 0px!important;
-content: url("/files/chat.png")!important;
+content: url("/files/chatm.png")!important;
 visibility: visible;
 scale: 0.3;
 transform: translateX(100%)!important;
@@ -268,8 +273,8 @@ position: fixed;
 width: auto!important;
 background-color: transparent!important;
 left: unset!important;
-bottom: 80px!important;
- right: 30px!important;
+bottom: 5px!important;
+ right: 10px!important;
  z-index:10!important;
 }
 
