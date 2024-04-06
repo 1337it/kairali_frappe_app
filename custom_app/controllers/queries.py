@@ -168,8 +168,22 @@ CONCAT('ALN:', cast((SELECT sum(sl14.actual_qty) FROM `tabStock Ledger Entry` sl
 
 
 
-		from tabItem it left outer join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
+		from `tabIte`m it left outer join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
 		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq1 ON it.item_name = iq1.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq2 ON it.item_name = iq2.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq3 ON it.item_name = iq3.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq4 ON it.item_name = iq4.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq5 ON it.item_name = iq5.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq6 ON it.item_name = iq6.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq7 ON it.item_name = iq7.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq8 ON it.item_name = iq8.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq9 ON it.item_name = iq9.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq10 ON it.item_name = iq10.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq11 ON it.item_name = iq11.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` iq12 ON it.item_name = iq12.item_code
+  
+
   		where it.docstatus < 2
 			and it.disabled=0
 			and it.has_variants=0
@@ -177,8 +191,7 @@ CONCAT('ALN:', cast((SELECT sum(sl14.actual_qty) FROM `tabStock Ledger Entry` sl
 			and it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
    GROUP BY it.item_name,
           it.item_code,
-          it.description,
-          iq.warehouse
+          it.description
 		limit %(start)s, %(page_len)s """,
 		{
 			"today": nowdate(),
