@@ -143,36 +143,22 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	return frappe.db.sql(
 		"""select
 			it.item_name, CONCAT('Item Code:', RPAD(NVL(it.item_code, '') , 0, SPACE(1))) as label, CONCAT('Description:', RPAD(NVL(it.description, '') , 50, SPACE(1))) as description, CONCAT('Price:', RPAD(NVL(format(ip.price_list_rate, 'C2'), '') , 8, SPACE(1))) as price, CONCAT('QTR:', cast((SELECT sum(sl.actual_qty) FROM `tabStock Ledger Entry` sl WHERE sl.item_code = it.item_code AND sl.warehouse = "Stores - QTR" GROUP BY sl.item_code) AS int)) AS 'QTY',
-CONCAT('SH1:', cast((SELECT sum(sl1.actual_qty) FROM `tabStock Ledger Entry` sl1 WHERE sl1.item_code = it.item_code AND sl1.warehouse = "Stores - SH1" GROUP BY sl1.item_code) AS int)) AS 'QTY',
-CONCAT('SH2:', cast((SELECT sum(sl2.actual_qty) FROM `tabStock Ledger Entry` sl2 WHERE sl2.item_code = it.item_code AND sl2.warehouse = "Stores - SH2" GROUP BY sl2.item_code) AS int)) AS 'QTY',
-CONCAT('SH3:', cast((SELECT sum(sl3.actual_qty) FROM `tabStock Ledger Entry` sl3 WHERE sl3.item_code = it.item_code AND sl3.warehouse = "Stores - SH3" GROUP BY sl3.item_code) AS int)) AS 'QTY',
-CONCAT('SH4:', cast((SELECT sum(sl4.actual_qty) FROM `tabStock Ledger Entry` sl4 WHERE sl4.item_code = it.item_code AND sl4.warehouse = "Stores - SH4" GROUP BY sl4.item_code) AS int)) AS 'QTY',
-CONCAT('SH5:', cast((SELECT sum(sl5.actual_qty) FROM `tabStock Ledger Entry` sl5 WHERE sl5.item_code = it.item_code AND sl5.warehouse = "Stores - SH5" GROUP BY sl5.item_code) AS int)) AS 'QTY',
-CONCAT('SH6:', cast((SELECT sum(sl6.actual_qty) FROM `tabStock Ledger Entry` sl6 WHERE sl6.item_code = it.item_code AND sl6.warehouse = "Stores - SH6" GROUP BY sl6.item_code) AS int)) AS 'QTY',
-CONCAT('SHJ:', cast((SELECT sum(sl7.actual_qty) FROM `tabStock Ledger Entry` sl7 WHERE sl7.item_code = it.item_code AND sl7.warehouse = "Stores - SHJ" GROUP BY sl7.item_code) AS int)) AS 'QTY',
-CONCAT('SHJ1:', cast((SELECT sum(sl8.actual_qty) FROM `tabStock Ledger Entry` sl8 WHERE sl8.item_code = it.item_code AND sl8.warehouse = "Stores -SHJ1" GROUP BY sl8.item_code) AS int)) AS 'QTY',
-CONCAT('SHJ2:', cast((SELECT sum(sl9.actual_qty) FROM `tabStock Ledger Entry` sl9 WHERE sl9.item_code = it.item_code AND sl9.warehouse = "Stores - SHJ2" GROUP BY sl9.item_code) AS int)) AS 'QTY',
-CONCAT('SHJ3:', cast((SELECT sum(sl10.actual_qty) FROM `tabStock Ledger Entry` sl10 WHERE sl10.item_code = it.item_code AND sl10.warehouse = "Stores - SHJ3" GROUP BY sl10.item_code) AS int)) AS 'QTY',
-CONCAT('AJ1:', cast((SELECT sum(sl11.actual_qty) FROM `tabStock Ledger Entry` sl11 WHERE sl11.item_code = it.item_code AND sl11.warehouse = "Stores - AJ1" GROUP BY sl11.item_code) AS int)) AS 'QTY',
-CONCAT('AJ2:', cast((SELECT sum(sl12.actual_qty) FROM `tabStock Ledger Entry` sl12 WHERE sl12.item_code = it.item_code AND sl12.warehouse = "Stores - AJ2" GROUP BY sl12.item_code) AS int)) AS 'QTY',
-CONCAT('AD1:', cast((SELECT sum(sl13.actual_qty) FROM `tabStock Ledger Entry` sl13 WHERE sl13.item_code = it.item_code AND sl13.warehouse = "Stores - AD1" GROUP BY sl13.item_code) AS int)) AS 'QTY',
-CONCAT('ALN:', cast((SELECT sum(sl14.actual_qty) FROM `tabStock Ledger Entry` sl14 WHERE sl14.item_code = it.item_code AND sl14.warehouse = "Stores - ALN" GROUP BY sl14.item_code) AS int)) AS 'QTY'
+CONCAT('SH1:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH1" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('SH2:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH2" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('SH3:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH3" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('SH4:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH4" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('SH5:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH5" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('SH6:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH6" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('SHJ:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SHJ" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('SHJ1:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores -SHJ1" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('SHJ2:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SHJ2" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('SHJ3:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SHJ3" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('AJ1:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - AJ1" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('AJ2:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - AJ2" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('AD1:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - AD1" GROUP BY iq.item_code) AS int)) AS 'QTY',
+CONCAT('ALN:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - ALN" GROUP BY iq.item_code) AS int)) AS 'QTY'
 from tabItem it left outer join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
 		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq1 ON it.item_name = iq1.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq2 ON it.item_name = iq2.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq3 ON it.item_name = iq3.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq4 ON it.item_name = iq4.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq5 ON it.item_name = iq5.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq6 ON it.item_name = iq6.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq7 ON it.item_name = iq7.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq8 ON it.item_name = iq8.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq9 ON it.item_name = iq9.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq10 ON it.item_name = iq10.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq11 ON it.item_name = iq11.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry` iq12 ON it.item_name = iq12.item_code
-  
-
   		where it.docstatus < 2
 			and it.disabled=0
 			and it.has_variants=0
