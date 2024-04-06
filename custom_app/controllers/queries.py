@@ -142,21 +142,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	
 	return frappe.db.sql(
 		"""select
-			it.item_name, CONCAT('Item Code:', RPAD(NVL(it.item_code, '') , 0, SPACE(1))) as label, CONCAT('Description:', RPAD(NVL(it.description, '') , 50, SPACE(1))) as description, CONCAT('Price:', RPAD(NVL(format(ip.price_list_rate, 'C2'), '') , 8, SPACE(1))) as price, CONCAT('QTR:', cast((SELECT sum(sl.actual_qty) FROM `tabStock Ledger Entry` sl WHERE sl.item_code = it.item_code AND sl.warehouse = "Stores - QTR" GROUP BY sl.item_code) AS int)) AS 'QTY',
-CONCAT('SH1:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH1" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('SH2:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH2" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('SH3:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH3" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('SH4:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH4" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('SH5:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH5" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('SH6:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SH6" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('SHJ:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SHJ" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('SHJ1:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores -SHJ1" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('SHJ2:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SHJ2" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('SHJ3:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - SHJ3" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('AJ1:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - AJ1" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('AJ2:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - AJ2" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('AD1:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - AD1" GROUP BY iq.item_code) AS int)) AS 'QTY',
-CONCAT('ALN:', cast((SELECT sum(iq.actual_qty) FROM `tabStock Ledger Entry` iq WHERE iq.item_code = it.item_code AND iq.warehouse = "Stores - ALN" GROUP BY iq.item_code) AS int)) AS 'QTY'
+			it.item_name, CONCAT('Item Code:', RPAD(NVL(it.item_code, '') , 0, SPACE(1))) as label, CONCAT('Description:', RPAD(NVL(it.description, '') , 50, SPACE(1))) as description, CONCAT('Price:', RPAD(NVL(format(ip.price_list_rate, 'C2'), '') , 8, SPACE(1))) as price, CONCAT('QTR:', cast((SELECT sum(sl.actual_qty) FROM `tabStock Ledger Entry` sl WHERE sl.item_code = it.item_code GROUP BY sl.item_code) AS int)) AS 'QTY'
 from tabItem it left outer join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
 		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
   		where it.docstatus < 2
@@ -164,9 +150,10 @@ from tabItem it left outer join `tabItem Price` ip on ip.item_code = it.item_cod
 			and it.has_variants=0
 			and (it.end_of_life > %(today)s or ifnull(it.end_of_life, '0000-00-00')='0000-00-00')
 			and it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
-   GROUP BY it.item_name,
+    GROUP BY it.item_name,
           it.item_code,
-          it.description
+          it.description,
+          iq.warehouse
 		limit %(start)s, %(page_len)s """,
 		{
 			"today": nowdate(),
