@@ -184,21 +184,18 @@ def bom(doctype, txt, searchfield, start, page_len, filters):
 		order by
 			(case when locate(%(_txt)s, name) > 0 then locate(%(_txt)s, name) else 99999 end),
 			idx desc, name
-			limit %(start)s, %(page_len)s """,
-			columns=columns,
-			scond=searchfields,
+		limit %(page_len)s offset %(start)s""".format(
+			fields=", ".join(fields),
 			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
 			mcond=get_match_cond(doctype).replace("%", "%%"),
-			description_cond=description_cond
+			key=searchfield,
 		),
 		{
-			"today": nowdate(),
-			"txt": "%%%s%%" % txt,
+			"txt": "%" + txt + "%",
 			"_txt": txt.replace("%", ""),
-			"start": start,
-			"page_len": page_len,
+			"start": start or 0,
+			"page_len": page_len or 20,
 		},
-		as_dict=as_dict,
 	)
 
 @frappe.whitelist()
