@@ -155,11 +155,6 @@ from tabItem it left outer join `tabItem Price` ip on ip.item_code = it.item_cod
           it.description,
           iq.warehouse
 	limit %(start)s, %(page_len)s """.format(
-			columns=columns,
-			scond=searchfields,
-			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
-			mcond=get_match_cond(doctype).replace("%", "%%"),
-			description_cond=description_cond,
 		),
 		{
 			"today": nowdate(),
