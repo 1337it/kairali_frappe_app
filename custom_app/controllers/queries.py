@@ -189,7 +189,7 @@ def bom(doctype, txt, searchfield, start, page_len, filters):
 			scond=searchfields,
 			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
 			mcond=get_match_cond(doctype).replace("%", "%%"),
-			description_cond=description_cond,
+			description_cond=description_cond
 		),
 		{
 			"today": nowdate(),
