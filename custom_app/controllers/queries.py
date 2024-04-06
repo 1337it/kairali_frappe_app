@@ -156,19 +156,8 @@ CONCAT('SHJ3:', cast((SELECT sum(sl10.actual_qty) FROM `tabStock Ledger Entry` s
 CONCAT('AJ1:', cast((SELECT sum(sl11.actual_qty) FROM `tabStock Ledger Entry` sl11 WHERE sl11.item_code = it.item_code AND sl11.warehouse = "Stores - AJ1" GROUP BY sl11.item_code) AS int)) AS 'QTY',
 CONCAT('AJ2:', cast((SELECT sum(sl12.actual_qty) FROM `tabStock Ledger Entry` sl12 WHERE sl12.item_code = it.item_code AND sl12.warehouse = "Stores - AJ2" GROUP BY sl12.item_code) AS int)) AS 'QTY',
 CONCAT('AD1:', cast((SELECT sum(sl13.actual_qty) FROM `tabStock Ledger Entry` sl13 WHERE sl13.item_code = it.item_code AND sl13.warehouse = "Stores - AD1" GROUP BY sl13.item_code) AS int)) AS 'QTY',
-CONCAT('ALN:', cast((SELECT sum(sl14.actual_qty) FROM `tabStock Ledger Entry` sl14 WHERE sl14.item_code = it.item_code AND sl14.warehouse = "Stores - ALN" GROUP BY sl14.item_code) AS int)) AS 'QTY',
-
-
-
-
-
-
-
-
-
-
-
-		from `tabItem` it left outer join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
+CONCAT('ALN:', cast((SELECT sum(sl14.actual_qty) FROM `tabStock Ledger Entry` sl14 WHERE sl14.item_code = it.item_code AND sl14.warehouse = "Stores - ALN" GROUP BY sl14.item_code) AS int)) AS 'QTY'
+from tabItem it left outer join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
 		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
   LEFT OUTER JOIN `tabStock Ledger Entry` iq1 ON it.item_name = iq1.item_code
   LEFT OUTER JOIN `tabStock Ledger Entry` iq2 ON it.item_name = iq2.item_code
