@@ -1172,6 +1172,7 @@ transition: .5s top;
 
 html, body {
 background-color: #f0f2f3;
+    overflow:hidden;
 }
 [data-page-route=Workspaces] .layout-main-section-wrapper {
 margin-top: 0px!important;
