@@ -882,9 +882,7 @@ body{
 .page-wrapper .layout-side-section{
  background-size:cover;
  padding-top:25px;
- box-shadow:-4px 2px 18px -2px (116,135,138,0.44) inset;
  top: 0px;
-    display:none;
 }
 
 /* Page wrapper */
@@ -1604,9 +1602,6 @@ z-index:10!important;
 }
 
  /* Layout side section */
-.page-wrapper .layout-side-section{
- box-shadow:-4px 2px 0px 0px #525252;
-}
 
 
 /* Row */
