@@ -883,6 +883,7 @@ body{
  background-size:cover;
  padding-top:25px;
  top: 0px;
+    display:none;
 }
 
 /* Page wrapper */
