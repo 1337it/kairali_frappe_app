@@ -2129,6 +2129,9 @@ display: none!important;
 [data-route^="Form"] .layout-main-section-wrapper{
 
  background-size:contain!important;
+        padding-right: 12px;
+    padding-top: 48px;
+    padding-left: 60px !important;
 }
 
 #globalmenu
