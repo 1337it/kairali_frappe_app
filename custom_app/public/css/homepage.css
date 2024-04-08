@@ -644,14 +644,14 @@ display: none!important;
         right:0px;
     }
 
-   [data-route^="Form/Item/"] .form-tabs-list .form-tabs {
+   [data-route^="Form/"] .form-tabs-list .form-tabs {
 justify-content: center!important;
 position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 48px) !important;
     width: calc(83.333vw - 48px) !important;
     padding: 0px !important;
     margin: 0px !important;
-    left: calc(16.6667% + 48px) !important;
+    left: 48px !important;
 background-color: rgba(0,0,0,0.8)!important;
 -webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px none #525252!important;
@@ -660,9 +660,9 @@ border-bottom: 0.5px none #525252!important;
 [data-route^="Form/"] .page-wrapper .layout-side-section{
  background-size:cover;
  padding-top:25px;
- box-shadow:-4px 2px 18px -2px (116,135,138,0.44) inset;
  top: 0px;
     display:block;
+    order:2;
 }
 .form-sidebar .sidebar-image-section .sidebar-image
 {
@@ -741,9 +741,9 @@ border: 1px none var(--border-color)!important;
 /* Layout side section */
 .layout-side-section{
  box-shadow:-2px 6px 6px 6px (116,135,138,0.44) inset;
- padding-right: 15px!important;
-  padding-left:15px!important;
-    margin-left: 48px!important;
+ padding-right: 25px!important;
+  padding-left:25px!important;
+    margin-left: 0px!important;
        margin-top: 100px!important;
 }
 
