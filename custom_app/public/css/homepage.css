@@ -790,6 +790,7 @@ padding-right: 10px!important;
  margin-left:0px;
  box-shadow:none;
  position:static;
+    align-items:end;
 }
 
 /* Container */
