@@ -663,11 +663,14 @@ border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
 [data-route^="Form/"] .page-wrapper .layout-side-section{
- background-size:cover;
- padding-top:75px;
- top: 0px;
-    display:block;
-    order:2;
+    background-size: cover;
+    padding-top: 48px;
+    top: 0px;
+    display: block;
+    order: 2;
+    z-index: 9999;
+    background-color: #ffffff;
+    border-left: 1px solid black;
 }
 .form-sidebar .sidebar-image-section .sidebar-image
 {
