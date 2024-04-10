@@ -852,13 +852,13 @@ padding-right: 10px!important;
 
 /* Row */
 [data-theme-mode="light"] .page-head .container .justify-between{
- width:100vw !important;
+ width:83.3334vw !important;
 background-size: contain!important;
 filter: opacity(0.8);
 }
 
 [data-theme-mode="dark"] .page-head .container .justify-between{
- width:100vw !important;
+ width:83.3334vw !important;
 background-size: contain!important;
 filter: opacity(0.8);
 }
@@ -1049,9 +1049,7 @@ margin-top: 0px!important;
 }
 
 /* Row */
-.page-head .justify-between{
- min-width:100%;
-}
+
 
 
  /* Page body */
