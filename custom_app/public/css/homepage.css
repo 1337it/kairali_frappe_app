@@ -639,6 +639,25 @@ display: none!important;
 
  
 @media (min-width:1200px) {
+    #item-custom_primary.tab-pane {
+    display: block !important;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    opacity: 100;
+}
+.sidebar-menu.form-sidebar-stats {
+    margin-bottom: var(--margin-sm);
+    display: none;
+}
+.sidebar-menu.followed-by-section {
+    margin-bottom: var(--margin-sm);
+    display: none;
+}
+    .sidebar-menu.text-muted {
+    color: var(--text-muted) !important;
+    display: none;
+}
     [data-route^="Workspaces/"] .page-title .title-area .title-text {
     padding-left: 7.5px !important;
     max-width: calc(33.3vw - 100px) !important;
