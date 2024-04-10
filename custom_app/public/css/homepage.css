@@ -639,12 +639,15 @@ display: none!important;
 
  
 @media (min-width:1200px) {
+   .form-sidebar .sidebar-menu {
+margin-bottom:0;
+   }
     .layout-main .form-column.col-sm-12>form>.input-max-width {
 max-width: 100%;
 padding-right: 15px;
 }
     .overlay-sidebar {
-max-height: 45vh;
+max-height: 40vh;
 overflow: scroll;
 }
     #item-custom_primary.tab-pane {
@@ -654,8 +657,8 @@ right: 0;
 z-index: 999;
 opacity: 100;
 width: 16.667vw;
-bottom: 0;
-max-height: 50vh;
+top: 40vh;
+max-height: 60vh;
 overflow: scroll;
 }
 .sidebar-menu.form-sidebar-stats {
