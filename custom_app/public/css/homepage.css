@@ -668,7 +668,7 @@ border-bottom: 0.5px solid #525252ab!important;
     top: 0px;
     display: block;
     order: 2;
-    z-index: 9999;
+   
     background-color: #ffffff;
     border-left: 1px solid black;
 }
@@ -965,7 +965,10 @@ body{
  .main-section .navbar .container{
   width:100%;
  }
- 
+ .list-row-head .level-left {
+    flex: 4;
+    max-width: calc(83.333vw - 48px);
+}
  /* Page body */
  #page-Workspaces .page-body{
   width:100%;
@@ -986,6 +989,7 @@ margin-top: 0px!important;
     padding-right: 35px;
     padding-top: 132px;
     padding-left: 35px !important;
+        margin-left:48px;
 }
  /* Layout side section */
  .page-wrapper .layout-side-section{
@@ -1840,8 +1844,8 @@ top: 148px;
 /* Standard filter section */
 /* Page form */
 .page-wrapper .frappe-card .page-form{
-padding-left: 30px!important;
-padding-right: 30px!important;
+padding-left: 0px!important;
+padding-right: 1vw!important;
 }
 
 .text-base.font-medium.text-gray-900.leading-none {
@@ -2291,16 +2295,20 @@ height: 32px!important;
     justify-content: start;
 }
 .page-form {
-margin-top: 20px!important;
+margin-top: 100px!important;
 border-bottom: 0.5px solid rgba(0,0,0,0.2)!important;
 z-index: 9!important;
  padding:0px!important;
  transition: maxheight 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     right:0;
+    position:fixed;
 }
 
 
-
+.page-form .filter-section {
+    display: list-item;
+    padding: 0 var(--padding-xs);
+}
 
 .layout-main-section .frappe-list .freeze {
 height: 34px!important;
