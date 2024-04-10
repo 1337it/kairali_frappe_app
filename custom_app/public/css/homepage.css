@@ -681,7 +681,6 @@ border-bottom: 0.5px solid #525252ab!important;
     order: 2;
     background-color: #ffffff;
     border-left: 1px solid black;
-   z-index:9;
 }
 
     .page-form .standard-filter-section .form-group {
@@ -1004,7 +1003,7 @@ margin-top: 0px!important;
     padding-right: 25px !important;
     padding-left: 25px !important;
     margin-left: 0px !important;
-    margin-top: 130px !important;
+    margin-top: 0px !important;
 }
    [data-route^="List/"] .page-form .filter-selector .btn-group {
     margin: 10px 0px;
@@ -1121,11 +1120,14 @@ position: fixed!important;
 top: var(--navbar-height)!important;
 margin-bottom: 0px;
 transition: .5s top;
- width:83.334%!important;
+ width:100%;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
 }
- 
+ [data-route^="List/"] .page-head{
+      width:83.3334%;
+ }
+    
 /* Import Google Fonts */
 @import url("//fonts.googleapis.com/css2?family=Heebo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
