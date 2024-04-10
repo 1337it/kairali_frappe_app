@@ -1763,14 +1763,14 @@ z-index:10!important;
  justify-content:flex-end;
     position:absolute;
 top:15px;
-    right:16.6667;
+    right:16.6667vw;
 }
 
 [data-route^="Form/"] .page-head .justify-between .page-actions{
  justify-content:flex-end;
     position:absolute;
 top:15px;
-    right:16.6667;
+    right:16.6667vw;
 }
 
  /* Column 4/12 */
