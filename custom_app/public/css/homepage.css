@@ -1704,6 +1704,12 @@ z-index:10!important;
  justify-content:flex-end;
     position:absolute;
 top:15px;
+}
+
+[data-route^="Form/"] .page-head .justify-between .page-actions{
+ justify-content:flex-end;
+    position:absolute;
+top:15px;
 right: 16.667%;
 }
 
