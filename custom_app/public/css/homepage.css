@@ -671,6 +671,7 @@ border-bottom: 0.5px solid #525252ab!important;
    
     background-color: #ffffff;
     border-left: 1px solid black;
+    z-index:9;
 }
     [data-route^="List/"] .page-wrapper .layout-side-section {
     background-size: cover;
@@ -680,7 +681,7 @@ border-bottom: 0.5px solid #525252ab!important;
     order: 2;
     background-color: #ffffff;
     border-left: 1px solid black;
-    /* z-index: 9; */
+   z-index:9;
 }
 
     .page-form .standard-filter-section .form-group {
@@ -1761,12 +1762,14 @@ z-index:10!important;
  justify-content:flex-end;
     position:absolute;
 top:15px;
+    right:16,6667vw;
 }
 
 [data-route^="Form/"] .page-head .justify-between .page-actions{
  justify-content:flex-end;
     position:absolute;
 top:15px;
+    right:16,6667vw;
 }
 
  /* Column 4/12 */
