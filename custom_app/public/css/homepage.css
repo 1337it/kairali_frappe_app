@@ -1763,6 +1763,7 @@ z-index:10!important;
  justify-content:flex-end;
     position:absolute;
 top:15px;
+    right:16.6667;
 }
 
 [data-route^="Form/"] .page-head .justify-between .page-actions{
