@@ -650,7 +650,7 @@ padding-right: 15px;
 max-height: 40vh;
 overflow: scroll;
 }
-    #item-custom_primary-tab.tab-pane {
+    #item-custom_primary.tab-pane {
 display: block !important;
 position: fixed;
 right: 0;
