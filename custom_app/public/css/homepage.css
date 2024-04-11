@@ -639,6 +639,14 @@ display: none!important;
 
  
 @media (min-width:1200px) {
+   [data-route^="Form/"] .page-head .justify-between{
+ margin-right:0px;
+ height:100px!important;
+ margin-left:0px;
+ box-shadow:none;
+ position:fixed;
+    align-items:end;
+}
    .form-sidebar .sidebar-menu {
 margin-bottom:0;
    }
