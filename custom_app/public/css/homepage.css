@@ -644,7 +644,7 @@ display: none!important;
  height:100px!important;
  margin-left:0px;
  box-shadow:none;
- position:fixed;
+ position:relative;
     align-items:end;
 }
    .form-sidebar .sidebar-menu {
