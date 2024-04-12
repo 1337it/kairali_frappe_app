@@ -11,6 +11,11 @@
     height: 50vh;
     width: 16vw;
 }
+[data-route="List/Item Price/Report"] .dt-instance-1 .dt-cell__content--col-11 {
+font-feature-settings: "tnum";
+width: 15VW!IMPORTANT;
+/* position: fixed; */
+}
 [data-fieldtype="HTML"] .col-xs-4 {
     flex: 0 0 15%;
     max-width: 33.33333333%;
