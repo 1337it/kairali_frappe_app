@@ -8,8 +8,8 @@
     z-index: 99999;
     /* align-content: stretch; */
     align-items: stretch;
-    height: 50vh;
-    width: 16vw;
+    height: 50vh!important;
+    width: 16vw!important;
 }
 .dt-instance-1 .dt-cell__content--col-11 {
 font-feature-settings: "tnum";
