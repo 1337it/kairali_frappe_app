@@ -1,4 +1,4 @@
-[data-route="List/Item Price/Report"] .dt-cell--focus ~ .dt-cell--col-11 {
+.dt-cell--focus ~ .dt-cell--col-11 {
     display: block;
     position: fixed;
     right: 0;
@@ -11,7 +11,7 @@
     height: 50vh;
     width: 16vw;
 }
-[data-route="List/Item Price/Report"] .dt-instance-1 .dt-cell__content--col-11 {
+.dt-instance-1 .dt-cell__content--col-11 {
 font-feature-settings: "tnum";
 width: 15VW!IMPORTANT;
 /* position: fixed; */
