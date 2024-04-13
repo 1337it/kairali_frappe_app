@@ -13,7 +13,7 @@
 }
 .dt-instance-1 .dt-cell__content--col-11 {
 font-feature-settings: "tnum";
-width: 15VW!IMPORTANT;
+width: 15vw!important;
 /* position: fixed; */
 }
 [data-fieldtype="HTML"] .col-xs-4 {
