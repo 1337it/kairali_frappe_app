@@ -1,3 +1,4 @@
+
 [href^="/"].ellipsis {
 color: #0079d6;
 }
@@ -663,6 +664,21 @@ display: none!important;
 
  
 @media (min-width:1200px) {
+    [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-side-section {
+display: none;
+}
+[data-route^="Form/"] [data-page-route^="List/"] .list-subject {
+flex-wrap: 2;
+justify-content: start;
+display: flex!important;
+}
+[data-route^="Form/"] [data-page-route^="List/"] .list-row-col {
+flex-wrap: 1;
+display: none!important;
+}
+[data-route^="Form/"] [data-page-route^="List/"] .container.page-body {
+max-width: 20vw!important;
+}
    [data-route^="Form/"] .page-head .justify-between{
  margin-right:0px;
  height:100px!important;
