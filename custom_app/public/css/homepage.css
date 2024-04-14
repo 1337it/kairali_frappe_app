@@ -664,6 +664,36 @@ display: none!important;
 
  
 @media (min-width:1200px) {
+  [data-page-route="Item"] .page-head .justify-between .page-title{
+padding-left: calc(20px)!important;
+ }
+[data-route^="Form/Item/"] .frappe-list .result header.text-muted {
+margin-left: 20px!important;
+margin-right: 20px!important;
+margin-top: 0px;
+margin-bottom: 0px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-right: 5px;
+padding-left: 5px;
+position: fixed;
+left: 48px;
+width: calc(20vw - 88px);
+margin-left: 0px;
+top: 158px;
+z-index: 5;
+border-bottom: 0.5px solid #949494;
+}
+    [data-page-route="Item"] .page-head .justify-between .page-actions {
+ justify-content:flex-end;
+    position:absolute;
+top:15px;
+    width: calc(63.334vw);
+}
     .col-lg-2 {
 flex: 0 0 16.66666667vw;
 max-width: 16.66666667vw;
@@ -686,9 +716,10 @@ max-width: 100%;
 }
     #page-Item {
 position: absolute;
-width: calc(80vw - 48px);
+width: calc(80vw);
 right: 0;
 background: white;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-side-section {
 display: none;
@@ -769,14 +800,14 @@ overflow: scroll;
         right:0px;
     }
 
-   [data-route^="Form/"] .form-tabs-list .form-tabs {
+[data-page-route="Item"] .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
     margin: 0px !important;
-    left: calc(20vw + 48px) !important;
+    left: calc(20vw) !important;
 background-color: rgba(255,255,255)!important;
 -webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid #525252ab!important;
@@ -1115,9 +1146,9 @@ margin-top: 0px!important;
 }
     [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper {
     color: rgb(51, 60, 68);
-    padding-right: 35px;
+    padding-right: 15px;
     padding-top: 0px;
-    padding-left: 35px !important;
+    padding-left: 15px !important;
         margin-left:48px;
 }
  /* Layout side section */
@@ -1127,7 +1158,7 @@ margin-top: 0px!important;
     .layout-main-section .frappe-list, .layout-main-section .report-wrapper
 {
 
-    padding-top: 132px;
+    padding-top: 142px;
 }
     [data-route^="List/"] .layout-side-section {
 
@@ -1900,7 +1931,7 @@ top:15px;
  /* Column 4/12 */
  .page-head .justify-between .page-title{
 max-width: calc(33.33vw - 100px)!important;
-padding-left: calc(48px + 20px)!important;
+padding-left: calc(48px + 20px);
 padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
