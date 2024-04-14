@@ -664,6 +664,13 @@ display: none!important;
 
  
 @media (min-width:1200px) {
+    [data-route^="Form/"] [data-page-route^="List/"] .container.page-body {
+        display:block!important;
+max-width: 20vw!important;
+}
+[data-route^="Form"] .layout-main-section-wrapper {
+max-width: calc(63.3334vw - 48px)!important;
+}
     [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-side-section {
 display: none;
 }
