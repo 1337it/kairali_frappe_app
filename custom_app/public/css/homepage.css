@@ -1,3 +1,9 @@
+[href^="/"].ellipsis {
+color: #0079d6;
+}
+.ellipsis {
+color: var(--text-muted);
+}
 .dt-cell--focus ~ .dt-cell--col-11 {
     display: block;
     position: fixed;
