@@ -684,8 +684,8 @@ padding: 0;
 display: none;
 }
 [data-page-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-        margin-left: 0px;
-margin-right: 0px;
+        margin-left: 20px;
+margin-right: 20px;
 }
         
 
@@ -1213,7 +1213,7 @@ margin-right: 20px;
    [data-page-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper
 {
 
-    padding-top: 98px;
+    padding-top: 138px;
 }
     [data-route^="List/"] .layout-side-section {
 
@@ -2047,7 +2047,7 @@ position: fixed;
 left: 48px;
 width: calc(83.3334% - 128px);
 margin-left: 0px;
-top: 158px;
+top: 148px;
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
@@ -2094,6 +2094,7 @@ display: none;
 
 .container.page-body {
 max-width: 100vw!important;
+    position:fixed;
 }
  .standard-sidebar-item.selected {
 background-color: #000000!important;
