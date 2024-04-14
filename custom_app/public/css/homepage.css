@@ -722,7 +722,8 @@ position: absolute;
 width: calc(80vw);
 right: 0;
 background: white;
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
+z-index: 9;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-side-section {
 display: none;
@@ -824,7 +825,7 @@ border-bottom: 0.5px solid #525252ab!important;
     order: 2;
    
     background-color: #ffffff;
-    border-left: 1px solid black;
+    border-left: 0.5px solid rgb(153, 153, 153);
     z-index:9;
 }
     [data-route^="List/"] .page-wrapper .layout-side-section {
@@ -1164,6 +1165,11 @@ margin-top: 0px!important;
     padding-top: 142px;
     margin-left: 20px;
 margin-right: 20px;
+}
+   [data-page-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper
+{
+
+    padding-top: 142px;
 }
     [data-route^="List/"] .layout-side-section {
 
