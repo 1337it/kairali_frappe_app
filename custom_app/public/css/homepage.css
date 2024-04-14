@@ -1880,13 +1880,11 @@ text-align: center;
 [data-theme=light] .frappe-list .result .list-row-container{
  background-color:rgba(255,255,255,0.14);
  border-bottom-style:solid;
- border-bottom-color:rgba(0,0,0,0.26);
  border-bottom-width:0.5px;
 }
 .frappe-list .list-row-head .ellipsis
 {
-    text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     flex: 1;
     
 }
@@ -1905,8 +1903,8 @@ font-weight: 600;
 
 /* Text muted */
 .frappe-list .result header.text-muted{
-margin-left: 0px;
-margin-right: 0px;
+margin-left: 40px!important;
+margin-right: 40px!important;
 margin-top: 0px;
 margin-bottom: 0px;
 border-top-left-radius: 0px;
@@ -1914,16 +1912,16 @@ border-top-right-radius: 0px;
 border-bottom-left-radius: 0px;
 border-bottom-right-radius: 0px;
 padding-bottom: 5px;
-    padding-top: 5px;
-padding-right: 65px;
-padding-left: 45px;
+padding-top: 5px;
+padding-right: 25px;
+padding-left: 5px;
 position: fixed;
 left: 48px;
-width: calc(83.3334% - 48px);
+width: calc(83.3334% - 128px);
 margin-left: 0px;
 top: 148px;
- z-index:5;
-    border-bottom: 0.5px solid #999999;
+z-index: 5;
+border-bottom: 0.5px solid #949494;
 }
 
 
