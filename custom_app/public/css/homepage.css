@@ -1162,6 +1162,8 @@ margin-top: 0px!important;
 {
 
     padding-top: 142px;
+    margin-left: 20px;
+margin-right: 20px;
 }
     [data-route^="List/"] .layout-side-section {
 
@@ -1995,7 +1997,7 @@ position: fixed;
 left: 48px;
 width: calc(83.3334% - 128px);
 margin-left: 0px;
-top: 148px;
+top: 158px;
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
@@ -2447,7 +2449,7 @@ margin-bottom: 30px!important;
 background-color: #181818!important;
 }
 .list-row-head {
-height: 32px!important;
+height: 41px!important;
     background-color:#ffffff;
 }
 .list-subject {
