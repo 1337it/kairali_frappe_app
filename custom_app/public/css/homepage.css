@@ -2145,6 +2145,14 @@ padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
  }
+
+[data-page-route="Workspaces"] .page-head .justify-between .page-title{
+max-width: calc(33.33vw - 100px)!important;
+padding-left: calc(68px);
+padding-right: 0.75vw!important;
+display: flex;
+text-align: center;
+ }
 /* Content Division */
 #page-List\/Item\/List{
  background-color:rgba(255,255,255,0);
