@@ -680,6 +680,58 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+    [data-page-route^="List/Item/"] ~ [data-page-route="Item"] .form-tabs-list .form-tabs {
+justify-content: start!important;
+position: fixed!important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
+    width: calc(100vw - 48px) !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    left: calc(20vw) !important;
+background-color: rgba(255,255,255)!important;
+-webkit-backdrop-filter: blur(10px)!important;
+border-bottom: 0.5px solid #525252ab!important;
+ z-index:800!important;
+}
+    [data-page-route="Item"] .form-tabs-list .form-tabs {
+justify-content: start!important;
+position: fixed!important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
+    width: calc(100vw - 48px) !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    left: 0!important;
+background-color: rgba(255,255,255)!important;
+-webkit-backdrop-filter: blur(10px)!important;
+border-bottom: 0.5px solid #525252ab!important;
+ z-index:800!important;
+}
+    [data-page-route^="List/Sales Invoice/"] ~ [data-page-route="Sales Invoice"] .form-tabs-list .form-tabs {
+justify-content: start!important;
+position: fixed!important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
+    width: calc(100vw - 48px) !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    left: calc(20vw) !important;
+background-color: rgba(255,255,255)!important;
+-webkit-backdrop-filter: blur(10px)!important;
+border-bottom: 0.5px solid #525252ab!important;
+ z-index:800!important;
+}
+    [data-page-route="Sales Invoice"] .form-tabs-list .form-tabs {
+justify-content: start!important;
+position: fixed!important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
+    width: calc(100vw - 48px) !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    left: 0!important;
+background-color: rgba(255,255,255)!important;
+-webkit-backdrop-filter: blur(10px)!important;
+border-bottom: 0.5px solid #525252ab!important;
+ z-index:800!important;
+}
      [data-route^="Form/"] .filter-popover {
         left: 10vw!important;
 }
@@ -719,7 +771,7 @@ left: 48px;
   [data-page-route="Item"] .page-head .justify-between .page-title{
 padding-left: 20px!important;
  }
-    [data-page-route="Sales Invoce"] .page-head .justify-between .page-title{
+    [data-page-route="Sales Invoice"] .page-head .justify-between .page-title{
 padding-left: 20px!important;
  }
 [data-route^="Form/Item/"] .frappe-list .result header.text-muted {
@@ -822,7 +874,7 @@ max-width: 20vw!important;
 [data-route^="Form"] .layout-main-section-wrapper {
 max-width: 100%;
 }
-    #page-Item {
+    [data-page-route^="List/Item/"] ~ #page-Item {
 position: absolute;
 width: calc(80vw);
 right: 0;
@@ -830,7 +882,23 @@ background: white;
 box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
 z-index: 9;
 }
-        #page-Sales\Invoice {
+    #page-Item {
+position: absolute;
+width: calc(100vw - 48px);
+right: 0;
+background: white;
+box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
+z-index: 9;
+}
+        div[ID="page-Sales Invoice"] {
+position: absolute;
+width: calc(100vw - 48px);
+right: 0;
+background: white;
+box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
+z-index: 9;
+}
+    [data-page-route^="List/Sales Invoice/"] ~ div[ID="page-Sales Invoice"] {
 position: absolute;
 width: calc(80vw);
 right: 0;
@@ -917,19 +985,7 @@ overflow: scroll;
         right:0px;
     }
 
-[data-page-route="Item"] .form-tabs-list .form-tabs {
-justify-content: start!important;
-position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
-    width: calc(100vw - 48px) !important;
-    padding: 0px !important;
-    margin: 0px !important;
-    left: calc(20vw) !important;
-background-color: rgba(255,255,255)!important;
--webkit-backdrop-filter: blur(10px)!important;
-border-bottom: 0.5px solid #525252ab!important;
- z-index:800!important;
-}
+
 [data-route^="Form/"] .page-wrapper .layout-side-section{
     background-size: cover;
     padding-top: 30px;
