@@ -678,6 +678,9 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+     [data-route^="Form/"] .filter-popover {
+        margin-left: 10vw;
+}
    [data-route^="Form/"] .page-head {
 position: fixed!important;
 top: var(--navbar-height)!important;
