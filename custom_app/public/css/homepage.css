@@ -779,9 +779,13 @@ box-sizing: border-box;
 padding: 0;
 display: none;
 }
-[data-page-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
+[data-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
         margin-left: 20px;
 margin-right: 20px;
+}
+    [data-route^="Form/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
+        margin-left: 0px;
+margin-right: 0px;
 }
         
  [data-route^="Form/Sales Invoice/"] input[type=checkbox] {
@@ -821,7 +825,7 @@ position: fixed;
 left: 48px;
 width: calc(20vw - 88px);
 margin-left: 0px;
-top: 148px;
+top: 150px;
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
