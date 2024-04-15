@@ -688,7 +688,15 @@ display: none;
 margin-right: 20px;
 }
         
-
+ [data-route^="Form/Sales Invoice/"] input[type=checkbox] {
+box-sizing: border-box;
+padding: 0;
+display: none;
+}
+[data-page-route^="List/Sales Invoice/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
+        margin-left: 20px;
+margin-right: 20px;
+}
 
     [data-route^="Form/"] [data-page-route^="List/"] .page-title {
 left: 48px;
@@ -697,7 +705,31 @@ left: 48px;
   [data-page-route="Item"] .page-head .justify-between .page-title{
 padding-left: 20px!important;
  }
+    [data-page-route="Sales Invoce"] .page-head .justify-between .page-title{
+padding-left: 20px!important;
+ }
 [data-route^="Form/Item/"] .frappe-list .result header.text-muted {
+margin-left: 20px!important;
+margin-right: 20px!important;
+margin-top: 0px;
+margin-bottom: 0px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-left-radius: 0px;
+border-bottom-right-radius: 0px;
+padding-bottom: 5px;
+padding-top: 5px;
+padding-right: 5px;
+padding-left: 5px;
+position: fixed;
+left: 48px;
+width: calc(20vw - 88px);
+margin-left: 0px;
+top: 148px;
+z-index: 5;
+border-bottom: 0.5px solid #949494;
+}
+    [data-route^="Form/Sales Invoice/"] .frappe-list .result header.text-muted {
 margin-left: 20px!important;
 margin-right: 20px!important;
 margin-top: 0px;
@@ -722,7 +754,13 @@ border-bottom: 0.5px solid #949494;
  justify-content:flex-end;
     position:absolute;
 top:15px;
-    width: calc(63.334vw);
+width: calc(63.334vw);
+}
+    [data-page-route="Sales Invoice"] .page-head .justify-between .page-actions {
+ justify-content:flex-end;
+    position:absolute;
+top:15px;
+width: calc(63.334vw);
 }
     .col-lg-2 {
 flex: 0 0 16.66666667vw;
