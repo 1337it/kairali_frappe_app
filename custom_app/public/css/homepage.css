@@ -2611,17 +2611,17 @@ max-width:100%!important;
 
 
 .form-tabs-list .form-tabs {
-justify-content: center!important;
+justify-content: start;
 position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 48px) !important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 98px) !important;
 width: 100vw!important;
- padding: 0px!important;
- margin: 0px!important;
-left: 0%!important;
-background-color: rgba(0,0,0,0.8)!important;
+padding: 0px!important;
+margin: 0px!important;
+left: 48px!important;
+background-color: white;
 -webkit-backdrop-filter: blur(10px)!important;
-border-bottom: 0.5px none #525252!important;
- z-index:800!important;
+border-bottom: 0.5px solid#525252!important;
+z-index: 800!important;
 }
 
 .std-form-layout>.form-layout>.form-page {
