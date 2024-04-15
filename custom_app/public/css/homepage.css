@@ -696,7 +696,7 @@ width: calc(63.334vw);
  margin-bottom:0px;
  display:inline-block;
  padding-left:0px;
-     margin-left:48px;
+     margin-left:0px;
  padding-top:100px;
  padding-bottom:0px;
   background-color:var(--card-bg);
@@ -904,7 +904,7 @@ max-width: 20vw!important;
 [data-route^="Form"] .layout-main-section-wrapper {
 max-width: 100%;
 }
-    [data-page-route^="List/Item/"] ~ #page-Item {
+#page-Item {
 position: absolute;
 width: calc(80vw);
 right: 0;
@@ -912,7 +912,7 @@ background: white;
 box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
 z-index: 9;
 }
-    #page-Item {
+    [data-page-route="Item"].page-container:only-child {
 position: absolute;
 width: calc(100vw - 48px);
 right: 0;
@@ -920,7 +920,7 @@ background: white;
 box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
 z-index: 9;
 }
-        div[ID="page-Sales Invoice"] {
+        [data-page-route="Sales Invoice"].page-container:only-child {
 position: absolute;
 width: calc(100vw - 48px);
 right: 0;
@@ -928,7 +928,7 @@ background: white;
 box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
 z-index: 9;
 }
-    [data-page-route^="List/Sales Invoice/"] ~ div[ID="page-Sales Invoice"] {
+div[ID="page-Sales Invoice"] {
 position: absolute;
 width: calc(80vw);
 right: 0;
