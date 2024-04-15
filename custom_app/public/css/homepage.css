@@ -679,7 +679,6 @@ display: none!important;
  
 @media (min-width: 1200px) {
    [data-route^="Form/"] .page-head {
-z-index: 1000!important;
 position: fixed!important;
 top: var(--navbar-height)!important;
 margin-bottom: 0px;
@@ -796,8 +795,17 @@ display: none;
 scrollbar-width: none;
 display: none;
 }
+  [data-route^="Form/"] [data-page-route^="List/"] .page-head .justify-between .page-title {
+      max-width: calc(33.33vw - 100px)!important;
+padding-left: 0;
+padding-right: 0.75vw!important;
+display: flex;
+text-align: center;
+}
     [data-route^="Form/"] [data-page-route^="List/"] .page-head {
         background: white;
+        z-index: 4!important;
+left: 0;
 }
     [data-route^="Form/Item/"] #page-List\/Item\/List {
 background-color: rgba(255,255,255,0);
