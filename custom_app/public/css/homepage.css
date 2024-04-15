@@ -898,11 +898,19 @@ text-align: center;
         z-index: 4!important;
 left: 0;
 }
+    [data-route^="Form/"] [data-page-route^="List/"] .frappe-list .ellipsis {
+white-space: nowrap;
+overflow: visible;
+text-overflow: ellipsis;
+max-width: 100%;
+vertical-align: middle;
+}
+    
     [data-route^="Form/Item/"] #page-List\/Item\/List {
 background-color: rgba(255,255,255,0);
 display: block!important;
 }
-        [data-route^="Form/Item/"] div[ID="page-Sales Invoice"] {
+    [data-route^="Form/Sales Invoice/"] [data-page-route="List/Sales Invoice/List"].page-container {
 background-color: rgba(255,255,255,0);
 display: block!important;
 }
