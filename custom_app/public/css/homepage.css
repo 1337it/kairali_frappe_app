@@ -904,7 +904,7 @@ max-width: 20vw!important;
 [data-route^="Form"] .layout-main-section-wrapper {
 max-width: 100%;
 }
-#page-Item {
+.page-container:not(:only-child) {
 position: absolute;
 width: calc(80vw);
 right: 0;
@@ -928,7 +928,7 @@ background: white;
 box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
 z-index: 9;
 }
-div[ID="page-Sales Invoice"] {
+div[ID="page-Sales Invoice"].page-container:not(:only-child) {
 position: absolute;
 width: calc(80vw);
 right: 0;
