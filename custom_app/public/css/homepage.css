@@ -678,6 +678,16 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+   [data-route^="Form/"] .page-head {
+z-index: 1000!important;
+position: fixed!important;
+top: var(--navbar-height)!important;
+margin-bottom: 0px;
+transition: .5s top;
+ width:83.3334vw;
+ -webkit-transform:translate3d(0,0,0);
+ -webkit-backface-visibility: hidden;
+}
     [data-route^="Form/Item/"] input[type=checkbox] {
 box-sizing: border-box;
 padding: 0;
@@ -1380,7 +1390,7 @@ position: fixed!important;
 top: var(--navbar-height)!important;
 margin-bottom: 0px;
 transition: .5s top;
- width:83.334vw;
+ width:100vw;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
 }
