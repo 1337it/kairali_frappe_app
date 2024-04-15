@@ -710,7 +710,7 @@ width: calc(63.334vw);
  padding-bottom:0px;
   background-color:var(--card-bg);
 }
-    [data-page-route^="List/Item/"] ~ [data-page-route="Item"] .form-tabs-list .form-tabs {
+[data-page-route="Item"] .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
@@ -723,7 +723,7 @@ background-color: rgba(255,255,255)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
-    [data-page-route="Item"] .form-tabs-list .form-tabs {
+    [data-page-route="Item"]:only-child .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
@@ -904,7 +904,7 @@ max-width: 20vw!important;
 [data-route^="Form"] .layout-main-section-wrapper {
 max-width: 100%;
 }
-.page-container:not(:only-child) {
+[data-page-route="Item"].page-container:not(:only-child) {
 position: absolute;
 width: calc(80vw);
 right: 0;
@@ -2020,6 +2020,10 @@ z-index:10!important;
  .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main{
   width:100vw !important;
  }
+    [data-page-route="List/Item/List"].page-container {
+width: 20vw;
+left: 0;
+}
 
  #page-List\/Item\/List .page-head .container{
  margin-left:0px;
@@ -2027,7 +2031,7 @@ z-index:10!important;
   max-width:100vw;
 }
 
- #page-List\/Item\/List{
+ .page-container:only-child{
  width:100vw;
 }
 
