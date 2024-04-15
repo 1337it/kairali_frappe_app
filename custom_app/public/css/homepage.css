@@ -1,4 +1,6 @@
-
+.dt-cell--focus {
+border: 1px solid red;
+}
 [href^="/"].ellipsis {
 color: #0079d6;
 }
