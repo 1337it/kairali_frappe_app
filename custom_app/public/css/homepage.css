@@ -794,8 +794,8 @@ padding: 0;
 display: none;
 }
 [data-page-route^="List/Sales Invoice/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-        margin-left: 20px;
-margin-right: 20px;
+        margin-left: 0px;
+margin-right: 0px;
 }
 
     [data-route^="Form/"] [data-page-route^="List/"] .page-title {
