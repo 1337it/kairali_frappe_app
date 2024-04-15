@@ -2602,13 +2602,19 @@ display: none!important;
 --icon-stroke: #707070;
 }
 
-.page-title .title-area .title-text
+[data-page-route="Item"]:only-child .page-title .title-area .title-text
 {
  padding-left:20px!important;
  max-width:calc(33.3vw - 100px)!important;
  font-size:32px!important;
 }
 
+[data-page-route="Item"]:not(:only-child) .page-title .title-area .title-text
+{
+ padding-left:0px!important;
+ max-width:calc(33.3vw - 100px)!important;
+ font-size:32px!important;
+}
 
 flex-wrap:wrap;
  height:100vh;
