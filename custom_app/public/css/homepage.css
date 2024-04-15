@@ -1304,7 +1304,7 @@ body{
 
 /* Menu */
 #navbar-breadcrumbs{
-    text-shadow: 0px 8px 10px rgba(0,0,0,0.5)!important
+    text-shadow: 0px 8px 10px rgba(0,0,0,0.5)!important;
  margin-left:0px;
  padding-left:10px;
 }
