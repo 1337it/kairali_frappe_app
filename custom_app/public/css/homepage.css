@@ -1360,7 +1360,7 @@ margin-right: 20px;
    [data-page-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper
 {
 
-    padding-top: 138px;
+    padding-top: 142px;
 }
     [data-route^="Form/"] [data-page-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
 padding-top: 92px;
