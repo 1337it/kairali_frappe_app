@@ -679,7 +679,7 @@ display: none!important;
  
 @media (min-width: 1200px) {
      [data-route^="Form/"] .filter-popover {
-        margin-left: 10vw;
+        left: 10vw!important;
 }
    [data-route^="Form/"] .page-head {
 position: fixed!important;
