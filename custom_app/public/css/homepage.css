@@ -736,7 +736,7 @@ background-color: rgba(255,255,255)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
-    [data-page-route^="List/Sales Invoice/"] ~ [data-page-route="Sales Invoice"] .form-tabs-list .form-tabs {
+[data-page-route="Sales Invoice"] .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
@@ -749,14 +749,14 @@ background-color: rgba(255,255,255)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
-    [data-page-route="Sales Invoice"] .form-tabs-list .form-tabs {
+    [data-page-route="Sales Invoice"]:only-child .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
     margin: 0px !important;
-    left: 0!important;
+    left: 48px!important;
 background-color: rgba(255,255,255)!important;
 -webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid #525252ab!important;
@@ -846,7 +846,7 @@ position: fixed;
 left: 48px;
 width: calc(20vw - 88px);
 margin-left: 0px;
-top: 148px;
+top: 150px;
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
@@ -899,6 +899,10 @@ text-align: center;
 left: 0;
 }
     [data-route^="Form/Item/"] #page-List\/Item\/List {
+background-color: rgba(255,255,255,0);
+display: block!important;
+}
+        [data-route^="Form/Item/"] div[ID="page-Sales Invoice"] {
 background-color: rgba(255,255,255,0);
 display: block!important;
 }
@@ -1367,6 +1371,14 @@ margin-right: 20px;
     padding-top: 142px;
 }
     [data-route^="Form/"] [data-page-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
+padding-top: 92px;
+}
+       [data-page-route^="List/Sales Invoice/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper
+{
+
+    padding-top: 142px;
+}
+    [data-route^="Form/"] [data-page-route^="List/Sales Invoice/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
 padding-top: 92px;
 }
     [data-route^="List/"] .layout-side-section {
