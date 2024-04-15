@@ -957,7 +957,7 @@ display: none;
 }
 [data-route^="Form/"] [data-page-route^="List/"] .list-subject {
 flex-wrap: 2;
-justify-content: center;
+justify-content: start;
 display: flex!important;
 }
 [data-route^="Form/"] [data-page-route^="List/"] .list-row-col {
