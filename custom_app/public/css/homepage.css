@@ -680,13 +680,13 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
-     [data-page-route^="List/Item/"] ~ [data-page-route="Item"] .page-head .justify-between .page-actions {
+   [data-page-route="Item"] .page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
 top:15px;
 width: calc(63.334vw);
 }
-    [data-page-route^="List/Sales Invoice/"] ~ [data-page-route="Sales Invoice"] .page-head .justify-between .page-actions {
+    [data-page-route="Sales Invoice"] .page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
 top:15px;
@@ -846,13 +846,13 @@ top: 148px;
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
-    [data-page-route="Item"] .page-head .justify-between .page-actions {
+    [data-page-route="Item"]:only-child .page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
 top:15px;
 width: calc(80.334vw);
 }
-    [data-page-route="Sales Invoice"] .page-head .justify-between .page-actions {
+    [data-page-route="Sales Invoice"]:only-child .page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
 top:15px;
