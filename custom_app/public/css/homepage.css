@@ -680,6 +680,18 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+     [data-page-route^="List/Item/"] ~ [data-page-route="Item"] .page-head .justify-between .page-actions {
+ justify-content:flex-end;
+    position:absolute;
+top:15px;
+width: calc(63.334vw);
+}
+    [data-page-route^="List/Sales Invoice/"] ~ [data-page-route="Sales Invoice"] .page-head .justify-between .page-actions {
+ justify-content:flex-end;
+    position:absolute;
+top:15px;
+width: calc(63.334vw);
+}
     [data-page-route^="List/Item/"] ~ [data-page-route="Item"] .page-wrapper .layout-main-section-wrapper{
  margin-bottom:0px;
  display:inline-block;
@@ -838,13 +850,13 @@ border-bottom: 0.5px solid #949494;
  justify-content:flex-end;
     position:absolute;
 top:15px;
-width: calc(63.334vw);
+width: calc(80.334vw);
 }
     [data-page-route="Sales Invoice"] .page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
 top:15px;
-width: calc(63.334vw);
+width: calc(80.334vw);
 }
     .col-lg-2 {
 flex: 0 0 16.66666667vw;
