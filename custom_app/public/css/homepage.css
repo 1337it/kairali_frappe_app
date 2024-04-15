@@ -1342,7 +1342,7 @@ position: fixed!important;
 top: var(--navbar-height)!important;
 margin-bottom: 0px;
 transition: .5s top;
- width:100%;
+ width:83.334vw;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
 }
