@@ -1410,12 +1410,12 @@ margin-top: 0px!important;
  }
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-padding-top: 88px;
+padding-top: 138px;
 }
  
 
     [data-route^="Form/"] [data-page-route^="List/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-padding-top: 88px;
+padding-top: 138px;
 }
     [data-route^="List/"] .layout-side-section {
 
