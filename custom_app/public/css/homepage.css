@@ -703,10 +703,10 @@ right: 100%!important;
 transition: right 0.3s;
 }
     
-   [data-route^="Form/Item/"] [data-page-route="List/Item/List"].page-container:hover {
+   [data-route^="Form/"] [data-page-route^="List/"].page-container:hover {
 transition: filter 0.3s;
 }
-[data-route^="Form/Item/"] [data-page-route="List/Item/List"].page-container:not(:hover) {
+[data-route^="Form/"] [data-page-route^="List/"].page-container:not(:hover) {
 left: 0;
 filter: brightness(90%);
 transition: filter 0.3s;
