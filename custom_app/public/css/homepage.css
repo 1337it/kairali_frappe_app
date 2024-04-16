@@ -686,6 +686,9 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+    .page-head .page-head-content {
+        padding:0!important;
+    }
     [data-route^="Form/"] [data-page-route^="List/"] .page-title .title-area .title-text {
     padding-left: 20px !important;
 }
@@ -744,6 +747,7 @@ width: calc(63.334vw);
      margin-left:0px;
  padding-top:100px;
  padding-bottom:0px;
+         background-color: var(--bg-color);
 }
 [data-page-route="Item"] .form-tabs-list .form-tabs {
 justify-content: start!important;
@@ -768,6 +772,7 @@ top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
 background-color: var(--bg-color)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
+
 }
 [data-page-route="Sales Invoice"] .form-tabs-list .form-tabs {
 justify-content: start!important;
@@ -780,6 +785,7 @@ top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
 background-color: var(--bg-color)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
+
 }
     [data-page-route="Sales Invoice"]:only-child .form-tabs-list .form-tabs {
 justify-content: start!important;
@@ -991,11 +997,11 @@ flex-wrap: 1;
 }
    [data-route^="Form/"] .page-head .justify-between{
  margin-right:0px;
- height:102px!important;
+ height:48px!important;
  margin-left:0px;
  box-shadow:none;
  position:relative;
-    align-items:end;
+    align-items:center;
 }
    .form-sidebar .sidebar-menu {
 margin-bottom:0;
@@ -1214,11 +1220,11 @@ padding-right: 10px!important;
 /* Row */
 .page-head .justify-between{
  margin-right:0px;
- height:102px!important;
+ height:48px!important;
  margin-left:0px;
  box-shadow:none;
  position:static;
-    align-items:end;
+    align-items:center;
 }
 
 /* Container */
@@ -2669,6 +2675,13 @@ display: none!important;
  font-size:38px!important;
 }
 
+[data-route^="Form/"] .page-title .title-area .title-text
+{
+ padding-left:0px!important;
+ max-width:calc(33.3vw - 100px)!important;
+ font-size:38px!important;
+}
+
 flex-wrap:wrap;
  height:100vh;
  display:inline-flex;
@@ -2763,6 +2776,7 @@ left: 48px!important;
 -webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid#525252!important;
 z-index: 800!important;
+    background-color: var(--bg-color);
 }
 
 .std-form-layout>.form-layout>.form-page {
