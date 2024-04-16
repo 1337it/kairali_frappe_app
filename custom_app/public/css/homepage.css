@@ -1066,7 +1066,7 @@ overflow: scroll;
     top: 0;
     display: block;
     order: 2;
-    background-color: #ffffff;
+    background-color: var(--bg-color);
     border-left: 1px solid black;
 }
  [data-route^="List/"] .page-form {
@@ -2712,7 +2712,6 @@ background-color: #181818!important;
 }
 .list-row-head {
 height: 41px!important;
-    background-color:#ffffff;
 }
 .list-subject {
     flex: 1;
