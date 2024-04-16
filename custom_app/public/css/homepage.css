@@ -691,6 +691,10 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+
+    [data-page-route="Sales Invoice"]:not(:only-child) .page-title {
+    padding-left: 0px !important;
+}
 [style].page-container {
 
 height: 100%;
