@@ -83,7 +83,6 @@ height: 100%;
 }
 .page-container{
     background-color: rgba(255, 255, 255, 0.77);
--webkit-backdrop-filter: blur(8px) saturate(200%);
     height:100%
 }
 #body{
@@ -730,7 +729,6 @@ top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
     background-color: rgba(255,255,255)!important;
     margin: 0px !important;
     left: calc(20vw) !important;
--webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
@@ -743,7 +741,6 @@ top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
     margin: 0px !important;
     left: 48px!important;
 background-color: rgba(255,255,255)!important;
--webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
@@ -756,7 +753,6 @@ top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
     margin: 0px !important;
     left: calc(20vw) !important;
 background-color: rgba(255,255,255)!important;
--webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
@@ -769,7 +765,6 @@ top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
     margin: 0px !important;
     left: 48px!important;
 background-color: rgba(255,255,255)!important;
--webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
