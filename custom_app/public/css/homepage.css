@@ -1056,7 +1056,6 @@ overflow: scroll;
     display: block;
     order: 2;
    
-    background-color: #ffffff;
     border-left: 0.5px solid rgb(153, 153, 153);
     z-index:9;
 }
