@@ -1415,7 +1415,7 @@ padding-top: 138px;
  
 
     [data-route^="Form/"] [data-page-route^="List/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-padding-top: 138px;
+padding-top: 88px;
 }
     [data-route^="List/"] .layout-side-section {
 
@@ -2800,7 +2800,8 @@ background-color: rgba(255, 255, 255, 0)!important;
 }
 
 .form-tabs-list .form-tabs .nav-item .nav-link {
-padding: 10px!important;
+padding: 10px 0!important;
+margin: 0 20px!important;
 }
 .form-tabs-list .form-tabs .nav-item .nav-link.active {
 border-bottom: 1px solid #ed2630!important;
