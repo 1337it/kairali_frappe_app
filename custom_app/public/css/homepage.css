@@ -691,6 +691,18 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+[style].page-container {
+
+height: 100%;
+right: 0!important;
+transition: right 0.3s;
+}
+[style="display: none;"].page-container {
+
+right: 100%!important;
+transition: right 0.3s;
+}
+    
    [data-route^="Form/Item/"] [data-page-route="List/Item/List"].page-container:hover {
 transition: filter 0.3s;
 }
