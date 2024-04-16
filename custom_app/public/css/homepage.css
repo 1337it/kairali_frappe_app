@@ -718,7 +718,6 @@ width: calc(63.334vw);
      margin-left:0px;
  padding-top:100px;
  padding-bottom:0px;
-  background-color:var(--card-bg);
 }
 [data-page-route="Item"] .form-tabs-list .form-tabs {
 justify-content: start!important;
@@ -1651,7 +1650,6 @@ overflow-y: auto;
 }
   [data-theme=light] .page-wrapper .layout-main-section-wrapper {
 overflow-y: auto;
-    background-color: #ffffff;
 }
 
  .form-tabs-sticky-down {
@@ -2610,7 +2608,7 @@ display: none!important;
  background-image:url("/files/bg1.jpg")!important;
 }
 
-[data-theme-mode="dark"] .page-wrapper .layout-main
+[data-theme-mode="dark"] #page-Workspaces .page-wrapper .layout-main
 {
  background-image:url("/files/bgd.jpg")!important;
 }
