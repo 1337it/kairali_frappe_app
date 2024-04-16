@@ -5,7 +5,7 @@ border: 1px solid red;
 color: #0079d6;
 }
 .ellipsis {
-color: var(--text-muted);
+color: 1b1b1b;
 }
 .dt-cell--focus ~ .dt-cell--col-11 {
     display: block;
@@ -2741,7 +2741,7 @@ top: calc(env(titlebar-area-height, var(--navbar-height)) + 98px) !important;
 width: 100vw!important;
 padding: 0px!important;
 margin: 0px!important;
-left: 0px!important;
+left: 48px!important;
 background-color: white;
 -webkit-backdrop-filter: blur(10px)!important;
 border-bottom: 0.5px solid#525252!important;
@@ -2831,7 +2831,7 @@ display: none!important;
 }
 
 .title-area div h3{
- text-shadow:rgba(0, 0, 0, 0.3) 0px 0.5px 0.5px!important;
+ text-shadow:rgba(71, 71, 71, 0.45) 0px 2px 2px!important;
 }
 
 .control-label {
