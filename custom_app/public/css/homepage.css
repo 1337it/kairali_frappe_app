@@ -9,10 +9,16 @@
         transform: translateY(0);
     }
 }
-
+.awesomplete .input-with-feedback {
+background-color: var(--bg-color);
+color: var(--text-color);
+}
 .form-control {
 border: 0.5px solid rgb(48, 48, 48)!important;
 border-radius: 1px;
+}
+.form-control {
+background-color: var(--bg-color);
 }
 .like-disabled-input {
 
