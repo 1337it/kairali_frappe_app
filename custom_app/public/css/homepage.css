@@ -859,8 +859,8 @@ top: 150px;
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
-    [data-route^="Form/Sales Invoice/"] .frappe-list .result header.text-muted {
-margin-left: 40px!important;
+[data-route^="Form/"] [data-page-route^="List/"] .frappe-list .result header.text-muted {
+margin-left: 20px!important;
 margin-right: 40px!important;
 margin-top: 0px;
 margin-bottom: 0px;
