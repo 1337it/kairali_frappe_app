@@ -1008,11 +1008,12 @@ flex-wrap: 1;
 }
    [data-route^="Form/"] .page-head .justify-between{
  margin-right:0px;
- height:48px!important;
+ height:96px!important;
  margin-left:0px;
  box-shadow:none;
  position:relative;
-    align-items:center;
+    align-items:end;
+       padding-bottom: 10px!important;
 }
    .form-sidebar .sidebar-menu {
 margin-bottom:0;
@@ -1231,11 +1232,12 @@ padding-right: 10px!important;
 /* Row */
 .page-head .justify-between{
  margin-right:0px;
- height:48px!important;
+ height:96px!important;
  margin-left:0px;
  box-shadow:none;
  position:static;
-    align-items:center;
+    align-items:end;
+    padding-bottom: 10px!important;
 }
 
 /* Container */
