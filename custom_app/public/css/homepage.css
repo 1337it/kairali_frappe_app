@@ -1042,7 +1042,7 @@ overflow: scroll;
     [data-route^="Workspaces/"] .page-title .title-area .title-text {
     padding-left: 7.5px !important;
     max-width: calc(33.3vw - 100px) !important;
-    font-size: 32px !important;
+    font-size: 38px !important;
 }
     .dt-cell:has(.dt-cell--focus) .table
     {
@@ -1057,7 +1057,7 @@ overflow: scroll;
     top: 0px;
     display: block;
     order: 2;
-   
+   background:var(--bg-color);
     border-left: 0.5px solid rgb(153, 153, 153);
     z-index:9;
 }
@@ -2658,14 +2658,14 @@ display: none!important;
 {
  padding-left:0px!important;
  max-width:calc(33.3vw - 100px)!important;
- font-size:32px!important;
+ font-size:38px!important;
 }
 
 .page-title .title-area .title-text
 {
- padding-left:0px!important;
+ padding-left:20px!important;
  max-width:calc(33.3vw - 100px)!important;
- font-size:32px!important;
+ font-size:38px!important;
 }
 
 flex-wrap:wrap;
