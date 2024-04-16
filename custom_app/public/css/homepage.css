@@ -2236,8 +2236,8 @@ font-weight: 600;
 
 /* Text muted */
 .frappe-list .result header.text-muted{
-margin-left: 20px!important;
-margin-right: 20px!important;
+margin-left: 40px!important;
+margin-right: 40px!important;
 margin-top: 0px;
 margin-bottom: 0px;
 border-top-left-radius: 0px;
