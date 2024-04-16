@@ -2833,7 +2833,7 @@ z-index:4!important;
   display:flex!important;
     position: fixed;
     left: 50px;
-    top: 62px;
+    top: 61px;
 }
 
 .raven-container[data-open-state=false] .raven-content-container {
