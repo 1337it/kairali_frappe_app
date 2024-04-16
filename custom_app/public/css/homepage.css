@@ -872,7 +872,7 @@ padding-left: 15px;
 position: fixed;
 left: 48px;
 margin-left: 0px;
-top: 150px;
+top: calc(96px + var(--navbar-height));
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
@@ -892,7 +892,7 @@ padding-left: 15px;
 position: fixed;
 left: 48px;
 margin-left: 0px;
-top: 150px;
+top: calc(96px + var(--navbar-height));
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
@@ -919,7 +919,7 @@ display: none;
 display: list-item;
 padding-right: 0 var(--padding-xs);
 position: fixed;
-top: 152px;
+top: 146px;
 left: 14vw;
 z-index: 9999;
 }
@@ -1408,28 +1408,14 @@ margin-top: 0px!important;
  .page-wrapper .layout-side-section{
   height:auto;
  }
-    .layout-main-section .frappe-list, .layout-main-section .report-wrapper
-{
 
-    padding-top: 142px;
-    margin-left: 20px;
-margin-right: 20px;
+.layout-main-section .frappe-list, .layout-main-section .report-wrapper {
+padding-top: 88px;
 }
-   [data-page-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper
-{
+ 
 
-    padding-top: 142px;
-}
-    [data-route^="Form/"] [data-page-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-padding-top: 92px;
-}
-       [data-page-route^="List/Sales Invoice/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper
-{
-
-    padding-top: 142px;
-}
-    [data-route^="Form/"] [data-page-route^="List/Sales Invoice/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-padding-top: 92px;
+    [data-route^="Form/"] [data-page-route^="List/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
+padding-top: 88px;
 }
     [data-route^="List/"] .layout-side-section {
 
@@ -2273,7 +2259,7 @@ position: fixed;
 left: 48px;
 width: calc(83.3334% - 88px);
 margin-left: 0px;
-top: 148px;
+top: calc(96px + var(--navbar-height));
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
