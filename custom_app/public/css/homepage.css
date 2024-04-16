@@ -855,8 +855,8 @@ z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
     [data-route^="Form/Sales Invoice/"] .frappe-list .result header.text-muted {
-margin-left: 20px!important;
-margin-right: 20px!important;
+margin-left: 40px!important;
+margin-right: 40px!important;
 margin-top: 0px;
 margin-bottom: 0px;
 border-top-left-radius: 0px;
@@ -2832,7 +2832,6 @@ z-index:4!important;
 }
 
 #navbar-breadcrumbs{
- min-width:25%!important;
   display:flex!important;
     position: fixed;
     left: 50px;
