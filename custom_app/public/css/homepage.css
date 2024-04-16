@@ -763,7 +763,7 @@ width: calc(63.334vw);
 [data-page-route="Item"] .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
 background-color: var(--bg-color)!important;
@@ -775,7 +775,7 @@ border-bottom: 0.5px solid #525252ab!important;
     [data-page-route="Item"]:only-child .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
     margin: 0px !important;
@@ -788,7 +788,7 @@ border-bottom: 0.5px solid #525252ab!important;
 [data-page-route="Sales Invoice"] .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
     margin: 0px !important;
@@ -801,7 +801,7 @@ border-bottom: 0.5px solid #525252ab!important;
     [data-page-route="Sales Invoice"]:only-child .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
     margin: 0px !important;
@@ -2767,7 +2767,7 @@ max-width:100%!important;
 .form-tabs-list .form-tabs {
 justify-content: start;
 position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 98px) !important;
+top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
 width: 100vw!important;
 padding: 0px!important;
 margin: 0px!important;
