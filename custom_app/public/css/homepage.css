@@ -727,6 +727,7 @@ position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
+    background-color: rgba(255,255,255)!important;
     margin: 0px !important;
     left: calc(0vw) !important;
 -webkit-backdrop-filter: blur(10px)!important;
