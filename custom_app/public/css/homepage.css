@@ -819,7 +819,7 @@ box-sizing: border-box;
 padding: 0;
 display: none;
 }
-[data-page-route^="List/Sales Invoice/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
+[data-route^="Form/Sales Invoice/"] [data-page-route^="List/Sales Invoice/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
         margin-left: 0px;
 margin-right: 0px;
 }
@@ -866,10 +866,9 @@ border-bottom-right-radius: 0px;
 padding-bottom: 5px;
 padding-top: 5px;
 padding-right: 5px;
-padding-left: 5px;
+padding-left: 15px;
 position: fixed;
 left: 48px;
-width: calc(20vw - 88px);
 margin-left: 0px;
 top: 150px;
 z-index: 5;
@@ -1319,6 +1318,8 @@ body{
 
 /* Menu */
 #navbar-breadcrumbs{
+    max-width: calc(20vw - 58px);
+    min-width:0!important;
     text-shadow: 0px 8px 10px rgba(0,0,0,0.5)!important;
  margin-left:0px;
  padding-left:10px;
@@ -2232,8 +2233,8 @@ font-weight: 600;
 
 /* Text muted */
 .frappe-list .result header.text-muted{
-margin-left: 40px!important;
-margin-right: 40px!important;
+margin-left: 20px!important;
+margin-right: 20px!important;
 margin-top: 0px;
 margin-bottom: 0px;
 border-top-left-radius: 0px;
