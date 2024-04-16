@@ -82,7 +82,7 @@ height: 100%;
 height: 100%;
 }
 .page-container{
-    background-color: rgba(255, 255, 255, 0.77);
+    background-color: rgb(255, 255, 255);
     height:100%
 }
 #body{
@@ -691,6 +691,14 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+   [data-route^="Form/Item/"] [data-page-route="List/Item/List"].page-container:hover {
+transition: filter 0.3s;
+}
+[data-route^="Form/Item/"] [data-page-route="List/Item/List"].page-container:not(:hover) {
+left: 0;
+filter: brightness(90%);
+transition: filter 0.3s;
+}
    [data-page-route="Item"] .page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
@@ -2173,7 +2181,7 @@ text-align: center;
  }
 /* Content Division */
 #page-List\/Item\/List{
- background-color:rgba(255,255,255,0);
+ background-color:rgb(255,255,255);
 }
 
 /* Level */
