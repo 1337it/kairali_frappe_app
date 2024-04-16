@@ -687,6 +687,9 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+    [data-route^="Form/"] [data-page-route^="List/"] .page-title .title-area .title-text {
+    padding-left: 20px !important;
+}
 
     [data-page-route="Sales Invoice"]:not(:only-child) .page-title {
     padding-left: 0px !important;
@@ -706,12 +709,12 @@ transition: right 0.3s;
    [data-route^="Form/"] [data-page-route^="List/"].page-container:hover {
 transition: opacity 0.3s;
        mix-blend-mode: multiply;
-       opacity:1;
+       opacity:0.9;
 }
 [data-route^="Form/"] [data-page-route^="List/"].page-container:not(:hover) {
 left: 0;
 transition: opacity 0.3s;
-    opacity:0.9;
+    opacity:0.95;
     mix-blend-mode:luminosity;
 }
    [data-page-route="Item"] .page-head .justify-between .page-actions {
@@ -749,7 +752,7 @@ position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 100px) !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
-    background-color: rgba(255,255,255)!important;
+background-color: var(--bg-color)!important;
     margin: 0px !important;
     left: calc(20vw) !important;
 border-bottom: 0.5px solid #525252ab!important;
@@ -921,7 +924,6 @@ display: flex;
 text-align: center;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .page-head {
-        background: white;
         z-index: 4!important;
 left: 0;
 }
