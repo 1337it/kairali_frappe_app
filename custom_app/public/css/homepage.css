@@ -409,10 +409,12 @@ justify-content: center;
 width: 1.8rem!important;
 }
 
-.raven-channel-list-item .channel-label {
+[data-theme-mode="dark"] .raven-channel-list-item .channel-label {
+color: #e2e2e2!important;
 font-weight: 300!important;
 font-family: Arial!important;
 }
+ 
 
 .message-item .raven-message-item-header .raven-message-item-header-time {
 font-size: .7rem!important;
@@ -2154,6 +2156,7 @@ text-align: center;
 [data-theme=dark] .frappe-list .result .list-row-container{
  border-bottom-style:solid;
  border-bottom-width:0.5px;
+  
 }
 [data-theme=light] .frappe-list .result .list-row-container{
  background-color:rgba(255,255,255,0.14);
