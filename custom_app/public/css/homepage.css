@@ -773,20 +773,20 @@ width: var(--buttonelement-width);
 top:15px;
 width: calc(83.3334vw);;
 }
-    [data-page-route^="List/Item/"] ~ [data-page-route="Item"] .page-wrapper .layout-main-section-wrapper{
+[data-page-route="Item"] .page-wrapper .layout-main-section-wrapper{
  margin-bottom:0px;
  display:inline-block;
  padding-left:0px;
-     margin-left:0px;
+     margin-left:var(--tabs-left);
  padding-top:100px;
  padding-bottom:0px;
 
 }
-     [data-route^=Form] .page-wrapper .layout-main-section-wrapper{
+.page-wrapper .layout-main-section-wrapper{
  margin-bottom:0px;
  display:inline-block;
  padding-left:0px;
-     margin-left:0px;
+     margin-left:48px;
  padding-top:100px;
  padding-bottom:0px;
          background-color: var(--bg-color);
@@ -2718,19 +2718,7 @@ max-width:100%!important;
 
 
 
-.form-tabs-list .form-tabs {
-justify-content: start;
-position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
-width: 100vw!important;
-padding: 0px!important;
-margin: 0px!important;
-left: var(--tabs-left)!important;
--webkit-backdrop-filter: blur(10px)!important;
-border-bottom: 0.5px solid#525252!important;
-z-index: 800!important;
-    background-color: var(--bg-color);
-}
+
 
 .std-form-layout>.form-layout>.form-page {
 border-radius: 0!important;
