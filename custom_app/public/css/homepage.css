@@ -1461,14 +1461,6 @@ display: none!important;
 }
 
 /* Layout main section */
-[data-theme-mode="dark"] .page-wrapper .layout-main-section{
- color:rgb(51, 60, 68)!important;
- box-shadow:none!important;
-}
- [data-theme-mode="light"] .page-wrapper .layout-main-section{
- color:rgb(200, 200, 200)!important;
- box-shadow:none!important;
-}
 
 /* Content Division *
 
