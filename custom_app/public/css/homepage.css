@@ -715,7 +715,7 @@ display: block;
 width: var(--page-width);
 position: absolute;
 /* background-color: var(--bg-color); */
-z-index: 9;
+z-index: 99;
 }
 
   
