@@ -1,4 +1,8 @@
-
+:root {
+  --tabs-left: 48px;
+    --page-width: calc(100vw - 48px);
+    --buttonelement-width:calc(83.3334vw - 48px);
+}
 @keyframes slide-up {
     0% {
         opacity: 0;
@@ -706,11 +710,11 @@ display: none!important;
     .page-head .page-head-content {
         padding:0!important;
     }
-    [data-route^="Form/"] [data-page-route^="List/"] .page-title .title-area .title-text {
+.page-title .title-area .title-text {
     padding-left: 20px !important;
 }
 
-    [data-page-route="Sales Invoice"]:not(:only-child) .page-title {
+.page-title {
     padding-left: 0px !important;
 }
 [style].page-container {
@@ -736,13 +740,13 @@ transition: opacity 0.3s;
     opacity:0.9;
     mix-blend-mode:multiply;
 }
-   [data-page-route="Item"] .page-head .justify-between .page-actions {
+.page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
 top:15px;
 width: calc(63.334vw);
 }
-    [data-page-route="Sales Invoice"] .page-head .justify-between .page-actions {
+.page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
 top:15px;
@@ -766,7 +770,7 @@ width: calc(63.334vw);
  padding-bottom:0px;
          background-color: var(--bg-color);
 }
-[data-page-route="Item"] .form-tabs-list .form-tabs {
+.form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
@@ -774,65 +778,17 @@ top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
     padding: 0px !important;
 background-color: var(--bg-color)!important;
     margin: 0px !important;
-    left: calc(20vw) !important;
+    left: var(--tabs-left)!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
-    [data-page-route="Item"]:only-child .form-tabs-list .form-tabs {
-justify-content: start!important;
-position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
-    width: calc(100vw - 48px) !important;
-    padding: 0px !important;
-    margin: 0px !important;
-    left: 48px!important;
-background-color: var(--bg-color)!important;
-border-bottom: 0.5px solid #525252ab!important;
- z-index:800!important;
+}
 
-}
-[data-page-route="Sales Invoice"] .form-tabs-list .form-tabs {
-justify-content: start!important;
-position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
-    width: calc(100vw - 48px) !important;
-    padding: 0px !important;
-    margin: 0px !important;
-    left: calc(20vw) !important;
-background-color: var(--bg-color)!important;
-border-bottom: 0.5px solid #525252ab!important;
- z-index:800!important;
-
-}
-    [data-page-route="Sales Invoice"]:only-child .form-tabs-list .form-tabs {
-justify-content: start!important;
-position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
-    width: calc(100vw - 48px) !important;
-    padding: 0px !important;
-    margin: 0px !important;
-    left: 48px!important;
-background-color: var(--bg-color)!important;
-border-bottom: 0.5px solid #525252ab!important;
- z-index:800!important;
-}
      [data-route^="Form/"] .filter-popover {
         left: 10vw!important;
 }
-   [data-route^="Form/"] .page-head {
-position: fixed!important;
-top: var(--navbar-height)!important;
-margin-bottom: 0px;
-transition: .5s top;
- width:83.3334vw;
- -webkit-transform:translate3d(0,0,0);
- -webkit-backface-visibility: hidden;
-}
-    [data-route^="Form/Item/"] input[type=checkbox] {
-box-sizing: border-box;
-padding: 0;
-display: none;
-}
+
+
 [data-route^="List/Item/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
         margin-left: 20px;
 margin-right: 20px;
@@ -841,18 +797,13 @@ margin-right: 20px;
         margin-left: 0px;
 margin-right: 0px;
 }
-        
- [data-route^="Form/Sales Invoice/"] input[type=checkbox] {
-box-sizing: border-box;
-padding: 0;
-display: none;
-}
+
 [data-route^="Form/Sales Invoice/"] [data-page-route^="List/Sales Invoice/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
         margin-left: 0px;
 margin-right: 0px;
 }
 
-    [data-route^="Form/"] [data-page-route^="List/"] .page-title {
+.page-title {
 left: 48px;
 /* max-width: 50%; */
 }
@@ -882,38 +833,13 @@ top: calc(96px + var(--navbar-height));
 z-index: 5;
 border-bottom: 0.5px solid #949494;
 }
-[data-route^="Form/"] [data-page-route^="List/"] .frappe-list .result header.text-muted {
-margin-left: 20px!important;
-margin-right: 40px!important;
-margin-top: 0px;
-margin-bottom: 0px;
-border-top-left-radius: 0px;
-border-top-right-radius: 0px;
-border-bottom-left-radius: 0px;
-border-bottom-right-radius: 0px;
-padding-bottom: 5px;
-padding-top: 5px;
-padding-right: 5px;
-padding-left: 15px;
-position: fixed;
-left: 48px;
-margin-left: 0px;
-top: calc(96px + var(--navbar-height));
-z-index: 5;
-border-bottom: 0.5px solid #949494;
-}
-    [data-page-route="Item"]:only-child .page-head .justify-between .page-actions {
+.page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
 top:15px;
-width: calc(80.334vw);
+width: var(--buttonelement-width);
 }
-    [data-page-route="Sales Invoice"]:only-child .page-head .justify-between .page-actions {
- justify-content:flex-end;
-    position:absolute;
-top:15px;
-width: calc(80.334vw);
-}
+
     .col-lg-2 {
 flex: 0 0 16.66666667vw;
 max-width: 16.66666667vw;
@@ -967,33 +893,11 @@ display: block!important;
 [data-route^="Form"] .layout-main-section-wrapper {
 max-width: 100%;
 }
-[data-page-route="Item"].page-container:not(:only-child) {
-position: absolute;
-width: calc(80vw);
-right: 0;
-box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
-    border-top: 1px solid black!important;
-z-index: 9;
+: 9;
 }
-    [data-page-route="Item"].page-container:only-child {
+.page-container{
 position: absolute;
-width: calc(100vw - 48px);
-right: 0;
-box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
-    
-z-index: 9;
-}
-        [data-page-route="Sales Invoice"].page-container:only-child {
-position: absolute;
-width: calc(100vw - 48px);
-right: 0;
-box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
-            border-top: 1px solid black!important;
-z-index: 9;
-}
-div[ID="page-Sales Invoice"].page-container:not(:only-child) {
-position: absolute;
-width: calc(80vw);
+width: var(--page-width);
 right: 0;
 box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
     border-top: 1px solid black!important;
