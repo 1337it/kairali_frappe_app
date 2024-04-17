@@ -744,12 +744,12 @@ transition: right 0.3s;
    [data-route^="Form/"] [data-page-route^="List/"].page-container:hover {
 transition: opacity 0.3s;
        mix-blend-mode: luminosity;
-       opacity:0.95;
+       opacity:0.90;
 }
 [data-route^="Form/"] [data-page-route^="List/"].page-container:not(:hover) {
 left: 0;
 transition: opacity 0.3s;
-    opacity:0.9;
+    opacity:0.95;
     mix-blend-mode:multiply;
 }
 .page-head .justify-between .page-actions {
@@ -2124,7 +2124,7 @@ top:15px;
  /* Column 4/12 */
  .page-head .justify-between .page-title{
 max-width: calc(33.33vw - 100px)!important;
-padding-left: calc(48px);
+padding-left: calc(0px);
 padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
@@ -2132,7 +2132,7 @@ text-align: center;
 
 [data-page-route="Workspaces"] .page-head .justify-between .page-title{
 max-width: calc(33.33vw - 100px)!important;
-padding-left: calc(68px);
+padding-left: calc(0px);
 padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
