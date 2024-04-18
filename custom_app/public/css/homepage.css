@@ -745,15 +745,15 @@ transition: right 0.3s;
     
    [data-route^="Form/"] [data-page-route^="List/"].page-container:hover {
 transition: opacity 0.3s;
-       mix-blend-mode: luminosity;
+       mix-blend-mode: normal;
          opacity:1;
 
 }
 [data-route^="Form/"] [data-page-route^="List/"].page-container:not(:hover) {
 left: 0;
 transition: opacity 0.3s;
-   mix-blend-mode: multiply;
-       opacity:0.70;
+   mix-blend-mode: luminosity;
+       opacity:0.80;
   
 }
 .page-head .justify-between .page-actions {
