@@ -752,8 +752,8 @@ transition: opacity 0.3s;
 [data-route^="Form/"] [data-page-route^="List/"].page-container:not(:hover) {
 left: 0;
 transition: opacity 0.3s;
-   mix-blend-mode: luminosity;
-       opacity:0.90;
+   mix-blend-mode: multiply;
+       opacity:0.70;
   
 }
 .page-head .justify-between .page-actions {
