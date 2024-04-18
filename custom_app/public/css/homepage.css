@@ -761,7 +761,7 @@ transition: opacity 0.3s;
  justify-content:flex-end;
     position:absolute;
 top:15px;
-width: calc(100vw - 0px)!important;;
+width: calc(100vw - 0px);
 }
 [data-route^="Form/"] .page-head .justify-between .page-actions {
  justify-content:flex-end;
