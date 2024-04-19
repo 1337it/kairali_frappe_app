@@ -1609,7 +1609,8 @@ transition: .5s top;
 
 /* Row */
 .page-wrapper .form-page .form-section{
- box-shadow:none;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-bottom:20px;
 }
 
 /* Form page */
@@ -2853,9 +2854,12 @@ font-size: calc(var(--text-sm) + 2px)!important;
 
 .form-section .section-head, .form-dashboard-section .section-head {
 
-font-size: calc(var(--text-lg) + 2px)!important;
- text-align: center!important;
- 
+background: rgb(244, 244, 244);
+font-size: calc(var(--text-lg) + 6px)!important;
+text-align: center!important;
+color: rgba(0, 0, 0, 0.54);
+text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.18),
+0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 .list-sidebar .sidebar-section {
 
