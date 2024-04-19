@@ -713,10 +713,10 @@ display: none!important;
  
 @media (min-width: 1200px) {
 .indicator-pill {
-font-size: calc(5px + var(--text-sm));
-font-weight: var(--weight-regular);
+font-size: calc(3px + var(--text-sm));
+font-weight: var(--weight-thin);
 letter-spacing: .02em;
-padding: 12.5px 14px;
+padding: 12.5px 10px;
 border-radius: var(--border-radius-full);
 height: 20px;
 }
@@ -2855,12 +2855,11 @@ font-size: calc(var(--text-sm) + 2px)!important;
 
 .form-section .section-head, .form-dashboard-section .section-head {
 
-background: rgb(244, 244, 244);
 font-size: calc(var(--text-lg) + 6px)!important;
 text-align: center!important;
 color: rgba(0, 0, 0, 0.54);
   text-decoration: underline;
-text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.18),
+text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1),
 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 .list-sidebar .sidebar-section {
