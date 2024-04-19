@@ -1,3 +1,9 @@
+@media (min-width: 992px)
+.col-lg-3 {
+flex: 0 0 20%;
+max-width: 20%;
+}
+
 :root {
   --tabs-left: 48px;
   --title-left:48px;
@@ -712,15 +718,57 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
-.indicator-pill {
+
+  .desk-page .icon-xs {
+width: 12px;
+height: 12px;
+position: absolute;
+}
+.codex-editor .widget-head .ellipsis {
+font-weight: 500;
+height: 50px;
+font-family: 'Heebo', sans-serif;
+text-align: center;
+/* border-bottom: 1px solid black; */
+}
+
+.widget .widget-head .widget-control {
+display: flex;
+align-items: center;
+flex-direction: row-reverse;
+
+}
+  
+
+.col-lg-3 .widget .widget-head .widget-label .widget-title {
+min-width: 0px;
+padding-bottom: 10px;
+height: 50px;
+border-bottom: 1px solid black;
+}
+
+.widget .widget-head .widget-label .widget-title
+{align-items: center;
+font-size: 18px;
+font-weight: var(--weight-medium);
+letter-spacing: .015em;
+font-family: inherit;
+line-height: 20px;
+color: var(--text-color);
+cursor: default;
+height: 40px;
+}
+
+  
+.desk-page .indicator-pill {
 font-size: calc(3px + var(--text-sm));
 font-weight: var(--weight-thin);
 letter-spacing: .02em;
 padding: 12.5px 10px;
-border-radius: var(--border-radius-full);
+border-radius: 0;
 height: 20px;
+background-color:transparent;
 }
-
 [data-page-route="Item"].page-container {
 display: block;
 width: var(--page-width);
@@ -1536,9 +1584,11 @@ transition: .5s top;
 
 /* Ellipsis */
 .codex-editor .widget-head .ellipsis{
- font-weight:500;
- height:20px;
- font-family:'Heebo', sans-serif;
+font-weight: 500;
+height: 20px;
+font-family: 'Heebo', sans-serif;
+text-align: center;
+/* border-bottom: 1px solid black; */
 }
 
 
@@ -1574,8 +1624,10 @@ transition: .5s top;
 
 /* Widget head */
 .codex-editor div .widget-head{
- justify-content:center;
- align-self:auto;
+justify-content: center;
+align-self: stretch;
+display: list-item;
+flex-wrap: nowrap;
 }
 
 /* Span Tag */
