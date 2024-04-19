@@ -747,6 +747,12 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+  .widget .widget-head .widget-control>* {
+align-self: center;
+margin-left: 0px;
+box-shadow: none;
+}
+
 
   .desk-page .icon-xs {
 width: 12px;
@@ -776,6 +782,9 @@ min-width: 0px;
 padding-bottom: 10px;
 height: 45px;
 border-bottom: 1px solid rgb(209, 209, 209);
+width: 100%;
+max-height: 100%;
+display: table;
 }
 
 .widget .widget-head .widget-label .widget-title
