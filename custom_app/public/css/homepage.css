@@ -711,6 +711,14 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+.indicator-pill {
+font-size: calc(5px + var(--text-sm));
+font-weight: var(--weight-regular);
+letter-spacing: .02em;
+padding: 12.5px 14px;
+border-radius: var(--border-radius-full);
+height: 20px;
+}
 
 [data-page-route="Item"].page-container {
 display: block;
