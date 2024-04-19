@@ -765,7 +765,7 @@ width: calc(100vw - 0px);
 [data-route^="Form/"] .page-head .justify-between .page-actions {
  justify-content:flex-end;
     position:absolute;
-top:15px;
+top:10px;
 width: var(--buttonelement-width);
 }
   [data-route^="List/"] .page-head .justify-between .page-actions {
