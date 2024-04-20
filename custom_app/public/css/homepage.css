@@ -1,4 +1,6 @@
-
+.es-icon.es-line.ml-2.icon-xs {
+display: none;
+}
 
 :root {
   --tabs-left: 48px;
