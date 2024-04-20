@@ -747,6 +747,11 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+
+  .col-lg-3 {
+flex: 0 0 20%!important;
+max-width: 20%!important;
+}
   .widget .widget-head .widget-control>* {
 align-self: center;
 margin-left: 0px;
@@ -766,7 +771,7 @@ font-family: 'Heebo', sans-serif;
 text-align: center;
 white-space: wrap!important;
 overflow: visible!important;
-font-size: 20px;
+font-size: 16px;
 }
 
 .widget .widget-head .widget-control {
