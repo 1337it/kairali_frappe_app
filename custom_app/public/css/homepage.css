@@ -553,7 +553,6 @@ z-index:10!important;
  
  /* Widget */
  .codex-editor .ce-block .ce-block__content div .widget{
-  background-color:(127,140,141,0.42);
      background-size:auto;
   padding-top:25px !important;
   padding-bottom:25px !important;
@@ -587,7 +586,6 @@ z-index:10!important;
  
  /* Widget */
  .codex-editor .ce-block .ce-block__content div .widget{
-  background-color:(127,140,141,0.42);
      background-size:auto;
   padding-top:25px !important;
   padding-bottom:25px !important;
@@ -749,6 +747,10 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+  .custom-block-widget-box {
+    background: transparent;
+    background-color: transparent !important;
+}
 
 .links-widget-box {
     justify-content: flex-start!important;
@@ -1601,7 +1603,7 @@ transition: .5s top;
 
 /* Widget */
 .codex-editor .ce-block .ce-block__content div .widget{
- background-color:var(--card-bg) !important;
+ background-color:var(--card-bg);
  border-top-left-radius:5px;
  border-top-right-radius:5px;
  border-bottom-left-radius:5px;
@@ -2171,7 +2173,6 @@ left: 0;
 /* Widget */
 .codex-editor .ce-block .ce-block__content div .widget{
  box-shadow:0px 0px 16px 1px rgba(51,60,68,0);
- backdrop-filter:blur(10px) saturate(2.01);
 }
 
 
