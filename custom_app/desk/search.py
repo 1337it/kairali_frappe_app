@@ -239,6 +239,9 @@ def get_std_fields_list(meta, key):
 	if meta.title_field and meta.title_field not in sflist:
 		sflist.append(meta.title_field)
 
+	if meta.price and meta.price not in sflist:
+		sflist.append(meta.price)
+
 	if key not in sflist:
 		sflist.append(key)
 
