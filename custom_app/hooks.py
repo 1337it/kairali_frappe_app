@@ -105,9 +105,6 @@ home_page = "index"
 # has_permission = {
 #	"Event": "frappe.desk.doctype.event.event.has_permission",
 # }
-override_whitelisted_methods = {
-	"frappe.desk.search.search_link": "custom_app.desk.search.search_link"
-}
 # DocType Class
 # ---------------
 # Override standard doctype classes
