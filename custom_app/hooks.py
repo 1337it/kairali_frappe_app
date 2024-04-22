@@ -127,9 +127,6 @@ home_page = "index"
 # Scheduled Tasks
 # ---------------
 
-override_whitelisted_methods = {
-	"frappe.desk.search.search_link": "custom_app.desk.search.search_link"
-}
 # scheduler_events = {
 #	"all": [
 #		"custom_app.tasks.all"
