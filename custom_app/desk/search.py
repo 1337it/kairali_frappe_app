@@ -271,7 +271,7 @@ def build_for_autosuggest(res: list[tuple], doctype: str) -> list[LinkSearchResu
 				del item[2]
 			results.append({"value": item[0], "label": label, "description": to_string(item[1:]), "price":price})
 	else:
-		results.extend({"value": item[0], "description": to_string(item[1:]), "price":price} for item in res)
+		results.extend({"value": item[0], "description": to_string(item[1:])} for item in res)
 
 	return results
 
