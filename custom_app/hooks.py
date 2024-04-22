@@ -93,9 +93,6 @@ home_page = "index"
 # See frappe.core.notifications.get_notification_config
 
 # notification_config = "custom_app.notifications.get_notification_config"
-override_whitelisted_methods = {
-	"frappe.desk.search.search_link": "custom_app.desk.search.search_link"
-}
 # Permissions
 # -----------
 # Permissions evaluated in scripted ways
