@@ -12,7 +12,7 @@ def build_for_autosuggest(res):
     results = []
     for r in res:
         out = {
-            "value": r[0],
+            "values": r[0],
             "description": ", ".join(unique(cstr(d) for d in r if d)[1:]),
             "actual_qty": get_actual_qty(r[0]) # get_actual_qty is self implement function
         }
