@@ -126,6 +126,23 @@ home_page = "index"
 
 # Scheduled Tasks
 # ---------------
+scheduler_events = {
+#	"all": [
+#		"stock_quantity.tasks.all"
+#	],
+#	"daily": [
+#		"stock_quantity.tasks.daily"
+#	],
+	"daily": [
+		"stock_quantity.stock_quantity.api.sync_stock"
+	],
+#	"weekly": [
+#		"stock_quantity.tasks.weekly"
+#	],
+#	"monthly": [
+#		"stock_quantity.tasks.monthly"
+#	],
+ }
 override_whitelisted_methods = {
 	"frappe.desk.search.search_link": "custom_app.desk.search.search_link"
 }
