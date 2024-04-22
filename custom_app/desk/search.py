@@ -30,6 +30,7 @@ class LinkSearchResults(TypedDict):
 	value: str
 	description: str
 	label: NotRequired[str]
+	price: str
 
 
 # this is called by the Link Field
