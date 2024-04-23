@@ -6,6 +6,8 @@ display: none;
   --tabs-left: 48px;
   --title-left:48px;
   --title-pad:20px;
+  --text-color: var(--gray-700)!important;
+--text-muted: var(--gray-600)!important;
     --page-width: calc(100vw - 48px);
     --buttonelement-width:calc(83.3334vw - 48px);
 }
@@ -785,11 +787,26 @@ font-family: 'Heebo', sans-serif;
 text-align: center;
 white-space: wrap!important;
 overflow: visible!important;
-font-size: 16px;
+font-size: 18px;
   width:100%;
   justify-content: space-evenly;
+  font-weight:400;
 }
 
+.widget.links-widget-box .link-item {
+display: flex;
+text-decoration: none;
+font-size: 16px;
+font-weight: 300;
+letter-spacing: .02em;
+color: var(--text-color);
+padding: 4px;
+margin-left: -4px;
+margin-bottom: 0;
+border-radius: var(--border-radius-md);
+cursor: pointer;
+}
+  
 .widget .widget-head .widget-control {
 display: flex;
 align-items: center;
