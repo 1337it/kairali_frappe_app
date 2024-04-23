@@ -2268,7 +2268,7 @@ text-align: center;
  background-color:rgba(255,255,255,0.14);
  border-bottom-style:solid;
  border-bottom-width:0.5px;
-    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-bottom-color: #a4a4a4;
 }
 .frappe-list .list-row-head .ellipsis
 {
@@ -2309,7 +2309,8 @@ width: calc(83.3334% - 88px);
 margin-left: 0px;
 top: calc(96px + var(--navbar-height));
 z-index: 5;
-border-bottom: 0.5px solid #949494;
+border-bottom: 0.5px solid #a4a4a4;
+  background-color: white;
 }
 
 
