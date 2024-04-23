@@ -19,6 +19,10 @@ display: none;
         transform: translateY(0);
     }
 }
+input[type=checkbox] {
+
+border-radius: 10px;
+}
 .awesomplete .input-with-feedback {
 background-color: var(--bg-color);
 color: var(--text-color);
