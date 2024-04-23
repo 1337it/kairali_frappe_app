@@ -142,9 +142,12 @@ scrollbar-width: none!important;
 
 
 body {
-  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif!important;
 background-color: calc(var(--bg-color) + 1000)!important;
 }
+* {
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif!important;
+}
+
 
 [data-route^="print-designer"] #global-sidebar {
 display: none!important;
