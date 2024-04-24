@@ -27,13 +27,11 @@ display: none;
 .ace_content {
 
     font: 12px / normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'Source Code Pro', 'source-code-pro', monospace !important;
-    font-family: unset !important;
 }
 
 .ace_editor {
 
  font: 12px / normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'Source Code Pro', 'source-code-pro', monospace !important;
-    font-family: unset !important;
 
 }
 .list-row-container .list-row-border {
