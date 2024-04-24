@@ -2871,11 +2871,7 @@ z-index: 9!important;
 [data-theme-mode="dark"] .page-form {
 background-color: rgba(23, 23, 23, 0);
 }
-[data-theme-mode="dark"] .page-wrapper .layout-side-section {
 
-background-color: #0d0d0d;
-
-}
 .page-form .filter-section {
     display: list-item;
     padding: 0 var(--padding-xs);
@@ -3000,10 +2996,9 @@ font-size: calc(var(--text-sm) + 2px)!important;
 
 font-size: calc(var(--text-lg) + 6px)!important;
 text-align: center!important;
-color: var(--gray-800);
+
   text-decoration: underline;
-text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.1),
-0px -5px 35px rgba(255, 255, 255, 0.3);
+
 }
 .list-sidebar .sidebar-section {
 
