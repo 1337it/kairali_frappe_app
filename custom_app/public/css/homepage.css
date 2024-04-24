@@ -36,7 +36,7 @@ margin: 0 10px;
   backdrop-filter: contrast(0.9);
 }
 input[type=checkbox] {
-border:none;
+  border: 0.5px double  var(--gray-900);
 border-radius: 10px;
 }
 .awesomplete .input-with-feedback {
