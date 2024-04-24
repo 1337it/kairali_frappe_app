@@ -24,6 +24,15 @@ display: none;
 {
       font-family: 'FontAwesome' !important;
 }
+
+input.list-row-checkbox {
+  
+    background-color: var(--card-bg);
+    background: #e8e8e8;
+    box-shadow: 3px 3px 5px #c5c5c5, -3px -3px 5px #ffffff;
+    transition-duration: 0.5s;
+}
+
 .list-row-container .list-row-border {
 border-bottom: 1px none var(--border-color);
 margin: 0 10px;
@@ -33,7 +42,7 @@ margin: 0 10px;
   backdrop-filter: contrast(0.9);
 }
 input[type=checkbox] {
-
+border:none;
 border-radius: 10px;
 }
 .awesomplete .input-with-feedback {
