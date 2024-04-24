@@ -26,7 +26,11 @@ display: none;
 }
 
 
+.ace_editor {
 
+    font: 12px / normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'Source Code Pro', 'source-code-pro', monospace !important;
+
+}
 .list-row-container .list-row-border {
 border-bottom: 1px none var(--border-color);
 margin: 0 10px;
@@ -161,7 +165,7 @@ body {
 background-color: calc(var(--bg-color) + 1000)!important;
 }
 * {
-  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif!important;
+  font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
 
 
@@ -366,7 +370,7 @@ visibility:hidden;
 font-weight: 300!important;
 color: var(--heading-color)!important;
 padding-right: 4px!important;
-font-family: Arial!important;
+ font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
  .raven-content-container {
 position: relative;
@@ -795,7 +799,7 @@ width: 12px;
 height: 12px;
 }
 .desk-page .codex-editor .widget-head .ellipsis {
-font-family: 'Heebo', sans-serif;
+ font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 text-align: center;
 white-space: wrap!important;
 overflow: visible!important;
@@ -841,7 +845,7 @@ display: table;
 font-size: 18px;
 font-weight: var(--weight-medium);
 letter-spacing: .015em;
-font-family: inherit;
+ font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 line-height: 20px;
 color: var(--text-color);
 cursor: default;
@@ -1926,7 +1930,7 @@ visibility:hidden;
 font-weight: 300!important;
 color: var(--heading-color)!important;
 padding-right: 4px!important;
-font-family: Arial!important;
+ font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
 }
  .raven-content-container {
 position: relative;
