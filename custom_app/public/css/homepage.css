@@ -460,7 +460,6 @@ width: 1.8rem!important;
 [data-theme-mode="dark"] .raven-channel-list-item .channel-label {
 color: #e2e2e2!important;
 font-weight: 300!important;
-font-family: Arial!important;
 }
  
 
@@ -2024,7 +2023,7 @@ width: 1.8rem!important;
 
 .raven-channel-list-item .channel-label {
 font-weight: 300!important;
-font-family: Arial!important;
+color:white;
 }
 
 .message-item .raven-message-item-header .raven-message-item-header-time {
