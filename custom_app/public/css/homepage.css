@@ -20,6 +20,10 @@ display: none;
         transform: translateY(0);
     }
 }
+.fa
+{
+      font-family: 'FontAwesome' !important;
+}
 .list-row-container .list-row-border {
 border-bottom: 1px none var(--border-color);
 margin: 0 10px;
