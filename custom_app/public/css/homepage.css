@@ -3010,11 +3010,11 @@ font-weight: 400;
 
 }
 .form-section .section-head.collapsed {
-background: var(--dark-border-color);
+background: var(--subtle-fg);
 font-size: calc(var(--text-lg) + 6px)!important;
-text-align: center!important;
+text-align: left!important;
 font-weight: 400;
-  text-decoration: underline;
+  text-decoration: none;
   letter-spacing: 1.5px;
 
 }
