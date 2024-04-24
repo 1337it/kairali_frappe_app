@@ -20,6 +20,14 @@ display: none;
         transform: translateY(0);
     }
 }
+.list-row-container .list-row-border {
+border-bottom: 1px none var(--border-color);
+margin: 0 10px;
+}
+.list-row-container:nth-child(odd) {
+-webkit-backdrop-filter: contrast(0.9);
+  backdrop-filter: contrast(0.9);
+}
 input[type=checkbox] {
 
 border-radius: 10px;
@@ -2281,15 +2289,14 @@ text-align: center;
 }
 
 [data-theme=dark] .frappe-list .result .list-row-container{
- border-bottom-style:solid;
+ border-bottom-style:none;
  border-bottom-width:0.5px;
   
 }
 [data-theme=light] .frappe-list .result .list-row-container{
  background-color:rgba(255,255,255,0.14);
- border-bottom-style:solid;
- border-bottom-width:0.5px;
-    border-bottom-color: #a4a4a4;
+ border-bottom-style:none;
+
 }
 .frappe-list .list-row-head .ellipsis
 {
