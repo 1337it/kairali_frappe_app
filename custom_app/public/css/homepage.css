@@ -1685,8 +1685,8 @@ transition: .5s top;
 /* Widget head */
 .codex-editor div .widget-head{
 justify-content: center;
-align-self: center;
-display: block;
+align-self: stretch;
+display: flex;
 flex-wrap: nowrap;
 }
 
