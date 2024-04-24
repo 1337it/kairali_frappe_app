@@ -1062,6 +1062,7 @@ display: block!important;
 
 [data-route^="Form"] .layout-main-section-wrapper {
 max-width: 100%;
+  z-index:1;
 }
 : 9;
 }
