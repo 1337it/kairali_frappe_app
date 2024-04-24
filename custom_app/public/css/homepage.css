@@ -6,8 +6,7 @@ display: none;
   --tabs-left: 48px;
   --title-left:48px;
   --title-pad:20px;
-  --text-color: var(--gray-700)!important;
---text-muted: var(--gray-600)!important;
+
     --page-width: calc(100vw - 48px);
     --buttonelement-width:calc(83.3334vw - 48px);
 }
