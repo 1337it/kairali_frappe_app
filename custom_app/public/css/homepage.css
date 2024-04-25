@@ -219,12 +219,6 @@ display: none!important;
 
 
 
-@media (min-width: 992px)
-.col-lg-3 {
-flex: 0 0 20%!important;
-max-width: 20%!important;
-}
-}
 
 
 
@@ -775,6 +769,11 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+  [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block {
+width: 100%;
+padding-left: 15px;
+padding-right: 15px;
+}
   .custom-block-widget-box {
     background: transparent;
     background-color: transparent !important;
@@ -784,10 +783,7 @@ display: none!important;
     justify-content: flex-start!important;
 }
 
-  .col-lg-3 {
-flex: 0 0 20%!important;
-max-width: 20%!important;
-}
+
   .widget .widget-head .widget-control>* {
 align-self: center;
 margin-left: 0px;
