@@ -771,8 +771,7 @@ display: none!important;
 @media (min-width: 1200px) {
   [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block {
 width: 100%;
-padding-left: 15px;
-padding-right: 15px;
+padding: 10px;
 }
   .custom-block-widget-box {
     background: transparent;
