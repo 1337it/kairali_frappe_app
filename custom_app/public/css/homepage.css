@@ -1030,7 +1030,7 @@ display: none;
 }
    [data-route^="Form/"] [data-page-route^="List/"] .page-form .filter-section {
 display: list-item;
-padding-right: 0 var(--padding-xs);
+padding-right: 0 var(--padding-lg);
 position: fixed;
 top: 146px;
 left: 14vw;
@@ -2893,7 +2893,7 @@ background-color: rgba(23, 23, 23, 0);
 
 .page-form .filter-section {
     display: block;
-    padding: 0 var(--padding-xs);
+    padding: 0 var(--padding-lg);
 }
 
 .layout-main-section .frappe-list .freeze {
