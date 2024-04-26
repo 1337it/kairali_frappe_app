@@ -769,6 +769,14 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .ce-header .h4 {
+
+    font-weight: var(--weight-semibold) !important;
+    letter-spacing: 0.04em!important;
+    text-shadow: rgba(71, 71, 71, 0.25) 0px 1px 1px !important;
+    font-size: 22px !important;
+}
+  
   [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block {
 width: 100%;
 padding: 10px;
@@ -1190,11 +1198,11 @@ z-index: 9!important;
  transition: maxheight 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     right:0;
     position:fixed;
-    display:list-item;
+    display:block;
 }
    [data-route^="List/"] .page-wrapper .frappe-card .page-form{
 padding-left: 0px!important;
-padding-right: 1vw!important;
+padding-right: 0vw!important;
 }
     .page-form .standard-filter-section .form-group {
     min-width: 14.6667vw;
@@ -1202,7 +1210,7 @@ padding-right: 1vw!important;
     .page-form .standard-filter-section {
     flex-wrap: wrap;
     flex: 1;
-    max-width: 15vw;
+    justify-content: space-around;
 }
     .page-form .form-group {
     padding: 5px 5px;
@@ -1706,7 +1714,7 @@ flex-wrap: nowrap;
 /* Span Tag */
 .codex-editor .ce-header span{
  display:flex;
- justify-content:center;
+ justify-content:left;
 }
 
 
@@ -2877,6 +2885,7 @@ border-bottom: 0.5px solid rgba(0,0,0,0.2)!important;
 z-index: 9!important;
  padding:0px!important;
  transition: maxheight 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+      width: 16.6vw!important;
 }
 [data-theme-mode="dark"] .page-form {
 background-color: rgba(23, 23, 23, 0);
