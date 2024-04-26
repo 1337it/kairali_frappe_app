@@ -51,7 +51,7 @@ background-color: var(--bg-color);
 color: var(--text-color);
 }
 .form-control {
-border:0.5px solid var(--avatar-frame-color)!important;
+border:1px solid var(--gray-400)!important;
 border-radius: 1px;
 }
 .form-control {
@@ -1188,7 +1188,7 @@ overflow: scroll;
     display: block;
     order: 2;
     background-color: var(--bg-color);
-    border-left: 1px solid #cdcdcd);
+    border-left: 1px solid var(--gray-400);
 }
  [data-route^="List/"] .page-form {
 margin-top: 20px!important;
@@ -2352,7 +2352,7 @@ width: calc(83.3334% - 88px);
 margin-left: 0px;
 top: calc(96px + var(--navbar-height));
 z-index: 5;
-border-bottom: 1px solid #cdcdcd;
+border-bottom: 1px solid var(--gray-400);
   background-color: white;
 }
 
