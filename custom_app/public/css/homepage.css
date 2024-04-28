@@ -772,9 +772,16 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
-    .form-dashboard-section .section-body {
-        background:var(--bg-color);
-    }
+
+    .form-section .section-body, .form-dashboard-section .section-body {
+width: 100%;
+margin: 20px;
+}
+  .form-dashboard-section {
+padding: var(--padding-xs);
+background: var(--bg-color);
+margin-bottom: 5px;
+}
 
     [data-route^="Form/Item/"] [data-page-route^="List"] .frappe-list .result header.text-muted {
         margin-left: 20px !important;
@@ -3045,7 +3052,7 @@ font-size: calc(var(--text-lg) + 6px)!important;
 text-align: left!important;
 font-weight: 400;
   letter-spacing: 1.5px;
-
+text-shadow: rgba(71, 71, 71, 0.45) 0px 1px 1px!important;
 }
 .form-section .section-head.collapsed {
 background: var(--subtle-fg);
@@ -3054,7 +3061,7 @@ text-align: left!important;
 font-weight: 400;
   text-decoration: none;
   letter-spacing: 1.5px;
-
+text-shadow: rgba(71, 71, 71, 0.45) 0px 1px 1px!important;
 }
 .list-sidebar .sidebar-section {
 
