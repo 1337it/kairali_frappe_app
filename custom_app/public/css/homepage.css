@@ -772,6 +772,9 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+    .form-dashboard-section .section-body {
+        background:var(--bg-color);
+    }
 
     [data-route^="Form/Item/"] [data-page-route^="List"] .frappe-list .result header.text-muted {
         margin-left: 20px !important;
