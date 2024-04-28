@@ -1,3 +1,6 @@
+[data-label*="3E"].btn {
+    padding: 0 !important;
+}
 .es-icon.es-line.ml-2.icon-xs {
 display: none;
 }
@@ -769,6 +772,29 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+
+    [data-route^="Form/Item/"] [data-page-route^="List"] .frappe-list .result header.text-muted {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        padding-left: 5px;
+        position: fixed;
+        left: 48px;
+        margin-left: 0px;
+        top: calc(96px + var(--navbar-height));
+        z-index: 5;
+        border-bottom: 0.5px solid #949494;
+    }
+
+  
 [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .ce-header .h4 {
 
     font-weight: var(--weight-semibold) !important;
