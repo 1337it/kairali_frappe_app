@@ -2837,38 +2837,32 @@ background-color: var(--gray-100)!important;
 .page-title .title-area .title-text
 {
  padding-left:20px!important;
- max-width:calc(33.3vw - 100px)!important;
+ max-width:calc(50vw)!important;
  font-size:38px!important;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .page-title .title-area .title-text
 {
  padding-left:20px!important;
- max-width:calc(33.3vw - 100px)!important;
+ max-width:calc(50vw)!important;
  font-size:38px!important;
 }
 [data-route^="Form/"] [data-page-route^="Item"] .page-title .title-area .title-text
 {
  padding-left:0px!important;
- max-width:calc(33.3vw - 100px)!important;
+ max-width:calc(50vw)!important;
  font-size:38px!important;
 }
 [data-route^="Form/"] [data-page-route^="Sales"] .page-title .title-area .title-text
 {
  padding-left:0px!important;
- max-width:calc(33.3vw - 100px)!important;
- font-size:38px!important;
-}
-[data-route^="Form/"] [data-page-route^="Purchase"] .page-title .title-area .title-text
-{
- padding-left:0px!important;
- max-width:calc(33.3vw - 100px)!important;
+ max-width:calc(50vw)!important;
  font-size:38px!important;
 }
 [data-route^="Form/"] [data-page-route^="Item"] .page-title .title-area .title-text
 {
  padding-left:0px!important;
- max-width:calc(33.3vw - 100px)!important;
+ max-width:calc(50vw)!important;
  font-size:38px!important;
 }
 
