@@ -2920,13 +2920,23 @@ height: 41px!important;
     flex: 1;
     justify-content: start;
 }
+
+[data-route^="query-report/"] .page-form {
+margin-top: 50px!important;
+border-bottom: 0.5px solid rgba(0,0,0,0.2)!important;
+z-index: 9!important;
+ padding:0px!important;
+ transition: maxheight 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+      width: 100%;
+}
+
 .page-form {
 margin-top: 50px!important;
 border-bottom: 0.5px solid rgba(0,0,0,0.2)!important;
 z-index: 9!important;
  padding:0px!important;
  transition: maxheight 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-      width: 16.6vw!important;
+      width: 16.6vw;
 }
 [data-theme-mode="dark"] .page-form {
 background-color: rgba(23, 23, 23, 0);
