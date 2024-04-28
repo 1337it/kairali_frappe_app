@@ -133,6 +133,7 @@ height: 220px!important;
 }
 .form-message {
 margin-top: 50px;
+margin-bottom: -35px!important;
 }
 
 .page-wrapper {
@@ -775,6 +776,10 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+
+    [data-route^="List/Task/Kanban"] .page-wrapper .layout-side-section {
+        display: none;
+}
 
     .form-section .section-body, .form-dashboard-section .section-body {
 width: 100%;
