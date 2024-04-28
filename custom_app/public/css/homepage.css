@@ -9,6 +9,7 @@ display: none;
   --tabs-left: 48px;
   --title-left:48px;
   --title-pad:20px;
+    --page-left:48px;
 
     --page-width: calc(100vw - 48px);
     --buttonelement-width:calc(83.3334vw - 48px);
