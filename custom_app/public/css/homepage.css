@@ -1810,11 +1810,11 @@ margin-top: 0px!important;
     padding-top:148px!important;
 }
  [data-theme=dark] .page-wrapper .layout-main-section-wrapper {
-overflow-y: auto;
+overflow-x: hidden;
   background-color: #292929;
 }
   [data-theme=light] .page-wrapper .layout-main-section-wrapper {
-overflow-y: auto;
+overflow-x: hidden;
 }
 
  .form-tabs-sticky-down {
