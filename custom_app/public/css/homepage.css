@@ -42,8 +42,11 @@ display: none;
 border-bottom: 1px none var(--border-color);
 margin: 0 10px;
 }
-.list-row-container:nth-child(odd) {
+[data-theme-mode="dark"] .list-row-container:nth-child(odd) {
 background: var(--gray-100);
+}
+[data-theme-mode="dark"] .list-row-container:nth-child(odd) {
+background:var(--border-color);
 }
 input[type=checkbox] {
   border: 1px double  var(--gray-400);
@@ -994,7 +997,7 @@ left: 48px!important;
 border-bottom: 0.5px solid #525252ab!important;
  z-index:800!important;
 }
-  [data-page-route="Item"] .form-tabs-list .form-tabs {
+ [data-theme-mode="light"] [data-page-route="Item"] .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
 top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
@@ -1005,6 +1008,10 @@ background-color: var(--bg-color)!important;
 left: var(--tabs-left)!important;
 border-bottom: 1px solid var(--gray-400)!important;
  z-index:800!important;
+}
+     [data-theme-mode="dark"] [data-page-route="Item"] .form-tabs-list .form-tabs {
+
+border-bottom: 1px solid var(--kanban-new-card-bg)!important;
 }
 
      [data-route^="Form/"] .filter-popover {
@@ -2952,7 +2959,7 @@ max-width:100%!important;
 
 
 
-.std-form-layout>.form-layout>.form-page {
+[data-theme-mode="light"] .std-form-layout>.form-layout>.form-page {
 border-radius: 0!important;
 border: 1px none var(--border-color)!important;
 box-shadow: none;
@@ -2960,6 +2967,16 @@ padding-left: 5px!important;
 padding-bottom: 5px!important;
 padding-right: 5px!important;
     background-color: var(--gray-100)!important;
+}
+
+[data-theme-mode="dark"] .std-form-layout>.form-layout>.form-page {
+border-radius: 0!important;
+border: 1px none var(--border-color)!important;
+box-shadow: none;
+padding-left: 5px!important;
+padding-bottom: 5px!important;
+padding-right: 5px!important;
+    background-color: var(--control-bg)!important;
 }
 
 .form-dashboard-section {
@@ -3047,7 +3064,6 @@ font-size: calc(var(--text-sm) + 2px)!important;
 }
 
 .form-section .section-head, .form-dashboard-section .section-head {
-background: white;
 font-size: calc(var(--text-lg) + 6px)!important;
 text-align: left!important;
 font-weight: 400;
@@ -3055,7 +3071,6 @@ font-weight: 400;
 text-shadow: rgba(71, 71, 71, 0.45) 0px 1px 1px!important;
 }
 .form-section .section-head.collapsed {
-background: var(--subtle-fg);
 font-size: calc(var(--text-lg) + 6px)!important;
 text-align: left!important;
 font-weight: 400;
