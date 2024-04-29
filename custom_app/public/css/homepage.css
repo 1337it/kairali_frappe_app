@@ -941,6 +941,8 @@ width: var(--page-width);
 position: absolute;
 /* background-color: var(--bg-color); */
 z-index: 99;
+    height: 100%;
+right: 0!important;
 }
 
   
@@ -954,17 +956,7 @@ z-index: 99;
 [data-page-route="Item"] .page-title {
     left: var(--title-left) !important;
 }
-[style].page-container {
 
-height: 100%;
-right: 0!important;
-transition: right 0.3s;
-}
-[style="display: none;"].page-container {
-
-right: 100%!important;
-transition: right 0.3s;
-}
     
    [data-route^="Form/"] [data-page-route^="List/"].page-container:hover {
 transition: opacity 0.3s;
@@ -1964,17 +1956,18 @@ padding-right: 10px;
 }
 
 .form-footer {
-padding: 30px;
+padding: 20px;
 display: block;
+background: var(--bg-color);
 }
 .comment-box .comment-input-container .frappe-control .ql-editor {
 background-color: #ffffff!important;
 }
 .form-footer .after-save .comment-box {
-margin-left: 30px;
-margin-right: 30px;
-margin-top: 30px;
-margin-bottom: 30px;
+margin-left: 20px;
+margin-right: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
 }
 
 .raven-container[data-open-state="false"] .raven-logo {
