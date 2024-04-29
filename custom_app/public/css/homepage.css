@@ -778,7 +778,7 @@ display: none!important;
 @media (min-width: 1200px) {
 
     .layout-side-section .section-body {
-margin: 0;
+margin: 0!important;
 }
 
 
@@ -1186,6 +1186,8 @@ flex-wrap: 1;
 }
    .form-sidebar .sidebar-menu {
 margin-bottom:0;
+       margin-left: 10px;
+margin-right: 10px;
    }
     .layout-main .form-column.col-sm-12>form>.input-max-width {
 max-width: 100%;
