@@ -941,7 +941,7 @@ width: var(--page-width);
 position: absolute;
 /* background-color: var(--bg-color); */
 z-index: 99;
-
+height: calc(100vh - var(--navbar-height));
 right: 0!important;
 }
 
@@ -1006,7 +1006,7 @@ width: calc(83.3334vw);;
      margin-left:48px;
  padding-top:100px;
  padding-bottom:0px;
-         background-color: var(--bg-color);
+         background-color: var(--gray-100);
 }
 .form-tabs-list .form-tabs {
 justify-content: start!important;
