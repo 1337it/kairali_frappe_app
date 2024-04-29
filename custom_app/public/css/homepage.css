@@ -941,7 +941,7 @@ width: var(--page-width);
 position: absolute;
 /* background-color: var(--bg-color); */
 z-index: 99;
-height: calc(100vh - var(--navbar-height));
+height: calc(100% - var(--navbar-height));
 right: 0!important;
 }
 
