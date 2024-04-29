@@ -941,7 +941,7 @@ width: var(--page-width);
 position: absolute;
 /* background-color: var(--bg-color); */
 z-index: 99;
-    height: 100%;
+
 right: 0!important;
 }
 
@@ -1308,7 +1308,7 @@ height: 48px;
 width: 48px;
 bottom: 48px;
 left: 0px;
-z-index: 99999;
+z-index: 999;
 background: url("/files/drive.png");
 object-fit: cover;
 background-repeat: no-repeat;
@@ -3051,6 +3051,12 @@ box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.40)!important;
 {
 z-index:4!important;
 }
+.form-tabs-list {
+position: sticky!important;
+
+border-bottom: 1px none var(--border-color)!important;
+}
+
 * {
     scrollbar-width: none;
 }
