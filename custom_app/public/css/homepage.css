@@ -1187,10 +1187,6 @@ margin-bottom:0;
 max-width: 100%;
 padding-right: 15px;
 }
-    .overlay-sidebar {
-max-height: 40vh;
-overflow: scroll;
-}
     #item-custom_primary.tab-pane {
 display: block !important;
 position: fixed;
@@ -1198,9 +1194,6 @@ right: 0;
 z-index: 999;
 opacity: 100;
 width: 16.667vw;
-top: 50vh;
-max-height: 60vh;
-overflow: scroll;
 }
     #sales-invoice-custom_primary.tab-pane  {
 display: block !important;
@@ -1209,9 +1202,6 @@ right: 0;
 z-index: 999;
 opacity: 100;
 width: 16.667vw;
-top: 30vh;
-max-height: 60vh;
-overflow: scroll;
 }
 .sidebar-menu.form-sidebar-stats {
     margin-bottom: var(--margin-sm);
