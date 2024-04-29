@@ -1583,13 +1583,6 @@ def create_pick_list(source_name, target_doc=None):
 
 	def validate_sales_invoice():
 		so = frappe.get_doc("Sales Invoice", source_name)
-		for item in so.items:
-			if item.stock_reserved_qty > 0:
-				frappe.throw(
-					_(
-						"Cannot create a pick list for Sales Invoice {0} because it has reserved stock. Please unreserve the stock in invoice to create a pick list."
-					).format(frappe.bold(source_name))
-				)
 
 	def update_item_quantity(source, target, source_parent) -> None:
 		picked_qty = flt(source.picked_qty) / (flt(source.conversion_factor) or 1)
