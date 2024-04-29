@@ -1581,7 +1581,7 @@ def make_inter_company_purchase_order(source_name, target_doc=None):
 def create_pick_list(source_name, target_doc=None):
 	from erpnext.stock.doctype.packed_item.packed_item import is_product_bundle
 
-	def validate_sales_order():
+	def validate_sales_invoice():
 		so = frappe.get_doc("Sales Invoice", source_name)
 		for item in so.items:
 			if item.stock_reserved_qty > 0:
