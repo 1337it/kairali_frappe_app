@@ -768,9 +768,7 @@ display: none!important;
     }
 
     
-[data-route^="Form/"] [data-page-route^="List/"].page-container {
-    display: block !important;
-}
+
     .layout-side-section .section-body {
 margin: 0!important;
 }
