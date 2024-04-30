@@ -966,7 +966,7 @@ transition: opacity 0.3s;
 left: 0;
 transition: opacity 0.3s;
    mix-blend-mode: luminosity;
-       opacity:0.80;
+       opacity:1;
   
 }
 .page-head .justify-between .page-actions {
