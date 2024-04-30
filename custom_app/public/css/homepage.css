@@ -2881,12 +2881,7 @@ background-color: var(--gray-100)!important;
  max-width:calc(50vw)!important;
  font-size:32px!important;
 }
-[data-route^="Form/"] [data-page-route^="Item"] .page-title .title-area .title-text
-{
- padding-left:0px!important;
- max-width:calc(50vw)!important;
- font-size:28px!important;
-}
+
 
 flex-wrap:wrap;
  height:100vh;
