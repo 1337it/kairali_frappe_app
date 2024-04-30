@@ -1132,6 +1132,15 @@ display: block!important;
     [data-route^="Form/Sales Invoice/"] [data-page-route="List/Sales Invoice/List"].page-container {
 display: block!important;
 }
+        [data-route^="Form/Sales Order/"] [data-page-route="List/Sales Order/List"].page-container {
+display: block!important;
+}
+            [data-route^="Form/Purchase Order/"] [data-page-route="List/Purchase Order/List"].page-container {
+display: block!important;
+}
+            [data-route^="Form/Purchase Invoice/"] [data-page-route="List/Purchase Invoice/List"].page-container {
+display: block!important;
+}
 
 [data-route^="Form"] .layout-main-section-wrapper {
 max-width: 100%;
