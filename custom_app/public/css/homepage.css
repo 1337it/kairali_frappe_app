@@ -49,8 +49,10 @@ background: var(--gray-100);
 background:var(--border-color);
 }
 input[type=checkbox] {
-  border: 1px double  var(--gray-400);
+  border: 1px double  var(--gray-500);
 border-radius: 10px;
+    width: calc(2px + var(--checkbox-size))!important;
+height: calc(2px + var(--checkbox-size))!important;
 }
 .awesomplete .input-with-feedback {
 background-color: var(--bg-color);
