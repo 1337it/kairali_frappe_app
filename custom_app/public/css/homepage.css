@@ -1265,6 +1265,8 @@ z-index: 9!important;
     right:0;
     position:fixed;
     display:block;
+      width: 16.6vw;
+     
 }
    [data-route^="List/"] .page-wrapper .frappe-card .page-form{
 padding-left: 0px!important;
@@ -2963,7 +2965,6 @@ border-bottom: 0.5px solid rgba(0,0,0,0.2)!important;
 z-index: 9!important;
  padding:0px!important;
  transition: maxheight 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-      width: 16.6vw;
 }
 [data-theme-mode="dark"] .page-form {
 background-color: rgba(23, 23, 23, 0);
