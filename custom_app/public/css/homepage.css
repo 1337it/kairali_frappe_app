@@ -1730,7 +1730,7 @@ background: #292929;
 .page-head {
 z-index: 1000!important;
 position: fixed!important;
-top: var(--navbar-height)!important;
+top: 0!important;
 margin-bottom: 0px;
 transition: .5s top;
  width:100vw;
