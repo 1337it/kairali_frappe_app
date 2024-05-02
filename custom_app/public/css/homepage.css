@@ -957,14 +957,14 @@ right: 0!important;
    [data-route^="Form/"] [data-page-route^="List/"].page-container:hover {
 transition: filter 0.3s;
        mix-blend-mode: normal;
-     filter:contrast(1);
+    
 
 }
 [data-route^="Form/"] [data-page-route^="List/"].page-container:not(:hover) {
 left: 0;
 transition: filter 0.3s;
    mix-blend-mode: luminosity;
-       filter:contrast(0.7);
+  
   
 }
 .page-head .justify-between .page-actions {
@@ -1151,7 +1151,7 @@ max-width: 100%;
 .page-container{
 width: calc(100vw - 48px);
 right: 0;
-box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
+box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
 height: calc(100% - var(--navbar-height));
 right: 0!important;
 z-index: 9;
