@@ -1035,7 +1035,7 @@ width: calc(83.3334vw);;
 .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
+top: 94px !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
 background-color: var(--bg-color)!important;
@@ -1047,7 +1047,7 @@ border-bottom: 0.5px solid #525252ab!important;
  [data-theme-mode="light"] [data-page-route="Item"] .form-tabs-list .form-tabs {
 justify-content: start!important;
 position: fixed!important;
-top: calc(env(titlebar-area-height, var(--navbar-height)) + 94px) !important;
+top:94px !important;
     width: calc(100vw - 48px) !important;
     padding: 0px !important;
 background-color: var(--bg-color)!important;
@@ -1730,13 +1730,24 @@ background: #292929;
 .page-head {
 z-index: 1000!important;
 position: fixed!important;
-top: 0!important;
+top:var(--navbar-height)!important;
 margin-bottom: 0px;
 transition: .5s top;
  width:100vw;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
 }
+[data-page-route="Item"] .page-head {
+z-index: 6;
+position: sticky;
+top: 0!important;
+background: var(--bg-color);
+margin-bottom: 5px;
+transition: .5s top;
+}
+
+
+
  [data-route^="List/"] .page-head{
       width:83.3334%;
  }
