@@ -1178,10 +1178,7 @@ right: 0;
 box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
 height: calc(100% - var(--navbar-height));
 right: 0!important;
-        animation-name: css-0, css-8;
-    animation-duration: 0.367s;
-    animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
-    animation-fill-mode: both;
+
 z-index: 9;
 }
 [data-route^="Form/"].page-container {
@@ -1190,6 +1187,10 @@ width: var(--page-width);
 right: 0;
 box-shadow: -8px 0 14px -2px rgba(17, 12, 46, 0.15);
     border-top: 1px solid black!important;
+    animation-name: css-0, css-8;
+    animation-duration: 0.367s;
+    animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+    animation-fill-mode: both;
 z-index: 9;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-side-section {
