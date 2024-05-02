@@ -1147,7 +1147,7 @@ text-align: center;
     [data-route^="Form/"] [data-page-route^="List/"] .page-head {
         z-index: 4!important;
 left: 0;
-              top:0px;
+              top:0px!important;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .frappe-list .ellipsis {
 white-space: nowrap;
