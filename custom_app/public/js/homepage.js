@@ -271,5 +271,45 @@ frappe.ui.keys.add_shortcut({
 });
 
 
+frappe.ui.keys.add_shortcut({
+description: "Next Item",
+shortcut: "down",
+  action: () => {
+      const me = this;
+let args = {
+			doctype: cur_frm.doctype,
+			value: cur_frm.docname,
+    filters: [["Item","disabled","=",0]],
+sort_order: 'asc',
+sort_field: 'item_code',
+			prev:0,
+		};
+      frappe.call("frappe.desk.form.utils.get_next", args).then((r) => {
+			if (r.message) {
+				frappe.set_route("Form", cur_frm.doctype, r.message);
+			}
+		});
+}
+});
 
+frappe.ui.keys.add_shortcut({
+description: "Previous Item",
+shortcut: "up",
+  action: () => {
+      const me = this;
+let args = {
+			doctype: cur_frm.doctype,
+			value: cur_frm.docname,
+    filters: [["Item","disabled","=",0]],
+sort_order: 'asc',
+sort_field: 'item_code',
+			prev:1,
+		};
+      frappe.call("frappe.desk.form.utils.get_next", args).then((r) => {
+			if (r.message) {
+				frappe.set_route("Form", cur_frm.doctype, r.message);
+			}
+		});
+}
+});
    
