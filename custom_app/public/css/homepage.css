@@ -1,3 +1,29 @@
+[data-page-route="Item"] [data-original-title="Previous Document"].btn.icon-btn, div#driver-popover-item .driver-popover-footer button.icon-btn {
+    height: var(--btn-height);
+    padding: 0;
+    position: fixed;
+    left: -3vw;
+    transform: rotate(90deg);
+    /* width: 21px; */
+    display: block !important;
+    min-width: 32px !important;
+    height: 40px !important;
+    top: calc(50vh - 50px);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+[data-page-route="Item"] [data-original-title="Next Document"].btn.icon-btn, div#driver-popover-item .driver-popover-footer button.icon-btn {
+    height: var(--btn-height);
+    padding: 0;
+    position: fixed;
+    left: -3vw;
+    transform: rotate(90deg);
+    /* width: 21px; */
+    display: block !important;
+    min-width: 32px !important;
+    height: 40px !important;
+    top: calc(50vh + 50px);
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
 [data-label*="3E"].btn {
     padding: 0 !important;
 }
