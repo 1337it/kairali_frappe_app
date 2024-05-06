@@ -985,13 +985,13 @@ right: 0!important;
 transition: filter 0.3s;
        mix-blend-mode: normal;
     
-filter:contrast(1);
+
 }
 [data-route^="Form/"] [data-page-route^="List/"].page-container:not(:hover) {
 left: 0;
 transition: filter 0.3s;
    mix-blend-mode: luminosity;
-    filter:contrast(0.7);
+
   
   
 }
