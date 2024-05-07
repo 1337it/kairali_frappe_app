@@ -277,7 +277,6 @@ frappe.ui.keys.add_shortcut({
 			page: this.page,
 			description: __("Go to next record"),
 			ignore_inputs: true,
-			condition: () => !this.is_new(),
 		});
 
 frappe.ui.keys.add_shortcut({
@@ -286,5 +285,5 @@ frappe.ui.keys.add_shortcut({
 			page: this.page,
 			description: __("Go to previous record"),
 			ignore_inputs: true,
-			condition: () => !this.is_new(),
+
 		});
