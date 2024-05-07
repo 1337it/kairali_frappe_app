@@ -273,16 +273,16 @@ frappe.ui.keys.add_shortcut({
 
 	frappe.ui.keys.add_shortcut({
 			shortcut: "down",
-			action: () => this.navigate_records(0),
-			page: this.page,
+			action: () => cur_frm.navigate_records(0),
+			page: cur_frm.page,
 			description: __("Go to next record"),
 			ignore_inputs: true,
 		});
 
 frappe.ui.keys.add_shortcut({
 			shortcut: "up",
-			action: () => this.navigate_records(1),
-			page: this.page,
+			action: () => cur_frm.navigate_records(1),
+			page: cur_frm.page,
 			description: __("Go to previous record"),
 			ignore_inputs: true,
 
