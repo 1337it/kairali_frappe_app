@@ -1351,6 +1351,19 @@ right: 0!important;
 [data-page-route="Item"] .page-title {
     left: 0 !important;
 }
+	[data-page-route="Sales Invoice"] .page-title {
+    left: 0 !important;
+}
+	[data-page-route="Sales Order"] .page-title {
+    left: 0 !important;
+}
+	[data-page-route="Purchase Order"] .page-title {
+    left: 0 !important;
+}
+	[data-page-route="Purchase Invoice"] .page-title {
+    left: 0 !important;
+}
+	
 
     
    [data-route^="Form/"] [data-page-route^="List/"].page-container:hover {
@@ -2194,6 +2207,38 @@ transition: .5s top;
  -webkit-backface-visibility: hidden;
 }
 [data-page-route="Item"] .page-head {
+z-index: 6;
+position: sticky;
+top: 0!important;
+background: var(--bg-color);
+margin-bottom: 5px;
+transition: .5s top;
+}
+[data-page-route="Sales Invoice"] .page-head {
+z-index: 6;
+position: sticky;
+top: 0!important;
+background: var(--bg-color);
+margin-bottom: 5px;
+transition: .5s top;
+}
+[data-page-route="Sales Order"] .page-head {
+z-index: 6;
+position: sticky;
+top: 0!important;
+background: var(--bg-color);
+margin-bottom: 5px;
+transition: .5s top;
+}
+[data-page-route="Purchase Invoice"] .page-head {
+z-index: 6;
+position: sticky;
+top: 0!important;
+background: var(--bg-color);
+margin-bottom: 5px;
+transition: .5s top;
+}
+[data-page-route="Purchase Order"] .page-head {
 z-index: 6;
 position: sticky;
 top: 0!important;
