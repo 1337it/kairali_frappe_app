@@ -1104,6 +1104,12 @@ display: none!important;
  
 @media (min-width: 1200px) {
 
+	[data-route^="Form/Customize Form"] .form-tabs-list .form-tabs {
+
+top: 135px !important;
+
+	}
+
     [data-page-route="Sales Order"] .form-tab-content 
     { 
         scroll-margin-top: calc(var(--navbar-height) + 52px);
