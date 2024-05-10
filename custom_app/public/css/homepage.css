@@ -1,80 +1,36 @@
+#overlay {
+  background-color:#000;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  position:fixed;
+  right:0;
+  top:0;
+  transition:opacity .1s ease-in-out;
 
-.note{
-  text-align:center;
-  display:block;
-  margin:10px auto;
-  padding:5px;
-  color:#fff;
-  background:rgba(255,0,0,.7);
-  
+  z-index:1;
+} 
+
+html.idle #overlay {
+  opacity:.5;
+  transition:opacity 1s ease-in-out;
+ 
+
 }
-.lockscreen{
-    display:none;
-    width:100%;
-    height:100%;
-    background:#333333dd;
-    position:fixed;top:0;left:0;
-    bottom:0;
-  backdrop-filter:blur(10px);
-  -webkit-backdrop-filter:blur(10px);
+.idle {
+  filter:blur(10px) saturate(0.5);
+   transition:filter 1s ease-in-out;
 }
-@import "compass";
-
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900|Dosis:300,400,600,700,800|Droid+Sans:400,700|Lato:300,400,700,900|PT+Sans:400,700|Ubuntu:300,400,500,700|Open+Sans:400,300,600,700|Roboto:400,300,500,700,900|Roboto+Condensed:400,300,700|Open+Sans+Condensed:300,700|Play:400,700|Maven+Pro:400,500,700,900&subset=latin,latin-ext);
-
-$mainColor: #00f3fb; 
-$bgColor: #1a1a1a;
-
-$greyColor: #040814;
-$textColor: #f1f1f1;
-
-
-
-
-
-svg {
-	position: absolute;
-	width: 800px;
-	height: 480px;
-	left: 0; right: 0; top: 0; bottom: 0;
-	margin: auto;
-	@include border-radius(10px);
-}
-
-.clockCircle {
-	fill: none;
-	stroke: $greyColor;
-}
-
-.clockArc {
-	fill: none;
-	stroke: $mainColor;
-}
-
-.clockDot {
-	fill: lighten($mainColor, 0%);
-}
-
-.caption {
-	font-family: $fontCaptions;
-	font-weight: 300;
-	fill: $textColor;
-}
-
-.dayText {
-	font-size: 1.7rem;
-}
-
-.dateText {
-	font-size: 2.5rem;
-	font-weight: 400;
-}
-
-.timeText {
-	font-family: $fontClock;
-	font-size: 5rem;
-	font-weight: 600;
-	fill: $textColor;
+.explanation {
+  font-family:monospace;
+  left:50%;
+  line-height:1.5;
+  margin:0;
+  max-width:40em;
+  position:absolute;
+  top:50%;
+  transform:translate(-50%, -50%);
 }
 .popup {
   z-index: 9;
