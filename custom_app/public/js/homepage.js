@@ -308,5 +308,22 @@ frappe.ui.keys.add_shortcut({
 			ignore_inputs: true,
 
 		});
+const saver = document.querySelector("#body");
+const saverdiv = document.createElement('div');
+saverdiv.innerHTML='<div id="overlay"></div>';
 
-
+(function() {
+  const interval = 1000;
+  const timeout = 5;
+  let idleCounter = 0;
+  window.onload = document.onmousemove = document.onkeypress = function() {
+    idleCounter = 0;
+    document.documentElement.classList.remove('idle');
+  };
+  window.setInterval(function() {
+    if (++idleCounter >= timeout) {
+      document.documentElement.classList.add('idle');
+      idleCounter = 0;
+    }
+  }, interval);
+})();
