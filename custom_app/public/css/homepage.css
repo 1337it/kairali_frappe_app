@@ -1,3 +1,4 @@
+
 .popup {
   z-index: 9;
   min-height: 150px;
@@ -1103,6 +1104,27 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+	#chatbutton {
+position: fixed;
+display: var();
+height: 48px;
+width: 48px;
+bottom: 0px;
+left: 0px;
+z-index: 999;
+background: url("/files/chat.png");
+object-fit: cover;
+background-repeat: no-repeat;
+border: 0;
+background-size: contain;
+}
+	.h-\[calc\(100vh-7rem\)\] {
+height: calc(100vh - 0rem);
+}
+	.w-\[var\(--sidebar-width\)\] {
+width: var(--sidebar-width);
+display: none;
+}
 
 
 	[data-route^="Form/Customize Form"] .form-tabs-list .form-tabs {
