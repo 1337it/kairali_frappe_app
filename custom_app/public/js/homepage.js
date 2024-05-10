@@ -44,6 +44,7 @@ body.appendChild(driveframe);
 
 
       });
+ document.body.appendChild(drivebutton);
 
 const chatbutton = document.createElement('button');
 
@@ -60,6 +61,7 @@ body.appendChild(driveframe2);
 
 
       });
+ document.body.appendChild(chatbutton);
 
 
 
