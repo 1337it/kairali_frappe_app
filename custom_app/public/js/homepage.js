@@ -324,15 +324,15 @@ function maximize(){
 var s = document.createElement("script");
 s.type = "text/javascript";
 s.src = "https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment-with-locales.min.js";
-$("head").append(s);
+$("body").append(s);
 var s1 = document.createElement("script");
 s1.type = "text/javascript";
 s1.src = "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js";
-$("head").append(s1);
+$("body").append(s1);
 var s2 = document.createElement("script");
 s2.type = "text/javascript";
 s2.src = "https://code.jquery.com/jquery-2.2.4.min.js";
-$("head").append(s2);
+$("body").append(s2);
 
 
 
