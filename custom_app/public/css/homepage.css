@@ -1104,13 +1104,6 @@ display: none!important;
  
 @media (min-width: 1200px) {
 
-	.light, .light-theme {
-    --color-page-background: #ffffff66;
-    backdrop-filter: blur(8px);
-}
-	.bg-gray-2 {
-    background-color: color(display-p3 0.98 0.98 0.98 / 0.42);
-}
 
 	[data-route^="Form/Customize Form"] .form-tabs-list .form-tabs {
 
