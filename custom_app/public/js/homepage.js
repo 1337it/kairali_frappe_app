@@ -35,7 +35,7 @@ const drivebutton = document.createElement('button');
       drivebutton.id = 'drivebutton';
   const body = document.querySelector("#body");
 const driveframe = document.createElement('div');
-driveframe.innerHTML='<iframe src="/drive" style="height: calc(100% - var(--navbar-height));width: calc(100% - 48px);z-index: 6!important;left:48px;top:var(--navbar-height);position: fixed;border: none;" title="Drive"></iframe>';
+driveframe.innerHTML='<iframe src="/drive" style="height: calc(100% - var(--navbar-height));width: calc(100% - 48px);z-index: 6!important;left:48px;top:var(--navbar-height);position: fixed;border: none;background-color: var(--bg-color);" title="Drive"></iframe>';
 
       // Attach the "click" event to your button
       drivebutton.addEventListener('click', () => {
