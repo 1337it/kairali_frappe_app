@@ -36,9 +36,13 @@ const drivebutton = document.createElement('button');
 
       // Attach the "click" event to your button
       drivebutton.addEventListener('click', () => {
-            window.location.href='https://speedwayauto.online/drive'
+          var body = document.querySelector("#body");
+let driveframe = document.createElement('div');
+driverframe.innerHTML='<iframe src="/raven" style="height: calc(100% - var(--navbar-height));width: calc(100% - 48px);z-index: 9999999!important;left:48px;top:var(--navbar-height);position: fixed;border: none;" title="Iframe Example"></iframe>';
+
+body.appendChild(driveframe);
       });
-      document.body.appendChild(drivebutton);
+
 
 
 
