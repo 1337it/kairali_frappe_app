@@ -1,3 +1,5 @@
+import moment from 'moment-timezone';
+
 if ($('html').attr('data-theme') == 'dark') {
 $("meta[name='theme-color']").attr('content', '#232323');
 };
