@@ -1,4 +1,4 @@
-var clockheaad = '<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>'
+var clockhead = '<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>'
 $('head').append(clockhead);
 if ($('html').attr('data-theme') == 'dark') {
 $("meta[name='theme-color']").attr('content', '#232323');
