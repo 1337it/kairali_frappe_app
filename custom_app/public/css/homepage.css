@@ -1,3 +1,15 @@
+.rt-r-bottom-0 {
+    border-right-color: var(--gray-3);
+    display: none;
+}
+	:root {
+    --sidebar-width: 16.6667vw;
+}
+.bg-gray-2 {
+    background-color: var(--gray-2);
+    height: 100%;
+    order: 2;
+}
 body { font-size:62.5%; margin:1em; background:#232425 }
 ul { list-style:none; margin:0; padding:0 }
 #watch { font-size:1em; position:relative }
@@ -1418,6 +1430,24 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+	.ml-\[var\(--sidebar-width\)\] {
+    margin-left: 0;
+}
+	:root {
+    --sidebar-width: 16.6667vw;
+}
+.w-\[var\(--sidebar-width\)\] {
+    width: var(--sidebar-width);
+    display: none !important;
+}
+.bg-gray-2 {
+    background-color: var(--gray-2);
+    height: 100%;
+}
+.rt-r-left-0 {
+    right: 0;
+    left: auto;
+}
 	.w-\[var\(--sidebar-width\)\] {
 width: var(--sidebar-width);
 display: none;
