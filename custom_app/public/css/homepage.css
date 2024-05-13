@@ -2212,7 +2212,7 @@ background-size: contain;
 
 [data-theme-mode="light"] #global-sidebar {
 position: fixed;
-    background-color: #2c2c2c!important;
+    background-color: white!important;
 top: 0;
 left: -100%;
 width: 300px;
@@ -2230,7 +2230,7 @@ left: -100%;
 width: 300px;
 padding: 10px;
 height: 100%;
-background-color:#2c2c2c!important;
+background-color:black!important;
 transition: left 0.1s ease-out;
 z-index: 2001;
 overflow-y: auto;
@@ -3530,7 +3530,7 @@ top: 0px!important;
     transition-delay:0.2s;
 padding-top: 0px!important;
 z-index: 700!important;
-background-color: rgba(18, 18, 18, 1)!important;
+background-color: white!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
@@ -3548,7 +3548,7 @@ padding-top: 0px!important;
     transition-delay:0.2s;
     transition: width 0.3s ease-out, box-shadow 0.3s ease-out!important;
 z-index: 700!important;
-background: rgba(18, 18, 18, 1)!important!
+background: black!important!
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
@@ -3557,149 +3557,70 @@ position: fixed;
 height: 100vh!important;
 }
 
-[data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Home"] [href="/app/home"]{
+filter: invert()!important;
 }
 
-[data-route="Workspaces/Home"] [href="/app/home"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Raven"] [href="/app/raven"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Recruitment"] [href="/app/recruitment"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/ERPNext Settings"] [href="/app/erpnext-settings"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Build"] [href="/app/build"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/ERPNext Integrations"] [href="/app/erpnext-integrations"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Payroll"] [href="/app/payroll"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Manufacturing"] [href="/app/manufacturing"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Quality"] [href="/app/quality"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/HR"] [href="/app/hr"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Support"] [href="/app/support"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Projects"] [href="/app/projects"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Assets"] [href="/app/assets"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Stock"] [href="/app/stock"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Accounting"] [href="/app/accounting"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Integrations"] [href="/app/integrations"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Users"] [href="/app/users"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Tools"] [href="/app/tools"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Website"] [href="/app/website"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Buying"] [href="/app/buying"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/Selling"] [href="/app/selling"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
-[data-route="Workspaces/CRM"] [href="/app/crm"] .icon-lg {
---icon-stroke: #ffffff!important;
-}
 
-[data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Raven"] [href="/app/raven"] {
+filter: invert()!important;
 }
-[data-route="Workspaces/Raven"] [href="/app/raven"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"]  {
+filter: invert()!important;}
+[data-route="Workspaces/Recruitment"] [href="/app/recruitment"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/ERPNext Settings"] [href="/app/erpnext-settings"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Recruitment"] [href="/app/recruitment"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Build"] [href="/app/build"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/ERPNext Settings"] [href="/app/erpnext-settings"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/ERPNext Integrations"] [href="/app/erpnext-integrations"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Build"] [href="/app/build"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Payroll"] [href="/app/payroll"] {
+filter: invert()!important;
 }
-[data-route="Workspaces/ERPNext Integrations"] [href="/app/erpnext-integrations"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Manufacturing"] [href="/app/manufacturing"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Payroll"] [href="/app/payroll"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Quality"] [href="/app/quality"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Manufacturing"] [href="/app/manufacturing"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/HR"] [href="/app/hr"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Quality"] [href="/app/quality"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Support"] [href="/app/support"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/HR"] [href="/app/hr"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Projects"] [href="/app/projects"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Support"] [href="/app/support"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Assets"] [href="/app/assets"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Projects"] [href="/app/projects"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Stock"] [href="/app/stock"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Assets"] [href="/app/assets"] .sidebar-item-label {
-color:white!important;
+[data-route="Workspaces/Accounting"] [href="/app/accounting"]  {
+filter: invert()!important;
 }
-[data-route="Workspaces/Stock"] [href="/app/stock"] .sidebar-item-label {
-color:white!important;
-}
-[data-route="Workspaces/Accounting"] [href="/app/accounting"] .sidebar-item-label {
-color:white!important;
-}
-[data-route="Workspaces/Integrations"] [href="/app/integrations"] .sidebar-item-label {
-color:white!important;
-}
-[data-route="Workspaces/Users"] [href="/app/users"] .sidebar-item-label {
-color:white!important;
-}
-[data-route="Workspaces/Tools"] [href="/app/tools"] .sidebar-item-label {
-color:white!important;
-}
-[data-route="Workspaces/Website"] [href="/app/website"] .sidebar-item-label {
-color:white!important;
-}
-[data-route="Workspaces/Buying"] [href="/app/buying"] .sidebar-item-label {
-color:white!important;
-}
-[data-route="Workspaces/Selling"] [href="/app/selling"] .sidebar-item-label {
-color:white!important;
-}
-[data-route="Workspaces/CRM"] [href="/app/crm"] .sidebar-item-label {
-color:white!important;
-}
+[data-route="Workspaces/Integrations"] [href="/app/integrations"]  {
+filter: invert()!important;}
+[data-route="Workspaces/Users"] [href="/app/users"]  {
+filter: invert()!important;}
+filter: invert()!important;}
+[data-route="Workspaces/Website"] [href="/app/website"]  {
+filter: invert()!important;}
+[data-route="Workspaces/Buying"] [href="/app/buying"]  {
+filter: invert()!important;}
+[data-route="Workspaces/Selling"] [href="/app/selling"]  {
+filter: invert()!important;}
+[data-route="Workspaces/CRM"] [href="/app/crm"]  {
+filter: invert()!important;}
+
+
 
  #global-sidebar {
 width: 48px!important;
