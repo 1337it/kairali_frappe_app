@@ -865,7 +865,9 @@ body {
  margin: 0!important;
  height: 100%!important;
 }
-
+.page-title .sidebar-toggle-btn {
+display: none!important;
+}
 
 
 
@@ -2377,7 +2379,7 @@ body{
 /* Layout side section */
 .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section{
  width:20% !important;
-	background:white;
+ display:none;
 }
 
 /* Layout side section */
@@ -2385,7 +2387,7 @@ body{
  background-size:cover;
  padding-top:25px;
  top: 0px;
-    
+    display:none;
 }
 
 /* Page wrapper */
@@ -2596,7 +2598,6 @@ transition: .5s top;
  width:100vw;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
-	left: var(--sidebar-width);
 }
 [data-page-route="Item"] .page-head {
 z-index: 6;
@@ -3260,7 +3261,7 @@ left: 0;
 
 /* Sidebar item label */
 .standard-sidebar-section > .sidebar-item-container > .desk-sidebar-item .sidebar-item-label{
- color:var(--disabled-text-color);
+ color:#ffffff;
 }
 
 
@@ -3437,8 +3438,19 @@ display: none;
 max-width: 100vw!important;
     position:absolute;
 }
+ .standard-sidebar-item.selected {
+background-color: #000000!important;
+/* color: black!important; */
+filter: invert();
+}
+ .standard-sidebar-item:hover {
+background-color: #000000!important;
+text-decoration: none;
+}
 
-
+ .page-title .sidebar-toggle-btn {
+display:none!important;
+}
 
  .widget.spacer {
 opacity: 0!important;
@@ -3521,7 +3533,7 @@ z-index: 700!important;
 background-color: rgba(18, 18, 18, 1)!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
-display: none;
+display: block;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
@@ -3545,7 +3557,9 @@ position: fixed;
 height: 100vh!important;
 }
 
-
+[data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
+color:white!important;
+}
 
 [data-route="Workspaces/Home"] [href="/app/home"] .icon-lg {
 --icon-stroke: #ffffff!important;
@@ -3617,7 +3631,9 @@ height: 100vh!important;
 --icon-stroke: #ffffff!important;
 }
 
-
+[data-route="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
+color:white!important;
+}
 [data-route="Workspaces/Raven"] [href="/app/raven"] .sidebar-item-label {
 color:white!important;
 }
