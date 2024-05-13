@@ -2379,7 +2379,6 @@ body{
 /* Layout side section */
 .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section{
  width:20% !important;
- display:none;
 }
 
 /* Layout side section */
@@ -2387,7 +2386,7 @@ body{
  background-size:cover;
  padding-top:25px;
  top: 0px;
-    display:none;
+    
 }
 
 /* Page wrapper */
