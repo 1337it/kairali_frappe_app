@@ -1334,11 +1334,7 @@ display: none!important;
   padding-left:0px;
   padding-right:0px;
  }
-
-
-	#global-sidebar:hover  .page-body {
-filter:blur(10px);
-}
+ 
  /* Layout main section wrapper */
  .page-wrapper .layout-main-section-wrapper{
   width:100%;
@@ -3476,7 +3472,10 @@ padding-left:15px!important;
 
 
 /* Link */
-
+#global-sidebarList li a{
+ padding-top:5px;
+ padding-bottom:5px;
+}
 
 /* List Item */
 #global-sidebarList li{
@@ -3518,7 +3517,7 @@ z-index: 7!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
-box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.1), 0 0 50px 1px rgba(0, 0, 0, 0.2)!important;
+box-shadow: 0 0 5000px 5000px rgba(255, 255, 255, 0.40), 0 0 50px 1px rgba(255, 255, 255, 0.40)!important;
 }
 
  
@@ -3560,86 +3559,66 @@ height: 100vh!important;
 
 [data-route="Workspaces/Home"] [href="/app/home"]{
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 
 
 [data-route="Workspaces/Raven"] [href="/app/raven"] {
 filter: invert()!important;
-background: var(--dark-border-color);
-[data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"]  {
-filter: invert()!important;
-background: var(--dark-border-color);
 }
+[data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"]  {
+filter: invert()!important;}
 [data-route="Workspaces/Recruitment"] [href="/app/recruitment"]  {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/ERPNext Settings"] [href="/app/erpnext-settings"]  {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/Build"] [href="/app/build"]  {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/ERPNext Integrations"] [href="/app/erpnext-integrations"]  {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/Payroll"] [href="/app/payroll"] {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/Manufacturing"] [href="/app/manufacturing"]  {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/Quality"] [href="/app/quality"]  {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/HR"] [href="/app/hr"]  {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/Support"] [href="/app/support"]  {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/Projects"] [href="/app/projects"]  {
 filter: invert()!important;
-background: var(--dark-border-color);
 }
 [data-route="Workspaces/Assets"] [href="/app/assets"]  {
 filter: invert()!important;
-background: var(--dark-border-color);}
+}
 [data-route="Workspaces/Stock"] [href="/app/stock"]  {
 filter: invert()!important;
-background: var(--dark-border-color);}
+}
 [data-route="Workspaces/Accounting"] [href="/app/accounting"]  {
 filter: invert()!important;
-background: var(--dark-border-color);}
+}
 [data-route="Workspaces/Integrations"] [href="/app/integrations"]  {
-filter: invert()!important;
-background: var(--dark-border-color);
-}
-	[data-route="Workspaces/Users"] [href="/app/users"]  {
-filter: invert()!important;
-background: var(--dark-border-color);
+filter: invert()!important;}
+[data-route="Workspaces/Users"] [href="/app/users"]  {
+filter: invert()!important;}
+filter: invert()!important;}
 [data-route="Workspaces/Website"] [href="/app/website"]  {
-filter: invert()!important;
-background: var(--dark-border-color);
-}
+filter: invert()!important;}
 [data-route="Workspaces/Buying"] [href="/app/buying"]  {
-filter: invert()!important;
-background: var(--dark-border-color);}
+filter: invert()!important;}
 [data-route="Workspaces/Selling"] [href="/app/selling"]  {
-filter: invert()!important;
-background: var(--dark-border-color);}
+filter: invert()!important;}
 [data-route="Workspaces/CRM"] [href="/app/crm"]  {
-filter: invert()!important;
-background: var(--dark-border-color);}
+filter: invert()!important;}
 
 
 
@@ -3788,7 +3767,7 @@ color: #e3e3e3;
 }
 
 #global-sidebarList li a {
-padding: 5px 0px!important;
+padding: 0px!important;
  display:flex!important;
 }
 
@@ -3951,9 +3930,6 @@ border-bottom: 1px none var(--border-color)!important;
  justify-content:space-between !important;
 }
 
-#global-sidebar:hover  .navbar {
-box-shadow: 0 0 5000px 5000px rgba(0, 0, 0, 0.1), 0 0 50px 1px rgba(0, 0, 0, 0.2)!important;
-}
 #navbar-breadcrumbs{
   display:none!important;
     position: fixed;
