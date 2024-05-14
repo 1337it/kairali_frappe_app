@@ -3516,7 +3516,7 @@ z-index: 7!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block!important;
-box-shadow: 0 0 5000px 5000px rgba(255, 255, 255, 0.40), 0 0 50px 1px rgba(255, 255, 255, 0.40)!important;
+box-shadow:0 0 5000px 5000px rgba(0, 0, 0, 0.20), 0 0 50px 1px rgba(0, 0, 0, 0.20)!important
 }
 
  
@@ -3556,67 +3556,70 @@ height: 100vh!important;
 }
 
 [data-route="Workspaces/Home"] [href="/app/home"]{
-filter: invert()!important;
+background: rgb(205, 205, 205);
+
+
+filter: invert();
 }
 
 
 [data-route="Workspaces/Raven"] [href="/app/raven"] {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"]  {
-filter: invert()!important;}
+background: rgb(205, 205, 205);   filter: invert();}
 [data-route="Workspaces/Recruitment"] [href="/app/recruitment"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/ERPNext Settings"] [href="/app/erpnext-settings"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Build"] [href="/app/build"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/ERPNext Integrations"] [href="/app/erpnext-integrations"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Payroll"] [href="/app/payroll"] {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Manufacturing"] [href="/app/manufacturing"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Quality"] [href="/app/quality"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/HR"] [href="/app/hr"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Support"] [href="/app/support"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Projects"] [href="/app/projects"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Assets"] [href="/app/assets"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Stock"] [href="/app/stock"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Accounting"] [href="/app/accounting"]  {
-filter: invert()!important;
+background: rgb(205, 205, 205);   filter: invert();
 }
 [data-route="Workspaces/Integrations"] [href="/app/integrations"]  {
-filter: invert()!important;}
+background: rgb(205, 205, 205);   filter: invert();}
 [data-route="Workspaces/Users"] [href="/app/users"]  {
-filter: invert()!important;}
-filter: invert()!important;}
+background: rgb(205, 205, 205);   filter: invert();}
+background: rgb(205, 205, 205);   filter: invert();}
 [data-route="Workspaces/Website"] [href="/app/website"]  {
-filter: invert()!important;}
+background: rgb(205, 205, 205);   filter: invert();}
 [data-route="Workspaces/Buying"] [href="/app/buying"]  {
-filter: invert()!important;}
+background: rgb(205, 205, 205);   filter: invert();}
 [data-route="Workspaces/Selling"] [href="/app/selling"]  {
-filter: invert()!important;}
+background: rgb(205, 205, 205);   filter: invert();}
 [data-route="Workspaces/CRM"] [href="/app/crm"]  {
-filter: invert()!important;}
+background: rgb(205, 205, 205);   filter: invert();}
 
 
 
@@ -3631,7 +3634,7 @@ transition: width 0.2s ease-out, background 0.2s ease-out, box-shadow 0.2s ease-
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 7!important;
-background: rgba(18, 18, 18, 1)!important!
+background: #ffffff!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
@@ -3753,6 +3756,7 @@ flex-wrap:wrap;
 }
 #global-sidebar a {
 color: #e3e3e3;
+	padding: 5px 0px!important;
 }
 /* Global sidebar list */
 #global-sidebarList{
