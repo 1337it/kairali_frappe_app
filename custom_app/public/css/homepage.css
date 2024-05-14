@@ -3506,13 +3506,13 @@ font-weight: 300!important;
 #global-sidebar:hover {
 left: 0!important;
 width: 12.666%!important;
-transition: width 0.2s ease-out, box-shadow 0.2s ease-out!important;
+transition: width 0.2s ease-out, background 0.2s ease-out, box-shadow 0.2s ease-out!important;
     transition-delay:0.2s;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
 top: 0px!important;
 padding-top: 0px!important;
-background: rgba(18, 18, 18, 1)!important!
+background: rgba(18, 18, 18, 1)!important;
 z-index: 7!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
@@ -3525,7 +3525,7 @@ box-shadow: 0 0 5000px 5000px rgba(255, 255, 255, 0.40), 0 0 50px 1px rgba(255, 
 width: 48px;
 left: 0;
 padding: 0px!important;
-transition: width 0.3s ease-out, box-shadow 0.3s ease-out!important;
+transition: width 0.2s ease-out, background 0.2s ease-out, box-shadow 0.2s ease-out!important;
 top: 0px!important;
     transition-delay:0.2s;
 padding-top: 0px!important;
@@ -3546,7 +3546,7 @@ padding: 0px!important;
 top: 0px!important;
 padding-top: 0px!important;
     transition-delay:0.2s;
-    transition: width 0.3s ease-out, box-shadow 0.3s ease-out!important;
+transition: width 0.2s ease-out, background 0.2s ease-out, box-shadow 0.2s ease-out!important;
 z-index: 700!important;
 background: black!important!
 padding-left: 0px!important;
@@ -3629,7 +3629,7 @@ padding: 0px!important;
   -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
      transition-delay:0.2s;
-transition: width 0.2s ease-out, box-shadow 0.2s ease-out!important;
+transition: width 0.2s ease-out, background 0.2s ease-out, box-shadow 0.2s ease-out!important;
 top: 0px!important;
 padding-top: 0px!important;
 z-index: 7!important;
