@@ -8,6 +8,14 @@ $('body').append(saver1);
     idleCounter = 0;
     document.documentElement.classList.remove('idle');
   };
+frappe.ui.keys.add_shortcut({
+description: "Page Forward",
+shortcut: "esc",
+  action: () => {
+  document.documentElement.classList.add('idle');
+}
+});
+
   window.setInterval(function() {
     if (++idleCounter >= timeout) {
       document.documentElement.classList.add('idle');
