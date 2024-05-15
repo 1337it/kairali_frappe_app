@@ -1471,7 +1471,7 @@ display: none;
 }
 
 
-	[data-route^="Form/Customize Form"] .form-tabs-list .form-tabs {
+	[data-route^="Form/"] .form-tabs-list .form-tabs {
 
 top: 135px !important;
 
