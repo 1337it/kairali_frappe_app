@@ -2257,9 +2257,21 @@ padding: 10px;
 height: 100%;
 z-index: 2001;
 overflow-y: auto;
+	background:var(--skeleton-bg);
 }
 
     
+
+[data-theme-mode="dark"] #global-sidebar {
+position: fixed;
+top: 0;
+left: -100%;
+width: 300px;
+padding: 10px;
+height: 100%;
+z-index: 2001;
+overflow-y: auto;
+}
     #page-Workspaces{
  height:48px;
 }
@@ -3668,7 +3680,6 @@ padding-top: 0px!important;
     transition-delay:0.2s;
 transition: width 0.2s ease-out, background 0.2s ease-out, box-shadow 0.2s ease-out!important;
 z-index: 700!important;
-background: black!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 display: block;
