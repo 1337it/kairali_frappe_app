@@ -10,7 +10,7 @@ $('body').append(saver1);
   };
 frappe.ui.keys.add_shortcut({
 description: "Page Forward",
-shortcut: "esc",
+shortcut: "escape",
   action: () => {
   document.documentElement.classList.add('idle');
 }
