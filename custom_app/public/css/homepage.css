@@ -3482,10 +3482,8 @@ padding-left:15px!important;
 
 
 /* Link */
-#global-sidebarList li a{
- padding-top:5px;
- padding-bottom:5px;
-}
+
+
 
 /* List Item */
 #global-sidebarList li{
@@ -3780,7 +3778,6 @@ color: #e3e3e3;
 }
 
 #global-sidebarList li a {
-padding: 0px!important;
  display:flex!important;
 }
 
