@@ -289,21 +289,21 @@ ul { list-style:none; margin:0; padding:0 }
 }
 
 #overlay {
-  background-color:#000;
-  bottom:0;
-  left:0;
-  opacity:0;
-  pointer-events:none;
-  position:fixed;
-  right:0;
-  top:0;
-  transition:opacity 1s ease-in-out;
-
-  z-index:1;
+background-color: #000000ba;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
 } 
 
 html.idle #overlay {
-  opacity:.8;
+  opacity:1;
   transition:opacity 1s ease-in-out;
  
 
