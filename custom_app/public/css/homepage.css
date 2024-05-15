@@ -3625,6 +3625,7 @@ background: #000000;   filter: invert();}
 
 
  #global-sidebar {
+	 background: #222831!important;
 width: 48px!important;
 left: 0!important;
 padding: 0px!important;
