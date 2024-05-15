@@ -1476,6 +1476,16 @@ display: none;
 top: 135px !important;
 
 	}
+	[data-route^="Form/Item"] .form-tabs-list .form-tabs {
+
+top: 94px !important;
+
+	}
+	[data-route^="Form/Sales Order"] .form-tabs-list .form-tabs {
+
+top: 94px !important;
+
+	}
 
     [data-page-route="Sales Order"] .form-tab-content 
     { 
