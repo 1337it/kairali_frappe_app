@@ -63,7 +63,7 @@ const drivebutton = document.createElement('button');
       drivebutton.id = 'drivebutton';
   const body = document.querySelector("#body");
 const driveframe = document.createElement('div');
-driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(100% - var(--navbar-height));width: calc(100% - 48px);z-index: 6!important;left:48px;top:var(--navbar-height);position: fixed;border: none;background-color: var(--bg-color);" title="Drive"></iframe>';
+driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(100% - var(--navbar-height));width: calc(100% - 12.666%);z-index: 9!important;right:0px;top:var(--navbar-height);position: fixed;border: none;background-color: var(--bg-color);" title="Drive"></iframe>';
 
       // Attach the "click" event to your button
       drivebutton.addEventListener('click', () => {
@@ -80,7 +80,7 @@ const chatbutton = document.createElement('button');
 chatbutton.class = 'raven-chat';
   const body2 = document.querySelector("#body");
 const driveframe2 = document.createElement('div');
-driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: calc(100% - var(--navbar-height));width: calc(100% - 48px);z-index: 6!important;left:48px;top:var(--navbar-height);position: fixed;border: none;" title="Drive"></iframe>';
+driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: calc(100% - var(--navbar-height));width: calc(100% - 12.666%);z-index: 9!important;right:0px;top:var(--navbar-height);position: fixed;border: none;" title="Drive"></iframe>';
 
       // Attach the "click" event to your button
       chatbutton.addEventListener('click', () => {
