@@ -2259,19 +2259,6 @@ z-index: 2001;
 overflow-y: auto;
 }
 
-[data-theme-mode="dark"] #global-sidebar {
-    padding-top: 23px;
-position: fixed;
-top: 0;
-left: -100%;
-width: 300px;
-padding: 10px;
-height: 100%;
-background-color:black!important;
-transition: left 0.1s ease-out;
-z-index: 2001;
-overflow-y: auto;
-}
     
     #page-Workspaces{
  height:48px;
