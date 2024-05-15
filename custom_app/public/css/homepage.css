@@ -1437,6 +1437,14 @@ display: none!important;
         width: 63.334vw !important;
         left: 0;
     }
+	[data-route^="Workspaces"] .page-head .justify-between .page-actions {
+        justify-content: flex-end;
+        position: absolute;
+        top: 6px;
+        right: 0;
+        width: 63.334vw !important;
+        left: 0;
+    }
 	
 	.ml-\[var\(--sidebar-width\)\] {
     margin-left: 0!important;
