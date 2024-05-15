@@ -1429,7 +1429,7 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
-[data-route^="Form/Item"] .page-head .justify-between .page-actions {
+[data-page-route="Item"] .page-head .justify-between .page-actions {
         justify-content: flex-end;
         position: absolute;
         top: 6px;
