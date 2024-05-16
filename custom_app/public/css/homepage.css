@@ -4,6 +4,13 @@
     background-color: var(--gray-100)!important;
 }
 
+[data-page-route^='List/'] .form-control {
+
+background-color: var(--bg-color)!important;
+}
+
+
+
 .rt-r-bottom-0 {
     display: none!important;
 }
@@ -2121,6 +2128,7 @@ margin-top:10px;
 z-index: 999;
 opacity: 100;
 width: 100%;
+	    padding:10px;
 }
     #sales-invoice-custom_primary.tab-pane  {
 display: block !important;
@@ -2160,7 +2168,7 @@ width: 16.667vw;
     display: block;
     order: 2;
    background:var(--gray-100);
-    border-left: 1px solid var(--gray-400);
+
     z-index:9;
 }
    [data-theme-mode="dark"] .page-wrapper .layout-side-section {
@@ -2179,7 +2187,7 @@ width: 16.667vw;
     top: 0;
     display: block;
     order: 2;
-    background-color: color(display-p3 0.965 0.965 0.97);
+background-color: var(--highlight-color);
 }
  [data-route^="List/"] .page-form {
 margin-top: 20px!important;
@@ -2377,12 +2385,12 @@ padding-right: 10px!important;
 
 /* Row */
 [data-theme-mode="light"] .page-head .container .justify-between{
- width:83.3334vw !important;
+ width:100% !important;
 background-size: contain!important;
 }
 
 [data-theme-mode="dark"] .page-head .container .justify-between{
- width:83.3334vw !important;
+ width:100% !important;
 background-size: contain!important;
 }
 
