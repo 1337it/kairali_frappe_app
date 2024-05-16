@@ -2143,9 +2143,10 @@ width: 16.667vw;
     display: none;
 }
     [data-route^="Workspaces/"] .page-title .title-area .title-text {
-    padding-left: 20px !important;
+    padding-left: 0px !important;
     max-width: calc(33.3vw - 100px) !important;
     font-size: 38px !important;
+	    
 }
  
 
