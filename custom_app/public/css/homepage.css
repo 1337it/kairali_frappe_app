@@ -2279,6 +2279,7 @@ padding: 10px;
 height: 100%;
 z-index: 2001;
 overflow-y: auto;
+	background:#111418 !important;
 }
     #page-Workspaces{
  height:48px;
