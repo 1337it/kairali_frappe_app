@@ -5,10 +5,10 @@ var onform = document.querySelectorAll("[style=''][data-page-route].editable-for
 if (onform.length == 1) {
 	$("div").each(function() { 
   $(this).removeClass("formlist"); 
-})
-	var dtype = this.doctype;
-var dname = this.doc;
-document.getElementById('page-List\/'+dtype+'\/List').className += ' formlist';
+});
+	   frappe.set_route("List", this.doctype);
+    frappe.set_route("Form", this.doctype, this.docname);
+document.getElementById('page-List\/'+this.doctype+'\/List').className += ' formlist';
 }
 
 var dcontainer = document.querySelectorAll("[data-page-route^='List/'].page-container");
