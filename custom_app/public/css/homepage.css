@@ -1,3 +1,9 @@
+[data-page-route] .form-control {
+    border: 0px solid var(--gray-400) !important;
+    border-radius: 1px;
+    background: var(--gray-100);
+}
+
 .rt-r-bottom-0 {
     display: none!important;
 }
@@ -728,12 +734,12 @@ background-color: var(--bg-color);
 color: var(--text-color);
 }
 .form-control {
-border:1px solid var(--gray-400)!important;
+border:none!important;
 border-radius: 1px;
 }
 .form-control {
   
-background-color: var(--bg-color);
+background-color: var(--bg-color)!important;
 }
 .like-disabled-input {
 
@@ -2152,20 +2158,21 @@ width: 16.667vw;
     top: 0px;
     display: block;
     order: 2;
-   background:var(--gray-800);
+   background:var(--gray-100);
     border-left: 1px solid var(--gray-400);
     z-index:9;
 }
-   [data-theme-mode="dark"] [data-route^="List/"] .page-wrapper .layout-side-section {
+   [data-theme-mode="dark"] .page-wrapper .layout-side-section {
     background-size: cover;
     padding-top: 30px;
     top: 0;
     display: block;
     order: 2;
-    background-color: var(--gray-700);
+    background-color: var(--gray-800);
+	       border-left: none;
 }
 
-   [data-theme-mode="light"] [data-route^="List/"] .page-wrapper .layout-side-section {
+   [data-theme-mode="light"] .page-wrapper .layout-side-section {
     background-size: cover;
     padding-top: 30px;
     top: 0;
@@ -3993,9 +4000,9 @@ max-width:100%!important;
 border-radius: 0!important;
 border: 1px none var(--border-color)!important;
 box-shadow: none;
-padding-left: 5px!important;
-padding-bottom: 5px!important;
-padding-right: 5px!important;
+padding-left: 0px!important;
+padding-bottom: 0px!important;
+padding-right: 0px!important;
     background-color: var(--gray-100)!important;
 }
 
