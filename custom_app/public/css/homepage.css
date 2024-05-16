@@ -1687,7 +1687,7 @@ border-radius: 0;
 height: 20px;
 background-color:transparent;
 }
-[data-page-route].page-container:not([data-page-route^='List/']) {
+[data-route^='Form'].page-container {
 display: block;
 width: 80vw;
 position: absolute;
