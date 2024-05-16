@@ -2497,9 +2497,9 @@ display: none!important;
 background: #292929;
 }
 .page-head {
-z-index: 1000!important;
+z-index: 9!important;
 position: fixed!important;
-top:var(--navbar-height)!important;
+top:var(--navbar-height);
 margin-bottom: 0px;
 transition: .5s top;
  width:100vw;
