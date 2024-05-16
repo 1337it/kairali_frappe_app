@@ -1,3 +1,9 @@
+.formlist
+{
+	display:block!important;
+}
+
+
 [data-page-route] .form-control {
     border: 0px solid var(--gray-400) !important;
     border-radius: 1px;
