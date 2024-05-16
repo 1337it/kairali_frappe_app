@@ -3,9 +3,9 @@ var dcontainer = document.querySelectorAll("[data-page-route^='List/'].page-cont
 
 
 console.log(dcontainer.length);
-if (dcontainer.length == 0 && frm.docname != 0) {
-    frappe.set_route("List", frm.doctype);
-    frappe.set_route("Form", frm.doctype, frm.docname);
+if (dcontainer.length == 0 && this.docname != 0) {
+    frappe.set_route("List", this.doctype);
+    frappe.set_route("Form", this.doctype, this.docname);
 }
 
 
