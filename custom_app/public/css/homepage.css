@@ -1687,7 +1687,8 @@ border-radius: 0;
 height: 20px;
 background-color:transparent;
 }
-[data-route^='Form'].page-container {
+
+[data-route^='Form'] .page-container {
 display: block;
 width: 80vw;
 position: absolute;
@@ -1761,7 +1762,7 @@ top:6px;
 }
 
 
-[data-page-route] .page-wrapper .layout-main-section-wrapper:not([data-page-route^='List/']) {
+[data-route^='Form'] .editable-form .page-wrapper .layout-main-section-wrapper {
  margin-bottom:0px;
  display:inline-block;
  padding-left:0px;
