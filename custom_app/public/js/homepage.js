@@ -1,11 +1,11 @@
-   var dcontainer = document.querySelectorAll("[data-page-route^='List/'].page-container");
+var dcontainer = document.querySelectorAll("[data-page-route^='List/'].page-container");
 
 
 
 console.log(dcontainer.length);
-       if(dcontainer.length == 0 && cur_frm.docname != 0){
-	    frappe.set_route("List", cur_frm.doctype);
-frappe.set_route("Form", cur_frm.doctype, cur_frm.docname);
+if (dcontainer.length == 0 && frm.docname != 0) {
+    frappe.set_route("List", frm.doctype);
+    frappe.set_route("Form", frm.doctype, frm.docname);
 }
 
 
