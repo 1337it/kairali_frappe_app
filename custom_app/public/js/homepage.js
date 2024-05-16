@@ -6,7 +6,7 @@ $("div").each(function() {
 var onform = document.querySelectorAll("[style=''][data-page-route].editable-form");
 if (onform.length == 1) {
 	var dtype = this.doctype;
-var dname = this.doc
+var dname = this.doc;
 document.getElementById('page-List\/'+dtype+'\/List').className += ' formlist';
 }
 
