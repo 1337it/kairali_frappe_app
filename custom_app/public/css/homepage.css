@@ -1751,7 +1751,7 @@ width: calc(100vw - 0px);
         /* right: 0; */
         width: auto;
         /* left: 0; */
-        right: 20vw;
+        right: 16.6667vw;
 }
   [data-route^="List/"] .page-head .justify-between .page-actions {
  justify-content:flex-end;
@@ -2503,6 +2503,16 @@ transition: .5s top;
  width:100vw;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
+}
+[data-route^='Form'] .page-head:not([data-page-route^='List']) {
+z-index: 1000!important;
+position: fixed!important;
+top:var(--navbar-height)!important;
+[data-route^='Form'] .page-title {
+        left: 0px;
+        /* max-width: 50%; */
+    }
+}
 }
 [data-page-route="Item"] .page-head {
 z-index: 6;
