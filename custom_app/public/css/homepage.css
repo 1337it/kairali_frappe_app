@@ -1,7 +1,7 @@
 [data-page-route] .form-control {
     border: 0px solid var(--gray-400) !important;
     border-radius: 1px;
-    background: var(--gray-100);
+    background-color: var(--gray-100);
 }
 
 .rt-r-bottom-0 {
