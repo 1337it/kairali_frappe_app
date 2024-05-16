@@ -1,7 +1,23 @@
+
+
+$("div").each(function() { 
+  $(this).removeClass("formlist"); 
+}); 
+var onform = document.querySelectorAll("[style=''][data-page-route].editable-form");
+if (onform.length == 1) {
+	var dtype = this.doctype;
+var dname = this.doc
+document.getElementById('page-List\/'+dtype+'\/List').className += ' formlist';
+}
+
+console.log(container.length);
+
+var dtype = this.doctype;
+var dname = this.doc
+var slctr = '[data-route^="Form/'+cur_frm.doctype+'/'+cur_frm.docname+'"] #page-List\/'+cur_frm.doctype+'\/List { display:block!important;}' ;
+sheet.insertRule(slctr, sheet.cssRules.length);
+
 var dcontainer = document.querySelectorAll("[data-page-route^='List/'].page-container");
-
-
-
 console.log(dcontainer.length);
 if (dcontainer.length == 0 && this.docname != 0) {
     frappe.set_route("List", this.doctype);
