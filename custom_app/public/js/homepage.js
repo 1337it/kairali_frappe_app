@@ -1,13 +1,13 @@
 
 
+var onform = document.querySelector("[style=''][data-page-route].editable-form") !== null;
 
-var onform = document.querySelector("[style=''][data-page-route].editable-form");
-if (onform.length == 1) {
-	$("div").each(function() { 
-  $(this).removeClass("formlist"); 
-});
+console.log(onform);
+if (onform) {
+frappe.set_route('List', cur_frm.doctype, 'List');
+	frappe.set_route('Form', cur_frm.doctype, cur_frm.docname);
 
-document.querySelectorAll('[data-page-route="List/'+this.doctype+'/List"]')[0].style = '';
+document.querySelector('[data-page-route="List/'+cur_frm.doctype+'/List"].page-container').removeAttribute("style");
 };
 
 
