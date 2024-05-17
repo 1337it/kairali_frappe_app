@@ -345,8 +345,10 @@ frappe.ui.keys.add_shortcut({
 
 var onform = frappe.get_route()[0];
 if (onform == 'Form') {
-frappe.set_route('List', this.doctype, 'List');
-document.querySelectorAll('[data-page-route="List/' + this.doctype + '/List"].page-container')[0].attributes.style.value ="";
-	frappe.set_route('Form', this.doctype, this.docname);
+frappe.set_route('List', cur_frm.doctype, 'List');
+
+	frappe.set_route('Form', cur_frm.doctype, cur_frm.docname);
+document.querySelectorAll('[data-page-route="List/' + cur_frm.doctype + '/List"]')[0].attributes.style.value ="";
+
 };
 
