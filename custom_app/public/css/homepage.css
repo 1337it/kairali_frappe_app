@@ -1449,31 +1449,31 @@ display: none!important;
  
 @media (min-width: 1200px) {
 
-[data-page-route="List/Item/List"].page-container {
+[data-route^='Form/Item'] [data-page-route="List/Item/List"].page-container {
 display: block!important;
 }
-[data-page-route="List/Sales Order/List"].page-container {
+[data-route^='Form/Sales Order'] [data-page-route="List/Sales Order/List"].page-container {
 display: block!important;
 }
-	[data-page-route="List/Sales Invoice/List"].page-container {
+	[data-route^='Form/Sales Invoice'] [data-page-route="List/Sales Invoice/List"].page-container {
 display: block!important;
 }
-	[data-page-route="List/Purchase Order/List"].page-container {
+	[data-route^='Form/Purchase Order'] [data-page-route="List/Purchase Order/List"].page-container {
 display: block!important;
 }
-	[data-page-route="List/Purchase Invoice/List"].page-container {
+	[data-route^='Form/Purchase Invoice'] [data-page-route="List/Purchase Invoice/List"].page-container {
 display: block!important;
 }
-	[data-page-route="List/Customer/List"].page-container {
+	[data-route^='Form/Customer'] [data-page-route="List/Customer/List"].page-container {
 display: block!important;
 }
-	[data-page-route="List/Employee/List"].page-container {
+	[data-route^='Form/Employee'] [data-page-route="List/Employee/List"].page-container {
 display: block!important;
 }
-	[data-page-route="List/Task/List"].page-container {
+	[data-route^='Form/Task'] [data-page-route="List/Task/List"].page-container {
 display: block!important;
 }
-	[data-page-route="List/Pick List/List"].page-container {
+	  [data-route^='Form/Pick List'] [data-page-route="List/Pick List/List"].page-container {
 display: block!important;
 }
 
@@ -1727,6 +1727,20 @@ background-color:transparent;
 }
 
 [data-route^='Form'] .editable-form.page-container {
+display: block;
+width: 80vw;
+position: absolute;
+/* background-color: var(--bg-color); */
+z-index: 99;
+height: calc(100% - var(--navbar-height));
+        animation-name: css-0, css-8;
+    animation-duration: 0.367s;
+    animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+    animation-fill-mode: both;
+right: 0!important;
+}
+
+[data-route^='Form'] .submitted-form.page-container {
 display: block;
 width: 80vw;
 position: absolute;
