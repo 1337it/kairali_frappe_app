@@ -2,10 +2,10 @@
 
 var onform = frappe.get_route()[0];
 if (onform == 'Form') {
-frappe.set_route('List', cur_frm.doctype, 'List');
-	frappe.set_route('Form', cur_frm.doctype, cur_frm.docname);
+frappe.set_route('List', this.doctype, 'List');
+	frappe.set_route('Form', this.doctype, this.docname);
 
-$('[data-page-route="List/'+cur_frm.doctype+'/List"]').addClass('formlist');
+$('[data-page-route="List/'+this.doctype+'/List"]').addClass('formlist');
 };
 
 
