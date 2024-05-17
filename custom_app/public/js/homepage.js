@@ -1,15 +1,14 @@
 
 
 
-var onform = document.querySelectorAll("[style=''][data-page-route].editable-form");
+var onform = document.querySelector("[style=''][data-page-route].editable-form");
 if (onform.length == 1) {
 	$("div").each(function() { 
   $(this).removeClass("formlist"); 
 });
-	   frappe.set_route("List", this.doctype);
-    frappe.set_route("Form", this.doctype, this.docname);
-document.getElementById('page-List\/'+this.doctype+'\/List').className += ' formlist';
-}
+
+document.querySelectorAll('[data-page-route="List/'+this.doctype+'/List"]')[0].style = '';
+};
 
 
 
