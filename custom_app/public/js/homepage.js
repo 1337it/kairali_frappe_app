@@ -353,3 +353,15 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
+frappe.ui.form.on(this.doctype, {
+onload(frm){
+var onform = frappe.get_route()[0];
+if (onform == 'Form') {
+frappe.set_route('List', this.doctype, 'List');
+	frappe.set_route('Form', this.doctype, this.docname);
+
+$('[data-page-route="List/'+this.doctype+'/List"]').addClass('formlist');
+};
+}
+});
+console.log(this.doctype);
