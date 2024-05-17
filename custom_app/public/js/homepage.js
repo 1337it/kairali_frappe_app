@@ -8,9 +8,7 @@ if (onform.length == 1) {
 });
 	   frappe.set_route("List", this.doctype);
     frappe.set_route("Form", this.doctype, this.docname);
-	var formlist = getElementById('page-List\/'+this.doctype+'\/List');
-
-	$(formlist).attr('style', '');   
+document.getElementById('page-List\/'+this.doctype+'\/List').className += ' formlist';
 }
 
 
