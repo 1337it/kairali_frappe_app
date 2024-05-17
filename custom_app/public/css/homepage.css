@@ -1448,6 +1448,38 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+
+[data-page-route="List/Item/List"].page-container {
+display: block!important;
+}
+[data-page-route="List/Sales Order/List"].page-container {
+display: block!important;
+}
+	[data-page-route="List/Sales Invoice/List"].page-container {
+display: block!important;
+}
+	[data-page-route="List/Purchase Order/List"].page-container {
+display: block!important;
+}
+	[data-page-route="List/Purchase Invoice/List"].page-container {
+display: block!important;
+}
+	[data-page-route="List/Customer/List"].page-container {
+display: block!important;
+}
+	[data-page-route="List/Employee/List"].page-container {
+display: block!important;
+}
+	[data-page-route="List/Task/List"].page-container {
+display: block!important;
+}
+	[data-page-route="List/Pick List/List"].page-container {
+display: block!important;
+}
+
+	
+
+	
 [data-page-route="Item"] .page-head .justify-between .page-actions {
         justify-content: flex-end;
         position: absolute;
@@ -4001,6 +4033,7 @@ display:none!important;
 
 [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
 background: transparent;
+	margin-left:0px;
 }
 .modal-dialog {
 max-width: 80vw!important;
