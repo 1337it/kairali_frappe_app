@@ -352,4 +352,3 @@ $('[data-page-route="List/' + this.doctype + '/List"]').attr('style', '');
 };
 }
 });
-});
