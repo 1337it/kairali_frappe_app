@@ -341,8 +341,8 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-frappe.ui.form.on(this.doctype, {
-onload(frm){
+
+
 var onform = frappe.get_route()[0];
 if (onform == 'Form') {
 frappe.set_route('List', this.doctype, 'List');
@@ -350,5 +350,4 @@ frappe.set_route('List', this.doctype, 'List');
 
 $('[data-page-route="List/' + this.doctype + '/List"]').attr('style', '');
 };
-}
-});
+
