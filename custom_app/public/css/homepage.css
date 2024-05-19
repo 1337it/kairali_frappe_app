@@ -2126,7 +2126,7 @@ padding-right: 0vw!important;
     height: 40px;
 	    transition: width 0.2s ease-out!important;
     width: 40px;
-    top: 0;
+    top: 48px;
     left: 0px;
     z-index: 99999 !important;
     background: #000000;
@@ -2189,7 +2189,7 @@ padding: 10px;
 height: 100%;
 z-index: 2001;
 overflow-y: auto;
-	background:var(--skeleton-bg);
+	background:white;
 }
 
     
@@ -2203,7 +2203,7 @@ padding: 10px;
 height: 100%;
 z-index: 2001;
 overflow-y: auto;
-	background:#111418 !important;
+	background:black !important;
 }
     #page-Workspaces{
  height:48px;
@@ -3689,7 +3689,6 @@ background: #000000;  --icon-fill: var(--white-overlay-200);}
 
 
  #global-sidebar {
-	 background: #222831!important;
 width: 48px!important;
 left: 0!important;
 padding: 0px!important;
@@ -3706,6 +3705,7 @@ display: block;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
+	 margin-top: calc(48px + var(--navbar-height));
 }
 
 
@@ -3772,8 +3772,8 @@ background-color: var(--gray-100)!important;
 }
  
 #global-sidebarList a .icon-lg{
- margin-left:11px!important;
- margin-right:11px!important;
+ margin-left:10px!important;
+ margin-right:5px!important;
  width:26px!important;
  height:26px!important;
 }
@@ -3856,7 +3856,8 @@ margin-bottom: 30px!important;
 }
 
 #global-sidebarList li a:hover {
-background-color: #181818!important;
+background-color: var(--gray-200)!important;
+	width:5px;
 }
 .list-row-head {
 height: 41px!important;
