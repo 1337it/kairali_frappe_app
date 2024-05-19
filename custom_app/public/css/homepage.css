@@ -828,7 +828,6 @@ height: 100%;
 {
     left: env(titlebar-area-x, 10px)!important;
 -webkit-app-region: no-drag;
-	margin-left: 48px;
 }
 
 .navbar-nav
