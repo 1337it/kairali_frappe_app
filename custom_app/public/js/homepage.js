@@ -55,6 +55,7 @@ shortcut: "alt+right",
 const backbutton = document.createElement('button');
 
       backbutton.id = 'backbutton';
+backbutton.class = 'fa fa-arrow-left';
 
       // Attach the "click" event to your button
       backbutton.addEventListener('click', () => {
