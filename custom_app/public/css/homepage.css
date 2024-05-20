@@ -3724,7 +3724,7 @@ display: block;
 overflow-y: auto;
 position: fixed;
 height: 100vh!important;
-	 margin-top: calc(48px + var(--navbar-height));
+	 margin-top: var(--navbar-height);
 }
 
 
