@@ -1448,7 +1448,10 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
-
+#global-sidebarList li:hover {
+background: var(--black-overlay-50);
+}
+	
 [data-route^='Form/Item'] [data-page-route="List/Item/List"].page-container {
 display: block!important;
 }
