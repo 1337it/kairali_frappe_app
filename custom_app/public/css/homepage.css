@@ -3643,47 +3643,67 @@ background: #000000;
 
 [data-route="Workspaces/Raven"] [href="/app/raven"] {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
-
+}
 [data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}
 [data-route="Workspaces/Recruitment"] [href="/app/recruitment"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}
 [data-route="Workspaces/ERPNext Settings"] [href="/app/erpnext-settings"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}
 [data-route="Workspaces/Build"] [href="/app/build"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}
 [data-route="Workspaces/ERPNext Integrations"] [href="/app/erpnext-integrations"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}
 [data-route="Workspaces/Payroll"] [href="/app/payroll"] {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Manufacturing"] [href="/app/manufacturing"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Quality"] [href="/app/quality"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/HR"] [href="/app/hr"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Support"] [href="/app/support"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Projects"] [href="/app/projects"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Assets"] [href="/app/assets"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Stock"] [href="/app/stock"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Accounting"] [href="/app/accounting"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Integrations"] [href="/app/integrations"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Users"] [href="/app/users"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Website"] [href="/app/website"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Buying"] [href="/app/buying"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/Selling"] [href="/app/selling"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}	
 [data-route="Workspaces/CRM"] [href="/app/crm"]  {
 background: #ed1c2c;     --icon-fill: var(--white-overlay-200);     /* filter: invert(); */     opacity: 1 !important;
+}
 
 
 
