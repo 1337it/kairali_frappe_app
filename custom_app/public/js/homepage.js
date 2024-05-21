@@ -90,19 +90,18 @@ const driveframe2 = document.createElement('div');
 driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: calc(100% - var(--navbar-height));width: calc(100% - 12.666%);z-index: 9!important;right:0px;top:var(--navbar-height);position: fixed;border: none;" title="Drive"></iframe>';
 const chatclose = document.createElement('li');
 
-      chatclose.innerHTML = "<button class='fa fa-close' id='chatclose'>";
+      chatclose.innerHTML = "<button class='fa fa-window-close' id='chatclose'>";
       // Attach the "click" event to your button
       chatbutton.addEventListener('click', () => {
         $("body").attr('data-route', 'Messenger');        
 body2.appendChild(driveframe2);
-	document.querySelectorAll('.rt-Flex .rt-r-display-flex .rt-r-jc-space-between')[0].prepend(chatclose);
+	
       // Attach the "click" event to your button
-      chatclose.addEventListener('click', () => {     
+
+      });
+ chatclose.addEventListener('click', () => {     
 body2.removeChild(driveframe2);
       });
-
-      });
-
 
 
 
@@ -353,7 +352,7 @@ frappe.ui.keys.add_shortcut({
 window.onload = function() {
 console.log(frappe.get_route());
 
-
+document.querySelectorAll('.rt-r-pt-1')[0].prepend(chatclose);
 document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
