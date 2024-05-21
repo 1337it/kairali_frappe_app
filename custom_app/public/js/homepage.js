@@ -61,7 +61,7 @@ const backbutton = document.createElement('li');
             history.back();
       });
 
-document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
+
 
 const drivebutton = document.createElement('li');
 
@@ -77,7 +77,6 @@ driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(1
 
 
       });
-document.querySelectorAll('#global-sidebarList')[0].append(drivebutton);
 
 const chatbutton = document.createElement('button');
 
@@ -93,7 +92,7 @@ body.appendChild(driveframe2);
 
 
       });
-document.querySelectorAll('#global-sidebarList')[0].append(chatbutton);
+
 
 
 
@@ -341,7 +340,14 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
+window.onload = function() {
+console.log(frappe.get_route());
 
+document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
+document.querySelectorAll('#global-sidebarList')[0].append(drivebutton);
+
+document.querySelectorAll('#global-sidebarList')[0].append(chatbutton);
+}
 
 
 
