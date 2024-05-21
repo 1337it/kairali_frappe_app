@@ -2147,6 +2147,16 @@ margin-left: 4%;
 margin-top: 2%;
 }
 
+#global-sidebar:not(:hover) #backbutton {
+width: 40px;
+margin-left: 4px;
+}
+
+[data-route^='Workspaces'] #global-sidebar:not(:hover) #backbutton {
+width: 92%;
+margin-left: 4%;
+}
+
   #drivebutton {
 height: 48px;
 width: 48px;
