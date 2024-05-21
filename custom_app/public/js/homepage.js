@@ -342,7 +342,7 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-
+if(frappe.get_route()[0] =='Form'){
 const routedoctype = cur_frm.doctype;
 const routedocname = cur_frm.docname;
 
@@ -350,6 +350,8 @@ frappe.set_route('List', routedoctype, 'List');
 
 	frappe.set_route('Form', routedoctype, routedocname);
 document.querySelectorAll('[data-page-route="List/' + routedoctype + '/List"]')[0].attributes.style.value ="";
+}
+
 
 
 
