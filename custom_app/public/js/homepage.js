@@ -105,7 +105,7 @@ body2.appendChild(chatclose);
 
       // Attach the "click" event to your button
 
-      });
+
  
 
 
