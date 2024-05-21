@@ -52,20 +52,20 @@ shortcut: "alt+right",
 }
 });
 
-const backbutton = document.createElement('button');
+const backbutton = document.createElement('li');
 
-      backbutton.id = 'backbutton';
+      backbutton.innerHTML = "<button class='fa fa-arrow-left' id='backbutton'>";
 
       // Attach the "click" event to your button
       backbutton.addEventListener('click', () => {
             history.back();
       });
-$("#global-sidebarList").prepend('<li><button class="fa fa-arrow-left" id="backbutton"></li>');
 
+document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
 
-const drivebutton = document.createElement('button');
+const drivebutton = document.createElement('li');
 
-      drivebutton.id = 'drivebutton';
+    drivebutton.innerHTML = "<button id='drivebutton'>";
   const body = document.querySelector("#body");
 const driveframe = document.createElement('div');
 driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(100% - var(--navbar-height));width: calc(100% - 12.666%);z-index: 9!important;right:0px;top:var(--navbar-height);position: fixed;border: none;background-color: var(--bg-color);" title="Drive"></iframe>';
@@ -77,12 +77,11 @@ driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(1
 
 
       });
-$("#global-sidebarList").append('<li><button id="drivebutton"></li>');
+document.querySelectorAll('#global-sidebarList')[0].append(drivebutton);
 
 const chatbutton = document.createElement('button');
 
-      chatbutton.id = 'chatbutton';
-chatbutton.class = 'raven-chat';
+chatbutton.innerHTML = "<button class='raven-chat' id='chatbutton'>";
   const body2 = document.querySelector("#body");
 const driveframe2 = document.createElement('div');
 driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: calc(100% - var(--navbar-height));width: calc(100% - 12.666%);z-index: 9!important;right:0px;top:var(--navbar-height);position: fixed;border: none;" title="Drive"></iframe>';
@@ -94,7 +93,7 @@ body.appendChild(driveframe2);
 
 
       });
-$("#global-sidebarList").append('<li><button id="chatbutton"></li>');
+document.querySelectorAll('#global-sidebarList')[0].append(chatbutton);
 
 
 
