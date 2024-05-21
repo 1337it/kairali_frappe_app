@@ -95,11 +95,12 @@ driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: calc(1
 body2.appendChild(driveframe2);
 const chatclose = document.createElement('li');
 
-      chatclose.innerHTML = "<button id='chatclose'>";
-
-	document.querySelectorAll('.rt-r-pt-1')[0].appendChild(chatclose);
-chatclose.addEventListener('click', () => {     
-body2.removeChild(driveframe2);
+      chatclose.innerHTML = "<button class='fa fa-close' id='chatclose' style='position:fixed;top:10px;left:10px;'>";
+body2.appendChild(chatclose);
+      // Attach the "click" event to your button
+      chatclose.addEventListener('click', () => {
+            body2.removeChild(driveframe2);
+      });
       });
 
       // Attach the "click" event to your button
