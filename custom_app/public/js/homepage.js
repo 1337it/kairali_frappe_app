@@ -344,9 +344,9 @@ window.onload = function() {
 console.log(frappe.get_route());
 
 document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
-document.querySelectorAll('#global-sidebarList')[0].append(drivebutton);
+document.querySelectorAll('.navbar-nav')[0].prepend(drivebutton);
 
-document.querySelectorAll('#global-sidebarList')[0].append(chatbutton);
+document.querySelectorAll('.navbar-nav')[0].prepend(chatbutton);
 }
 
 
