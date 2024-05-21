@@ -1519,17 +1519,20 @@ display: block!important;
 background-color: var(--gray-2);
 height: 100%;
 }
-	#chatbutton {
+#chatbutton {
 height: 48px;
-width: 48px;
+/* width: 48px; */
 bottom: 0px;
 left: 0px;
 z-index: 999;
-background: url("/files/chat.png");
+/* background: url("/files/chat.png"); */
 object-fit: cover;
 background-repeat: no-repeat;
 border: 0;
 background-size: contain;
+background-color: transparent;
+font-size: 22px;
+margin-top: 3px;
 }
 	.h-\[calc\(100vh-7rem\)\] {
 height: calc(100vh - 0rem);
@@ -2159,15 +2162,24 @@ margin-left: 4%;
 
   #drivebutton {
 height: 48px;
-width: 48px;
-bottom: 0px;
-left: 0px;
+/* width: 48px; */
+/* bottom: 0px; */
+/* left: 0px; */
 z-index: 999;
-background: url("/files/drive.png");
+/* background: url("/files/drive.png"); */
 object-fit: cover;
 background-repeat: no-repeat;
 border: 0;
 background-size: contain;
+font-size: 22px;
+margin: auto;
+margin-left: var(--margin-md);
+/* font-size: var(--text-sm); */
+font-weight: var(--weight-regular);
+letter-spacing: .02em;
+line-height: 1rem;
+margin-top: 5px;
+	  background-color: transparent;
 }
 
 [data-route='Drive'] #driveframe
