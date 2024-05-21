@@ -341,9 +341,8 @@ frappe.ui.keys.add_shortcut({
 			ignore_inputs: true,
 
 		});
-var docnamelength = cur_frm.docname.length;
 
-if(docnamelength){
+if(cur_frm.docname.length){
 const routedoctype = cur_frm.doctype;
 const routedocname = cur_frm.docname;
 
