@@ -1520,8 +1520,6 @@ background-color: var(--gray-2);
 height: 100%;
 }
 	#chatbutton {
-position: fixed;
-display: var();
 height: 48px;
 width: 48px;
 bottom: 0px;
@@ -2123,7 +2121,6 @@ padding-right: 0vw!important;
 
 
     #backbutton {
-    position: fixed;
     display: flex;
     height: 40px;
 	    transition: width 0.2s ease-out!important;
@@ -2147,11 +2144,9 @@ padding-right: 0vw!important;
 }
 
   #drivebutton {
-position: fixed;
-display: var();
 height: 48px;
 width: 48px;
-bottom: 48px;
+bottom: 0px;
 left: 0px;
 z-index: 999;
 background: url("/files/drive.png");
@@ -3855,7 +3850,6 @@ color: var(--gray-700);
     flex-direction: column;
     justify-content: start;
     width: 100%;
-    margin-top: var(--navbar-height);
 }
 
 #global-sidebarList li a {
