@@ -1448,26 +1448,31 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
-
+.border-gray-4 {
+margin-left: 50px;
+}
+[data-route="Messenger"] #chatclose
+{position: fixed;
+top: calc(5% + var(--navbar-height) + 10px);
+left: calc(10px + 10%);
+z-index: 99999;
+font-size: 28px;
+border: none;
+background: transparent;
+}
+[data-route="Drive"] #chatclose
+{position: fixed;
+top: calc(5% + var(--navbar-height) + 10px);
+left: calc(10px + 10%);
+z-index: 99999;
+font-size: 28px;
+border: none;
+background: transparent;
+}
 #chatclose
-{position: fixed;
-top: calc(10px + 14%);
-left: calc(10px + 10%);
-z-index: 99999;
-font-size: 28px;
-border: none;
-background: transparent;
-}
+{display:none;}
 #driveclose
-{position: fixed;
-top: calc(10px + 14%);
-left: calc(10px + 10%);
-z-index: 99999;
-font-size: 28px;
-border: none;
-background: transparent;
-}
-
+{display:none;}
 
 
 	
