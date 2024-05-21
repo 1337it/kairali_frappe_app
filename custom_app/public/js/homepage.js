@@ -88,7 +88,7 @@ body2.appendChild(driveclose);
 	      var droute = frappe.get_route();
 droute.splice(0, droute.length);
 frappe.set_route(droute);
-	      body2.removeChild(driveclose);
+	      body.removeChild(driveclose);
       });
       });
 
