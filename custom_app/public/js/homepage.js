@@ -78,7 +78,7 @@ driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(1
 
       });
 
-const chatbutton = document.createElement('button');
+const chatbutton = document.createElement('li');
 
 chatbutton.innerHTML = "<button class='raven-chat' id='chatbutton'>";
   const body2 = document.querySelector("#body");
