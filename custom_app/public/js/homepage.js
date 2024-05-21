@@ -86,7 +86,7 @@ body2.appendChild(driveclose);
       driveclose.addEventListener('click', () => {
             body2.removeChild(driveframe);
 	      var droute = frappe.get_route();
-var droute = droute.splice(index, droute.length);
+droute.splice(0, droute.length);
 frappe.set_route(droute);
 	      body2.removeChild(driveclose);
       });
@@ -116,7 +116,7 @@ body2.appendChild(chatclose);
       chatclose.addEventListener('click', () => {
             body2.removeChild(driveframe2);
 	      var croute = frappe.get_route();
-var croute = croute.splice(index, croute.length);
+croute.splice(0, croute.length);
 frappe.set_route(croute);
 body2.removeChild(chatclose);
       });
