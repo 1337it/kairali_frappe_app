@@ -66,7 +66,7 @@ const backbutton = document.createElement('li');
 
 const drivebutton = document.createElement('li');
 
-    drivebutton.innerHTML = "<button class="fa fa-folder nav-item" id='drivebutton'>";
+    drivebutton.innerHTML = "<button class='fa fa-folder nav-item' id='drivebutton'>";
   const body = document.querySelector("#body");
 const driveframe = document.createElement('div');
 driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(100% - var(--navbar-height));width: calc(100% - 12.666%);z-index: 9!important;right:0px;top:var(--navbar-height);position: fixed;border: none;background-color: var(--bg-color);" title="Drive"></iframe>';
@@ -84,7 +84,7 @@ body.appendChild(driveframe);
 
 const chatbutton = document.createElement('li');
 
-chatbutton.innerHTML = "<button class="fa fa-comment nav-item" id='chatbutton'>";
+chatbutton.innerHTML = "<button class='fa fa-comment nav-item' id='chatbutton'>";
   const body2 = document.querySelector("#body");
 const driveframe2 = document.createElement('div');
 driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: calc(100% - var(--navbar-height));width: calc(100% - 12.666%);z-index: 9!important;right:0px;top:var(--navbar-height);position: fixed;border: none;" title="Drive"></iframe>';
