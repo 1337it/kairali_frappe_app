@@ -55,13 +55,16 @@ shortcut: "alt+right",
 const backbutton = document.createElement('button');
 
       backbutton.id = 'backbutton';
-backbutton.class = 'fa fa-arrow-left';
 
       // Attach the "click" event to your button
       backbutton.addEventListener('click', () => {
             history.back();
       });
-      document.body.appendChild(backbutton);
+document.querySelectorAll("#global-sidebarList")[0].prepend(backbutton);
+const backclass = document.createAttribute("class");
+document.querySelectorAll("#backbutton")[0].attributes.setNamedItem(backclass);
+document.querySelectorAll("#backbutton")[0].attributes.class.value ="fa fa-arrow-left";
+
 
 const drivebutton = document.createElement('button');
 
