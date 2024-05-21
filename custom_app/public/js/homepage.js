@@ -60,10 +60,7 @@ const backbutton = document.createElement('button');
       backbutton.addEventListener('click', () => {
             history.back();
       });
-document.querySelectorAll("#global-sidebarList")[0].prepend(backbutton);
-const backclass = document.createAttribute("class");
-document.querySelectorAll("#backbutton")[0].attributes.setNamedItem(backclass);
-document.querySelectorAll("#backbutton")[0].attributes.class.value ="fa fa-arrow-left";
+$("#global-sidebarList").prepend('<li><button class="fa fa-arrow-left" id="backbutton"></li>');
 
 
 const drivebutton = document.createElement('button');
@@ -76,7 +73,7 @@ driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(1
       // Attach the "click" event to your button
       drivebutton.addEventListener('click', () => {
         $("body").attr('data-route', 'Drive');
-body.appendChild(driveframe);
+$("#global-sidebarList").append('<li><button class="fa fa-arrow-left" id="drivebutton"></li>');
 
 
       });
@@ -97,7 +94,7 @@ body.appendChild(driveframe2);
 
 
       });
- document.body.appendChild(chatbutton);
+$("#global-sidebarList").append('<li><button class="fa fa-arrow-left" id="chatbutton"></li>');
 
 
 
