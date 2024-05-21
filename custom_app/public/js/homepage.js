@@ -88,14 +88,16 @@ chatbutton.innerHTML = "<button id='chatbutton'>";
   const body2 = document.querySelector("#body");
 const driveframe2 = document.createElement('div');
 driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: calc(100% - var(--navbar-height));width: calc(100% - 12.666%);z-index: 9!important;right:0px;top:var(--navbar-height);position: fixed;border: none;" title="Drive"></iframe>';
-const chatclose = document.createElement('li');
 
-      chatclose.innerHTML = "<button class='fa fa-window-close' id='chatclose'>";
       // Attach the "click" event to your button
       chatbutton.addEventListener('click', () => {
         $("body").attr('data-route', 'Messenger');        
 body2.appendChild(driveframe2);
-	document.querySelectorAll('.rt-r-pt-1')[0].prepend(chatclose);
+const chatclose = document.createElement('li');
+
+      chatclose.innerHTML = "<button id='chatclose'>";
+
+	document.querySelectorAll('.rt-r-pt-1')[0].appendChild(chatclose);
       // Attach the "click" event to your button
 
       });
