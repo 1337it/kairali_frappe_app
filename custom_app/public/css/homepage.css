@@ -2121,26 +2121,30 @@ padding-right: 0vw!important;
 
 
     #backbutton {
-    display: flex;
-    height: 40px;
-	    transition: width 0.2s ease-out!important;
-    width: 40px;
-    top: 0px;
-    left: 0px;
-    z-index: 99999 !important;
-    background: #000000;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    border: 0;
-    background-size: contain;
-    color: white;
-    /* filter: invert(1); */
-    font-size: 18px;
-    margin: 4px;
-    border-radius: 10px;
-    min-width: 40px;
-    align-items: center;
-    justify-content: space-evenly;
+display: flex;
+height: 40px;
+transition: width 0.2s ease-out!important;
+width: 92%;
+top: 0px;
+left: 0px;
+z-index: 99999 !important;
+background: #b9b9b9;
+object-fit: cover;
+background-repeat: no-repeat;
+border: 0;
+background-size: contain;
+color: rgb(55, 55, 55);
+/* filter: invert(1); */
+font-size: 20px;
+margin: 0px;
+border-radius: 10px;
+align-items: center;
+justify-content: space-evenly;
+padding: 5px!important;
+height: 80%;
+justify-content: center;
+margin-left: 4%;
+margin-top: 2%;
 }
 
   #drivebutton {
@@ -2186,7 +2190,7 @@ padding: 10px;
 height: 100%;
 z-index: 2001;
 overflow-y: auto;
-	background:white;
+	background: var(--switch-bg);
 }
 
     
