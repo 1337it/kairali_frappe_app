@@ -2128,7 +2128,7 @@ padding-right: 0vw!important;
     height: 40px;
 	    transition: width 0.2s ease-out!important;
     width: 40px;
-    top: 48px;
+    top: 0px;
     left: 0px;
     z-index: 99999 !important;
     background: #000000;
