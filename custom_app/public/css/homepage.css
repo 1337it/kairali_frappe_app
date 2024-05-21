@@ -1448,8 +1448,25 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+	[data-headlessui-state] {
+text-align: left;
+/* display: none; */
+visibility: hidden;
+}
+#headlessui-menu-item-11 {
+position: fixed;
+display: flex;
+top: -40px;
+/* right: 10%; */
+visibility: visible;
+left: 150px;
+}
 .border-gray-4 {
-margin-left: 50px;
+margin-left: 50px!important;
+}
+	.rt-r-py-3 {
+
+margin-left: 50px!important;
 }
 [data-route="Messenger"] #chatclose
 {position: fixed;
@@ -1459,6 +1476,8 @@ z-index: 99999;
 font-size: 28px;
 border: none;
 background: transparent;
+ display:block;
+ cursor: pointer;
 }
 [data-route="Drive"] #chatclose
 {position: fixed;
@@ -1468,6 +1487,8 @@ z-index: 99999;
 font-size: 28px;
 border: none;
 background: transparent;
+  display:block;
+ cursor: pointer;
 }
 #chatclose
 {display:none;}
