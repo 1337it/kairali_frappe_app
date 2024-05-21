@@ -95,7 +95,7 @@ const chatclose = document.createElement('li');
       chatbutton.addEventListener('click', () => {
         $("body").attr('data-route', 'Messenger');        
 body2.appendChild(driveframe2);
-	
+	document.querySelectorAll('.rt-r-pt-1')[0].prepend(chatclose);
       // Attach the "click" event to your button
 
       });
@@ -352,7 +352,7 @@ frappe.ui.keys.add_shortcut({
 window.onload = function() {
 console.log(frappe.get_route());
 
-document.querySelectorAll('.rt-r-pt-1')[0].prepend(chatclose);
+
 document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
