@@ -343,12 +343,13 @@ frappe.ui.keys.add_shortcut({
 		});
 
 
+const routedoctype = cur_frm.doctype;
+const routedocname = cur_frm.docname;
 
+frappe.set_route('List', routedoctype, 'List');
 
-frappe.set_route('List', cur_frm.doctype, 'List');
-
-	frappe.set_route('Form', cur_frm.doctype, cur_frm.docname);
-document.querySelectorAll('[data-page-route="List/' + cur_frm.doctype + '/List"]')[0].attributes.style.value ="";
+	frappe.set_route('Form', routedoctype, routedocname);
+document.querySelectorAll('[data-page-route="List/' + routedoctype + '/List"]')[0].attributes.style.value ="";
 
 
 
