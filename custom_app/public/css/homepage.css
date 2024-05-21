@@ -1448,6 +1448,29 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+
+#chatclose
+{position: fixed;
+top: calc(10px + 14%);
+left: calc(10px + 10%);
+z-index: 99999;
+font-size: 28px;
+border: none;
+background: transparent;
+}
+#driveclose
+{position: fixed;
+top: calc(10px + 14%);
+left: calc(10px + 10%);
+z-index: 99999;
+font-size: 28px;
+border: none;
+background: transparent;
+}
+
+
+
+	
 #global-sidebarList li:hover {
 background: var(--black-overlay-50);
 }
