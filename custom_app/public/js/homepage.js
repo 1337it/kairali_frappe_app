@@ -88,6 +88,7 @@ body2.appendChild(driveclose);
 	      var droute = frappe.get_route();
 var droute = droute.splice(index, droute.length);
 frappe.set_route(droute);
+	      body2.removeChild(driveclose);
       });
       });
 
@@ -117,7 +118,7 @@ body2.appendChild(chatclose);
 	      var croute = frappe.get_route();
 var croute = croute.splice(index, croute.length);
 frappe.set_route(croute);
-
+body2.removeChild(chatclose);
       });
       });
 
