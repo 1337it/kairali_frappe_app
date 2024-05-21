@@ -98,12 +98,14 @@ const chatclose = document.createElement('li');
       chatclose.innerHTML = "<button id='chatclose'>";
 
 	document.querySelectorAll('.rt-r-pt-1')[0].appendChild(chatclose);
+chatclose.addEventListener('click', () => {     
+body2.removeChild(driveframe2);
+      });
+
       // Attach the "click" event to your button
 
       });
- chatclose.addEventListener('click', () => {     
-body2.removeChild(driveframe2);
-      });
+ 
 
 
 
