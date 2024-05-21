@@ -74,7 +74,7 @@ driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(1
       drivebutton.addEventListener('click', () => {
         $("body").attr('data-route', 'Drive');
 
-
+body.appendChild(driveframe);
 
       });
 
