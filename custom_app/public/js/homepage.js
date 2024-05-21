@@ -73,8 +73,7 @@ driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;wi
 
       // Attach the "click" event to your button
       drivebutton.addEventListener('click', () => {
-     var droute = $("body").attr('data-route');
-$("body").attr('data-route', droute+'/Drive');
+$("body").attr('overlay-route', 'Drive');
 
 body.appendChild(driveframe);
 const driveclose = document.createElement('li');
@@ -84,8 +83,7 @@ body2.appendChild(driveclose);
       // Attach the "click" event to your button
       driveclose.addEventListener('click', () => {
             body.removeChild(driveframe);
-     var droute = $("body").attr('data-route');
-$("body").attr('data-route', droute-'/Drive');
+$("body").attr('overlay-route', '');
 	      body.removeChild(driveclose);
       });
       });
@@ -103,8 +101,7 @@ driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: 90%;wi
       // Attach the "click" event to your button
       chatbutton.addEventListener('click', () => {
 
-  var croute = $("body").attr('data-route');
-$("body").attr('data-route', croute+'/Messenger');
+$("body").attr('overlay-route', 'Messenger');
 body2.appendChild(driveframe2);
 const chatclose = document.createElement('li');
 
@@ -113,8 +110,7 @@ body2.appendChild(chatclose);
       // Attach the "click" event to your button
       chatclose.addEventListener('click', () => {
             body2.removeChild(driveframe2);
-  var croute = $("body").attr('data-route');
-$("body").attr('data-route', croute-'/Messenger');
+$("body").attr('overlay-route', '');
 body2.removeChild(chatclose);
       });
       });
