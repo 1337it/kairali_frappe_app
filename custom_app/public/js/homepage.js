@@ -73,11 +73,11 @@ driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(1
       // Attach the "click" event to your button
       drivebutton.addEventListener('click', () => {
         $("body").attr('data-route', 'Drive');
-$("#global-sidebarList").append('<li><button class="fa fa-arrow-left" id="drivebutton"></li>');
+
 
 
       });
- document.body.appendChild(drivebutton);
+$("#global-sidebarList").append('<li><button id="drivebutton"></li>');
 
 const chatbutton = document.createElement('button');
 
@@ -94,7 +94,7 @@ body.appendChild(driveframe2);
 
 
       });
-$("#global-sidebarList").append('<li><button class="fa fa-arrow-left" id="chatbutton"></li>');
+$("#global-sidebarList").append('<li><button id="chatbutton"></li>');
 
 
 
