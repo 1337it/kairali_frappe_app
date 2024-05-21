@@ -80,7 +80,7 @@ driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: calc(1
 
 const chatbutton = document.createElement('li');
 
-chatbutton.innerHTML = "<button class='raven-chat' id='chatbutton'>";
+chatbutton.innerHTML = "<button id='chatbutton'>";
   const body2 = document.querySelector("#body");
 const driveframe2 = document.createElement('div');
 driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: calc(100% - var(--navbar-height));width: calc(100% - 12.666%);z-index: 9!important;right:0px;top:var(--navbar-height);position: fixed;border: none;" title="Drive"></iframe>';
