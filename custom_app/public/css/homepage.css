@@ -1776,6 +1776,10 @@ height: calc(100% - var(--navbar-height));
     animation-fill-mode: both;
 right: 0!important;
 }
+[data-route^='Form/Notification Settings'] .editable-form.page-container {
+width: calc(100% - 48px);
+
+}
 
 [data-route^='Form'] .submitted-form.page-container {
 display: block;
