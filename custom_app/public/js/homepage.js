@@ -341,10 +341,9 @@ frappe.ui.keys.add_shortcut({
 			ignore_inputs: true,
 
 		});
-var formrouteall = frappe.get_route();
+var docnamelength = cur_frm.docname.length;
 
-var formroute = formrouteall[0];
-if(formroute =='Form'){
+if(docnamelength){
 const routedoctype = cur_frm.doctype;
 const routedocname = cur_frm.docname;
 
