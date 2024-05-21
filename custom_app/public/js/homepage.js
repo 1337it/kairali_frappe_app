@@ -69,7 +69,7 @@ const drivebutton = document.createElement('li');
     drivebutton.innerHTML = "<button class='fa fa-folder nav-item' id='drivebutton'>";
   const body = document.querySelector("#body");
 const driveframe = document.createElement('div');
-driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;width: 80%;z-index: 999!important;right: 10%;top: calc(5% + var(--navbar-height));position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);;" title="Drive"></iframe>';
+driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;width: 80%;z-index: 999!important;right: 10%;top: calc(5% + var(--navbar-height));background: rgba(255, 255, 255, 0.62);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);;" title="Drive"></iframe>';
 
       // Attach the "click" event to your button
       drivebutton.addEventListener('click', () => {
@@ -110,8 +110,9 @@ body2.appendChild(chatclose);
       // Attach the "click" event to your button
       chatclose.addEventListener('click', () => {
             body2.removeChild(driveframe2);
+	      body2.removeChild(chatclose);
 $("body").attr('overlay-route', '');
-body2.removeChild(chatclose);
+
       });
       });
 
