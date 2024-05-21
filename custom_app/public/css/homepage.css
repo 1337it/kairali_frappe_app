@@ -1462,7 +1462,7 @@ background: transparent;
  cursor: pointer;
  color: rgb(131, 131, 131);
 }
-[overlay-route='Drive'] #chatclose
+[overlay-route='Drive'] #driveclose
 {position: fixed;
 top: calc(5% + var(--navbar-height) + 10px);
 left: calc(10px + 10%);
