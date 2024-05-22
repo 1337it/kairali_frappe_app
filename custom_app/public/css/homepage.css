@@ -3798,12 +3798,13 @@ background-color: var(--gray-100)!important;
 #global-sidebarList a .icon-lg{
  margin-left:10px!important;
  margin-right:8px!important;
- width:30px!important;
- height:30px!important;
+ width:25px!important;
+ height:25px!important;
 }
 #global-sidebarList a .icon-lg{
---icon-stroke: var(--white-overlay-500);
---icon-fill: var(--black-overlay-600);
+--icon-stroke: rgba(0, 0, 0, 1);
+--icon-fill: rgba(255, 255, 255, 0);
+stroke-width: 0.5px;
 }
 
 [data-page-route="Item"]:not(:only-child) .page-title .title-area .title-text
