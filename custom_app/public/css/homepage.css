@@ -2162,22 +2162,22 @@ padding-right: 0vw!important;
 
     #backbutton {
 display: flex;
-height: 40px;
+height: 30px;
 transition: width 0.2s ease-out!important;
-width: 92%;
+width: 30px;
 top: 0px;
 left: 0px;
 z-index: 99999 !important;
-background: #b9b9b9;
+background: white;
 object-fit: cover;
 background-repeat: no-repeat;
 border: 0;
 background-size: contain;
 color: rgb(55, 55, 55);
 /* filter: invert(1); */
-font-size: 20px;
+font-size: 18px;
 margin: 0px;
-border-radius: 10px;
+border-radius: 4px;
 align-items: center;
 justify-content: space-evenly;
 padding: 5px!important;
@@ -2187,15 +2187,8 @@ margin-left: 4%;
 margin-top: 2%;
 }
 
-#global-sidebar:not(:hover) #backbutton {
-width: 40px;
-margin-left: 4px;
-}
 
-[data-route^='Workspaces'] #global-sidebar:not(:hover) #backbutton {
-width: 92%;
-margin-left: 4%;
-}
+
 
   #drivebutton {
 height: 48px;
@@ -3797,10 +3790,10 @@ background-color: var(--gray-100)!important;
 }
  
 #global-sidebarList a .icon-lg{
- margin-left:10px!important;
- margin-right:8px!important;
- width:30px!important;
- height:25px!important;
+ margin-left:12px!important;
+ margin-right:12px!important;
+ width:24px!important;
+ height:24px!important;
 }
 #global-sidebarList a .icon-lg{
 --icon-stroke: rgba(0, 0, 0, 1);
