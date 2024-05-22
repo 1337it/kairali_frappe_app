@@ -2008,12 +2008,19 @@ max-width: 100%;
 .page-container{
 width: calc(100vw - 48px);
 right: 0;
-box-shadow: none;
+box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
 height: calc(100% - var(--navbar-height));
 right: 0!important;
 
 z-index: 9;
 }
+
+[data-route^="Workspaces"] .page-container{
+
+box-shadow: none;
+
+}
+
 [data-route^="Form/"].page-container {
 position: absolute;
 width: var(--page-width);
