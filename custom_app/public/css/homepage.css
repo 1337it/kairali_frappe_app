@@ -2168,7 +2168,7 @@ width: 30px;
 top: 0px;
 left: 0px;
 z-index: 99999 !important;
-background: white;
+background: transparent;
 object-fit: cover;
 background-repeat: no-repeat;
 border: 0;
