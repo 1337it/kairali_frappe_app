@@ -3736,7 +3736,7 @@ height: 100vh!important;
 
 /* List Item */
 #global-sidebarList li{
- height:40px;
+ height:50px;
  border-bottom-style:none;
  border-bottom-width:0px;
 border-bottom: none!important;
@@ -3797,10 +3797,10 @@ background-color: var(--gray-100)!important;
 }
  
 #global-sidebarList a .icon-lg{
- margin-left:12px!important;
- margin-right:12px!important;
- width:24px!important;
- height:24px!important;
+margin-left: 12px!important;
+margin-right: 14px!important;
+width: 22px!important;
+height: 22px!important;
 }
 #global-sidebarList a .icon-lg{
 --icon-stroke: rgba(255, 246, 246, 1);
