@@ -748,7 +748,7 @@ color: var(--text-color);
 }
 .form-control {
 border:none!important;
-border-radius: 1px;
+border-radius: 20px;
 }
 .form-control {
   
