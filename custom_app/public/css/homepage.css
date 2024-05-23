@@ -2744,13 +2744,7 @@ transition: .5s top;
 /* Widget */
 .codex-editor .ce-block .ce-block__content div .widget{
   justify-content: flex-start;
-box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.01),
-      0 2px 2px hsl(0deg 0% 0% / 0.01),
-      0 4px 4px hsl(0deg 0% 0% / 0.01),
-      0 8px 8px hsl(0deg 0% 0% / 0.01),
-      0 16px 16px hsl(0deg 0% 0% / 0.01)
-    ;
+
 }
 
 /* Widget */
@@ -3276,16 +3270,6 @@ left: 0;
  background-color:transparent;
 }
 
-/* Widget */
-.codex-editor .ce-block .ce-block__content div .widget{
- box-shadow:
-      0 1px 1px hsl(0deg 0% 0% / 0.01),
-      0 2px 2px hsl(0deg 0% 0% / 0.01),
-      0 4px 4px hsl(0deg 0% 0% / 0.01),
-      0 8px 8px hsl(0deg 0% 0% / 0.01),
-      0 16px 16px hsl(0deg 0% 0% / 0.01)
-    ;
-}
 
 
 /* Body */
