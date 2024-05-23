@@ -2180,7 +2180,7 @@ object-fit: cover;
 background-repeat: no-repeat;
 border: 0;
 background-size: contain;
-color: rgb(55, 55, 55);
+color: var(--gray-300);
 /* filter: invert(1); */
 font-size: 18px;
 margin: 0px;
@@ -2249,7 +2249,7 @@ padding: 10px;
 height: 100%;
 z-index: 2001;
 overflow-y: auto;
-background-color: rgb(233, 233, 233);
+background-color: var(--gray-900);
 color: rgb(50, 49, 48);
 }
 
@@ -3803,8 +3803,8 @@ background-color: var(--gray-100)!important;
  height:24px!important;
 }
 #global-sidebarList a .icon-lg{
---icon-stroke: rgba(0, 0, 0, 1);
---icon-fill: rgba(255, 255, 255, 0);
+--icon-stroke: rgba(255, 246, 246, 1);
+--icon-fill: rgba(255, 255, 255, 0.07);
 stroke-width: 0.5px;
 }
 
@@ -3847,7 +3847,7 @@ flex-wrap:wrap;
  height:100vh;
 }
 #global-sidebar a {
-color: var(--gray-700);
+color: var(--gray-200);
 	padding: 5px 0px!important;
 }
 /* Global sidebar list */
