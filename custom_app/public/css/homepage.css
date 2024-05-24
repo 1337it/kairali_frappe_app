@@ -3938,8 +3938,7 @@ margin-bottom: 30px!important;
 }
 
 #global-sidebarList li a:hover {
-background-color: var(--gray-200)!important;
-	width:5px;
+background-color: var(--white-overlay-50)!important;
 }
 .list-row-head {
 height: 41px!important;
