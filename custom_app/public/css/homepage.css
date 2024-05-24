@@ -3698,73 +3698,73 @@ background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 
 }
 
 [data-route="Workspaces/Home"] [href="/app/home"] .icon-lg {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 
 }
 
 
 [data-route="Workspaces/Raven"] [href="/app/raven"] .icon-lg {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }
 [data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }
 [data-route="Workspaces/Recruitment"] [href="/app/recruitment"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }
 [data-route="Workspaces/ERPNext Settings"] [href="/app/erpnext-settings"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }
 [data-route="Workspaces/Build"] [href="/app/build"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }
 [data-route="Workspaces/ERPNext Integrations"] [href="/app/erpnext-integrations"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }
 [data-route="Workspaces/Payroll"] [href="/app/payroll"] .icon-lg {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Manufacturing"] [href="/app/manufacturing"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Quality"] [href="/app/quality"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/HR"] [href="/app/hr"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Support"] [href="/app/support"] .icon-lg {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Projects"] [href="/app/projects"] .icon-lg {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Assets"] [href="/app/assets"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Stock"] [href="/app/stock"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Accounting"] [href="/app/accounting"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Integrations"] [href="/app/integrations"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Users"] [href="/app/users"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Website"] [href="/app/website"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Buying"] [href="/app/buying"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/Selling"] [href="/app/selling"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;
 }	
 [data-route="Workspaces/CRM"] [href="/app/crm"] .icon-lg  {
---icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;}
+--icon-stroke: rgba(0, 0, 0, 0.99)!important; --icon-fill: rgba(255, 255, 255, 0.8)!important;}
 
 
 
