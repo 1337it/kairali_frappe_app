@@ -375,6 +375,13 @@ document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
+
+var formroute = frappe.get_route();
+	if(formroute[0] == 'Form')
+	{
+document.querySelector("[data-page-route = 'List/"+formroute[1]+"/List'] .page-head").addEventListener("click", frappe.set_route('List', formroute[1],'List'););
+    }
+
 }
 
 
