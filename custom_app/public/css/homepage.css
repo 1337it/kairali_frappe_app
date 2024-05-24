@@ -3634,67 +3634,67 @@ opacity: 1 !important;
 
 
 [data-route="Workspaces/Raven"] [href="/app/raven"] {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }
 [data-route="Workspaces/Helpdesk"] [href="/app/helpdesk"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }
 [data-route="Workspaces/Recruitment"] [href="/app/recruitment"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }
 [data-route="Workspaces/ERPNext Settings"] [href="/app/erpnext-settings"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }
 [data-route="Workspaces/Build"] [href="/app/build"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }
 [data-route="Workspaces/ERPNext Integrations"] [href="/app/erpnext-integrations"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }
 [data-route="Workspaces/Payroll"] [href="/app/payroll"] {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Manufacturing"] [href="/app/manufacturing"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Quality"] [href="/app/quality"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/HR"] [href="/app/hr"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Support"] [href="/app/support"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Projects"] [href="/app/projects"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Assets"] [href="/app/assets"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Stock"] [href="/app/stock"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Accounting"] [href="/app/accounting"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Integrations"] [href="/app/integrations"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Users"] [href="/app/users"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Website"] [href="/app/website"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Buying"] [href="/app/buying"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/Selling"] [href="/app/selling"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }	
 [data-route="Workspaces/CRM"] [href="/app/crm"]  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
+background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; 
 }
 
 [data-route="Workspaces/Home"] [href="/app/home"] .icon-lg {
@@ -3764,8 +3764,7 @@ background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 
 --icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;
 }	
 [data-route="Workspaces/CRM"] [href="/app/crm"] .icon-lg  {
-background: linear-gradient(to right, rgba(237, 28, 44, 1), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); --icon-fill: var(--white-overlay-200); /* filter: invert(); */ opacity: 1 !important; width: 3px!important;
-}
+--icon-stroke: rgba(108, 108, 108, 0.62)!important; --icon-fill: rgba(215, 215, 215, 1)!important;}
 
 
 
