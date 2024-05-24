@@ -376,10 +376,9 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
 
-var formroute = frappe.get_route();
-	if(formroute[0] == 'Form')
+	if(frappe.get_route()[0] == 'Form')
 	{
-document.querySelector("[data-page-route = 'List/"+formroute[1]+"/List'] .page-head").addEventListener("click", frappe.set_route('List', formroute[1],'List'));
+document.querySelector("[data-page-route = 'List/"+frappe.get_route()[1]+"/List'] .page-head").addEventListener("click", frappe.set_route('List', frappe.get_route()[1],'List'));
     }
 
 }
