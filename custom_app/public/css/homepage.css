@@ -1990,7 +1990,7 @@ text-align: center;
         left: 48px;
         position: fixed !important;
         top: var(--navbar-height);
-
+cursor:pointer;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .frappe-list .ellipsis {
 white-space: nowrap;
