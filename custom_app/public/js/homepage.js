@@ -380,9 +380,9 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton)
 };
 
 
-if(this.doctype)
+if(cur_frm.doctype)
 	{
-const listhead = document.querySelector("[data-page-route = 'List/"+this.doctype+"/List'] .page-head");
+const listhead = document.querySelector("[data-page-route = 'List/"+cur_frm.doctype+"/List'] .page-head");
 
 		const listclick = document.createAttribute("onclick");
 listhead.attributes.setNamedItem(listclick);
