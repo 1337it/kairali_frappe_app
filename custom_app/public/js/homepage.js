@@ -384,6 +384,16 @@ listhead.addEventListener("click", () => {
 });
 }
 
+};
+window.addEventListener('load', function(){
+if(frappe.get_route()[0] == 'Form')
+	{
+const listhead = document.querySelector("[data-page-route = 'List/"+frappe.get_route()[1]+"/List'] .page-head");
+listhead.addEventListener("click", () => {
+    frappe.set_route('List', frappe.get_route()[1],'List');
+});
 }
+};
+
 
 
