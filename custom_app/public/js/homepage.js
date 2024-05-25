@@ -376,15 +376,10 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
 
-if(frappe.get_route()[0] == 'Form')
-	{
-const listhead = document.querySelector("[data-page-route = 'List/"+frappe.get_route()[1]+"/List'] .page-head");
-listhead.addEventListener("click", () => {
-    frappe.set_route('List', frappe.get_route()[1],'List');
-});
-}
 
 };
+
+
 window.addEventListener('load', function(){
 if(frappe.get_route()[0] == 'Form')
 	{
@@ -393,7 +388,7 @@ listhead.addEventListener("click", () => {
     frappe.set_route('List', frappe.get_route()[1],'List');
 });
 }
-};
+});
 
 
 
