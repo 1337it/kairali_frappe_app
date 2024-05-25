@@ -375,20 +375,20 @@ document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
-
-
-};
-
-
-if(cur_frm.doctype)
+if(this.doctype)
 	{
-const listhead = document.querySelector("[data-page-route = 'List/"+cur_frm.doctype+"/List'] .page-head");
+const listhead = document.querySelector("[data-page-route = 'List/"+this.doctype+"/List'] .page-head");
 
 		const listclick = document.createAttribute("onclick");
 listhead.attributes.setNamedItem(listclick);
 listhead.attributes.onclick.value ="frappe.set_route('List', frappe.get_route()[1],'List');";
     
 }
+
+};
+
+
+
 
 
 
