@@ -380,7 +380,11 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton)
 };
 
 
-window.addEventListener('load', function(){
+frappe.ui.form.on("this.doctype", {
+
+	onload: function (frm) {
+console.log(frappe.get_route()[0]);
+
 if(frappe.get_route()[0] == 'Form')
 	{
 const listhead = document.querySelector("[data-page-route = 'List/"+frappe.get_route()[1]+"/List'] .page-head");
@@ -388,6 +392,7 @@ listhead.addEventListener("click", () => {
     frappe.set_route('List', frappe.get_route()[1],'List');
 });
 }
+	}
 });
 
 
