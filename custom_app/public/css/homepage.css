@@ -2011,7 +2011,7 @@ max-width: 100%;
 .page-container{
 width: calc(100vw - 48px);
 right: 0;
-box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
+box-shadow: 0 25.6px 500px 500px rgba(0, 0, 0, 0.05), 0 0 8px 0 rgba(0, 0, 0, 0.15);
 height: calc(100% - var(--navbar-height));
 right: 0!important;
 
