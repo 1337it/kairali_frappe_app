@@ -706,13 +706,15 @@ display: none;
 
 @keyframes css-8 {
 0% {
-    transform: translate3d(40px, 0px, 0px);
+    transform: translate3d(0px, 40px, 0px);
+	opacity:0.8;
     pointer-events: none;
 }
 
 100% {
     transform: translate3d(0px, 0px, 0px);
     pointer-events: auto;
+	opacity:1;
 }
 }
 
