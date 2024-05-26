@@ -711,7 +711,7 @@ display: none;
 0% {
     transform: translate3d(0px, 40px, 0px);
 	opacity:0.8;
-scale:0.9;
+scale:0.95;
 
     pointer-events: none;
 }
