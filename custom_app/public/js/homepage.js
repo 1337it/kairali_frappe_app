@@ -392,7 +392,11 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
 
 document.querySelector("#body").appendChild(formclose);
-
+      var parent = document.querySelectorAll(`[data-name="${cur_frm.docname}"]`)[0].parentNode;
+var selecteditem = parent.parentNode;
+const bg = document.createAttribute("style");
+selecteditem.attributes.setNamedItem(bg);
+selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
 };
 
 
