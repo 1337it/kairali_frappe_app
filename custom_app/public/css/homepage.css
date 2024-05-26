@@ -1,3 +1,8 @@
+.modal-backdrop
+{
+z-index:99999!important;
+}
+
 .formlist
 {
 	display:block!important;
@@ -1481,7 +1486,7 @@ background: transparent;
 	#formclose
 {display:none;}
 
-[data-route^='Form'] .editable-form.page-container #formclose {
+[data-route^='Form'] #formclose {
 z-index: 9999!important;
 position: absolute;
 top: 50px;
@@ -1490,6 +1495,8 @@ font-size: 24px;
 background: rgba(153, 153, 153, 0);
 border: 0;
 height: 40px;
+display:block;
+
 width: 40px;
 }
 
