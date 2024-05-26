@@ -1799,8 +1799,7 @@ position: absolute;
 z-index: 9998;
 height: calc(100% - var(--navbar-height));
         animation-name: css-0, css-8;
-    animation-duration: 0.367s;
-    animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+
     animation-fill-mode: both;
 right: 0!important;
 }
@@ -1890,6 +1889,9 @@ top:6px;
  padding-top:100px;
  padding-bottom:0px;
 	box-shadow: 0 25.6px 500px 500px rgba(0, 0, 0, 0.05), 0 0 40px 1px rgba(0, 0, 0, 0.30);
+animation-name: css-0, css-8; animation-duration: 0.367s; animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1); animation-fill-mode: both;
+
+	
 }
 [data-route^='Form'] .submitted-form .page-wrapper .layout-main-section-wrapper {
  margin-bottom:0px;
@@ -1899,6 +1901,11 @@ top:6px;
  padding-top:100px;
  padding-bottom:0px;
 	box-shadow: 0 25.6px 500px 500px rgba(0, 0, 0, 0.05), 0 0 40px 1px rgba(0, 0, 0, 0.30);
+animation-name: css-0, css-8; 
+	animation-duration: 0.367s; 
+	animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1); 
+	animation-fill-mode: both;
+
 }
 	
 .page-wrapper .layout-main-section-wrapper{
@@ -2662,7 +2669,6 @@ z-index: 9!important;
 position: fixed!important;
 top:var(--navbar-height);
 margin-bottom: 0px;
-transition: .5s top;
  width:100vw;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
@@ -2687,7 +2693,7 @@ position: sticky;
 top: 0!important;
 background: var(--bg-color);
 margin-bottom: 5px;
-transition: .5s top;
+
 }
 [data-page-route="Sales Invoice"] .page-head {
 z-index: 6;
@@ -2695,7 +2701,6 @@ position: sticky;
 top: 0!important;
 background: var(--bg-color);
 margin-bottom: 5px;
-transition: .5s top;
 }
 [data-page-route="Sales Order"] .page-head {
 z-index: 6;
@@ -2703,7 +2708,6 @@ position: sticky;
 top: 0!important;
 background: var(--bg-color);
 margin-bottom: 5px;
-transition: .5s top;
 }
 [data-page-route="Purchase Invoice"] .page-head {
 z-index: 6;
@@ -2711,7 +2715,6 @@ position: sticky;
 top: 0!important;
 background: var(--bg-color);
 margin-bottom: 5px;
-transition: .5s top;
 }
 [data-page-route="Purchase Order"] .page-head {
 z-index: 6;
@@ -2719,7 +2722,6 @@ position: sticky;
 top: 0!important;
 background: var(--bg-color);
 margin-bottom: 5px;
-transition: .5s top;
 }
 
 
