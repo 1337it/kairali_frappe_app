@@ -378,11 +378,7 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-   var parent = document.querySelectorAll(`[data-name="frappe.get_route()[2]"]`)[0].parentNode;
-var selecteditem = parent.parentNode;
-const bg2 = document.createAttribute("style");
-selecteditem.attributes.setNamedItem(bg2);
-selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
+
 
 
 
