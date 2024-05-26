@@ -1867,8 +1867,7 @@ width: calc(100vw - 0px);
         justify-content: flex-end;
         top: 10px;
         /* right: 0; */
-        width: auto;
-        /* left: 0; */
+left:0;
         right: 16.6667vw;
 }
   [data-route^="List/"] .page-head .justify-between .page-actions {
