@@ -1862,6 +1862,7 @@ top:6px;
      margin-left:0;
  padding-top:100px;
  padding-bottom:0px;
+	box-shadow: 0 25.6px 500px 500px rgba(0, 0, 0, 0.05), 0 0 8px 0 rgba(0, 0, 0, 0.15);
 }
 	
 .page-wrapper .layout-main-section-wrapper{
@@ -2011,12 +2012,11 @@ max-width: 100%;
 .page-container{
 width: calc(100vw - 48px);
 right: 0;
-box-shadow: 0 25.6px 500px 500px rgba(0, 0, 0, 0.05), 0 0 8px 0 rgba(0, 0, 0, 0.15);
+
 height: calc(100% - var(--navbar-height));
 right: 0!important;
 
 z-index: 9;
-	border-top: 3px solid rgba(0, 0, 0, 0.08);
 }
 
 [data-route^="Workspaces"] .page-container{
@@ -2117,7 +2117,7 @@ width: 16.667vw;
     order: 2;
    background:var(--gray-100);
 
-    z-index:9;
+    z-index:1;
 }
    [data-theme-mode="dark"] .page-wrapper .layout-side-section {
     background-size: cover;
@@ -2636,7 +2636,7 @@ z-index: 9 !important;
     position: absolute !important;
     top: 0 ;
     left: 0 ;
-    width: 100%;
+    width: 63.334vw;
 }
 
 
@@ -3344,8 +3344,8 @@ display: flex;
 text-align: center;
  }
 /* Content Division */
-#page-List\/Item\/List{
- background-color:rgb(255,255,255);
+[data-route^="Form/"] [data-page-route^="List/"].page-container {
+	z-index:1!important;
 }
 
 /* Level */
