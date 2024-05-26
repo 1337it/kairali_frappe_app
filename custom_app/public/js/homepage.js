@@ -384,7 +384,7 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
 
-document.querySelectorAll('[data-page-route*="List"] .page-head')[0].appendChild(listhead);
+document.querySelectorAll('[data-page-route*=List] .page-head')[0].prepend(listhead);
     
 
 };
