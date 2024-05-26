@@ -1814,7 +1814,7 @@ display: block;
 width: 80vw;
 position: absolute;
 /* background-color: var(--bg-color); */
-z-index: 99;
+z-index: 9998;
 height: calc(100% - var(--navbar-height));
         animation-name: css-0, css-8;
     animation-duration: 0.367s;
