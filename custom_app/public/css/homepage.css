@@ -5770,6 +5770,1019 @@ padding-top: 45px!important;
 --icon-fill: rgba(255, 255, 255, 0.8)!important; }
 
 
-
+[data-route^="Form/Recorder Suggested Index"] [data-page-route="List/Recorder Suggested Index/List"].page-container { display: block!important; }
+[data-route^="Form/OAuth Client Role"] [data-page-route="List/OAuth Client Role/List"].page-container { display: block!important; }
+[data-route^="Form/System Health Report Failing Jobs"] [data-page-route="List/System Health Report Failing Jobs/List"].page-container { display: block!important; }
+[data-route^="Form/System Health Report Errors"] [data-page-route="List/System Health Report Errors/List"].page-container { display: block!important; }
+[data-route^="Form/System Health Report Queue"] [data-page-route="List/System Health Report Queue/List"].page-container { display: block!important; }
+[data-route^="Form/System Health Report Tables"] [data-page-route="List/System Health Report Tables/List"].page-container { display: block!important; }
+[data-route^="Form/System Health Report Workers"] [data-page-route="List/System Health Report Workers/List"].page-container { display: block!important; }
+[data-route^="Form/System Health Report"] [data-page-route="List/System Health Report/List"].page-container { display: block!important; }
+[data-route^="Form/Multi Item"] [data-page-route="List/Multi Item/List"].page-container { display: block!important; }
+[data-route^="Form/Ledger Health Monitor Company"] [data-page-route="List/Ledger Health Monitor Company/List"].page-container { display: block!important; }
+[data-route^="Form/Ledger Health Monitor"] [data-page-route="List/Ledger Health Monitor/List"].page-container { display: block!important; }
+[data-route^="Form/Ledger Health"] [data-page-route="List/Ledger Health/List"].page-container { display: block!important; }
+[data-route^="Form/Shift Assignment Tool"] [data-page-route="List/Shift Assignment Tool/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Ledger Entry Child"] [data-page-route="List/Stock Ledger Entry Child/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Movement Child"] [data-page-route="List/Stock Movement Child/List"].page-container { display: block!important; }
+[data-route^="Form/TEST4"] [data-page-route="List/TEST4/List"].page-container { display: block!important; }
+[data-route^="Form/test45"] [data-page-route="List/test45/List"].page-container { display: block!important; }
+[data-route^="Form/Item Price Child"] [data-page-route="List/Item Price Child/List"].page-container { display: block!important; }
+[data-route^="Form/Item Price Table"] [data-page-route="List/Item Price Table/List"].page-container { display: block!important; }
+[data-route^="Form/Custom Field"] [data-page-route="List/Custom Field/List"].page-container { display: block!important; }
+[data-route^="Form/Transaction Deletion Record Details"] [data-page-route="List/Transaction Deletion Record Details/List"].page-container { display: block!important; }
+[data-route^="Form/Bulk Salary Structure Assignment"] [data-page-route="List/Bulk Salary Structure Assignment/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Query Result"] [data-page-route="List/Insights Query Result/List"].page-container { display: block!important; }
+[data-route^="Form/Push Notification Settings"] [data-page-route="List/Push Notification Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Permission Inspector"] [data-page-route="List/Permission Inspector/List"].page-container { display: block!important; }
+[data-route^="Form/Raven Settings"] [data-page-route="List/Raven Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Shift Factor"] [data-page-route="List/Asset Shift Factor/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Shift Allocation"] [data-page-route="List/Asset Shift Allocation/List"].page-container { display: block!important; }
+[data-route^="Form/Job Offer Term Template"] [data-page-route="List/Job Offer Term Template/List"].page-container { display: block!important; }
+[data-route^="Form/Bulk Transaction Log"] [data-page-route="List/Bulk Transaction Log/List"].page-container { display: block!important; }
+[data-route^="Form/Repost Allowed Types"] [data-page-route="List/Repost Allowed Types/List"].page-container { display: block!important; }
+[data-route^="Form/Repost Accounting Ledger Settings"] [data-page-route="List/Repost Accounting Ledger Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Price Lookup Settings"] [data-page-route="List/Price Lookup Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Drive Instance Settings"] [data-page-route="List/Drive Instance Settings/List"].page-container { display: block!important; }
+[data-route^="Form/HD Ticket"] [data-page-route="List/HD Ticket/List"].page-container { display: block!important; }
+[data-route^="Form/Support Ticket Details"] [data-page-route="List/Support Ticket Details/List"].page-container { display: block!important; }
+[data-route^="Form/Genie Settings"] [data-page-route="List/Genie Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Plant Floor"] [data-page-route="List/Plant Floor/List"].page-container { display: block!important; }
+[data-route^="Form/Drive Entity Log"] [data-page-route="List/Drive Entity Log/List"].page-container { display: block!important; }
+[data-route^="Form/Bisect Nodes"] [data-page-route="List/Bisect Nodes/List"].page-container { display: block!important; }
+[data-route^="Form/Process Subscription"] [data-page-route="List/Process Subscription/List"].page-container { display: block!important; }
+[data-route^="Form/Bisect Accounting Statements"] [data-page-route="List/Bisect Accounting Statements/List"].page-container { display: block!important; }
+[data-route^="Form/Kard Workspace Menu"] [data-page-route="List/Kard Workspace Menu/List"].page-container { display: block!important; }
+[data-route^="Form/Raven User"] [data-page-route="List/Raven User/List"].page-container { display: block!important; }
+[data-route^="Form/Kard Pinned Entry"] [data-page-route="List/Kard Pinned Entry/List"].page-container { display: block!important; }
+[data-route^="Form/HD Notification"] [data-page-route="List/HD Notification/List"].page-container { display: block!important; }
+[data-route^="Form/HD Action"] [data-page-route="List/HD Action/List"].page-container { display: block!important; }
+[data-route^="Form/PWA Notification"] [data-page-route="List/PWA Notification/List"].page-container { display: block!important; }
+[data-route^="Form/Subcontracting BOM"] [data-page-route="List/Subcontracting BOM/List"].page-container { display: block!important; }
+[data-route^="Form/Drive DocShare"] [data-page-route="List/Drive DocShare/List"].page-container { display: block!important; }
+[data-route^="Form/HD Service Level Agreement"] [data-page-route="List/HD Service Level Agreement/List"].page-container { display: block!important; }
+[data-route^="Form/Unreconcile Payment Entries"] [data-page-route="List/Unreconcile Payment Entries/List"].page-container { display: block!important; }
+[data-route^="Form/Unreconcile Payment"] [data-page-route="List/Unreconcile Payment/List"].page-container { display: block!important; }
+[data-route^="Form/Audit Trail"] [data-page-route="List/Audit Trail/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Query Variable"] [data-page-route="List/Insights Query Variable/List"].page-container { display: block!important; }
+[data-route^="Form/Serial and Batch Bundle"] [data-page-route="List/Serial and Batch Bundle/List"].page-container { display: block!important; }
+[data-route^="Form/HD Ticket Feedback Option"] [data-page-route="List/HD Ticket Feedback Option/List"].page-container { display: block!important; }
+[data-route^="Form/Vehicle Service Item"] [data-page-route="List/Vehicle Service Item/List"].page-container { display: block!important; }
+[data-route^="Form/HD Ticket Template Field"] [data-page-route="List/HD Ticket Template Field/List"].page-container { display: block!important; }
+[data-route^="Form/Recorder Query"] [data-page-route="List/Recorder Query/List"].page-container { display: block!important; }
+[data-route^="Form/Recorder"] [data-page-route="List/Recorder/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Activity"] [data-page-route="List/Asset Activity/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Creator"] [data-page-route="List/BOM Creator/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Creator Item"] [data-page-route="List/BOM Creator Item/List"].page-container { display: block!important; }
+[data-route^="Form/Repost Accounting Ledger Items"] [data-page-route="List/Repost Accounting Ledger Items/List"].page-container { display: block!important; }
+[data-route^="Form/Repost Accounting Ledger"] [data-page-route="List/Repost Accounting Ledger/List"].page-container { display: block!important; }
+[data-route^="Form/Portal User"] [data-page-route="List/Portal User/List"].page-container { display: block!important; }
+[data-route^="Form/HD Escalation Rule"] [data-page-route="List/HD Escalation Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Amended Document Naming Settings"] [data-page-route="List/Amended Document Naming Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Job Card Scheduled Time"] [data-page-route="List/Job Card Scheduled Time/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Reservation Entry"] [data-page-route="List/Stock Reservation Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Warehouse"] [data-page-route="List/Warehouse/List"].page-container { display: block!important; }
+[data-route^="Form/Workspace Custom Block"] [data-page-route="List/Workspace Custom Block/List"].page-container { display: block!important; }
+[data-route^="Form/Custom HTML Block"] [data-page-route="List/Custom HTML Block/List"].page-container { display: block!important; }
+[data-route^="Form/Closing Stock Balance"] [data-page-route="List/Closing Stock Balance/List"].page-container { display: block!important; }
+[data-route^="Form/Changelog Feed"] [data-page-route="List/Changelog Feed/List"].page-container { display: block!important; }
+[data-route^="Form/Raven Message Reaction"] [data-page-route="List/Raven Message Reaction/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Notebook Page"] [data-page-route="List/Insights Notebook Page/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Notebook"] [data-page-route="List/Insights Notebook/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Chart"] [data-page-route="List/Insights Chart/List"].page-container { display: block!important; }
+[data-route^="Form/Drive Document"] [data-page-route="List/Drive Document/List"].page-container { display: block!important; }
+[data-route^="Form/Alerts Settings"] [data-page-route="List/Alerts Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Alerts Update Receiver"] [data-page-route="List/Alerts Update Receiver/List"].page-container { display: block!important; }
+[data-route^="Form/Process Payment Reconciliation"] [data-page-route="List/Process Payment Reconciliation/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Alert"] [data-page-route="List/Insights Alert/List"].page-container { display: block!important; }
+[data-route^="Form/RQ Job"] [data-page-route="List/RQ Job/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Query Execution Log"] [data-page-route="List/Insights Query Execution Log/List"].page-container { display: block!important; }
+[data-route^="Form/Marketing Campaign"] [data-page-route="List/Marketing Campaign/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Feedback Criteria"] [data-page-route="List/Employee Feedback Criteria/List"].page-container { display: block!important; }
+[data-route^="Form/Process Payment Reconciliation Log"] [data-page-route="List/Process Payment Reconciliation Log/List"].page-container { display: block!important; }
+[data-route^="Form/Process Payment Reconciliation Log Allocations"] [data-page-route="List/Process Payment Reconciliation Log Allocations/List"].page-container { display: block!important; }
+[data-route^="Form/Drive Entity Tag"] [data-page-route="List/Drive Entity Tag/List"].page-container { display: block!important; }
+[data-route^="Form/Drive Tag"] [data-page-route="List/Drive Tag/List"].page-container { display: block!important; }
+[data-route^="Form/Reminder"] [data-page-route="List/Reminder/List"].page-container { display: block!important; }
+[data-route^="Form/Account Closing Balance"] [data-page-route="List/Account Closing Balance/List"].page-container { display: block!important; }
+[data-route^="Form/Workspace Number Card"] [data-page-route="List/Workspace Number Card/List"].page-container { display: block!important; }
+[data-route^="Form/Raven Channel Member"] [data-page-route="List/Raven Channel Member/List"].page-container { display: block!important; }
+[data-route^="Form/Raven Channel"] [data-page-route="List/Raven Channel/List"].page-container { display: block!important; }
+[data-route^="Form/Raven Message"] [data-page-route="List/Raven Message/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Team"] [data-page-route="List/Insights Team/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Team Member"] [data-page-route="List/Insights Team Member/List"].page-container { display: block!important; }
+[data-route^="Form/HD Team Member"] [data-page-route="List/HD Team Member/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Resource Permission"] [data-page-route="List/Insights Resource Permission/List"].page-container { display: block!important; }
+[data-route^="Form/HD Customer"] [data-page-route="List/HD Customer/List"].page-container { display: block!important; }
+[data-route^="Form/Drive Favourite"] [data-page-route="List/Drive Favourite/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Query Transform"] [data-page-route="List/Insights Query Transform/List"].page-container { display: block!important; }
+[data-route^="Form/Incoterm"] [data-page-route="List/Incoterm/List"].page-container { display: block!important; }
+[data-route^="Form/HD Preset Filter Item"] [data-page-route="List/HD Preset Filter Item/List"].page-container { display: block!important; }
+[data-route^="Form/HD Preset Filter"] [data-page-route="List/HD Preset Filter/List"].page-container { display: block!important; }
+[data-route^="Form/HD Team Item"] [data-page-route="List/HD Team Item/List"].page-container { display: block!important; }
+[data-route^="Form/Workstation Type"] [data-page-route="List/Workstation Type/List"].page-container { display: block!important; }
+[data-route^="Form/HD Canned Response"] [data-page-route="List/HD Canned Response/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Depreciation Schedule"] [data-page-route="List/Asset Depreciation Schedule/List"].page-container { display: block!important; }
+[data-route^="Form/WhatsApp Message Fields"] [data-page-route="List/WhatsApp Message Fields/List"].page-container { display: block!important; }
+[data-route^="Form/WhatsApp Templates"] [data-page-route="List/WhatsApp Templates/List"].page-container { display: block!important; }
+[data-route^="Form/WhatsApp Notification Log"] [data-page-route="List/WhatsApp Notification Log/List"].page-container { display: block!important; }
+[data-route^="Form/WhatsApp Notification"] [data-page-route="List/WhatsApp Notification/List"].page-container { display: block!important; }
+[data-route^="Form/WhatsApp Message"] [data-page-route="List/WhatsApp Message/List"].page-container { display: block!important; }
+[data-route^="Form/WhatsApp Settings"] [data-page-route="List/WhatsApp Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Repost Payment Ledger Items"] [data-page-route="List/Repost Payment Ledger Items/List"].page-container { display: block!important; }
+[data-route^="Form/Repost Payment Ledger"] [data-page-route="List/Repost Payment Ledger/List"].page-container { display: block!important; }
+[data-route^="Form/HD Article Feedback"] [data-page-route="List/HD Article Feedback/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Table Import"] [data-page-route="List/Insights Table Import/List"].page-container { display: block!important; }
+[data-route^="Form/Submission Queue"] [data-page-route="List/Submission Queue/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Table Column"] [data-page-route="List/Insights Table Column/List"].page-container { display: block!important; }
+[data-route^="Form/Serial and Batch Entry"] [data-page-route="List/Serial and Batch Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Tax Withheld Vouchers"] [data-page-route="List/Tax Withheld Vouchers/List"].page-container { display: block!important; }
+[data-route^="Form/RQ Worker"] [data-page-route="List/RQ Worker/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Performance Feedback"] [data-page-route="List/Employee Performance Feedback/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Feedback Rating"] [data-page-route="List/Employee Feedback Rating/List"].page-container { display: block!important; }
+[data-route^="Form/Job Requisition"] [data-page-route="List/Job Requisition/List"].page-container { display: block!important; }
+[data-route^="Form/Appraisal KRA"] [data-page-route="List/Appraisal KRA/List"].page-container { display: block!important; }
+[data-route^="Form/Appraisal"] [data-page-route="List/Appraisal/List"].page-container { display: block!important; }
+[data-route^="Form/HD Ticket Comment"] [data-page-route="List/HD Ticket Comment/List"].page-container { display: block!important; }
+[data-route^="Form/Appraisee"] [data-page-route="List/Appraisee/List"].page-container { display: block!important; }
+[data-route^="Form/KRA"] [data-page-route="List/KRA/List"].page-container { display: block!important; }
+[data-route^="Form/Goal"] [data-page-route="List/Goal/List"].page-container { display: block!important; }
+[data-route^="Form/Appraisal Cycle"] [data-page-route="List/Appraisal Cycle/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Dashboard"] [data-page-route="List/Insights Dashboard/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Dashboard Item"] [data-page-route="List/Insights Dashboard Item/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Query Chart"] [data-page-route="List/Insights Query Chart/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Settings"] [data-page-route="List/Insights Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Web Form List Column"] [data-page-route="List/Web Form List Column/List"].page-container { display: block!important; }
+[data-route^="Form/Inventory Dimension"] [data-page-route="List/Inventory Dimension/List"].page-container { display: block!important; }
+[data-route^="Form/Logs To Clear"] [data-page-route="List/Logs To Clear/List"].page-container { display: block!important; }
+[data-route^="Form/CRM Note"] [data-page-route="List/CRM Note/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Update Batch"] [data-page-route="List/BOM Update Batch/List"].page-container { display: block!important; }
+[data-route^="Form/Document Naming Settings"] [data-page-route="List/Document Naming Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Table"] [data-page-route="List/Insights Table/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Table Link"] [data-page-route="List/Insights Table Link/List"].page-container { display: block!important; }
+[data-route^="Form/HR Addon Settings"] [data-page-route="List/HR Addon Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Workspace Quick List"] [data-page-route="List/Workspace Quick List/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Ledger Entry"] [data-page-route="List/Payment Ledger Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Checkins"] [data-page-route="List/Employee Checkins/List"].page-container { display: block!important; }
+[data-route^="Form/Workday"] [data-page-route="List/Workday/List"].page-container { display: block!important; }
+[data-route^="Form/Daily Hours Detail"] [data-page-route="List/Daily Hours Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Weekly Working Hours"] [data-page-route="List/Weekly Working Hours/List"].page-container { display: block!important; }
+[data-route^="Form/Prospect Opportunity"] [data-page-route="List/Prospect Opportunity/List"].page-container { display: block!important; }
+[data-route^="Form/Subcontracting Receipt"] [data-page-route="List/Subcontracting Receipt/List"].page-container { display: block!important; }
+[data-route^="Form/Subcontracting Receipt Supplied Item"] [data-page-route="List/Subcontracting Receipt Supplied Item/List"].page-container { display: block!important; }
+[data-route^="Form/Subcontracting Receipt Item"] [data-page-route="List/Subcontracting Receipt Item/List"].page-container { display: block!important; }
+[data-route^="Form/HD Desk Account Request"] [data-page-route="List/HD Desk Account Request/List"].page-container { display: block!important; }
+[data-route^="Form/HD Portal Signup Request"] [data-page-route="List/HD Portal Signup Request/List"].page-container { display: block!important; }
+[data-route^="Form/Alert"] [data-page-route="List/Alert/List"].page-container { display: block!important; }
+[data-route^="Form/Alert Type"] [data-page-route="List/Alert Type/List"].page-container { display: block!important; }
+[data-route^="Form/Alert Seen By"] [data-page-route="List/Alert Seen By/List"].page-container { display: block!important; }
+[data-route^="Form/Alert For Role"] [data-page-route="List/Alert For Role/List"].page-container { display: block!important; }
+[data-route^="Form/Alert For User"] [data-page-route="List/Alert For User/List"].page-container { display: block!important; }
+[data-route^="Form/Subcontracting Order"] [data-page-route="List/Subcontracting Order/List"].page-container { display: block!important; }
+[data-route^="Form/Subcontracting Order Supplied Item"] [data-page-route="List/Subcontracting Order Supplied Item/List"].page-container { display: block!important; }
+[data-route^="Form/Subcontracting Order Item"] [data-page-route="List/Subcontracting Order Item/List"].page-container { display: block!important; }
+[data-route^="Form/Subcontracting Order Service Item"] [data-page-route="List/Subcontracting Order Service Item/List"].page-container { display: block!important; }
+[data-route^="Form/Integration Request"] [data-page-route="List/Integration Request/List"].page-container { display: block!important; }
+[data-route^="Form/HD Organization"] [data-page-route="List/HD Organization/List"].page-container { display: block!important; }
+[data-route^="Form/HD Organization Contact Item"] [data-page-route="List/HD Organization Contact Item/List"].page-container { display: block!important; }
+[data-route^="Form/HD Ticket Activity"] [data-page-route="List/HD Ticket Activity/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Update Log"] [data-page-route="List/BOM Update Log/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Query Table"] [data-page-route="List/Insights Query Table/List"].page-container { display: block!important; }
+[data-route^="Form/Telephony Call Type"] [data-page-route="List/Telephony Call Type/List"].page-container { display: block!important; }
+[data-route^="Form/HD Ticket Template"] [data-page-route="List/HD Ticket Template/List"].page-container { display: block!important; }
+[data-route^="Form/HD Agent"] [data-page-route="List/HD Agent/List"].page-container { display: block!important; }
+[data-route^="Form/HD Team"] [data-page-route="List/HD Team/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Data Source"] [data-page-route="List/Insights Data Source/List"].page-container { display: block!important; }
+[data-route^="Form/Workflow Action Permitted Role"] [data-page-route="List/Workflow Action Permitted Role/List"].page-container { display: block!important; }
+[data-route^="Form/Call Log"] [data-page-route="List/Call Log/List"].page-container { display: block!important; }
+[data-route^="Form/Employee"] [data-page-route="List/Employee/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Query Column"] [data-page-route="List/Insights Query Column/List"].page-container { display: block!important; }
+[data-route^="Form/Item Barcode"] [data-page-route="List/Item Barcode/List"].page-container { display: block!important; }
+[data-route^="Form/Variant Field"] [data-page-route="List/Variant Field/List"].page-container { display: block!important; }
+[data-route^="Form/HD Article Sub Category Item"] [data-page-route="List/HD Article Sub Category Item/List"].page-container { display: block!important; }
+[data-route^="Form/HD Ticket Priority"] [data-page-route="List/HD Ticket Priority/List"].page-container { display: block!important; }
+[data-route^="Form/HD Article"] [data-page-route="List/HD Article/List"].page-container { display: block!important; }
+[data-route^="Form/HD Ticket Type"] [data-page-route="List/HD Ticket Type/List"].page-container { display: block!important; }
+[data-route^="Form/HD Article Category"] [data-page-route="List/HD Article Category/List"].page-container { display: block!important; }
+[data-route^="Form/Lead"] [data-page-route="List/Lead/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Entry Detail"] [data-page-route="List/Stock Entry Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Insights Query"] [data-page-route="List/Insights Query/List"].page-container { display: block!important; }
+[data-route^="Form/Gratuity"] [data-page-route="List/Gratuity/List"].page-container { display: block!important; }
+[data-route^="Form/Training Feedback"] [data-page-route="List/Training Feedback/List"].page-container { display: block!important; }
+[data-route^="Form/Journal Entry"] [data-page-route="List/Journal Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Invoice"] [data-page-route="List/Sales Invoice/List"].page-container { display: block!important; }
+[data-route^="Form/Company"] [data-page-route="List/Company/List"].page-container { display: block!important; }
+[data-route^="Form/Tax Category"] [data-page-route="List/Tax Category/List"].page-container { display: block!important; }
+[data-route^="Form/Item Tax Template"] [data-page-route="List/Item Tax Template/List"].page-container { display: block!important; }
+[data-route^="Form/Asset"] [data-page-route="List/Asset/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Advance"] [data-page-route="List/Employee Advance/List"].page-container { display: block!important; }
+[data-route^="Form/Document Share Key"] [data-page-route="List/Document Share Key/List"].page-container { display: block!important; }
+[data-route^="Form/Cost Center Allocation Percentage"] [data-page-route="List/Cost Center Allocation Percentage/List"].page-container { display: block!important; }
+[data-route^="Form/Cost Center Allocation"] [data-page-route="List/Cost Center Allocation/List"].page-container { display: block!important; }
+[data-route^="Form/Repost Item Valuation"] [data-page-route="List/Repost Item Valuation/List"].page-container { display: block!important; }
+[data-route^="Form/User"] [data-page-route="List/User/List"].page-container { display: block!important; }
+[data-route^="Form/Currency Exchange Settings"] [data-page-route="List/Currency Exchange Settings/List"].page-container { display: block!important; }
+[data-route^="Form/System Settings"] [data-page-route="List/System Settings/List"].page-container { display: block!important; }
+[data-route^="Form/HD Article Item"] [data-page-route="List/HD Article Item/List"].page-container { display: block!important; }
+[data-route^="Form/Drive Entity"] [data-page-route="List/Drive Entity/List"].page-container { display: block!important; }
+[data-route^="Form/Data Import Log"] [data-page-route="List/Data Import Log/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Cost Center"] [data-page-route="List/Employee Cost Center/List"].page-container { display: block!important; }
+[data-route^="Form/HD Service Holiday List"] [data-page-route="List/HD Service Holiday List/List"].page-container { display: block!important; }
+[data-route^="Form/HD Holiday"] [data-page-route="List/HD Holiday/List"].page-container { display: block!important; }
+[data-route^="Form/Ledger Merge Accounts"] [data-page-route="List/Ledger Merge Accounts/List"].page-container { display: block!important; }
+[data-route^="Form/Ledger Merge"] [data-page-route="List/Ledger Merge/List"].page-container { display: block!important; }
+[data-route^="Form/Newsletter Attachment"] [data-page-route="List/Newsletter Attachment/List"].page-container { display: block!important; }
+[data-route^="Form/Exit Interview"] [data-page-route="List/Exit Interview/List"].page-container { display: block!important; }
+[data-route^="Form/Bulk Transaction Log Detail"] [data-page-route="List/Bulk Transaction Log Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Advance Tax"] [data-page-route="List/Advance Tax/List"].page-container { display: block!important; }
+[data-route^="Form/Competitor Detail"] [data-page-route="List/Competitor Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Competitor"] [data-page-route="List/Competitor/List"].page-container { display: block!important; }
+[data-route^="Form/Print Format Field Template"] [data-page-route="List/Print Format Field Template/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Reposting Settings"] [data-page-route="List/Stock Reposting Settings/List"].page-container { display: block!important; }
+[data-route^="Form/IMAP Folder"] [data-page-route="List/IMAP Folder/List"].page-container { display: block!important; }
+[data-route^="Form/Network Printer Settings"] [data-page-route="List/Network Printer Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Overdue Payment"] [data-page-route="List/Overdue Payment/List"].page-container { display: block!important; }
+[data-route^="Form/Job Card Scrap Item"] [data-page-route="List/Job Card Scrap Item/List"].page-container { display: block!important; }
+[data-route^="Form/CRM Settings"] [data-page-route="List/CRM Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Capitalization Service Item"] [data-page-route="List/Asset Capitalization Service Item/List"].page-container { display: block!important; }
+[data-route^="Form/Package Import"] [data-page-route="List/Package Import/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Capitalization Asset Item"] [data-page-route="List/Asset Capitalization Asset Item/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Capitalization Stock Item"] [data-page-route="List/Asset Capitalization Stock Item/List"].page-container { display: block!important; }
+[data-route^="Form/Package Release"] [data-page-route="List/Package Release/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Capitalization"] [data-page-route="List/Asset Capitalization/List"].page-container { display: block!important; }
+[data-route^="Form/Package"] [data-page-route="List/Package/List"].page-container { display: block!important; }
+[data-route^="Form/Currency Exchange Settings Result"] [data-page-route="List/Currency Exchange Settings Result/List"].page-container { display: block!important; }
+[data-route^="Form/Currency Exchange Settings Details"] [data-page-route="List/Currency Exchange Settings Details/List"].page-container { display: block!important; }
+[data-route^="Form/Party Specific Item"] [data-page-route="List/Party Specific Item/List"].page-container { display: block!important; }
+[data-route^="Form/DocType State"] [data-page-route="List/DocType State/List"].page-container { display: block!important; }
+[data-route^="Form/Prospect"] [data-page-route="List/Prospect/List"].page-container { display: block!important; }
+[data-route^="Form/Prospect Lead"] [data-page-route="List/Prospect Lead/List"].page-container { display: block!important; }
+[data-route^="Form/Party Link"] [data-page-route="List/Party Link/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Reconciliation Allocation"] [data-page-route="List/Payment Reconciliation Allocation/List"].page-container { display: block!important; }
+[data-route^="Form/Discussion Reply"] [data-page-route="List/Discussion Reply/List"].page-container { display: block!important; }
+[data-route^="Form/Discussion Topic"] [data-page-route="List/Discussion Topic/List"].page-container { display: block!important; }
+[data-route^="Form/South Africa VAT Settings"] [data-page-route="List/South Africa VAT Settings/List"].page-container { display: block!important; }
+[data-route^="Form/South Africa VAT Account"] [data-page-route="List/South Africa VAT Account/List"].page-container { display: block!important; }
+[data-route^="Form/Full and Final Asset"] [data-page-route="List/Full and Final Asset/List"].page-container { display: block!important; }
+[data-route^="Form/Full and Final Outstanding Statement"] [data-page-route="List/Full and Final Outstanding Statement/List"].page-container { display: block!important; }
+[data-route^="Form/Full and Final Statement"] [data-page-route="List/Full and Final Statement/List"].page-container { display: block!important; }
+[data-route^="Form/SLA Fulfilled On Status"] [data-page-route="List/SLA Fulfilled On Status/List"].page-container { display: block!important; }
+[data-route^="Form/HD Service Level Agreement Fulfilled On Status"] [data-page-route="List/HD Service Level Agreement Fulfilled On Status/List"].page-container { display: block!important; }
+[data-route^="Form/Webhook Request Log"] [data-page-route="List/Webhook Request Log/List"].page-container { display: block!important; }
+[data-route^="Form/Form Tour Step"] [data-page-route="List/Form Tour Step/List"].page-container { display: block!important; }
+[data-route^="Form/Form Tour"] [data-page-route="List/Form Tour/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Repair Consumed Item"] [data-page-route="List/Asset Repair Consumed Item/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Grievance"] [data-page-route="List/Employee Grievance/List"].page-container { display: block!important; }
+[data-route^="Form/Grievance Type"] [data-page-route="List/Grievance Type/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Group Item"] [data-page-route="List/Supplier Group Item/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Item"] [data-page-route="List/Supplier Item/List"].page-container { display: block!important; }
+[data-route^="Form/Campaign Item"] [data-page-route="List/Campaign Item/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Partner Item"] [data-page-route="List/Sales Partner Item/List"].page-container { display: block!important; }
+[data-route^="Form/Territory Item"] [data-page-route="List/Territory Item/List"].page-container { display: block!important; }
+[data-route^="Form/Customer Group Item"] [data-page-route="List/Customer Group Item/List"].page-container { display: block!important; }
+[data-route^="Form/Customer Item"] [data-page-route="List/Customer Item/List"].page-container { display: block!important; }
+[data-route^="Form/Personal Data Deletion Step"] [data-page-route="List/Personal Data Deletion Step/List"].page-container { display: block!important; }
+[data-route^="Form/Production Plan Item Reference"] [data-page-route="List/Production Plan Item Reference/List"].page-container { display: block!important; }
+[data-route^="Form/Whitelabel Setting"] [data-page-route="List/Whitelabel Setting/List"].page-container { display: block!important; }
+[data-route^="Form/POS Search Fields"] [data-page-route="List/POS Search Fields/List"].page-container { display: block!important; }
+[data-route^="Form/Interviewer"] [data-page-route="List/Interviewer/List"].page-container { display: block!important; }
+[data-route^="Form/Skill Assessment"] [data-page-route="List/Skill Assessment/List"].page-container { display: block!important; }
+[data-route^="Form/Interview Feedback"] [data-page-route="List/Interview Feedback/List"].page-container { display: block!important; }
+[data-route^="Form/Interview Detail"] [data-page-route="List/Interview Detail/List"].page-container { display: block!important; }
+[data-route^="Form/User Group"] [data-page-route="List/User Group/List"].page-container { display: block!important; }
+[data-route^="Form/User Group Member"] [data-page-route="List/User Group Member/List"].page-container { display: block!important; }
+[data-route^="Form/Interview"] [data-page-route="List/Interview/List"].page-container { display: block!important; }
+[data-route^="Form/Interview Type"] [data-page-route="List/Interview Type/List"].page-container { display: block!important; }
+[data-route^="Form/Expected Skill Set"] [data-page-route="List/Expected Skill Set/List"].page-container { display: block!important; }
+[data-route^="Form/Interview Round"] [data-page-route="List/Interview Round/List"].page-container { display: block!important; }
+[data-route^="Form/Transaction Deletion Record Item"] [data-page-route="List/Transaction Deletion Record Item/List"].page-container { display: block!important; }
+[data-route^="Form/Transaction Deletion Record"] [data-page-route="List/Transaction Deletion Record/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Referral"] [data-page-route="List/Employee Referral/List"].page-container { display: block!important; }
+[data-route^="Form/Salary Slip Leave"] [data-page-route="List/Salary Slip Leave/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Inspection Parameter Group"] [data-page-route="List/Quality Inspection Parameter Group/List"].page-container { display: block!important; }
+[data-route^="Form/User Type Module"] [data-page-route="List/User Type Module/List"].page-container { display: block!important; }
+[data-route^="Form/User Select Document Type"] [data-page-route="List/User Select Document Type/List"].page-container { display: block!important; }
+[data-route^="Form/User Document Type"] [data-page-route="List/User Document Type/List"].page-container { display: block!important; }
+[data-route^="Form/User Type"] [data-page-route="List/User Type/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Inspection Parameter"] [data-page-route="List/Quality Inspection Parameter/List"].page-container { display: block!important; }
+[data-route^="Form/Production Plan Sub Assembly Item"] [data-page-route="List/Production Plan Sub Assembly Item/List"].page-container { display: block!important; }
+[data-route^="Form/Module Profile"] [data-page-route="List/Module Profile/List"].page-container { display: block!important; }
+[data-route^="Form/Voice Call Settings"] [data-page-route="List/Voice Call Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Job Card Operation"] [data-page-route="List/Job Card Operation/List"].page-container { display: block!important; }
+[data-route^="Form/Sub Operation"] [data-page-route="List/Sub Operation/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Reconciliation Tool"] [data-page-route="List/Bank Reconciliation Tool/List"].page-container { display: block!important; }
+[data-route^="Form/Incoming Call Handling Schedule"] [data-page-route="List/Incoming Call Handling Schedule/List"].page-container { display: block!important; }
+[data-route^="Form/Incoming Call Settings"] [data-page-route="List/Incoming Call Settings/List"].page-container { display: block!important; }
+[data-route^="Form/DocType Layout"] [data-page-route="List/DocType Layout/List"].page-container { display: block!important; }
+[data-route^="Form/DocType Layout Field"] [data-page-route="List/DocType Layout Field/List"].page-container { display: block!important; }
+[data-route^="Form/Workspace Link"] [data-page-route="List/Workspace Link/List"].page-container { display: block!important; }
+[data-route^="Form/Query Parameters"] [data-page-route="List/Query Parameters/List"].page-container { display: block!important; }
+[data-route^="Form/Auto Repeat Day"] [data-page-route="List/Auto Repeat Day/List"].page-container { display: block!important; }
+[data-route^="Form/Putaway Rule"] [data-page-route="List/Putaway Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Accounting Dimension Filter"] [data-page-route="List/Accounting Dimension Filter/List"].page-container { display: block!important; }
+[data-route^="Form/Allowed Dimension"] [data-page-route="List/Allowed Dimension/List"].page-container { display: block!important; }
+[data-route^="Form/Applicable On Account"] [data-page-route="List/Applicable On Account/List"].page-container { display: block!important; }
+[data-route^="Form/Non Conformance"] [data-page-route="List/Non Conformance/List"].page-container { display: block!important; }
+[data-route^="Form/Log Setting User"] [data-page-route="List/Log Setting User/List"].page-container { display: block!important; }
+[data-route^="Form/Log Settings"] [data-page-route="List/Log Settings/List"].page-container { display: block!important; }
+[data-route^="Form/UAE VAT Account"] [data-page-route="List/UAE VAT Account/List"].page-container { display: block!important; }
+[data-route^="Form/UAE VAT Settings"] [data-page-route="List/UAE VAT Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Website Theme Ignore App"] [data-page-route="List/Website Theme Ignore App/List"].page-container { display: block!important; }
+[data-route^="Form/Advance Taxes and Charges"] [data-page-route="List/Advance Taxes and Charges/List"].page-container { display: block!important; }
+[data-route^="Form/Document Naming Rule Condition"] [data-page-route="List/Document Naming Rule Condition/List"].page-container { display: block!important; }
+[data-route^="Form/Document Naming Rule"] [data-page-route="List/Document Naming Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Policy Assignment"] [data-page-route="List/Leave Policy Assignment/List"].page-container { display: block!important; }
+[data-route^="Form/Console Log"] [data-page-route="List/Console Log/List"].page-container { display: block!important; }
+[data-route^="Form/System Console"] [data-page-route="List/System Console/List"].page-container { display: block!important; }
+[data-route^="Form/SendCloud"] [data-page-route="List/SendCloud/List"].page-container { display: block!important; }
+[data-route^="Form/Gratuity Rule Slab"] [data-page-route="List/Gratuity Rule Slab/List"].page-container { display: block!important; }
+[data-route^="Form/Gratuity Rule"] [data-page-route="List/Gratuity Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Gratuity Applicable Component"] [data-page-route="List/Gratuity Applicable Component/List"].page-container { display: block!important; }
+[data-route^="Form/PSOA Cost Center"] [data-page-route="List/PSOA Cost Center/List"].page-container { display: block!important; }
+[data-route^="Form/PSOA Project"] [data-page-route="List/PSOA Project/List"].page-container { display: block!important; }
+[data-route^="Form/Process Statement Of Accounts Customer"] [data-page-route="List/Process Statement Of Accounts Customer/List"].page-container { display: block!important; }
+[data-route^="Form/Video Settings"] [data-page-route="List/Video Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Navbar Settings"] [data-page-route="List/Navbar Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Navbar Item"] [data-page-route="List/Navbar Item/List"].page-container { display: block!important; }
+[data-route^="Form/LetMeShip"] [data-page-route="List/LetMeShip/List"].page-container { display: block!important; }
+[data-route^="Form/Parcel Service Type"] [data-page-route="List/Parcel Service Type/List"].page-container { display: block!important; }
+[data-route^="Form/Parcel Service Type Alias"] [data-page-route="List/Parcel Service Type Alias/List"].page-container { display: block!important; }
+[data-route^="Form/Parcel Service"] [data-page-route="List/Parcel Service/List"].page-container { display: block!important; }
+[data-route^="Form/Opportunity Lost Reason Detail"] [data-page-route="List/Opportunity Lost Reason Detail/List"].page-container { display: block!important; }
+[data-route^="Form/OAuth Scope"] [data-page-route="List/OAuth Scope/List"].page-container { display: block!important; }
+[data-route^="Form/Quotation Lost Reason Detail"] [data-page-route="List/Quotation Lost Reason Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Shipment Delivery Note"] [data-page-route="List/Shipment Delivery Note/List"].page-container { display: block!important; }
+[data-route^="Form/Shipment Parcel Template"] [data-page-route="List/Shipment Parcel Template/List"].page-container { display: block!important; }
+[data-route^="Form/Shipment Parcel"] [data-page-route="List/Shipment Parcel/List"].page-container { display: block!important; }
+[data-route^="Form/Shipment"] [data-page-route="List/Shipment/List"].page-container { display: block!important; }
+[data-route^="Form/Email Digest Recipient"] [data-page-route="List/Email Digest Recipient/List"].page-container { display: block!important; }
+[data-route^="Form/Pause SLA On Status"] [data-page-route="List/Pause SLA On Status/List"].page-container { display: block!important; }
+[data-route^="Form/HD Pause Service Level Agreement On Status"] [data-page-route="List/HD Pause Service Level Agreement On Status/List"].page-container { display: block!important; }
+[data-route^="Form/Payroll Settings"] [data-page-route="List/Payroll Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Process Statement Of Accounts"] [data-page-route="List/Process Statement Of Accounts/List"].page-container { display: block!important; }
+[data-route^="Form/Installed Applications"] [data-page-route="List/Installed Applications/List"].page-container { display: block!important; }
+[data-route^="Form/Installed Application"] [data-page-route="List/Installed Application/List"].page-container { display: block!important; }
+[data-route^="Form/Onboarding Permission"] [data-page-route="List/Onboarding Permission/List"].page-container { display: block!important; }
+[data-route^="Form/POS Payment Method"] [data-page-route="List/POS Payment Method/List"].page-container { display: block!important; }
+[data-route^="Form/Social Link Settings"] [data-page-route="List/Social Link Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Onboarding Step Map"] [data-page-route="List/Onboarding Step Map/List"].page-container { display: block!important; }
+[data-route^="Form/POS Opening Entry Detail"] [data-page-route="List/POS Opening Entry Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Module Onboarding"] [data-page-route="List/Module Onboarding/List"].page-container { display: block!important; }
+[data-route^="Form/Income Tax Slab Other Charges"] [data-page-route="List/Income Tax Slab Other Charges/List"].page-container { display: block!important; }
+[data-route^="Form/Number Card Link"] [data-page-route="List/Number Card Link/List"].page-container { display: block!important; }
+[data-route^="Form/Color"] [data-page-route="List/Color/List"].page-container { display: block!important; }
+[data-route^="Form/Downtime Entry"] [data-page-route="List/Downtime Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Web Template"] [data-page-route="List/Web Template/List"].page-container { display: block!important; }
+[data-route^="Form/Web Template Field"] [data-page-route="List/Web Template Field/List"].page-container { display: block!important; }
+[data-route^="Form/Web Page Block"] [data-page-route="List/Web Page Block/List"].page-container { display: block!important; }
+[data-route^="Form/Web Page View"] [data-page-route="List/Web Page View/List"].page-container { display: block!important; }
+[data-route^="Form/Number Card"] [data-page-route="List/Number Card/List"].page-container { display: block!important; }
+[data-route^="Form/Onboarding Step"] [data-page-route="List/Onboarding Step/List"].page-container { display: block!important; }
+[data-route^="Form/Journal Entry Template Account"] [data-page-route="List/Journal Entry Template Account/List"].page-container { display: block!important; }
+[data-route^="Form/Journal Entry Template"] [data-page-route="List/Journal Entry Template/List"].page-container { display: block!important; }
+[data-route^="Form/Dashboard Settings"] [data-page-route="List/Dashboard Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Other Income"] [data-page-route="List/Employee Other Income/List"].page-container { display: block!important; }
+[data-route^="Form/Income Tax Slab"] [data-page-route="List/Income Tax Slab/List"].page-container { display: block!important; }
+[data-route^="Form/Lower Deduction Certificate"] [data-page-route="List/Lower Deduction Certificate/List"].page-container { display: block!important; }
+[data-route^="Form/POS Opening Entry"] [data-page-route="List/POS Opening Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Dashboard Chart Field"] [data-page-route="List/Dashboard Chart Field/List"].page-container { display: block!important; }
+[data-route^="Form/Production Plan Material Request Warehouse"] [data-page-route="List/Production Plan Material Request Warehouse/List"].page-container { display: block!important; }
+[data-route^="Form/POS Invoice Merge Log"] [data-page-route="List/POS Invoice Merge Log/List"].page-container { display: block!important; }
+[data-route^="Form/POS Invoice Reference"] [data-page-route="List/POS Invoice Reference/List"].page-container { display: block!important; }
+[data-route^="Form/POS Invoice Item"] [data-page-route="List/POS Invoice Item/List"].page-container { display: block!important; }
+[data-route^="Form/POS Invoice"] [data-page-route="List/POS Invoice/List"].page-container { display: block!important; }
+[data-route^="Form/Workspace"] [data-page-route="List/Workspace/List"].page-container { display: block!important; }
+[data-route^="Form/Workspace Shortcut"] [data-page-route="List/Workspace Shortcut/List"].page-container { display: block!important; }
+[data-route^="Form/Workspace Chart"] [data-page-route="List/Workspace Chart/List"].page-container { display: block!important; }
+[data-route^="Form/Report Filter"] [data-page-route="List/Report Filter/List"].page-container { display: block!important; }
+[data-route^="Form/Report Column"] [data-page-route="List/Report Column/List"].page-container { display: block!important; }
+[data-route^="Form/Kard Desktop Category"] [data-page-route="List/Kard Desktop Category/List"].page-container { display: block!important; }
+[data-route^="Form/Appointment Letter"] [data-page-route="List/Appointment Letter/List"].page-container { display: block!important; }
+[data-route^="Form/Appointment Letter content"] [data-page-route="List/Appointment Letter content/List"].page-container { display: block!important; }
+[data-route^="Form/Appointment Letter Template"] [data-page-route="List/Appointment Letter Template/List"].page-container { display: block!important; }
+[data-route^="Form/Dunning Letter Text"] [data-page-route="List/Dunning Letter Text/List"].page-container { display: block!important; }
+[data-route^="Form/Dunning Type"] [data-page-route="List/Dunning Type/List"].page-container { display: block!important; }
+[data-route^="Form/Kard Desktop Icon"] [data-page-route="List/Kard Desktop Icon/List"].page-container { display: block!important; }
+[data-route^="Form/Appointment Booking Slots"] [data-page-route="List/Appointment Booking Slots/List"].page-container { display: block!important; }
+[data-route^="Form/Process Deferred Accounting"] [data-page-route="List/Process Deferred Accounting/List"].page-container { display: block!important; }
+[data-route^="Form/List View Settings"] [data-page-route="List/List View Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Import Supplier Invoice"] [data-page-route="List/Import Supplier Invoice/List"].page-container { display: block!important; }
+[data-route^="Form/Notification Subscribed Document"] [data-page-route="List/Notification Subscribed Document/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Movement Item"] [data-page-route="List/Asset Movement Item/List"].page-container { display: block!important; }
+[data-route^="Form/Server Script"] [data-page-route="List/Server Script/List"].page-container { display: block!important; }
+[data-route^="Form/Tag Link"] [data-page-route="List/Tag Link/List"].page-container { display: block!important; }
+[data-route^="Form/DocType Link"] [data-page-route="List/DocType Link/List"].page-container { display: block!important; }
+[data-route^="Form/DocType Action"] [data-page-route="List/DocType Action/List"].page-container { display: block!important; }
+[data-route^="Form/Scheduled Job Log"] [data-page-route="List/Scheduled Job Log/List"].page-container { display: block!important; }
+[data-route^="Form/Scheduled Job Type"] [data-page-route="List/Scheduled Job Type/List"].page-container { display: block!important; }
+[data-route^="Form/Assignment Rule Day"] [data-page-route="List/Assignment Rule Day/List"].page-container { display: block!important; }
+[data-route^="Form/Global Search DocType"] [data-page-route="List/Global Search DocType/List"].page-container { display: block!important; }
+[data-route^="Form/Notification Settings"] [data-page-route="List/Notification Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Availability Of Slots"] [data-page-route="List/Availability Of Slots/List"].page-container { display: block!important; }
+[data-route^="Form/Quick Stock Balance"] [data-page-route="List/Quick Stock Balance/List"].page-container { display: block!important; }
+[data-route^="Form/Global Search Settings"] [data-page-route="List/Global Search Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Salary Slip Loan"] [data-page-route="List/Salary Slip Loan/List"].page-container { display: block!important; }
+[data-route^="Form/Customer Credit Limit"] [data-page-route="List/Customer Credit Limit/List"].page-container { display: block!important; }
+[data-route^="Form/Appointment Booking Settings"] [data-page-route="List/Appointment Booking Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Appointment"] [data-page-route="List/Appointment/List"].page-container { display: block!important; }
+[data-route^="Form/Notification Log"] [data-page-route="List/Notification Log/List"].page-container { display: block!important; }
+[data-route^="Form/POS Field"] [data-page-route="List/POS Field/List"].page-container { display: block!important; }
+[data-route^="Form/Kard Theme Settings"] [data-page-route="List/Kard Theme Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Google Drive"] [data-page-route="List/Google Drive/List"].page-container { display: block!important; }
+[data-route^="Form/Data Import"] [data-page-route="List/Data Import/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Statement Import"] [data-page-route="List/Bank Statement Import/List"].page-container { display: block!important; }
+[data-route^="Form/Contact Phone"] [data-page-route="List/Contact Phone/List"].page-container { display: block!important; }
+[data-route^="Form/Contact Email"] [data-page-route="List/Contact Email/List"].page-container { display: block!important; }
+[data-route^="Form/Access Log"] [data-page-route="List/Access Log/List"].page-container { display: block!important; }
+[data-route^="Form/Session Default Settings"] [data-page-route="List/Session Default Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Session Default"] [data-page-route="List/Session Default/List"].page-container { display: block!important; }
+[data-route^="Form/Accounting Dimension Detail"] [data-page-route="List/Accounting Dimension Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Pick List"] [data-page-route="List/Pick List/List"].page-container { display: block!important; }
+[data-route^="Form/Pick List Item"] [data-page-route="List/Pick List Item/List"].page-container { display: block!important; }
+[data-route^="Form/Google Calendar"] [data-page-route="List/Google Calendar/List"].page-container { display: block!important; }
+[data-route^="Form/Dunning"] [data-page-route="List/Dunning/List"].page-container { display: block!important; }
+[data-route^="Form/Email Campaign"] [data-page-route="List/Email Campaign/List"].page-container { display: block!important; }
+[data-route^="Form/Campaign Email Schedule"] [data-page-route="List/Campaign Email Schedule/List"].page-container { display: block!important; }
+[data-route^="Form/Google Contacts"] [data-page-route="List/Google Contacts/List"].page-container { display: block!important; }
+[data-route^="Form/Google Settings"] [data-page-route="List/Google Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Checkin"] [data-page-route="List/Employee Checkin/List"].page-container { display: block!important; }
+[data-route^="Form/Communication Medium"] [data-page-route="List/Communication Medium/List"].page-container { display: block!important; }
+[data-route^="Form/Communication Medium Timeslot"] [data-page-route="List/Communication Medium Timeslot/List"].page-container { display: block!important; }
+[data-route^="Form/Expense Taxes and Charges"] [data-page-route="List/Expense Taxes and Charges/List"].page-container { display: block!important; }
+[data-route^="Form/Item Manufacturer"] [data-page-route="List/Item Manufacturer/List"].page-container { display: block!important; }
+[data-route^="Form/LDAP Group Mapping"] [data-page-route="List/LDAP Group Mapping/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Feedback Parameter"] [data-page-route="List/Quality Feedback Parameter/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Feedback"] [data-page-route="List/Quality Feedback/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Feedback Template Parameter"] [data-page-route="List/Quality Feedback Template Parameter/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Feedback Template"] [data-page-route="List/Quality Feedback Template/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Meeting Agenda"] [data-page-route="List/Quality Meeting Agenda/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Meeting Minutes"] [data-page-route="List/Quality Meeting Minutes/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Action Resolution"] [data-page-route="List/Quality Action Resolution/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Review Objective"] [data-page-route="List/Quality Review Objective/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Goal Objective"] [data-page-route="List/Quality Goal Objective/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Procedure Process"] [data-page-route="List/Quality Procedure Process/List"].page-container { display: block!important; }
+[data-route^="Form/Warehouse Type"] [data-page-route="List/Warehouse Type/List"].page-container { display: block!important; }
+[data-route^="Form/Communication Link"] [data-page-route="List/Communication Link/List"].page-container { display: block!important; }
+[data-route^="Form/Issue Priority"] [data-page-route="List/Issue Priority/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Ledger Entry"] [data-page-route="List/Leave Ledger Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Website Route Redirect"] [data-page-route="List/Website Route Redirect/List"].page-container { display: block!important; }
+[data-route^="Form/Accounting Dimension"] [data-page-route="List/Accounting Dimension/List"].page-container { display: block!important; }
+[data-route^="Form/Service Level Priority"] [data-page-route="List/Service Level Priority/List"].page-container { display: block!important; }
+[data-route^="Form/HD Service Level Priority"] [data-page-route="List/HD Service Level Priority/List"].page-container { display: block!important; }
+[data-route^="Form/Task Type"] [data-page-route="List/Task Type/List"].page-container { display: block!important; }
+[data-route^="Form/Milestone"] [data-page-route="List/Milestone/List"].page-container { display: block!important; }
+[data-route^="Form/Milestone Tracker"] [data-page-route="List/Milestone Tracker/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Training"] [data-page-route="List/Employee Training/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Skill Map"] [data-page-route="List/Employee Skill Map/List"].page-container { display: block!important; }
+[data-route^="Form/Designation Skill"] [data-page-route="List/Designation Skill/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Skill"] [data-page-route="List/Employee Skill/List"].page-container { display: block!important; }
+[data-route^="Form/Skill"] [data-page-route="List/Skill/List"].page-container { display: block!important; }
+[data-route^="Form/Pricing Rule Brand"] [data-page-route="List/Pricing Rule Brand/List"].page-container { display: block!important; }
+[data-route^="Form/Pricing Rule Item Code"] [data-page-route="List/Pricing Rule Item Code/List"].page-container { display: block!important; }
+[data-route^="Form/Pricing Rule Item Group"] [data-page-route="List/Pricing Rule Item Group/List"].page-container { display: block!important; }
+[data-route^="Form/Promotional Scheme Price Discount"] [data-page-route="List/Promotional Scheme Price Discount/List"].page-container { display: block!important; }
+[data-route^="Form/Promotional Scheme Product Discount"] [data-page-route="List/Promotional Scheme Product Discount/List"].page-container { display: block!important; }
+[data-route^="Form/Energy Point Settings"] [data-page-route="List/Energy Point Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Review Level"] [data-page-route="List/Review Level/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Entry Type"] [data-page-route="List/Stock Entry Type/List"].page-container { display: block!important; }
+[data-route^="Form/Dashboard Chart Link"] [data-page-route="List/Dashboard Chart Link/List"].page-container { display: block!important; }
+[data-route^="Form/Job Card Time Log"] [data-page-route="List/Job Card Time Log/List"].page-container { display: block!important; }
+[data-route^="Form/Discounted Invoice"] [data-page-route="List/Discounted Invoice/List"].page-container { display: block!important; }
+[data-route^="Form/Invoice Discounting"] [data-page-route="List/Invoice Discounting/List"].page-container { display: block!important; }
+[data-route^="Form/Service Day"] [data-page-route="List/Service Day/List"].page-container { display: block!important; }
+[data-route^="Form/HD Service Day"] [data-page-route="List/HD Service Day/List"].page-container { display: block!important; }
+[data-route^="Form/Assignment Rule"] [data-page-route="List/Assignment Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Assignment Rule User"] [data-page-route="List/Assignment Rule User/List"].page-container { display: block!important; }
+[data-route^="Form/Project Template Task"] [data-page-route="List/Project Template Task/List"].page-container { display: block!important; }
+[data-route^="Form/Project Template"] [data-page-route="List/Project Template/List"].page-container { display: block!important; }
+[data-route^="Form/Website Route Meta"] [data-page-route="List/Website Route Meta/List"].page-container { display: block!important; }
+[data-route^="Form/Website Meta Tag"] [data-page-route="List/Website Meta Tag/List"].page-container { display: block!important; }
+[data-route^="Form/Personal Data Deletion Request"] [data-page-route="List/Personal Data Deletion Request/List"].page-container { display: block!important; }
+[data-route^="Form/Homepage Section"] [data-page-route="List/Homepage Section/List"].page-container { display: block!important; }
+[data-route^="Form/Homepage Section Card"] [data-page-route="List/Homepage Section Card/List"].page-container { display: block!important; }
+[data-route^="Form/Promotional Scheme"] [data-page-route="List/Promotional Scheme/List"].page-container { display: block!important; }
+[data-route^="Form/Comment"] [data-page-route="List/Comment/List"].page-container { display: block!important; }
+[data-route^="Form/Dashboard Chart Source"] [data-page-route="List/Dashboard Chart Source/List"].page-container { display: block!important; }
+[data-route^="Form/Kard Section"] [data-page-route="List/Kard Section/List"].page-container { display: block!important; }
+[data-route^="Form/Tally Migration"] [data-page-route="List/Tally Migration/List"].page-container { display: block!important; }
+[data-route^="Form/Pricing Rule Detail"] [data-page-route="List/Pricing Rule Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Chart of Accounts Importer"] [data-page-route="List/Chart of Accounts Importer/List"].page-container { display: block!important; }
+[data-route^="Form/Token Cache"] [data-page-route="List/Token Cache/List"].page-container { display: block!important; }
+[data-route^="Form/Personal Data Download Request"] [data-page-route="List/Personal Data Download Request/List"].page-container { display: block!important; }
+[data-route^="Form/Connected App"] [data-page-route="List/Connected App/List"].page-container { display: block!important; }
+[data-route^="Form/Dashboard"] [data-page-route="List/Dashboard/List"].page-container { display: block!important; }
+[data-route^="Form/Dashboard Chart"] [data-page-route="List/Dashboard Chart/List"].page-container { display: block!important; }
+[data-route^="Form/Document Follow"] [data-page-route="List/Document Follow/List"].page-container { display: block!important; }
+[data-route^="Form/Website Attribute"] [data-page-route="List/Website Attribute/List"].page-container { display: block!important; }
+[data-route^="Form/Website Filter Field"] [data-page-route="List/Website Filter Field/List"].page-container { display: block!important; }
+[data-route^="Form/Opportunity Lost Reason"] [data-page-route="List/Opportunity Lost Reason/List"].page-container { display: block!important; }
+[data-route^="Form/Lost Reason Detail"] [data-page-route="List/Lost Reason Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Service Level Agreement"] [data-page-route="List/Service Level Agreement/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Transaction Payments"] [data-page-route="List/Bank Transaction Payments/List"].page-container { display: block!important; }
+[data-route^="Form/Item Tax Template Detail"] [data-page-route="List/Item Tax Template Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Group Table"] [data-page-route="List/Employee Group Table/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Group"] [data-page-route="List/Employee Group/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Account Subtype"] [data-page-route="List/Bank Account Subtype/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Account Type"] [data-page-route="List/Bank Account Type/List"].page-container { display: block!important; }
+[data-route^="Form/Plaid Settings"] [data-page-route="List/Plaid Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Transaction Mapping"] [data-page-route="List/Bank Transaction Mapping/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Transaction"] [data-page-route="List/Bank Transaction/List"].page-container { display: block!important; }
+[data-route^="Form/Video"] [data-page-route="List/Video/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Meeting"] [data-page-route="List/Quality Meeting/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Procedure"] [data-page-route="List/Quality Procedure/List"].page-container { display: block!important; }
+[data-route^="Form/Route History"] [data-page-route="List/Route History/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Goal"] [data-page-route="List/Quality Goal/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Review"] [data-page-route="List/Quality Review/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Action"] [data-page-route="List/Quality Action/List"].page-container { display: block!important; }
+[data-route^="Form/Market Segment"] [data-page-route="List/Market Segment/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Stage"] [data-page-route="List/Sales Stage/List"].page-container { display: block!important; }
+[data-route^="Form/Event Participants"] [data-page-route="List/Event Participants/List"].page-container { display: block!important; }
+[data-route^="Form/Email Digest"] [data-page-route="List/Email Digest/List"].page-container { display: block!important; }
+[data-route^="Form/Delivery Settings"] [data-page-route="List/Delivery Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Cashier Closing Payments"] [data-page-route="List/Cashier Closing Payments/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Order"] [data-page-route="List/Payment Order/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Order Reference"] [data-page-route="List/Payment Order Reference/List"].page-container { display: block!important; }
+[data-route^="Form/Tax Withholding Rate"] [data-page-route="List/Tax Withholding Rate/List"].page-container { display: block!important; }
+[data-route^="Form/Routing"] [data-page-route="List/Routing/List"].page-container { display: block!important; }
+[data-route^="Form/QuickBooks Migrator"] [data-page-route="List/QuickBooks Migrator/List"].page-container { display: block!important; }
+[data-route^="Form/Job Card"] [data-page-route="List/Job Card/List"].page-container { display: block!important; }
+[data-route^="Form/Job Card Item"] [data-page-route="List/Job Card Item/List"].page-container { display: block!important; }
+[data-route^="Form/Prepared Report"] [data-page-route="List/Prepared Report/List"].page-container { display: block!important; }
+[data-route^="Form/Energy Point Log"] [data-page-route="List/Energy Point Log/List"].page-container { display: block!important; }
+[data-route^="Form/Energy Point Rule"] [data-page-route="List/Energy Point Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Cashier Closing"] [data-page-route="List/Cashier Closing/List"].page-container { display: block!important; }
+[data-route^="Form/Job Applicant Source"] [data-page-route="List/Job Applicant Source/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Partner Type"] [data-page-route="List/Sales Partner Type/List"].page-container { display: block!important; }
+[data-route^="Form/POS Closing Entry Taxes"] [data-page-route="List/POS Closing Entry Taxes/List"].page-container { display: block!important; }
+[data-route^="Form/POS Closing Entry Detail"] [data-page-route="List/POS Closing Entry Detail/List"].page-container { display: block!important; }
+[data-route^="Form/POS Closing Entry"] [data-page-route="List/POS Closing Entry/List"].page-container { display: block!important; }
+[data-route^="Form/View Log"] [data-page-route="List/View Log/List"].page-container { display: block!important; }
+[data-route^="Form/Blanket Order Item"] [data-page-route="List/Blanket Order Item/List"].page-container { display: block!important; }
+[data-route^="Form/Blanket Order"] [data-page-route="List/Blanket Order/List"].page-container { display: block!important; }
+[data-route^="Form/Slack Webhook URL"] [data-page-route="List/Slack Webhook URL/List"].page-container { display: block!important; }
+[data-route^="Form/Workflow Action"] [data-page-route="List/Workflow Action/List"].page-container { display: block!important; }
+[data-route^="Form/Support Search Source"] [data-page-route="List/Support Search Source/List"].page-container { display: block!important; }
+[data-route^="Form/HD Support Search Source"] [data-page-route="List/HD Support Search Source/List"].page-container { display: block!important; }
+[data-route^="Form/Travel Request Costing"] [data-page-route="List/Travel Request Costing/List"].page-container { display: block!important; }
+[data-route^="Form/Travel Itinerary"] [data-page-route="List/Travel Itinerary/List"].page-container { display: block!important; }
+[data-route^="Form/Identification Document Type"] [data-page-route="List/Identification Document Type/List"].page-container { display: block!important; }
+[data-route^="Form/Purpose of Travel"] [data-page-route="List/Purpose of Travel/List"].page-container { display: block!important; }
+[data-route^="Form/Travel Request"] [data-page-route="List/Travel Request/List"].page-container { display: block!important; }
+[data-route^="Form/Retention Bonus"] [data-page-route="List/Retention Bonus/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Value Adjustment"] [data-page-route="List/Asset Value Adjustment/List"].page-container { display: block!important; }
+[data-route^="Form/Additional Salary"] [data-page-route="List/Additional Salary/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Separation"] [data-page-route="List/Employee Separation/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Tax Exemption Sub Category"] [data-page-route="List/Employee Tax Exemption Sub Category/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Separation Template"] [data-page-route="List/Employee Separation Template/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Boarding Activity"] [data-page-route="List/Employee Boarding Activity/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Onboarding Template"] [data-page-route="List/Employee Onboarding Template/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Onboarding"] [data-page-route="List/Employee Onboarding/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Finance Book"] [data-page-route="List/Asset Finance Book/List"].page-container { display: block!important; }
+[data-route^="Form/Location"] [data-page-route="List/Location/List"].page-container { display: block!important; }
+[data-route^="Form/Item Default"] [data-page-route="List/Item Default/List"].page-container { display: block!important; }
+[data-route^="Form/UOM Conversion Factor"] [data-page-route="List/UOM Conversion Factor/List"].page-container { display: block!important; }
+[data-route^="Form/UOM Category"] [data-page-route="List/UOM Category/List"].page-container { display: block!important; }
+[data-route^="Form/Allowed To Transact With"] [data-page-route="List/Allowed To Transact With/List"].page-container { display: block!important; }
+[data-route^="Form/Contract Fulfilment Checklist"] [data-page-route="List/Contract Fulfilment Checklist/List"].page-container { display: block!important; }
+[data-route^="Form/Contract Template Fulfilment Terms"] [data-page-route="List/Contract Template Fulfilment Terms/List"].page-container { display: block!important; }
+[data-route^="Form/Contract Template"] [data-page-route="List/Contract Template/List"].page-container { display: block!important; }
+[data-route^="Form/Success Action"] [data-page-route="List/Success Action/List"].page-container { display: block!important; }
+[data-route^="Form/Closed Document"] [data-page-route="List/Closed Document/List"].page-container { display: block!important; }
+[data-route^="Form/Accounting Period"] [data-page-route="List/Accounting Period/List"].page-container { display: block!important; }
+[data-route^="Form/Tax Withholding Account"] [data-page-route="List/Tax Withholding Account/List"].page-container { display: block!important; }
+[data-route^="Form/Tax Withholding Category"] [data-page-route="List/Tax Withholding Category/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Promotion"] [data-page-route="List/Employee Promotion/List"].page-container { display: block!important; }
+[data-route^="Form/Exchange Rate Revaluation Account"] [data-page-route="List/Exchange Rate Revaluation Account/List"].page-container { display: block!important; }
+[data-route^="Form/Exchange Rate Revaluation"] [data-page-route="List/Exchange Rate Revaluation/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Property History"] [data-page-route="List/Employee Property History/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Transfer"] [data-page-route="List/Employee Transfer/List"].page-container { display: block!important; }
+[data-route^="Form/Staffing Plan"] [data-page-route="List/Staffing Plan/List"].page-container { display: block!important; }
+[data-route^="Form/Staffing Plan Detail"] [data-page-route="List/Staffing Plan Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Finance Book"] [data-page-route="List/Finance Book/List"].page-container { display: block!important; }
+[data-route^="Form/Taxable Salary Slab"] [data-page-route="List/Taxable Salary Slab/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Tax Exemption Proof Submission"] [data-page-route="List/Employee Tax Exemption Proof Submission/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Tax Exemption Proof Submission Detail"] [data-page-route="List/Employee Tax Exemption Proof Submission Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Tax Exemption Declaration Category"] [data-page-route="List/Employee Tax Exemption Declaration Category/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Tax Exemption Declaration"] [data-page-route="List/Employee Tax Exemption Declaration/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Tax Exemption Category"] [data-page-route="List/Employee Tax Exemption Category/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Benefit Claim"] [data-page-route="List/Employee Benefit Claim/List"].page-container { display: block!important; }
+[data-route^="Form/Salary Structure Assignment"] [data-page-route="List/Salary Structure Assignment/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Benefit Application Detail"] [data-page-route="List/Employee Benefit Application Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Shift Request"] [data-page-route="List/Shift Request/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Benefit Application"] [data-page-route="List/Employee Benefit Application/List"].page-container { display: block!important; }
+[data-route^="Form/Shift Assignment"] [data-page-route="List/Shift Assignment/List"].page-container { display: block!important; }
+[data-route^="Form/Shift Type"] [data-page-route="List/Shift Type/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Grade"] [data-page-route="List/Employee Grade/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Incentive"] [data-page-route="List/Employee Incentive/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Policy"] [data-page-route="List/Leave Policy/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Policy Detail"] [data-page-route="List/Leave Policy Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Attendance Request"] [data-page-route="List/Attendance Request/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Encashment"] [data-page-route="List/Leave Encashment/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Period"] [data-page-route="List/Leave Period/List"].page-container { display: block!important; }
+[data-route^="Form/Payroll Period"] [data-page-route="List/Payroll Period/List"].page-container { display: block!important; }
+[data-route^="Form/Payroll Period Date"] [data-page-route="List/Payroll Period Date/List"].page-container { display: block!important; }
+[data-route^="Form/Compensatory Leave Request"] [data-page-route="List/Compensatory Leave Request/List"].page-container { display: block!important; }
+[data-route^="Form/Contract"] [data-page-route="List/Contract/List"].page-container { display: block!important; }
+[data-route^="Form/Department Approver"] [data-page-route="List/Department Approver/List"].page-container { display: block!important; }
+[data-route^="Form/Bank"] [data-page-route="List/Bank/List"].page-container { display: block!important; }
+[data-route^="Form/Loyalty Point Entry Redemption"] [data-page-route="List/Loyalty Point Entry Redemption/List"].page-container { display: block!important; }
+[data-route^="Form/Auto Repeat"] [data-page-route="List/Auto Repeat/List"].page-container { display: block!important; }
+[data-route^="Form/Data Export"] [data-page-route="List/Data Export/List"].page-container { display: block!important; }
+[data-route^="Form/Item Alternative"] [data-page-route="List/Item Alternative/List"].page-container { display: block!important; }
+[data-route^="Form/Subscription Settings"] [data-page-route="List/Subscription Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Subscription Invoice"] [data-page-route="List/Subscription Invoice/List"].page-container { display: block!important; }
+[data-route^="Form/Subscription Plan Detail"] [data-page-route="List/Subscription Plan Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Subscription Plan"] [data-page-route="List/Subscription Plan/List"].page-container { display: block!important; }
+[data-route^="Form/List Filter"] [data-page-route="List/List Filter/List"].page-container { display: block!important; }
+[data-route^="Form/Projects Settings"] [data-page-route="List/Projects Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Daily Work Summary Group"] [data-page-route="List/Daily Work Summary Group/List"].page-container { display: block!important; }
+[data-route^="Form/Daily Work Summary Group User"] [data-page-route="List/Daily Work Summary Group User/List"].page-container { display: block!important; }
+[data-route^="Form/Transaction Log"] [data-page-route="List/Transaction Log/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Inspection Template"] [data-page-route="List/Quality Inspection Template/List"].page-container { display: block!important; }
+[data-route^="Form/Loyalty Program Collection"] [data-page-route="List/Loyalty Program Collection/List"].page-container { display: block!important; }
+[data-route^="Form/Loyalty Program"] [data-page-route="List/Loyalty Program/List"].page-container { display: block!important; }
+[data-route^="Form/Loyalty Point Entry"] [data-page-route="List/Loyalty Point Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Coupon Code"] [data-page-route="List/Coupon Code/List"].page-container { display: block!important; }
+[data-route^="Form/Project Update"] [data-page-route="List/Project Update/List"].page-container { display: block!important; }
+[data-route^="Form/Share Balance"] [data-page-route="List/Share Balance/List"].page-container { display: block!important; }
+[data-route^="Form/Share Type"] [data-page-route="List/Share Type/List"].page-container { display: block!important; }
+[data-route^="Form/Share Transfer"] [data-page-route="List/Share Transfer/List"].page-container { display: block!important; }
+[data-route^="Form/Shareholder"] [data-page-route="List/Shareholder/List"].page-container { display: block!important; }
+[data-route^="Form/User Social Login"] [data-page-route="List/User Social Login/List"].page-container { display: block!important; }
+[data-route^="Form/Material Request Plan Item"] [data-page-route="List/Material Request Plan Item/List"].page-container { display: block!important; }
+[data-route^="Form/Payroll Employee Detail"] [data-page-route="List/Payroll Employee Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Linked Location"] [data-page-route="List/Linked Location/List"].page-container { display: block!important; }
+[data-route^="Form/Social Login Key"] [data-page-route="List/Social Login Key/List"].page-container { display: block!important; }
+[data-route^="Form/Kard Module Link"] [data-page-route="List/Kard Module Link/List"].page-container { display: block!important; }
+[data-route^="Form/Production Plan"] [data-page-route="List/Production Plan/List"].page-container { display: block!important; }
+[data-route^="Form/POS Profile User"] [data-page-route="List/POS Profile User/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Maintenance Log"] [data-page-route="List/Asset Maintenance Log/List"].page-container { display: block!important; }
+[data-route^="Form/Payroll Entry"] [data-page-route="List/Payroll Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Calendar View"] [data-page-route="List/Calendar View/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Repair"] [data-page-route="List/Asset Repair/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Maintenance Team"] [data-page-route="List/Asset Maintenance Team/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Maintenance Task"] [data-page-route="List/Asset Maintenance Task/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Maintenance"] [data-page-route="List/Asset Maintenance/List"].page-container { display: block!important; }
+[data-route^="Form/Driver"] [data-page-route="List/Driver/List"].page-container { display: block!important; }
+[data-route^="Form/Driving License Category"] [data-page-route="List/Driving License Category/List"].page-container { display: block!important; }
+[data-route^="Form/Delivery Stop"] [data-page-route="List/Delivery Stop/List"].page-container { display: block!important; }
+[data-route^="Form/Delivery Trip"] [data-page-route="List/Delivery Trip/List"].page-container { display: block!important; }
+[data-route^="Form/Training Program"] [data-page-route="List/Training Program/List"].page-container { display: block!important; }
+[data-route^="Form/Expense Claim Advance"] [data-page-route="List/Expense Claim Advance/List"].page-container { display: block!important; }
+[data-route^="Form/Opportunity Type"] [data-page-route="List/Opportunity Type/List"].page-container { display: block!important; }
+[data-route^="Form/Issue Type"] [data-page-route="List/Issue Type/List"].page-container { display: block!important; }
+[data-route^="Form/Activity Log"] [data-page-route="List/Activity Log/List"].page-container { display: block!important; }
+[data-route^="Form/Webhook Data"] [data-page-route="List/Webhook Data/List"].page-container { display: block!important; }
+[data-route^="Form/Webhook Header"] [data-page-route="List/Webhook Header/List"].page-container { display: block!important; }
+[data-route^="Form/Webhook"] [data-page-route="List/Webhook/List"].page-container { display: block!important; }
+[data-route^="Form/S3 Backup Settings"] [data-page-route="List/S3 Backup Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Role Profile"] [data-page-route="List/Role Profile/List"].page-container { display: block!important; }
+[data-route^="Form/Item Variant Settings"] [data-page-route="List/Item Variant Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Opening Invoice Creation Tool Item"] [data-page-route="List/Opening Invoice Creation Tool Item/List"].page-container { display: block!important; }
+[data-route^="Form/Opening Invoice Creation Tool"] [data-page-route="List/Opening Invoice Creation Tool/List"].page-container { display: block!important; }
+[data-route^="Form/POS Settings"] [data-page-route="List/POS Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Print Style"] [data-page-route="List/Print Style/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Schedule"] [data-page-route="List/Payment Schedule/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Terms Template"] [data-page-route="List/Payment Terms Template/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Terms Template Detail"] [data-page-route="List/Payment Terms Template Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Term"] [data-page-route="List/Payment Term/List"].page-container { display: block!important; }
+[data-route^="Form/Subscription"] [data-page-route="List/Subscription/List"].page-container { display: block!important; }
+[data-route^="Form/Project Type"] [data-page-route="List/Project Type/List"].page-container { display: block!important; }
+[data-route^="Form/User Permission"] [data-page-route="List/User Permission/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Scorecard Period"] [data-page-route="List/Supplier Scorecard Period/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Account"] [data-page-route="List/Bank Account/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Scorecard"] [data-page-route="List/Supplier Scorecard/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Scorecard Standing"] [data-page-route="List/Supplier Scorecard Standing/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Scorecard Scoring Standing"] [data-page-route="List/Supplier Scorecard Scoring Standing/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Scorecard Criteria"] [data-page-route="List/Supplier Scorecard Criteria/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Scorecard Scoring Criteria"] [data-page-route="List/Supplier Scorecard Scoring Criteria/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Scorecard Variable"] [data-page-route="List/Supplier Scorecard Variable/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Scorecard Scoring Variable"] [data-page-route="List/Supplier Scorecard Scoring Variable/List"].page-container { display: block!important; }
+[data-route^="Form/Domain Settings"] [data-page-route="List/Domain Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Has Domain"] [data-page-route="List/Has Domain/List"].page-container { display: block!important; }
+[data-route^="Form/Domain"] [data-page-route="List/Domain/List"].page-container { display: block!important; }
+[data-route^="Form/Salutation"] [data-page-route="List/Salutation/List"].page-container { display: block!important; }
+[data-route^="Form/Gender"] [data-page-route="List/Gender/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Health Insurance"] [data-page-route="List/Employee Health Insurance/List"].page-container { display: block!important; }
+[data-route^="Form/Customs Tariff Number"] [data-page-route="List/Customs Tariff Number/List"].page-container { display: block!important; }
+[data-route^="Form/Email Rule"] [data-page-route="List/Email Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Newsletter Email Group"] [data-page-route="List/Newsletter Email Group/List"].page-container { display: block!important; }
+[data-route^="Form/HD Settings"] [data-page-route="List/HD Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Support Settings"] [data-page-route="List/Support Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Role Permission for Page and Report"] [data-page-route="List/Role Permission for Page and Report/List"].page-container { display: block!important; }
+[data-route^="Form/Custom Role"] [data-page-route="List/Custom Role/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Website Item"] [data-page-route="List/BOM Website Item/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Website Operation"] [data-page-route="List/BOM Website Operation/List"].page-container { display: block!important; }
+[data-route^="Form/Dynamic Link"] [data-page-route="List/Dynamic Link/List"].page-container { display: block!important; }
+[data-route^="Form/Custom DocPerm"] [data-page-route="List/Custom DocPerm/List"].page-container { display: block!important; }
+[data-route^="Form/Deleted Document"] [data-page-route="List/Deleted Document/List"].page-container { display: block!important; }
+[data-route^="Form/Website Sidebar"] [data-page-route="List/Website Sidebar/List"].page-container { display: block!important; }
+[data-route^="Form/Website Sidebar Item"] [data-page-route="List/Website Sidebar Item/List"].page-container { display: block!important; }
+[data-route^="Form/Party Type"] [data-page-route="List/Party Type/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Guarantee"] [data-page-route="List/Bank Guarantee/List"].page-container { display: block!important; }
+[data-route^="Form/Email Queue Recipient"] [data-page-route="List/Email Queue Recipient/List"].page-container { display: block!important; }
+[data-route^="Form/POS Customer Group"] [data-page-route="List/POS Customer Group/List"].page-container { display: block!important; }
+[data-route^="Form/POS Item Group"] [data-page-route="List/POS Item Group/List"].page-container { display: block!important; }
+[data-route^="Form/Daily Work Summary"] [data-page-route="List/Daily Work Summary/List"].page-container { display: block!important; }
+[data-route^="Form/Training Result Employee"] [data-page-route="List/Training Result Employee/List"].page-container { display: block!important; }
+[data-route^="Form/Training Result"] [data-page-route="List/Training Result/List"].page-container { display: block!important; }
+[data-route^="Form/Maintenance Team Member"] [data-page-route="List/Maintenance Team Member/List"].page-container { display: block!important; }
+[data-route^="Form/Kanban Board Column"] [data-page-route="List/Kanban Board Column/List"].page-container { display: block!important; }
+[data-route^="Form/Kanban Board"] [data-page-route="List/Kanban Board/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Scrap Item"] [data-page-route="List/BOM Scrap Item/List"].page-container { display: block!important; }
+[data-route^="Form/LDAP Settings"] [data-page-route="List/LDAP Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Dropbox Settings"] [data-page-route="List/Dropbox Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Lead Source"] [data-page-route="List/Lead Source/List"].page-container { display: block!important; }
+[data-route^="Form/Vehicle Service"] [data-page-route="List/Vehicle Service/List"].page-container { display: block!important; }
+[data-route^="Form/Vehicle Log"] [data-page-route="List/Vehicle Log/List"].page-container { display: block!important; }
+[data-route^="Form/OAuth Provider Settings"] [data-page-route="List/OAuth Provider Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Vehicle"] [data-page-route="List/Vehicle/List"].page-container { display: block!important; }
+[data-route^="Form/Auto Email Report"] [data-page-route="List/Auto Email Report/List"].page-container { display: block!important; }
+[data-route^="Form/Note Seen By"] [data-page-route="List/Note Seen By/List"].page-container { display: block!important; }
+[data-route^="Form/OAuth Authorization Code"] [data-page-route="List/OAuth Authorization Code/List"].page-container { display: block!important; }
+[data-route^="Form/OAuth Bearer Token"] [data-page-route="List/OAuth Bearer Token/List"].page-container { display: block!important; }
+[data-route^="Form/OAuth Client"] [data-page-route="List/OAuth Client/List"].page-container { display: block!important; }
+[data-route^="Form/Training Event Employee"] [data-page-route="List/Training Event Employee/List"].page-container { display: block!important; }
+[data-route^="Form/Training Event"] [data-page-route="List/Training Event/List"].page-container { display: block!important; }
+[data-route^="Form/Salary Component Account"] [data-page-route="List/Salary Component Account/List"].page-container { display: block!important; }
+[data-route^="Form/Interest"] [data-page-route="List/Interest/List"].page-container { display: block!important; }
+[data-route^="Form/Expense Claim Account"] [data-page-route="List/Expense Claim Account/List"].page-container { display: block!important; }
+[data-route^="Form/Bulk Update"] [data-page-route="List/Bulk Update/List"].page-container { display: block!important; }
+[data-route^="Form/Salary Component"] [data-page-route="List/Salary Component/List"].page-container { display: block!important; }
+[data-route^="Form/Salary Detail"] [data-page-route="List/Salary Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Entry Deduction"] [data-page-route="List/Payment Entry Deduction/List"].page-container { display: block!important; }
+[data-route^="Form/Salary Slip Timesheet"] [data-page-route="List/Salary Slip Timesheet/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Invoice Timesheet"] [data-page-route="List/Sales Invoice Timesheet/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Entry Reference"] [data-page-route="List/Payment Entry Reference/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Entry"] [data-page-route="List/Payment Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Tag"] [data-page-route="List/Tag/List"].page-container { display: block!important; }
+[data-route^="Form/Budget Account"] [data-page-route="List/Budget Account/List"].page-container { display: block!important; }
+[data-route^="Form/Budget"] [data-page-route="List/Budget/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Invoice Payment"] [data-page-route="List/Sales Invoice Payment/List"].page-container { display: block!important; }
+[data-route^="Form/Cheque Print Template"] [data-page-route="List/Cheque Print Template/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Movement"] [data-page-route="List/Asset Movement/List"].page-container { display: block!important; }
+[data-route^="Form/Homepage"] [data-page-route="List/Homepage/List"].page-container { display: block!important; }
+[data-route^="Form/Email Flag Queue"] [data-page-route="List/Email Flag Queue/List"].page-container { display: block!important; }
+[data-route^="Form/Work Order Item"] [data-page-route="List/Work Order Item/List"].page-container { display: block!important; }
+[data-route^="Form/Unhandled Email"] [data-page-route="List/Unhandled Email/List"].page-container { display: block!important; }
+[data-route^="Form/User Email"] [data-page-route="List/User Email/List"].page-container { display: block!important; }
+[data-route^="Form/Portal Settings"] [data-page-route="List/Portal Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Portal Menu Item"] [data-page-route="List/Portal Menu Item/List"].page-container { display: block!important; }
+[data-route^="Form/Email Domain"] [data-page-route="List/Email Domain/List"].page-container { display: block!important; }
+[data-route^="Form/Request for Quotation Supplier"] [data-page-route="List/Request for Quotation Supplier/List"].page-container { display: block!important; }
+[data-route^="Form/Project User"] [data-page-route="List/Project User/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Category Account"] [data-page-route="List/Asset Category Account/List"].page-container { display: block!important; }
+[data-route^="Form/Depreciation Schedule"] [data-page-route="List/Depreciation Schedule/List"].page-container { display: block!important; }
+[data-route^="Form/Asset Category"] [data-page-route="List/Asset Category/List"].page-container { display: block!important; }
+[data-route^="Form/Request for Quotation Item"] [data-page-route="List/Request for Quotation Item/List"].page-container { display: block!important; }
+[data-route^="Form/Request for Quotation"] [data-page-route="List/Request for Quotation/List"].page-container { display: block!important; }
+[data-route^="Form/Desktop Icon"] [data-page-route="List/Desktop Icon/List"].page-container { display: block!important; }
+[data-route^="Form/Translation"] [data-page-route="List/Translation/List"].page-container { display: block!important; }
+[data-route^="Form/Production Plan Material Request"] [data-page-route="List/Production Plan Material Request/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Attendance Tool"] [data-page-route="List/Employee Attendance Tool/List"].page-container { display: block!important; }
+[data-route^="Form/Manufacturer"] [data-page-route="List/Manufacturer/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Gateway Account"] [data-page-route="List/Payment Gateway Account/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Request"] [data-page-route="List/Payment Request/List"].page-container { display: block!important; }
+[data-route^="Form/Price List Country"] [data-page-route="List/Price List Country/List"].page-container { display: block!important; }
+[data-route^="Form/Shipping Rule Country"] [data-page-route="List/Shipping Rule Country/List"].page-container { display: block!important; }
+[data-route^="Form/Tax Rule"] [data-page-route="List/Tax Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Item Variant Attribute"] [data-page-route="List/Item Variant Attribute/List"].page-container { display: block!important; }
+[data-route^="Form/Dependent Task"] [data-page-route="List/Dependent Task/List"].page-container { display: block!important; }
+[data-route^="Form/Task Depends On"] [data-page-route="List/Task Depends On/List"].page-container { display: block!important; }
+[data-route^="Form/Block Module"] [data-page-route="List/Block Module/List"].page-container { display: block!important; }
+[data-route^="Form/Activity Cost"] [data-page-route="List/Activity Cost/List"].page-container { display: block!important; }
+[data-route^="Form/Email Unsubscribe"] [data-page-route="List/Email Unsubscribe/List"].page-container { display: block!important; }
+[data-route^="Form/Email Group Member"] [data-page-route="List/Email Group Member/List"].page-container { display: block!important; }
+[data-route^="Form/Email Group"] [data-page-route="List/Email Group/List"].page-container { display: block!important; }
+[data-route^="Form/Offer Term"] [data-page-route="List/Offer Term/List"].page-container { display: block!important; }
+[data-route^="Form/Job Offer Term"] [data-page-route="List/Job Offer Term/List"].page-container { display: block!important; }
+[data-route^="Form/Job Offer"] [data-page-route="List/Job Offer/List"].page-container { display: block!important; }
+[data-route^="Form/Website Theme"] [data-page-route="List/Website Theme/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Reconciliation Item"] [data-page-route="List/Stock Reconciliation Item/List"].page-container { display: block!important; }
+[data-route^="Form/DocShare"] [data-page-route="List/DocShare/List"].page-container { display: block!important; }
+[data-route^="Form/Mode of Payment Account"] [data-page-route="List/Mode of Payment Account/List"].page-container { display: block!important; }
+[data-route^="Form/Workstation Working Hour"] [data-page-route="List/Workstation Working Hour/List"].page-container { display: block!important; }
+[data-route^="Form/Manufacturing Settings"] [data-page-route="List/Manufacturing Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Operation"] [data-page-route="List/Operation/List"].page-container { display: block!important; }
+[data-route^="Form/Help Article"] [data-page-route="List/Help Article/List"].page-container { display: block!important; }
+[data-route^="Form/Help Category"] [data-page-route="List/Help Category/List"].page-container { display: block!important; }
+[data-route^="Form/Work Order Operation"] [data-page-route="List/Work Order Operation/List"].page-container { display: block!important; }
+[data-route^="Form/Fiscal Year Company"] [data-page-route="List/Fiscal Year Company/List"].page-container { display: block!important; }
+[data-route^="Form/Item Variant"] [data-page-route="List/Item Variant/List"].page-container { display: block!important; }
+[data-route^="Form/Item Attribute Value"] [data-page-route="List/Item Attribute Value/List"].page-container { display: block!important; }
+[data-route^="Form/Item Attribute"] [data-page-route="List/Item Attribute/List"].page-container { display: block!important; }
+[data-route^="Form/Email Account"] [data-page-route="List/Email Account/List"].page-container { display: block!important; }
+[data-route^="Form/Web Form Field"] [data-page-route="List/Web Form Field/List"].page-container { display: block!important; }
+[data-route^="Form/Web Form"] [data-page-route="List/Web Form/List"].page-container { display: block!important; }
+[data-route^="Form/Party Account"] [data-page-route="List/Party Account/List"].page-container { display: block!important; }
+[data-route^="Form/Language"] [data-page-route="List/Language/List"].page-container { display: block!important; }
+[data-route^="Form/Print Settings"] [data-page-route="List/Print Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Notification Recipient"] [data-page-route="List/Notification Recipient/List"].page-container { display: block!important; }
+[data-route^="Form/Notification"] [data-page-route="List/Notification/List"].page-container { display: block!important; }
+[data-route^="Form/Landed Cost Taxes and Charges"] [data-page-route="List/Landed Cost Taxes and Charges/List"].page-container { display: block!important; }
+[data-route^="Form/Landed Cost Voucher"] [data-page-route="List/Landed Cost Voucher/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Reconciliation Invoice"] [data-page-route="List/Payment Reconciliation Invoice/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Reconciliation Payment"] [data-page-route="List/Payment Reconciliation Payment/List"].page-container { display: block!important; }
+[data-route^="Form/Payment Reconciliation"] [data-page-route="List/Payment Reconciliation/List"].page-container { display: block!important; }
+[data-route^="Form/Email Template"] [data-page-route="List/Email Template/List"].page-container { display: block!important; }
+[data-route^="Form/Address Template"] [data-page-route="List/Address Template/List"].page-container { display: block!important; }
+[data-route^="Form/Pricing Rule"] [data-page-route="List/Pricing Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Version"] [data-page-route="List/Version/List"].page-container { display: block!important; }
+[data-route^="Form/HR Settings"] [data-page-route="List/HR Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Shipping Rule Condition"] [data-page-route="List/Shipping Rule Condition/List"].page-container { display: block!important; }
+[data-route^="Form/Shipping Rule"] [data-page-route="List/Shipping Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Buying Settings"] [data-page-route="List/Buying Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Selling Settings"] [data-page-route="List/Selling Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Settings"] [data-page-route="List/Stock Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Accounts Settings"] [data-page-route="List/Accounts Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Currency Exchange"] [data-page-route="List/Currency Exchange/List"].page-container { display: block!important; }
+[data-route^="Form/Product Bundle"] [data-page-route="List/Product Bundle/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Order"] [data-page-route="List/Sales Order/List"].page-container { display: block!important; }
+[data-route^="Form/Customer"] [data-page-route="List/Customer/List"].page-container { display: block!important; }
+[data-route^="Form/Event"] [data-page-route="List/Event/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Invoice Item"] [data-page-route="List/Sales Invoice Item/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Receipt Item"] [data-page-route="List/Purchase Receipt Item/List"].page-container { display: block!important; }
+[data-route^="Form/Delivery Note"] [data-page-route="List/Delivery Note/List"].page-container { display: block!important; }
+[data-route^="Form/Quotation"] [data-page-route="List/Quotation/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Order Item"] [data-page-route="List/Purchase Order Item/List"].page-container { display: block!important; }
+[data-route^="Form/Note"] [data-page-route="List/Note/List"].page-container { display: block!important; }
+[data-route^="Form/POS Profile"] [data-page-route="List/POS Profile/List"].page-container { display: block!important; }
+[data-route^="Form/Product Bundle Item"] [data-page-route="List/Product Bundle Item/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Invoice Item"] [data-page-route="List/Purchase Invoice Item/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Quotation Item"] [data-page-route="List/Supplier Quotation Item/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Quotation"] [data-page-route="List/Supplier Quotation/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Order"] [data-page-route="List/Purchase Order/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Invoice"] [data-page-route="List/Purchase Invoice/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Receipt"] [data-page-route="List/Purchase Receipt/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Taxes and Charges"] [data-page-route="List/Purchase Taxes and Charges/List"].page-container { display: block!important; }
+[data-route^="Form/Serial No"] [data-page-route="List/Serial No/List"].page-container { display: block!important; }
+[data-route^="Form/Item"] [data-page-route="List/Item/List"].page-container { display: block!important; }
+[data-route^="Form/Global Defaults"] [data-page-route="List/Global Defaults/List"].page-container { display: block!important; }
+[data-route^="Form/Item Price"] [data-page-route="List/Item Price/List"].page-container { display: block!important; }
+[data-route^="Form/Installation Note"] [data-page-route="List/Installation Note/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Inspection"] [data-page-route="List/Quality Inspection/List"].page-container { display: block!important; }
+[data-route^="Form/Website Settings"] [data-page-route="List/Website Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Taxes and Charges"] [data-page-route="List/Sales Taxes and Charges/List"].page-container { display: block!important; }
+[data-route^="Form/Delivery Note Item"] [data-page-route="List/Delivery Note Item/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Team"] [data-page-route="List/Sales Team/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Partner"] [data-page-route="List/Sales Partner/List"].page-container { display: block!important; }
+[data-route^="Form/Packing Slip"] [data-page-route="List/Packing Slip/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Entry"] [data-page-route="List/Stock Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Packing Slip Item"] [data-page-route="List/Packing Slip Item/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Reconciliation"] [data-page-route="List/Stock Reconciliation/List"].page-container { display: block!important; }
+[data-route^="Form/Web Page"] [data-page-route="List/Web Page/List"].page-container { display: block!important; }
+[data-route^="Form/Blog Post"] [data-page-route="List/Blog Post/List"].page-container { display: block!important; }
+[data-route^="Form/Item Group"] [data-page-route="List/Item Group/List"].page-container { display: block!important; }
+[data-route^="Form/Blogger"] [data-page-route="List/Blogger/List"].page-container { display: block!important; }
+[data-route^="Form/About Us Settings"] [data-page-route="List/About Us Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Blog Settings"] [data-page-route="List/Blog Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Report"] [data-page-route="List/Report/List"].page-container { display: block!important; }
+[data-route^="Form/Item Customer Detail"] [data-page-route="List/Item Customer Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Invoice Advance"] [data-page-route="List/Purchase Invoice Advance/List"].page-container { display: block!important; }
+[data-route^="Form/Blog Category"] [data-page-route="List/Blog Category/List"].page-container { display: block!important; }
+[data-route^="Form/Opportunity"] [data-page-route="List/Opportunity/List"].page-container { display: block!important; }
+[data-route^="Form/Salary Structure"] [data-page-route="List/Salary Structure/List"].page-container { display: block!important; }
+[data-route^="Form/Website Slideshow"] [data-page-route="List/Website Slideshow/List"].page-container { display: block!important; }
+[data-route^="Form/Material Request"] [data-page-route="List/Material Request/List"].page-container { display: block!important; }
+[data-route^="Form/Website Slideshow Item"] [data-page-route="List/Website Slideshow Item/List"].page-container { display: block!important; }
+[data-route^="Form/About Us Team Member"] [data-page-route="List/About Us Team Member/List"].page-container { display: block!important; }
+[data-route^="Form/Project"] [data-page-route="List/Project/List"].page-container { display: block!important; }
+[data-route^="Form/Item Reorder"] [data-page-route="List/Item Reorder/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Order Item"] [data-page-route="List/Sales Order Item/List"].page-container { display: block!important; }
+[data-route^="Form/Quotation Item"] [data-page-route="List/Quotation Item/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Explosion Item"] [data-page-route="List/BOM Explosion Item/List"].page-container { display: block!important; }
+[data-route^="Form/Batch"] [data-page-route="List/Batch/List"].page-container { display: block!important; }
+[data-route^="Form/Activity Type"] [data-page-route="List/Activity Type/List"].page-container { display: block!important; }
+[data-route^="Form/Timesheet Detail"] [data-page-route="List/Timesheet Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Timesheet"] [data-page-route="List/Timesheet/List"].page-container { display: block!important; }
+[data-route^="Form/Website Item Group"] [data-page-route="List/Website Item Group/List"].page-container { display: block!important; }
+[data-route^="Form/Top Bar Item"] [data-page-route="List/Top Bar Item/List"].page-container { display: block!important; }
+[data-route^="Form/Company History"] [data-page-route="List/Company History/List"].page-container { display: block!important; }
+[data-route^="Form/Maintenance Visit Purpose"] [data-page-route="List/Maintenance Visit Purpose/List"].page-container { display: block!important; }
+[data-route^="Form/Maintenance Schedule Item"] [data-page-route="List/Maintenance Schedule Item/List"].page-container { display: block!important; }
+[data-route^="Form/Maintenance Schedule Detail"] [data-page-route="List/Maintenance Schedule Detail/List"].page-container { display: block!important; }
+[data-route^="Form/UOM Conversion Detail"] [data-page-route="List/UOM Conversion Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Landed Cost Item"] [data-page-route="List/Landed Cost Item/List"].page-container { display: block!important; }
+[data-route^="Form/Material Request Item"] [data-page-route="List/Material Request Item/List"].page-container { display: block!important; }
+[data-route^="Form/Landed Cost Purchase Receipt"] [data-page-route="List/Landed Cost Purchase Receipt/List"].page-container { display: block!important; }
+[data-route^="Form/Item Tax"] [data-page-route="List/Item Tax/List"].page-container { display: block!important; }
+[data-route^="Form/Item Supplier"] [data-page-route="List/Item Supplier/List"].page-container { display: block!important; }
+[data-route^="Form/Item Website Specification"] [data-page-route="List/Item Website Specification/List"].page-container { display: block!important; }
+[data-route^="Form/Item Quality Inspection Parameter"] [data-page-route="List/Item Quality Inspection Parameter/List"].page-container { display: block!important; }
+[data-route^="Form/Packed Item"] [data-page-route="List/Packed Item/List"].page-container { display: block!important; }
+[data-route^="Form/SMS Parameter"] [data-page-route="List/SMS Parameter/List"].page-container { display: block!important; }
+[data-route^="Form/Target Detail"] [data-page-route="List/Target Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Brand"] [data-page-route="List/Brand/List"].page-container { display: block!important; }
+[data-route^="Form/Opportunity Item"] [data-page-route="List/Opportunity Item/List"].page-container { display: block!important; }
+[data-route^="Form/Installation Note Item"] [data-page-route="List/Installation Note Item/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Item"] [data-page-route="List/BOM Item/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Operation"] [data-page-route="List/BOM Operation/List"].page-container { display: block!important; }
+[data-route^="Form/Production Plan Item"] [data-page-route="List/Production Plan Item/List"].page-container { display: block!important; }
+[data-route^="Form/Production Plan Sales Order"] [data-page-route="List/Production Plan Sales Order/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Block List Date"] [data-page-route="List/Leave Block List Date/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Block List Allow"] [data-page-route="List/Leave Block List Allow/List"].page-container { display: block!important; }
+[data-route^="Form/Holiday"] [data-page-route="List/Holiday/List"].page-container { display: block!important; }
+[data-route^="Form/Expense Claim Detail"] [data-page-route="List/Expense Claim Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Education"] [data-page-route="List/Employee Education/List"].page-container { display: block!important; }
+[data-route^="Form/Employee External Work History"] [data-page-route="List/Employee External Work History/List"].page-container { display: block!important; }
+[data-route^="Form/Employee Internal Work History"] [data-page-route="List/Employee Internal Work History/List"].page-container { display: block!important; }
+[data-route^="Form/Appraisal Goal"] [data-page-route="List/Appraisal Goal/List"].page-container { display: block!important; }
+[data-route^="Form/Appraisal Template Goal"] [data-page-route="List/Appraisal Template Goal/List"].page-container { display: block!important; }
+[data-route^="Form/Quality Inspection Reading"] [data-page-route="List/Quality Inspection Reading/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Order Item Supplied"] [data-page-route="List/Purchase Order Item Supplied/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Receipt Item Supplied"] [data-page-route="List/Purchase Receipt Item Supplied/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Invoice Advance"] [data-page-route="List/Sales Invoice Advance/List"].page-container { display: block!important; }
+[data-route^="Form/Journal Entry Account"] [data-page-route="List/Journal Entry Account/List"].page-container { display: block!important; }
+[data-route^="Form/Monthly Distribution Percentage"] [data-page-route="List/Monthly Distribution Percentage/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Clearance Detail"] [data-page-route="List/Bank Clearance Detail/List"].page-container { display: block!important; }
+[data-route^="Form/Workflow Transition"] [data-page-route="List/Workflow Transition/List"].page-container { display: block!important; }
+[data-route^="Form/Workflow Document State"] [data-page-route="List/Workflow Document State/List"].page-container { display: block!important; }
+[data-route^="Form/Has Role"] [data-page-route="List/Has Role/List"].page-container { display: block!important; }
+[data-route^="Form/DocPerm"] [data-page-route="List/DocPerm/List"].page-container { display: block!important; }
+[data-route^="Form/DocField"] [data-page-route="List/DocField/List"].page-container { display: block!important; }
+[data-route^="Form/DefaultValue"] [data-page-route="List/DefaultValue/List"].page-container { display: block!important; }
+[data-route^="Form/Customize Form Field"] [data-page-route="List/Customize Form Field/List"].page-container { display: block!important; }
+[data-route^="Form/Contact Us Settings"] [data-page-route="List/Contact Us Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Type"] [data-page-route="List/Leave Type/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Allocation"] [data-page-route="List/Leave Allocation/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Application"] [data-page-route="List/Leave Application/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Block List"] [data-page-route="List/Leave Block List/List"].page-container { display: block!important; }
+[data-route^="Form/DocType"] [data-page-route="List/DocType/List"].page-container { display: block!important; }
+[data-route^="Form/Department"] [data-page-route="List/Department/List"].page-container { display: block!important; }
+[data-route^="Form/Issue"] [data-page-route="List/Issue/List"].page-container { display: block!important; }
+[data-route^="Form/Account"] [data-page-route="List/Account/List"].page-container { display: block!important; }
+[data-route^="Form/Task"] [data-page-route="List/Task/List"].page-container { display: block!important; }
+[data-route^="Form/Stock Ledger Entry"] [data-page-route="List/Stock Ledger Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Job Applicant"] [data-page-route="List/Job Applicant/List"].page-container { display: block!important; }
+[data-route^="Form/Customize Form"] [data-page-route="List/Customize Form/List"].page-container { display: block!important; }
+[data-route^="Form/Communication"] [data-page-route="List/Communication/List"].page-container { display: block!important; }
+[data-route^="Form/Currency"] [data-page-route="List/Currency/List"].page-container { display: block!important; }
+[data-route^="Form/Price List"] [data-page-route="List/Price List/List"].page-container { display: block!important; }
+[data-route^="Form/Upload Attendance"] [data-page-route="List/Upload Attendance/List"].page-container { display: block!important; }
+[data-route^="Form/Cost Center"] [data-page-route="List/Cost Center/List"].page-container { display: block!important; }
+[data-route^="Form/Print Format"] [data-page-route="List/Print Format/List"].page-container { display: block!important; }
+[data-route^="Form/Fiscal Year"] [data-page-route="List/Fiscal Year/List"].page-container { display: block!important; }
+[data-route^="Form/BOM"] [data-page-route="List/BOM/List"].page-container { display: block!important; }
+[data-route^="Form/Country"] [data-page-route="List/Country/List"].page-container { display: block!important; }
+[data-route^="Form/Patch Log"] [data-page-route="List/Patch Log/List"].page-container { display: block!important; }
+[data-route^="Form/Error Log"] [data-page-route="List/Error Log/List"].page-container { display: block!important; }
+[data-route^="Form/Job Opening"] [data-page-route="List/Job Opening/List"].page-container { display: block!important; }
+[data-route^="Form/Address"] [data-page-route="List/Address/List"].page-container { display: block!important; }
+[data-route^="Form/Contact"] [data-page-route="List/Contact/List"].page-container { display: block!important; }
+[data-route^="Form/Newsletter"] [data-page-route="List/Newsletter/List"].page-container { display: block!important; }
+[data-route^="Form/Maintenance Visit"] [data-page-route="List/Maintenance Visit/List"].page-container { display: block!important; }
+[data-route^="Form/Warranty Claim"] [data-page-route="List/Warranty Claim/List"].page-container { display: block!important; }
+[data-route^="Form/Maintenance Schedule"] [data-page-route="List/Maintenance Schedule/List"].page-container { display: block!important; }
+[data-route^="Form/Bin"] [data-page-route="List/Bin/List"].page-container { display: block!important; }
+[data-route^="Form/UOM"] [data-page-route="List/UOM/List"].page-container { display: block!important; }
+[data-route^="Form/Territory"] [data-page-route="List/Territory/List"].page-container { display: block!important; }
+[data-route^="Form/SMS Settings"] [data-page-route="List/SMS Settings/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Person"] [data-page-route="List/Sales Person/List"].page-container { display: block!important; }
+[data-route^="Form/Print Heading"] [data-page-route="List/Print Heading/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier Group"] [data-page-route="List/Supplier Group/List"].page-container { display: block!important; }
+[data-route^="Form/Terms and Conditions"] [data-page-route="List/Terms and Conditions/List"].page-container { display: block!important; }
+[data-route^="Form/Quotation Lost Reason"] [data-page-route="List/Quotation Lost Reason/List"].page-container { display: block!important; }
+[data-route^="Form/Customer Group"] [data-page-route="List/Customer Group/List"].page-container { display: block!important; }
+[data-route^="Form/SMS Center"] [data-page-route="List/SMS Center/List"].page-container { display: block!important; }
+[data-route^="Form/Authorization Rule"] [data-page-route="List/Authorization Rule/List"].page-container { display: block!important; }
+[data-route^="Form/Campaign"] [data-page-route="List/Campaign/List"].page-container { display: block!important; }
+[data-route^="Form/Workstation"] [data-page-route="List/Workstation/List"].page-container { display: block!important; }
+[data-route^="Form/Work Order"] [data-page-route="List/Work Order/List"].page-container { display: block!important; }
+[data-route^="Form/Salary Slip"] [data-page-route="List/Salary Slip/List"].page-container { display: block!important; }
+[data-route^="Form/Leave Control Panel"] [data-page-route="List/Leave Control Panel/List"].page-container { display: block!important; }
+[data-route^="Form/Holiday List"] [data-page-route="List/Holiday List/List"].page-container { display: block!important; }
+[data-route^="Form/Expense Claim"] [data-page-route="List/Expense Claim/List"].page-container { display: block!important; }
+[data-route^="Form/Employment Type"] [data-page-route="List/Employment Type/List"].page-container { display: block!important; }
+[data-route^="Form/Branch"] [data-page-route="List/Branch/List"].page-container { display: block!important; }
+[data-route^="Form/Attendance"] [data-page-route="List/Attendance/List"].page-container { display: block!important; }
+[data-route^="Form/Designation"] [data-page-route="List/Designation/List"].page-container { display: block!important; }
+[data-route^="Form/Supplier"] [data-page-route="List/Supplier/List"].page-container { display: block!important; }
+[data-route^="Form/Sales Taxes and Charges Template"] [data-page-route="List/Sales Taxes and Charges Template/List"].page-container { display: block!important; }
+[data-route^="Form/Purchase Taxes and Charges Template"] [data-page-route="List/Purchase Taxes and Charges Template/List"].page-container { display: block!important; }
+[data-route^="Form/Period Closing Voucher"] [data-page-route="List/Period Closing Voucher/List"].page-container { display: block!important; }
+[data-route^="Form/GL Entry"] [data-page-route="List/GL Entry/List"].page-container { display: block!important; }
+[data-route^="Form/Bank Clearance"] [data-page-route="List/Bank Clearance/List"].page-container { display: block!important; }
+[data-route^="Form/Monthly Distribution"] [data-page-route="List/Monthly Distribution/List"].page-container { display: block!important; }
+[data-route^="Form/Property Setter"] [data-page-route="List/Property Setter/List"].page-container { display: block!important; }
+[data-route^="Form/Module Def"] [data-page-route="List/Module Def/List"].page-container { display: block!important; }
+[data-route^="Form/Client Script"] [data-page-route="List/Client Script/List"].page-container { display: block!important; }
+[data-route^="Form/Role"] [data-page-route="List/Role/List"].page-container { display: block!important; }
+[data-route^="Form/Workflow State"] [data-page-route="List/Workflow State/List"].page-container { display: block!important; }
+[data-route^="Form/Workflow Action Master"] [data-page-route="List/Workflow Action Master/List"].page-container { display: block!important; }
+[data-route^="Form/Workflow"] [data-page-route="List/Workflow/List"].page-container { display: block!important; }
+[data-route^="Form/Website Script"] [data-page-route="List/Website Script/List"].page-container { display: block!important; }
+[data-route^="Form/Page"] [data-page-route="List/Page/List"].page-container { display: block!important; }
+[data-route^="Form/File"] [data-page-route="List/File/List"].page-container { display: block!important; }
+[data-route^="Form/BOM Update Tool"] [data-page-route="List/BOM Update Tool/List"].page-container { display: block!important; }
+[data-route^="Form/Mode of Payment"] [data-page-route="List/Mode of Payment/List"].page-container { display: block!important; }
+[data-route^="Form/Rename Tool"] [data-page-route="List/Rename Tool/List"].page-container { display: block!important; }
+[data-route^="Form/Letter Head"] [data-page-route="List/Letter Head/List"].page-container { display: block!important; }
+[data-route^="Form/Email Queue"] [data-page-route="List/Email Queue/List"].page-container { display: block!important; }
+[data-route^="Form/Appraisal Template"] [data-page-route="List/Appraisal Template/List"].page-container { display: block!important; }
+[data-route^="Form/ToDo"] [data-page-route="List/ToDo/List"].page-container { display: block!important; }
+[data-route^="Form/SMS Log"] [data-page-route="List/SMS Log/List"].page-container { display: block!important; }
+[data-route^="Form/Authorization Control"] [data-page-route="List/Authorization Control/List"].page-container { display: block!important; }
+[data-route^="Form/Industry Type"] [data-page-route="List/Industry Type/List"].page-container { display: block!important; }
+[data-route^="Form/Expense Claim Type"] [data-page-route="List/Expense Claim Type/List"].page-container { display: block!important; }
 
 }
