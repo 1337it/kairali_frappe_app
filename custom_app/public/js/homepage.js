@@ -119,7 +119,7 @@ $("body").attr('overlay-route', '');
 
 
 
-const formclose = document.createElement('li');
+const formclose = document.createElement('th');
 
       formclose.innerHTML = '<button class="fa fa-close" id="formclose">';
 
