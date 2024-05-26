@@ -375,10 +375,16 @@ document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
+const listhead = document.createElement('button');
+const click = document.createAttribute('onclick');
+const sty = document.createAttribute('style');
 
-var listclick = document.createAttribute("onclick");
-document.querySelectorAll("[data-page-route^='List/'] .page-head")[0].attributes.setNamedItem(listclick);
-document.querySelectorAll("[data-page-route^='List/'] .page-head")[0].attributes.onclick.value = 'frappe.set_route("List", frappe.get_route()[1],"List");';
+click.value = 'frappe.set_route("List", frappe.get_route()[1],"List");';
+listhead.setAttributeNode(click);
+sty.value = 'position: absolute;width:100%;height:100px;z-index:9;opacity:0;';
+listhead.setAttributeNode(sty);
+document.querySelectorAll("[data-page-route^='List/']")[0].appendChild(listhead);
+
     
 
 };
