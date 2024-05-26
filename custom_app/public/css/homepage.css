@@ -711,7 +711,6 @@ display: none;
 0% {
     transform: translate3d(0px, 40px, 0px);
 	opacity:0.8;
-scale:0.95;
 
     pointer-events: none;
 }
@@ -720,7 +719,6 @@ scale:0.95;
     transform: translate3d(0px, 0px, 0px);
     pointer-events: auto;
 	opacity:1;
-scale:1;
 
 }
 }
@@ -1888,7 +1886,7 @@ top:6px;
      margin-left:0;
  padding-top:100px;
  padding-bottom:0px;
-	box-shadow: 0 25.6px 500px 500px rgba(0, 0, 0, 0.05), 0 0 40px 1px rgba(0, 0, 0, 0.30);
+	box-shadow: 0 25.6px 500px 500px rgba(0, 0, 0, 0.1), 0 0 40px 1px rgba(0, 0, 0, 0.30);
 animation-name: css-0, css-8; animation-duration: 0.367s; animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1); animation-fill-mode: both;
 
 	
@@ -1900,7 +1898,7 @@ animation-name: css-0, css-8; animation-duration: 0.367s; animation-timing-funct
      margin-left:0;
  padding-top:100px;
  padding-bottom:0px;
-	box-shadow: 0 25.6px 500px 500px rgba(0, 0, 0, 0.05), 0 0 40px 1px rgba(0, 0, 0, 0.30);
+	box-shadow: 0 25.6px 500px 500px rgba(0, 0, 0, 0.1), 0 0 40px 1px rgba(0, 0, 0, 0.30);
 animation-name: css-0, css-8; 
 	animation-duration: 0.367s; 
 	animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1); 
