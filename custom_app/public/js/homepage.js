@@ -116,10 +116,21 @@ $("body").attr('overlay-route', '');
       });
       });
 
+
+
+
+const formclose = document.createElement('li');
+
+      formclose.innerHTML = '<button class="fa fa-close" id="formclose">';
+body2.appendChild(formclose);
+      // Attach the "click" event to your button
+      formclose.addEventListener('click', () => {
+frappe.set_route("List", frappe.get_route()[1],"List");
+
+      });
       // Attach the "click" event to your button
 
 
- 
 
 
 
@@ -366,14 +377,10 @@ frappe.ui.keys.add_shortcut({
 			ignore_inputs: true,
 
 		});
-const listhead = document.createElement('button');
-const click = document.createAttribute('onclick');
-const sty = document.createAttribute('style');
 
-click.value = 'frappe.set_route("List", frappe.get_route()[1],"List");';
-listhead.setAttributeNode(click);
-sty.value = 'position: absolute;width:100%;height:100px;z-index:9;opacity:0;';
-listhead.setAttributeNode(sty);
+
+
+
 
 window.onload = function() {
 console.log(frappe.get_route());
@@ -384,7 +391,6 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
 
-document.querySelectorAll('[data-page-route*=List] .page-head')[0].prepend(listhead);
     
 
 };
