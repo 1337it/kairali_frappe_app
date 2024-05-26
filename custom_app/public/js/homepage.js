@@ -122,7 +122,7 @@ $("body").attr('overlay-route', '');
 const formclose = document.createElement('li');
 
       formclose.innerHTML = '<button class="fa fa-close" id="formclose">';
-body2.appendChild(formclose);
+
       // Attach the "click" event to your button
       formclose.addEventListener('click', () => {
 frappe.set_route("List", frappe.get_route()[1],"List");
@@ -391,7 +391,7 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
 
-    
+document.querySelector("#body").appendChild(formclose);
 
 };
 
