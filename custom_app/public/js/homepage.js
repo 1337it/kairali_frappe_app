@@ -376,10 +376,9 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
 
-
-		const listclick = document.createAttribute("onclick");
-document.querySelector("[data-page-route^='List/'] .page-head").attributes.setNamedItem(listclick);
-document.querySelector("[data-page-route='List/"+frappe.get_route()[1]+"/List'] .page-head").attributes.onclick.value ="frappe.set_route('List', frappe.get_route()[1],'List');";
+var listclick = document.createAttribute("onclick");
+document.querySelectorAll("[data-page-route^='List/'] .page-head")[0].attributes.setNamedItem(listclick);
+document.querySelectorAll("[data-page-route^='List/'] .page-head")[0].attributes.onclick.value = 'frappe.set_route("List", frappe.get_route()[1],"List");';
     
 
 };
