@@ -376,11 +376,10 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
 
-const listhead = document.querySelector("[data-page-route = 'List/"+this.doctype+"/List'] .page-head");
 
 		const listclick = document.createAttribute("onclick");
-listhead.attributes.setNamedItem(listclick);
-listhead.attributes.onclick.value ="frappe.set_route('List', frappe.get_route()[1],'List');";
+document.querySelector("[data-page-route = 'List/"+this.doctype+"/List'] .page-head").attributes.setNamedItem(listclick);
+document.querySelector("[data-page-route = 'List/"+this.doctype+"/List'] .page-head").attributes.onclick.value ="frappe.set_route('List', frappe.get_route()[1],'List');";
     
 
 };
