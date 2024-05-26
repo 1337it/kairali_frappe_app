@@ -2016,6 +2016,7 @@ height: calc(100% - var(--navbar-height));
 right: 0!important;
 
 z-index: 9;
+	border-top: 3px solid rgba(0, 0, 0, 0.08);
 }
 
 [data-route^="Workspaces"] .page-container{
