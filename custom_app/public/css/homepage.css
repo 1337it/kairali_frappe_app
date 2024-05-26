@@ -2672,6 +2672,7 @@ margin-bottom: 0px;
  width:100vw;
  -webkit-transform:translate3d(0,0,0);
  -webkit-backface-visibility: hidden;
+	transition: 0s top;
 }
 [data-route^='Form'] .page-head {
 z-index: 9 !important;
