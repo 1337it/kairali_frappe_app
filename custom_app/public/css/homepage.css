@@ -6845,9 +6845,6 @@ padding-top: 45px!important;
 [data-route^="Form/Industry Type"] [data-page-route="List/Industry Type/List"].page-container { display: block!important; }
 [data-route^="Form/Expense Claim Type"] [data-page-route="List/Expense Claim Type/List"].page-container { display: block!important; }
 
-.sticky-top:hover
-{
-z-index:99999;
-}
+
 
 }
