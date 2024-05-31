@@ -940,6 +940,18 @@ display: none!important;
 
 
 @media (max-width:1199px) {
+.page-head{
+left:48px;
+}
+
+
+
+
+	
+.page-title .title-area .title-text
+	{
+		max-width: calc(100vw - 200px) !important;
+	}
 
     .search-bar {
 flex: 1;
