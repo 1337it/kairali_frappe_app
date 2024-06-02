@@ -1475,7 +1475,7 @@ display: none!important;
 
 [overlay-route='Messenger'] #chatclose
 {position: fixed;
-top: calc(5% + var(--navbar-height) + 10px);
+top: calc(2.5% + var(--navbar-height) + 10px);
 left: calc(10px + 5%);
 z-index: 99999;
 font-size: 28px;
@@ -1487,7 +1487,7 @@ background: transparent;
 }
 [overlay-route='Drive'] #driveclose
 {position: fixed;
-top: calc(5% + var(--navbar-height) + 10px);
+top: calc(2.5% + var(--navbar-height) + 10px);
 left: calc(10px + 5%);
 z-index: 99999;
 font-size: 28px;
