@@ -69,7 +69,7 @@ const drivebutton = document.createElement('li');
     drivebutton.innerHTML = "<button class='fa fa-folder nav-item' id='drivebutton'>";
   const body = document.querySelector("#body");
 const driveframe = document.createElement('div');
-driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(5% + var(--navbar-height));background: rgba(255, 255, 255, 0.62);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);;" title="Drive"></iframe>';
+driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(2.5% + var(--navbar-height));background: rgba(255, 255, 255, 0.62);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);;" title="Drive"></iframe>';
 
       // Attach the "click" event to your button
       drivebutton.addEventListener('click', () => {
@@ -96,7 +96,7 @@ const chatbutton = document.createElement('li');
 chatbutton.innerHTML = "<button class='fa fa-comment nav-item' id='chatbutton'>";
   const body2 = document.querySelector("#body");
 const driveframe2 = document.createElement('div');
-driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(5% + var(--navbar-height));position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);" title="Drive"></iframe>';
+driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(2.5% + var(--navbar-height));position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);" title="Drive"></iframe>';
 
       // Attach the "click" event to your button
       chatbutton.addEventListener('click', () => {
