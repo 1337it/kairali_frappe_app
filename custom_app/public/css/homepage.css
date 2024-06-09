@@ -1471,7 +1471,11 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
-	
+	.sticky-top:hover {
+z-index: 999999;
+box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 9px!important;
+transition: 0.3s box-shadow ease;
+}
 
 [overlay-route='Messenger'] #chatclose
 {position: fixed;
