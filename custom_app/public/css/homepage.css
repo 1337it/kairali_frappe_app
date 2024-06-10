@@ -1823,16 +1823,16 @@ display: block;
 width: 80vw;
 position: absolute;
 /* background-color: var(--bg-color); */
-z-index: 9998;
 height: calc(100% - var(--navbar-height));
         animation-name: css-0, css-8;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
     animation-fill-mode: both;
 right: 0!important;
 }
 [data-route^='Form/Notification Settings'] .editable-form.page-container {
 width: calc(100% - 48px);
-
+border-top: 1px solid rgba(128, 128, 128, 0.31);
+border-left: 1px solid rgba(128, 128, 128, 0.31);
 }
 
 [data-route^='Form'] .submitted-form.page-container {
@@ -1840,28 +1840,30 @@ display: block;
 width: 80vw;
 position: absolute;
 /* background-color: var(--bg-color); */
-z-index: 9998;
 height: calc(100% - var(--navbar-height));
         animation-name: css-0, css-8;
     animation-duration: 0.367s;
     animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
     animation-fill-mode: both;
 right: 0!important;
-	  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(128, 128, 128, 0.31);
+border-left: 1px solid rgba(128, 128, 128, 0.31);
 }
 [data-route^='Form'] .cancelled-form.page-container {
 display: block;
 width: 80vw;
 position: absolute;
 /* background-color: var(--bg-color); */
-z-index: 9998;
 height: calc(100% - var(--navbar-height));
         animation-name: css-0, css-8;
     animation-duration: 0.367s;
     animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
     animation-fill-mode: both;
 right: 0!important;
-	  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(128, 128, 128, 0.31);
+border-left: 1px solid rgba(128, 128, 128, 0.31);
 }
 	
   
