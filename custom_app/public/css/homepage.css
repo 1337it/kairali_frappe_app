@@ -792,6 +792,7 @@ color: 1b1b1b;
 {
     width:100%!important;
 }
+
 textarea.form-control {
     height: 60px !important;
 }
@@ -1471,6 +1472,15 @@ display: none!important;
 
  
 @media (min-width: 1200px) {
+
+	.form-sidebar .sidebar-image-section .sidebar-standard-image .standard-image {
+height: 0;
+padding: 50% 0;
+border-radius: 11px;
+background: #e0e0e0;
+box-shadow: 5px 5px 15px #c9c9c9 inset,
+-5px -5px 15px rgba(246, 246, 246, 1) inset;
+}
 	.sticky-top:hover {
 z-index: 999999;
 box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 9px!important;
