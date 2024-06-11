@@ -1,3 +1,4 @@
+
 .modal-backdrop
 {
 z-index:99998!important;
@@ -1473,6 +1474,15 @@ display: none!important;
  
 @media (min-width: 1200px) {
 
+.form-tabs-sticky-up
+	{
+		top:46px;
+	}
+.form-tabs-sticky-down
+	{
+		top:46px;
+	}
+	
 	.form-sidebar .sidebar-image-section .sidebar-standard-image .standard-image {
 height: 0;
 padding: 50% 0;
