@@ -1828,7 +1828,10 @@ height: calc(100% - var(--navbar-height));
   box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
     animation-fill-mode: both;
 right: 0!important;
+	border-top: 1px solid rgba(128, 128, 128, 0.31);
+border-left: 1px solid rgba(128, 128, 128, 0.31);
 }
+
 [data-route^='Form/Notification Settings'] .editable-form.page-container {
 width: calc(100% - 48px);
 border-top: 1px solid rgba(128, 128, 128, 0.31);
