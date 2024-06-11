@@ -1663,7 +1663,7 @@ margin: 0!important;
 
  [data-theme-mode="light"] .page-head {
 
-background: var(--white-overlay-900);
+background: white;
 
 }
  [data-theme-mode="dark"] .page-head {
@@ -2223,6 +2223,7 @@ width: 16.667vw;
     order: 2;
     background-color: var(--gray-800);
 	       border-left: none;
+	   z-index:9;
 }
 
    [data-theme-mode="light"] .page-wrapper .layout-side-section {
@@ -2232,6 +2233,7 @@ width: 16.667vw;
     display: block;
     order: 2;
 background-color: rgb(244, 244, 244);
+	   z-index:9;
 }
  [data-route^="List/"] .page-form {
 margin-top: 20px!important;
