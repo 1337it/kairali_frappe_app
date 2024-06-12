@@ -2223,6 +2223,7 @@ width: 16.667vw;
     display: block;
     order: 2;
    background:white;
+	z-index:9;
 
 }
    [data-theme-mode="dark"] .page-wrapper .layout-side-section {
@@ -2243,7 +2244,7 @@ width: 16.667vw;
     display: block;
     order: 2;
 background-color: rgb(244, 244, 244);
-	   z-index:9;
+	   
 }
  [data-route^="List/"] .page-form {
 margin-top: 20px!important;
