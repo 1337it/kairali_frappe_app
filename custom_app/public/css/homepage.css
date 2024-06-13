@@ -826,7 +826,7 @@ width: 220px!important;
 height: 220px!important;
 }
 .form-message {
-margin-top: 50px;
+margin-top: 0px;
 margin-bottom: 0px!important;
 }
 
@@ -2719,7 +2719,7 @@ display: none!important;
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
  padding-right:35px;
- padding-top:0px;
+ padding-top:96px;
   padding-left:35px!important;
 }
 
@@ -2757,7 +2757,7 @@ z-index: 9 !important;
 {
 z-index: 9 !important;
     position: absolute !important;
-    top: 0 ;
+    top: 0!important ;
     left: 0 ;
 
 animation-name: css-0, css-8;
