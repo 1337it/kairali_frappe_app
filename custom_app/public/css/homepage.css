@@ -2964,13 +2964,7 @@ overflow-x: hidden;
 overflow-x: hidden;
 }
 
- .form-tabs-sticky-down {
-    top: calc(var(--navbar-height) - 60px)!important;
-}
 
- .form-tabs-sticky-up {
-    top: calc(var(--navbar-height) + 25px)!important;
-}
  #freeze{
   z-index:-1!important;
  }
