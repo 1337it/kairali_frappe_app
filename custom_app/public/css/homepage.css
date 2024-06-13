@@ -1,4 +1,13 @@
-
+.gutter {
+position: absolute;
+top: 50%;
+left: -6px;
+font-size: 30px;
+color: black;
+z-index: 9;
+letter-spacing: -3px;
+font-weight: 100;
+}
 .modal-backdrop
 {
 z-index:99998!important;
@@ -818,7 +827,7 @@ height: 220px!important;
 }
 .form-message {
 margin-top: 50px;
-margin-bottom: -35px!important;
+margin-bottom: 0px!important;
 }
 
 .page-wrapper {
@@ -1493,8 +1502,6 @@ box-shadow: 5px 5px 15px #c9c9c9 inset,
 }
 	.sticky-top:hover {
 z-index: 999999;
-box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 9px!important;
-transition: 0.3s box-shadow ease;
 }
 
 [overlay-route='Messenger'] #chatclose
@@ -2234,7 +2241,7 @@ width: 16.667vw;
     order: 2;
     background-color: var(--gray-800);
 	       border-left: none;
-	   z-index:9;
+	
 }
 
    [data-theme-mode="light"] .page-wrapper .layout-side-section {
