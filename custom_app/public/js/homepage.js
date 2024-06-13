@@ -364,14 +364,14 @@ frappe.ui.keys.add_shortcut({
 
 
 	frappe.ui.keys.add_shortcut({
-			shortcut: "down",
+			shortcut: "shift+down",
 			action: () => cur_frm.navigate_records(0),
 			description: __("Go to next record"),
 			ignore_inputs: true,
 		});
 
 frappe.ui.keys.add_shortcut({
-			shortcut: "up",
+			shortcut: "shift+up",
 			action: () => cur_frm.navigate_records(1),
 			description: __("Go to previous record"),
 			ignore_inputs: true,
