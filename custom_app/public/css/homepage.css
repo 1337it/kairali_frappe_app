@@ -1398,6 +1398,10 @@ display: none!important;
  .page-wrapper .layout-main-section{
   padding-left:0px;
   padding-right:0px;
+	 top: 0px!important;
+width: calc(100% - 40px);
+left: 20px;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
  }
  
  /* Editorjs */
@@ -1538,18 +1542,20 @@ background: transparent;
 [data-route^='Form'] #formclose {
 z-index: 9999!important;
 position: absolute;
-top: 62px;
-left: calc(20px + 20vw);
+top: 73px;
+left: calc(21px + 20vw);
 font-size: 24px;
 background: rgba(153, 153, 153, 0);
 border: 0;
 height: 40px;
-display:block;
-animation-name: css-0, css-8; 
-	animation-duration: 0.367s;
-	animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
-	animation-fill-mode: both;
-width: 40px;
+display: block;
+animation-name: css-0, css-8;
+animation-duration: 0.367s;
+animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+animation-fill-mode: both;
+width: 50px;
+margin: 0;
+border-right: 1px solid rgba(128, 128, 128, 0.58);
 }
 
 	
@@ -1925,11 +1931,10 @@ left: 0;
 }
 
 .page-head .justify-between .page-actions {
-  top: 10px;
+  top: 20px;
 /* right: 0; */
-left: 1%;
-right: 16.6667vw;
-width: 98%;
+left: 20px;
+width: calc(100% - 40px);
 box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 padding: 10px;
 }
@@ -2033,10 +2038,7 @@ left: 48px;
 /* max-width: 50%; */
 }
   [data-page-route="Item"] .page-head .justify-between .page-title{
-padding-left: var(--title-pad)!important;
- }
-    [data-page-route="Sales Invoice"] .page-head .justify-between .page-title{
-padding-left: 20px!important;
+padding-left: 84px!important;
  }
 [data-route^="Form/"] .frappe-list .result header.text-muted {
 margin-left: 20px!important;
@@ -2153,7 +2155,6 @@ flex-wrap: 1;
 }
    [data-route^="Form/"] .page-head .justify-between{
  margin-right:0px;
- height:96px!important;
  margin-left:0px;
  box-shadow:none;
  position:relative;
@@ -2428,7 +2429,6 @@ padding-right: 10px!important;
 /* Row */
 .page-head .justify-between{
  margin-right:0px;
- height:96px!important;
  margin-left:0px;
  box-shadow:none;
  position:static;
@@ -2709,7 +2709,7 @@ display: none!important;
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
  padding-right:35px;
- padding-top:96px;
+ padding-top:20px;
   padding-left:35px!important;
 }
 
@@ -3459,7 +3459,7 @@ padding-left: calc(0px);
 padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
-top: 40px;
+top: 14px;
  }
 
 .page-title.col-md-4 {
