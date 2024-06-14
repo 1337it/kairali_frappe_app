@@ -1486,6 +1486,21 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 
  
 @media (min-width: 1200px) {
+.btn.btn-default:hover
+{
+background-color: rgba(244, 244, 244, 0.73);
+}
+	.page-actions .btn{
+height: 30px;
+padding: 0 15px!important;
+border-radius: 0;
+line-height: 1;
+background-color: transparent;
+color: black;
+border-left: 1px solid rgba(128, 128, 128, 0);
+gap: 4px!important;
+font-weight: 200;
+	}
 
 .form-tabs-sticky-up
 	{
@@ -1967,7 +1982,7 @@ animation-name: css-0, css-8;
 	animation-duration: 0.367s; 
 	animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1); 
 	animation-fill-mode: both;
-
+overscroll-behavior: none;
 }
 [data-route^='Form'] .cancelled-form .page-wrapper .layout-main-section-wrapper {
  margin-bottom:0px;
@@ -2031,9 +2046,7 @@ left: 20px;
 left: 48px;
 /* max-width: 50%; */
 }
-  [data-page-route="Item"] .page-head .justify-between .page-title{
-padding-left: 84px!important;
- }
+
 [data-route^="Form/"] .frappe-list .result header.text-muted {
 margin-left: 20px!important;
 margin-right: 20px!important;
@@ -2704,7 +2717,7 @@ display: none!important;
 /* Layout main section wrapper */
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
- padding-top:0px;
+ padding-top:2px;
 	background: rgb(250,250,250);
 }
 
@@ -2724,13 +2737,15 @@ background: #292929;
 }
 .page-head {
 z-index: 9!important;
-position: fixed!important;
-top:var(--navbar-height);
+position: relative!important;
+top: 0;
 margin-bottom: 0px;
- width:100%;
- -webkit-transform:translate3d(0,0,0);
- -webkit-backface-visibility: hidden;
-	transition: 0s top;
+width: calc(100% - 40px);
+-webkit-transform: translate3d(0,0,0);
+-webkit-backface-visibility: hidden;
+transition: 0s top;
+left: 48px;
+height: 90px;
 }
 [data-route^='Form'] .page-head {
 z-index: 9 !important;
@@ -2778,47 +2793,7 @@ z-index: 9 !important;
 }
 
 
-[data-route^='Form'] .page-title {
-        left: 0px;
-}
-	
-}
-[data-page-route="Item"] .page-head {
-z-index: 6;
-position: sticky;
-top: 0!important;
-background: var(--bg-color);
-margin-bottom: 5px;
 
-}
-[data-page-route="Sales Invoice"] .page-head {
-z-index: 6;
-position: sticky;
-top: 0!important;
-background-color: rgb(250, 250, 250);
-margin-bottom: 5px;
-}
-[data-page-route="Sales Order"] .page-head {
-z-index: 6;
-position: sticky;
-top: 0!important;
-background: var(--bg-color);
-margin-bottom: 5px;
-}
-[data-page-route="Purchase Invoice"] .page-head {
-z-index: 6;
-position: sticky;
-top: 0!important;
-background: var(--bg-color);
-margin-bottom: 5px;
-}
-[data-page-route="Purchase Order"] .page-head {
-z-index: 6;
-position: sticky;
-top: 0!important;
-background: var(--bg-color);
-margin-bottom: 5px;
-}
 
 
     
@@ -3448,12 +3423,12 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 
  /* Column 4/12 */
  .page-head .justify-between .page-title{
-max-width: 100%;
-padding-left: calc(0px);
+max-width: 50%;
+padding-left: 90px;
 padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
-top: 14px;
+top: 10px;
  }
 
 .page-title.col-md-4 {
@@ -3849,40 +3824,18 @@ height: 22px!important;
 stroke-width: 0.5px;
 }
 
-[data-page-route="Item"]:not(:only-child) .page-title .title-area .title-text
-{
- padding-left:0px!important;
- max-width:calc(33.3vw - 100px)!important;
- font-size:32px!important;
-}
-
 .page-title .title-area .title-text
 {
- padding-left:20px!important;
+ padding-left:0px!important;
  max-width:calc(50vw)!important;
- font-size:34px!important;
+ font-size:26px!important;
 }
 
-[data-route^="Form/"] [data-page-route^="List/"] .page-title .title-area .title-text
-{
- padding-left:20px!important;
- max-width:calc(50vw)!important;
- font-size:34px!important;
+[data-route^="Form/"] [data-page-route^="List/"] .page-title .title-area .title-text {
+padding-left: 20px!important;
+max-width: calc(50vw)!important;
+font-size: 26px!important;
 }
-
-[data-route^="Form/"] [data-page-route^="Sales"] .page-title .title-area .title-text
-{
- padding-left:20px!important;
- max-width:calc(50vw)!important;
- font-size:32px!important;
-}
-
-
-flex-wrap:wrap;
- height:100vh;
- display:inline-flex;
- flex-direction:column;
- justify-content:center;
 
 #content{
  height:100vh;
@@ -4036,9 +3989,9 @@ z-index:4!important;
 	border-radius:0px;
 position: sticky!important;
 top:0px;
-border-bottom: 1px none var(--border-color)!important;
+border-bottom: 1px solid var(--border-color)!important;
 /* margin: 20px; */
-box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+
 width: calc(100% - 0px);
 margin-left: 0px;
 }
