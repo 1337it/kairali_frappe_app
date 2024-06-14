@@ -1982,7 +1982,7 @@ animation-name: css-0, css-8;
 	animation-duration: 0.367s; 
 	animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1); 
 	animation-fill-mode: both;
-overscroll-behavior: none;
+
 }
 [data-route^='Form'] .cancelled-form .page-wrapper .layout-main-section-wrapper {
  margin-bottom:0px;
@@ -2004,6 +2004,7 @@ animation-name: css-0, css-8;
      margin-left:48px;
  padding-bottom:0px;
 background:rgb(250, 250, 250);
+	overscroll-behavior: none;
 }
 
 [data-page-route] .form-tabs-list .form-tabs:not([data-page-route^='List/'])  {
