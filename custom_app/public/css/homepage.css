@@ -1972,7 +1972,7 @@ left: 0;
   top: 20px;
 /* right: 0; */
 left: 20px;
-width: calc(100% - 88px);
+width: 15%;
 box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 padding: 10px;
 }
@@ -2059,6 +2059,7 @@ border-bottom: 1px solid var(--kanban-new-card-bg)!important;
 [data-route^="List/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
         margin-left: 20px;
 margin-right: 20px;
+	margin-bottom:50px!important;
 }
     [data-route^="Form/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
         margin-left: 0px!important;
@@ -2122,17 +2123,37 @@ display: none;
 }
   [data-route^="Form/"] [data-page-route^="List/"] .page-head .justify-between .page-title {
       max-width: 100%!important;
-padding-left: 20px;
+padding-left: 0px;
 padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
+}
+  [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-main{
+width:20%
+}
 
+[data-route^="Form/"] [data-page-route^="List/"] .list-row-col {
+display: none;
+}
+
+ [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .frappe-card .page-form
+{
+	position: fixed;
+visibility: hidden;
+}
+
+  [data-route^="Form/"] [data-page-route^="List/"] .page-actions .standard-actions {
+display: none;
+align-items: center;
+}
+[data-route^="Form/"] [data-page-route^="List/"] .page-actions .standard-actions {
+visibility: hidden;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .page-head {
         z-index: 4 !important;
         left: 48px;
-        position: fixed !important;
-        top: var(--navbar-height);
+        position: relative !important;
+        top: 0;
 cursor:pointer;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .frappe-list .ellipsis {
@@ -2282,7 +2303,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 	   
 }
  [data-route^="List/"] .page-form {
-margin-top: 20px!important;
+margin-top: 0px!important;
 border-bottom: none!important;
 z-index: 9!important;
  padding:0px!important;
@@ -2653,7 +2674,7 @@ margin-right: 20px!important;
  
 
     [data-route^="Form/"] [data-page-route^="List/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-padding-top: 88px;
+padding-top: 0px;
 }
     [data-route^="List/"] .layout-side-section {
 
@@ -3533,7 +3554,7 @@ border-top-right-radius: 0px;
 border-bottom-left-radius: 0px;
 border-bottom-right-radius: 0px;
 padding-bottom: 5px;
-padding-top: 5px;
+padding-top: 7px;
 padding-right: 25px;
 padding-left: 5px;
 position: fixed;
@@ -3871,7 +3892,7 @@ stroke-width: 0.5px;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .page-title .title-area .title-text {
-padding-left: 20px!important;
+padding-left: 0px!important;
 max-width: calc(50vw)!important;
 font-size: 26px!important;
 }
