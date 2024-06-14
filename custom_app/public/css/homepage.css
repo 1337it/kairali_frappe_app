@@ -3980,7 +3980,7 @@ box-shadow: none;
 padding-left: 0px!important;
 padding-bottom: 0px!important;
 padding-right: 0px!important;
-    background-color: var(--gray-100)!important;
+    background-color: transparent!important;
 }
 
 [data-theme-mode="dark"] .std-form-layout>.form-layout>.form-page {
@@ -4030,8 +4030,10 @@ z-index:4!important;
 position: sticky!important;
 top:0px;
 border-bottom: 1px none var(--border-color)!important;
-	margin: 20px;
+/* margin: 20px; */
 box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+width: calc(100% - 0px);
+margin-left: 0px;
 }
 
 * {
