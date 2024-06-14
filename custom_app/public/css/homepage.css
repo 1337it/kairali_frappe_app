@@ -1538,8 +1538,8 @@ background: transparent;
 [data-route^='Form'] #formclose {
 z-index: 9999!important;
 position: absolute;
-top: 50px;
-left: calc(5px + 20vw);
+top: 62px;
+left: calc(20px + 20vw);
 font-size: 24px;
 background: rgba(153, 153, 153, 0);
 border: 0;
@@ -1931,11 +1931,13 @@ top:6px;
 width: calc(100vw - 0px);
 }
 [data-route^="Form/"] .page-head .justify-between .page-actions {
-        justify-content: flex-end;
-        top: 10px;
-        /* right: 0; */
-left:0;
-        right: 16.6667vw;
+  top: 10px;
+/* right: 0; */
+left: 1%;
+right: 16.6667vw;
+width: 98%;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+padding: 10px;
 }
   [data-route^="List/"] .page-head .justify-between .page-actions {
  justify-content:flex-end;
@@ -1987,7 +1989,7 @@ animation-name: css-0, css-8;
  padding-left:0px;
      margin-left:48px;
  padding-bottom:0px;
-background-color: var(--gray-100);
+background:rgb(250, 250, 250);
 }
 .form-tabs-list .form-tabs {
 justify-content: start!important;
@@ -2808,7 +2810,7 @@ margin-bottom: 5px;
 z-index: 6;
 position: sticky;
 top: 0!important;
-background: var(--bg-color);
+background-color: rgb(250, 250, 250);
 margin-bottom: 5px;
 }
 [data-page-route="Sales Order"] .page-head {
