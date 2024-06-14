@@ -1486,6 +1486,14 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 
  
 @media (min-width: 1200px) {
+
+	.btn.btn-primary.primary-action {
+white-space: nowrap;
+/* --icon-stroke: currentColor; */
+/* --icon-fill-bg: var(--btn-primary); */
+background: black!important;
+color: white!important;
+}
 .btn.btn-default:hover
 {
 background-color: rgba(244, 244, 244, 0.73);
@@ -2262,7 +2270,7 @@ z-index: 9!important;
     position:fixed;
     display:block;
       width: 16.6vw;
-     
+     margin-right:20px;
 }
    [data-route^="List/"] .page-wrapper .frappe-card .page-form{
 padding-left: 0px!important;
@@ -2602,11 +2610,13 @@ margin-top: 0px!important;
 }
     [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper {
     color: rgb(51, 60, 68);
-    padding-right: 15px;
+    padding-right: 0px;
     padding-top: 0px;
-    padding-left: 15px !important;
-        margin-left:48px;
+    padding-left: 0px !important;
+        margin-left:68px;
+	            margin-right:20px;
         background-color:white;
+	    box-shadow:rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 }
  /* Layout side section */
  .page-wrapper .layout-side-section{
@@ -2614,7 +2624,7 @@ margin-top: 0px!important;
  }
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-padding-top: 138px;
+padding-top: 48px;
   margin-left: 20px!important;
 margin-right: 20px!important;
 }
@@ -2717,7 +2727,7 @@ display: none!important;
 .page-wrapper .layout-main-section-wrapper{
  color:rgb(51, 60, 68);
  padding-top:0px;
-	background: rgb(250,250,250);
+
 }
 
 /* Layout main section */
