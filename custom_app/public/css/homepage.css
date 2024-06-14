@@ -2624,7 +2624,7 @@ margin-top: 0px!important;
  }
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
-padding-top: 48px;
+padding-top: 42px;
   margin-left: 20px!important;
 margin-right: 20px!important;
 }
@@ -3507,7 +3507,7 @@ position: fixed;
 left: 48px;
 width: calc(83.3334% - 128px);
 margin-left: 0px;
-top: calc(96px + var(--navbar-height));
+top: calc(90px + var(--navbar-height));
 z-index: 5;
 border-bottom: 1px solid var(--gray-300);
   background-color: white;
@@ -3878,7 +3878,7 @@ border:none!important;
 
 .list-paging-area, .footnote-area {
 border-top:none!important;
-margin-bottom: 30px!important;
+margin-bottom: 10px!important;
 }
 
 #global-sidebarList li a:hover {
