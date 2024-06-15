@@ -1599,7 +1599,7 @@ background: transparent;
 z-index: 9999!important;
 position: absolute;
 top: 73px;
-left: calc(21px + 20vw);
+left: calc(40px + 22vw);
 font-size: 24px;
 background: rgba(153, 153, 153, 0);
 border: 0;
