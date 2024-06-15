@@ -1761,8 +1761,8 @@ margin-bottom: 5px;
 }
 
     [data-route^="Form/"] [data-page-route^="List"] .frappe-list .result header.text-muted {
-        margin-left: 20px !important;
-        margin-right: 20px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
         margin-top: 0px;
         margin-bottom: 0px;
         border-top-left-radius: 0px;
@@ -1775,9 +1775,11 @@ margin-bottom: 5px;
         padding-left: 5px;
         position: fixed;
         left: 48px;
-        margin-left: 0px;
         z-index: 5;
         border-bottom: 0.5px solid #949494;
+	    width: 17.1%;
+margin-left: 0px;
+top: var(--navbar-height);
     }
 
   
@@ -1969,9 +1971,11 @@ left: 0;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .frappe-card .list-paging-area{
-width: 15%;
-left: 4%;
-	justify-content: center;
+width: 17.1%;
+left: 48px;
+justify-content: center;
+bottom: 0px;
+margin-bottom: 0!important;
 }
 [data-route^="Form/"] [data-page-route^="List/"] .list-paging-area .level-left {
 justify-content: flex-start;
@@ -2178,7 +2182,17 @@ visibility: hidden;
         position: relative !important;
         top: 0;
 cursor:pointer;
+	    display:none;
 }
+
+    [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper
+{
+height:calc(100vh - var(--navbar-height) - 0px);
+	 margin-left:0px;
+	 margin-right:0px;
+	
+}
+
     [data-route^="Form/"] [data-page-route^="List/"] .frappe-list .ellipsis {
 white-space: nowrap;
 overflow: visible;
@@ -2696,9 +2710,6 @@ padding-top: 42px;
   margin-left: 20px!important;
 margin-right: 20px!important;
 	padding:0;
-}
-       [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper {
-        margin-left:20px;
 }
 
     [data-route^="Form/"] [data-page-route^="List/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
