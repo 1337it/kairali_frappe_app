@@ -1790,7 +1790,7 @@ margin-bottom: 5px;
         left: 48px;
         z-index: 5;
         border-bottom: 0.5px solid #949494;
-	    width: 17.1%;
+	    width: 19%;
 margin-left: 0px;
 top: calc(var(--navbar-height) + 90px);
     }
@@ -1971,11 +1971,12 @@ left: 0;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .frappe-card .list-paging-area{
-width: 17.1%;
+width: 20%;
 left: 48px;
 justify-content: center;
 bottom: 0px;
 margin-bottom: 20!important;
+	padding-bottom: 20px;
 }
 [data-route^="Form/"] [data-page-route^="List/"] .list-paging-area .level-left {
 justify-content: flex-start;
@@ -2135,7 +2136,7 @@ display: none;
 padding-right: 0 var(--padding-lg);
 position: fixed;
 top: 138px;
-left: 13%;
+left: 17%;
 z-index: 9999;
 visibility: visible;
 }
