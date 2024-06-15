@@ -2145,6 +2145,11 @@ padding-right: 0.75vw!important;
 display: flex;
 text-align: center;
 }
+[data-route^="Form/"] .page-head .justify-between .page-title {
+/* left: 0 !important; */
+padding-left: 86px;
+}
+
   [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-main{
 width:17.3%
 }
@@ -3520,14 +3525,6 @@ display: flex;
 text-align: center;
 top: 10px;
  }
-[data-page-route="List/Item/List"] .page-head .justify-between .page-title{
-max-width: 50%;
-padding-left: 0px;
-padding-right: 0.75vw!important;
-display: flex;
-text-align: center;
-top: 10px;
-}
 [data-route^="Workspaces"] .page-head .justify-between .page-title{
 top:0px;
 
