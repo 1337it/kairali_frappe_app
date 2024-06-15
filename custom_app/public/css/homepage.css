@@ -1969,8 +1969,16 @@ left: 0;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .frappe-card .list-paging-area{
+width: 15%;
+left: 4%;
+}
+[data-route^="Form/"] [data-page-route^="List/"] .list-paging-area .level-left {
+justify-content: flex-start;
+display: none;
+}
 
-display:none;
+[data-route^="Form/"] [data-page-route^="List/"] .list-paging-area .level-right {
+justify-content: center;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .page-head .justify-between .page-actions {
