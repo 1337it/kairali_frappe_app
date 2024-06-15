@@ -1779,7 +1779,7 @@ margin-bottom: 5px;
         border-bottom: 0.5px solid #949494;
 	    width: 17.1%;
 margin-left: 0px;
-top: var(--navbar-height);
+top: calc(var(--navbar-height) + 90px);
     }
 
   
@@ -1990,7 +1990,7 @@ justify-content: center;
   top: 20px;
 /* right: 0; */
 left: 20px;
-width: 75%;
+width: calc(15% - 8px);
 box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 padding: 10px;
 }
@@ -2134,7 +2134,7 @@ display: none;
    [data-route^="Form/"] [data-page-route^="List/"] .page-form .filter-section {
 padding-right: 0 var(--padding-lg);
 position: fixed;
-top: 48px;
+top: 138px;
 left: 14%;
 z-index: 9999;
 visibility: visible;
