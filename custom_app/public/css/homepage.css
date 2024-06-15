@@ -1,7 +1,7 @@
 .gutter {
 position: absolute;
 top: 50%;
-left: -6px;
+left:calc(20% - 10px);
 font-size: 30px;
 color: black;
 z-index: 9;
