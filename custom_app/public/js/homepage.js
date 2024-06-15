@@ -2,9 +2,6 @@ const slider = document.createElement('th');
 
       slider.innerHTML = "<button class='gutter'>";
 
-      // Attach the "click" event to your button
-      });
-
 
 const leftPane = document.querySelector("[data-page-route^='List/'].page-container");
 const rightPane = document.querySelector(".page-container:not(#page-List)");
