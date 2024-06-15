@@ -1971,6 +1971,7 @@ left: 0;
 [data-route^="Form/"] [data-page-route^="List/"] .frappe-card .list-paging-area{
 width: 15%;
 left: 4%;
+	justify-content: center;
 }
 [data-route^="Form/"] [data-page-route^="List/"] .list-paging-area .level-left {
 justify-content: flex-start;
@@ -2696,7 +2697,9 @@ padding-top: 42px;
 margin-right: 20px!important;
 	padding:0;
 }
- 
+       [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper {
+        margin-left:20px;
+}
 
     [data-route^="Form/"] [data-page-route^="List/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
 padding-top: 0px;
