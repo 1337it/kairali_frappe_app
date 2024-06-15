@@ -1890,12 +1890,14 @@ height: calc(100% - var(--navbar-height));
 right: 0!important;
 	border-top: 1px solid rgba(128, 128, 128, 0.31);
 border-left: 1px solid rgba(128, 128, 128, 0.31);
+	top: var(--navbar-height);
 }
 
 [data-route^='Form/Notification Settings'] .editable-form.page-container {
 width: calc(100% - 48px);
 border-top: 1px solid rgba(128, 128, 128, 0.31);
 border-left: 1px solid rgba(128, 128, 128, 0.31);
+	top: var(--navbar-height);
 }
 
 [data-route^='Form'] .submitted-form.page-container {
@@ -1912,6 +1914,7 @@ right: 0!important;
 	  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
 	border-top: 1px solid rgba(128, 128, 128, 0.31);
 border-left: 1px solid rgba(128, 128, 128, 0.31);
+	top: var(--navbar-height);
 }
 [data-route^='Form'] .cancelled-form.page-container {
 display: block;
@@ -1927,6 +1930,7 @@ right: 0!important;
 	  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.1);
 	border-top: 1px solid rgba(128, 128, 128, 0.31);
 border-left: 1px solid rgba(128, 128, 128, 0.31);
+	top: var(--navbar-height);
 }
 	
   
@@ -2115,12 +2119,12 @@ max-width: 16.66666667vw;
 display: none;
 }
    [data-route^="Form/"] [data-page-route^="List/"] .page-form .filter-section {
-
 padding-right: 0 var(--padding-lg);
 position: fixed;
-top: 96px;
-left: 14vw;
+top: 138px;
+left: 13%;
 z-index: 9999;
+visibility: visible;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .filter-section .sort-selector {
 scrollbar-width: none;
@@ -2173,7 +2177,10 @@ text-overflow: ellipsis;
 max-width: 100%;
 vertical-align: middle;
 }
-    
+    [data-route^="Form/"] [data-page-route^="List/"] .page-actions .custom-actions {
+align-items: center;
+visibility:hidden;
+}
   
 
 [data-route^="Form"] .layout-main-section-wrapper {
