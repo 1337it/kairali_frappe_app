@@ -1,7 +1,7 @@
 const slider = document.createElement('th');
 
       slider.innerHTML = "<button class='gutter'>";
-
+document.querySelectorAll('[data-page-route^="List/"].page-container')[0].prepend(slider);
 
 const leftPane = document.querySelector("[data-page-route^='List/'].page-container");
 const rightPane = document.querySelector(".page-container:not(#page-List)");
@@ -419,7 +419,7 @@ frappe.ui.keys.add_shortcut({
 window.onload = function() {
 console.log(frappe.get_route());
 
-document.querySelectorAll('[data-page-route^="List/"].page-container')[0].prepend(slider);
+
 document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
