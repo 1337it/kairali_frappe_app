@@ -1,4 +1,33 @@
+const leftPane = document.querySelector("[data-page-route^='List/'].page-container");
+const rightPane = document.querySelector(".page-container:not(#page-List)");
+const gutter = document.querySelector(".gutter");
 
+
+function resizer(e) {
+  
+  window.addEventListener('mousemove', mousemove);
+  window.addEventListener('mouseup', mouseup);
+  
+  let prevX = e.x;
+  const leftPanel = leftPane.getBoundingClientRect();
+  
+  
+  function mousemove(e) {
+    let newX = prevX - e.x;
+    leftPane.style.width = leftPanel.width - newX + "px";
+  }
+  
+  function mouseup() {
+    window.removeEventListener('mousemove', mousemove);
+    window.removeEventListener('mouseup', mouseup);
+    
+  }
+  
+  
+}
+
+
+gutter.addEventListener('mousedown', resizer);
 
 
 
