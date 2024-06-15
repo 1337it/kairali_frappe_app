@@ -1,6 +1,6 @@
 const slider = document.createElement('th');
 
-      slider.innerHTML = "<button class='fa fa-arrow-left' id='backbutton'>";
+      slider.innerHTML = "<button class='gutter'>";
 
       // Attach the "click" event to your button
       });
