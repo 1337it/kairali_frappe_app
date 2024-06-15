@@ -2152,7 +2152,7 @@ display: flex;
 text-align: center;
 }
   [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-main{
-width:15%
+width:17.3%
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .list-row-col {
