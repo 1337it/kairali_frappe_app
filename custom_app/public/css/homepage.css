@@ -2134,8 +2134,8 @@ display: none;
    [data-route^="Form/"] [data-page-route^="List/"] .page-form .filter-section {
 padding-right: 0 var(--padding-lg);
 position: fixed;
-top: 138px;
-left: 13%;
+top: 48px;
+left: 14%;
 z-index: 9999;
 visibility: visible;
 }
