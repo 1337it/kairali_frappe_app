@@ -717,6 +717,19 @@ display: none;
 }
 }
 
+@keyframes css-1 {
+0% {
+    opacity: 0;
+	delay:0.3s;
+	scale:0.99;
+}
+
+100% {
+    opacity: 1;
+	scale:1;
+}
+}
+
 @keyframes css-8 {
 0% {
     transform: translate3d(40px, 0px, 0px);
