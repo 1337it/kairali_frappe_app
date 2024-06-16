@@ -54,9 +54,7 @@ const backbutton = document.createElement('li');
       backbutton.innerHTML = "<button class='fa fa-arrow-left' id='backbutton'>";
 
       // Attach the "click" event to your button
-      backbutton.addEventListener('click', () => {
-            history.back();
-      });
+     
 
 
 
@@ -68,21 +66,7 @@ const driveframe = document.createElement('div');
 driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(2.5% + var(--navbar-height));background: rgba(255, 255, 255, 0.62);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);;" title="Drive"></iframe><div id="driveoverlay"></div>';
 
       // Attach the "click" event to your button
-      drivebutton.addEventListener('click', () => {
-$("body").attr('overlay-route', 'Drive');
-
-body.appendChild(driveframe);
-const driveclose = document.createElement('li');
-
-    driveclose.innerHTML = "<button class='fa fa-close' id='driveclose' >";
-body2.appendChild(driveclose);
-      // Attach the "click" event to your button
-      driveclose.addEventListener('click', () => {
-            body.removeChild(driveframe);
-$("body").attr('overlay-route', '');
-	      body.removeChild(driveclose);
-      });
-      });
+     
 
 
 
@@ -120,10 +104,7 @@ const formclose = document.createElement('th');
       formclose.innerHTML = '<button class="fa fa-close" id="formclose">';
 
       // Attach the "click" event to your button
-      formclose.addEventListener('click', () => {
-frappe.set_route("List", frappe.get_route()[1],"List");
-
-      });
+      
       // Attach the "click" event to your button
 
 
@@ -379,6 +360,31 @@ frappe.ui.keys.add_shortcut({
 
 
 window.onload = function() {
+	formclose.addEventListener('click', () => {
+frappe.set_route("List", frappe.get_route()[1],"List");
+
+      });
+	 backbutton.addEventListener('click', () => {
+            history.back();
+      });
+	 drivebutton.addEventListener('click', () => {
+$("body").attr('overlay-route', 'Drive');
+
+body.appendChild(driveframe);
+const driveclose = document.createElement('li');
+
+    driveclose.innerHTML = "<button class='fa fa-close' id='driveclose' >";
+body2.appendChild(driveclose);
+      // Attach the "click" event to your button
+      driveclose.addEventListener('click', () => {
+            body.removeChild(driveframe);
+$("body").attr('overlay-route', '');
+	      body.removeChild(driveclose);
+      });
+      });
+	      backbutton.addEventListener('click', () => {
+            history.back();
+      });
 console.log(frappe.get_route());
 
 document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
