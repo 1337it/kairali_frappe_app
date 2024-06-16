@@ -27,12 +27,36 @@ z-index:99999!important;
     border-radius: 1px;
     background-color: var(--gray-100)!important;
 }
-
+.frappe-control[data-fieldtype=Select].form-group .select-icon.xs {
+top: 6px;
+right: 10px;
+/* font-size: 2px; */
+/* width: 16px; */
+/* height: 16px; */
+}
+.icon-xs {
+width: 16px;
+height: 16px;
+}
 [data-page-route^='List/'] .form-control {
 
 background-color: var(--bg-color)!important;
+	border-radius: 2px;
+background: #F0F0F0;
+box-shadow: inset 1px 1px 1px #cacaca,
+inset -1px -1px 1px #ffffff;
 }
-
+select.form-control {
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+padding-block: 0;
+border-radius: 3px;
+background: #F0F0F0;
+box-shadow: 1px 1px 1px #cacaca,
+-1px -1px 1px #ffffff!important;
+line-height: 1.2;
+}
 
 
 .rt-r-bottom-0 {
