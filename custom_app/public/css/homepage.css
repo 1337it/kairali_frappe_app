@@ -57,7 +57,15 @@ box-shadow: 1px 1px 1px #cacaca,
 -1px -1px 1px #ffffff!important;
 line-height: 1.2;
 }
+.awesomplete>input{
+{
 
+background-color: var(--bg-color)!important;
+	border-radius: 2px;
+background: #F0F0F0;
+box-shadow: inset 1px 1px 1px #cacaca,
+inset -1px -1px 1px #ffffff;
+}	
 
 .rt-r-bottom-0 {
     display: none!important;
