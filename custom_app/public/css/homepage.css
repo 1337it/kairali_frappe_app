@@ -2865,7 +2865,7 @@ width: calc(100% - 0px);
 }
 [data-route^='Form'] .editable-form .page-head
 {
-z-index: 9 !important;
+z-index: 10 !important;
     position: relative !important;
     top: 0!important ;
     left: 0 ;
