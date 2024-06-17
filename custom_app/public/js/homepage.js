@@ -51,16 +51,13 @@ shortcut: "alt+right",
 
 const backbutton = document.createElement('li');
 
-      backbutton.innerHTML = "<button class='fa fa-arrow-left' id='backbutton'>";
-
-      // Attach the "click" event to your button
-     
+      backbutton.innerHTML = "<button class='fa fa-arrow-left' onclick='backbutton()' id='backbutton'>";
 
 
 
 const drivebutton = document.createElement('li');
 
-    drivebutton.innerHTML = "<button class='fa fa-folder nav-item' id='drivebutton'>";
+    drivebutton.innerHTML = "<button class='fa fa-folder nav-item' onclick='drivebutton()' id='drivebutton'>";
   const body = document.querySelector("#body");
 const driveframe = document.createElement('div');
 driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(2.5% + var(--navbar-height));background: rgba(255, 255, 255, 0.62);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);;" title="Drive"></iframe><div id="driveoverlay"></div>';
@@ -73,35 +70,18 @@ driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;wi
 
 const chatbutton = document.createElement('li');
 
-chatbutton.innerHTML = "<button class='fa fa-comment nav-item' id='chatbutton'>";
+chatbutton.innerHTML = "<button class='fa fa-comment nav-item' onclick='chatbutton()' id='chatbutton'>";
   const body2 = document.querySelector("#body");
 const driveframe2 = document.createElement('div');
 driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(2.5% + var(--navbar-height));position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);" title="Drive"></iframe><div id="chatoverlay"></div>';
 
       // Attach the "click" event to your button
-      chatbutton.addEventListener('click', () => {
-
-$("body").attr('overlay-route', 'Messenger');
-body2.appendChild(driveframe2);
-const chatclose = document.createElement('li');
-
-      chatclose.innerHTML = '<button class="fa fa-close" id="chatclose">';
-body2.appendChild(chatclose);
-      // Attach the "click" event to your button
-      chatclose.addEventListener('click', () => {
-            body2.removeChild(driveframe2);
-	      body2.removeChild(chatclose);
-$("body").attr('overlay-route', '');
-
-      });
-      });
-
 
 
 
 const formclose = document.createElement('th');
 
-      formclose.innerHTML = '<button class="fa fa-close" id="formclose">';
+      formclose.innerHTML = '<button class="fa fa-close" onclick"formclose()" id="formclose">';
 
       // Attach the "click" event to your button
       
@@ -360,31 +340,7 @@ frappe.ui.keys.add_shortcut({
 
 
 window.onload = function() {
-	formclose.addEventListener('click', () => {
-frappe.set_route("List", frappe.get_route()[1],"List");
 
-      });
-	 backbutton.addEventListener('click', () => {
-            history.back();
-      });
-	 drivebutton.addEventListener('click', () => {
-$("body").attr('overlay-route', 'Drive');
-
-body.appendChild(driveframe);
-const driveclose = document.createElement('li');
-
-    driveclose.innerHTML = "<button class='fa fa-close' id='driveclose' >";
-body2.appendChild(driveclose);
-      // Attach the "click" event to your button
-      driveclose.addEventListener('click', () => {
-            body.removeChild(driveframe);
-$("body").attr('overlay-route', '');
-	      body.removeChild(driveclose);
-      });
-      });
-	      backbutton.addEventListener('click', () => {
-            history.back();
-      });
 console.log(frappe.get_route());
 
 document.querySelectorAll('#global-sidebarList')[0].prepend(backbutton);
@@ -396,8 +352,44 @@ document.querySelector("#body").appendChild(formclose);
    
 };
 
+function backbutton() {
+     history.back();
+}
 
+function formclose() {
+     frappe.set_route("List", frappe.get_route()[1],"List");
+}
 
+function drivebutton() {
+     $("body").attr('overlay-route', 'Drive');
+
+body.appendChild(driveframe);
+const driveclose = document.createElement('li');
+
+    driveclose.innerHTML = "<button class='fa fa-close' onclick='driveclose()' id='driveclose' >";
+body2.appendChild(driveclose);
+}
+
+function driveclose() {
+                 body.removeChild(driveframe);
+$("body").attr('overlay-route', '');
+	      body.removeChild(driveclose);
+}
+
+function chatbutton() {
+$("body").attr('overlay-route', 'Messenger');
+body2.appendChild(driveframe2);
+const chatclose = document.createElement('li');
+
+      chatclose.innerHTML = '<button class="fa fa-close" onclick="chatclose()" id="chatclose">';
+body2.appendChild(chatclose);
+}
+
+function chatclose() {
+            body2.removeChild(driveframe2);
+	      body2.removeChild(chatclose);
+$("body").attr('overlay-route', '');
+}
 
 
 
