@@ -107,7 +107,6 @@ frappe.ui.keys.add_shortcut({
                         });
                         cur_frm.rec_dialog = d;
                         d.show();  
-                         d.$wrapper.find('.modal-dialog').css("width", "90%");
                     }
                 }
             });     
@@ -181,7 +180,6 @@ frappe.ui.keys.add_shortcut({
                         });
                         cur_frm.rec_dialog = d;
                         d.show();  
-                         d.$wrapper.find('.modal-dialog').css("width", "90%");
                     }
               }
             });     
@@ -273,7 +271,6 @@ frappe.ui.keys.add_shortcut({
                         }
                         }
                         d.show();  
-                         d.$wrapper.find('.modal-dialog').css("width", "90%");
                     }
               }
             });     
