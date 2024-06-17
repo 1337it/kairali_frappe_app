@@ -81,7 +81,7 @@ driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: 90%;wi
 
 const formclose = document.createElement('th');
 
-      formclose.innerHTML = '<button class="fa fa-close" onclick"formclosef()" id="formclose">';
+      formclose.innerHTML = '<button class="fa fa-close" onclick="formclosef()" id="formclose">';
 
       // Attach the "click" event to your button
       
