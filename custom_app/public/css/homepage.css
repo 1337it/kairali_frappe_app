@@ -57,7 +57,7 @@ box-shadow: 1px 1px 1px #cacaca,
 -1px -1px 1px #ffffff!important;
 line-height: 1.2;
 }
-.awesomplete>input{
+.awesomplete>input
 {
 
 background-color: var(--bg-color)!important;
