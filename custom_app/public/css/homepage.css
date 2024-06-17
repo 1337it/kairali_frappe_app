@@ -1,3 +1,6 @@
+.frappe-control[data-fieldtype=Select].form-group .placeholder.xs {
+top: 7px;
+}
 .gutter {
 position: absolute;
 top: 50%;
