@@ -1580,6 +1580,10 @@ margin-left: 0px!important;
 color: #cecece;
 padding-left:23px;
 }
+
+	[data-page-route=Workspaces] .layout-main .desk-sidebar {
+margin-top: 48px;
+}
 	.desk-sidebar .standard-sidebar-section .standard-sidebar-label {
 color: #cecece;
 display: none;
