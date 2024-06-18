@@ -389,14 +389,15 @@ $("body").attr('overlay-route', '');
             history.back();
       });
 console.log(frappe.get_route());
-	const raven = document.querySelector('.raven-chat');
-const elementToMove = document.querySelector('#chatbutton');
-const newParent = elementToMove.parent();
-newParent.appendChild(raven);
+
 document.querySelectorAll('#page-Workspaces .overlay-sidebar')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
+		const raven = document.querySelector('.raven-chat');
+const elementToMove = document.querySelector('#chatbutton');
+const newParent = elementToMove.parent();
+newParent.appendChild(raven);
 
 document.querySelector("#body").appendChild(formclose);
    
