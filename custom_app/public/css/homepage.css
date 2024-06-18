@@ -1626,7 +1626,7 @@ height: 22px;
 --icon-stroke: rgb(255, 255, 255);
 left: 0;
 position: fixed;
-margin-left: 15px;
+margin-left:12px;
 }
 
 	.standard-sidebar-section > .sidebar-item-container > .desk-sidebar-item .sidebar-item-label {
@@ -2486,11 +2486,15 @@ width: 16.667vw;
     top: 0;
     display: block;
     order: 2;
-    background-color: var(--gray-800);
-	       border-left: none;
-	
+background-color: rgb(244, 244, 244);
+	   margin: 0 20px 0px 0!important;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+	transition: width 0.2s ease-in-out;
 }
-
+[data-page-route=Workspaces] .layout-main .layout-side-section:hover {
+width: 12.6667%;
+transition: width 0.2s ease-in-out;
+}
    [data-theme-mode="light"] .page-wrapper .layout-side-section {
     background-size: cover;
     padding-top: 30px;
@@ -2500,7 +2504,7 @@ width: 16.667vw;
 background-color: rgb(244, 244, 244);
 	   margin: 0 20px 0px 0!important;
 box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
-	   
+	   transition: width 0.2s ease-in-out;
 }
  [data-route^="List/"] .page-form {
 margin-top: 0px!important;
@@ -2675,7 +2679,7 @@ padding-right: 10px!important;
 }
  
 /* Page body */
-#page-Workspaces .page-body{
+[data-route^="Workspaces/"] #page-Workspaces .page-body{
  margin-left:0px;
  margin-right:0px;
  position:relative;
@@ -2683,7 +2687,9 @@ padding-right: 10px!important;
  padding-right:0px;
  padding-top:0px;
 }
-
+#page-Workspaces .page-body{
+width:0px;
+}
 /* Row */
 .page-head .justify-between{
  margin-right:0px;
@@ -4396,7 +4402,11 @@ padding-top: 45px!important;
 
 
 
-
+[data-page-route=Workspaces] .standard-sidebar-item {
+justify-content: start;
+padding: 0;
+border-radius: 0;
+}
 
 
 
