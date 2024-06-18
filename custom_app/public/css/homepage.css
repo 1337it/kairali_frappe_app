@@ -1617,7 +1617,7 @@ width: 12.6667% !important;
 	   [data-route^="Workspaces/"] #page-Workspaces{
  height:px;
 }
-.icon-md {
+.item-anchor .icon-md {
 width: 22px;
 height: 22px;
 --icon-fill: rgba(91, 91, 91, 0.3);
@@ -2773,8 +2773,13 @@ body{
 
 
 [data-route^="Workspaces/"] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section{
- width:12.6667% !important;
- display:block!important;
+ width:12.6667% ;
+ display:block;
+}
+[style="display: none;"].layout-side-section {
+
+display: block!important;
+width: 48px!important;
 }
 [data-page-route=Workspaces] .sidebar-item-container {
 position: relative;
