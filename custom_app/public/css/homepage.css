@@ -1527,9 +1527,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 
  
 @media (min-width: 1200px) {
-[data-page-route="Workspaces"] .page-title .sidebar-toggle-btn {
-display:block!important;
-}
+
 	
 	[data-page-route="Workspaces"] .page-head {
 display:block!important;
@@ -2788,7 +2786,15 @@ margin-top: 10px;
 display: none;
 }
 [data-route^="Workspaces/"] [data-page-route="Workspaces"] .page-actions {
-display: block!important;
+display: flex !important;
+}
+.page-title .sidebar-toggle-btn .sidebar-toggle-placeholder {
+position: relative;
+/* left: 0px; */
+margin-left: 0;
+
+/* font-size: 30px; */
+/* right: 10px; */
 }
 /* Layout side section */
 .page-wrapper .layout-side-section{
