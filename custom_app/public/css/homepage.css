@@ -1530,15 +1530,8 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 .sidebar-toggle-btn {
 display: none!important;
 }
-[data-route^="Workspaces/"] .sidebar-toggle-btn {
-display: flex;
-margin-right: var(--margin-sm);
-cursor: pointer;
---icon-stroke: var(--gray-700);
-display: block!important;
-}	
 	[data-page-route="Workspaces"] .page-head {
-display:block!important;
+display:none!important;
 	}
 [data-page-route=Workspaces] .layout-main .layout-side-section {
 padding-left: 0px!important;
@@ -1546,7 +1539,7 @@ padding-right: 0px!important;
 }
 	
 	[data-route^="Workspaces/"] .page-head {
-width: calc(100% - var(--sidebar-width))!important;
+width: calc(100% - 12.6667%)!important;
 right: 0;
 /* left: 12.6667%!important; */
 margin-left: 12.6667%;
@@ -1559,7 +1552,7 @@ margin-left: 12.6667%;
 	}
 
 	[data-route^="Workspaces/"] .page-wrapper .layout-main-section-wrapper {
-max-width: calc(100% - var(--sidebar-width));
+max-width: calc(100% - 48px);
 /* left: 12.6667%; */
 }
 
@@ -1578,14 +1571,14 @@ color: #cecece;
 display: none;
 }
 	[data-page-route="Workspaces"] .page-wrapper .layout-side-section {
-width: 16.666667%;
+width: 48px;
 display: block;
 order: 0!important;
 background-color: #212121!important;
 margin: 0 20px 0px 0!important;
 box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
-position: relative;
-top: 0;
+position: fixed;
+top: 48px!important;
 left: 0;
 }
 
@@ -1605,6 +1598,7 @@ display:none!important;
 }
 [data-route^="Workspaces/"] [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
 display: block!important;
+	width: calc(100% - 12.6667%);
 }
 	
 [data-page-route=Workspaces] .page-wrapper .layout-main {
@@ -1896,34 +1890,36 @@ left:0;
 border-bottom: 1px solid rgb(233, 233, 233);
 	    height:90px;
 	    top:0px!important;
+	    position: fixed !important;
 }
 [data-route^='Workspaces/'] [data-theme-mode="dark"] [data-page-route="Workspaces"] .page-head {
 
 background: var(--black-overlay-400);
 left:0px;
-	height: 50px;
-top: var(--navbar-height) !important;
-position: fixed !important;
+
+    height:90px;
+	    top:0px!important;
+	position: fixed !important;
 border-bottom: 1px solid rgb(25, 25, 25);
 }
 [data-theme-mode="light"] [data-page-route="Workspaces"] .page-head {
 
 background: transparent;
 left: 0;
-border-bottom: 1px nonergb(233, 233, 233);
-height: 50px;
-top: var(--navbar-height) !important;
-position: fixed !important;
+border-bottom: 1px none rgb(233, 233, 233);
+    height:90px;
+	    top:0px!important;
+	position: fixed !important;
 }
  [data-theme-mode="dark"] [data-page-route="Workspaces"] .page-head {
 
 
 background: transparent;
 left: 0;
-border-bottom: 1px nonergb(233, 233, 233);
-height: 50px;
-top: var(--navbar-height) !important;
-position: fixed !important;
+	 position: fixed !important;
+border-bottom: 1px none rgb(233, 233, 233);
+    height:90px;
+	    top:0px!important;
 }
 
     
@@ -2776,6 +2772,9 @@ body{
 
 [data-route^="Workspaces/"] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section{
  display:block;
+	width: 16.667%;
+position: fixed;
+top: 48px;
 }
 [style="display: none;"].layout-side-section {
 
