@@ -2829,9 +2829,13 @@ display: none;
 display: flex !important;
 }
 .page-title .sidebar-toggle-btn .sidebar-toggle-placeholder {
-position: relative;
-/* left: 0px; */
-margin-left: 0;
+display:none;
+
+/* font-size: 30px; */
+/* right: 10px; */
+}
+.page-title .sidebar-toggle-btn {
+display:none;
 
 /* font-size: 30px; */
 /* right: 10px; */
