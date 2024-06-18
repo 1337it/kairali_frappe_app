@@ -2677,7 +2677,10 @@ padding-right: 10px!important;
     .navbar .navbar-collapse {
     padding-right: calc(100vw - env(titlebar-area-width, 100vw));
 }
- 
+ [data-page-route] .col-lg-2.layout-side-section {
+flex: 0 0 calc(20% - 20px)!important;
+/* max-width: 16.66666667%; */
+}
 /* Page body */
 [data-route^="Workspaces/"] #page-Workspaces .page-body{
  margin-left:0px;
@@ -2686,6 +2689,7 @@ padding-right: 10px!important;
  top:0px;
  padding-right:0px;
  padding-top:0px;
+	width:100px!important;
 }
 #page-Workspaces .page-body{
 width:0px!important;
