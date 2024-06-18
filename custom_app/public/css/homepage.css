@@ -1551,7 +1551,7 @@ margin-left: 12.6667%;
 	}
 
 	[data-route^="Workspaces/"] .page-wrapper .layout-main-section-wrapper {
-max-width: calc(100% - 12.6667%);
+max-width: calc(100% - 48px);
 /* left: 12.6667%; */
 }
 
@@ -1573,7 +1573,7 @@ display: none;
 background-size: cover;
 padding-top: 30px;
 top: 0;
-		width:48px!important;
+		width:12.6667%;
 display: block;
 order: 0!important;
 background-color: #212121!important;
@@ -2773,7 +2773,6 @@ body{
 
 
 [data-route^="Workspaces/"] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section{
- width:12.6667% ;
  display:block;
 }
 [style="display: none;"].layout-side-section {
