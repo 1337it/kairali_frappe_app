@@ -2518,11 +2518,19 @@ transition: width 0.2s ease-in-out;
     padding-top: 30px;
     top: 0;
     display: block;
-    order: 0;
+    order: 2;
 background-color: rgb(244, 244, 244);
 	   margin: 0 20px 0px 0!important;
 box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 	   transition: width 0.2s ease-in-out;
+}
+   [data-page-route="Workspaces"] .page-wrapper .layout-side-section {
+    background-size: cover;
+    padding-top: 5px;
+    top: 0;
+    display: block;
+    order: 0;
+
 }
  [data-route^="List/"] .page-form {
 margin-top: 0px!important;
