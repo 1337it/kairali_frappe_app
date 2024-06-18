@@ -397,7 +397,7 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton)
 		const raven = document.querySelector('.raven-chat');
 const elementToMove = document.querySelector('#chatbutton');
 const newParent = elementToMove.parentNode;
-newParent.appendChild(raven);
+newParent.prependChild(raven);
 
 document.querySelector("#body").appendChild(formclose);
    
