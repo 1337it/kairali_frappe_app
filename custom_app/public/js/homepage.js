@@ -390,7 +390,7 @@ $("body").attr('overlay-route', '');
       });
 console.log(frappe.get_route());
 
-document.querySelectorAll('#page-Workspaces .overlay-sidebar')[0].prepend(backbutton);
+document.querySelectorAll('#body')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
