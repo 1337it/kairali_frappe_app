@@ -24,6 +24,12 @@ shortcut: "escape",
   }, interval);
 })();
 
+const raven = document.querySelector('.raven-chat');
+const elementToMove = document.querySelector('#chatbutton');
+const newParent = elementToMove.parentNode;
+
+
+
 var clockhead = '<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>'
 $('head').append(clockhead);
 if ($('html').attr('data-theme') == 'dark') {
@@ -386,7 +392,7 @@ $("body").attr('overlay-route', '');
             history.back();
       });
 console.log(frappe.get_route());
-
+newParent.appendChild(raven);
 document.querySelectorAll('#page-Workspaces .overlay-sidebar')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
