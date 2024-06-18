@@ -4011,15 +4011,26 @@ color: rgb(158, 158, 158);
  z-index:3!important;
 }
 
-[data-theme-mode="light"] #page-Workspaces .page-wrapper .layout-main
+[data-route^="Workspaces/"] [data-theme-mode="light"] #page-Workspaces .page-wrapper .layout-main
 {
+	
 background-color: var(--gray-100)!important;
 
+}
+[data-route^="Workspaces/"] [data-theme-mode="dark"] #page-Workspaces .page-wrapper .layout-main
+{
+background-color: #2e2e2e!important;
+
+}
+[data-theme-mode="light"] #page-Workspaces .page-wrapper .layout-main
+{
+
+background-color: transparent!important;
 }
 
 [data-theme-mode="dark"] #page-Workspaces .page-wrapper .layout-main
 {
- background-color: #2e2e2e!important;
+ background-color: transparent!important;
 
 }
 
