@@ -49,7 +49,7 @@ shortcut: "alt+right",
 });
 
 
-const backbutton1 = document.createElement('th');
+const backbutton = document.createElement('th');
 
       backbutton.innerHTML = "<button class='fa fa-arrow-left' id='backbutton'>";
 
