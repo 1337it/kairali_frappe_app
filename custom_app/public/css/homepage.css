@@ -1529,25 +1529,39 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 
  
 @media (min-width: 1200px) {
+
+	[data-route^="Workspaces/"] .page-head {
+width: calc(100% - 12.6667%);
+right: 0;
+/* left: 12.6667%!important; */
+margin-left: 12.6667%;
+}
 .desk-sidebar .standard-sidebar-item.selected
 	{
 		background-color: rgba(244, 244, 244, 0);
 	}
-	
+
+	[data-route^="Workspaces/"] .page-wrapper .layout-main-section-wrapper {
+max-width: calc(100% - 12.6667%);
+/* left: 12.6667%; */
+}
 
 	[data-route^="Workspaces/"] .page-wrapper .layout-side-section {
 background-size: cover;
 padding-top: 30px;
 top: 0;
 display: block;
-order: 0;
-background-color: #212121;
+order: 0!important;
+background-color: #212121!important;
 margin: 0 20px 0px 0!important;
 box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+		position: fixed;
+top: var(--navbar-height)!important;
+left: 0;
 }
 
 [data-page-route="Workspaces"].page-container {
-width: calc(100%);
+width: calc(100%)!important;
 right: 0;
 height: calc(100% - var(--navbar-height));
 right: 0 !important;
@@ -1559,19 +1573,34 @@ position: absolute;
 	{
 display:none!important;
 }
-
+[data-route^="Workspaces/"] [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
+display: block!important;
+}
+	
 [data-page-route=Workspaces] .page-wrapper .layout-main {
 justify-content: start;
 }
- [data-page-route=Workspaces] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section:not([data-route^="Workspaces/"]) {
-width: 48px !important;
+ [data-page-route=Workspaces] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
+width: 48px;
 /* display: none; */
 }
 [data-route^="Workspaces/"] [data-page-route=Workspaces] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
 width: 12.6667% !important;
 /* display: none; */
 }
-	
+.icon-md {
+width: 22px;
+height: 22px;
+--icon-fill: rgba(91, 91, 91, 0.3);
+--icon-stroke: rgb(255, 255, 255);
+}
+
+	.standard-sidebar-section > .sidebar-item-container > .desk-sidebar-item .sidebar-item-label {
+color: #ffffff;
+font-size: 16px;
+font-weight: 200;
+/* font-family: ""; */
+}
 	
 .list-paging-area .btn.btn-default {
 background-color: rgb(238, 238, 238)!important;
@@ -2693,6 +2722,10 @@ body{
  width:20% !important;
  display:none;
 }
+[data-route^="Workspaces/"] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section{
+ width:20% !important;
+ display:block!important;
+}
 
 /* Layout side section */
 .page-wrapper .layout-side-section{
@@ -3500,7 +3533,7 @@ left: 0;
 }
 
 [data-page-route="Workspaces"].page-container {
-    width: calc(100% - 12.666%);
+    width: 48px;
     right: 0;
     height: calc(100% - var(--navbar-height));
     right: 0 !important;
@@ -4870,6 +4903,1755 @@ padding-top: 45px!important;
 [data-route*="Workspaces/CRM"] [href="/app/crm"] { background: linear-gradient(to right, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); }
 [data-route*="Workspaces/HR"] [href="/app/hr"] { background: linear-gradient(to right, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.07) 2%, rgba(255, 255, 255, 0.07)); }
 
+[data-route*="Multi Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Ledger Health Monitor Company"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Ledger Health Monitor"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Ledger Health"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shift Assignment Tool"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Ledger Entry Child"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Movement Child"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="TEST4"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="test45"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Price Child"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Price Table"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Transaction Deletion Record Details"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bulk Salary Structure Assignment"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Shift Factor"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Shift Allocation"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Offer Term Template"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Repost Allowed Types"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Repost Accounting Ledger Settings"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Plant Floor"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bisect Nodes"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Process Subscription"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bisect Accounting Statements"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="PWA Notification"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Unreconcile Payment Entries"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Unreconcile Payment"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Serial and Batch Bundle"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Vehicle Service Item"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Activity"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Creator"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Creator Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Repost Accounting Ledger Items"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Repost Accounting Ledger"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Card Scheduled Time"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Reservation Entry"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Warehouse"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Closing Stock Balance"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Process Payment Reconciliation"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Feedback Criteria"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Process Payment Reconciliation Log"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Process Payment Reconciliation Log Allocations"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Account Closing Balance"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workstation Type"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Depreciation Schedule"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Repost Payment Ledger Items"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Repost Payment Ledger"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Serial and Batch Entry"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Tax Withheld Vouchers"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Performance Feedback"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Feedback Rating"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Requisition"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appraisal KRA"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appraisal"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appraisee"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="KRA"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Goal"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appraisal Cycle"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Inventory Dimension"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="CRM Note"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Update Batch"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Ledger Entry"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Prospect Opportunity"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Update Log"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Telephony Call Type"] [href="/app/Telephony"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Call Log"] [href="/app/Telephony"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Barcode"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Variant Field"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Lead"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Entry Detail"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Gratuity"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Training Feedback"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Journal Entry"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Invoice"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Tax Category"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Tax Template"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Advance"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Cost Center Allocation Percentage"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Cost Center Allocation"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Repost Item Valuation"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Currency Exchange Settings"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Cost Center"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Ledger Merge Accounts"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Ledger Merge"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Exit Interview"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Advance Tax"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Competitor Detail"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Competitor"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Reposting Settings"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Overdue Payment"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Card Scrap Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="CRM Settings"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Capitalization Service Item"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Capitalization Asset Item"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Capitalization Stock Item"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Capitalization"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Currency Exchange Settings Result"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Currency Exchange Settings Details"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Party Specific Item"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Prospect"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Prospect Lead"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Party Link"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Reconciliation Allocation"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="South Africa VAT Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Full and Final Asset"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Full and Final Outstanding Statement"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Full and Final Statement"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="SLA Fulfilled On Status"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Repair Consumed Item"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Grievance"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Grievance Type"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Group Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Campaign Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Partner Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Territory Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Customer Group Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Customer Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Production Plan Item Reference"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Search Fields"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Interviewer"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Skill Assessment"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Interview Feedback"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Interview Detail"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Interview"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Interview Type"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Expected Skill Set"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Interview Round"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Referral"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Salary Slip Leave"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Inspection Parameter Group"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Inspection Parameter"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Production Plan Sub Assembly Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Voice Call Settings"] [href="/app/Telephony"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Card Operation"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sub Operation"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Reconciliation Tool"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Incoming Call Handling Schedule"] [href="/app/Telephony"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Incoming Call Settings"] [href="/app/Telephony"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Putaway Rule"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Accounting Dimension Filter"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Allowed Dimension"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Applicable On Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Non Conformance"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Advance Taxes and Charges"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Policy Assignment"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Gratuity Rule Slab"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Gratuity Rule"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Gratuity Applicable Component"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="PSOA Cost Center"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="PSOA Project"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Process Statement Of Accounts Customer"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Opportunity Lost Reason Detail"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shipment Delivery Note"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shipment Parcel Template"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shipment Parcel"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shipment"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Pause SLA On Status"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payroll Settings"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Process Statement Of Accounts"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Payment Method"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Opening Entry Detail"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Income Tax Slab Other Charges"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Downtime Entry"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Journal Entry Template Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Journal Entry Template"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Other Income"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Income Tax Slab"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Opening Entry"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Production Plan Material Request Warehouse"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Invoice Merge Log"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Invoice Reference"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Invoice Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Invoice"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appointment Letter"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appointment Letter content"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appointment Letter Template"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Dunning Letter Text"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Dunning Type"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appointment Booking Slots"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Process Deferred Accounting"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Movement Item"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Availability Of Slots"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quick Stock Balance"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Salary Slip Loan"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Customer Credit Limit"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appointment Booking Settings"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appointment"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Field"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Statement Import"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Accounting Dimension Detail"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Pick List"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Pick List Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Dunning"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Email Campaign"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Campaign Email Schedule"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Checkin"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Expense Taxes and Charges"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Manufacturer"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Feedback Parameter"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Feedback"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Feedback Template Parameter"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Feedback Template"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Meeting Agenda"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Meeting Minutes"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Action Resolution"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Review Objective"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Goal Objective"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Procedure Process"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Warehouse Type"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Issue Priority"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Ledger Entry"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Accounting Dimension"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Service Level Priority"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Task Type"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Training"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Skill Map"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Designation Skill"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Skill"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Skill"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Pricing Rule Brand"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Pricing Rule Item Code"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Pricing Rule Item Group"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Promotional Scheme Price Discount"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Promotional Scheme Product Discount"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Entry Type"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Card Time Log"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Discounted Invoice"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Invoice Discounting"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Service Day"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Project Template Task"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Project Template"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Promotional Scheme"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Pricing Rule Detail"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Chart of Accounts Importer"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Opportunity Lost Reason"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Lost Reason Detail"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Service Level Agreement"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Transaction Payments"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Tax Template Detail"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Account Subtype"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Account Type"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Transaction Mapping"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Transaction"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Meeting"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Procedure"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Goal"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Review"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Action"] [href="/app/Quality Management"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Market Segment"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Stage"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Delivery Settings"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Cashier Closing Payments"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Order"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Order Reference"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Tax Withholding Rate"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Routing"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Card"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Card Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Cashier Closing"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Applicant Source"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Partner Type"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Closing Entry Taxes"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Closing Entry Detail"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Closing Entry"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Blanket Order Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Blanket Order"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Support Search Source"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Travel Request Costing"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Travel Itinerary"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Identification Document Type"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purpose of Travel"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Travel Request"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Retention Bonus"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Value Adjustment"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Additional Salary"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Separation"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Tax Exemption Sub Category"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Separation Template"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Boarding Activity"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Onboarding Template"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Onboarding"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Finance Book"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Location"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Default"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="UOM Category"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Allowed To Transact With"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Contract Fulfilment Checklist"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Contract Template Fulfilment Terms"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Contract Template"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Closed Document"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Accounting Period"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Tax Withholding Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Tax Withholding Category"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Promotion"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Exchange Rate Revaluation Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Exchange Rate Revaluation"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Property History"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Transfer"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Staffing Plan"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Staffing Plan Detail"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Finance Book"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Taxable Salary Slab"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Tax Exemption Proof Submission"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Tax Exemption Proof Submission Detail"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Tax Exemption Declaration Category"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Tax Exemption Declaration"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Tax Exemption Category"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Benefit Claim"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Salary Structure Assignment"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Benefit Application Detail"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shift Request"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Benefit Application"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shift Assignment"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shift Type"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Grade"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Incentive"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Policy"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Policy Detail"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Attendance Request"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Encashment"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Period"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payroll Period"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payroll Period Date"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Compensatory Leave Request"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Contract"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Department Approver"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Loyalty Point Entry Redemption"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Alternative"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Subscription Settings"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Subscription Invoice"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Subscription Plan Detail"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Subscription Plan"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Projects Settings"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Daily Work Summary Group"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Daily Work Summary Group User"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Inspection Template"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Loyalty Program Collection"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Loyalty Program"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Loyalty Point Entry"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Coupon Code"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Project Update"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Share Balance"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Share Type"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Share Transfer"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shareholder"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Material Request Plan Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payroll Employee Detail"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Linked Location"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Production Plan"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Profile User"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Maintenance Log"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payroll Entry"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Repair"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Maintenance Team"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Maintenance Task"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Maintenance"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Delivery Stop"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Delivery Trip"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Training Program"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Expense Claim Advance"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Opportunity Type"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Issue Type"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Variant Settings"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Opening Invoice Creation Tool Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Opening Invoice Creation Tool"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Settings"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Schedule"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Terms Template"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Terms Template Detail"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Term"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Subscription"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Project Type"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Scorecard Period"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Scorecard"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Scorecard Standing"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Scorecard Scoring Standing"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Scorecard Criteria"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Scorecard Scoring Criteria"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Scorecard Variable"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Scorecard Scoring Variable"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Health Insurance"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Customs Tariff Number"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Support Settings"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Website Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Website Operation"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Guarantee"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Customer Group"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Item Group"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Daily Work Summary"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Training Result Employee"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Training Result"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Maintenance Team Member"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Scrap Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Lead Source"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Vehicle Service"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Vehicle Log"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Training Event Employee"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Training Event"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Salary Component Account"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Interest"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Expense Claim Account"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Salary Component"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Salary Detail"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Entry Deduction"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Salary Slip Timesheet"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Invoice Timesheet"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Entry Reference"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Entry"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Budget Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Budget"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Invoice Payment"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Cheque Print Template"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Movement"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Work Order Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Request for Quotation Supplier"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Project User"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Category Account"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Depreciation Schedule"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Asset Category"] [href="/app/Assets"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Request for Quotation Item"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Request for Quotation"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Production Plan Material Request"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employee Attendance Tool"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Manufacturer"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Gateway Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Request"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Price List Country"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shipping Rule Country"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Tax Rule"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Variant Attribute"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Dependent Task"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Task Depends On"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Activity Cost"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Offer Term"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Offer Term"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Offer"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Reconciliation Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Mode of Payment Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workstation Working Hour"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Manufacturing Settings"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Operation"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Work Order Operation"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Fiscal Year Company"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Variant"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Attribute Value"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Attribute"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Party Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Landed Cost Taxes and Charges"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Landed Cost Voucher"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Reconciliation Invoice"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Reconciliation Payment"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Payment Reconciliation"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Pricing Rule"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="HR Settings"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shipping Rule Condition"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Shipping Rule"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Buying Settings"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Selling Settings"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Settings"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Accounts Settings"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Product Bundle"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Order"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Customer"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Invoice Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Receipt Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Delivery Note"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quotation"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Order Item"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="POS Profile"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Product Bundle Item"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Invoice Item"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Quotation Item"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier Quotation"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Order"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Invoice"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Receipt"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Taxes and Charges"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Serial No"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Price"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Installation Note"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Inspection"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Taxes and Charges"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Delivery Note Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Team"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Packing Slip"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Entry"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Packing Slip Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Reconciliation"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Customer Detail"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Invoice Advance"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Opportunity"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Salary Structure"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Material Request"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Project"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Reorder"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Order Item"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quotation Item"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Explosion Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Batch"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Activity Type"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Timesheet Detail"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Timesheet"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Maintenance Visit Purpose"] [href="/app/Maintenance"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Maintenance Schedule Item"] [href="/app/Maintenance"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Maintenance Schedule Detail"] [href="/app/Maintenance"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="UOM Conversion Detail"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Landed Cost Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Material Request Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Landed Cost Purchase Receipt"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Tax"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Supplier"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Website Specification"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Item Quality Inspection Parameter"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Packed Item"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Opportunity Item"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Installation Note Item"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Operation"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Production Plan Item"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Production Plan Sales Order"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Block List Date"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Block List Allow"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Expense Claim Detail"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appraisal Goal"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appraisal Template Goal"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Quality Inspection Reading"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Order Item Supplied"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Receipt Item Supplied"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Invoice Advance"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Journal Entry Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Monthly Distribution Percentage"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Clearance Detail"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Type"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Allocation"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Application"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Block List"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Issue"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Account"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Task"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Stock Ledger Entry"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Applicant"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Price List"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Upload Attendance"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Cost Center"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Fiscal Year"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Job Opening"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Maintenance Visit"] [href="/app/Maintenance"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Warranty Claim"] [href="/app/Support"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Maintenance Schedule"] [href="/app/Maintenance"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bin"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="SMS Center"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Campaign"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workstation"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Work Order"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Salary Slip"] [href="/app/Payroll"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Leave Control Panel"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Expense Claim"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Employment Type"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Attendance"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Supplier"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Sales Taxes and Charges Template"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Purchase Taxes and Charges Template"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Period Closing Voucher"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="GL Entry"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Bank Clearance"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Monthly Distribution"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="BOM Update Tool"] [href="/app/Manufacturing"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Mode of Payment"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Appraisal Template"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Industry Type"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Expense Claim Type"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workspaces/Home"] [href="/app/home"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workspaces/Accounting"] [href="/app/accounting"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workspaces/Projects"] [href="/app/projects"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workspaces/Selling"] [href="/app/selling"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workspaces/Buying"] [href="/app/buying"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workspaces/Stock"] [href="/app/stock"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workspaces/CRM"] [href="/app/crm"] .sidebar-item-label {
+font-weight: 400!important;
+}
+[data-route*="Workspaces/HR"] [href="/app/hr"] .sidebar-item-label {
+font-weight: 400!important;
+}
 
 [data-route*="Multi Item"] [href="/app/stock"] .icon { --icon-stroke: rgba(0, 0, 0, 0.99)!important;
 --icon-fill: rgba(255, 255, 255, 1)!important; fill: color(srgb 0.7854 0.1315 0.1741); stroke: white;  --icon-stroke: 0.5px!important; }
