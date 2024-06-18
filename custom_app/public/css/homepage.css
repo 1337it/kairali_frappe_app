@@ -1741,7 +1741,7 @@ background: transparent;
 {display:none;}
 
 [data-route^='Form'] #formclose {
-z-index: 9999!important;
+z-index: 999!important;
 position: absolute;
 top: 73px;
 left: calc(40px + 22vw);
