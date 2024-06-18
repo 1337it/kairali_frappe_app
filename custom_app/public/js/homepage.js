@@ -49,7 +49,7 @@ shortcut: "alt+right",
 });
 
 
-const backbutton = document.createElement('li');
+const backbutton1 = document.createElement('th');
 
       backbutton.innerHTML = "<button class='fa fa-arrow-left' id='backbutton'>";
 
@@ -387,7 +387,7 @@ $("body").attr('overlay-route', '');
       });
 console.log(frappe.get_route());
 
-document.querySelectorAll('.standard-sidebar-section')[0].prepend(backbutton);
+document.querySelectorAll('#page-Workspaces .overlay-sidebar')[0].prepend(backbutton);
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton);
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
