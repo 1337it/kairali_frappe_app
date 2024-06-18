@@ -1620,13 +1620,16 @@ width: 12.6667% !important;
  height:px;
 }
 .item-anchor .icon-md {
-width: 22px;
+	width: 22px;
 height: 22px;
---icon-fill: rgba(91, 91, 91, 0.3);
---icon-stroke: rgb(255, 255, 255);
+
 left: 0;
 position: fixed;
-margin-left:12px;
+margin-left: 12px;
+--icon-fill: rgba(214, 214, 214, 0.98)!important;
+fill: #000000;
+stroke: rgba(255, 255, 255, 0);
+--icon-stroke: rgba(255, 255, 255, 0.9);
 }
 
 	.standard-sidebar-section > .sidebar-item-container > .desk-sidebar-item .sidebar-item-label {
