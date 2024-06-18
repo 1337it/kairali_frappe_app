@@ -24,9 +24,6 @@ shortcut: "escape",
   }, interval);
 })();
 
-const raven = document.querySelector('.raven-chat');
-const elementToMove = document.querySelector('#chatbutton');
-const newParent = elementToMove.parent();
 
 
 
