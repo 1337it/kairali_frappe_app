@@ -26,7 +26,7 @@ shortcut: "escape",
 
 const raven = document.querySelector('.raven-chat');
 const elementToMove = document.querySelector('#chatbutton');
-const newParent = elementToMove.parentNode;
+const newParent = elementToMove.parent();
 
 
 
