@@ -1535,6 +1535,7 @@ width: calc(100% - 12.6667%);
 right: 0;
 /* left: 12.6667%!important; */
 margin-left: 12.6667%;
+		display:block!important;
 }
 .desk-sidebar .standard-sidebar-item.selected
 	{
@@ -1546,6 +1547,21 @@ max-width: calc(100% - 12.6667%);
 /* left: 12.6667%; */
 }
 
+	[data-page-route="Workspaces"] .layout-side-section {
+box-shadow: -2px 6px 6px 6px (116,135,138,0.44) inset;
+padding-right: 25px;
+padding-left: 5px!important;
+margin-left: 0px!important;
+padding-right: 5px!important;
+}
+.desk-sidebar .standard-sidebar-section .standard-sidebar-label {
+color: #cecece;
+padding-left:23px;
+}
+	.desk-sidebar .standard-sidebar-section .standard-sidebar-label {
+color: #cecece;
+display: none;
+}
 	[data-page-route="Workspaces"] .page-wrapper .layout-side-section {
 background-size: cover;
 padding-top: 30px;
@@ -1568,6 +1584,7 @@ height: calc(100% - var(--navbar-height));
 right: 0 !important;
 z-index: 9;
 position: absolute;
+	
 }
 	
  [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper:not([data-route^="Workspaces/"])
@@ -1588,6 +1605,10 @@ width: 48px!important;
 [data-route^="Workspaces/"] [data-page-route=Workspaces] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
 width: 12.6667% !important;
 /* display: none; */
+}
+
+	   [data-route^="Workspaces/"] #page-Workspaces{
+ height:px;
 }
 .icon-md {
 width: 22px;
@@ -2583,7 +2604,7 @@ overflow-y: auto;
 	background:black !important;
 }
     #page-Workspaces{
- height:48px;
+ height:0px;
 }
 /* Navbar search */
 #navbar-search{
@@ -2721,11 +2742,7 @@ body{
  margin-left:0px;
 }
 
-/* Layout side section */
-.main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section{
- width:20% ;
- display:none;
-}
+
 [data-route^="Workspaces/"] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section{
  width:12.6667% !important;
  display:block!important;
@@ -3548,6 +3565,7 @@ left: 0;
     right: 0 !important;
     z-index: 9;
     position: absolute;
+	display:block!important;
 }
 
 
