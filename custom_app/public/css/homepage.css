@@ -1529,6 +1529,34 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 
  
 @media (min-width: 1200px) {
+
+[data-page-route="Workspaces"].page-container {
+width: calc(100%);
+right: 0;
+height: calc(100% - var(--navbar-height));
+right: 0 !important;
+z-index: 9;
+position: absolute;
+}
+	
+:not([data-route^="Workspaces/"]) [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper
+	{
+display:none!important;
+}
+
+[data-page-route=Workspaces] .page-wrapper .layout-main {
+justify-content: start;
+}
+:not([data-route^="Workspaces/"]) [data-page-route=Workspaces] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
+width: 48px !important;
+/* display: none; */
+}
+[data-route^="Workspaces/"]) [data-page-route=Workspaces] .main-section #body #page-Workspaces .page-body .page-wrapper .page-content .layout-main .layout-side-section {
+width: 12.6667% !important;
+/* display: none; */
+}
+	
+	
 .list-paging-area .btn.btn-default {
 background-color: rgb(238, 238, 238)!important;
 padding: 5px 20px;
