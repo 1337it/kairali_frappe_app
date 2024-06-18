@@ -1846,11 +1846,9 @@ height: 100%;
 }
 #chatbutton {
 height: 48px;
-/* width: 48px; */
 bottom: 0px;
 left: 0px;
 z-index: 999;
-/* background: url("/files/chat.png"); */
 object-fit: cover;
 background-repeat: no-repeat;
 border: 0;
