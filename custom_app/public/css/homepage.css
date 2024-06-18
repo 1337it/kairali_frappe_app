@@ -2752,10 +2752,7 @@ position: relative;
 margin-left: 0px;
 margin-top: 10px;
 }
-.item-anchor:hover {
-	filter:invert(1);
-	background: rgba(0, 0, 0, 0.08);
-}
+
 [data-page-route="Workspaces"] .page-head {
 display: none;
 }
@@ -2831,6 +2828,12 @@ margin-top: 0px!important;
     align-items: center;
     display: none;
 }
+.desk-sidebar .standard-sidebar-item:hover
+{
+
+background-color: rgba(244, 244, 244, 0.12);
+}
+
     [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper {
     color: rgb(51, 60, 68);
     padding-right: 0px;
@@ -4369,7 +4372,7 @@ display: flex;
 overflow: hidden;
 padding: 5px 0 5px 10px;
 flex: 1;
-margin-top: 10px;
+margin-top: 0px;
 }
 
 [data-route*="Multi Item"] [href="/app/stock"] { background: linear-gradient(to right, rgba(200, 34, 44, 1) 1.26%, rgba(255, 255, 255, 0.07) 1.26%, rgba(255, 255, 255, 0.07)); }
