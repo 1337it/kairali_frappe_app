@@ -2797,7 +2797,8 @@ max-width: 48px!important;
 [data-page-route=Workspaces] .sidebar-item-container {
 position: relative;
 margin-left: 0px;
-margin-top: 10px;
+margin-top: 0px;
+	height:48px;
 }
 
 [data-page-route="Workspaces"] .page-actions {
