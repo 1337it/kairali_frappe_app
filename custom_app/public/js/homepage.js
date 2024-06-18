@@ -395,6 +395,7 @@ document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(drivebutton
 
 document.querySelectorAll('.navbar-collapse .navbar-nav')[0].prepend(chatbutton);
 		const raven = document.querySelector('.raven-chat');
+	raven.classList.add("nav-item");
 const elementToMove = document.querySelector('#chatbutton');
 const newParent = elementToMove.parentNode;
 newParent.prepend(raven);
