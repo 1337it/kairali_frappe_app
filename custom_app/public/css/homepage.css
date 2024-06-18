@@ -1170,10 +1170,10 @@ box-shadow: 0px 0px 50px 1px (0,0,0,0.50)!important;
     margin-left:65px;
 }
 .raven-container[data-open-state=true] .raven-header {
- height: 50px!important;
-border-bottom: 1px solid var(--border-color);
-width:calc(100vw - 60px)!important;
- z-index:10000!important;
+ height: 30px!important;
+border-bottom: 1px none var(--border-color);
+width: fit-content!important;
+z-index: 10!important;
 }
  .raven-container[data-open-state=false] {
 height: 100px!important;
@@ -1252,6 +1252,7 @@ padding: 6px!important;
 border-top: 1px solid var(--border-color)!important;
 width: calc(100vw - 60px)!important;
 }
+	
 .raven-channel-header-name {
 font-weight: 200!important;
 font-size: 16px!important;
@@ -1527,6 +1528,20 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
 
  
 @media (min-width: 1200px) {
+	.raven-header .open-raven-button {
+display: none!important;
+}
+	.raven-logo {
+display: none;
+}
+.raven-header .back-button {
+display: none;
+}
+.raven-content-container {
+position: relative;
+width: 100%!important;
+
+	
 .sidebar-toggle-btn {
 display: none!important;
 }
@@ -3429,7 +3444,7 @@ border-top-left-radius: 0px!important;
 border-bottom-right-radius: 0px!important;
  box-shadow:none!important;
 border-bottom-left-radius: 0px!important;
-position: fixed;
+position: relative;
  border-bottom:none!important;
  border-top:none!important;
  border-right:none!important;
@@ -3442,31 +3457,10 @@ bottom: 0px!important;
  z-index:1000!important;
     min-width:48px;
     padding-inline: 0!important;
+	height: 48px;
+	top:3px
 }
 
-.raven-container[data-open-state=true] {
-overflow: hidden;
- z-index:10!important;
-width: 30vw!important;
- backdrop-filter: blur(5px)!important;
--webkit-backdrop-filter: blur(5px)!important;
- background-color: rgba(0, 0, 0, 0.85)!important;
-box-shadow: 0px 0px 50px 1px rgba(0,0,0,0.50)!important;
- height: calc(var(--raven-expanded-height) - 30vh)!important;
-        margin-left:65px;
-}
-.raven-container[data-open-state=true] .raven-header {
- height: 50px!important;
-border-bottom: 1px solid var(--border-color);
-width:30vw!important;
- z-index:10!important;
-}
- .raven-container[data-open-state=false] {
-height: 48px!important;
-overflow: hidden;
-  z-index:10!important;
-  min-width:48px!important
-}
 
 .raven-header .back-button svg {
 fill: var(--teal-50)!important;
