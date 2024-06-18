@@ -1577,8 +1577,8 @@ top: var(--navbar-height)!important;
 left: 0;
 }
 
-[data-page-route="Workspaces"].page-container {
-width: calc(100%)!important;
+[data-route^="Workspaces/"] [data-page-route="Workspaces"].page-container {
+width: 100%!important;
 right: 0;
 height: calc(100% - var(--navbar-height));
 right: 0 !important;
@@ -3559,7 +3559,7 @@ left: 0;
 }
 
 [data-page-route="Workspaces"].page-container {
-    width: 48px;
+width:0!important;
     right: 0;
     height: calc(100% - var(--navbar-height));
     right: 0 !important;
