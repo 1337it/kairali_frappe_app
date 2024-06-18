@@ -2688,7 +2688,7 @@ padding-right: 10px!important;
  padding-top:0px;
 }
 #page-Workspaces .page-body{
-width:0px;
+width:0px!important;
 }
 /* Row */
 .page-head .justify-between{
