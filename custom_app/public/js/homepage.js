@@ -381,23 +381,22 @@ frappe.ui.keys.add_shortcut({
 
 
 
-var route0 = frappe.get_route()[0];
-var route1 = frappe.get_route()[1];
-var route2 = frappe.get_route()[2];
+
 window.onload = function() {
 	
-if (route0 != 'Workspaces') {
+if (frappe.get_route()[0] != 'Workspaces') {
 
 frappe.set_route("Workspaces", "Home");
-frappe.set_route(route0, route1, route2);
+window.history.go(-1);
 }
 else
 {
 }
+
 		
-if (route0 == 'Form') {
-frappe.set_route("List", route1, "List");
-frappe.set_route(route0, route1, route2);
+if (frappe.get_route()[0] == 'Form') {
+frappe.set_route("List", frappe.get_route()[1], "List");
+window.history.go(-1);
 }
 else
 {
