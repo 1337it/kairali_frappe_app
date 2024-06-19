@@ -384,18 +384,18 @@ frappe.ui.keys.add_shortcut({
 
 
 window.onload = function() {
-	var selection3 = document.querySelector('#page-Workspaces') !== null;
-if (selection3) {
-}
-else
-{
-var route0  = frappe.get_route()[0];
+	var route0 = frappe.get_route()[0];
+if (route0 != 'Workspaces') {
+	var route0  = frappe.get_route()[0];
 var route1 = frappe.get_route()[1];
 var route2 = frappe.get_route()[2];
 frappe.set_route("Workspaces", "Home");
 frappe.set_route(route0, route1, route2);
 }
-var route0 = frappe.get_route()[0];		
+else
+{
+}
+		
 if (route0 == 'Form') {
 	var route0  = frappe.get_route()[0];
 var route1 = frappe.get_route()[1];
@@ -407,13 +407,6 @@ else
 {
 
 }
-
-	var route0  = frappe.get_route()[0];
-var route1 = frappe.get_route()[1];
-var route2 = frappe.get_route()[2];
-frappe.set_route("List", route1, "List");
-frappe.set_route("Workspaces", "Home");
-frappe.set_route(route0, route1, route2);
 
 
 	formclose.addEventListener('click', () => {
