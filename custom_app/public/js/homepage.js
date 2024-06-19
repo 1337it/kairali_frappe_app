@@ -384,7 +384,7 @@ frappe.ui.keys.add_shortcut({
 
 window.onload = function() {
 	
-if (frappe.get_route()[0] != 'Workspaces') {
+if (frappe.get_route()[0] != 'Workspaces' && frappe.get_route()[0] != 'Form') {
 
 frappe.set_route("Workspaces", "Home");
 window.history.go(-1);
@@ -396,7 +396,8 @@ else
 		
 if (frappe.get_route()[0] == 'Form') {
 frappe.set_route("List", frappe.get_route()[1], "List");
-window.history.go(-1);
+	frappe.set_route("Workspaces", "Home");
+window.history.go(-2);
 }
 else
 {
