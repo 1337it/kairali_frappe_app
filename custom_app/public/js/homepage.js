@@ -176,7 +176,7 @@ frappe.ui.keys.add_shortcut({
     
 });
 
-
+ window.onload = function() {
 var selection = document.querySelector('[data-page-route^="List/"] .page-form') !== null;
 if (selection) {
 const filter = document.querySelector('[data-page-route^="List/"] .page-form');
@@ -187,7 +187,7 @@ else
 {
 }
 
-var selection2 = document.querySelector('[data-page-route^="List/"] .page-form') !== null;
+var selection2 = document.querySelector('.form-section.card-section[data-fieldname="customer_section"]') !== null;
 if (selection2) {
 const customer = document.querySelector('.form-section.card-section[data-fieldname="customer_section"]');
 	
@@ -197,6 +197,7 @@ sinvsidebar.prepend(customer);
 else
 {
 }
+ }
 
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+l',
