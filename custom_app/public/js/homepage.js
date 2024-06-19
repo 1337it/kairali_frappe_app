@@ -388,6 +388,15 @@ $("body").attr('overlay-route', '');
 	      backbutton.addEventListener('click', () => {
             history.back();
       });
+	var selection = document.querySelector('[data-page-route^="List/"] .page-form') !== null;
+if (selection) {
+const filter = document.querySelector('[data-page-route^="List/"] .page-form');
+const targetsidebar = document.querySelector('[data-page-route^="List/"] .layout-side-section');
+targetsidebar.prepend(filter);
+}
+else
+{
+}
 console.log(frappe.get_route());
 
 document.querySelectorAll('#body')[0].prepend(backbutton);
