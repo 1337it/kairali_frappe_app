@@ -2250,7 +2250,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
  padding-bottom:0px;
 background:rgb(250, 250, 250);
 	overscroll-behavior: none;
-	overflow-x:hidden;
+overflow-y: clip;
 }
 
 [data-page-route] .form-tabs-list .form-tabs:not([data-page-route^='List/'])  {
