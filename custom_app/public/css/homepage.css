@@ -1645,7 +1645,7 @@ left: 0;
 position: fixed;
 margin-left: 12px;
 --icon-fill: rgba(214, 214, 214, 0.98)!important;
-fill: #000000;
+fill: rgba(0, 0, 0, 0);
 stroke: rgba(255, 255, 255, 0);
 --icon-stroke: rgba(255, 255, 255, 0.9);
 }
