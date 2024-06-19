@@ -4,7 +4,10 @@
 }
 *::-webkit-scrollbar-track
 {
-background:transparent!important;
+background: white!important;
+margin-top: 40px;
+margin-bottom: 0px;
+
 }
 .frappe-control[data-fieldtype=Select].form-group .placeholder.xs {
 top: 7px;
