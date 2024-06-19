@@ -2720,6 +2720,7 @@ padding-right: 10px!important;
 }
  [data-page-route] .col-lg-2.layout-side-section {
 max-width: 20%;
+	 flex:20%!important;
 }
 /* Page body */
 [data-route^="Workspaces/"] #page-Workspaces .page-body{
