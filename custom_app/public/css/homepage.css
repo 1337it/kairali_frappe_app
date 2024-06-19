@@ -3121,7 +3121,7 @@ background-color: transparent!important;
 }
 [data-route^='Form'] .submitted-form .page-head
 {
-z-index: 9 !important;
+z-index: 10 !important;
     position: relative !important;
     top: 0 ;
     left: 0 ;
