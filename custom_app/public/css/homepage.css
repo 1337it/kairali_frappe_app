@@ -1529,7 +1529,7 @@ padding-top: 10px;
 
 	.layout-side-section .col-sm-6 {
 
-		flex-wrap: 0 0 50%;
+		flex: 0 0 100%!important;
 max-width: 100%;
 }
 	.navbar-nav li {
@@ -2508,7 +2508,7 @@ width: 16.667vw;
     top: 0px;
     display: block;
     order: 2;
-   background:white;
+   background:white!important;
 	z-index:9;
 
 }
