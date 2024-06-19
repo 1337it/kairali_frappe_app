@@ -187,6 +187,16 @@ else
 {
 }
 
+var selection2 = document.querySelector('[data-page-route^="List/"] .page-form') !== null;
+if (selection2) {
+const customer = document.querySelector('.form-section.card-section[data-fieldname="customer_section"]');
+	
+const sinvsidebar = document.querySelector('.submitted-form .layout-side-section');
+sinvsidebar.prepend(customer);
+}
+else
+{
+}
 
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+l',
