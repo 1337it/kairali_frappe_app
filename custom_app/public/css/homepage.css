@@ -2710,7 +2710,6 @@ padding-right: 10px!important;
     padding-right: calc(100vw - env(titlebar-area-width, 100vw));
 }
  [data-page-route] .col-lg-2.layout-side-section {
-flex: 0 0 calc(25% - 20px)!important;
 max-width: 20%;
 }
 /* Page body */
