@@ -1,3 +1,11 @@
+*::-webkit-scrollbar-thumb
+{
+	border-radius:0px;
+}
+*::-webkit-scrollbar-track
+{
+background:transparent!important;
+}
 .frappe-control[data-fieldtype=Select].form-group .placeholder.xs {
 top: 7px;
 }
@@ -1385,12 +1393,7 @@ z-index:10!important;
   padding-bottom:10px !important;
   margin-left:0px !important;
  }
- *::-webkit-scrollbar {
-display: none!important;
-}
- element::-webkit-scrollbar {
-display: none!important;
-}
+
  /* Container */
  #page-Workspaces .page-head .container{
   margin-left:0px;
@@ -3084,12 +3087,7 @@ height: calc(100vh - var(--navbar-height) - var(--page-head-height) - 50px);
 height: calc(100vh - var(--navbar-height) - var(--page-head-height) + 60px);
 }
 
-  *::-webkit-scrollbar {
-display: none!important;
-}
- element::-webkit-scrollbar {
-display: none!important;
-}
+
 
 
 /* Layout main section wrapper */
