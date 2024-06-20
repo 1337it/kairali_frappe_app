@@ -383,10 +383,14 @@ frappe.ui.keys.add_shortcut({
 
 
 window.onload = function() {
+	var selection3 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
+if (selection3) {
 frappe.set_route("List", frappe.get_route()[1], "List");
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
-
+}
+	else {
+	}
 
 	formclose.addEventListener('click', () => {
 frappe.set_route("List", frappe.get_route()[1],"List");
