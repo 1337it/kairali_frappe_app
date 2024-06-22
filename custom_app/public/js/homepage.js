@@ -388,7 +388,7 @@ if (selection3) {
 
 }
 	else {
-		frappe.set_route("List", cur_frm.doctype, "List");
+		frappe.set_route("List", frappe.get_route()[1], "List");
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
 	}
