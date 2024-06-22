@@ -450,7 +450,11 @@ var previous = document.querySelectorAll('[style].list-row-col')[0];
 		}
 
        var parent = document.querySelectorAll('[data-name="'+docnamenow+'"]')[0].parentNode;
-var selecteditem = parent.parentNode;
+		var parent1 = parent.parentNode;
+		var parent2 = parent1.parentNode;
+		var parent3 = parent2.parentNode;
+		
+var selecteditem = parent3.parentNode;
 const bg = document.createAttribute("style");
 selecteditem.attributes.setNamedItem(bg);
 selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
