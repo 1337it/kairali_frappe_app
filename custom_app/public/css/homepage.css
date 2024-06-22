@@ -2499,23 +2499,8 @@ padding-right: 15px;
 margin: 0;
 padding: 0;
 }
-    #item-custom_primary.tab-pane {
-display: block !important;
-position: relative;
-margin-top:10px;
-z-index: 999;
-opacity: 100;
-width: 100%;
-	    padding:10px;
-}
-    #sales-invoice-custom_primary.tab-pane  {
-display: block !important;
-position: fixed;
-right: 0;
-z-index: 999;
-opacity: 100;
-width: 16.667vw;
-}
+
+
 .sidebar-menu.form-sidebar-stats {
     margin-bottom: var(--margin-sm);
     display: none;
