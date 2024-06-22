@@ -432,7 +432,7 @@ const newParent = elementToMove.parentNode;
 newParent.prepend(raven);
 
 document.querySelector("#body").appendChild(formclose);
- const curdoc = cur_frm.doctype;
+ const curdoc = this.doctype;
 frappe.ui.form.on(curdoc, {
 	onload: function(frm) {
 
