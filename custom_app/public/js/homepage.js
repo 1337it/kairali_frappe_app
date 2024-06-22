@@ -382,14 +382,14 @@ frappe.ui.keys.add_shortcut({
 		});
 
 
-
-
-window.onload = function() {
-
 let routetext = cur_page.page._route;
 const routearray = routetext.split("/");
 let doctype = routearray[0];
 let docname = routearray[1];
+
+window.onload = function() {
+
+
 
 	
 	var selection3 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
