@@ -433,10 +433,10 @@ newParent.prepend(raven);
 
 document.querySelector("#body").appendChild(formclose);
 
-frappe.ui.form.on(doctype, {
+frappe.ui.form.on(cur_frm.doc.doctype, {
 	onload: function(frm) {
 
-       var parent = document.querySelectorAll('[data-name="'+cur_frm.docname+'"]')[0].parentNode;
+       var parent = document.querySelectorAll('[data-name="'+cur_frm.doc.name+'"]')[0].parentNode;
 var selecteditem = parent.parentNode;
 const bg = document.createAttribute("style");
 selecteditem.attributes.setNamedItem(bg);
