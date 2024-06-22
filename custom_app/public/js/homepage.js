@@ -386,9 +386,10 @@ frappe.ui.keys.add_shortcut({
 
 window.onload = function() {
 
-const element = document.querySelector("[data-route]");
-var doctypenow = element.getAttribute("data-route").split("/", 3)[1];
-	var docnamenow = element.getAttribute("data-route").split("/", 3)[2];
+	const element = document.querySelector("[data-route]");
+var doctypenow = element.dataset.route.split("/", 3)[1];
+	var docnamenow = element.dataset.route.split("/", 3)[2];
+console.log(doctypenow);
 
 	
 	var selection3 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
