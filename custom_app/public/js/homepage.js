@@ -386,7 +386,7 @@ frappe.ui.keys.add_shortcut({
 
 window.onload = function() {
 
-	const element = document.querySelector("[data-route]");
+	const element = document.querySelectorAll("[data-route]")[0];
 var doctypenow = element.dataset.route.split("/", 3)[1];
 	var docnamenow = element.dataset.route.split("/", 3)[2];
 console.log(doctypenow);
