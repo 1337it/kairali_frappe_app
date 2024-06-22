@@ -432,8 +432,8 @@ const newParent = elementToMove.parentNode;
 newParent.prepend(raven);
 
 document.querySelector("#body").appendChild(formclose);
-
-frappe.ui.form.on(frappe.get_route()[1], {
+ const curdoc = cur_frm.doctype;
+frappe.ui.form.on(curdoc, {
 	onload: function(frm) {
 
        var parent = document.querySelectorAll('[data-name="'+cur_frm.docname+'"]')[0].parentNode;
