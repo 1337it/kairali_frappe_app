@@ -382,14 +382,13 @@ frappe.ui.keys.add_shortcut({
 		});
 
 
-let routetext = cur_page.page._route;
-const routearray = routetext.split("/");
-let doctype = routearray[0];
-let docname = routearray[1];
+
 
 window.onload = function() {
 
-
+const element = document.querySelector("[data-route]");
+var doctypenow = element.getAttribute("data-route").split("/", 3)[1];
+	var docnamenow = element.getAttribute("data-route").split("/", 3)[2];
 
 	
 	var selection3 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
@@ -397,7 +396,7 @@ if (selection3) {
 
 }
 	else {
-		frappe.set_route("List", cur_page.page._route.split("/", 2)[0], "List");
+		frappe.set_route("List", doctypenow, "List");
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
 	}
@@ -442,7 +441,7 @@ newParent.prepend(raven);
 
 document.querySelector("#body").appendChild(formclose);
 
-frappe.ui.form.on(cur_page.page._route.split("/", 2)[0], {
+frappe.ui.form.on(doctypenow, {
 	onload: function(frm) {
 var previous = document.querySelectorAll('[style].list-row-col')[0];
 		if(previous)
@@ -450,7 +449,7 @@ var previous = document.querySelectorAll('[style].list-row-col')[0];
 			previous.removeAttribute("style");
 		}
 
-       var parent = document.querySelectorAll('[data-name="'+cur_page.page._route.split("/", 2)[1]+'"]')[0].parentNode;
+       var parent = document.querySelectorAll('[data-name="'+docnamenow+'"]')[0].parentNode;
 var selecteditem = parent.parentNode;
 const bg = document.createAttribute("style");
 selecteditem.attributes.setNamedItem(bg);
