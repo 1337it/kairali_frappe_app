@@ -433,7 +433,7 @@ newParent.prepend(raven);
 
 document.querySelector("#body").appendChild(formclose);
 
-frappe.ui.form.on(this.doctype, {
+frappe.ui.form.on(cur_frm.doctype, {
 	onload: function(frm) {
 
        var parent = document.querySelectorAll('[data-name="${cur_frm.docname}"]')[0].parentNode;
