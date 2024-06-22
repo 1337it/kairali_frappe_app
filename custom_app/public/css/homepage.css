@@ -2182,21 +2182,6 @@ right: 0!important;
     padding-left: 20px !important;
 }
 
-[data-page-route="Item"] .page-title {
-    left: 0 !important;
-}
-	[data-page-route="Sales Invoice"] .page-title {
-    left: 0 !important;
-}
-	[data-page-route="Sales Order"] .page-title {
-    left: 0 !important;
-}
-	[data-page-route="Purchase Order"] .page-title {
-    left: 0 !important;
-}
-	[data-page-route="Purchase Invoice"] .page-title {
-    left: 0 !important;
-}
 	
 
     
@@ -2335,8 +2320,13 @@ margin-right: 0px!important;
 }
 
 .page-title {
-left: 35px;
+left: 0px;
 /* max-width: 50%; */
+}
+
+[data-page-route^="List/"] .page-title
+{
+left: 35px;
 }
 
 [data-route^="Form/"] .frappe-list .result header.text-muted {
@@ -2517,7 +2507,7 @@ padding: 0;
     padding-left: 0px !important;
     max-width: calc(33.3vw - 100px) !important;
     font-size: 38px !important;
-	    
+	 font-weight: 500;   
 }
  
 
