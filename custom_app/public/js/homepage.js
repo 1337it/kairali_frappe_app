@@ -395,7 +395,7 @@ if (selection3) {
 
 }
 	else {
-		if(frappe.get_route()[0] == 'Form'){
+		if(document.querySelector("[data-route]").attributes.getNamedItem("data-route").value.split("/")[0] == 'Form'){
 		frappe.set_route("List", frappe.get_route()[1], "List");
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
@@ -409,7 +409,7 @@ window.history.go(-1);
 	}
 
 	formclose.addEventListener('click', () => {
-frappe.set_route("List", doctype,"List");
+frappe.set_route("List",frappe.get_route()[1] ,"List");
 
       });
 	 backbutton.addEventListener('click', () => {
