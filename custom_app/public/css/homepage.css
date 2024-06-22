@@ -11,8 +11,6 @@ border: 4px white solid;
 *::-webkit-scrollbar-track
 {
 background: rgba(255, 255, 255, 0)!important;
-margin-top: 40px;
-margin-bottom: 50px;
 
 }
 .editable-form .layout-main-section-wrapper::-webkit-scrollbar-track {
