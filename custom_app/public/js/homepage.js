@@ -390,13 +390,22 @@ window.onload = function() {
 
 	
 	var selection3 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
+	
 if (selection3) {
 
 }
 	else {
-		frappe.set_route("List", document.querySelector("[data-route]").attributes.getNamedItem("data-route").value.split("/")[1], "List");
+		if(frappe.get_route()[0] == 'Form'){
+		frappe.set_route("List", frappe.get_route()[1], "List");
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
+		}
+		else{
+			frappe.set_route("Workspaces", "Home");
+window.history.go(-1);
+		}
+
+
 	}
 
 	formclose.addEventListener('click', () => {
