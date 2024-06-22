@@ -2370,7 +2370,7 @@ display: none;
 padding-right: 0 var(--padding-lg);
 position: fixed;
 top: 138px;
-left: 17%;
+left: 14%;
 z-index: 9999;
 visibility: visible;
 }
@@ -2379,10 +2379,7 @@ scrollbar-width: none;
 display: none;
 }
     
-   [data-route^="Form/"] [data-page-route^="List/"] .filter-selector .button-label {
-scrollbar-width: none;
-display: none;
-}
+
   [data-route^="Form/"] [data-page-route^="List/"] .page-head .justify-between .page-title {
       max-width: 100%!important;
 padding-left: 0px;
@@ -3306,7 +3303,7 @@ html, body {
 }
 [data-page-route=Workspaces] .layout-main-section-wrapper {
 margin-top: 0px!important;
-    padding-top:30px!important;
+    padding-top:50px!important;
 	margin-left:20px
 }
  [data-theme=dark] .page-wrapper .layout-main-section-wrapper {
