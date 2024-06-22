@@ -397,7 +397,7 @@ if (selection3) {
 
 }
 	else {
-		frappe.set_route("List", doctype, "List");
+		frappe.set_route("List", cur_page.page._route.split("/", 2)[0], "List");
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
 	}
@@ -442,7 +442,7 @@ newParent.prepend(raven);
 
 document.querySelector("#body").appendChild(formclose);
 
-frappe.ui.form.on(doctype, {
+frappe.ui.form.on(cur_page.page._route.split("/", 2)[0], {
 	onload: function(frm) {
 var previous = document.querySelectorAll('[style].list-row-col')[0];
 		if(previous)
@@ -450,7 +450,7 @@ var previous = document.querySelectorAll('[style].list-row-col')[0];
 			previous.removeAttribute("style");
 		}
 
-       var parent = document.querySelectorAll('[data-name="'+docname+'"]')[0].parentNode;
+       var parent = document.querySelectorAll('[data-name="'+cur_page.page._route.split("/", 2)[1]+'"]')[0].parentNode;
 var selecteditem = parent.parentNode;
 const bg = document.createAttribute("style");
 selecteditem.attributes.setNamedItem(bg);
