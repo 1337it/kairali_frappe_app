@@ -435,6 +435,11 @@ document.querySelector("#body").appendChild(formclose);
 
 frappe.ui.form.on(frappe.get_route()[1], {
 	onload: function(frm) {
+var previous = document.querySelectorAll('[style].list-row-col')[0];
+		if(previous)
+		{
+			previous.removeAttribute("style");
+		}
 
        var parent = document.querySelectorAll('[data-name="'+cur_frm.doc.name+'"]')[0].parentNode;
 var selecteditem = parent.parentNode;
