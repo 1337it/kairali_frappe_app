@@ -436,7 +436,7 @@ document.querySelector("#body").appendChild(formclose);
 frappe.ui.form.on(frappe.get_route()[1], {
 	onload: function(frm) {
 
-       var parent = document.querySelectorAll('[data-name="'+cur_frm.docname+']"')[0].parentNode;
+       var parent = document.querySelectorAll('[data-name="'+cur_frm.docname+'"]')[0].parentNode;
 var selecteditem = parent.parentNode;
 const bg = document.createAttribute("style");
 selecteditem.attributes.setNamedItem(bg);
