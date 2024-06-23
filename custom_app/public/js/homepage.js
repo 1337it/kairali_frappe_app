@@ -381,16 +381,6 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-
-
-
-window.onload = function() {
-
-
-
-	
-	
-	
 if ($('body').attr('data-route').split("/")[0] == 'Workspaces') {
 
 }
@@ -428,6 +418,16 @@ window.history.go(-1);
 
 
 	}
+
+
+
+window.onload = function() {
+
+
+
+	
+	
+	
 
 	formclose.addEventListener('click', () => {
 frappe.set_route("List",frappe.get_route()[1] ,"List");
