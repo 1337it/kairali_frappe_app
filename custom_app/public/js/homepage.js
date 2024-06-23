@@ -386,9 +386,10 @@ frappe.ui.keys.add_shortcut({
 
 window.onload = function() {
    
-
+if(frappe.get_route()[0] == 'Form'){
 		frappe.set_route("List", frappe.get_route()[1], "List");
-	window.history.go(-1);
+	history.back();
+}
 	if(frappe.get_route()[0] != 'Workspaces'){
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-1);
@@ -401,7 +402,7 @@ var previous = document.querySelectorAll('[style].list-row-col')[0];
 			previous.removeAttribute("style");
 		}
 
-       var parent = document.querySelectorAll('[data-name="${cur_frm.docname}"]')[0].parentNode;
+       var parent = document.querySelectorAll('[data-name="'+frappe.get_route()[2]+'"]')[0].parentNode;
 		var parent1 = parent.parentNode;
 		var parent2 = parent1.parentNode;
 		var parent3 = parent2.parentNode;
