@@ -402,7 +402,7 @@ var previous = document.querySelectorAll('[style].list-row-col')[0];
 			previous.removeAttribute("style");
 		}
 
-       var parent = document.querySelectorAll('[data-name="'+cur_frm.doc.name.+'"]')[0].parentNode;
+       var parent = document.querySelectorAll('[data-name="'+cur_frm.doc.name+'"]')[0].parentNode;
 		var parent1 = parent.parentNode;
 		var parent2 = parent1.parentNode;
 		var parent3 = parent2.parentNode;
