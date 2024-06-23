@@ -2433,7 +2433,7 @@ max-width: 100%;
 }
 .page-container{
 right: 0;
-background:var(--charts-axis-line-color)!important;
+background:rgba(255, 255, 255, 0)!important;
 height: calc(100% - var(--navbar-height));
 right: 0!important;
 
@@ -3272,7 +3272,7 @@ background-color: var(--bg-color);
 }
 
 html, body {
-	background:var(--charts-axis-line-color)!important;
+	background:rgba(255, 255, 255, 0)!important;
     overflow-x:hidden!important;
 }
 [data-page-route=Workspaces] .layout-main-section-wrapper {
@@ -3793,7 +3793,7 @@ text-align: center;
 /* Content Division */
 [data-route^="Form/"] [data-page-route^="List/"].page-container {
 	z-index:1!important;
-	background:var(--charts-axis-line-color)!important;
+	background:rgba(255, 255, 255, 0)!important;
 height: 100%;
 position: fixed;
 width: 100%;
@@ -4421,7 +4421,7 @@ flex: 1;
 padding-left: 45px!important;
 }
 [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
-background:var(--charts-axis-line-color)!important;
+background:rgba(255, 255, 255, 0)!important;
 	margin-left:0px;
 	padding-left:20px;
 	height: calc(100% - 90px);
