@@ -385,36 +385,44 @@ frappe.ui.keys.add_shortcut({
 
 
 window.onload = function() {
-
-
+   
 
 		frappe.set_route("List", frappe.get_route()[1], "List");
+	window.history.go(-1);
+	if(frappe.get_route()[0] != 'Workspaces'){
 	frappe.set_route("Workspaces", "Home");
-window.history.go(-2);
-	
-frappe.listview_settings[this.doctype] = {
-    
-    // Columns to fetch but not display
-   	onload: function(listview) {
+window.history.go(-1);
+	}	
+frappe.ui.form.on(frappe.get_route()[1], {
+	onload: function(frm) {
+var previous = document.querySelectorAll('[style].list-row-col')[0];
+		if(previous)
+		{
+			previous.removeAttribute("style");
+		}
+
        var parent = document.querySelectorAll('[data-name="${cur_frm.docname}"]')[0].parentNode;
-var selecteditem = parent.parentNode;
+		var parent1 = parent.parentNode;
+		var parent2 = parent1.parentNode;
+		var parent3 = parent2.parentNode;
+		
+var selecteditem = parent3.parentNode;
 const bg = document.createAttribute("style");
 selecteditem.attributes.setNamedItem(bg);
 selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
 
             
     },
-}
+})
    
-	
-	
-	
 	
 
 	formclose.addEventListener('click', () => {
-frappe.set_route("List",this.doctype ,"List");
+frappe.set_route("List",frappe.get_route()[1] ,"List");
 
-      });
+      });	
+	
+	
 	 backbutton.addEventListener('click', () => {
             history.back();
       });
