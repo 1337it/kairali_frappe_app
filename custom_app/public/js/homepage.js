@@ -385,20 +385,14 @@ frappe.ui.keys.add_shortcut({
 
 
 window.onload = function() {
-const pagetype = $('body').attr('data-route').split("/")[0];
-const doctypenow = $('body').attr('data-route').split("/")[1];
-const docnamenow = $('body').attr('data-route').split("/")[2];
 
-if (pagetype == 'Workspaces') {
 
-}
-	else {
-		if(pagetype == 'Form'){
-		frappe.set_route("List", doctypenow, "List");
+
+		frappe.set_route("List", frappe.get_route()[1], "List");
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
 	
-frappe.listview_settings[doctypenow] = {
+frappe.listview_settings[*] = {
     
     // Columns to fetch but not display
    	onload: function(listview) {
