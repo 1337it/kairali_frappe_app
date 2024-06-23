@@ -376,8 +376,7 @@ frappe.ui.keys.add_shortcut({
 			ignore_inputs: true,
 
 		});
-function(frm) {
-var previous = document.querySelectorAll('[style].list-row-container')[0];
+var previous = document.querySelectorAll('[style].list-row-container')[0] !== null;
 		if(previous)
 		{
 			previous.removeAttribute("style");
@@ -394,7 +393,6 @@ selecteditem.attributes.setNamedItem(bg);
 selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
 
             
-    }
 
 
 
