@@ -180,7 +180,6 @@ frappe.ui.keys.add_shortcut({
 
 
 
- window.onload = function() {
 var selection = document.querySelectorAll('[data-page-route^="List/"] .page-form') !== null;
 if (selection) {
 	var filter = document.querySelectorAll('[data-page-route^="List/"] .page-form'), i;
@@ -195,7 +194,7 @@ targetsidebar[i].prepend(filter[i]);
 else
 {
 }
- }
+
 
 
 
@@ -377,23 +376,7 @@ frappe.ui.keys.add_shortcut({
 			ignore_inputs: true,
 
 		});
-
-
-
-
-window.onload = function() {
-   
-if(frappe.get_route()[0] == 'Form'){
-		frappe.set_route("List", frappe.get_route()[1], "List");
-	frappe.set_route("Workspaces", "Home");
-window.history.go(-2);
-}
-	else if(frappe.get_route()[0] != 'Workspaces'){
-	frappe.set_route("Workspaces", "Home");
-window.history.go(-1);
-	}	
-frappe.ui.form.on(frappe.get_route()[1], {
-	onload: function(frm) {
+function(frm) {
 var previous = document.querySelectorAll('[style].list-row-container')[0];
 		if(previous)
 		{
@@ -411,8 +394,29 @@ selecteditem.attributes.setNamedItem(bg);
 selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
 
             
-    },
-})
+    }
+
+
+
+window.onload = function() {
+var selection3 = document.querySelector('[data-route^="Form/"]') !== null;
+	
+   var selection2 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
+
+if(selection2){
+		
+}
+	else if(selection3){
+		frappe.set_route("List",frappe.get_route()[1] ,"List");
+	frappe.set_route("Workspaces", "Home");
+window.history.go(-2);
+	}	
+	else {
+		frappe.set_route("Workspaces", "Home");
+window.history.go(-1);
+	}
+	
+
    
 	
 
