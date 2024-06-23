@@ -181,10 +181,10 @@ frappe.ui.keys.add_shortcut({
 
 
  window.onload = function() {
-var selection = document.querySelector('[data-page-route^="List/"] .page-form') !== null;
+var selection = document.querySelectorAll('[data-page-route^="List/"] .page-form') !== null;
 if (selection) {
 	var filter = document.querySelectorAll('[data-page-route^="List/"] .page-form'), i;
-	 var targetsidebar = document.querySelectorAll('[data-page-route^="List/"] .layout-side-section'), i;
+	 var targetsidebar = document.querySelectorAll('[data-page-route^="List/"] .layout-side-section');
 
 for (i = 0; i < filter.length; ++i) {
 targetsidebar[i].prepend(filter[i]);
