@@ -3272,7 +3272,7 @@ background-color: var(--bg-color);
 }
 
 html, body {
-    overflow:hidden;
+    overflow-x:hidden;
 }
 [data-page-route=Workspaces] .layout-main-section-wrapper {
 margin-top: 0px!important;
