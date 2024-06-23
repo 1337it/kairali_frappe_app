@@ -389,16 +389,37 @@ window.onload = function() {
 
 
 	
-	var selection3 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
 	
-if (selection3) {
+	
+if ($('body').attr('data-route').split("/")[0] == 'Workspaces') {
 
 }
 	else {
-		if(document.querySelector("[data-route]").attributes.getNamedItem("data-route").value.split("/")[0] == 'Form'){
+		if($('body').attr('data-route').split("/")[0] == 'Form'){
 		frappe.set_route("List", frappe.get_route()[1], "List");
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
+			frappe.ui.form.on($('body').attr('data-route').split("/")[1], {
+	onload: function(frm) {
+var previous = document.querySelectorAll('[style].list-row-container')[0];
+		if(previous)
+		{
+			previous.removeAttribute("style");
+		}
+
+       var parent = document.querySelectorAll('[data-name="'+$('body').attr('data-route').split("/")[2]+'"]')[0].parentNode;
+		var parent1 = parent.parentNode;
+		var parent2 = parent1.parentNode;
+		var parent3 = parent2.parentNode;
+		
+var selecteditem = parent3.parentNode;
+const bg = document.createAttribute("style");
+selecteditem.attributes.setNamedItem(bg);
+selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
+
+            
+    },
+})
 		}
 		else{
 			frappe.set_route("Workspaces", "Home");
@@ -448,27 +469,7 @@ newParent.prepend(raven);
 
 document.querySelector("#body").appendChild(formclose);
 
-frappe.ui.form.on(document.querySelector("[data-route]").attributes.getNamedItem("data-route").value.split("/")[1], {
-	onload: function(frm) {
-var previous = document.querySelectorAll('[style].list-row-container')[0];
-		if(previous)
-		{
-			previous.removeAttribute("style");
-		}
 
-       var parent = document.querySelectorAll('[data-name="'+document.querySelector("[data-route]").attributes.getNamedItem("data-route").value.split("/")[2]+'"]')[0].parentNode;
-		var parent1 = parent.parentNode;
-		var parent2 = parent1.parentNode;
-		var parent3 = parent2.parentNode;
-		
-var selecteditem = parent3.parentNode;
-const bg = document.createAttribute("style");
-selecteditem.attributes.setNamedItem(bg);
-selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
-
-            
-    },
-})
 	
 };
 
