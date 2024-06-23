@@ -392,7 +392,7 @@ window.onload = function() {
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
 	
-frappe.listview_settings[*] = {
+frappe.listview_settings[this.doctype] = {
     
     // Columns to fetch but not display
    	onload: function(listview) {
