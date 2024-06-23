@@ -2216,7 +2216,7 @@ justify-content: center;
 /* right: 0; */
 left: 20px;
 width: calc(19% - 7px);
-box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px
+box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
 padding: 10px;
 }
 
@@ -2225,7 +2225,7 @@ padding: 10px;
 /* right: 0; */
 left: 20px;
 width: calc(100% - 88px);
-box-shadow:0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px
+box-shadow:0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
 padding: 10px;
 }
 
@@ -2234,7 +2234,7 @@ padding: 10px;
 /* right: 0; */
 left: 20px;
 width: calc(100% - 40px);
-box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px
+box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
 padding: 10px;
 	position:fixed;
 	background-color: white;
@@ -2532,7 +2532,7 @@ padding: 0;
     order: 2;
 background-color: rgb(244, 244, 244);
 	   margin: 0 20px 0px 0!important;
-box-shadow:0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px
+box-shadow:0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
 	transition: width 0.2s ease-in-out;
 }
 [data-page-route=Workspaces] .layout-main .layout-side-section:hover {
@@ -2547,7 +2547,7 @@ transition: width 0.2s ease-in-out;
     order: 2;
 background-color: rgb(244, 244, 244);
 	   margin: 0 20px 0px 0!important;
-box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px
+box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
 	   transition: width 0.2s ease-in-out;
 }
    [data-page-route="Workspaces"] .page-wrapper .layout-side-section {
