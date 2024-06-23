@@ -381,13 +381,13 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-const pagetype = $('body').attr('data-route').split("/")[0];
-const doctypenow = $('body').attr('data-route').split("/")[1];
-const docnamenow = $('body').attr('data-route').split("/")[2];
+
 
 
 window.onload = function() {
-
+const pagetype = $('body').attr('data-route').split("/")[0];
+const doctypenow = $('body').attr('data-route').split("/")[1];
+const docnamenow = $('body').attr('data-route').split("/")[2];
 
 if (pagetype == 'Workspaces') {
 
@@ -401,7 +401,7 @@ window.history.go(-2);
 frappe.listview_settings[doctypenow] = {
     
     // Columns to fetch but not display
-   	refresh: function(listview) {
+   	onload: function(listview) {
        var parent = document.querySelectorAll('[data-name="${cur_frm.docname}"]')[0].parentNode;
 var selecteditem = parent.parentNode;
 const bg = document.createAttribute("style");
