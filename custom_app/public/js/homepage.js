@@ -376,7 +376,7 @@ frappe.ui.keys.add_shortcut({
 			ignore_inputs: true,
 
 		});
-var previous = document.querySelectorAll('[style].list-row-container')[0] !== null;
+var previous = document.querySelectorAll('[style].list-row-container')[0];
 		if(previous)
 		{
 			previous.removeAttribute("style");
