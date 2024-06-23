@@ -404,23 +404,15 @@ selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosi
 
             
     },
-};
+}
    
-		}
-		else{
-			frappe.set_route("Workspaces", "Home");
-window.history.go(-1);
-		}
-
-
-	}
-
+	
 	
 	
 	
 
 	formclose.addEventListener('click', () => {
-frappe.set_route("List",frappe.get_route()[1] ,"List");
+frappe.set_route("List",this.doctype ,"List");
 
       });
 	 backbutton.addEventListener('click', () => {
