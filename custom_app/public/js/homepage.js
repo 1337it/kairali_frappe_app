@@ -388,15 +388,16 @@ window.onload = function() {
    
 if(frappe.get_route()[0] == 'Form'){
 		frappe.set_route("List", frappe.get_route()[1], "List");
-	history.back();
+	frappe.set_route("Workspaces", "Home");
+window.history.go(-2);
 }
-	if(frappe.get_route()[0] != 'Workspaces'){
+	else if(frappe.get_route()[0] != 'Workspaces'){
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-1);
 	}	
 frappe.ui.form.on(frappe.get_route()[1], {
 	onload: function(frm) {
-var previous = document.querySelectorAll('[style].list-row-col')[0];
+var previous = document.querySelectorAll('[style].list-row-container')[0];
 		if(previous)
 		{
 			previous.removeAttribute("style");
