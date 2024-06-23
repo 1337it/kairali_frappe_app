@@ -381,14 +381,14 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-
+const pagetype = $('body').attr('data-route').split("/")[0];
+const doctypenow = $('body').attr('data-route').split("/")[1];
+const docnamenow = $('body').attr('data-route').split("/")[2];
 
 
 window.onload = function() {
 
-const pagetype = $('body').attr('data-route').split("/")[0];
-const doctypenow = $('body').attr('data-route').split("/")[1];
-const docnamenow = $('body').attr('data-route').split("/")[0];
+
 if (pagetype == 'Workspaces') {
 
 }
@@ -398,22 +398,19 @@ if (pagetype == 'Workspaces') {
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
 	
-var previous = document.querySelectorAll('[style].list-row-container')[0];
-		if(previous)
-		{
-			previous.removeAttribute("style");
-		}
-
-       var parent = document.querySelectorAll('[data-name="'+$('body').attr('data-route').split("/")[2]+'"]')[0].parentNode;
-		var parent1 = parent.parentNode;
-		var parent2 = parent1.parentNode;
-		var parent3 = parent2.parentNode;
-		
-var selecteditem = parent3.parentNode;
+frappe.listview_settings[doctypenow] = {
+    
+    // Columns to fetch but not display
+   	refresh: function(listview) {
+       var parent = document.querySelectorAll('[data-name="${cur_frm.docname}"]')[0].parentNode;
+var selecteditem = parent.parentNode;
 const bg = document.createAttribute("style");
 selecteditem.attributes.setNamedItem(bg);
 selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
 
+            
+    },
+};
    
 		}
 		else{
