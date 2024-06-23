@@ -381,16 +381,23 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-if ($('body').attr('data-route').split("/")[0] == 'Workspaces') {
+
+
+
+window.onload = function() {
+
+const pagetype = $('body').attr('data-route').split("/")[0];
+const doctypenow = $('body').attr('data-route').split("/")[1];
+const docnamenow = $('body').attr('data-route').split("/")[0];
+if (pagetype == 'Workspaces') {
 
 }
 	else {
-		if($('body').attr('data-route').split("/")[0] == 'Form'){
-		frappe.set_route("List", frappe.get_route()[1], "List");
+		if(pagetype == 'Form'){
+		frappe.set_route("List", doctypenow, "List");
 	frappe.set_route("Workspaces", "Home");
 window.history.go(-2);
-			frappe.ui.form.on($('body').attr('data-route').split("/")[1], {
-	onload: function(frm) {
+	
 var previous = document.querySelectorAll('[style].list-row-container')[0];
 		if(previous)
 		{
@@ -407,9 +414,7 @@ const bg = document.createAttribute("style");
 selecteditem.attributes.setNamedItem(bg);
 selecteditem.attributes.style.value ="background:#d9d9d9;mix-blend-mode:luminosity;";
 
-            
-    },
-})
+   
 		}
 		else{
 			frappe.set_route("Workspaces", "Home");
@@ -418,12 +423,6 @@ window.history.go(-1);
 
 
 	}
-
-
-
-window.onload = function() {
-
-
 
 	
 	
