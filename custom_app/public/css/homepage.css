@@ -1752,6 +1752,11 @@ gap: 4px!important;
 font-weight: 200;
 	}
 
+		[data-route^="Workspaces"] .page-actions .btn{
+
+background-color: rgba(255,255,255,0.3);
+	}
+
 .form-tabs-sticky-up
 	{
 		top:46px;
@@ -1879,7 +1884,8 @@ position: absolute;
 top: 0px;
 right: 0;
 width: auto;
-box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
+box-shadow: none!important;
+		background-color:transparent!important;
 margin: 20px;
 left: 0;
     }
