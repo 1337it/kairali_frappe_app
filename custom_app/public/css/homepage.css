@@ -1612,6 +1612,7 @@ margin-left: 12.6667%;
 
 	[data-route^="Workspaces/"] .page-wrapper .layout-main-section-wrapper {
 max-width: calc(100% - 48px);
+		
 /* left: 12.6667%; */
 }
 
@@ -2698,7 +2699,10 @@ overflow-y: auto;
 }
  [data-page-route=Workspaces] .layout-main .layout-main-section {
 border: 1px none var(--border-color)!important;
-  background-color: transparent!important;
+ background-image: url("/files/jf.jpg")!important;
+	 padding-top:150px;
+	 padding-left:20px;
+	  padding-right:20px;
 }
 /* Layout side section */
 .layout-side-section{
@@ -3276,7 +3280,7 @@ html, body {
 }
 [data-page-route=Workspaces] .layout-main-section-wrapper {
 margin-top: 0px!important;
-    padding-top:150px!important;
+    padding-top:0px!important;
 	margin-left:20px
 }
  [data-theme=dark] .page-wrapper .layout-main-section-wrapper {
@@ -4420,9 +4424,10 @@ flex: 1;
 padding-left: 45px!important;
 }
 [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
-background-image:url("/files/jf.jpg")!important;
+
 	margin-left:0px;
-	padding-left:20px;
+	padding-left:0px!important;
+	padding-right:0px!important;
 	height: 100%;
 }
 .modal-dialog {
