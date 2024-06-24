@@ -1380,12 +1380,7 @@ z-index:10!important;
  }
  
  
- /* Widget */
- .codex-editor .ce-block .ce-block__content div .widget{
-     background-size:auto;
-  padding-top:25px !important;
-  padding-bottom:25px !important;
- }
+
  
  
  /* Bold Tag */
@@ -3166,7 +3161,9 @@ z-index: 9 !important;
 
 /* Widget */
 .codex-editor .ce-block .ce-block__content div .widget{
- background-color:var(--card-bg);
+background-color: rgba(255, 255, 255, 0.53);
+	-webkit-backdrop-filter:blur(5px);
+	backdrop-filter:blur(5px);
  border-top-left-radius:5px;
  border-top-right-radius:5px;
  border-bottom-left-radius:5px;
@@ -4421,7 +4418,7 @@ flex: 1;
 padding-left: 45px!important;
 }
 [data-page-route=Workspaces] .layout-main .layout-main-section-wrapper {
-background:rgba(255, 255, 255, 0)!important;
+background-image:url("/files/jf.jpg")!important;
 	margin-left:0px;
 	padding-left:20px;
 	height: calc(100% - 90px);
