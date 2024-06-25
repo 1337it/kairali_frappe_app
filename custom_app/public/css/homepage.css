@@ -2710,6 +2710,7 @@ border: 1px none var(--border-color)!important;
 	 padding-left:20px!important;
 	  padding-right:20px!important;
 	 background-repeat:no-repeat;
+	 background-size:contain;
 }
 /* Layout side section */
 .layout-side-section{
