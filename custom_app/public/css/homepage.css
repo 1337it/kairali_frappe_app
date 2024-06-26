@@ -1,3 +1,6 @@
+[custom_block_name="greetings"] .custom-block-widget-box {
+box-shadow: none!important;
+}
 *:not(#page-form-builder *)::-webkit-scrollbar {
 width: 15px;
 height: 6px;
