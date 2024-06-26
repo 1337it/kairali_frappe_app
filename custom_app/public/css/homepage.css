@@ -8,12 +8,11 @@ height: 6px;
 *::-webkit-scrollbar-thumb
 {
 background: var(--dt-text-light)!important;
-border-radius: 6px;
-border: 4px white solid;
+border-radius: 0px;
 }
 *::-webkit-scrollbar-track
 {
-background: rgba(255, 255, 255, 0)!important;
+background: rgba(240, 240, 240, 1)!important;
 
 }
 .editable-form .layout-main-section-wrapper::-webkit-scrollbar-track {
@@ -1815,7 +1814,7 @@ background-repeat: no-repeat;
 border: 0;
 background-size: contain;
 background-color: transparent;
-font-size: 22px;
+font-size: 18px;
 margin-top: 3px;
 }
 	
@@ -2387,7 +2386,7 @@ padding-left: 85px;
 }
 
   [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-main{
-width:20%
+width: calc(20% + 15px);
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .list-row-col {
@@ -2638,7 +2637,7 @@ object-fit: cover;
 background-repeat: no-repeat;
 border: 0;
 background-size: contain;
-font-size: 22px;
+font-size: 18px;
 margin: auto;
 margin-left: var(--margin-md);
 /* font-size: var(--text-sm); */
@@ -2704,7 +2703,7 @@ overflow-y: auto;
  border-style:solid;
  border-color:(44,62,80,0.83);
  border-width:0.5px;
-	box-shadow: inset 1px 1px 1px #cacaca,
+	box-shadow: 0 0 0 1px rgba(201, 201, 201, 0.69) inset,
 inset -1px -1px 1px #ffffff;
 }
  [data-page-route=Workspaces] .layout-main .layout-main-section {
@@ -3022,8 +3021,9 @@ padding-top: 0px;
 }
    [data-route^="List/"] .btn-group {
 
-	   box-shadow: 1px 1px 1px #cacaca,
+box-shadow: 1px 1px 1px #cacaca,
 -1px -1px 1px #ffffff!important;
+border-radius: 7px;
 }
 [data-route^="List/"] .page-form .sort-selector .btn-group {
         margin: 10px 0px;
