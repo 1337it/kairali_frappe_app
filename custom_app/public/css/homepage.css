@@ -3292,7 +3292,7 @@ background-color: var(--bg-color);
 }
 
 html, body {
-	background:rgba(255, 255, 255, 0)!important;
+	background:rgba(240, 240, 240, 1)!important;
     overflow-x:hidden!important;
 }
 [data-page-route=Workspaces] .layout-main-section-wrapper {
