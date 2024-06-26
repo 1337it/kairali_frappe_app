@@ -2222,7 +2222,7 @@ justify-content: center;
 /* right: 0; */
 left: 20px;
 width: calc(19% - 7px);
-box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
+box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 padding: 10px;
 }
 
@@ -2231,7 +2231,7 @@ padding: 10px;
 /* right: 0; */
 left: 20px;
 width: calc(100% - 88px);
-box-shadow:0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
+box-shadow:0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 padding: 10px;
 }
 
@@ -2240,7 +2240,7 @@ padding: 10px;
 /* right: 0; */
 left: 20px;
 width: calc(100% - 40px);
-box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
+box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 padding: 10px;
 	position:fixed;
 	background-color: white;
@@ -2256,7 +2256,7 @@ padding: 10px;
  padding-bottom:0px;
 	
 animation-name: css-0, css-8; animation-duration: 0.367s; animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1); animation-fill-mode: both;
-box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 	
 }
 [data-route^='Form'] .submitted-form .page-wrapper .layout-main-section-wrapper {
@@ -2267,7 +2267,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
  padding-bottom:0px;
 	
 animation-name: css-0, css-8; animation-duration: 0.367s; animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1); animation-fill-mode: both;
-box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 
 }
 [data-route^='Form'] .cancelled-form .page-wrapper .layout-main-section-wrapper {
@@ -2278,7 +2278,7 @@ box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
  padding-bottom:0px;
 	
 animation-name: css-0, css-8; animation-duration: 0.367s; animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1); animation-fill-mode: both;
-box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 
 }
 	
@@ -2538,7 +2538,7 @@ padding: 0;
     order: 2;
 background-color: rgb(244, 244, 244);
 	   margin: 0 20px 0px 0!important;
-box-shadow:0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
+box-shadow:0 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 	transition: width 0.2s ease-in-out;
 }
 [data-page-route=Workspaces] .layout-main .layout-side-section:hover {
@@ -2551,9 +2551,9 @@ transition: width 0.2s ease-in-out;
     top: 0;
     display: block;
     order: 2;
-background-color: rgb(244, 244, 244);
+background-color: rgb(255, 255, 255);
 	   margin: 0 20px 0px 0!important;
-box-shadow: 0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
+box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 	   transition: width 0.2s ease-in-out;
 }
    [data-page-route="Workspaces"] .page-wrapper .layout-side-section {
@@ -2967,7 +2967,7 @@ background-color: rgba(244, 244, 244, 0.12);
         margin-left:68px;
 	            margin-right:20px;
         background-color:white;
-	    box-shadow:0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
+	    box-shadow:0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 }
     [data-route^="Form"] [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper {
     color: rgb(51, 60, 68);
@@ -2977,7 +2977,7 @@ background-color: rgba(244, 244, 244, 0.12);
         margin-left:20px;
 	            margin-right:4px;
         background-color:white;
-	    box-shadow:0 0 1px rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.14) 0px 2px 4px;
+	    box-shadow:0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 height: calc(100vh - var(--navbar-height) - var(--page-head-height) - 50px);
 	    padding-bottom:50px;
     }
