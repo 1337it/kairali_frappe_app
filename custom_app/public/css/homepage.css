@@ -883,7 +883,7 @@ textarea.form-control {
 }
 .navbar {
 height: 48px;
-background: var(--control-bg-on-gray);
+background: var(--white);
 border-bottom: 1px solid var(--border-color);
 padding: 0;
 }
@@ -2704,7 +2704,8 @@ overflow-y: auto;
  border-style:solid;
  border-color:(44,62,80,0.83);
  border-width:0.5px;
- box-shadow:none;
+	box-shadow: inset 1px 1px 1px #cacaca,
+inset -1px -1px 1px #ffffff;
 }
  [data-page-route=Workspaces] .layout-main .layout-main-section {
 border: 1px none var(--border-color)!important;
