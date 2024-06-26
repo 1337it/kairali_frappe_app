@@ -2439,7 +2439,7 @@ max-width: 100%;
 }
 .page-container{
 right: 0;
-background:rgba(255, 255, 255, 0)!important;
+background:rgba(240, 240, 240, 1)!important;
 height: calc(100% - var(--navbar-height));
 right: 0!important;
 
@@ -3017,6 +3017,12 @@ padding-top: 0px;
     margin: 10px 0px;
     /* min-width: 14.6667vw; */
     display: flex;
+
+}
+   [data-route^="List/"] .btn-group {
+
+	   box-shadow: 1px 1px 1px #cacaca,
+-1px -1px 1px #ffffff!important;
 }
 [data-route^="List/"] .page-form .sort-selector .btn-group {
         margin: 10px 0px;
@@ -3298,7 +3304,9 @@ margin-top: 0px!important;
 overflow-x: hidden;
   background-color: #292929;
 }
-
+[data-page-route=Workspaces] .layout-main-section {
+background-color: rgb(240, 240, 240)!important;
+}
 
 
 
