@@ -361,15 +361,15 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-var form = frappe.get_route()[0];
-var type = frappe.get_route()[1];
-var docc = frappe.get_route()[2];
+const form = $('body').attr('data-route').split("/")[0];
+const type = $('body').attr('data-route').split("/")[1];
+const docc = $('body').attr('data-route').split("/")[2];
 
 if(form == 'Form'){
 	    frappe.set_route("List", type, "List");
    
 	    frappe.set_route("Form", type, docc);
-$('[data-name="'+frappe.get_route()[2]+'"]').closest('div').parent().parent().parent().addClass('selected');
+$('[data-name="'+docc+'"]').closest('div').parent().parent().parent().addClass('selected');
 		// your code here
 }	
             
