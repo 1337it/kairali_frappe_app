@@ -370,12 +370,25 @@ $(document).on('app_ready', function() {
 		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
 	
 		frappe.ui.form.on(doctype, "onload", function(frm) {
-   
-
-	    frappe.set_route("List", doctype, "List");
-   
-	    frappe.set_route("Form", doctype, frm.doc.name);
 $('[data-name="'+frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selected');
+var selectionlist = document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"]') !== null;
+if(selectionlist){
+		
+}
+	
+	else {
+
+const closestyle = document.createAttribute("style");
+document.querySelector("#formclose").attributes.setNamedItem(closestyle);
+document.querySelector("#formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
+document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"].page-container').attributes.style.value ="width:97vw!important;";
+
+
+
+
+		
+	}
+			
 		// your code here	
 		});
 	});
