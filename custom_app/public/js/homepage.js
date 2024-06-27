@@ -361,20 +361,25 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-const form = $('body').attr('data-route').split("/")[0];
-const type = $('body').attr('data-route').split("/")[1];
-const docc = $('body').attr('data-route').split("/")[2];
 
-if(form == 'Form'){
-	    frappe.set_route("List", type, "List");
-   
-	    frappe.set_route("Form", type, docc);
-$('[data-name="'+docc+'"]').closest('div').parent().parent().parent().addClass('selected');
-		// your code here
-}	
             
 
+$(document).on('app_ready', function() {
+	$.each(["Opportunity", "Quotation", "Supplier Quotation", 
+		"Sales Invoice", "Delivery Note",  "Sales Order",
+		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
+	
+		frappe.ui.form.on(doctype, "onload", function(frm) {
+   
 
+	    frappe.set_route("List", doctype, "List");
+   
+	    frappe.set_route("Form", doctype, cur.frm.doc.name);
+$('[data-name="'+cur.frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selected');
+		// your code here	
+		});
+	});
+});
 
 window.onload = function() {
 
