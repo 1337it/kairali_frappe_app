@@ -361,7 +361,17 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-
+frappe.ui.form.on(frappe.get_route()[1], {
+onload(frm) {
+var type = frappe.get_route()[1];
+var docc = frappe.get_route()[2];
+	    frappe.set_route("List", type, "List");
+   
+	    frappe.set_route("Form", type, docc);
+$('[data-name="'+frappe.get_route()[2]+'"]').closest('div').parent().parent().parent().addClass('selected');
+		// your code here
+	}
+});
             
 
 
