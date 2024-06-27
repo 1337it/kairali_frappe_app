@@ -374,8 +374,8 @@ $(document).on('app_ready', function() {
 
 	    frappe.set_route("List", doctype, "List");
    
-	    frappe.set_route("Form", doctype, cur.frm.doc.name);
-$('[data-name="'+cur.frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selected');
+	    frappe.set_route("Form", doctype, frm.doc.name);
+$('[data-name="'+frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selected');
 		// your code here	
 		});
 	});
