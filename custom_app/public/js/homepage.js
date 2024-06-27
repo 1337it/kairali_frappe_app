@@ -361,34 +361,30 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-frappe.ui.form.on(frappe.get_route()[1], {
-onload(frm) {
+var form = frappe.get_route()[0];
 var type = frappe.get_route()[1];
 var docc = frappe.get_route()[2];
+
+if(form == 'Form'){
 	    frappe.set_route("List", type, "List");
    
 	    frappe.set_route("Form", type, docc);
 $('[data-name="'+frappe.get_route()[2]+'"]').closest('div').parent().parent().parent().addClass('selected');
 		// your code here
-	}
-});
+}	
             
 
 
 
 window.onload = function() {
-var selection3 = document.querySelector('[data-route^="Form/"] .page-container') !== null;
+
 	
    var selection2 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
 
 if(selection2){
 		
 }
-	else if(selection3){
-		frappe.set_route("List",frappe.get_route()[1] ,"List");
-	frappe.set_route("Workspaces", "Home");
-window.history.go(-2);
-	}	
+	
 	else {
 		frappe.set_route("Workspaces", "Home");
 window.history.go(-1);
