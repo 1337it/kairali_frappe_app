@@ -367,7 +367,7 @@ frappe.ui.keys.add_shortcut({
 
 
 window.onload = function() {
-var selection3 = document.querySelector('[data-route^="Form/"]') !== null;
+var selection3 = document.querySelector('[data-route^="Form/"] .page-container') !== null;
 	
    var selection2 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
 
