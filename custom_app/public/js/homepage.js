@@ -379,8 +379,8 @@ if(selectionlist){
 	else {
 
 const closestyle = document.createAttribute("style");
-document.querySelector("#formclose").attributes.setNamedItem(closestyle);
-document.querySelector("#formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
+document.getElementById("formclose").attributes.setNamedItem(closestyle);
+document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
 document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"].page-container').attributes.style.value ="width:97vw!important;";
 
 
