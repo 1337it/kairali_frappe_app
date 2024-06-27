@@ -381,7 +381,7 @@ if(selectionlist){
 const closestyle = document.createAttribute("style");
 document.getElementById("formclose").attributes.setNamedItem(closestyle);
 document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
-document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"].page-container').attributes.style.value ="width:97vw!important;";
+document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="width:97vw!important;";
 
 
 
