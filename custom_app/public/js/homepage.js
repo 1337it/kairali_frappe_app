@@ -373,7 +373,9 @@ $(document).on('app_ready', function() {
 $('[data-name="'+frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selected');
 var selectionlist = document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"]') !== null;
 if(selectionlist){
-		
+
+document.getElementById("formclose").attributes.style.value ="left: calc(40px + 22vw)!important;";
+document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="width:77vw!important;";	
 }
 	
 	else {
