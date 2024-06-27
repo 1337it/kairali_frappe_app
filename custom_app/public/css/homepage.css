@@ -1,3 +1,8 @@
+.selected
+{
+	filter:invert();
+}
+
 [custom_block_name="greetings"] .custom-block-widget-box {
 box-shadow: none!important;
 }
