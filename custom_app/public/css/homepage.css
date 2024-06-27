@@ -9,10 +9,11 @@ height: 6px;
 {
 background: var(--dt-text-light)!important;
 border-radius: 0px;
+	border: 3px solid rgba(250, 250, 250, 1)!important;
 }
 *::-webkit-scrollbar-track
 {
-background: rgba(240, 240, 240, 1)!important;
+background: rgba(250, 250, 250, 1)!important;
 
 }
 .editable-form .layout-main-section-wrapper::-webkit-scrollbar-track {
@@ -2387,7 +2388,7 @@ padding-left: 85px;
 }
 
   [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-main{
-width: calc(20% + 15px);
+width: 20%;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .list-row-col {
