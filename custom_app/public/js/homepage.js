@@ -361,7 +361,30 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
+window.onload = function() {
 
+	
+   var selection2 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
+
+if(selection2){
+		
+}
+	
+	else {
+		frappe.set_route("Workspaces", "Home");
+window.history.go(-1);
+	}
+	
+
+   
+	
+
+	formclose.addEventListener('click', () => {
+frappe.set_route("List",frappe.get_route()[1] ,"List");
+
+      });
+
+}
             
 
 $(document).on('app_ready', function() {
@@ -395,30 +418,11 @@ document.getElementById('page-'+doctype).attributes.style.value ="width:97vw!imp
 		});
 	});
 
-window.onload = function() {
-
 	
-   var selection2 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
+	
+	window.onload = function() {
 
-if(selection2){
 		
-}
-	
-	else {
-		frappe.set_route("Workspaces", "Home");
-window.history.go(-1);
-	}
-	
-
-   
-	
-
-	formclose.addEventListener('click', () => {
-frappe.set_route("List",frappe.get_route()[1] ,"List");
-
-      });	
-	
-	
 	 backbutton.addEventListener('click', () => {
             history.back();
       });
