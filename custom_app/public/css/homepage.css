@@ -759,7 +759,7 @@ display: none;
   --title-left:48px;
   --title-pad:20px;
     --page-left:48px;
-
+--previous:'';
     --page-width: calc(100vw - 48px);
     --buttonelement-width:calc(83.3334vw - 48px);
 }
