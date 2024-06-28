@@ -1,3 +1,4 @@
+
 .list-row-container:hover {
 background: rgba(0, 0, 0, 0.09)!important;
 }
@@ -517,7 +518,7 @@ html.idle #overlay {
 	position: fixed;
 
 
-	background-color: white;
+	 background:var(--bg-color);
 	border-radius: 4px;
 	z-index: 5;
 	overflow: hidden;
@@ -1742,7 +1743,7 @@ position: fixed;
 bottom: 10px;
 width: 75%;
 left: 5%;
-background-color: white;
+ background:var(--bg-color);
 padding-bottom: 10px;
 padding-top: 10px;
 border-top: 1px solid rgba(128, 128, 128, 0.25)!important;
@@ -2260,7 +2261,7 @@ width: calc(100% - 40px);
 box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 padding: 10px;
 	position:fixed;
-	background-color: white;
+	 background:var(--bg-color);
 }
 
 
@@ -2543,7 +2544,7 @@ padding: 0;
     top: 0px;
     display: block;
     order: 2;
-   background:white!important;
+   background:var(--bg-color)!important;
 	z-index:9;
 
 }
@@ -2983,7 +2984,7 @@ background-color: rgba(244, 244, 244, 0.12);
     padding-left: 0px !important;
         margin-left:68px;
 	            margin-right:20px;
-        background-color:white;
+         background:var(--bg-color);
 	    box-shadow:0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 }
     [data-route^="Form"] [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper {
@@ -2993,7 +2994,7 @@ background-color: rgba(244, 244, 244, 0.12);
     padding-left: 0px !important;
         margin-left:20px;
 	            margin-right:4px;
-        background-color:white;
+         background:var(--bg-color);
 	    box-shadow:0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 height: calc(100vh - var(--navbar-height) - var(--page-head-height) - 50px);
 	    padding-bottom:50px;
@@ -3896,7 +3897,7 @@ margin-left: 0px;
 top: calc(90px + var(--navbar-height));
 z-index: 5;
 border-bottom: 1px solid var(--gray-300);
-  background-color: white;
+   background:var(--bg-color);
 }
 
 /* Text muted */
