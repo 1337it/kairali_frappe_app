@@ -1741,7 +1741,7 @@ border-radius: var(--border-radius);
 padding: 0;
 position: fixed;
 bottom: 10px;
-width: calc(100% - 16.66667% - 88px - 74px);
+width: calc(100% - 16.66667% - 80px - 70px);
 left: 88px;
  background:var(--bg-color);
 padding-bottom: 10px;
@@ -3892,12 +3892,14 @@ padding-right: 20px;
 padding-left: 5px;
 position: fixed;
 right: calc(16.66667% + 74px);
-width: calc(83.3334% - 160px);
+width: calc(83.3334% - 148px);
 margin-left: 0px;
 top: calc(90px + var(--navbar-height));
 z-index: 5;
 border-bottom: 1px solid var(--gray-300);
 background: var(--bg-color);
+	left: 88px;
+  top: 140px;
 }
 
 
