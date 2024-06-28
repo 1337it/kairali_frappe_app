@@ -257,7 +257,7 @@ var path2 = '[href="/app/'+frappe.get_site_path+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
 		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');
 
-console.log('Path 1 is '+path+' and path 2 is +'path2');
+console.log('Path 1 is '+path+' and path 2 is '+path2);
 
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+r',
