@@ -252,7 +252,8 @@ frappe.ui.keys.add_shortcut({
     ignore_inputs: true,
     
 });
-
+$(".list-row-container").removeClass("selecteditem");
+		$('[href="'+window.location.pathname+'"]').parent().parent().parent().parent().parent().addClass('selecteditem');
 
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+r',
@@ -395,8 +396,7 @@ document.getElementById("formclose").attributes.style.value ="left: calc(40px + 
 });
 
 window.onload = function() {
-$(".list-row-container").removeClass("selecteditem");
-		$('[href="'+window.location.pathname+'"]').parent().parent().parent().parent().parent().addClass('selecteditem');
+
 	
    var selection2 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
 
