@@ -373,7 +373,7 @@ document.querySelector("#body").appendChild(formclose);
 	
 			
 		frappe.ui.form.on(doctype, "onload", function(frm) {
-			var path = '[href="/app/'+frm.doc.name+'"].ellipsis';
+			var path = '[href="'+window.location.pathname+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
 		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');
 
@@ -401,7 +401,9 @@ document.getElementById("formclose").attributes.style.value ="left: calc(40px + 
 
 window.onload = function() {
 
-	
+	var path = '[href="'+window.location.pathname+'"].ellipsis';
+$(".list-row-container").removeClass("selecteditem");
+		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');	
    var selection2 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
 
 if(selection2){
