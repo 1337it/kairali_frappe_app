@@ -369,7 +369,7 @@ $(document).on('app_ready', function() {
 		"Sales Invoice", "Delivery Note",  "Sales Order",
 		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
 	
-		frappe.ui.form.on(doctype, "onload", function(frm) {
+
 			$(".list-row-container").removeClass("selecteditem");
 $('[data-name="'+frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selecteditem');
 var selectionlist = document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"]') !== null;
@@ -394,7 +394,6 @@ document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="wi
 		// your code here	
 		});
 	});
-});
 
 window.onload = function() {
 
