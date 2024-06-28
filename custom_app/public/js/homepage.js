@@ -252,12 +252,7 @@ frappe.ui.keys.add_shortcut({
     ignore_inputs: true,
     
 });
-var path = '[href="/app/'+frappe.utils.get_url+'"].ellipsis';
-var path2 = '[href="/app/'+frappe.get_site_path+'"].ellipsis';
-$(".list-row-container").removeClass("selecteditem");
-		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');
 
-console.log('Path 1 is '+path+' and path 2 is '+path2);
 
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+r',
@@ -458,7 +453,12 @@ const newParent = elementToMove.parentNode;
 newParent.prepend(raven);
 
 
+var path = '[href="/app/'+frappe.utils.get_url()+'"].ellipsis';
+var path2 = '[href="/app/'+frappe.get_site_path()+'"].ellipsis';
+$(".list-row-container").removeClass("selecteditem");
+		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');
 
+console.log('Path 1 is '+path+' and path 2 is '+path2);
 	
 };
 
