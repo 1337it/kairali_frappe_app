@@ -1731,6 +1731,7 @@ margin: 0 5px;
 .list-paging-area .btn-group{
 border: none;
 border-radius: var(--border-radius);
+	box-shadow:none!important;
 }	
 .frappe-card .list-paging-area{
 padding: 0;
@@ -3036,7 +3037,7 @@ padding-top: 0px;
    [data-route^="List/"] .btn-group {
 
 box-shadow: 1px 1px 1px #cacaca,
--1px -1px 1px #ffffff!important;
+-1px -1px 1px #ffffff;
 border-radius: 7px;
 }
 [data-route^="List/"] .page-form .sort-selector .btn-group {
