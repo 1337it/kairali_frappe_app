@@ -252,8 +252,10 @@ frappe.ui.keys.add_shortcut({
     ignore_inputs: true,
     
 });
+
+var path = '[href="/app/'+frappe.router.current_sub_path+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
-		$('[href="'+window.location.pathname+'"]').parent().parent().parent().parent().parent().addClass('selecteditem');
+		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');
 
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+r',
