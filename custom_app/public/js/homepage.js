@@ -376,22 +376,29 @@ document.querySelector("#body").appendChild(formclose);
 var selectionlist = document.querySelector('[data-page-route^="List/'+doctype+'"]') !== null;
 if(selectionlist){
 
-document.getElementById("formclose").attributes.style.value ="left: calc(40px + 22vw)!important;";
-document.getElementById('page-'+doctype).attributes.style.value ="width:77vw!important;";	
+document.getElementById("formclose").attributes.style.value ="left: calc(40px + 22vw)!important;";	
 }
 	
 	else {
 
 
 document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
-document.getElementById('page-'+doctype).attributes.style.value ="width:97vw!important;";
-
-
-
-
 		
 	}
-			
+
+var selectionform  = document.querySelector('[data-page-route^="'+doctype+'"]') !== null;
+if(selectionlist){
+
+document.getElementById('page-'+doctype).attributes.style.value ="width:77vw!important;";	
+}
+	
+	else {
+
+
+document.getElementById('page-'+doctype).attributes.style.value ="width:97vw!important;";
+		
+	}
+		
 		// your code here	
 		});
 	});
