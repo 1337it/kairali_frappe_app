@@ -371,21 +371,20 @@ document.querySelector("#body").appendChild(formclose);
 		"Sales Invoice", "Delivery Note",  "Sales Order",
 		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
 	
-		frappe.ui.form.on(doctype, "onload", function(frm) {
 			$(".list-row-container").removeClass("selecteditem");
-$('[data-name="'+frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selecteditem');
-var selectionlist = document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"]') !== null;
+		$('[href="'+window.location.pathname+'"]').parent().parent().parent().parent().addClass('selecteditem');
+var selectionlist = document.querySelector('[data-page-route^="List/'+doctype+'"]') !== null;
 if(selectionlist){
 
 document.getElementById("formclose").attributes.style.value ="left: calc(40px + 22vw)!important;";
-document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="width:77vw!important;";	
+document.getElementById('page-'+doctype).attributes.style.value ="width:77vw!important;";	
 }
 	
 	else {
 
 
 document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
-document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="width:97vw!important;";
+document.getElementById('page-'+doctype).attributes.style.value ="width:97vw!important;";
 
 
 
@@ -396,7 +395,6 @@ document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="wi
 		// your code here	
 		});
 	});
-});
 
 window.onload = function() {
 
