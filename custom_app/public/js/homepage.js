@@ -371,8 +371,7 @@ document.querySelector("#body").appendChild(formclose);
 		"Sales Invoice", "Delivery Note",  "Sales Order",
 		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
 	
-			$(".list-row-container").removeClass("selecteditem");
-		$('[href="'+window.location.pathname+'"]').parent().parent().parent().parent().addClass('selecteditem');
+			
 		frappe.ui.form.on(doctype, "onload", function(frm) {
 var selectionlist = document.querySelector('[data-page-route^="List/'+doctype+'"]') !== null;
 if(selectionlist){
@@ -396,7 +395,8 @@ document.getElementById("formclose").attributes.style.value ="left: calc(40px + 
 });
 
 window.onload = function() {
-
+$(".list-row-container").removeClass("selecteditem");
+		$('[href="'+window.location.pathname+'"]').parent().parent().parent().parent().parent().addClass('selecteditem');
 	
    var selection2 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
 
