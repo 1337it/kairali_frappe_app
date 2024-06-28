@@ -106,7 +106,7 @@ $("body").attr('overlay-route', '');
 
 const formclose = document.createElement('th');
 
-      formclose.innerHTML = '<button class="fa fa-close" id="formclose">';
+      formclose.innerHTML = '<button class="fa fa-close" id="formclose" style="">';
 
       // Attach the "click" event to your button
       
@@ -370,6 +370,7 @@ $(document).on('app_ready', function() {
 		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
 	
 		frappe.ui.form.on(doctype, "onload", function(frm) {
+			$(".list-row-container").removeClass("selected");
 $('[data-name="'+frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selected');
 var selectionlist = document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"]') !== null;
 if(selectionlist){
@@ -380,8 +381,7 @@ document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="wi
 	
 	else {
 
-const closestyle = document.createAttribute("style");
-document.getElementById("formclose").attributes.setNamedItem(closestyle);
+
 document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
 document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="width:97vw!important;";
 
