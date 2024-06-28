@@ -375,7 +375,6 @@ document.querySelector("#body").appendChild(formclose);
 		frappe.ui.form.on(doctype, "onload", function(frm) {
 		
 
-console.log('Path 1 is '+path);
 var selectionlist = document.querySelector('[data-page-route^="List/'+doctype+'"]') !== null;
 if(selectionlist){
 
@@ -401,6 +400,8 @@ window.onload = function() {
 	var path = '[href="'+window.location.pathname+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
 		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');
+	
+console.log('Path 1 is '+path);
 	var path = '[href="'+window.location.pathname+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
 		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');	
