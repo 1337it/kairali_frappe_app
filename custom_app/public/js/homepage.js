@@ -370,8 +370,8 @@ $(document).on('app_ready', function() {
 		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
 	
 		frappe.ui.form.on(doctype, "onload", function(frm) {
-			$(".list-row-container").removeClass("selected");
-$('[data-name="'+frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selected');
+			$(".list-row-container").removeClass("selecteditem");
+$('[data-name="'+frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selecteditem');
 var selectionlist = document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"]') !== null;
 if(selectionlist){
 
