@@ -383,7 +383,7 @@ window.history.go(-1);
 frappe.set_route("List",frappe.get_route()[1] ,"List");
 
       });
-
+document.querySelector("#body").appendChild(formclose);
 }
             
 
@@ -457,7 +457,7 @@ const elementToMove = document.querySelector('#chatbutton');
 const newParent = elementToMove.parentNode;
 newParent.prepend(raven);
 
-document.querySelector("#body").appendChild(formclose);
+
 
 
 	
