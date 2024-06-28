@@ -371,7 +371,7 @@ $(document).on('app_ready', function() {
 	
 
 			$(".list-row-container").removeClass("selecteditem");
-$('[data-name="'+frappe.get_route()[2]+'"]').closest('div').parent().parent().parent().addClass('selecteditem');
+$('[data-name="'+self.name+'"]').closest('div').parent().parent().parent().addClass('selecteditem');
 var selectionlist = document.querySelector('[data-page-route^="List/'+doctype+'"]') !== null;
 if(selectionlist){
 
