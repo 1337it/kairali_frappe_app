@@ -1,3 +1,6 @@
+.form-sidebar.selecteditem {
+background: transparent;
+}
 .selecteditem
 {
 	background: lightgray;
