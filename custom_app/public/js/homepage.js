@@ -361,6 +361,43 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
+
+            
+
+$(document).on('app_ready', function() {
+	
+document.querySelector("#body").appendChild(formclose);
+	$.each(["Opportunity", "Quotation", "Supplier Quotation", 
+		"Sales Invoice", "Delivery Note",  "Sales Order",
+		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
+	
+		frappe.ui.form.on(doctype, "onload", function(frm) {
+			$(".list-row-container").removeClass("selecteditem");
+$('[data-name="'+frm.doc.name+'"]').closest('div').parent().parent().parent().addClass('selecteditem');
+var selectionlist = document.querySelector('[data-page-route^="List/'+frm.doc.doctype+'"]') !== null;
+if(selectionlist){
+
+document.getElementById("formclose").attributes.style.value ="left: calc(40px + 22vw)!important;";
+document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="width:77vw!important;";	
+}
+	
+	else {
+
+
+document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
+document.getElementById('page-'+cur_frm.doc.doctype).attributes.style.value ="width:97vw!important;";
+
+
+
+
+		
+	}
+			
+		// your code here	
+		});
+	});
+});
+
 window.onload = function() {
 
 	
@@ -382,48 +419,9 @@ window.history.go(-1);
 	formclose.addEventListener('click', () => {
 frappe.set_route("List",frappe.get_route()[1] ,"List");
 
-      });
-
-}
-            
-
-$(document).on('app_ready', function() {
-	document.querySelector("#body").appendChild(formclose);
-	$.each(["Opportunity", "Quotation", "Supplier Quotation", 
-		"Sales Invoice", "Delivery Note",  "Sales Order",
-		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
-	
-
-			$(".list-row-container").removeClass("selecteditem");
-$('[data-name="'+self.name+'"]').closest('div').parent().parent().parent().addClass('selecteditem');
-var selectionlist = document.querySelector('[data-page-route^="List/'+doctype+'"]') !== null;
-if(selectionlist){
-
-document.getElementById("formclose").attributes.style.value ="left: calc(40px + 22vw)!important;";
-document.getElementById('page-'+doctype).attributes.style.value ="width:77vw!important;";	
-}
-	
-	else {
-
-
-document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
-document.getElementById('page-'+doctype).attributes.style.value ="width:97vw!important;";
-
-
-
-
-		
-	}
-			
-		// your code here	
-		});
-	});
-
+      });	
 	
 	
-	window.onload = function() {
-
-		
 	 backbutton.addEventListener('click', () => {
             history.back();
       });
@@ -460,10 +458,8 @@ newParent.prepend(raven);
 
 
 
-
 	
 };
-
 
 
 
