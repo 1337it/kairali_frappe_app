@@ -1,6 +1,6 @@
-.selected
+.selecteditem
 {
-	filter:invert();
+	background: lightgray;
 }
 
 [custom_block_name="greetings"] .custom-block-widget-box {
