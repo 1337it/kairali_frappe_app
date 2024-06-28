@@ -361,11 +361,7 @@ frappe.ui.keys.add_shortcut({
 
 		});
 
-var path = '[href="'+window.location.pathname+'"].ellipsis';
-$(".list-row-container").removeClass("selecteditem");
-		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');
-	
-console.log('Path 1 is '+path);
+
             
 
 $(document).on('app_ready', function() {
@@ -397,6 +393,13 @@ document.getElementById("formclose").attributes.style.value ="left: calc(40px + 
 		
 		// your code here	
 		});
+frappe.ui.form.on(doctype, "refresh", function(frm) {
+	var path = '[href="'+window.location.pathname+'"].ellipsis';
+$(".list-row-container").removeClass("selecteditem");
+		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');
+	
+console.log('Path 1 is '+path);
+	});		
 	});
 });
 
