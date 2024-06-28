@@ -3,7 +3,7 @@ background: transparent;
 }
 .selecteditem
 {
-	background: lightgray;
+	background: lightgray!important;
 }
 
 [custom_block_name="greetings"] .custom-block-widget-box {
