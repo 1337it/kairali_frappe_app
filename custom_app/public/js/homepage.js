@@ -27,8 +27,8 @@ shortcut: "escape",
 })();
 
 
-
-
+var pwaworker = '<script> if (typeof navigator.serviceWorker !== "undefined") {navigator.serviceWorker.register("index.js")}</script>';
+$('body').append(pwaworker);
 var clockhead = '<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>'
 $('head').append(clockhead);
 if ($('html').attr('data-theme') == 'dark') {
