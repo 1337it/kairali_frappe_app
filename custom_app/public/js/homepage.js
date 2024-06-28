@@ -383,11 +383,12 @@ window.history.go(-1);
 frappe.set_route("List",frappe.get_route()[1] ,"List");
 
       });
-document.querySelector("#body").appendChild(formclose);
+
 }
             
 
 $(document).on('app_ready', function() {
+	document.querySelector("#body").appendChild(formclose);
 	$.each(["Opportunity", "Quotation", "Supplier Quotation", 
 		"Sales Invoice", "Delivery Note",  "Sales Order",
 		"Purchase Invoice", "Purchase Receipt", "Purchase Order", "Item"], function(i, doctype) {
