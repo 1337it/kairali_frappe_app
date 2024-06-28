@@ -1,6 +1,9 @@
 .form-sidebar.selecteditem {
 background: transparent;
 }
+.list-sidebar.selecteditem {
+background: transparent;
+}
 .selecteditem
 {
 	background: lightgray!important;
