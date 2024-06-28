@@ -253,7 +253,7 @@ frappe.ui.keys.add_shortcut({
     
 });
 
-var path = '[href="/app/'+frappe.router.current_sub_path+'"].ellipsis';
+var path = '[href="/app/'+frappe.get_site_path()+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
 		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');
 
