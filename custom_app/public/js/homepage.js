@@ -12,8 +12,6 @@
                 } else if (document.documentElement.msRequestFullscreen) {
                     document.documentElement.msRequestFullscreen();
                 }
-                // Change button text to 'Exit Fullscreen'
-                fullscreenButton.textContent = 'Exit Fullscreen';
             } else {
                 if (document.exitFullscreen) {
                     document.exitFullscreen();
@@ -24,8 +22,6 @@
                 } else if (document.msExitFullscreen) {
                     document.msExitFullscreen();
                 }
-                // Change button text to 'Enter Fullscreen'
-                fullscreenButton.textContent = 'Enter Fullscreen';
             }
         }
 
