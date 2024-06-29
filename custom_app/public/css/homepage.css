@@ -784,6 +784,17 @@ display: none;
         transform: translateY(0);
     }
 }
+@keyframes skeleton {
+0% {
+    filter: brightness(5);
+	box-shadow:0 0 0px rgba(0,0,0,0.01), 0 0px 0px rgba(0,0,0,0.01)
+}
+
+100% {
+    filter: brightness(1);
+	box-shadow:0 0 2px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.14)
+}
+}
 
 @keyframes css-0 {
 0% {
