@@ -1,11 +1,11 @@
 
 
 .workspace-skeleton {
-	    opacity:0.5;
+	    opacity:0.8;
 }
 
 .workspace-sidebar-skeleton {
-	    opacity:0.5;
+	    opacity:0.8;
 }
 
 .selecteditem
@@ -786,11 +786,11 @@ display: none;
 }
 @keyframes skeleton {
 0% {
-    filter: brightness(5) blur(0px);
+    filter: brightness(2) blur(0px);
 	box-shadow:0 0 0px rgba(0,0,0,0.01), 0 0px 0px rgba(0,0,0,0.01);
 }
 50% {
-     filter: brightness(5) blur(1px);
+     filter: brightness(1.5) blur(0px);
 	box-shadow:0 0 0px rgba(0,0,0,0.01), 0 0px 0px rgba(0,0,0,0.01);
 }	
 
@@ -3229,7 +3229,7 @@ background-color: rgba(255, 255, 255, 0.65);
  padding-right:15px;
 	box-shadow:0 0 2px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.14);
 	border: 1px solid white;
-		 animation:skeleton 1s ease;
+		 animation:skeleton 0.5s ease;
 }
 
 /* Division */
