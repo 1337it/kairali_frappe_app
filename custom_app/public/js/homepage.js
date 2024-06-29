@@ -411,8 +411,8 @@ $(".list-row-container").removeClass("selecteditem");
 if(selection2){
 	var deskitems = document.querySelectorAll('[data-page-route="Workspaces"] .ellipsis');
 for (var i = 0, len = deskitems.length; i < len; i++) {
-var dur = ((i/50) + 0.5)+'s';
-var del = (i/50)+'s';
+var dur = ((i/20) + 0.5)+'s';
+var del = (i/20)+'s';
  
 const animstyle = document.createAttribute("style");
 deskitems[i].attributes.setNamedItem(animstyle);
