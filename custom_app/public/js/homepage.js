@@ -409,7 +409,15 @@ $(".list-row-container").removeClass("selecteditem");
    var selection2 = document.querySelector('[data-page-route="Workspaces"].page-container') !== null;
 
 if(selection2){
-		
+	var deskitems = document.querySelectorAll('[data-page-route="Workspaces"] .ellipsis');
+for (var i = 0, len = deskitems.length; i < len; i++) {
+var dur = ((i/50) + 0.5)+'s';
+var del = (i/50)+'s';
+ 
+const animstyle = document.createAttribute("style");
+deskitems[i].attributes.setNamedItem(animstyle);
+deskitems[i].attributes.style.value ='animation:hidden '+del+' ease, css-0 '+dur+' ease '+del;
+}	
 }
 	
 	else {
