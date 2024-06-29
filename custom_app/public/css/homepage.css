@@ -1,11 +1,11 @@
 
 
 .workspace-skeleton {
-	    display:none;
+	    opacity:0;
 }
 
 .workspace-sidebar-skeleton {
-    display:none;
+	    opacity:0;
 }
 
 .selecteditem
@@ -1380,16 +1380,12 @@ z-index:10!important;
   padding-bottom:10px !important;
   margin-left:0px !important;
  }
- [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-header b
-	{
-		 animation:skeleton 2s ease;
-	}
  /* Widget */
  .codex-editor .ce-block .ce-block__content div .widget{
      background-size:auto;
   padding-top:25px !important;
   padding-bottom:25px !important;
-	 animation:skeleton 2s ease;
+
  }
  
  /* Codex editor */
@@ -3233,6 +3229,7 @@ background-color: rgba(255, 255, 255, 0.65);
  padding-right:15px;
 	box-shadow:0 0 2px rgba(0,0,0,0.12), 0 4px 8px rgba(0,0,0,0.14);
 	border: 1px solid white;
+		 animation:skeleton 2s ease;
 }
 
 /* Division */
