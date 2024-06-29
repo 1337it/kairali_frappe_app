@@ -1,13 +1,13 @@
 
-.list-row-container:hover {
-background: rgba(0, 0, 0, 0.09)!important;
+
+.workspace-skeleton {
+	    display:none;
 }
-.form-sidebar.selecteditem {
-background: transparent;
+
+.workspace-sidebar-skeleton {
+    display:none;
 }
-.list-sidebar.selecteditem {
-background: transparent;
-}
+
 .selecteditem
 {
 	background: lightgray!important;
@@ -789,6 +789,10 @@ display: none;
     filter: brightness(5);
 	box-shadow:0 0 0px rgba(0,0,0,0.01), 0 0px 0px rgba(0,0,0,0.01)
 }
+50% {
+    filter: brightness(5);
+	box-shadow:0 0 0px rgba(0,0,0,0.01), 0 0px 0px rgba(0,0,0,0.01)
+}	
 
 100% {
     filter: brightness(1);
@@ -1376,12 +1380,16 @@ z-index:10!important;
   padding-bottom:10px !important;
   margin-left:0px !important;
  }
- 
+ [data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-header b
+	{
+		 animation:skeleton 2s ease;
+	}
  /* Widget */
  .codex-editor .ce-block .ce-block__content div .widget{
      background-size:auto;
   padding-top:25px !important;
   padding-bottom:25px !important;
+	 animation:skeleton 2s ease;
  }
  
  /* Codex editor */
