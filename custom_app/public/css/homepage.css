@@ -927,7 +927,7 @@ textarea.form-control {
 }
 .navbar {
 height: 48px;
-background: var(--white);
+background: var(--bg-color);
 border-bottom: 1px solid var(--border-color);
 padding: 0;
 }
@@ -2582,7 +2582,7 @@ padding: 0;
     top: 0;
     display: block;
     order: 2;
-background-color: rgb(244, 244, 244);
+background-color: var(--bg-color);
 	   margin: 0 20px 0px 0!important;
 box-shadow:0 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 	transition: width 0.2s ease-in-out;
@@ -2753,14 +2753,18 @@ overflow-y: auto;
 	box-shadow: 0 0 0 1px rgba(201, 201, 201, 0.69) inset,
 inset -1px -1px 1px #ffffff;
 }
- [data-page-route=Workspaces] .layout-main .layout-main-section {
-border: 1px none var(--border-color)!important;
+[data-theme-mode="light"] [data-page-route=Workspaces] .layout-main .layout-main-section {
+border: 1px solid var(--border-color)!important;
  background-image: url("/files/jf.jpg")!important;
 	 padding-top:150px!important;
 	 padding-left:20px!important;
 	  padding-right:20px!important;
 	 background-repeat:no-repeat;
 	 background-size:100% auto;
+}
+[data-theme-mode="dark"] [data-page-route=Workspaces] .layout-main .layout-main-section {
+	background-image: none!important;
+border: 1px solid var(--border-color)!important;
 }
 /* Layout side section */
 .layout-side-section{
@@ -3341,10 +3345,16 @@ background-color: var(--bg-color);
  border-radius:5px!important;
 }
 
-html, body {
+[data-theme-mode="light"] html, body {
 	background:rgba(240, 240, 240, 1)!important;
     overflow-x:hidden!important;
 }
+[data-theme-mode="dark"] html, body {
+	background:#292929!important;
+    overflow-x:hidden!important;
+}
+
+#292929
 [data-page-route=Workspaces] .layout-main-section-wrapper {
 margin-top: 0px!important;
     padding-top:0px!important;
@@ -3354,11 +3364,15 @@ margin-top: 0px!important;
 overflow-x: hidden;
   background-color: #292929;
 }
-[data-page-route=Workspaces] .layout-main-section {
+[data-theme-mode="light"] [data-page-route=Workspaces] .layout-main-section {
 background-color: rgb(240, 240, 240)!important;
 }
-
-
+[data-theme-mode="dark"] [data-page-route=Workspaces] .layout-main-section {
+background-color: rgb(61, 61, 61)!important;
+}
+[data-theme-mode="dark"] [data-page-route=Workspaces] .layout-main-section {
+background-color: rgb(61, 61, 61)!important;
+}
 
  #freeze{
   z-index:-1!important;
