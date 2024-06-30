@@ -1256,12 +1256,13 @@ border-radius: var(--border-radius);
 padding: 0;
 position: fixed;
 bottom: 10px;
-width: calc(100% - 16.66667% - 53px - 70px);
+width: auto;
 left: 68px;
  background:var(--bg-color);
 padding-bottom: 10px;
 padding-top: 10px;
 border-top: 1px solid rgba(128, 128, 128, 0.25)!important;
+	right: calc(16.66667% + 40px);
 }
 	
 	.btn.btn-primary.primary-action {
@@ -1588,7 +1589,7 @@ margin-bottom: 5px;
         left: 48px;
         z-index: 5;
         border-bottom: 1px solid var(--border-color)!important;
-	    width: calc(20% - 24px);
+	    width: auto;
 margin-left: 0px;
 top: calc(var(--navbar-height) + 90px);
     }
@@ -3469,8 +3470,8 @@ padding-top: 0px;
 padding-right: 20px;
 padding-left: 5px;
 position: fixed;
-right: calc(16.66667% + 74px);
-width: calc(83.3334% - 123px);
+right: calc(16.66667% + 40px);
+width: auto;
 margin-left: 0px;
 top: calc(90px + var(--navbar-height));
 z-index: 5;
