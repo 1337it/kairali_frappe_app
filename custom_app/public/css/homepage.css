@@ -1344,7 +1344,7 @@ margin-top: 3px;
 {display:none;}
 
 [data-route^='Form'] #formclose {
-z-index: 999!important;
+z-index: 99!important;
 position: absolute;
 top: 73px;
 left: calc(40px + 22vw);
@@ -1361,11 +1361,11 @@ width: 50px;
 margin: 0;
 border-right: 1px solid rgba(128, 128, 128, 0.58);
 }
-		#listclose
+#listclose
 {display:none;}
 
 [data-route^='Form'] #listclose {
-z-index: 999!important;
+z-index: 9!important;
 position: absolute;
 top: 73px;
 left: calc(35px + 2vw);
