@@ -114,7 +114,7 @@ background-color: var(--bg-color)!important;
 	border-radius: 2px;
 background: #F0F0F0;
 box-shadow: inset 1px 1px 1px #cacaca,
-inset -1px -1px 1px #ffffff;
+inset -1px -1px 1px #f0f0f0;
 }
 select.form-control {
 -webkit-appearance: none;
@@ -134,7 +134,7 @@ background-color: var(--bg-color)!important;
 	border-radius: 2px;
 background: #F0F0F0;
 box-shadow: inset 1px 1px 1px #cacaca,
-inset -1px -1px 1px #ffffff;
+inset -1px -1px 1px #f0f0f0;
 }	
 
 .rt-r-bottom-0 {
@@ -1396,6 +1396,27 @@ width: 50px;
 margin: 0;
 border-right: 1px solid rgba(128, 128, 128, 0.58);
 }
+		#listclose
+{display:none;}
+
+[data-route^='Form'] #listclose {
+z-index: 999!important;
+position: absolute;
+top: 73px;
+left: calc(35px + 2vw);
+font-size: 24px;
+background: rgba(153, 153, 153, 0);
+border: 0;
+height: 40px;
+display: block;
+animation-name: css-0, css-8;
+animation-duration: 0.367s;
+animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+animation-fill-mode: both;
+width: 50px;
+margin: 0;
+border-right: 1px solid rgba(128, 128, 128, 0.58);
+}
 
 	
 #global-sidebarList li:hover {
@@ -2263,7 +2284,7 @@ overflow-y: auto;
  border-color:(44,62,80,0.83);
  border-width:0.5px;
 	box-shadow: 0 0 0 1px rgba(201, 201, 201, 0.69) inset,
-inset -1px -1px 1px #ffffff;
+inset -1px -1px 1px #f0f0f0;
 }
 [data-theme-mode="light"] [data-page-route=Workspaces] .layout-main .layout-main-section {
 border: 1px solid var(--border-color)!important;
@@ -2590,7 +2611,7 @@ padding-top: 0px;
    [data-route^="List/"] .btn-group {
 
 box-shadow: 1px 1px 1px #cacaca,
--1px -1px 1px #ffffff;
+-1px -1px 1px #f0f0f0;
 border-radius: 7px;
 }
 [data-route^="List/"] .page-form .sort-selector .btn-group {
@@ -3780,7 +3801,7 @@ stroke-width: 0.5px;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .page-title .title-area .title-text {
-padding-left: 0px!important;
+padding-left: 50px!important;
 max-width: calc(50vw)!important;
 font-size: 26px!important;
 }
