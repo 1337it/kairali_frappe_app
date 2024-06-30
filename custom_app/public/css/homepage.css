@@ -1785,7 +1785,7 @@ border-radius: var(--border-radius);
 padding: 0;
 position: fixed;
 bottom: 10px;
-width: calc(100% - 16.66667% -530px - 70px);
+width: calc(100% - 16.66667% - 53px - 70px);
 left: 68px;
  background:var(--bg-color);
 padding-bottom: 10px;
