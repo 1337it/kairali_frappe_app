@@ -1785,8 +1785,8 @@ border-radius: var(--border-radius);
 padding: 0;
 position: fixed;
 bottom: 10px;
-width: calc(100% - 16.66667% - 80px - 70px);
-left: 88px;
+width: calc(100% - 16.66667% -530px - 70px);
+left: 68px;
  background:var(--bg-color);
 padding-bottom: 10px;
 padding-top: 10px;
@@ -3073,8 +3073,8 @@ padding: 0px;
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
 padding-top: 42px;
-  margin-left: 20px!important;
-margin-right: 20px!important;
+  margin-left: 0px!important;
+margin-right: 0px!important;
 	padding:0;
 }
 
@@ -3979,14 +3979,14 @@ padding-right: 20px;
 padding-left: 5px;
 position: fixed;
 right: calc(16.66667% + 74px);
-width: calc(83.3334% - 148px);
+width: calc(83.3334% - 123px);
 margin-left: 0px;
 top: calc(90px + var(--navbar-height));
 z-index: 5;
 border-bottom: 1px solid var(--gray-300);
 background: var(--bg-color);
-	left: 88px;
-  top: 140px;
+	left: 68px;
+  top: 138px;
 }
 
 
