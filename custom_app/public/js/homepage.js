@@ -465,7 +465,7 @@ frappe.set_route("List",frappe.get_route()[1] ,"List");
 
 		document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
 		document.getElementById('page-'+frappe.get_route()[1]).attributes.style.value ="width:97vw!important;";
-		document.getElementById("listclose").attributes.style.value ="display:none;";
+
 
       });	
 	
