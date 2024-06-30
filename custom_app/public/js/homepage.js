@@ -139,7 +139,7 @@ const formclose = document.createElement('th');
 
 const listclose = document.createElement('th');
 
-      formclose.innerHTML = '<button class="fa fa-close" id="listclose" style="">';
+      listclose.innerHTML = '<button class="fa fa-close" id="listclose" style="">';
 
 
 
