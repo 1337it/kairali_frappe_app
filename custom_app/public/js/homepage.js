@@ -137,7 +137,9 @@ const formclose = document.createElement('th');
       
       // Attach the "click" event to your button
 
+const listclose = document.createElement('th');
 
+      formclose.innerHTML = '<button class="fa fa-close" id="listclose" style="">';
 
 
 
@@ -456,6 +458,13 @@ window.history.go(-1);
 
 	formclose.addEventListener('click', () => {
 frappe.set_route("List",frappe.get_route()[1] ,"List");
+
+      });	
+	listclose.addEventListener('click', () => {
+
+		document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
+		document.getElementById('page-'+frappe.get_route()[1]).attributes.style.value ="width:97vw!important;";
+		document.getElementById("listclose").attributes.style.value ="display:none;";
 
       });	
 	
