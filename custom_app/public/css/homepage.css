@@ -32,39 +32,8 @@
 [custom_block_name="greetings"] .custom-block-widget-box {
 box-shadow: none!important;
 }
-*:not(#page-form-builder *)::-webkit-scrollbar {
-width: 15px;
-height: 6px;
-}
-*::-webkit-scrollbar-thumb
-{
-background: var(--dt-text-light)!important;
-border-radius: 0px;
-	border: 3px solid rgba(250, 250, 250, 1)!important;
-}
-[data-theme='dark'] *::-webkit-scrollbar-thumb {
-background-color: #2d2d2d !important;
-border-radius: 0px;
-border: 3px solid rgba(255, 255, 255, 1)!important;
-}
-[data-theme='dark'] *::-webkit-scrollbar-track {
-background: rgba(0, 0, 0, 1)!important;
-}
-*::-webkit-scrollbar-track
-{
-background: rgba(255, 255, 255, 1)!important;
 
 
-}
-.editable-form .layout-main-section-wrapper::-webkit-scrollbar-track {
-margin-bottom: 0px;
-}
-.cancelled-form .layout-main-section-wrapper::-webkit-scrollbar-track {
-margin-bottom: 0px;
-}
-.cancelled-form .layout-main-section-wrapper::-webkit-scrollbar-track {
-margin-bottom: 0px;
-}
 .frappe-control[data-fieldtype=Select].form-group .placeholder.xs {
 top: 7px;
 }
@@ -1000,12 +969,8 @@ height: 100%;
 {
 -webkit-app-region: no-drag;
 }
-html {
-    scrollbar-width: none!important;
-}
-* {
-scrollbar-width: none!important;
-}
+
+
 
 
 
@@ -1943,7 +1908,6 @@ z-index: 9999;
 visibility: visible;
 }
     [data-route^="Form/"] [data-page-route^="List/"] .filter-section .sort-selector {
-scrollbar-width: none;
 display: none;
 }
     
@@ -3965,9 +3929,7 @@ width: calc(100% - 0px);
 margin-left: 0px;
 }
 
-* {
-    scrollbar-width: none;
-}
+
 
 .raven-chat-view .raven-chat-view-container .raven-message-stream-container
 {
