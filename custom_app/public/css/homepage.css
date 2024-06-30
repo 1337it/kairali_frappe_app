@@ -8,7 +8,20 @@
 
 
 
-
+	*::-webkit-scrollbar-thumb {
+background: !important;
+border-radius: !important;
+}
+	*:not(#page-form-builder *)::-webkit-scrollbar {
+width: !important;
+height: !important;
+}
+	*::-webkit-scrollbar-track, *::-webkit-scrollbar-corner {
+background: !important;
+}
+	*::-webkit-scrollbar-track, *::-webkit-scrollbar-corner {
+background: !important;
+}
 
 
 
