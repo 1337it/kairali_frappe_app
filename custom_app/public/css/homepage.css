@@ -3761,7 +3761,6 @@ z-index:10!important;
 .main-section header{
  width:100%;
  justify-content:flex-start;
- align-items:stretch;
 }
  /* Container */
  .main-section .navbar .container{
