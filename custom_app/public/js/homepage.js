@@ -462,7 +462,7 @@ window.history.go(-1);
 
    
 	if (Notification.permission === "granted") {
- subscribe.attributes.class.value='subscribed';
+		document.getElementById("subscribe").attributes.class.value='subscribed';
 }
 
 	formclose.addEventListener('click', () => {
