@@ -461,7 +461,9 @@ window.history.go(-1);
 	
 
    
-	
+	if (Notification.permission === "granted") {
+ subscribe.attributes.class.value='subscribed';
+}
 
 	formclose.addEventListener('click', () => {
 frappe.set_route("List",frappe.get_route()[1] ,"List");
