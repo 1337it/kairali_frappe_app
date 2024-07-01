@@ -1722,6 +1722,7 @@ height: calc(100% - var(--navbar-height));
     animation-fill-mode: both;
 right: 0!important;
 	top: var(--navbar-height);
+	z-index:9;
 }
 
 [data-route^='Form/Notification Settings'] .editable-form.page-container {
@@ -1741,6 +1742,7 @@ height: calc(100% - var(--navbar-height));
     animation-fill-mode: both;
 right: 0!important;
 	top: var(--navbar-height);
+	z-index:9;
 }
 [data-route^='Form'] .cancelled-form.page-container {
 display: block;
@@ -1752,6 +1754,7 @@ height: calc(100% - var(--navbar-height));
     animation-fill-mode: both;
 right: 0!important;
 	top: var(--navbar-height);
+	z-index:9;
 }
 	
   
@@ -2918,7 +2921,7 @@ margin-top: 0px!important;
 }
  [data-theme=dark] .page-wrapper .layout-main-section-wrapper {
 overflow-x: hidden;
-  background-color: #292929;
+  background-color: #202020;
 }
 [data-theme-mode="light"] [data-page-route=Workspaces] .layout-main-section {
 background-color: rgb(240, 240, 240)!important;
