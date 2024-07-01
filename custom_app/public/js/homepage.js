@@ -477,22 +477,12 @@ frappe.set_route("List",frappe.get_route()[1] ,"List");
 	subscribe.addEventListener("click", () => {
     Notification.requestPermission().then(permission => {
         if (permission === "granted") {
-		showNoti();
+
             console.log("The user accepted");
         }
     });
 });
 
-	function showNoti() {
-		self.addEventListener('push', (event) => {
-  event.waitUntil(
-    self.registration.showNotification('Notification Title', {
-      body: 'Notification Body Text',
-      icon: 'custom-notification-icon.png',
-    });
-  );
-});
-	}
 	 backbutton.addEventListener('click', () => {
             history.back();
       });
