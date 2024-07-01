@@ -52,7 +52,7 @@ shortcut: "escape",
 })();
 
 
-var pwaworker = '<script> if (typeof navigator.serviceWorker !== "undefined") {navigator.serviceWorker.register("/worker/index.js")}</script><script> if (typeof navigator.serviceWorker !== "undefined") {navigator.serviceWorker.register("/next.config.js")}</script>';
+var pwaworker = '<script> if (typeof navigator.serviceWorker !== "undefined") {navigator.serviceWorker.register("/worker/index.js")}</script>';
 $('body').append(pwaworker);
 
 var clockhead = '<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>'
