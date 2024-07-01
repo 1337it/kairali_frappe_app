@@ -477,7 +477,7 @@ frappe.set_route("List",frappe.get_route()[1] ,"List");
 	subscribe.addEventListener("click", () => {
     Notification.requestPermission().then(permission => {
         if (permission === "granted") {
-
+shownoti();
             console.log("The user accepted");
         }
     });
