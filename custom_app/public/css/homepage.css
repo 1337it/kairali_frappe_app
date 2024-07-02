@@ -1,7 +1,35 @@
+@media (max-width: 1199px) {
+#formclose
+{
+	display:none;
+}
+	#listclose
+{
+	display:none;
+}
+	#backbutton
+{
+	display:none;
+}
+[data-route^="Workspaces/"] .page-title .title-area .title-text {
+max-width: auto;
+
+}
+#overlay {
+display: none;
+}
 
 
 
 
+
+
+
+
+
+
+	
+}
 .subscribed{
 display:none!important;
 }
