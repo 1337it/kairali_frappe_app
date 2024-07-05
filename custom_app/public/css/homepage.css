@@ -2137,7 +2137,7 @@ padding: 0;
     display: block;
     order: 2;
    background:var(--bg-color)!important;
-	z-index:9;
+	z-index:8;
 
 }
    [data-theme-mode="dark"] .page-wrapper .layout-side-section {
