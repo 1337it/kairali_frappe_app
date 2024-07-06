@@ -1640,7 +1640,7 @@ margin-bottom: 5px;
         left: 48px;
         z-index: 5;
         border-bottom: 1px solid var(--border-color)!important;
-	    width: auto;
+	    width: calc(20% - 24px);
 margin-left: 0px;
 top: calc(var(--navbar-height) + 90px);
     }
@@ -1813,9 +1813,8 @@ left: 0;
 width: calc(20% - 24px);
 left: 68px;
 justify-content: center;
-bottom: 0px;
-margin-bottom: 20!important;
-	padding-bottom: 20px;
+bottom: 10px;
+	padding-bottom: 10px;
 }
 [data-route^="Form/"] [data-page-route^="List/"] .list-paging-area .level-left {
 justify-content: flex-start;
