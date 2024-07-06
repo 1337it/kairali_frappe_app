@@ -160,6 +160,7 @@ inset -1px -1px 1px #f0f0f0;
     display: none!important;
 }
 	:root {
+		overscroll-behavior: none;
     --sidebar-width: 16.6667vw!important;
 }
 .bg-gray-2 {
