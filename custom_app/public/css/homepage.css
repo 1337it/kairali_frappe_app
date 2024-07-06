@@ -59,6 +59,10 @@ background: 0!important;
 
  
 @media (min-width: 1200px) {
+.no-list-sidebar[data-page-route^="List/"] .layout-side-section
+	{
+		display:none!important;
+	}
 
 
 	.workspace-skeleton {
@@ -1840,6 +1844,15 @@ box-shadow:0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 padding: 10px;
 }
 
+[data-page-route^="Tree/"] .page-head .justify-between .page-actions {
+  top: 20px;
+/* right: 0; */
+left: 20px;
+width: calc(100% - 88px);
+box-shadow:0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
+padding: 10px;
+}
+
 .page-head .justify-between .page-actions {
   top: 20px;
 /* right: 0; */
@@ -1937,6 +1950,10 @@ left: 0px;
 }
 
 [data-page-route^="List/"] .page-title
+{
+left: 35px;
+}
+[data-page-route^="Tree/"] .page-title
 {
 left: 35px;
 }
@@ -2587,6 +2604,16 @@ background-color: rgba(244, 244, 244, 0.12);
 	            margin-right:20px;
          background:var(--bg-color);
 	    box-shadow:0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
+}
+
+    [data-page-route^="Tree/"] .page-wrapper .layout-main-section-wrapper {
+color: rgb(51, 60, 68); 
+	    padding-left: 0px !important; 
+	    margin-left: 20px; 
+	    margin-right: 0px;
+	    background: transparent;
+	    box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
+	    
 }
     [data-route^="Form"] [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper {
     color: rgb(51, 60, 68);
