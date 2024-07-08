@@ -214,9 +214,8 @@ frappe.ui.keys.add_shortcut({
 
 
 
-
 frappe.ui.keys.add_shortcut({
-    shortcut: 'ctrl+l',
+    shortcut: 'alt+F7',
     action: () => { 
             const current_doc = $('.data-row.editable-row').parent().attr("data-name");
       const curdoc = (cur_frm.doctype + " Item");
@@ -224,8 +223,8 @@ frappe.ui.keys.add_shortcut({
             frappe.call({
                 method: 'frappe.client.get_list',
               args :{
-              doctype: 'Stock Ledger Entry',
-			fields: ['posting_date', 'voucher_type', 'voucher_no', 'qty_after_transaction', 'incoming_rate', 'outgoing_rate'],
+              doctype: 'Sales Invoice Item',
+			fields: ['parent', 'owner', 'warehouse', 'qty', 'rate'],
                 filters: [
                     ["item_code", "=",  item_row.item_code],
                 ]
@@ -236,17 +235,17 @@ frappe.ui.keys.add_shortcut({
                             title: __('Stock Ledger Entries'),
                             width: 400
                         });
+			
                         $(`<div class="modal-body ui-front">
                             <h2>${item_row.item_code}</h2>
                             <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                <th>Posting Date</th>
-                                <th>Voucher Type</th>
-                                <th>Voucher No.</th>
-                                <th>Qty After Transaction</th>
-                                <th>Incoming Rate</th>
-                                <th>Outgoing Rate</th>
+                                <th>Voucher Number</th>
+                                <th>User</th>
+                                <th>Warehouse</th>
+                                <th>Qty</th>
+                                <th>Rate</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -257,12 +256,11 @@ frappe.ui.keys.add_shortcut({
                             const tbody = $(d.body).find('tbody');
                             const tr = $(`
                             <tr>
-                                <td>${element.posting_date}</td>
-                                <td>${element.voucher_type}</td>
-                                <td>${element.voucher_no}</td>
-                                <td>${element.qty_after_transaction}</td>
-                                <td>${element.incoming_rate}</td>
-                                <td>${element.outgoing_rate}</td>
+                                <td>${element.parent}</td>
+                                <td>${element.owner}</td>
+                                <td>${element.warehouse}</td>
+                                <td>${element.qty}</td>
+                                <td>${element.rate}</td>
                             </tr>
                             `).appendTo(tbody)
                             tbody.find('.check-warehouse').on('change', function() {
