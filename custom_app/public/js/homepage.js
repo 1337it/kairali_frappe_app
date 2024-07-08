@@ -215,7 +215,7 @@ frappe.ui.keys.add_shortcut({
 
 
 frappe.ui.keys.add_shortcut({
-    shortcut: 'alt+F7',
+    shortcut: 'alt+7',
     action: () => { 
             const current_doc = $('.data-row.editable-row').parent().attr("data-name");
       const curdoc = (cur_frm.doctype + " Item");
