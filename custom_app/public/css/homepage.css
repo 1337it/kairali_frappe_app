@@ -111,7 +111,7 @@ z-index:99999!important;
 }
 
 
-[data-page-route] .form-control {
+[data-page-route] box-shadow: rgb(202, 202, 202) 1px 1px 1px inset, rgb(240, 240, 240) -1px -1px 1px inset; {
     border: 0px solid var(--gray-400) !important;
     border-radius: 1px;
     background-color: var(--bg-color)!important;
@@ -936,7 +936,7 @@ border:none!important;
 border-radius: 20px;
 }
 .form-control {
-  
+  box-shadow: rgb(202, 202, 202) 1px 1px 1px inset, rgb(240, 240, 240) -1px -1px 1px inset;
 background-color: var(--bg-color)!important;
 }
 .like-disabled-input {
