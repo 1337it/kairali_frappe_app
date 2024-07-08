@@ -226,7 +226,7 @@ frappe.ui.keys.add_shortcut({
               doctype: 'Sales Invoice Item',
 			fields: ['parent', 'owner', 'warehouse', 'qty', 'rate'],
                 filters: [
-                    ["item_code", "=",  item_row.item_code],
+                    ["item_name", "=",  item_row.item_code],
                 ]
               },
                 callback: function(r) {
