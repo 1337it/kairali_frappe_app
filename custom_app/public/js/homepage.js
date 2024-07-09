@@ -221,10 +221,10 @@ frappe.ui.keys.add_shortcut({
       const curdoc = (cur_frm.doctype + " Item");
             const item_row = locals[curdoc][current_doc];
             frappe.call({
-                method: 'frappe.client.get_list',
+                method: 'frappe.db.get_list',
               args :{
               doctype: 'Sales Invoice Item',
-			fields: ['parent', 'owner', 'warehouse', 'qty', 'rate'],
+			fields: ['parent', 'owner', 'qty', 'rate'],
                 filters: [
                     ["item_name", "=",  item_row.item_code],
                 ]
@@ -243,7 +243,6 @@ frappe.ui.keys.add_shortcut({
                                 <tr>
                                 <th>Voucher Number</th>
                                 <th>User</th>
-                                <th>Warehouse</th>
                                 <th>Qty</th>
                                 <th>Rate</th>
                                 </tr>
@@ -258,7 +257,6 @@ frappe.ui.keys.add_shortcut({
                             <tr>
                                 <td>${element.parent}</td>
                                 <td>${element.owner}</td>
-                                <td>${element.warehouse}</td>
                                 <td>${element.qty}</td>
                                 <td>${element.rate}</td>
                             </tr>
