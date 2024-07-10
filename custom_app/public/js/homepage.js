@@ -574,7 +574,7 @@ document.getElementById("formclose").attributes.style.value ="left: calc(40px + 
 	else {
 
 
-document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
+document.getElementById("formclose").attributes.style.value ="display:none !important;";
 		document.getElementById('page-'+doctype).attributes.style.value ="width:97vw!important;";
 
 		
@@ -628,7 +628,7 @@ frappe.set_route("List",frappe.get_route()[1] ,"List");
       });	
 	listclose.addEventListener('click', () => {
 
-		document.getElementById("formclose").attributes.style.value ="left: calc(40px + 2vw)!important;";
+		document.getElementById("formclose").attributes.style.value ="display: none !important;";
 		document.getElementById('page-'+frappe.get_route()[1]).attributes.style.value ="width:97vw!important;";
 
 
