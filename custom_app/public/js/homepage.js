@@ -153,6 +153,8 @@ const listclose = document.createElement('th');
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+w',
     action: () => { 
+
+
             const current_doc = $('.data-row.editable-row').parent().attr("data-name");
       const curdoc = (cur_frm.doctype + " Item");
             const item_row = locals[curdoc][current_doc];
@@ -167,7 +169,7 @@ frappe.ui.keys.add_shortcut({
                             title: __('Warehouse Stock Balance'),
                             width: 400
                         });
-                        $(`<div class="modal-body ui-front">
+                        $(`<div id="historymodal" class="modal-body ui-front">
                             <h2>${item_row.item_code}</h2>
                             <table class="table table-bordered">
                             <thead>
@@ -217,6 +219,9 @@ frappe.ui.keys.add_shortcut({
 frappe.ui.keys.add_shortcut({
     shortcut: 'alt+7',
     action: () => { 
+	    	
+
+
             const current_doc = $('.data-row.editable-row').parent().attr("data-name");
       const curdoc = (cur_frm.doctype + " Item");
             const item_row = locals[curdoc][current_doc];
@@ -232,13 +237,45 @@ frappe.ui.keys.add_shortcut({
 		      order_by: 'creation desc'
               },
                 callback: function(r) {
+var rates = {};
+var dates = {};
+for (var i = 0; i < r.message.length; i++) {
+  rates[i] = r.message[i].rate;
+  dates[i] = r.message[i].creation;
+}
+        console.log(rates[0]);
+	
                     if (r.message.length > 0){
+
+			        const data = {
+        labels: dates,
+        datasets: [
+            {
+                name: "Some Data", type: "bar",
+                values: rates
+            }
+        ]
+    };
+
+    const option = {
+        title: "Trends",
+        data: data,
+        type: 'axis-mixed', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
+        height: 250,
+        colors: ['#7cd6fd', '#743ee2']
+    };
+
+
+			    
                         const d = new frappe.ui.Dialog({
                             title: __('Sales History'),
                             width: 400
                         });
 			
-                        $(`<div class="modal-body ui-front">
+                        $(`
+       <div class="modal-body ui-front">
+        <div id="sample-chart">
+                </div>
                             <h2>${item_row.item_code}</h2>
                             <table class="table table-bordered">
                             <thead>
@@ -254,6 +291,7 @@ frappe.ui.keys.add_shortcut({
                             </tbody>
                             </table>
                         </div>`).appendTo(d.body);
+			    frappe.utils.make_chart(d.$wrapper.find("#sample-chart")[0], option);
                         r.message.forEach(element => {
                             const tbody = $(d.body).find('tbody');
                             const tr = $(`
@@ -267,6 +305,8 @@ frappe.ui.keys.add_shortcut({
                             `).appendTo(tbody)
                             tbody.find('.check-warehouse').on('change', function() {
                                 $('input.check-warehouse').not(this).prop('checked', false);  
+
+
                             });
                         });
                         d.set_primary_action("Close", function() {
@@ -275,6 +315,7 @@ frappe.ui.keys.add_shortcut({
                         cur_frm.rec_dialog = d;
                         d.show();  
                          d.$wrapper.find('.modal-dialog').css("width", "90%");
+			    
                     }
               }
             });     
@@ -284,7 +325,6 @@ frappe.ui.keys.add_shortcut({
     ignore_inputs: true,
     
 });
-
 
 
 frappe.ui.keys.add_shortcut({
