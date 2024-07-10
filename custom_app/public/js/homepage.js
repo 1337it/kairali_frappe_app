@@ -221,18 +221,20 @@ frappe.ui.keys.add_shortcut({
       const curdoc = (cur_frm.doctype + " Item");
             const item_row = locals[curdoc][current_doc];
             frappe.call({
-                method: 'frappe.db.get_list',
+                method: 'frappe.client.get_list',
               args :{
-              doctype: 'Sales Invoice Item',
-			fields: ['parent', 'owner', 'qty', 'rate'],
+              doctype: 'Sales Invoice',
+		      parent: 'Sales Invoice Item',
+			fields: ['parent', 'owner', 'qty', 'rate', 'creation'],
                 filters: [
                     ["item_name", "=",  item_row.item_code],
-                ]
+                ],
+		      order_by: 'creation desc'
               },
                 callback: function(r) {
                     if (r.message.length > 0){
                         const d = new frappe.ui.Dialog({
-                            title: __('Stock Ledger Entries'),
+                            title: __('Sales History'),
                             width: 400
                         });
 			
@@ -243,8 +245,9 @@ frappe.ui.keys.add_shortcut({
                                 <tr>
                                 <th>Voucher Number</th>
                                 <th>User</th>
+				<th>Rate</th>
                                 <th>Qty</th>
-                                <th>Rate</th>
+				<th>Date</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -257,8 +260,9 @@ frappe.ui.keys.add_shortcut({
                             <tr>
                                 <td>${element.parent}</td>
                                 <td>${element.owner}</td>
+				<td>${element.rate}</td>
                                 <td>${element.qty}</td>
-                                <td>${element.rate}</td>
+				<td>${element.creation}</td>
                             </tr>
                             `).appendTo(tbody)
                             tbody.find('.check-warehouse').on('change', function() {
@@ -280,6 +284,79 @@ frappe.ui.keys.add_shortcut({
     ignore_inputs: true,
     
 });
+
+frappe.ui.keys.add_shortcut({
+    shortcut: 'alt+8',
+    action: () => { 
+            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+      const curdoc = (cur_frm.doctype + " Item");
+            const item_row = locals[curdoc][current_doc];
+            frappe.call({
+                method: 'frappe.client.get_list',
+              args :{
+              doctype: 'Purchase Invoice',
+		      parent: 'Purchase Invoice Item',
+			fields: ['parent', 'owner', 'qty', 'rate', 'creation'],
+                filters: [
+                    ["item_name", "=",  item_row.item_code],
+                ],
+		      order_by: 'creation desc'
+              },
+                callback: function(r) {
+                    if (r.message.length > 0){
+                        const d = new frappe.ui.Dialog({
+                            title: __('Purchase History'),
+                            width: 400
+                        });
+			
+                        $(`<div class="modal-body ui-front">
+                            <h2>${item_row.item_code}</h2>
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <th>Voucher Number</th>
+                                <th>User</th>
+				<th>Rate</th>
+                                <th>Qty</th>
+				<th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            </table>
+                        </div>`).appendTo(d.body);
+                        r.message.forEach(element => {
+                            const tbody = $(d.body).find('tbody');
+                            const tr = $(`
+                            <tr>
+                                <td>${element.parent}</td>
+                                <td>${element.owner}</td>
+				<td>${element.rate}</td>
+                                <td>${element.qty}</td>
+				<td>${element.creation}</td>
+                            </tr>
+                            `).appendTo(tbody)
+                            tbody.find('.check-warehouse').on('change', function() {
+                                $('input.check-warehouse').not(this).prop('checked', false);  
+                            });
+                        });
+                        d.set_primary_action("Close", function() {
+       d.hide();
+                        });
+                        cur_frm.rec_dialog = d;
+                        d.show();  
+                         d.$wrapper.find('.modal-dialog').css("width", "90%");
+                    }
+              }
+            });     
+    },
+    page: this.page,
+    description: __('Get Item INFO'),
+    ignore_inputs: true,
+    
+});
+
+
 
 
 frappe.ui.keys.add_shortcut({
