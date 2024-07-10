@@ -218,6 +218,7 @@ frappe.ui.keys.add_shortcut({
 
 
 frappe.ui.keys.add_shortcut({
+	description: "Sales History",
     shortcut: 'alt+7',
     action: () => { 
 	    	
@@ -330,6 +331,7 @@ var dates = r.message.map(function(i) {
 
 
 frappe.ui.keys.add_shortcut({
+	description: "Purchase History",
     shortcut: 'alt+8',
     action: () => { 
 	    	
