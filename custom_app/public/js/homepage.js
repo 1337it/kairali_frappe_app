@@ -223,8 +223,8 @@ frappe.ui.keys.add_shortcut({
             frappe.call({
                 method: 'frappe.client.get_list',
               args :{
-              doctype: 'Sales Invoice',
-		      parent: 'Sales Invoice Item',
+              doctype: 'Sales Invoice Item',
+		      parent: 'Sales Invoice',
 			fields: ['parent', 'owner', 'qty', 'rate', 'creation'],
                 filters: [
                     ["item_name", "=",  item_row.item_code],
@@ -262,7 +262,7 @@ frappe.ui.keys.add_shortcut({
                                 <td>${element.owner}</td>
 				<td>${element.rate}</td>
                                 <td>${element.qty}</td>
-				<td>${element.creation}</td>
+				<td>${frappe.format(element.creation, {'fieldtype': 'Date'}) }</td>
                             </tr>
                             `).appendTo(tbody)
                             tbody.find('.check-warehouse').on('change', function() {
@@ -285,6 +285,8 @@ frappe.ui.keys.add_shortcut({
     
 });
 
+
+
 frappe.ui.keys.add_shortcut({
     shortcut: 'alt+8',
     action: () => { 
@@ -294,8 +296,8 @@ frappe.ui.keys.add_shortcut({
             frappe.call({
                 method: 'frappe.client.get_list',
               args :{
-              doctype: 'Purchase Invoice',
-		      parent: 'Purchase Invoice Item',
+              doctype: 'Purchase Invoice Item',
+		      parent: 'Purchase Invoice',
 			fields: ['parent', 'owner', 'qty', 'rate', 'creation'],
                 filters: [
                     ["item_name", "=",  item_row.item_code],
@@ -333,7 +335,7 @@ frappe.ui.keys.add_shortcut({
                                 <td>${element.owner}</td>
 				<td>${element.rate}</td>
                                 <td>${element.qty}</td>
-				<td>${element.creation}</td>
+				<td>${frappe.format(element.creation, {'fieldtype': 'Date'}) }</td>
                             </tr>
                             `).appendTo(tbody)
                             tbody.find('.check-warehouse').on('change', function() {
