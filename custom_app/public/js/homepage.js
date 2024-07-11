@@ -330,6 +330,45 @@ var dates = r.message.map(function(i) {
 });
 
 
+
+frappe.ui.keys.add_shortcut({
+	description: "Purchase History",
+    shortcut: 'alt+9',
+    action: () => { 
+      const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+      const curdoc = (cur_frm.doctype + " Item");
+            const item_row = locals[curdoc][current_doc];
+
+new frappe.ui.form.MultiSelectDialog({
+    doctype: "Sales Invoice",
+    target: this.cur_frm,
+   allow_child_item_selection: 1,
+    child_fieldname: "items",
+    child_columns: ["rate", "qty", "item_code"],
+    setters: {
+
+    },
+    add_filters_group: 1,
+    date_field: "transaction_date",
+ 
+   
+    get_query() {
+        return {
+filters: { item_code: item_row.item_code }
+           
+        }
+    },
+    action(selections, args) {
+        console.log(args.filtered_children); // list of selected item names
+    }
+});
+$('[data-fieldname="allow_child_item_selection"] [type=checkbox]').click();
+    }
+});
+
+
+      
+
 frappe.ui.keys.add_shortcut({
 	description: "Purchase History",
     shortcut: 'alt+8',
@@ -571,7 +610,7 @@ document.getElementById("formclose").attributes.style.value ="left: calc(30px + 
 	document.getElementById('page-'+doctype).attributes.style.value ="width:77vw!important;";
 				    const formtitle = document.createAttribute("style");
 document.querySelector('[data-route^="Form/'+doctype+'"] .page-title').attributes.setNamedItem(formtitle);
-document.querySelector('[data-route^="Form/'+doctype+'"] .page-title').attributes.style.value ="padding-left:85px !important;";
+document.querySelector('[data-route^="Form/'+doctype+'"] .page-title').attributes.style.value ="padding-left:75px !important;";
 }
 	
 	else {
