@@ -1831,11 +1831,11 @@ left: 0;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .frappe-card .list-paging-area{
-width: calc(20% - 24px);
-left: 68px;
+width: calc(20% - 14px);
+left: 58px;
 justify-content: center;
-bottom: 10px;
-	padding-bottom: 10px;
+bottom: 0px;
+padding-bottom: 10px;
 }
 [data-route^="Form/"] [data-page-route^="List/"] .list-paging-area .level-left {
 justify-content: flex-start;
