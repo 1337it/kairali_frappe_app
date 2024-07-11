@@ -567,7 +567,7 @@ document.querySelector("#body").appendChild(formclose);
 var selectionlist = document.querySelector('[data-page-route^="List/'+doctype+'"]') !== null;
 if(selectionlist){
 
-document.getElementById("formclose").attributes.style.value ="left: calc(40px + 22vw)!important;";	
+document.getElementById("formclose").attributes.style.value ="left: calc(30px + 22vw)!important;";	
 	document.getElementById('page-'+doctype).attributes.style.value ="width:77vw!important;";
 				    const formtitle = document.createAttribute("style");
 document.querySelector('[data-route^="Form/'+doctype+'"] .page-title').attributes.setNamedItem(formtitle);
