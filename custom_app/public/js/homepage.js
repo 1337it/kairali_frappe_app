@@ -638,8 +638,8 @@ frappe.set_route("List",frappe.get_route()[1] ,"List");
 		document.getElementById("formclose").attributes.style.value ="display: none !important;";
 		document.getElementById('page-'+frappe.get_route()[1]).attributes.style.value ="width:97vw!important;";
   const formtitle = document.createAttribute("style");
-document.querySelector('[data-route^="Form/'+doctype+'"] .page-title').attributes.setNamedItem(formtitle);
-document.querySelector('[data-route^="Form/'+doctype+'"] .page-title').attributes.style.value ="padding-left:35px !important;";
+document.querySelector('[data-route^="Form/'+frappe.get_route()[1]+'"] .page-title').attributes.setNamedItem(formtitle);
+document.querySelector('[data-route^="Form/'+frappe.get_route()[1]+'"] .page-title').attributes.style.value ="padding-left:35px !important;";
 
       });	
 	subscribe.addEventListener("click", () => {
