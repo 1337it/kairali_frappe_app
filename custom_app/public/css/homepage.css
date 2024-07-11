@@ -1188,7 +1188,7 @@ padding-left:23px;
 }
 
 	[data-page-route=Workspaces] .layout-main .desk-sidebar {
-margin-top: 40px;
+margin-top: 64px;
 }
 	.desk-sidebar .standard-sidebar-section .standard-sidebar-label {
 color: #cecece;
@@ -2245,7 +2245,7 @@ border-radius: 4px;
 align-items: center;
 justify-content: space-evenly;
 padding: 5px!important;
-height: 48px;
+height: 70px;
 justify-content: center;
 	    position:fixed;
 }
