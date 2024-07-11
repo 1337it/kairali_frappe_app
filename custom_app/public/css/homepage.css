@@ -1857,7 +1857,7 @@ padding: 10px;
   top: 10px;
 /* right: 0; */
 left: 10px;
-width: calc(100% - 25px);
+width: calc(100% - 70px);
 box-shadow: 0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 padding: 10px;
 	position:fixed;
@@ -2598,10 +2598,10 @@ background-color: rgba(244, 244, 244, 0.12);
     [data-page-route^="List/"] .page-wrapper .layout-main-section-wrapper {
     color: rgb(51, 60, 68);
     padding-right: 0px;
-    padding-top: 42px;
+    padding-top: 45px;
     padding-left: 0px !important;
-        margin-left:68px;
-	            margin-right:20px;
+        margin-left:58px;
+	            margin-right:10px;
          background:var(--bg-color);
 	    box-shadow:0 0 1px rgba(0, 0, 0, 0), 0 2px 4px rgba(0, 0, 0, 0.09);
 }
@@ -3555,8 +3555,8 @@ top: calc(90px + var(--navbar-height));
 z-index: 5;
 border-bottom: 1px solid var(--gray-300);
 background: var(--bg-color);
-	left: 68px;
-  top: 138px;
+	left: 59px;
+  top: 118px;
 }
 
 
