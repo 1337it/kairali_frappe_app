@@ -158,7 +158,7 @@ home_page = "index"
 #
 override_whitelisted_methods = {
 "frappe.public.js.frappe.ui.link_preview": "custom_app.public.js.ui.link_preview"
-# }
+}
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
