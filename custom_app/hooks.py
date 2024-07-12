@@ -18,6 +18,8 @@ app_include_js = "/assets/custom_app/js/homepage.js"
 web_include_css = "/assets/custom_app/css/custom_app.css"
 web_include_css = "/assets/custom_app/css/homepage.css"
 web_include_js = "/assets/custom_app/js/homepage.js"
+web_include_js = "/assets/custom_app/js/ui/link_preview.js"
+
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "custom_app/public/scss/website"
@@ -153,8 +155,8 @@ home_page = "index"
 # Overriding Methods
 # ------------------------------
 #
-# override_whitelisted_methods = {
-#	"frappe.desk.doctype.event.event.get_events": "custom_app.event.get_events"
+override_whitelisted_methods = {
+"frappe.public.js.frappe.ui.link_preview": "custom_app.public.js.ui.link_preview"
 # }
 #
 # each overriding function accepts a `data` argument;
