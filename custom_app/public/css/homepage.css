@@ -1661,7 +1661,7 @@ margin-bottom: 5px;
         left: 38px;
         z-index: 5;
         border-bottom: 1px solid var(--border-color)!important;
-	    width: calc(20% - 24px);
+	    width: calc(20% - 14px);
 margin-left: 0px;
 top: calc(var(--navbar-height) + 70px);
     }
