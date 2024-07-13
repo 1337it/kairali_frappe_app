@@ -96,8 +96,11 @@ text-align: center;
 .selecteditem
 {
 	background: lightgray!important;
-	filter:hue-rotate(180deg);
+        border-left: 3px solid #ed152b;
 }
+	.list-row-container:focus {
+		border-left: 3px solid #ed152b;
+	}
 
 [custom_block_name="greetings"] .custom-block-widget-box {
 box-shadow: none!important;
