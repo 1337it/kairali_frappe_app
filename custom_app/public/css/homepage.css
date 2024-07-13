@@ -2244,7 +2244,6 @@ search-dialog .search-header .search-icon {
 background: rgba(240, 240, 240, 1)!important;
 height: calc(100% - var(--navbar-height));
 right: 0!important;
-position:fixed;
 z-index: 9;
 }
  [data-theme-mode="dark"] .page-container{
