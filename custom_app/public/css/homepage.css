@@ -76,6 +76,36 @@ background: 0!important;
 
  
 @media (min-width: 1200px) {
+
+
+	.awesomplete>[role=listbox] {
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    background-color: #ffffffc9;
+    max-height: min(60vh, 300px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px !important;
+    border: 1px solid var(--border-color);
+    left: 0;
+    margin: 0;
+    padding: var(--padding-xs);
+    z-index: 4;
+    min-width: 250px;
+    top: calc(25vh + 48px);
+    border-radius: 0 !important;
+    backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
+}
+
+	.search-icon .awesomplete input:focus {
+
+		top:25vh;
+
+	}
+
 	.notifications-list {
     width: 360px;
     padding: 0;
@@ -86,6 +116,20 @@ background: 0!important;
     height: calc(100vh - 48px);
     bottom: 0;
     border-radius: 0;
+}
+
+	.search-bar .awesomplete input:focus {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #ffffffba !important;
+    top: 25vh;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 300;
+    /* color: black; */
+    backdrop-filter: blur(10px);
+		box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px !important;
+		-webkit-backdrop-filter: blur(10px);
 }
 .notifications-unseen .es-icon.icon-sm {
     /* display: none; */
@@ -102,8 +146,9 @@ background: 0!important;
     stroke: #ffffff00;
     /* fill: black; */
     /* color: black; */
-    background: #ffffff00;
+     background-color: #ffffffc9 !important;
     backdrop-filter: blur(1px);
+	-webkit-backdrop-filter: blur(1px);
 	animation:pulse-red 2s infinite;
 }
 .notifications-list .notification-list-body {
