@@ -226,7 +226,7 @@ frappe.ui.keys.add_shortcut({
 
 frappe.ui.keys.add_shortcut({
 	description: "Sales History",
-    shortcut: 'alt+7',
+    shortcut: '118',
     action: () => { 
 	    	
 
@@ -340,7 +340,7 @@ var dates = r.message.map(function(i) {
 
 frappe.ui.keys.add_shortcut({
 	description: "Purchase History",
-    shortcut: 'alt+9',
+    shortcut: '120',
     action: () => { 
       const current_doc = $('.data-row.editable-row').parent().attr("data-name");
       const curdoc = (cur_frm.doctype + " Item");
@@ -378,7 +378,7 @@ $('[data-fieldname="allow_child_item_selection"] [type=checkbox]').click();
 
 frappe.ui.keys.add_shortcut({
 	description: "Purchase History",
-    shortcut: 'alt+8',
+    shortcut: '119',
     action: () => { 
 	    	
 
