@@ -87,7 +87,7 @@ background: 0!important;
     overflow-y: auto;
     overflow-x: hidden;
     border-radius: var(--border-radius);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px !important;
+box-shadow:rgba(0, 0, 0, 0.2) 0px 18px 50px -10px, rgba(0, 0, 0, 0.1) 0px 4px 5000px 5000px !important;
     border: 1px solid var(--border-color);
     left: 0;
     margin: 0;
@@ -2513,6 +2513,13 @@ overflow-y: auto;
 	box-shadow: 0 0 0 1px rgba(201, 201, 201, 0.69) inset,
 inset -1px -1px 1px #f0f0f0;
 }
+
+[aria-expanded='true']#navbar-search {
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px, rgba(0, 0, 0, 0.1) 0px 4px 5000px 5000px !important;
+}
+
+
+
 [data-theme-mode="light"] [data-page-route=Workspaces] .layout-main .layout-main-section {
 border: 1px solid var(--border-color)!important;
  background-image: url("/files/jf.jpg")!important;
