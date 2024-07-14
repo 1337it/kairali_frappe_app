@@ -147,7 +147,14 @@ const listclose = document.createElement('th');
       listclose.innerHTML = '<button class="fa fa-close" id="listclose" style="">';
 
 
+frappe.ui.keys.add_shortcut({
+	description: "Search Widget",
+    shortcut: 'alt+space',
+    action: () => { 
 
+    $('input#navbar-search').focus();
+    }
+});
 
 
 frappe.ui.keys.add_shortcut({
