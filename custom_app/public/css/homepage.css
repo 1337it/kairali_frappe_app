@@ -121,7 +121,7 @@ background: 0!important;
 	.search-bar .awesomplete input:focus {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    background-color: #ffffffba !important;
+    background-color: #ffffff !important;
     top: 25vh;
     height: 48px;
     font-size: 18px;
