@@ -226,7 +226,7 @@ frappe.ui.keys.add_shortcut({
 
 frappe.ui.keys.add_shortcut({
 	description: "Sales History",
-    shortcut: '118',
+    shortcut: 'alt+7',
     action: () => { 
 	    	
 
@@ -340,7 +340,7 @@ var dates = r.message.map(function(i) {
 
 frappe.ui.keys.add_shortcut({
 	description: "Purchase History",
-    shortcut: '120',
+    shortcut: 'alt+8',
     action: () => { 
       const current_doc = $('.data-row.editable-row').parent().attr("data-name");
       const curdoc = (cur_frm.doctype + " Item");
@@ -378,7 +378,7 @@ $('[data-fieldname="allow_child_item_selection"] [type=checkbox]').click();
 
 frappe.ui.keys.add_shortcut({
 	description: "Purchase History",
-    shortcut: '119',
+    shortcut: 'alt+9',
     action: () => { 
 	    	
 
@@ -581,20 +581,7 @@ frappe.ui.keys.add_shortcut({
 });
 
 
-	frappe.ui.keys.add_shortcut({
-			shortcut: "shift+down",
-			action: () => cur_frm.navigate_records(0),
-			description: __("Go to next record"),
-			ignore_inputs: true,
-		});
 
-frappe.ui.keys.add_shortcut({
-			shortcut: "shift+up",
-			action: () => cur_frm.navigate_records(1),
-			description: __("Go to previous record"),
-			ignore_inputs: true,
-
-		});
 
 
             
