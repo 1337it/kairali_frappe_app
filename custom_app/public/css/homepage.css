@@ -1063,7 +1063,7 @@ color: var(--text-color);
 }
 .form-control {
 border:none!important;
-border-radius: 20px;
+border-radius: 1px;
 }
 .form-control {
   box-shadow: rgb(202, 202, 202) 1px 1px 1px inset, rgb(240, 240, 240) -1px -1px 1px inset;
@@ -1166,7 +1166,10 @@ display: none!important;
  z-index:10000!important;
 }
 
-
+    .selecteditem [href^="/"].ellipsis {
+        color: var(--border-primary);
+        /* text-shadow: 0px 0px 0px black; */
+    }
 
 #global-sidebarList li {
 border-bottom: 1px none #ccc!important;
@@ -1289,7 +1292,7 @@ padding-right: 0px!important;
 	[data-route^="Workspaces/"] .page-head {
 width: calc(100% - 12.6667%)!important;
 right: 0;
-/* left: 12.6667%!important; */
+left: 0%!important; */
 margin-left: 12.6667%;
 		display:block!important;
 		position: absolute !important;
