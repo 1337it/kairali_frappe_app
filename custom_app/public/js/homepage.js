@@ -1,4 +1,5 @@
-      function toggleFullscreen() {
+$('input#navbar-search').attr('placeholder', 'Search or type a command (alt + space)');
+function toggleFullscreen() {
             if (!document.fullscreenElement &&
                 !document.mozFullScreenElement &&
                 !document.webkitFullscreenElement &&
