@@ -206,7 +206,7 @@ text-align: center;
 
 .selecteditem
 {
-	background: lightgray!important;
+	background: var(--btn-default-hover-bg)!important;
         border-left: 3px solid #ed152b;
 }
 	.list-row-container:focus {
@@ -217,7 +217,7 @@ text-align: center;
 box-shadow: none!important;
 }
 
-
+	
 .frappe-control[data-fieldtype=Select].form-group .placeholder.xs {
 top: 7px;
 }
