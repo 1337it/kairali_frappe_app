@@ -77,6 +77,9 @@ background: 0!important;
 
  
 @media (min-width: 1200px) {
+.search-bar .search-icon {
+display:none!important;
+}
 
 	.notifications-seen {
     scrollbar-width: thin;
@@ -93,7 +96,6 @@ background: 0!important;
     overflow-y: auto;
     overflow-x: hidden;
     border-radius: var(--border-radius);
-box-shadow:rgba(0, 0, 0, 0.2) 0px 18px 50px -10px, rgba(0, 0, 0, 0.1) 0px 4px 5000px 5000px !important;
     border: 1px solid var(--border-color);
     left: 0;
     margin: 0;
@@ -102,15 +104,9 @@ box-shadow:rgba(0, 0, 0, 0.2) 0px 18px 50px -10px, rgba(0, 0, 0, 0.1) 0px 4px 50
     min-width: 250px;
     top: calc(25vh + 48px);
     border-radius: 0 !important;
-    backdrop-filter: blur(10px);
-		-webkit-backdrop-filter: blur(10px);
 }
 
-	.search-icon .awesomplete input:focus {
-
-		top:25vh;
-
-	}
+	
 
 	.notifications-list {
     width: 360px;
