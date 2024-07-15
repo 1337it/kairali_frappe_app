@@ -1,7 +1,8 @@
 @keyframes pulse-red {
 	0% {
-		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+		    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgb(44 152 58 / 53%);
+    border-radius: 100px;
 	}
 	
 	70% {
@@ -77,6 +78,11 @@ background: 0!important;
  
 @media (min-width: 1200px) {
 
+	.notifications-seen {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
+    display: block !important;
+}
 
 	.awesomplete>[role=listbox] {
     position: absolute;
@@ -1552,7 +1558,7 @@ right: 50px;
 font-size: 24px;
 
 height: 40px;
-display: block;
+display: none;
 
 width: 50px;
 
