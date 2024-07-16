@@ -78,7 +78,7 @@ background: 0!important;
  
 @media (min-width: 1200px) {
 
-	.awesomplete>[role=listbox]>li[aria-selected=true]
+	.navbar .awesomplete>[role=listbox]>li[aria-selected=true]
 {
         background: var(--btn-default-hover-bg) !important;	
 
@@ -95,7 +95,7 @@ display:none!important;
     display: block !important;
 }
 
-	.awesomplete>[role=listbox] {
+	.navbar .awesomplete>[role=listbox] {
     position: absolute;
     width: 100%;
     list-style: none;
