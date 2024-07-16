@@ -2148,7 +2148,7 @@ text-align: center;
 }
 [data-route^="Form/"] .page-head .justify-between .page-title {
 /* left: 0 !important; */
-padding-left: 72px;
+padding-left: 70px;
 }
 
   [data-route^="Form/"] [data-page-route^="List/"] .page-wrapper .layout-main{
