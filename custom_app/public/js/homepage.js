@@ -365,7 +365,7 @@ var rates = r.message.map(function(i) {
   return i.qty_after_transaction;
 });
 var dates = r.message.map(function(i) {
-  return i.posting_datetime;
+  return i.posting_date;
 });
 
         console.log(rates);
