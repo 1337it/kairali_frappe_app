@@ -338,47 +338,127 @@ var dates = r.message.map(function(i) {
 
 
 
+
 frappe.ui.keys.add_shortcut({
-	description: "Purchase History",
-    shortcut: 'alt+8',
+	description: "All Transactions",
+    shortcut: 'alt+9',
     action: () => { 
-      const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+	    	
+
+
+            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
       const curdoc = (cur_frm.doctype + " Item");
             const item_row = locals[curdoc][current_doc];
-
-new frappe.ui.form.MultiSelectDialog({
-    doctype: "Sales Invoice",
-    target: this.cur_frm,
-   allow_child_item_selection: 1,
-    child_fieldname: "items",
-    child_columns: ["rate", "qty", "item_code"],
-    setters: {
-
-    },
-    add_filters_group: 1,
-    date_field: "transaction_date",
- 
-   
-    get_query() {
-        return {
-filters: { item_code: item_row.item_code }
-           
-        }
-    },
-    action(selections, args) {
-        console.log(args.filtered_children); // list of selected item names
-    }
+            frappe.call({
+                method: 'frappe.client.get_list',
+              args :{
+              doctype: 'Stock Ledger Entry',
+			fields: ['voucher_type', 'voucher_no', 'actual_qty', 'qty_after_transaction', 'posting_datetime'],
+                filters: [
+                    ["item_code", "=",  item_row.item_code],
+                    ["is_cancelled", "=", '0']
+                ],
+		      order_by: 'posting_datetime desc'
+              },
+                callback: function(r) {
+var rates = r.message.map(function(i) {
+  return i.qty_after_transaction;
 });
-$('[data-fieldname="allow_child_item_selection"] [type=checkbox]').click();
-    }
+var dates = r.message.map(function(i) {
+  return i.posting_datetime;
 });
+
+        console.log(rates);
+	
+                    if (r.message.length > 0){
+
+			        const data = {
+        labels: dates,
+        datasets: [
+            {
+                name: "Some Data", type: "bar",
+                values: rates
+            }
+        ]
+    };
+
+    const option = {
+        title: "Trends",
+        data: data,
+        type: 'axis-mixed', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
+        height: 250,
+        colors: ['#7cd6fd', '#743ee2']
+    };
+
+     const d = new frappe.ui.Dialog({
+                            title: __('Movement Chart'),
+                            width: 400
+                        });
+			
+                        $(`
+       <div class="modal-body ui-front">
+        <div id="sample-chart">
+                </div>
+                            <h2>${item_row.item_code}</h2>
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <th>Voucher Type</th>
+                                <th>Voucher No</th>
+				<th>Qty Change</th>
+                                <th>Qty After Transaction</th>
+				<th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            </table>
+                        </div>`).appendTo(d.body);
+			    frappe.utils.make_chart(d.$wrapper.find("#sample-chart")[0], option);
+                        r.message.forEach(element => {
+                            const tbody = $(d.body).find('tbody');
+                            const tr = $(`
+                            <tr>
+                                <td>${element.voucher_type}</td>
+                                <td>${element.voucher_no}</td>
+				<td>${element.actual_qty}</td>
+                                <td>${element.qty_after_transaction}</td>
+				<td>${frappe.format(element.posting_datetim, {'fieldtype': 'Date'}) }</td>
+                            </tr>
+                            `).appendTo(tbody)
+                            tbody.find('.check-warehouse').on('change', function() {
+                                $('input.check-warehouse').not(this).prop('checked', false);  
+
+
+                            });
+                        });
+                        d.set_primary_action("Close", function() {
+       d.hide();
+                        });
+                        cur_frm.rec_dialog = d;
+                        d.show();  
+                         d.$wrapper.find('.modal-dialog').css("width", "90%");
+			    
+                    }
+              }
+            });     
+    },
+    page: this.page,
+    description: __('Get Item INFO'),
+    ignore_inputs: true,
+    
+});
+
+
+
+
 
 
       
 
 frappe.ui.keys.add_shortcut({
 	description: "Purchase History",
-    shortcut: 'alt+9',
+    shortcut: 'alt+8',
     action: () => { 
 	    	
 
@@ -580,7 +660,67 @@ frappe.ui.keys.add_shortcut({
     
 });
 
+frappe.ui.keys.add_shortcut({
+    shortcut: 'alt+0',
+    action: () => { 
 
+
+            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+      const curdoc = (cur_frm.doctype + " Item");
+            const item_row = locals[curdoc][current_doc];
+            frappe.call({
+                method: 'erpnext.stock.dashboard.item_dashboard.get_data',
+                args: {
+                    item_code: item_row.item_code,
+                },
+                callback: function(r) {
+                    if (r.message.length > 0){
+                        const d = new frappe.ui.Dialog({
+                            title: __('Warehouse Stock Balance'),
+                            width: 400
+                        });
+                        $(`<div id="historymodal" class="modal-body ui-front">
+                            <h2>${item_row.item_code}</h2>
+                            <table class="table table-bordered">
+                            <thead>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            </table>
+                        </div>`).appendTo(d.body);
+                        r.message.forEach(element => {
+                            const thead = $(d.body).find('thead');
+                            const th = $(`
+                            <tr>
+                                <th>${element.warehouse}</th>
+                            </tr>
+                            `).appendTo(thead)
+    const tbody = $(d.body).find('tbody');
+                            const tr = $(`
+                            <tr>
+                                <td>${element.actual_qty}</td>
+                            </tr>
+                            `).appendTo(tbody)
+
+                            tbody.find('.check-warehouse').on('change', function() {
+                                $('input.check-warehouse').not(this).prop('checked', false);  
+                            });
+                        });
+                        d.set_primary_action("Close", function() {
+       d.hide();
+                        });
+                        cur_frm.rec_dialog = d;
+                        d.show();  
+                         d.$wrapper.find('.modal-dialog').css("width", "90%");
+                    }
+                }
+            });     
+    },
+    page: this.page,
+    description: __('Get Item INFO'),
+    ignore_inputs: true,
+    
+});
 
 
 
