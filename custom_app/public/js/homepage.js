@@ -613,8 +613,8 @@ document.querySelector('[data-route^="Form/'+doctype+'"] .page-title').attribute
 document.getElementById("formclose").attributes.style.value ="display:none !important;";
 		document.getElementById('page-'+doctype).attributes.style.value ="width:97vw!important;";
 			    const formtitle = document.createAttribute("style");
-document.querySelector('[data-route^="Form/'+doctype+'"] .page-title').attributes.setNamedItem(formtitle);
-document.querySelector('[data-route^="Form/'+doctype+'"] .page-title').attributes.style.value ="padding-left:25px !important;";
+document.querySelector('[data-route^="Form/'frappe.get_route()[1]+'"] .page-head .justify-between .page-title').attributes.setNamedItem(formtitle);
+document.querySelector('[data-route^="Form/'frappe.get_route()[1]+'"] .page-head .justify-between .page-title').attributes.style.value ="padding-left:25px !important;";
 	
 
 		
