@@ -77,7 +77,15 @@ background: 0!important;
 
  
 @media (min-width: 1200px) {
-.search-bar .search-icon {
+
+	.awesomplete>[role=listbox]>li[aria-selected=true]
+{
+        background: var(--btn-default-hover-bg) !important;	
+
+
+}
+	
+	.search-bar .search-icon {
 display:none!important;
 }
 
