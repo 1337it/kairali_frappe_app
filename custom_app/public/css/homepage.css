@@ -2539,7 +2539,7 @@ background-size: 14px 14px;
 
 [aria-expanded='true']#navbar-search {
 	background-image: url('/files/search.svg');
-background-position: 10px 16px;
+background-position: 16px 16px;
 background-repeat: no-repeat;
 background-size: 16px 16px;
 	box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px, rgba(0, 0, 0, 0.1) 0px 4px 5000px 5000px !important;
