@@ -130,7 +130,7 @@ display:none!important;
     height: 48px;
     font-size: 18px;
     font-weight: 300;
-    /* color: black; */
+   padding-left:46px;
     backdrop-filter: blur(10px);
 		box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px !important;
 		-webkit-backdrop-filter: blur(10px);
