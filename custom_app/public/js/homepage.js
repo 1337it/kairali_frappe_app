@@ -604,7 +604,7 @@ document.getElementById("formclose").attributes.style.value ="left: calc(30px + 
 	document.getElementById('page-'+frappe.get_route()[1]).attributes.style.value ="width:77vw!important;";
 				    const formtitle = document.createAttribute("style");
 document.querySelector('[data-page-route^="'+frappe.get_route()[1]+'"] .page-head .justify-between .page-title').attributes.setNamedItem(formtitle);
-document.querySelector('[data-page-route^="'+frappe.get_route()[1]+'"] .page-head .justify-between .page-title').attributes.style.value ="padding-left:25px !important;";
+document.querySelector('[data-page-route^="'+frappe.get_route()[1]+'"] .page-head .justify-between .page-title').attributes.style.value ="padding-left:70px !important;";
 }
 	
 	else {
