@@ -667,7 +667,6 @@ frappe.set_route("List",frappe.get_route()[1] ,"List");
 
       });	
 	listclose.addEventListener('click', () => {
-[data-route^="Form/"] .page-head .justify-between .page-title
 		document.getElementById("formclose").attributes.style.value ="display: none !important;";
 		document.getElementById('page-'+frappe.get_route()[1]).attributes.style.value ="width:97vw!important;";
   const formtitle = document.createAttribute("style");
