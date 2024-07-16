@@ -1970,7 +1970,7 @@ justify-content: center;
 }
 
 [data-route^="Form/"] [data-page-route^="List/"] .page-head .justify-between .page-actions {
-  top: 10px;
+  top: 8px;
 /* right: 0; */
 left: 10px;
 width: calc(19% - 7px + 10px);
@@ -3770,7 +3770,7 @@ z-index: 5;
 border-bottom: 1px solid var(--gray-300);
 background: var(--bg-color);
 	left: 59px;
-  top: 118px;
+  top: 120px;
 }
 
 
