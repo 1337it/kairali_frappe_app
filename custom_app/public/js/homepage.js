@@ -667,12 +667,12 @@ frappe.set_route("List",frappe.get_route()[1] ,"List");
 
       });	
 	listclose.addEventListener('click', () => {
-
+[data-route^="Form/"] .page-head .justify-between .page-title
 		document.getElementById("formclose").attributes.style.value ="display: none !important;";
 		document.getElementById('page-'+frappe.get_route()[1]).attributes.style.value ="width:97vw!important;";
   const formtitle = document.createAttribute("style");
-document.querySelector('[data-route^="Form/'+frappe.get_route()[1]+'"] .page-title').attributes.setNamedItem(formtitle);
-document.querySelector('[data-route^="Form/'+frappe.get_route()[1]+'"] .page-title').attributes.style.value ="padding-left:25px !important;";
+document.querySelector('[data-route^="Form/'+frappe.get_route()[1]+'"] .page-head .justify-between .page-title').attributes.setNamedItem(formtitle);
+document.querySelector('[data-route^="Form/'+frappe.get_route()[1]+'"] .page-head .justify-between .page-title').attributes.style.value ="padding-left:25px !important;";
 
       });	
 	subscribe.addEventListener("click", () => {
