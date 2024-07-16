@@ -248,7 +248,7 @@ z-index:99998!important;
 .modal
 {
 z-index:99999!important;
-	top:20%!important;
+	margin-top:20%!important;
 }
 .formlist
 {
