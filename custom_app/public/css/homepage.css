@@ -1292,7 +1292,7 @@ padding-right: 0px!important;
 	[data-route^="Workspaces/"] .page-head {
 width: calc(100% - 12.6667%)!important;
 right: 0;
-left: 0%!important; */
+left: 0%!important; 
 margin-left: 12.6667%;
 		display:block!important;
 		position: absolute !important;
