@@ -353,12 +353,12 @@ frappe.ui.keys.add_shortcut({
                 method: 'frappe.client.get_list',
               args :{
               doctype: 'Stock Ledger Entry',
-			fields: ['voucher_type', 'voucher_no', 'actual_qty', 'qty_after_transaction', 'posting_datetime'],
+			fields: ['voucher_type', 'voucher_no', 'actual_qty', 'qty_after_transaction', 'posting_date'],
                 filters: [
                     ["item_code", "=",  item_row.item_code],
                     ["is_cancelled", "=", '0']
                 ],
-		      order_by: 'posting_datetime desc'
+		      order_by: 'posting_date desc'
               },
                 callback: function(r) {
 var rates = r.message.map(function(i) {
@@ -423,7 +423,7 @@ var dates = r.message.map(function(i) {
                                 <td>${element.voucher_no}</td>
 				<td>${element.actual_qty}</td>
                                 <td>${element.qty_after_transaction}</td>
-				<td>${frappe.format(element.posting_datetim, {'fieldtype': 'Date'}) }</td>
+				<td>${element.posting_date}</td>
                             </tr>
                             `).appendTo(tbody)
                             tbody.find('.check-warehouse').on('change', function() {
