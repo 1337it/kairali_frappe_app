@@ -1,4 +1,3 @@
-$('input#navbar-search').attr('placeholder', 'Search or type a command (alt + space)');
 function toggleFullscreen() {
             if (!document.fullscreenElement &&
                 !document.mozFullScreenElement &&
@@ -634,7 +633,7 @@ console.log('Path 1 is '+path);
 });
 
 window.onload = function() {
-	
+	$('input#navbar-search').attr('placeholder', 'Search or type a command (alt + space)');
 	var path = '[href="'+window.location.pathname+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
 		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');	
