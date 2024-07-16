@@ -104,6 +104,8 @@ display:none!important;
     min-width: 250px;
     top: calc(25vh + 48px);
     border-radius: 0 !important;
+		backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
 }
 
 	
