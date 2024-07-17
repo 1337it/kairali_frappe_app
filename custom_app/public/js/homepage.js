@@ -156,6 +156,94 @@ frappe.ui.keys.add_shortcut({
     }
 });
 
+frappe.listview_settings['Item'] = {
+    refresh:function(listview) {
+$("[data-page-route='List/Item/List'] .page-form").appendTo("[data-page-route='List/Item/List'] .layout-side-section");
+
+        frappe.ui.keys.on('down', function() {
+	var doc = $('.list-row-container:focus [data-name]').attr('data-name');
+    console.log(current);
+            frappe.call({
+                method: 'erpnext.stock.dashboard.item_dashboard.get_data',
+                args: {
+                    item_code: doc,
+                },
+                callback: function(r) {
+                    if (r.message.length > 0){
+                        const d = document.querySelector('[data-page-route="List/Item/List"] .layout-side-section');
+                        $(`<div id="stocksidebar" class="modal-body ui-front">
+                            <h2>Stock Availability</h2>
+                            <table class="table table-bordered">
+                          
+                            </table>
+                        </div>`).appendTo(d);
+                        r.message.forEach(element => {
+                            const thead = $(d).find('table');
+                            const th = $(`
+                            <tr>
+                                <th>${element.warehouse}</th>
+				<td>${element.actual_qty}</td>
+                            </tr>
+                            `).appendTo(thead)
+ 
+                        });
+                        d.set_primary_action("Close", function() {
+       d.hide();
+                        });
+                        cur_frm.rec_dialog = d;
+                        d.show();  
+                         d.$wrapper.find('.modal-dialog').css("width", "90%");
+                    }
+                }
+            });  
+
+})  
+    }
+};
+
+
+
+frappe.ui.form.on('Item', "refresh", function(frm) {
+
+
+      const doc = cur_frm.docname;
+            frappe.call({
+                method: 'erpnext.stock.dashboard.item_dashboard.get_data',
+                args: {
+                    item_code: doc,
+                },
+                callback: function(r) {
+                    if (r.message.length > 0){
+                        const d = document.querySelector('[data-page-route="Item"] .layout-side-section');
+                        $(`<div id="stocksidebar" class="modal-body ui-front">
+                            <h2>Stock Availability</h2>
+                            <table class="table table-bordered">
+                          
+                            </table>
+                        </div>`).appendTo(d);
+                        r.message.forEach(element => {
+                            const thead = $(d).find('table');
+                            const th = $(`
+                            <tr>
+                                <th>${element.warehouse}</th>
+				<td>${element.actual_qty}</td>
+                            </tr>
+                            `).appendTo(thead)
+ 
+                        });
+                        d.set_primary_action("Close", function() {
+       d.hide();
+                        });
+                        cur_frm.rec_dialog = d;
+                        d.show();  
+                         d.$wrapper.find('.modal-dialog').css("width", "90%");
+                    }
+                }
+            });   
+
+});
+
+
 
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+w',
