@@ -171,7 +171,7 @@ $('[data-page-route="List/Item/List"] .page-form').appendTo('[data-page-route="L
                 callback: function(r) {
                     if (r.message.length > 0){
                         const d = document.querySelector('[data-page-route="List/Item/List"] .layout-side-section');
-                        $(`<div id="stocksidebar" class="modal-body ui-front">
+                        $(`<div id="listsidebar">
                             <h2>Stock Availability</h2>
                             <table class="table table-bordered">
                           
@@ -210,7 +210,7 @@ frappe.ui.form.on('Item', "refresh", function(frm) {
                 callback: function(r) {
                     if (r.message.length > 0){
                         const d = document.querySelector('[data-page-route="Item"] .layout-side-section');
-                        $(`<div id="stocksidebar" class="modal-body ui-front">
+                        $(`<div id="stocksidebar">
                             <h2>Stock Availability</h2>
                             <table class="table table-bordered">
                           
