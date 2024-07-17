@@ -158,7 +158,16 @@ frappe.ui.keys.add_shortcut({
 
 
 
-        frappe.ui.keys.on('down', function() {
+       frappe.listview_settings['Item'] = {
+    
+    // Columns to fetch but not display
+   	onload: function(listview) {
+     
+
+$("[data-page-route^='List/'] .page-form").appendTo("[data-page-route^='List/'] .layout-side-section");
+ frappe.ui.keys.on('down', function() {
+
+$('#listsidebar').remove();
 	var doc = $('.list-row-container:focus [data-name]').attr('data-name');
     console.log(doc);
             frappe.call({
@@ -191,6 +200,9 @@ frappe.ui.keys.add_shortcut({
             });  
 
 });
+            
+    },
+};
 
 
 
