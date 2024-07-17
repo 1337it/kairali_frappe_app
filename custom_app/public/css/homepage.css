@@ -78,6 +78,39 @@ background: 0!important;
  
 @media (min-width: 1200px) {
 
+.modal.show .modal-dialog {
+transition: 0.3s scale ease-out!important;
+scale: 1.01;
+	transform:none;
+	
+}
+
+
+
+body.modal-open
+{
+	scale:0.98;
+	transition:0.3s scale ease-out;
+}
+	.modal-backdrop.show {
+-webkit-backdrop-filter: blur(1px);
+		backdrop-filter: blur(1px);
+}
+body
+{
+	scale:1;
+	transition:0.3s scale ease-out;
+}
+
+
+	
+.btn {
+border-radius:1px;
+}
+	.btn-group {
+border-radius:1px;
+	}
+
 	.pr-3, .px-3 {
 display: none;
 }
