@@ -156,12 +156,11 @@ frappe.ui.keys.add_shortcut({
     }
 });
 
-$('[data-page-route="List/Item/List"] .page-form').appendTo('[data-page-route="List/Item/List"] .layout-side-section');
 
 
         frappe.ui.keys.on('down', function() {
 	var doc = $('.list-row-container:focus [data-name]').attr('data-name');
-    console.log(current);
+    console.log(doc);
             frappe.call({
                 method: 'erpnext.stock.dashboard.item_dashboard.get_data',
                 args: {
@@ -848,6 +847,8 @@ console.log('Path 1 is '+path);
 });
 
 window.onload = function() {
+	$('[data-page-route="List/Item/List"] .page-form').appendTo('[data-page-route="List/Item/List"] .layout-side-section');
+
 	$('input#navbar-search').attr('placeholder', 'Search or type a command (alt + space)');
 	var path = '[href="'+window.location.pathname+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
