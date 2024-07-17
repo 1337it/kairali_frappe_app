@@ -2902,7 +2902,7 @@ padding-top: 0px;
 
 box-shadow: 1px 1px 1px #cacaca,
 -1px -1px 1px #f0f0f0;
-border-radius: 7px;
+border-radius: 1px;
 }
 [data-route^="List/"] .page-form .sort-selector .btn-group {
         margin: 10px 0px;
