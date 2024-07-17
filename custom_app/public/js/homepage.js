@@ -158,7 +158,7 @@ frappe.ui.keys.add_shortcut({
 
 frappe.listview_settings['Item'] = {
     refresh:function(listview) {
-$("[data-page-route='List/Item/List'] .page-form").appendTo("[data-page-route='List/Item/List'] .layout-side-section");
+$('[data-page-route="List/Item/List"] .page-form').appendTo('[data-page-route="List/Item/List"] .layout-side-section');
 
         frappe.ui.keys.on('down', function() {
 	var doc = $('.list-row-container:focus [data-name]').attr('data-name');
@@ -184,15 +184,10 @@ $("[data-page-route='List/Item/List'] .page-form").appendTo("[data-page-route='L
                                 <th>${element.warehouse}</th>
 				<td>${element.actual_qty}</td>
                             </tr>
-                            `).appendTo(thead)
+                            `).appendTo(thead);
  
                         });
-                        d.set_primary_action("Close", function() {
-       d.hide();
-                        });
-                        cur_frm.rec_dialog = d;
-                        d.show();  
-                         d.$wrapper.find('.modal-dialog').css("width", "90%");
+                      
                     }
                 }
             });  
