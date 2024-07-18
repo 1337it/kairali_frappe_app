@@ -1,4 +1,4 @@
-$('[data-page-route="List/"] .page-form').appendTo('[data-page-route="List/"] .layout-side-section');
+ $('[data-page-route^="List/"] .page-form').appendTo('[data-page-route^="List/"] .layout-side-section');
 
 
 function toggleFullscreen() {
