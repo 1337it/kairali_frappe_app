@@ -78,6 +78,16 @@ background: 0!important;
  
 @media (min-width: 1200px) {
 
+#stocksidebar {
+margin: 10px;
+	text-align: center;
+}
+#listsidebar {
+margin-top: 10px;
+margin-bottom: 10px;
+
+	text-align: center;
+}
 
 	
 
@@ -2872,6 +2882,7 @@ padding: 0px;
  /* Layout side section */
  .page-wrapper .layout-side-section{
   height: calc(100vh - var(--navbar-height) - var(--page-head-height) - 20px);
+	 overflow-x: hidden;
  }
 
 .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
