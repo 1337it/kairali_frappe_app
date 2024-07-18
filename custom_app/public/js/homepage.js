@@ -819,7 +819,7 @@ console.log('Path 1 is '+path);
 
 window.onload = function() {
 
-var ldoctype = $('body[data-route]').attr('data-route').split('/')[1];
+var ldoctype = frappe.get_route()[1];
 var lisbar = document.querySelector('[data-page-route^="List/'+ldoctype+'"] .layout-side-section .page-form') !== null;
 if(lisbar){
 	
