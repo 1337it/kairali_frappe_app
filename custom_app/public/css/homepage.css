@@ -2424,6 +2424,8 @@ z-index: 9!important;
     right:0;
     position:relative;
     display:block;
+width: 16.66667vw;
+margin-right: 10px;
 
 }
    [data-route^="List/"] .page-wrapper .frappe-card .page-form{
