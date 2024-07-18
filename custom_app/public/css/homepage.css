@@ -2422,12 +2422,25 @@ z-index: 9!important;
  padding:0px!important;
  transition: maxheight 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     right:0;
-    position:relative;
+    position:fixed;
     display:block;
 width: 16.66667vw;
 margin-right: 10px;
-
 }
+
+
+[data-route^="List/Item"] .page-form {
+margin-top: 0px!important;
+border-bottom: none!important;
+z-index: 9!important;
+padding: 0px!important;
+transition: maxheight 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+right: 0;
+position: relative!impotant;
+display: block;
+width: 100%;
+}
+
    [data-route^="List/"] .page-wrapper .frappe-card .page-form{
 padding-left: 0px!important;
 padding-right: 0vw!important;
