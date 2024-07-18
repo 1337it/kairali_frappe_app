@@ -819,15 +819,14 @@ console.log('Path 1 is '+path);
 
 window.onload = function() {
 
-var ldoctype = frappe.get_route()[1];
-var lisbar = document.querySelector('[data-page-route^="List/'+ldoctype+'"] .layout-side-section .page-form') !== null;
+var lisbar = document.querySelector('[data-page-route^="List/"] .layout-side-section .page-form') !== null;
 if(lisbar){
 	
 
 
 }
 else{
-$('[data-page-route^="List/'+ldoctype+'"] .page-form').appendTo('[data-page-route^="List/'+ldoctype+'"] .layout-side-section');	
+$('[data-page-route^="List/"] .page-form').appendTo('[data-page-route^="List/"] .layout-side-section');	
 }
 
 
