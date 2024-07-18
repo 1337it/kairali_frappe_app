@@ -905,11 +905,11 @@ const newParent = elementToMove.parentNode;
 newParent.prepend(raven);
 
 
-
+$('[data-page-route^="List/'+frappe.get_route()[1]+'"] .page-form').appendTo('[data-page-route^="List/'+frappe.get_route()[1]+'"] .layout-side-section');
 	
 };
 
 
 
 
-$('[data-page-route^="List/'+frappe.get_route()[1]+'"] .page-form').appendTo('[data-page-route^="List/'+frappe.get_route()[1]+'"] .layout-side-section');
+
