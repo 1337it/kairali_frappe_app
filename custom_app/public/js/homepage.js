@@ -818,7 +818,7 @@ console.log('Path 1 is '+path);
 });
 
 window.onload = function() {
-	
+	 $('[data-page-route^="List/"] .page-form').appendTo('[data-page-route^="List/"] .layout-side-section');
 
 	$('input#navbar-search').attr('placeholder', 'Search or type a command (alt + space)');
 	var path = '[href="'+window.location.pathname+'"].ellipsis';
