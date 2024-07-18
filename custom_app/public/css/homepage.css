@@ -1534,6 +1534,7 @@ background: transparent;
  display:block;
  cursor: pointer;
  color: rgb(131, 131, 131);
+ text-shadow: rgba(71, 71, 71, 0.45) 0px 2px 2px!important;
 }
 [overlay-route='Drive'] #driveclose
 {position: fixed;
@@ -1546,6 +1547,7 @@ background: transparent;
   display:block;
  cursor: pointer;
  color: rgb(131, 131, 131);
+ text-shadow: rgba(71, 71, 71, 0.45) 0px 2px 2px!important;
 }
 	#chatbutton {
 height: 48px;
@@ -1559,13 +1561,16 @@ background-size: contain;
 background-color: transparent;
 font-size: 18px;
 margin-top: 3px;
+		
 }
 	
 #chatclose
 {display:none;}
+	text-shadow: rgba(71, 71, 71, 0.45) 0px 2px 2px!important;
 #driveclose
 {display:none;}
 	#formclose
+	
 {display:none;}
 
 [data-route^='Form'] #formclose {
@@ -1585,6 +1590,7 @@ animation-fill-mode: both;
 width: 50px;
 margin: 0;
 border-right: 1px solid rgba(128, 128, 128, 0.58);
+	text-shadow: rgba(71, 71, 71, 0.45) 0px 2px 2px!important;
 }
 	#subscribe
 {display:none;}
@@ -1605,6 +1611,7 @@ width: 50px;
 #listclose
 {display:none;}
 
+	
 [data-route^='Form'] #listclose {
 z-index: 9!important;
 position: absolute;
@@ -1622,6 +1629,7 @@ animation-fill-mode: both;
 width: 50px;
 margin: 0;
 border-right: 1px solid rgba(128, 128, 128, 0.58);
+	text-shadow: rgba(71, 71, 71, 0.45) 0px 2px 2px!important;
 }
 
 	
