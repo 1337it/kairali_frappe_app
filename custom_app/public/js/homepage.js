@@ -819,15 +819,6 @@ console.log('Path 1 is '+path);
 
 window.onload = function() {
 
-var lisbar = document.querySelector('[data-page-route^="List/"] .layout-side-section .page-form') !== null;
-if(lisbar){
-	
-
-
-}
-else{
-$('[data-page-route^="List/"] .page-form').appendTo('[data-page-route^="List/"] .layout-side-section');	
-}
 
 
 
