@@ -804,13 +804,7 @@ document.querySelector('[data-page-route^="'+frappe.get_route()[1]+'"] .page-hea
 		
 		// your code here	
 		});
-     frappe.listview_settings[doctype] = {
     
-    // Columns to fetch but not display
-   	onload: function(listview) {
- $('[data-page-route^="List/'+doctype+'"] .page-form').appendTo('[data-page-route^="List/'+doctype+'"] .layout-side-section');
-	}
-     };
 
 
 frappe.ui.form.on(doctype, "refresh", function(frm) {
@@ -918,4 +912,4 @@ newParent.prepend(raven);
 
 
 
-
+$('[data-page-route^="List/'+frappe.get_route()[1]+'"] .page-form').appendTo('[data-page-route^="List/'+frappe.get_route()[1]+'"] .layout-side-section');
