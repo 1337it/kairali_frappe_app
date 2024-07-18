@@ -1,6 +1,3 @@
- $('[data-page-route^="List/"] .page-form').appendTo('[data-page-route^="List/"] .layout-side-section');
-
-
 function toggleFullscreen() {
             if (!document.fullscreenElement &&
                 !document.mozFullScreenElement &&
@@ -807,6 +804,15 @@ document.querySelector('[data-page-route^="'+frappe.get_route()[1]+'"] .page-hea
 		
 		// your code here	
 		});
+     frappe.listview_settings[doctype] = {
+    
+    // Columns to fetch but not display
+   	onload: function(listview) {
+ $('[data-page-route^="List/'+doctype+'"] .page-form').appendTo('[data-page-route^="List/'+doctype+'"] .layout-side-section');
+	}
+     };
+
+
 frappe.ui.form.on(doctype, "refresh", function(frm) {
 	var path = '[href="'+window.location.pathname+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
@@ -818,7 +824,7 @@ console.log('Path 1 is '+path);
 });
 
 window.onload = function() {
-	 $('[data-page-route^="List/"] .page-form').appendTo('[data-page-route^="List/"] .layout-side-section');
+	
 
 	$('input#navbar-search').attr('placeholder', 'Search or type a command (alt + space)');
 	var path = '[href="'+window.location.pathname+'"].ellipsis';
