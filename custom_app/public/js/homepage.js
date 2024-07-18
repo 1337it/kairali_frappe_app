@@ -1,3 +1,6 @@
+$('[data-page-route="List/"] .page-form').appendTo('[data-page-route="List/"] .layout-side-section');
+
+
 function toggleFullscreen() {
             if (!document.fullscreenElement &&
                 !document.mozFullScreenElement &&
@@ -158,51 +161,7 @@ frappe.ui.keys.add_shortcut({
 
 
 
-       frappe.listview_settings['Item'] = {
-    
-    // Columns to fetch but not display
-   	onload: function(listview) {
-     
-
-$("[data-page-route^='List/'] .page-form").appendTo("[data-page-route^='List/'] .layout-side-section");
- frappe.ui.keys.on('down', function() {
-
-$('#listsidebar').remove();
-	var doc = $('.list-row-container:focus [data-name]').attr('data-name');
-    console.log(doc);
-            frappe.call({
-                method: 'erpnext.stock.dashboard.item_dashboard.get_data',
-                args: {
-                    item_code: doc,
-                },
-                callback: function(r) {
-                    if (r.message.length > 0){
-                        const d = document.querySelector('[data-page-route="List/Item/List"] .layout-side-section');
-                        $(`<div id="listsidebar">
-                            <h2>Stock Availability</h2>
-                            <table class="table table-bordered">
-                          
-                            </table>
-                        </div>`).appendTo(d);
-                        r.message.forEach(element => {
-                            const thead = $(d).find('table');
-                            const th = $(`
-                            <tr>
-                                <th>${element.warehouse}</th>
-				<td>${element.actual_qty}</td>
-                            </tr>
-                            `).appendTo(thead);
  
-                        });
-                      
-                    }
-                }
-            });  
-
-});
-            
-    },
-};
 
 
 
@@ -859,7 +818,7 @@ console.log('Path 1 is '+path);
 });
 
 window.onload = function() {
-	$('[data-page-route="List/Item/List"] .page-form').appendTo('[data-page-route="List/Item/List"] .layout-side-section');
+	
 
 	$('input#navbar-search').attr('placeholder', 'Search or type a command (alt + space)');
 	var path = '[href="'+window.location.pathname+'"].ellipsis';
