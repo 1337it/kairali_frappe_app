@@ -256,7 +256,7 @@ frappe.ui.keys.add_shortcut({
             });     
     },
     page: this.page,
-    description: __('Get Item INFO'),
+    description: __('Warehouse Stock Balance'),
     ignore_inputs: true,
     
 });
@@ -373,7 +373,7 @@ var dates = r.message.map(function(i) {
             });     
     },
     page: this.page,
-    description: __('Get Item INFO'),
+    description: __('Sales History'),
     ignore_inputs: true,
     
 });
@@ -486,7 +486,7 @@ var dates = r.message.map(function(i) {
             });     
     },
     page: this.page,
-    description: __('Get Item INFO'),
+    description: __('All Transactions'),
     ignore_inputs: true,
     
 });
@@ -605,7 +605,7 @@ var dates = r.message.map(function(i) {
             });     
     },
     page: this.page,
-    description: __('Get Item INFO'),
+    description: __('Purchase History'),
     ignore_inputs: true,
     
 });
@@ -697,7 +697,7 @@ frappe.ui.keys.add_shortcut({
             });     
     },
     page: this.page,
-    description: __('Get Item INFO'),
+    description: __('Item Price Breakdown'),
     ignore_inputs: true,
     
 });
