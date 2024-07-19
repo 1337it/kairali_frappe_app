@@ -2440,7 +2440,7 @@ margin-right: 10px;
 [data-route^="List/Item"] .page-form {
 margin-top: 0px!important;
 border-bottom: none!important;
-z-index: 9!important;
+z-index: 4!important;
 padding: 0px!important;
 transition: maxheight 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 right: 0;
