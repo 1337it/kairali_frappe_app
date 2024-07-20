@@ -150,11 +150,7 @@ override_whitelisted_methods = {
 #		"custom_app.tasks.monthly"
 #	],
 # }
-scheduler_events = {
-    "hourly": [
-        "custom_app.custom_app.api.sync_stock"
-    ]
-}
+
 # Testing
 # -------
 
