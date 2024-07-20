@@ -224,17 +224,17 @@ frappe.ui.keys.add_shortcut({
     action: () => { 
 
 
-            const current_doc = $('.data-row.editable-row').parent().attr("data-name") !== null;
+          
 
 
            
-if (current_doc) 
+if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
@@ -311,18 +311,13 @@ frappe.ui.keys.add_shortcut({
     action: () => { 
 	    	
 
-
-                      const current_doc = $('.data-row.editable-row').parent().attr("data-name") !== null;
-
-
-           
-if (current_doc) 
+if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
