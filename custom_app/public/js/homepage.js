@@ -149,7 +149,7 @@ const listclose = document.createElement('th');
 
 frappe.ui.keys.add_shortcut({
 	description: "Search Widget",
-    shortcut: 'alt+space',
+    shortcut: 'ctrl+space',
     action: () => { 
 
     $('input#navbar-search').focus();
@@ -934,7 +934,7 @@ window.onload = function() {
 
 	
 
-	$('input#navbar-search').attr('placeholder', 'Search or type a command (alt + space)');
+	$('input#navbar-search').attr('placeholder', 'Search or type a command (ctrl + space)');
 	var path = '[href="'+window.location.pathname+'"].ellipsis';
 $(".list-row-container").removeClass("selecteditem");
 		$(path).parent().parent().parent().parent().parent().addClass('selecteditem');	
