@@ -259,12 +259,15 @@ var curr = item_row.item_code;
                                 $('input.check-warehouse').not(this).prop('checked', false);  
                             });
                         });
+			     frappe.ui.keys.on('escape', function() {
+     d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+});
                         d.set_primary_action("Close", function() {
        d.hide();
 $('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
 
                         });
-                        cur_frm.rec_dialog = d;
                         d.show();  
                          d.$wrapper.find('.modal-dialog').css("width", "90%");
                     }
@@ -391,11 +394,14 @@ var dates = r.message.map(function(i) {
 
                             });
                         });
+			     frappe.ui.keys.on('escape', function() {
+     d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+});
                         d.set_primary_action("Close", function() {
        d.hide();
 				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
-                        cur_frm.rec_dialog = d;
                         d.show();  
                          d.$wrapper.find('.modal-dialog').css("width", "90%");
 			    
@@ -518,13 +524,17 @@ var dates = r.message.map(function(i) {
 
                             });
                         });
+                        frappe.ui.keys.on('escape', function() {
+     d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+});
                         d.set_primary_action("Close", function() {
        d.hide();
 				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
-                        cur_frm.rec_dialog = d;
                         d.show();  
                          d.$wrapper.find('.modal-dialog').css("width", "90%");
+$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
 			    
                     }
               }
@@ -652,11 +662,14 @@ var dates = r.message.map(function(i) {
 
                             });
                         });
+			     frappe.ui.keys.on('escape', function() {
+     d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+});
                         d.set_primary_action("Close", function() {
        d.hide();
 				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
-                        cur_frm.rec_dialog = d;
                         d.show();  
                          d.$wrapper.find('.modal-dialog').css("width", "90%");
 			    
@@ -741,11 +754,14 @@ frappe.ui.keys.add_shortcut({
                             });
                           
                         });
+			     frappe.ui.keys.on('escape', function() {
+     d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+});
                         d.set_primary_action("Close", function() {
        d.hide();
 				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
-                        cur_frm.rec_dialog = d;
                         if (c >=1){
                         function click(c){
                         item_row.rate = (item_row.rate*c);
@@ -809,11 +825,14 @@ frappe.ui.keys.add_shortcut({
                                 $('input.check-warehouse').not(this).prop('checked', false);  
                             });
                         });
+			     frappe.ui.keys.on('escape', function() {
+     d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+});
                         d.set_primary_action("Close", function() {
        d.hide();
 				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
-                        cur_frm.rec_dialog = d;
                         d.show();  
                          d.$wrapper.find('.modal-dialog').css("width", "90%");
                     }
