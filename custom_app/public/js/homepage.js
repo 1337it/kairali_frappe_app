@@ -199,6 +199,26 @@ frappe.ui.form.on('Item', "refresh", function(frm) {
 
 
 
+
+
+
+
+frappe.ui.form.on('Sales Order', {
+
+	refresh(frm) {
+	    //Add the "Report" button in BOM 
+	    frm.add_custom_button(__("New Customer"), function() {
+        // When this button is clicked,
+
+setTimeout(() => {
+$('[title^="Create a new Customer"]').parent().click();
+}, 1000);
+    });
+
+	}
+});
+
+
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+w',
     action: () => { 
