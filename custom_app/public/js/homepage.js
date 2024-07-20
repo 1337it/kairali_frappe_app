@@ -311,7 +311,7 @@ var curr = item_row.item_code;
 		      parent: 'Sales Invoice',
 			fields: ['parent', 'owner', 'qty', 'rate', 'creation'],
                 filters: [
-                    ["item_name", "=",  curr],
+                    ["item_name", "=",  curr,
                 ],
 		      order_by: 'creation desc'
               },
