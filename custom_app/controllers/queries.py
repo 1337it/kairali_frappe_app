@@ -142,8 +142,8 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	
 	return frappe.db.sql(
 		"""select
-			it.item_name, it.item_code as label, CONCAT('Description:', it.description) as description, CONCAT('Price:', RPAD(NVL(format(ip.price_list_rate, 'C2'), '') , 8, SPACE(1))) as price, CONCAT('QTR:', cast((SELECT sum(sl.actual_qty) FROM `tabStock Ledger Entry` sl WHERE sl.item_code = it.item_code GROUP BY sl.item_code) AS int)) AS 'QTY'
-from tabItem it left outer join `tabItem Price` ip on ip.item_code = it.item_code AND ip.price_list = "Standard Selling"
+			it.item_name, it.item_code as label, CONCAT('Description:', it.description) as description, CONCAT('QTY:', cast((SELECT sum(sl.actual_qty) FROM `tabStock Ledger Entry` sl WHERE sl.item_code = it.item_code GROUP BY sl.item_code) AS int)) AS 'QTY'
+from tabItem it
 		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
   		where it.docstatus < 2
 			and it.disabled=0
