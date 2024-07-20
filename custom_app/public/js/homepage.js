@@ -261,6 +261,8 @@ var curr = item_row.item_code;
                         });
                         d.set_primary_action("Close", function() {
        d.hide();
+$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+
                         });
                         cur_frm.rec_dialog = d;
                         d.show();  
@@ -391,6 +393,7 @@ var dates = r.message.map(function(i) {
                         });
                         d.set_primary_action("Close", function() {
        d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
                         cur_frm.rec_dialog = d;
                         d.show();  
@@ -517,6 +520,7 @@ var dates = r.message.map(function(i) {
                         });
                         d.set_primary_action("Close", function() {
        d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
                         cur_frm.rec_dialog = d;
                         d.show();  
@@ -650,6 +654,7 @@ var dates = r.message.map(function(i) {
                         });
                         d.set_primary_action("Close", function() {
        d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
                         cur_frm.rec_dialog = d;
                         d.show();  
@@ -738,6 +743,7 @@ frappe.ui.keys.add_shortcut({
                         });
                         d.set_primary_action("Close", function() {
        d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
                         cur_frm.rec_dialog = d;
                         if (c >=1){
@@ -805,6 +811,7 @@ frappe.ui.keys.add_shortcut({
                         });
                         d.set_primary_action("Close", function() {
        d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
                         });
                         cur_frm.rec_dialog = d;
                         d.show();  
