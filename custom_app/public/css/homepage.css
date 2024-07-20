@@ -78,7 +78,16 @@ background: 0!important;
  
 @media (min-width: 1200px) {
 
-
+.phone-picker-popover {
+max-width: 325px;
+left: 29px!important;
+z-index: 99999;
+}
+	
+[data-route^="Form/Sales Order/new-"] .modal .form-section .section-head {
+padding-left: 0;
+display: none;
+}
 
 
 .modal-dialog.msgprint-dialog {
