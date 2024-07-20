@@ -113,7 +113,11 @@ home_page = "index"
 # override_doctype_class = {
 #	"ToDo": "custom_app.overrides.CustomToDo"
 # }
+# hooks.py
 
+override_whitelisted_methods = {
+	"frappe.desk.search.search_link": "custom_app.desk.search.search_link"
+}
 # Document Events
 # ---------------
 # Hook on document methods and events
