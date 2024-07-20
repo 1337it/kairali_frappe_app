@@ -39,13 +39,13 @@ frappe.ui.keys.add_shortcut({
 description: "Page Forward",
 shortcut: "escape",
   action: () => {
-  document.documentElement.classList.add('');
+  document.documentElement.classList.add('nidle');
 }
 });
 
   window.setInterval(function() {
     if (++idleCounter >= timeout) {
-      document.documentElement.classList.add('idle');
+      document.documentElement.classList.add('nidle');
       idleCounter = 0;
     }
   }, interval);
