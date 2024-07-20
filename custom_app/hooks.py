@@ -115,9 +115,9 @@ home_page = "index"
 # }
 # hooks.py
 
-#override_whitelisted_methods = {
-#	"frappe.desk.search.search_link": "custom_app.desk.search.search_link"
-#}
+override_whitelisted_methods = {
+	"erpnext.controllers.queries.item_query": "custom_app.controllers.queries.item_query"
+}
 # Document Events
 # ---------------
 # Hook on document methods and events
