@@ -115,9 +115,9 @@ home_page = "index"
 # }
 # hooks.py
 
-override_whitelisted_methods = {
-	"frappe.desk.search.search_link": "custom_app.desk.search.search_link"
-}
+#override_whitelisted_methods = {
+#	"frappe.desk.search.search_link": "custom_app.desk.search.search_link"
+#}
 # Document Events
 # ---------------
 # Hook on document methods and events
@@ -150,7 +150,11 @@ override_whitelisted_methods = {
 #		"custom_app.tasks.monthly"
 #	],
 # }
-
+scheduler_events = {
+    "hourly": [
+        "custom_app.custom_app.api.sync_stock"
+    ]
+}
 # Testing
 # -------
 
