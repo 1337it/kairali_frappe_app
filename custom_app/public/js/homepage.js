@@ -438,24 +438,20 @@ frappe.ui.keys.add_shortcut({
     shortcut: 'alt+9',
     action: () => { 
 	    	
-
-            const current_doc = $('.data-row.editable-row').parent().attr("data-name") !== null;
-
-
-           
-if (current_doc) 
+if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
 }
+
             frappe.call({
                 method: 'frappe.client.get_list',
               args :{
@@ -575,23 +571,20 @@ frappe.ui.keys.add_shortcut({
 	    	
 
 
-                      const current_doc = $('.data-row.editable-row').parent().attr("data-name") !== null;
-
-
-           
-if (current_doc) 
+                    if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
 }
+
             frappe.call({
                 method: 'frappe.client.get_list',
               args :{
@@ -702,10 +695,20 @@ var dates = r.message.map(function(i) {
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+r',
     action: () => { 
-            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-      const curdoc = (cur_frm.doctype + " Item");
-           const pricelist = cur_frm.doc.selling_price_list;
-            const item_row = locals[curdoc][current_doc];
+           if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
+{
+
+var curr = $('.list-row-container:focus [data-name]').attr('data-name');
+	
+}
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
+{
+const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+	      const curdoc = (cur_frm.doctype + " Item");
+ const item_row = locals[curdoc][current_doc];
+var curr = item_row.item_code;
+}
+
             frappe.call({
                 method: 'frappe.client.get_list',
               args :{
@@ -799,9 +802,20 @@ frappe.ui.keys.add_shortcut({
     action: () => { 
 
 
-            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-      const curdoc = (cur_frm.doctype + " Item");
-            const item_row = locals[curdoc][current_doc];
+         if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
+{
+
+var curr = $('.list-row-container:focus [data-name]').attr('data-name');
+	
+}
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
+{
+const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+	      const curdoc = (cur_frm.doctype + " Item");
+ const item_row = locals[curdoc][current_doc];
+var curr = item_row.item_code;
+}
+
             frappe.call({
                 method: 'erpnext.stock.dashboard.item_dashboard.get_data',
                 args: {
@@ -814,7 +828,7 @@ frappe.ui.keys.add_shortcut({
                             width: 400
                         });
                         $(`<div id="historymodal" class="modal-body ui-front">
-                            <h2>${item_row.item_code}</h2>
+                            <h2>${curr}</h2>
                             <table class="table table-bordered">
                             <thead>
                             </thead>
