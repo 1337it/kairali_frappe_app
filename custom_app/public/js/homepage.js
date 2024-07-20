@@ -39,7 +39,7 @@ frappe.ui.keys.add_shortcut({
 description: "Page Forward",
 shortcut: "escape",
   action: () => {
-  document.documentElement.classList.add('idle');
+  document.documentElement.classList.add('');
 }
 });
 
@@ -935,7 +935,11 @@ window.history.go(-1);
 }
 
 	formclose.addEventListener('click', () => {
+var curr = frappe.get_route()[2];
+
 frappe.set_route("List",frappe.get_route()[1] ,"List");
+$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+
 
       });	
 	listclose.addEventListener('click', () => {
