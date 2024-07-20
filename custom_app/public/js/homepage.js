@@ -204,13 +204,29 @@ frappe.ui.keys.add_shortcut({
     action: () => { 
 
 
-            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-      const curdoc = (cur_frm.doctype + " Item");
-            const item_row = locals[curdoc][current_doc];
+            const current_doc = $('.data-row.editable-row').parent().attr("data-name") !== null;
+
+
+           
+if (current_doc) 
+{
+
+var curr = $('.list-row-container:focus [data-name]').attr('data-name');
+	
+}
+	    else
+{
+const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+	      const curdoc = (cur_frm.doctype + " Item");
+ const item_row = locals[curdoc][current_doc];
+var curr = item_row.item_code;
+}
+
+
             frappe.call({
                 method: 'erpnext.stock.dashboard.item_dashboard.get_data',
                 args: {
-                    item_code: item_row.item_code,
+                    item_code: curr,
                 },
                 callback: function(r) {
                     if (r.message.length > 0){
@@ -219,13 +235,12 @@ frappe.ui.keys.add_shortcut({
                             width: 400
                         });
                         $(`<div id="historymodal" class="modal-body ui-front">
-                            <h2>${item_row.item_code}</h2>
+                            <h2>${curr}</h2>
                             <table class="table table-bordered">
                             <thead>
                                 <tr>
                                 <th>Warehouse</th>
                                 <th>Qty</th>
-                                <th>UOM</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -238,7 +253,6 @@ frappe.ui.keys.add_shortcut({
                             <tr>
                                 <td>${element.warehouse}</td>
                                 <td>${element.actual_qty}</td>
-                                <td>${item_row.stock_uom }</td>
                             </tr>
                             `).appendTo(tbody)
                             tbody.find('.check-warehouse').on('change', function() {
@@ -273,9 +287,23 @@ frappe.ui.keys.add_shortcut({
 	    	
 
 
-            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-      const curdoc = (cur_frm.doctype + " Item");
-            const item_row = locals[curdoc][current_doc];
+                      const current_doc = $('.data-row.editable-row').parent().attr("data-name") !== null;
+
+
+           
+if (current_doc) 
+{
+
+var curr = $('.list-row-container:focus [data-name]').attr('data-name');
+	
+}
+	    else
+{
+const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+	      const curdoc = (cur_frm.doctype + " Item");
+ const item_row = locals[curdoc][current_doc];
+var curr = item_row.item_code;
+}
             frappe.call({
                 method: 'frappe.client.get_list',
               args :{
@@ -283,7 +311,7 @@ frappe.ui.keys.add_shortcut({
 		      parent: 'Sales Invoice',
 			fields: ['parent', 'owner', 'qty', 'rate', 'creation'],
                 filters: [
-                    ["item_name", "=",  item_row.item_code],
+                    ["item_name", "=",  curr],
                 ],
 		      order_by: 'creation desc'
               },
@@ -328,7 +356,7 @@ var dates = r.message.map(function(i) {
        <div class="modal-body ui-front">
         <div id="sample-chart">
                 </div>
-                            <h2>${item_row.item_code}</h2>
+                            <h2>${curr}</h2>
                             <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -387,17 +415,30 @@ frappe.ui.keys.add_shortcut({
     action: () => { 
 	    	
 
+            const current_doc = $('.data-row.editable-row').parent().attr("data-name") !== null;
 
-            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-      const curdoc = (cur_frm.doctype + " Item");
-            const item_row = locals[curdoc][current_doc];
+
+           
+if (current_doc) 
+{
+
+var curr = $('.list-row-container:focus [data-name]').attr('data-name');
+	
+}
+	    else
+{
+const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+	      const curdoc = (cur_frm.doctype + " Item");
+ const item_row = locals[curdoc][current_doc];
+var curr = item_row.item_code;
+}
             frappe.call({
                 method: 'frappe.client.get_list',
               args :{
               doctype: 'Stock Ledger Entry',
 			fields: ['voucher_type', 'voucher_no', 'actual_qty', 'qty_after_transaction', 'posting_date'],
                 filters: [
-                    ["item_code", "=",  item_row.item_code],
+                    ["item_code", "=",  curr],
                     ["is_cancelled", "=", '0']
                 ],
 		      order_by: 'posting_date desc'
@@ -441,7 +482,7 @@ var dates = r.message.map(function(i) {
        <div class="modal-body ui-front">
         <div id="sample-chart">
                 </div>
-                            <h2>${item_row.item_code}</h2>
+                            <h2>${curr}</h2>
                             <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -505,9 +546,23 @@ frappe.ui.keys.add_shortcut({
 	    	
 
 
-            const current_doc = $('.data-row.editable-row').parent().attr("data-name");
-      const curdoc = (cur_frm.doctype + " Item");
-            const item_row = locals[curdoc][current_doc];
+                      const current_doc = $('.data-row.editable-row').parent().attr("data-name") !== null;
+
+
+           
+if (current_doc) 
+{
+
+var curr = $('.list-row-container:focus [data-name]').attr('data-name');
+	
+}
+	    else
+{
+const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+	      const curdoc = (cur_frm.doctype + " Item");
+ const item_row = locals[curdoc][current_doc];
+var curr = item_row.item_code;
+}
             frappe.call({
                 method: 'frappe.client.get_list',
               args :{
@@ -515,7 +570,7 @@ frappe.ui.keys.add_shortcut({
 		      parent: 'Purchase Invoice',
 			fields: ['parent', 'owner', 'qty', 'rate', 'creation'],
                 filters: [
-                    ["item_name", "=",  item_row.item_code],
+                    ["item_name", "=",  curr],
                 ],
 		      order_by: 'creation desc'
               },
@@ -560,7 +615,7 @@ var dates = r.message.map(function(i) {
        <div class="modal-body ui-front">
         <div id="sample-chart">
                 </div>
-                            <h2>${item_row.item_code}</h2>
+                            <h2>${curr}</h2>
                             <table class="table table-bordered">
                             <thead>
                                 <tr>
