@@ -2621,7 +2621,6 @@ background-size: 16px 16px;
 
 
 [data-theme-mode="light"] [data-page-route=Workspaces] .layout-main .layout-main-section {
-border: 1px solid var(--border-color)!important;
  background-image: url("/files/jf.jpg")!important;
 	 padding-top:150px!important;
 	 padding-left:20px!important;
