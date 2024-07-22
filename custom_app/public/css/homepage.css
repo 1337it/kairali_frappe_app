@@ -2132,8 +2132,14 @@ border-bottom: 1px solid var(--kanban-new-card-bg)!important;
 
      [data-route^="Form/"] .filter-popover {
         left: 10vw!important;
-}
 
+
+}
+.filter-popover {
+
+transform: translate3d(1200px, 362px, 0px)!important;
+
+}
 
 [data-route^="List/"] .layout-main-section .frappe-list, .layout-main-section .report-wrapper {
         margin-left: 20px;
