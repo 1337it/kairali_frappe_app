@@ -2457,7 +2457,7 @@ margin-right: 10px;
 }
 
 
-[data-route^="List/Item"] .page-form {
+[data-route^="List/Item/"] .page-form {
 margin-top: 0px!important;
 border-bottom: none!important;
 z-index: 4!important;
