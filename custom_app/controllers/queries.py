@@ -209,10 +209,10 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 		from tabItem it
 LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
 LEFT OUTER JOIN `tabItem Price` ip  ON it.item_name = ip.item_code
-		where tabItem.docstatus < 2
-			and tabItem.disabled=0
-			and tabItem.has_variants=0
-			and (tabItem.end_of_life > %(today)s or ifnull(tabItem.end_of_life, '0000-00-00')='0000-00-00')
+		where it.docstatus < 2
+			and it.disabled=0
+			and it.has_variants=0
+			and (it.end_of_life > %(today)s or ifnull(it.end_of_life, '0000-00-00')='0000-00-00')
 			and ({scond} or it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
 				{description_cond})
 			{fcond} {mcond}
