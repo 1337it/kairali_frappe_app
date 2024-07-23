@@ -163,6 +163,8 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			"it.item_code",
 			"it.item_group",
 			"it.item_name",
+			"ia.alternative_item_code,
+
 		]
 		if field not in searchfields
 	]
@@ -213,8 +215,6 @@ RIGHT OUTER JOIN `tabItem Alternative` ia ON it.item_name = ia.item_code
 where it.docstatus < 2
 			and it.disabled=0
 			and it.has_variants=0
-			and (it.end_of_life > %(today)s or ifnull(it.end_of_life, '0000-00-00')='0000-00-00')
-			and it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
 			and ({scond} or it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
 				{description_cond})
 			{fcond} {mcond}
