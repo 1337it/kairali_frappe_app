@@ -211,7 +211,7 @@ from tabItem it
 
 		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
 LEFT OUTER JOIN `tabItem Price` ip  ON it.item_name = ip.item_code
-RIGHT OUTER JOIN `tabItem Alternative` ia ON it.item_name = ia.item_code
+RIGHT OUTER JOIN `tabItem Alternative` ia ON it.item_code = ia.alternative_item_code
 where it.docstatus < 2
 			and it.disabled=0
 			and it.has_variants=0
