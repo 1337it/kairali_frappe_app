@@ -1,31 +1,3 @@
-$('input[type=text]').keydown(function(e){
-	//get the next index of text input element
-	var next_idx = $('input[type=text]').index(this) + 1;
-  var pre_idx = $('input[type=text]').index(this) - 1;
- 
-	//get number of text input element in a html document
-	var tot_idx = $('table').find('input[type=text]').length;
- 
-	//enter button in ASCII code
-	if(e.keyCode == 13 || e.keyCode == 9 || e.keyCode == 40){
-		if(tot_idx == next_idx)
-			//go to the first text element if focused in the last text input element
-			$('input[type=text]:eq(0)').focus();
-		else
-			//go to the next text input element
-			$('input[type=text]:eq(' + next_idx + ')').focus();
-	}
-  if(e.keyCode == 38){
-		if(tot_idx == pre_idx)
-			//go to the first text element if focused in the last text input element
-			$('input[type=text]:eq('+tot_idx+')').focus();
-		else
-			//go to the next text input element
-			$('input[type=text]:eq(' + pre_idx + ')').focus();
-	}
-});
-
-
 function toggleFullscreen() {
             if (!document.fullscreenElement &&
                 !document.mozFullScreenElement &&
@@ -1051,7 +1023,32 @@ const newParent = elementToMove.parentNode;
 newParent.prepend(raven);
 
 
-
+$('input[type=text]').keydown(function(e){
+	//get the next index of text input element
+	var next_idx = $('input[type=text]').index(this) + 1;
+  var pre_idx = $('input[type=text]').index(this) - 1;
+ 
+	//get number of text input element in a html document
+	var tot_idx = $('table').find('input[type=text]').length;
+ 
+	//enter button in ASCII code
+	if(e.keyCode == 13 || e.keyCode == 9 || e.keyCode == 40){
+		if(tot_idx == next_idx)
+			//go to the first text element if focused in the last text input element
+			$('input[type=text]:eq(0)').focus();
+		else
+			//go to the next text input element
+			$('input[type=text]:eq(' + next_idx + ')').focus();
+	}
+  if(e.keyCode == 38){
+		if(tot_idx == pre_idx)
+			//go to the first text element if focused in the last text input element
+			$('input[type=text]:eq('+tot_idx+')').focus();
+		else
+			//go to the next text input element
+			$('input[type=text]:eq(' + pre_idx + ')').focus();
+	}
+});
 	
 };
 
