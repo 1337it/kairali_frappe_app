@@ -154,15 +154,15 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	if "description" in searchfields:
 		columns += """, if(length(tabItem.description) > 40, \
-			concat(substr(tabItem.description, 1, 40), "..."), description) as description"""
+			concat(substr(it.description, 1, 40), "..."), description) as description"""
 
 	searchfields = searchfields + [
 		field
 		for field in [
 			searchfield or "name",
-			"item_code",
-			"item_group",
-			"item_name",
+			"it.item_code",
+			"it.item_group",
+			"it.item_name",
 		]
 		if field not in searchfields
 	]
@@ -200,7 +200,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	description_cond = ""
 	if frappe.db.count(doctype, cache=True) < 50000:
 		# scan description only if items are less than 50000
-		description_cond = "or tabItem.description LIKE %(txt)s"
+		description_cond = "or it.description LIKE %(txt)s"
 
 	return frappe.db.sql(
 		"""select
