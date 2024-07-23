@@ -142,7 +142,6 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	# Get searchfields from meta and use in Item Link field query
 	meta = frappe.get_meta(doctype, cached=True)
-	searchfields = meta.get_search_fields()
 
 	columns = ""
 
