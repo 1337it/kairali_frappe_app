@@ -179,15 +179,10 @@ RIGHT OUTER JOIN `tabItem Alternative` ia ON it.item_code = ia.alternative_item_
 where it.docstatus < 2
 			and it.disabled=0
 			and it.has_variants=0
-			and ({scond} or it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
-				{description_cond})
-			{mcond}
+			and ({scond})
     GROUP BY it.item_code
 	limit %(start)s, %(page_len)s """.format(
-			columns=columns,
 			scond=searchfields,
-			mcond=get_match_cond(doctype).replace("%", "%%"),
-			description_cond=description_cond,
 		),
 		{
 			"today": nowdate(),
