@@ -217,10 +217,8 @@ LEFT OUTER JOIN `tabItem Price` ip  ON it.item_name = ip.item_code
 				{description_cond})
 			{fcond} {mcond}
 		order by
-			if(locate(%(_txt)s, name), locate(%(_txt)s, name), 99999),
-			if(locate(%(_txt)s, item_name), locate(%(_txt)s, item_name), 99999),
-			idx desc,
-			name, item_name
+			if(locate(%(_txt)s, it.item_name), locate(%(_txt)s, it.item_name), 99999),
+			idx desc
 		limit %(start)s, %(page_len)s """.format(
 			columns=columns,
 			scond=searchfields,
