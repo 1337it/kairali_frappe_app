@@ -139,13 +139,12 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	doctype = "Item"
 	conditions = []
 
+	if isinstance(filters, str):
+		filters = json.loads(filters)
 
 	# Get searchfields from meta and use in Item Link field query
-
-
-meta = frappe.get_meta(doctype, cached=True)
+	meta = frappe.get_meta(doctype, cached=True)
 	searchfields = meta.get_search_fields()
-
 
 	searchfields = searchfields + [
 		field
@@ -155,8 +154,6 @@ meta = frappe.get_meta(doctype, cached=True)
 		if field not in searchfields
 	]
 	searchfields = " or ".join([field + " like %(txt)s" for field in searchfields])
-
-	
 
 	return frappe.db.sql(
 		"""select
