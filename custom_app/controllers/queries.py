@@ -205,11 +205,11 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	return frappe.db.sql(
                 """select
                         tabItem.name {columns}, `tabItem Price`.price_list_rate AS retail_price, sum(`tabStock Ledger Entry`.actual_qty) AS available_qty
-                LEFT OUTER JOIN `tabItem Price`
+                LEFT JOIN `tabItem Price`
     ON tabItem.item_code = `tabItem Price`.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry`
+  LEFT JOIN `tabStock Ledger Entry`
     ON tabItem.item_code = `tabStock Ledger Entry`.item_code
- RIGHT OUTER JOIN `tabItem Alternative`
+ RIGHT JOIN `tabItem Alternative`
     ON tabItem.item_code = `tabItem Alternative`.alternative_item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
