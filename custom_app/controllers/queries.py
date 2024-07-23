@@ -156,20 +156,33 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	searchfields = " or ".join([field + " like %(txt)s" for field in searchfields])
 
 	return frappe.db.sql(
-		"""select
-			it.item_code as name, it.description as description, sum(iq.actual_qty) as available_qty, ip.price_list_rate AS retail_rate,  ia.alternative_item_code as substitute
-from tabItem it
-
-		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
-LEFT OUTER JOIN `tabItem Price` ip  ON it.item_name = ip.item_code
-RIGHT OUTER JOIN `tabItem Alternative` ia ON it.item_code = ia.alternative_item_code
-where it.docstatus < 2
-			and it.disabled=0
-			and it.has_variants=0
-			and ({scond})
-    GROUP BY it.item_code
-	limit %(start)s, %(page_len)s """.format(
+                """select
+                        tabItem.name {columns}, `tabItem Price`.price_list_rate AS retail_price,
+       sum(`tabStock Ledger Entry`.actual_qty) AS available_qty
+                LEFT OUTER JOIN `tabItem Price`
+    ON tabItem.item_code = `tabItem Price`.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry`
+    ON tabItem.item_code = `tabStock Ledger Entry`.item_code
+ RIGHT OUTER JOIN `tabItem Alternative`
+    ON tabItem.item_code = `tabItem Alternative`.alternative_item_code
+                where tabItem.docstatus < 2
+                        and tabItem.disabled=0
+                        and tabItem.has_variants=0
+                        and (tabItem.end_of_life > %(today)s or ifnull(tabItem.end_of_life, '0000-00-00')='0000-00-00')
+			and ({scond} or tabItem.item_code IN (select `tabItem Alternative`.alternative_item_code from `tabItem Alternative` where `tabItem Alternative`.item_code LIKE %(txt)s)
+				{description_cond})
+			{fcond} {mcond}
+		order by
+			if(locate(%(_txt)s, name), locate(%(_txt)s, name), 99999),
+			if(locate(%(_txt)s, item_name), locate(%(_txt)s, item_name), 99999),
+			idx desc,
+			name, item_name
+		limit %(start)s, %(page_len)s """.format(
+			columns=columns,
 			scond=searchfields,
+			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
+			mcond=get_match_cond(doctype).replace("%", "%%"),
+			description_cond=description_cond,
 		),
 		{
 			"today": nowdate(),
@@ -180,7 +193,6 @@ where it.docstatus < 2
 		},
 		as_dict=as_dict,
 	)
-
 
 @frappe.whitelist()
 @frappe.validate_and_sanitize_search_inputs
