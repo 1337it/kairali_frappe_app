@@ -139,8 +139,6 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	doctype = "Item"
 	conditions = []
 
-	if isinstance(filters, str):
-		filters = json.loads(filters)
 
 	# Get searchfields from meta and use in Item Link field query
 	meta = frappe.get_meta(doctype, cached=True)
@@ -164,34 +162,6 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	]
 	searchfields = " or ".join([field + " like %(txt)s" for field in searchfields])
 
-	if filters and isinstance(filters, dict):
-		if filters.get("customer") or filters.get("supplier"):
-			party = filters.get("customer") or filters.get("supplier")
-			item_rules_list = frappe.get_all(
-				"Party Specific Item",
-				filters={"party": party},
-				fields=["restrict_based_on", "based_on_value"],
-			)
-
-			filters_dict = {}
-			for rule in item_rules_list:
-				if rule["restrict_based_on"] == "Item":
-					rule["restrict_based_on"] = "name"
-				filters_dict[rule.restrict_based_on] = []
-
-			for rule in item_rules_list:
-				filters_dict[rule.restrict_based_on].append(rule.based_on_value)
-
-			for filter in filters_dict:
-				filters[scrub(filter)] = ["in", filters_dict[filter]]
-
-			if filters.get("customer"):
-				del filters["customer"]
-			else:
-				del filters["supplier"]
-		else:
-			filters.pop("customer", None)
-			filters.pop("supplier", None)
 
 	description_cond = ""
 	if frappe.db.count(doctype, cache=True) < 50000:
@@ -211,12 +181,11 @@ where it.docstatus < 2
 			and it.has_variants=0
 			and ({scond} or it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
 				{description_cond})
-			{fcond} {mcond}
+			{mcond}
     GROUP BY it.item_code
 	limit %(start)s, %(page_len)s """.format(
 			columns=columns,
 			scond=searchfields,
-			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
 			mcond=get_match_cond(doctype).replace("%", "%%"),
 			description_cond=description_cond,
 		),
