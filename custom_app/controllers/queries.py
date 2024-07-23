@@ -139,72 +139,9 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	doctype = "Item"
 	conditions = []
 
-	if isinstance(filters, str):
-		filters = json.loads(filters)
-
-	# Get searchfields from meta and use in Item Link field query
-	meta = frappe.get_meta(doctype, cached=True)
-	searchfields = meta.get_search_fields()
-
-	columns = ""
-	extra_searchfields = [field for field in searchfields if field not in ["tabItem.name", "tabItem.description"]]
-
-	if extra_searchfields:
-		columns += ", " + ", ".join(extra_searchfields)
-
-	if "description" in searchfields:
-		columns += """, if(length(tabItem.description) > 40, \
-			concat(substr(tabItem.description, 1, 40), "..."), description) as description"""
-
-	searchfields = searchfields + [
-		field
-		for field in [
-			searchfield or "tabItem.name",
-			"tabItem.item_code",
-			"tabItem.item_group",
-			"tabItem.item_name",
-		]
-		if field not in searchfields
-	]
-	searchfields = " or ".join([field + " like %(txt)s" for field in searchfields])
-
-	if filters and isinstance(filters, dict):
-		if filters.get("customer") or filters.get("supplier"):
-			party = filters.get("customer") or filters.get("supplier")
-			item_rules_list = frappe.get_all(
-				"Party Specific Item",
-				filters={"party": party},
-				fields=["restrict_based_on", "based_on_value"],
-			)
-
-			filters_dict = {}
-			for rule in item_rules_list:
-				if rule["restrict_based_on"] == "Item":
-					rule["restrict_based_on"] = "tabItem.name"
-				filters_dict[rule.restrict_based_on] = []
-
-			for rule in item_rules_list:
-				filters_dict[rule.restrict_based_on].append(rule.based_on_value)
-
-			for filter in filters_dict:
-				filters[scrub(filter)] = ["in", filters_dict[filter]]
-
-			if filters.get("customer"):
-				del filters["customer"]
-			else:
-				del filters["supplier"]
-		else:
-			filters.pop("customer", None)
-			filters.pop("supplier", None)
-
-	description_cond = ""
-	if frappe.db.count(doctype, cache=True) < 50000:
-		# scan description only if items are less than 50000
-		description_cond = "or tabItem.description LIKE %(txt)s"
-
 	return frappe.db.sql(
                 """select
-                        tabItem.name {columns}, ip.price_list_rate AS retail_price, sum(iw.actual_qty) AS available_qty
+                        tabItem.name {columns}, ip.price_list_rate AS retail_price, sum(iw.actual_qty) AS available_qty, ia.item_code
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
    LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.item_code = iw.item_code
@@ -213,20 +150,9 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                         and tabItem.disabled=0
                         and tabItem.has_variants=0
                         and (tabItem.end_of_life > %(today)s or ifnull(tabItem.end_of_life, '0000-00-00')='0000-00-00')
-			and ({scond} or tabItem.item_code IN (select ia.alternative_item_code from `tabItem Alternative` where ia.item_code LIKE %(txt)s)
-				{description_cond})
-			{fcond} {mcond}
-		order by
-			if(locate(%(_txt)s, name), locate(%(_txt)s, name), 99999),
-			if(locate(%(_txt)s, item_name), locate(%(_txt)s, item_name), 99999),
-			idx desc,
-			name, item_name
+			and ia.alternative_item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s
+		group by tabItem.item_code
 		limit %(start)s, %(page_len)s """.format(
-			columns=columns,
-			scond=searchfields,
-			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
-			mcond=get_match_cond(doctype).replace("%", "%%"),
-			description_cond=description_cond,
 		),
 		{
 			"today": nowdate(),
