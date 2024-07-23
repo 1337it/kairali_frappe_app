@@ -139,7 +139,70 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	doctype = "Item"
 	conditions = []
 
-	
+if isinstance(filters, str):
+		filters = json.loads(filters)
+
+	# Get searchfields from meta and use in Item Link field query
+	meta = frappe.get_meta(doctype, cached=True)
+	searchfields = meta.get_search_fields()
+
+	columns = ""
+	extra_searchfields = [field for field in searchfields if field not in ["name", "description"]]
+
+	if extra_searchfields:
+		columns += ", " + ", ".join(extra_searchfields)
+
+	if "description" in searchfields:
+		columns += """, if(length(tabItem.description) > 40, \
+			concat(substr(tabItem.description, 1, 40), "..."), description) as description"""
+
+	searchfields = searchfields + [
+		field
+		for field in [
+			searchfield or "name",
+			"item_code",
+			"item_group",
+			"item_name",
+		]
+		if field not in searchfields
+	]
+	searchfields = " or ".join([field + " like %(txt)s" for field in searchfields])
+
+	if filters and isinstance(filters, dict):
+		if filters.get("customer") or filters.get("supplier"):
+			party = filters.get("customer") or filters.get("supplier")
+			item_rules_list = frappe.get_all(
+				"Party Specific Item",
+				filters={"party": party},
+				fields=["restrict_based_on", "based_on_value"],
+			)
+
+			filters_dict = {}
+			for rule in item_rules_list:
+				if rule["restrict_based_on"] == "Item":
+					rule["restrict_based_on"] = "name"
+				filters_dict[rule.restrict_based_on] = []
+
+			for rule in item_rules_list:
+				filters_dict[rule.restrict_based_on].append(rule.based_on_value)
+
+			for filter in filters_dict:
+				filters[scrub(filter)] = ["in", filters_dict[filter]]
+
+			if filters.get("customer"):
+				del filters["customer"]
+			else:
+				del filters["supplier"]
+		else:
+			filters.pop("customer", None)
+			filters.pop("supplier", None)
+
+	description_cond = ""
+	if frappe.db.count(doctype, cache=True) < 50000:
+		# scan description only if items are less than 50000
+		description_cond = "or tabItem.description LIKE %(txt)s"	
+
+
 	return frappe.db.sql(
 		"""select
 			it.item_name, it.item_code as name, it.description as description, sum(iq.actual_qty) as available_qty, ip.price_list_rate AS retail_rate,  ia.alternative_item_code as substitute
@@ -156,6 +219,12 @@ where it.docstatus < 2
 	
     GROUP BY it.item_name
 	limit %(start)s, %(page_len)s """.format(
+columns=columns,
+			scond=searchfields,
+			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
+			mcond=get_match_cond(doctype).replace("%", "%%"),
+			description_cond=description_cond,
+
 		),
 		{
 			"today": nowdate(),
