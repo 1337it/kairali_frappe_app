@@ -160,7 +160,6 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 		field
 		for field in [
 			searchfield or "it.item_code",
-			"it.item_group",
 			"ia.alternative_item_code",
 
 		]
