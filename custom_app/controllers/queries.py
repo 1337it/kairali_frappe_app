@@ -206,17 +206,17 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                 """select
                         tabItem.name {columns}, `tabItem Price`.price_list_rate AS retail_price, sum(`tabStock Ledger Entry`.actual_qty) AS available_qty
 			from tabItem
-                LEFT OUTER JOIN `tabItem Price`
-    ON tabItem.item_code = `tabItem Price`.item_code
-  LEFT OUTER JOIN `tabStock Ledger Entry`
-    ON tabItem.item_code = `tabStock Ledger Entry`.item_code
- RIGHT OUTER JOIN `tabItem Alternative`
-    ON tabItem.item_code = `tabItem Alternative`.alternative_item_code
+                LEFT OUTER JOIN `tabItem Price` ip
+    ON tabItem.item_code = ip.item_code
+  LEFT OUTER JOIN `tabStock Ledger Entry` is
+    ON tabItem.item_code = is.item_code
+ RIGHT OUTER JOIN `tabItem Alternative` ia
+    ON tabItem.item_code = ia.alternative_item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
                         and tabItem.has_variants=0
                         and (tabItem.end_of_life > %(today)s or ifnull(tabItem.end_of_life, '0000-00-00')='0000-00-00')
-			and ({scond} or tabItem.item_code IN (select `tabItem Alternative`.alternative_item_code from `tabItem Alternative` where `tabItem Alternative`.item_code LIKE %(txt)s)
+			and ({scond} or tabItem.item_code IN (select ia.alternative_item_code from `tabItem Alternative` where ia.item_code LIKE %(txt)s)
 				{description_cond})
 			{fcond} {mcond}
 		order by
