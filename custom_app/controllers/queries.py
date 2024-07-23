@@ -205,7 +205,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	return frappe.db.sql(
 		"""select
-			it.tabItem.name {columns},  sum(iq.actual_qty)  as available_qty, ip.price_list_rate AS retail_rate
+			it.item_name {columns},  sum(iq.actual_qty)  as available_qty, ip.price_list_rate AS retail_rate
 		from tabItem it
 LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
 LEFT OUTER JOIN `tabItem Price` ip  ON it.item_name = ip.item_code
