@@ -205,7 +205,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	return frappe.db.sql(
 		"""select
-			it.item_name {columns},  sum(iq.actual_qty)  as available_qty, ip.price_list_rate AS retail_rate
+			it.name {columns},  sum(iq.actual_qty)  as available_qty, ip.price_list_rate AS retail_rate
 		from tabItem it
 LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
 LEFT OUTER JOIN `tabItem Price` ip  ON it.item_name = ip.item_code
@@ -213,7 +213,7 @@ LEFT OUTER JOIN `tabItem Price` ip  ON it.item_name = ip.item_code
 			and tabItem.disabled=0
 			and tabItem.has_variants=0
 			and (tabItem.end_of_life > %(today)s or ifnull(tabItem.end_of_life, '0000-00-00')='0000-00-00')
-			and ({scond} or tabItem.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
+			and ({scond} or it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
 				{description_cond})
 			{fcond} {mcond}
 		order by
