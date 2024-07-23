@@ -147,7 +147,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	searchfields = meta.get_search_fields()
 
 	columns = ""
-	extra_searchfields = [field for field in searchfields if field not in ["name", "description"]]
+	extra_searchfields = [field for field in searchfields if field not in ["tabItem.name", "tabItem.description"]]
 
 	if extra_searchfields:
 		columns += ", " + ", ".join(extra_searchfields)
@@ -159,10 +159,10 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	searchfields = searchfields + [
 		field
 		for field in [
-			searchfield or "name",
-			"item_code",
-			"item_group",
-			"item_name",
+			searchfield or "tabItem.name",
+			"tabItem.item_code",
+			"tabItem.item_group",
+			"tabItem.item_name",
 		]
 		if field not in searchfields
 	]
@@ -180,7 +180,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			filters_dict = {}
 			for rule in item_rules_list:
 				if rule["restrict_based_on"] == "Item":
-					rule["restrict_based_on"] = "name"
+					rule["restrict_based_on"] = "tabItem.name"
 				filters_dict[rule.restrict_based_on] = []
 
 			for rule in item_rules_list:
