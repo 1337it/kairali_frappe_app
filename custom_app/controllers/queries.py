@@ -207,7 +207,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                         tabItem.name {columns}, `tabItem Price`.price_list_rate AS retail_price, sum(`tabStock Ledger Entry`.actual_qty) AS available_qty
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
-   LEFT OUTER JOIN `tabStock Ledger Entry` AS is ON tabItem.item_code = is.item_code
+   LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.item_code = iw.item_code
    RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.item_code = ia.alternative_item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
