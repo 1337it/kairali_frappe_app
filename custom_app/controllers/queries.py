@@ -144,7 +144,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	meta = frappe.get_meta(doctype, cached=True)
 
 	columns = ""
-
+searchfields = ""
 
 
 	searchfields = searchfields + [
