@@ -148,8 +148,6 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	columns = ""
 
-	if extra_searchfields:
-		columns += ", " + ", ".join(extra_searchfields)
 
 	if "description" in searchfields:
 		columns += """, if(length(it.description) > 40, \
