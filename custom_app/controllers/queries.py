@@ -147,19 +147,19 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	searchfields = meta.get_search_fields()
 
 	columns = ""
-	extra_searchfields = [field for field in searchfields if field not in ["name", "description"]]
+	extra_searchfields = [field for field in searchfields if field not in ["it.name", "it.description"]]
 
 	if extra_searchfields:
 		columns += ", " + ", ".join(extra_searchfields)
 
 	if "description" in searchfields:
-		columns += """, if(length(tabItem.description) > 40, \
+		columns += """, if(length(it.description) > 40, \
 			concat(substr(it.description, 1, 40), "..."), description) as description"""
 
 	searchfields = searchfields + [
 		field
 		for field in [
-			searchfield or "name",
+			searchfield or "it.name",
 			"it.item_code",
 			"it.item_group",
 			"it.item_name",
