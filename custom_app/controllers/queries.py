@@ -142,7 +142,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	
 	return frappe.db.sql(
 		"""select
-			it.item_name, it.item_code as label, CONCAT('Description:', it.description) as description, CONCAT('QTY:', cast((SELECT sum(sl.actual_qty) FROM `tabStock Ledger Entry` sl WHERE sl.item_code = it.item_code GROUP BY sl.item_code) AS int)) AS 'QTY'
+			it.item_name, it.item_code as label, it.description as description, (SELECT sum(sl.actual_qty) FROM `tabStock Ledger Entry` sl WHERE sl.item_code = it.item_code GROUP BY sl.item_code) AS 'QTY'
 from tabItem it
 		LEFT OUTER JOIN `tabStock Ledger Entry` iq ON it.item_name = iq.item_code
   		where it.docstatus < 2
