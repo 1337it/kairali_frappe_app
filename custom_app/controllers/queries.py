@@ -216,7 +216,8 @@ where it.docstatus < 2
 			and it.has_variants=0
 			and (it.end_of_life > %(today)s or ifnull(it.end_of_life, '0000-00-00')='0000-00-00')
 			and it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
-	
+		{description_cond})
+			{fcond} {mcond}
     GROUP BY it.item_name
 	limit %(start)s, %(page_len)s """.format(
 columns=columns,
