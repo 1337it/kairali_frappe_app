@@ -139,7 +139,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 	doctype = "Item"
 	conditions = []
 
-if isinstance(filters, str):
+	if isinstance(filters, str):
 		filters = json.loads(filters)
 
 	# Get searchfields from meta and use in Item Link field query
@@ -200,8 +200,7 @@ if isinstance(filters, str):
 	description_cond = ""
 	if frappe.db.count(doctype, cache=True) < 50000:
 		# scan description only if items are less than 50000
-		description_cond = "or tabItem.description LIKE %(txt)s"	
-
+		description_cond = "or tabItem.description LIKE %(txt)s"
 
 	return frappe.db.sql(
 		"""select
@@ -220,12 +219,11 @@ where it.docstatus < 2
 			{fcond} {mcond}
     GROUP BY it.item_name
 	limit %(start)s, %(page_len)s """.format(
-columns=columns,
+			columns=columns,
 			scond=searchfields,
 			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
 			mcond=get_match_cond(doctype).replace("%", "%%"),
 			description_cond=description_cond,
-
 		),
 		{
 			"today": nowdate(),
@@ -237,9 +235,6 @@ columns=columns,
 		as_dict=as_dict,
 	)
 
-
-	
-	
 
 @frappe.whitelist()
 @frappe.validate_and_sanitize_search_inputs
@@ -271,6 +266,7 @@ def bom(doctype, txt, searchfield, start, page_len, filters):
 			"page_len": page_len or 20,
 		},
 	)
+
 
 @frappe.whitelist()
 @frappe.validate_and_sanitize_search_inputs
@@ -361,6 +357,7 @@ def get_batch_no(doctype, txt, searchfield, start, page_len, filters):
 	doctype = "Batch"
 	meta = frappe.get_meta(doctype, cached=True)
 	searchfields = meta.get_search_fields()
+	page_len = 30
 
 	batches = get_batches_from_stock_ledger_entries(searchfields, txt, filters, start, page_len)
 	batches.extend(get_batches_from_serial_and_batch_bundle(searchfields, txt, filters, start, page_len))
@@ -431,6 +428,7 @@ def get_batches_from_stock_ledger_entries(searchfields, txt, filters, start=0, p
 			& (stock_ledger_entry.batch_no.isnotnull())
 		)
 		.groupby(stock_ledger_entry.batch_no, stock_ledger_entry.warehouse)
+		.having(Sum(stock_ledger_entry.actual_qty) != 0)
 		.offset(start)
 		.limit(page_len)
 	)
@@ -481,6 +479,7 @@ def get_batches_from_serial_and_batch_bundle(searchfields, txt, filters, start=0
 			& (stock_ledger_entry.serial_and_batch_bundle.isnotnull())
 		)
 		.groupby(bundle.batch_no, bundle.warehouse)
+		.having(Sum(bundle.qty) != 0)
 		.offset(start)
 		.limit(page_len)
 	)
