@@ -218,7 +218,7 @@ where it.docstatus < 2
 			and ({scond} or it.item_code IN (select parent from `tabItem Barcode` where barcode LIKE %(txt)s)
 				{description_cond})
 			{fcond} {mcond}
-    GROUP BY it.item_name
+    GROUP BY it.item_code
 	limit %(start)s, %(page_len)s """.format(
 			columns=columns,
 			scond=searchfields,
