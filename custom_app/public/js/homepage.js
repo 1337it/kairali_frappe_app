@@ -175,6 +175,7 @@ body2.appendChild(driveclose);
 $("body").attr('overlay-route', '');
 	      body.removeChild(driveclose);
       });
+}
 });
 
 
@@ -195,6 +196,8 @@ body2.appendChild(chatclose);
             body2.removeChild(driveframe2);
 	      body2.removeChild(chatclose);
 $("body").attr('overlay-route', '');
+      })
+
     }
 });
 
