@@ -78,6 +78,55 @@ background: 0!important;
  
 @media (min-width: 1200px) {
 
+
+	[data-fieldname="search_term"] .clearfix .control-label {
+font-size:20px;
+	}
+
+
+    .modal .control-input [data-fieldname="search_term"] {
+        height: 40px;
+        border-radius: 1px;
+        background-image: url(/files/search.svg);
+        background-position: 14px 13px;
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        font-size: 20px;
+        padding-left: 50px;
+    }
+
+	.modal .form-column.col-sm-4 {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+	    .modal .form-section .section-body, .form-dashboard-section .section-body {
+        width: 100%;
+        margin: 0;
+    }
+
+	.modal .modal-header .modal-actions {
+position: absolute;
+top: 0px;
+/* right: 5px; */
+order: 0;
+left: 0px;
+height: 50px;
+width: 50px;
+/* font-size: 35px; */
+/* scale: 1.1; */
+/* font-weight: 600; */
+/* stroke-width: 2px; */
+}
+
+.modal-header {
+display: flex;
+align-items: center!important;
+justify-content: center;
+height: 50px!important;
+border-radius: 0PX!important;
+}
+
+	
 	.w-\[calc\(100vw-var\(--sidebar-width\)\)\] {
 width: calc(100vw - var(--sidebar-width));
 background: white;
@@ -122,11 +171,14 @@ display: none;
 
 .modal-dialog.msgprint-dialog {
 margin-top:20vh;
-	box-shadow:0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3),
-0 0 0 1px rgba(0, 0, 0, 0.18) inset;
+	
 }
 
-
+    .modal-content {
+        box-shadow: none!important;
+	    border-radius:0px!important;
+	    
+    }
 
 #stocksidebar {
 margin: 10px;
@@ -321,6 +373,7 @@ z-index:99998!important;
 .modal
 {
 z-index:99999!important;
+	align-content: center!important;
 }
 .formlist
 {
@@ -2337,7 +2390,6 @@ search-dialog .search-header .search-icon {
     background-color: white;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, .2);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     outline: 0;
 }
 .modal.show.search-dialog .modal-dialog {
@@ -4435,6 +4487,7 @@ padding-left: 45px!important;
 }
 .modal-dialog {
 max-width: 80vw!important;
+	box-shadow: 0 25px 60px 10px rgba(0, 0, 0, 0.3);
 }
 
 .stock-levels {
