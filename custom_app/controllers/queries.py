@@ -145,11 +145,10 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
    LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.item_code = iw.item_code
-   RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.item_code = ia.alternative_item_code
+   RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.item_code = ia.item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
                         and tabItem.has_variants=0
-                        and (tabItem.end_of_life > %(today)s or ifnull(tabItem.end_of_life, '0000-00-00')='0000-00-00')
 			and ia.alternative_item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s
 		group by tabItem.item_code
 		limit %(start)s, %(page_len)s """.format(
