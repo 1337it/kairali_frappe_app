@@ -94,7 +94,7 @@ const drivebutton = document.createElement('li');
     drivebutton.innerHTML = "<button class='fa fa-folder nav-item' id='drivebutton'>";
   const body = document.querySelector("#body");
 const driveframe = document.createElement('div');
-driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(2.5% + var(--navbar-height));background: rgba(255, 255, 255, 0.62);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);;" title="Drive"></iframe><div id="driveoverlay"></div>';
+driveframe.innerHTML='<iframe id="driveframe" src="/drive" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(2.5% + var(--navbar-height));background: rgba(255, 255, 255, 0.62);-webkit-backdrop-filter: blur(10px);backdrop-filter: blur(10px);position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow:0 25px 60px 10px rgba(0,0,0,0.3);" title="Drive"></iframe><div id="driveoverlay"></div>';
 
       // Attach the "click" event to your button
      
@@ -107,7 +107,7 @@ const chatbutton = document.createElement('li');
 chatbutton.innerHTML = "<button class='fa fa-comment nav-item' id='chatbutton'>";
   const body2 = document.querySelector("#body");
 const driveframe2 = document.createElement('div');
-driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(2.5% + var(--navbar-height));position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.47), -2px 1px 100px 100px rgba(100, 100, 111, 0.27);" title="Drive"></iframe><div id="chatoverlay"></div>';
+driveframe2.innerHTML='<iframe id="chatframe" src="/raven" style="height: 90%;width: 90%;z-index: 999!important;right: 5%;top: calc(2.5% + var(--navbar-height));position: fixed;border: none;bottom: calc(5% - var(--navbar-height));box-shadow:0 25px 60px 10px rgba(0,0,0,0.3);" title="Drive"></iframe><div id="chatoverlay"></div>';
 
       // Attach the "click" event to your button
       chatbutton.addEventListener('click', () => {
@@ -156,6 +156,47 @@ frappe.ui.keys.add_shortcut({
     }
 });
 
+
+frappe.ui.keys.add_shortcut({
+	description: "Open Drive",
+    shortcut: 'alt+d',
+    action: () => { 
+
+$("body").attr('overlay-route', 'Drive');
+
+body.appendChild(driveframe);
+const driveclose = document.createElement('li');
+
+    driveclose.innerHTML = "<button class='fa fa-close' id='driveclose' >";
+body2.appendChild(driveclose);
+      // Attach the "click" event to your button
+      driveclose.addEventListener('click', () => {
+            body.removeChild(driveframe);
+$("body").attr('overlay-route', '');
+	      body.removeChild(driveclose);
+      });
+});
+
+
+
+frappe.ui.keys.add_shortcut({
+	description: "Open Chat",
+    shortcut: 'alt+c',
+    action: () => { 
+
+$("body").attr('overlay-route', 'Messenger');
+body2.appendChild(driveframe2);
+const chatclose = document.createElement('li');
+
+      chatclose.innerHTML = '<button class="fa fa-close" id="chatclose">';
+body2.appendChild(chatclose);
+      // Attach the "click" event to your button
+      chatclose.addEventListener('click', () => {
+            body2.removeChild(driveframe2);
+	      body2.removeChild(chatclose);
+$("body").attr('overlay-route', '');
+    }
+});
 
 
  
