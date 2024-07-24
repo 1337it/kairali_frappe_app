@@ -78,6 +78,15 @@ background: 0!important;
  
 @media (min-width: 1200px) {
 
+	#dropzoneElement {
+background-color: white;
+}
+
+	.bg-gray-50 {
+--tw-bg-opacity: 1;
+background-color: rgba(249, 249, 249, 0.29);
+}
+
 .phone-picker-popover {
 max-width: 325px;
 left: 29px!important;
