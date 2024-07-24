@@ -141,7 +141,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	return frappe.db.sql(
                 """select
-                        tabItem.name as name, tabItem.description as description, ip.price_list_rate AS retail_price, sum(iw.actual_qty) AS available_qty, ia.item_code as substitute
+                        tabItem.name as name, tabItem.description as description, ip.price_list_rate AS retail_price, sum(iw.actual_qty) AS available_qty, ia.alternative_item_code as substitute
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
    LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.item_code = iw.item_code
@@ -149,7 +149,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
                         and tabItem.has_variants=0
-			and ia.alternative_item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s
+			and ia.alternative_item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s or tabItem.name LIKE %(txt)s
 		group by tabItem.item_code
 		limit %(start)s, %(page_len)s """.format(
 		),
