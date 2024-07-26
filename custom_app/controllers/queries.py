@@ -151,7 +151,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                         and tabItem.has_variants=0
 			and (tabItem.name LIKE %(txt)s or ia.alternative_item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s)
 
-		group by tabItem.name, ia.item_code, tabItem.description, ia.alternative_item_code
+		group by tabItem.name, ia.item_code
   		order by tabItem.name, ia.item_code
 		limit %(start)s, %(page_len)s """.format(
 			fcond=filters,
