@@ -141,7 +141,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	return frappe.db.sql(
                 """select
-                        tabItem.name as name, tabItem.description as description, ip.price_list_rate AS retail_price, sum(iw.actual_qty) AS available_qty, ia.alternative_item_code as substitute
+                        tabItem.name as name, tabItem.description as description, ip.price_list_rate AS retail_price, sum(iw.actual_qty) AS available_qty, `tabStock Ledger Entry`.actual_qty AS instore_qty, ia.alternative_item_code as substitute
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
    LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.item_code = iw.item_code
@@ -150,8 +150,10 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                         and tabItem.disabled=0
                         and tabItem.has_variants=0
 			and (tabItem.name LIKE %(txt)s and ia.alternative_item_code LIKE %(txt)s) or tabItem.description LIKE %(txt)s
+   			{fcond}
 		group by tabItem.item_code
 		limit %(start)s, %(page_len)s """.format(
+			fcond=get_filters_cond('Stock Ledger Entry', filters, conditions).replace("%", "%%"),
 		),
 		{
 			"today": nowdate(),
