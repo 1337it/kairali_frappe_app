@@ -155,7 +155,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 		group by tabItem.name, ia.item_code, tabItem.description, ia.alternative_item_code,
   		order by tabItem.name, ia.item_code
 		limit %(start)s, %(page_len)s """.format(
-			fcond=get_filters_cond('Stock Ledger Entry', filters, []),
+			fcond=get_filters_cond(doctype, filters, conditions).replace("%", "%%"),
 
 		),
 		{
