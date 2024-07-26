@@ -145,6 +145,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
    LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.item_code = iw.item_code
+   LEFT OUTER JOIN `tabStock Ledger Entry` ON tabItem.item_code = `tabStock Ledger Entry`.item_code
    RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.item_code = ia.item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
