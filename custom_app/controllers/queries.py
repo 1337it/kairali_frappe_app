@@ -159,7 +159,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
     			COALESCE(iw.actual_qty, 0) desc,
 			tabItem.item_name, tabItem.name
 		limit %(start)s, %(page_len)s """.format(
-			fcond=get_filters_cond(doctype, filters, []),
+			fcond=get_filters_cond('Bin', filters, []),
 		),
 		{
 			"today": nowdate(),
