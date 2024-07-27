@@ -141,11 +141,11 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	return frappe.db.sql(
                 """select
-                        tabItem.name as name, tabItem.description as description, COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price, COALESCE(round(sum(iw.actual_qty), 0), '0') AS available_qty, COALESCE(round(`tabStock Ledger Entry`.actual_qty, 0), '0') AS instore_qty
+                        tabItem.name as name, tabItem.description as description, COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price, COALESCE(round(iw.actual_qty, 0), '0') AS available_qty, COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
    LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.name = iw.item_code
-   LEFT OUTER JOIN `tabStock Ledger Entry` ON tabItem.name = `tabStock Ledger Entry`.item_code
+   LEFT OUTER JOIN `tabBin` ON tabItem.name = `tabBin`.item_code
    RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.name = ia.alternative_item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
@@ -159,7 +159,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
     			COALESCE(iw.actual_qty, 0) desc,
 			tabItem.item_name, tabItem.name
 		limit %(start)s, %(page_len)s """.format(
-			fcond=get_filters_cond('Stock Ledger Entry', filters, conditions).replace("%", "%%"),
+			fcond=get_filters_cond('Bin', filters, conditions).replace("%", "%%"),
 		),
 		{
 			"today": nowdate(),
