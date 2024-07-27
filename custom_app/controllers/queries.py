@@ -153,7 +153,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			and tabItem.name LIKE %(txt)s or ia.item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s
    			{fcond}
   		order by if(locate(%(_txt)s, tabItem.name), locate(%(_txt)s, tabItem.name), 99999),
-			if(locate(%(_txt)s, tabItem.item_name), locate(%(_txt)s, tabItemitem_name), 99999),
+			if(locate(%(_txt)s, tabItem.item_name), locate(%(_txt)s, tabItem.item_name), 99999),
    			tabItem.idx desc,
     			ifnull(iw.actual_qty, 0) desc,
 			tabItem.item_name, tabItem.name
