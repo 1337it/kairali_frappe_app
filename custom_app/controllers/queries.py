@@ -150,11 +150,10 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
                         and tabItem.has_variants=0
-			and (tabItem.name LIKE %(txt)s or ia.item_code LIKE %(txt)s) or tabItem.description LIKE %(txt)s
+			and tabItem.name LIKE %(txt)s or ia.item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s
    			{fcond}
-      		group by tabItem.name
   		order by tabItem.idx desc,
-			tabItem.name, tabItem.item_name
+			tabItem.code, tabItem.name
 		limit %(start)s, %(page_len)s """.format(
 			fcond=get_filters_cond('Stock Ledger Entry', filters, conditions).replace("%", "%%"),
 		),
