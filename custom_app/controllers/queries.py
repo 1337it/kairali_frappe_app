@@ -144,7 +144,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                         tabItem.name as name, tabItem.description as description, COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price, COALESCE(round(sum(iw.actual_qty), 0), '0') AS available_qty, COALESCE(round(`tabStock Ledger Entry`.actual_qty, 0), '0') AS instore_qty
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
-   FULL OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.name = iw.item_code
+   LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.name = iw.item_code
    LEFT OUTER JOIN `tabStock Ledger Entry` ON tabItem.name = `tabStock Ledger Entry`.item_code
    RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.name = ia.alternative_item_code
                 where tabItem.docstatus < 2
@@ -152,7 +152,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                         and tabItem.has_variants=0
 			and tabItem.name LIKE %(txt)s or ia.item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s
    			{fcond}
-            		group by tabItem.name, iw.actual_qty
+            		group by tabItem.name
   		order by if(locate(%(_txt)s, tabItem.name), locate(%(_txt)s, tabItem.name), 99999),
 			if(locate(%(_txt)s, tabItem.item_name), locate(%(_txt)s, tabItem.item_name), 99999),
    			tabItem.idx desc,
