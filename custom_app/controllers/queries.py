@@ -153,7 +153,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			and tabItem.name LIKE %(txt)s or ia.item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s
    			{fcond}
   		order by tabItem.idx desc,
-			tabItem.code, tabItem.name
+			tabItem.item_code, tabItem.name
 		limit %(start)s, %(page_len)s """.format(
 			fcond=get_filters_cond('Stock Ledger Entry', filters, conditions).replace("%", "%%"),
 		),
