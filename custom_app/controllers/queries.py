@@ -144,13 +144,13 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                         tabItem.name as name, tabItem.description as description, ip.price_list_rate AS retail_price, sum(iw.actual_qty) AS available_qty, `tabStock Ledger Entry`.actual_qty AS instore_qty, ia.alternative_item_code as substitute
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
-   LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.item_code = iw.item_code
-   LEFT OUTER JOIN `tabStock Ledger Entry` ON tabItem.item_code = `tabStock Ledger Entry`.item_code
-   RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.item_code = ia.item_code
+   LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.name = iw.item_code
+   LEFT OUTER JOIN `tabStock Ledger Entry` ON tabItem.name = `tabStock Ledger Entry`.item_code
+   RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.name = ia.alternative_item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
                         and tabItem.has_variants=0
-			and (tabItem.name LIKE %(txt)s or ia.item_code in ia.alternative_item_code LIKE %(txt)s) or tabItem.description LIKE %(txt)s
+			and (tabItem.name LIKE %(txt)s or ia.item_code LIKE %(txt)s) or tabItem.description LIKE %(txt)s
    			{fcond}
 		group by tabItem.item_code
 		limit %(start)s, %(page_len)s """.format(
