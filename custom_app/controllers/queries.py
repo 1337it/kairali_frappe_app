@@ -145,13 +145,12 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
    LEFT OUTER JOIN `tabBin` AS iw ON tabItem.name = iw.item_code
-   LEFT OUTER JOIN `tabBin` ON tabItem.name = `tabBin`.item_code
+   LEFT OUTER JOIN `tabBin` ON (tabItem.name = `tabBin`.item_code {fcond})
    RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.name = ia.alternative_item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
                         and tabItem.has_variants=0
 			and tabItem.name LIKE %(txt)s or ia.item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s
-   			{fcond}
             		group by tabItem.name
   		order by if(locate(%(_txt)s, tabItem.name), locate(%(_txt)s, tabItem.name), 99999),
 			if(locate(%(_txt)s, tabItem.item_name), locate(%(_txt)s, tabItem.item_name), 99999),
