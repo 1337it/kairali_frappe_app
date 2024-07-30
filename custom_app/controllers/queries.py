@@ -154,6 +154,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
    RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.name = ia.alternative_item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
+			and ip.price_list='Standard Selling'
                         and tabItem.has_variants=0
 			and tabItem.name LIKE %(txt)s or ia.item_code LIKE %(txt)s or tabItem.description LIKE %(txt)s
             		group by tabItem.name
