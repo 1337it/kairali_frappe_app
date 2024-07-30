@@ -268,7 +268,7 @@ frappe.ui.keys.add_shortcut({
     action: () => { 
 
 
-          
+        var checkmodal = $('body[data-route]').hasClass('modal-open');  
 
 
            
@@ -278,14 +278,17 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
 }
-
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+{
+var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
+}
 
             frappe.call({
                 method: 'erpnext.stock.dashboard.item_dashboard.get_data',
@@ -355,18 +358,26 @@ frappe.ui.keys.add_shortcut({
     action: () => { 
 	    	
 
+        var checkmodal = $('body[data-route]').hasClass('modal-open');  
+
+
+           
 if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
+}
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+{
+var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
             frappe.call({
                 method: 'frappe.client.get_list',
@@ -482,18 +493,26 @@ frappe.ui.keys.add_shortcut({
     shortcut: 'alt+9',
     action: () => { 
 	    	
+        var checkmodal = $('body[data-route]').hasClass('modal-open');  
+
+
+           
 if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
+}
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+{
+var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
 
             frappe.call({
@@ -615,18 +634,26 @@ frappe.ui.keys.add_shortcut({
 	    	
 
 
-                    if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
+        var checkmodal = $('body[data-route]').hasClass('modal-open');  
+
+
+           
+if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
+}
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+{
+var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
 
             frappe.call({
@@ -688,6 +715,7 @@ var dates = r.message.map(function(i) {
                                 <th>Voucher Number</th>
                                 <th>User</th>
 				<th>Rate</th>
+    				<th>Currency</th>
                                 <th>Qty</th>
 				<th>Date</th>
                                 </tr>
@@ -699,11 +727,13 @@ var dates = r.message.map(function(i) {
 			    frappe.utils.make_chart(d.$wrapper.find("#sample-chart")[0], option);
                         r.message.forEach(element => {
                             const tbody = $(d.body).find('tbody');
+				var currency = frappe.db.get_value('Purchase Invoice', i.parent, 'currency');
                             const tr = $(`
                             <tr>
                                 <td>${element.parent}</td>
                                 <td>${element.owner}</td>
 				<td>${element.rate}</td>
+    				<td>${currency}</td>
                                 <td>${element.qty}</td>
 				<td>${frappe.format(element.creation, {'fieldtype': 'Date'}) }</td>
                             </tr>
@@ -739,18 +769,26 @@ var dates = r.message.map(function(i) {
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+r',
     action: () => { 
-           if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
+        var checkmodal = $('body[data-route]').hasClass('modal-open');  
+
+
+           
+if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
+}
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+{
+var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
 
             frappe.call({
@@ -846,18 +884,26 @@ frappe.ui.keys.add_shortcut({
     action: () => { 
 
 
-         if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
+        var checkmodal = $('body[data-route]').hasClass('modal-open');  
+
+
+           
+if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order') 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
+}
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+{
+var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
 
             frappe.call({
