@@ -278,14 +278,14 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
 }
-else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' &&$('#queryitem:visible').length == 1)
 {
 var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
@@ -357,8 +357,8 @@ frappe.ui.keys.add_shortcut({
     shortcut: 'alt+7',
     action: () => { 
 	    	
-
-        var checkmodal = $('body[data-route]').hasClass('modal-open');  
+           
+     var checkmodal = $('body[data-route]').hasClass('modal-open');  
 
 
            
@@ -368,14 +368,14 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
 }
-else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' &&$('#queryitem:visible').length == 1)
 {
 var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
@@ -493,7 +493,7 @@ frappe.ui.keys.add_shortcut({
     shortcut: 'alt+9',
     action: () => { 
 	    	
-        var checkmodal = $('body[data-route]').hasClass('modal-open');  
+     var checkmodal = $('body[data-route]').hasClass('modal-open');  
 
 
            
@@ -503,14 +503,14 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
 }
-else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' &&$('#queryitem:visible').length == 1)
 {
 var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
@@ -644,14 +644,14 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
 }
-else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' &&$('#queryitem:visible').length == 1)
 {
 var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
@@ -769,7 +769,7 @@ var dates = r.message.map(function(i) {
 frappe.ui.keys.add_shortcut({
     shortcut: 'ctrl+r',
     action: () => { 
-        var checkmodal = $('body[data-route]').hasClass('modal-open');  
+     var checkmodal = $('body[data-route]').hasClass('modal-open');  
 
 
            
@@ -779,14 +779,14 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
 }
-else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' &&$('#queryitem:visible').length == 1)
 {
 var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
@@ -884,7 +884,7 @@ frappe.ui.keys.add_shortcut({
     action: () => { 
 
 
-        var checkmodal = $('body[data-route]').hasClass('modal-open');  
+      var checkmodal = $('body[data-route]').hasClass('modal-open');  
 
 
            
@@ -894,14 +894,14 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
-	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == false) 
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
 	      const curdoc = (cur_frm.doctype + " Item");
  const item_row = locals[curdoc][current_doc];
 var curr = item_row.item_code;
 }
-else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && checkmodal == true)
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' &&$('#queryitem:visible').length == 1)
 {
 var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 }
