@@ -141,7 +141,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 
 	return frappe.db.sql(
                 """select
-                        tabItem.name as name, tabItem.description as description, COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price, COALESCE(round(iw.actual_qty, 0), '0') AS available_qty, COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
+                        tabItem.name as name, tabItem.description as description,COALESCE(round(ip.custom_block_price, 0), '0') AS block_price, COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price, COALESCE(round(ip.custom_wholesale_price, 0), '0') AS wholesale_price, COALESCE(round(iw.actual_qty, 0), '0') AS available_qty, COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
    LEFT OUTER JOIN `tabBin` AS iw ON tabItem.name = iw.item_code
