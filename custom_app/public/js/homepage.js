@@ -727,7 +727,7 @@ var dates = r.message.map(function(i) {
 			    frappe.utils.make_chart(d.$wrapper.find("#sample-chart")[0], option);
                         r.message.forEach(element => {
                             const tbody = $(d.body).find('tbody');
-				var currency = frappe.db.get_value('Purchase Invoice', i.parent, 'currency');
+				var currency = frappe.db.get_value('Purchase Invoice', element.parent, 'currency');
                             const tr = $(`
                             <tr>
                                 <td>${element.parent}</td>
