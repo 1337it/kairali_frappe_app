@@ -145,7 +145,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			COALESCE(round(ip.custom_block_price, 0), '0') AS block_price,
 			COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price,
    COALESCE(round(ip.custom_wholesale_price, 0), '0') AS wholesale_price,
-   COALESCE(round(sum(iw.actual_qty), 0), '0') AS available_qty,
+   COALESCE(sum(iw.actual_qty), '0') AS available_qty,
    COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
@@ -161,7 +161,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
   		order by if(locate(%(_txt)s, tabItem.name), locate(%(_txt)s, tabItem.name), 99999),
 			if(locate(%(_txt)s, tabItem.item_name), locate(%(_txt)s, tabItem.item_name), 99999),
    			tabItem.idx desc,
-    			COALESCE(iw.actual_qty, 0) desc,
+    			COALESCE(sum(iw.actual_qty), 0) desc,
 			tabItem.item_name, tabItem.name
 		limit %(start)s, %(page_len)s """.format(
 			fcond=get_filters_cond('Bin', filters, []),
