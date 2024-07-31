@@ -83,7 +83,7 @@ background: 0!important;
 	height:30px;
 }
 
-	list-item input[type=checkbox] {
+	.list-item input[type=checkbox] {
     margin: 0;
     scale: 0;
 }
