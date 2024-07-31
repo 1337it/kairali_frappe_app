@@ -77,6 +77,15 @@ background: 0!important;
 
  
 @media (min-width: 1200px) {
+
+.list-item{
+	padding-left:0px;
+}
+
+	list-item input[type=checkbox] {
+    margin: 0;
+    scale: 0;
+}
 	.btn-modal-close {
 height: 50px;
 width: 50px;
