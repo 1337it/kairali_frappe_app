@@ -149,7 +149,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
    COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
-   LEFT OUTER JOIN `tabBin` AS iw ON tabItem.name = iw.item_code
+   LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.name = iw.item_code
    LEFT OUTER JOIN `tabBin` ON (tabItem.name = `tabBin`.item_code {fcond})
    RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.name = ia.alternative_item_code
                 where tabItem.docstatus < 2
