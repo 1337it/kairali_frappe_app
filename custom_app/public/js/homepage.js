@@ -716,6 +716,7 @@ var dates = r.message.map(function(i) {
                                 <th>User</th>
 				<th>Rate</th>
     				<th>Currency</th>
+                    <th>Supplier</th>
                                 <th>Qty</th>
 				<th>Date</th>
                                 </tr>
@@ -725,24 +726,39 @@ var dates = r.message.map(function(i) {
                             </table>
                         </div>`).appendTo(d.body);
 			    frappe.utils.make_chart(d.$wrapper.find("#sample-chart")[0], option);
+                      
                         r.message.forEach(element => {
+
+frappe.call({
+                method: 'frappe.client.get_list',
+              args :{
+              doctype: 'Purchase Invoice',
+			fields: ['supplier', 'currency'],
+                filters: [
+                    ["name", "=",  element.parent],
+                ]
+              },
+async:false,
+                callback: function(r1) {
+var currency = r1.message[0].currency;
+var supplier = r1.message[0].supplier;
+  
+              
+                            
                             const tbody = $(d.body).find('tbody');
-				var currency = frappe.db.get_value('Purchase Invoice', element.parent, 'currency');
                             const tr = $(`
                             <tr>
                                 <td>${element.parent}</td>
                                 <td>${element.owner}</td>
 				<td>${element.rate}</td>
     				<td>${currency}</td>
+                    <td>${supplier}</td>
                                 <td>${element.qty}</td>
 				<td>${frappe.format(element.creation, {'fieldtype': 'Date'}) }</td>
                             </tr>
                             `).appendTo(tbody)
-                            tbody.find('.check-warehouse').on('change', function() {
-                                $('input.check-warehouse').not(this).prop('checked', false);  
-
-
-                            });
+                }
+});
                         });
 			     frappe.ui.keys.on('escape', function() {
      d.hide();
@@ -757,7 +773,7 @@ var dates = r.message.map(function(i) {
 			    
                     }
               }
-            });     
+            });   
     },
     page: this.page,
     description: __('Purchase History'),
