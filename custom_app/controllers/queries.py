@@ -145,7 +145,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			COALESCE(round(ip.custom_block_price, 0), '0') AS block_price,
 			COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price,
    COALESCE(round(ip.custom_wholesale_price, 0), '0') AS wholesale_price,
-   (SELECT sum(`tabStock Ledger Entry`.actual_qty)
+   (SELECT COALESCE(round(sum(`tabStock Ledger Entry`.actual_qty), 0), '0')
           FROM `tabStock Ledger Entry` AS `tabStock Ledger Entry`
          WHERE `tabStock Ledger Entry`.item_code = `tabItem`.item_code) AS available_qty,
    COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
