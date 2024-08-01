@@ -3863,7 +3863,7 @@ text-align: center;
 top: 0px;
  }
 [data-route^="Workspaces"] .page-head .justify-between .page-title{
-top:17px;
+top:10px;
 
 }
 .page-title.col-md-4 {
@@ -3947,7 +3947,7 @@ z-index: 5;
 border-bottom: 1px solid var(--gray-300);
 background: var(--bg-color);
 	left: 59px;
-  top: 118px;
+  top: 120px;
 }
 
 
