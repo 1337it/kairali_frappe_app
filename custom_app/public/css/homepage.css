@@ -2706,8 +2706,7 @@ overflow-y: auto;
  border-style:solid;
  border-color:(44,62,80,0.83);
  border-width:0.5px;
-	box-shadow: 0 0 0 1px rgba(201, 201, 201, 0.69) inset,
-inset -1px -1px 1px #f0f0f0;
+	box-shadow: 1px 1px 3px #bebebe, -1px -1px 3px #ffffff;
 	background-image: url('/files/search.svg');
 background-position: 7px 7px;
 background-repeat: no-repeat;
