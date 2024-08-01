@@ -145,11 +145,12 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			COALESCE(round(ip.custom_block_price, 0), '0') AS block_price,
 			COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price,
    COALESCE(round(ip.custom_wholesale_price, 0), '0') AS wholesale_price,
-   COALESCE(round(iw.qty_after_transaction, 0), '0') AS available_qty,
+   (SELECT sum(`tabStock Ledger Entry`.actual_qty)
+          FROM `tabStock Ledger Entry` AS `tabStock Ledger Entry`
+         WHERE `tabStock Ledger Entry`.item_code = `tabItem`.item_code) AS available_qty,
    COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.item_code = ip.item_code
-   LEFT OUTER JOIN `tabStock Ledger Entry` AS iw ON tabItem.name = iw.item_code
    LEFT OUTER JOIN `tabBin` ON (tabItem.name = `tabBin`.item_code {fcond})
    RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.name = ia.alternative_item_code
                 where tabItem.docstatus < 2
