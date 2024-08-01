@@ -3888,6 +3888,7 @@ height: 100%;
 position: fixed;
 width: 100%;
 left: 48px!important;
+	top: var(--navbar-height);
 }
 
 /* Level */
