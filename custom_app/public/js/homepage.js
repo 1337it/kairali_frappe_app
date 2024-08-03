@@ -398,7 +398,7 @@ var dates = r.message.map(function(i) {
         console.log(rates);
 	
           
-
+if (r.message.length > 0){
 
 			    
                         const d = new frappe.ui.Dialog({
@@ -517,7 +517,7 @@ var dates = r.message.map(function(i) {
 
         console.log(rates);
 	
-                    if (r.message.length > 0){
+                    if (r.message.length > 0) {
 
 			        const data = {
         labels: dates,
