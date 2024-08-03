@@ -401,7 +401,7 @@ if (r.message.length > 0){
 
 			    
                         const d = new frappe.ui.Dialog({
-                            title: __('Sales History'),
+                            title: __('Pending SO for the Item'),
                             width: 400
                         });
 			
