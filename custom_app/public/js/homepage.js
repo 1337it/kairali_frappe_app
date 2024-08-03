@@ -379,11 +379,10 @@ var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
                 method: 'frappe.client.get_list',
               args :{
               doctype: 'Sales Order Item',
-		      parent: 'Sales Invoice',
+		      parent: 'Sales Order',
 			fields: ['parent', 'owner', 'qty', 'delivered_qty', 'rate', 'creation'],
                 filters: [
                     ["item_name", "=",  curr],
-			["delivered_qty", "<",  1],
                 ],
 		      order_by: 'creation desc'
               },
@@ -428,6 +427,7 @@ if (r.message.length > 0){
                         </div>`).appendTo(d.body);
 			  
                         r.message.forEach(element => {
+				if (element.delivered_qty != element.qty) {
                             const tbody = $(d.body).find('tbody');
                             const tr = $(`
                             <tr>
@@ -441,9 +441,10 @@ if (r.message.length > 0){
                             `).appendTo(tbody)
                             tbody.find('.check-warehouse').on('change', function() {
                                 $('input.check-warehouse').not(this).prop('checked', false);  
-
+			    
 
                             });
+				}
                         });
 			     frappe.ui.keys.on('escape', function() {
      d.hide();
