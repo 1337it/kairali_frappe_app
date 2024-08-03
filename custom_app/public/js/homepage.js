@@ -383,7 +383,7 @@ var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 			fields: ['parent', 'owner', 'qty', 'delivered_qty', 'rate', 'creation'],
                 filters: [
                     ["item_name", "=",  curr],
-			["delivered_qty", "!=",  'qty']
+			["delivered_qty", "!=",  qty]
                 ],
 		      order_by: 'creation desc'
               },
@@ -418,6 +418,7 @@ var dates = r.message.map(function(i) {
                                 <th>User</th>
 				<th>Rate</th>
                                 <th>Qty</th>
+				<th>Delivered Qty</th>
 				<th>Date</th>
                                 </tr>
                             </thead>
@@ -434,6 +435,7 @@ var dates = r.message.map(function(i) {
                                 <td>${element.owner}</td>
 				<td>${element.rate}</td>
                                 <td>${element.qty}</td>
+				<td>${element.delivered_qty}</td>
 				<td>${frappe.format(element.creation, {'fieldtype': 'Date'}) }</td>
                             </tr>
                             `).appendTo(tbody)
@@ -459,7 +461,7 @@ var dates = r.message.map(function(i) {
             });     
     },
     page: this.page,
-    description: __('Sales History'),
+    description: __('Sales Order per Item'),
     ignore_inputs: true,
     
 });
