@@ -152,14 +152,13 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.name = ip.item_code and ip.price_list = 'Standard Selling'
    LEFT OUTER JOIN `tabBin` ON (tabItem.name = `tabBin`.item_code {fcond})
-   RIGHT OUTER JOIN `tabItem Alternative` AS ia ON tabItem.name = ia.alternative_item_code
                 where tabItem.docstatus < 2
                         and tabItem.disabled=0
                         and tabItem.has_variants=0
-			and tabItem.name LIKE %(txt)s or tabItem.description LIKE %(txt)s or ia.item_code LIKE %(txt)s
+			and tabItem.name LIKE %(txt)s or tabItem.description LIKE %(txt)s
             		group by tabItem.name
 	      UNION SELECT concat(`tabItem Alternative`.alternative_item_code, ' (SUB)') AS name,
-       ia.description AS description,
+       (select tabItem.description from tabItem where tabItem.name = `tabItem Alternative`.alternative_item_code) AS description,
        COALESCE(round(ip.custom_block_price, 0), '0') AS block_price,
        COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price,
        COALESCE(round(ip.custom_wholesale_price, 0), '0') AS wholesale_price,
@@ -174,8 +173,6 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
     ON `tabItem Alternative`.alternative_item_code = ip.item_code and ip.price_list = 'Standard Selling'
   LEFT OUTER JOIN `tabBin`
     ON (`tabItem Alternative`.alternative_item_code = `tabBin`.item_code {fcond})
- RIGHT OUTER JOIN `tabItem` AS ia
-    ON `tabItem Alternative`.alternative_item_code = ia.item_code
  WHERE `tabItem Alternative`.item_code like %(txt)s
  GROUP BY `tabItem Alternative`.alternative_item_code
   		order by if(locate(%(_txt)s, tabItem.name), locate(%(_txt)s, tabItem.name), 99999),
