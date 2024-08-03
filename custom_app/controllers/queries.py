@@ -158,6 +158,26 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                         and tabItem.has_variants=0
 			and tabItem.name LIKE %(txt)s or tabItem.description LIKE %(txt)s or ia.item_code LIKE %(txt)s
             		group by tabItem.name
+	      UNION SELECT concat(`tabItem Alternative`.alternative_item_code, ' (SUB)') AS name,
+       ia.description AS description,
+       COALESCE(round(ip.custom_block_price, 0), '0') AS block_price,
+       COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price,
+       COALESCE(round(ip.custom_wholesale_price, 0), '0') AS wholesale_price,
+       (
+        SELECT COALESCE(round(sum(`tabStock Ledger Entry`.actual_qty), 0), '0')
+          FROM `tabStock Ledger Entry` AS `tabStock Ledger Entry`
+         WHERE `tabStock Ledger Entry`.item_code = `tabItem Alternative`.item_code
+       ) AS available_qty,
+       COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
+  FROM `tabItem Alternative`
+  LEFT OUTER JOIN `tabItem Price` AS ip
+    ON `tabItem Alternative`.alternative_item_code = ip.item_code and ip.price_list = 'Standard Selling'
+  LEFT OUTER JOIN `tabBin`
+    ON (`tabItem Alternative`.alternative_item_code = `tabBin`.item_code {fcond})
+ RIGHT OUTER JOIN `tabItem` AS ia
+    ON `tabItem Alternative`.alternative_item_code = ia.item_code
+ WHERE `tabItem Alternative`.item_code like %(txt)s
+ GROUP BY `tabItem Alternative`.alternative_item_code
   		order by if(locate(%(_txt)s, tabItem.name), locate(%(_txt)s, tabItem.name), 99999),
 			if(locate(%(_txt)s, tabItem.item_name), locate(%(_txt)s, tabItem.item_name), 99999),
    			tabItem.idx desc,
