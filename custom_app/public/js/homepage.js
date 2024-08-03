@@ -695,7 +695,7 @@ var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
               args :{
               doctype: 'Purchase Order Item',
 		      parent: 'Purchase Order',
-			fields: ['company', 'parent', 'owner', 'qty', 'received_qty', 'rate', 'creation'],
+			fields: ['parent', 'owner', 'qty', 'received_qty', 'rate', 'creation'],
                 filters: [
                     ["item_name", "=",  curr],
                 ],
@@ -769,7 +769,7 @@ frappe.call({
                 method: 'frappe.client.get_list',
               args :{
               doctype: 'Purchase Invoice',
-			fields: ['supplier', 'currency'],
+			fields: ['supplier', 'currency', 'company'],
                 filters: [
                     ["name", "=",  element.parent],
                 ]
@@ -778,13 +778,11 @@ async:false,
                 callback: function(r1) {
 var currency = r1.message[0].currency;
 var supplier = r1.message[0].supplier;
-  
-              
-                            
+			var company = r1.message[0].company;
                             const tbody = $(d.body).find('tbody');
                             const tr = $(`
                             <tr>
-			    <td>${element.company}</td>
+			    <td>${company}</td>
                                 <td>${element.parent}</td>
                                 <td>${element.owner}</td>
 				<td>${element.rate}</td>
