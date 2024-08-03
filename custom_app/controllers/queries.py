@@ -175,11 +175,6 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
     ON (`tabItem Alternative`.alternative_item_code = `tabBin`.item_code {fcond})
  WHERE `tabItem Alternative`.item_code like %(txt)s
  GROUP BY `tabItem Alternative`.alternative_item_code
-  		order by if(locate(%(_txt)s, tabItem.name), locate(%(_txt)s, tabItem.name), 99999),
-			if(locate(%(_txt)s, tabItem.item_name), locate(%(_txt)s, tabItem.item_name), 99999),
-   			tabItem.idx desc,
-      			`tabBin`.actual_qty desc,
-			tabItem.item_name, tabItem.name
 		limit %(start)s, %(page_len)s """.format(
 			fcond=get_filters_cond('Bin', filters, []),
 		),
