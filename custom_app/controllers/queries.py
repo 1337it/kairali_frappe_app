@@ -148,7 +148,8 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
    (SELECT COALESCE(round(sum(`tabStock Ledger Entry`.actual_qty), 0), '0')
           FROM `tabStock Ledger Entry` AS `tabStock Ledger Entry`
          WHERE `tabStock Ledger Entry`.item_code = `tabItem`.item_code) AS available_qty,
-   COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
+   COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty,
+   1 as row
 			from tabItem
    LEFT OUTER JOIN `tabItem Price` AS ip ON tabItem.name = ip.item_code and ip.price_list = 'Standard Selling'
    LEFT OUTER JOIN `tabBin` ON (tabItem.name = `tabBin`.item_code {fcond})
@@ -167,7 +168,8 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
           FROM `tabStock Ledger Entry` AS `tabStock Ledger Entry`
          WHERE `tabStock Ledger Entry`.item_code = `tabItem Alternative`.item_code
        ) AS available_qty,
-       COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty
+       COALESCE(round(`tabBin`.actual_qty, 0), '0') AS instore_qty,
+       2 as row
   FROM `tabItem Alternative`
   LEFT OUTER JOIN `tabItem Price` AS ip
     ON `tabItem Alternative`.alternative_item_code = ip.item_code and ip.price_list = 'Standard Selling'
@@ -175,7 +177,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
     ON (`tabItem Alternative`.alternative_item_code = `tabBin`.item_code {fcond})
  WHERE `tabItem Alternative`.item_code like %(txt)s
  GROUP BY `tabItem Alternative`.alternative_item_code
- ORDER BY tabItem.item_name
+ ORDER BY row
 		limit %(start)s, %(page_len)s """.format(
 			fcond=get_filters_cond('Bin', filters, []),
 		),
