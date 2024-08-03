@@ -157,7 +157,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
                         and tabItem.has_variants=0
 			and tabItem.name LIKE %(txt)s or tabItem.description LIKE %(txt)s
             		group by tabItem.name
-	      UNION SELECT concat(`tabItem Alternative`.alternative_item_code, ' (SUB)') AS name,
+	      UNION ALL SELECT concat(`tabItem Alternative`.alternative_item_code, ' (SUB)') AS name,
        (select tabItem.description from tabItem where tabItem.name = `tabItem Alternative`.alternative_item_code) AS description,
        COALESCE(round(ip.custom_block_price, 0), '0') AS block_price,
        COALESCE(round(ip.price_list_rate, 0), '0') AS retail_price,
@@ -175,6 +175,7 @@ def item_query(doctype, txt, searchfield, start, page_len, filters, as_dict=Fals
     ON (`tabItem Alternative`.alternative_item_code = `tabBin`.item_code {fcond})
  WHERE `tabItem Alternative`.item_code like %(txt)s
  GROUP BY `tabItem Alternative`.alternative_item_code
+ ORDER BY tabItem.name
 		limit %(start)s, %(page_len)s """.format(
 			fcond=get_filters_cond('Bin', filters, []),
 		),
