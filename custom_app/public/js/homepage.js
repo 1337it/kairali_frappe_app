@@ -383,7 +383,7 @@ var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
 			fields: ['parent', 'owner', 'qty', 'delivered_qty', 'rate', 'creation'],
                 filters: [
                     ["item_name", "=",  curr],
-			["delivered_qty", ">",  0],
+			["delivered_qty", "<",  1],
                 ],
 		      order_by: 'creation desc'
               },
