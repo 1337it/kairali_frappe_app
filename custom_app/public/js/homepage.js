@@ -348,6 +348,121 @@ $('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus()
 });
 
 
+frappe.ui.keys.add_shortcut({
+	description: "Pending SO of an Item",
+    shortcut: 'alt+1',
+    action: () => { 
+	    	
+           
+     var checkmodal = $('body[data-route]').hasClass('modal-open');  
+
+
+           
+if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
+{
+
+var curr = $('.list-row-container:focus [data-name]').attr('data-name');
+	
+}
+	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
+{
+const current_doc = $('.data-row.editable-row').parent().attr("data-name");
+	      const curdoc = (cur_frm.doctype + " Item");
+ const item_row = locals[curdoc][current_doc];
+var curr = item_row.item_code;
+}
+else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' &&$('#queryitem:visible').length == 1)
+{
+var curr = $('.modal input[type=checkbox]:checked').attr('data-item-name');
+}
+            frappe.call({
+                method: 'frappe.client.get_list',
+              args :{
+              doctype: 'Sales Order Item',
+		      parent: 'Sales Invoice',
+			fields: ['parent', 'owner', 'qty', 'delivered_qty', 'rate', 'creation'],
+                filters: [
+                    ["item_name", "=",  curr],
+			["delivered_qty", "!=",  'qty']
+                ],
+		      order_by: 'creation desc'
+              },
+                callback: function(r) {
+var rates = r.message.map(function(i) {
+  return i.rate;
+});
+var dates = r.message.map(function(i) {
+  return i.creation;
+});
+
+        console.log(rates);
+	
+          
+
+
+			    
+                        const d = new frappe.ui.Dialog({
+                            title: __('Sales History'),
+                            width: 400
+                        });
+			
+                        $(`
+       <div class="modal-body ui-front">
+        <div id="sample-chart">
+                </div>
+                            <h2>${curr}</h2>
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <th>Voucher Number</th>
+                                <th>User</th>
+				<th>Rate</th>
+                                <th>Qty</th>
+				<th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                            </table>
+                        </div>`).appendTo(d.body);
+			  
+                        r.message.forEach(element => {
+                            const tbody = $(d.body).find('tbody');
+                            const tr = $(`
+                            <tr>
+                                <td>${element.parent}</td>
+                                <td>${element.owner}</td>
+				<td>${element.rate}</td>
+                                <td>${element.qty}</td>
+				<td>${frappe.format(element.creation, {'fieldtype': 'Date'}) }</td>
+                            </tr>
+                            `).appendTo(tbody)
+                            tbody.find('.check-warehouse').on('change', function() {
+                                $('input.check-warehouse').not(this).prop('checked', false);  
+
+
+                            });
+                        });
+			     frappe.ui.keys.on('escape', function() {
+     d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+});
+                        d.set_primary_action("Close", function() {
+       d.hide();
+				$('[data-name="'+curr+'"]').parent().parent().parent().parent().parent().focus();
+                        });
+                        d.show();  
+                         d.$wrapper.find('.modal-dialog').css("width", "90%");
+			    
+                    }
+              }
+            });     
+    },
+    page: this.page,
+    description: __('Sales History'),
+    ignore_inputs: true,
+    
+});
 
 
 
@@ -484,6 +599,7 @@ var dates = r.message.map(function(i) {
     ignore_inputs: true,
     
 });
+
 
 
 
