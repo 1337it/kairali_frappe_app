@@ -78,6 +78,75 @@ background: 0!important;
  
 @media (min-width: 1200px) {
 
+	    .btn[data-fieldname="more_btn"] {
+        border-radius: 1px;
+        width: 100%;
+        background-color: #e1ecf4;
+        background-color: #fff;
+        /* border: 1px solid #d5d9d9; */
+        border-radius: 0;
+        box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+        box-sizing: border-box;
+        color: #0f1111;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Amazon Ember", sans-serif;
+        font-size: 13px;
+        line-height: 29px;
+        padding: 0 10px 0 11px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: middle;
+        width: 100%;
+        background-image: linear-gradient(#ffffff73, #f3f3f375);
+        margin-top: -20px;
+        box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+    }
+}
+
+#queryitem .form-group {
+    margin-bottom: 0;
+}
+
+#queryitem .modal-dialog
+{
+	max-width:70vw;
+}
+
+	#queryitem .help-box {
+    margin-top: 4px;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    display: none;
+}
+	#queryitem .modal-body{
+		padding:0px!important;
+	}
+
+	#queryitem .modal-header
+{display:none;
+}
+
+
+	#queryitem .modal .form-section{
+		padding:0;
+	}
+#queryitem .results {
+margin:0!important;
+}
+
+
+
+
+	queryitem .tooltip-content {
+    display: none;
+}
+
+
 .list-item{
 	padding-left:0px;
 	height:30px;
@@ -99,17 +168,33 @@ padding-left: 30px;
 	[data-fieldname="search_term"] .clearfix .control-label {
 font-size:20px;
 	}
+.list-item--head {
+    background-color: var(--dt-border-color);
+    border-bottom: none;
+    cursor: auto;
+}
 
+.list-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 40px;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .02em;
+    color: var(--charts-tooltip-label);
+}
 
     .modal .control-input [data-fieldname="search_term"] {
-        height: 40px;
+     height: 50px;
         border-radius: 1px;
         background-image: url(/files/search.svg);
-        background-position: 14px 13px;
+        background-position: 18px 13px;
         background-repeat: no-repeat;
-        background-size: 16px 16px;
+        background-size: 18px 26px;
         font-size: 20px;
-        padding-left: 50px;
+        padding-left: 54px;
     }
 
 	.modal .form-column.col-sm-4 {
