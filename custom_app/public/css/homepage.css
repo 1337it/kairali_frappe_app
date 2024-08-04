@@ -78,6 +78,18 @@ background: 0!important;
  
 @media (min-width: 1200px) {
 
+	.list-item input[type=checkbox] {
+margin: 0;
+scale: 0;
+}
+
+	.list-item__content {
+flex: 1;
+margin-right: 0;
+display: flex;
+align-items: center;
+}
+
 	    .btn[data-fieldname="more_btn"] {
         border-radius: 1px;
         width: 100%;
@@ -103,8 +115,8 @@ background: 0!important;
         vertical-align: middle;
         width: 100%;
         background-image: linear-gradient(#ffffff73, #f3f3f375);
-        margin-top: -20px;
-        box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
+       
+        border: 1px solid rgba(128, 128, 128, 0.42);
     }
 }
 
@@ -163,7 +175,7 @@ font-size:20px;
     align-items: center;
     cursor: pointer;
     height: 40px;
-    padding-left: 15px;
+    padding-left: 0px;
     font-size: 15px;
     font-weight: 400;
     letter-spacing: .02em;
@@ -173,13 +185,14 @@ font-size:20px;
     .modal .control-input [data-fieldname="search_term"] {
      height: 50px;
         border-radius: 1px;
-        background-image: url(/files/search.svg);
-        background-position: 18px 13px;
-        background-repeat: no-repeat;
-        background-size: 18px 26px;
-        font-size: 20px;
-        padding-left: 54px;
-	      box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+background-image: url(/files/search.svg);
+background-position: 14px 10px;
+background-repeat: no-repeat;
+background-size: 18px 26px;
+font-size: 20px;
+padding-left: 50px;
+box-shadow: none;
+border: 1px solid rgba(128, 128, 128, 0.42);
 
     }
 
