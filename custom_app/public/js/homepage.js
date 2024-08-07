@@ -403,6 +403,12 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
+	else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Item') 
+{
+
+var curr = $('[data-page-route="Item"] .ellipsis.title-text').attr('title');
+	
+}
 	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
@@ -539,6 +545,12 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
+	else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Item') 
+{
+
+var curr = $('[data-page-route="Item"] .ellipsis.title-text').attr('title');
+	
+}
 	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
@@ -671,11 +683,16 @@ frappe.ui.keys.add_shortcut({
         var checkmodal = $('body[data-route]').hasClass('modal-open');  
 
 
-           
 if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item') 
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
+	
+}
+	else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Item') 
+{
+
+var curr = $('[data-page-route="Item"] .ellipsis.title-text').attr('title');
 	
 }
 	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
@@ -835,6 +852,12 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
+	else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Item') 
+{
+
+var curr = $('[data-page-route="Item"] .ellipsis.title-text').attr('title');
+	
+}
 	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
@@ -986,6 +1009,12 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
 	
 }
+	else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Item') 
+{
+
+var curr = $('[data-page-route="Item"] .ellipsis.title-text').attr('title');
+	
+}
 	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
 {
 const current_doc = $('.data-row.editable-row').parent().attr("data-name");
@@ -1099,6 +1128,12 @@ if (frappe.get_route()[0] == 'List' && frappe.get_route()[1] == 'Item')
 {
 
 var curr = $('.list-row-container:focus [data-name]').attr('data-name');
+	
+}
+	else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Item') 
+{
+
+var curr = $('[data-page-route="Item"] .ellipsis.title-text').attr('title');
 	
 }
 	    else if (frappe.get_route()[0] == 'Form' && frappe.get_route()[1] == 'Sales Order' && $('#queryitem:visible').length != 1) 
