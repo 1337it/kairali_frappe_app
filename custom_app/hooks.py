@@ -16,7 +16,6 @@ app_include_js = "/assets/custom_app/js/homepage.js"
 
 
 # include js, css files in header of web template
-web_include_css = "/assets/custom_app/css/custom_app.css"
 web_include_css = "/assets/custom_app/css/homepage.css"
 web_include_js = "/assets/custom_app/js/homepage.js"
 
@@ -29,7 +28,6 @@ web_include_js = "/assets/custom_app/js/homepage.js"
 # webform_include_css = {"doctype": "public/css/custom_app.css"}
 
 # include js in page
-page_js = {"page" : "public/js/page.js"}
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
@@ -115,9 +113,6 @@ home_page = "index"
 # }
 # hooks.py
 
-override_whitelisted_methods = {
-	"erpnext.controllers.queries.item_query": "custom_app.controllers.queries.item_query"
-}
 # Document Events
 # ---------------
 # Hook on document methods and events
