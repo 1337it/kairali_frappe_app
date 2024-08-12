@@ -2,7 +2,7 @@
 
 .layout-main-section {
 background-image: url("/files/jf.jpg")!important;
-padding-top: 150px!important;
+padding-top: 80px!important;
 padding-left: 20px!important;
 padding-right: 20px!important;
 background-repeat: no-repeat;
@@ -39,6 +39,73 @@ height: 22px!important;
 }
 
 
+[data-page-route=Workspaces] .layout-main-section
+	{
+		border-radius:0!important;
+	}
+
+
+.widget.shortcut-widget-box {
+cursor: pointer;
+padding: 10px 7px;
+align-items: center;
+}
+
+
+
+[data-page-route=Workspaces] .codex-editor .codex-editor__redactor .ce-block .ce-block__content .widget.spacer {
+height: 18px!important;
+background-color: transparent;
+}
+
+
+.widget.links-widget-box {
+padding: 20px;
+background-color: transparent;
+text-align: center;
+border: 1px solid #ffffff;
+}
+
+
+.widget.links-widget-box .link-item {
+display: flex;
+text-decoration: none;
+font-size: var(--text-base);
+font-weight: var(--weight-regular);
+letter-spacing: .02em;
+color: var(--text-color);
+padding: 4px;
+margin-left: -4px;
+margin-bottom: 15px;
+border-radius: var(--border-radius-md);
+cursor: pointer;
+background-color: rgba(255, 255, 255, 0.66);
+}
+
+.widget {
+display: flex;
+flex-direction: column;
+min-height: 1px;
+padding: 7px;
+border-radius: 1px;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.6);
+-webkit-backdrop-filter: blur(5px);
+}	
+
+
+:root
+{
+	overscroll-behavior: none;
+}
+
+*::-webkit-scrollbar {
+background-color: var(--scrollbar-thumb-color);
+border-radius: 0;
+display: none;
+scrollbar-width: 0!important;
+scrollbar-width: thin;
+}	
 
 	
 }
