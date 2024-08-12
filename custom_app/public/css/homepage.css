@@ -9,6 +9,12 @@ margin-right: auto;
 margin-left: auto;
 }
 
+.page-head .page-head-content {
+height: var(--page-head-height);
+padding: 6px 6px;
+}
+
+	
 
 .form-tabs-list {
 border-radius: 0;
@@ -69,8 +75,7 @@ background: rgba(255, 255, 255, 0);
 margin-bottom: 5px;
 transition: .5s top;
 width: 100%;
-padding-left: 19px;
-padding-right: 19px;
+
 }
 
 	.icon-md {
