@@ -9,9 +9,17 @@ margin-right: auto;
 margin-left: auto;
 }
 
-.page-head .page-head-content {
-height: var(--page-head-height);
-padding: 6px 6px;
+.page-title {
+display: flex;
+align-items: center;
+padding: 5px;
+}
+
+	.row, .dialog-assignment-row, .form-section .section-body, .form-dashboard-section .section-body {
+display: flex;
+flex-wrap: wrap;
+margin-right: 0px;
+margin-left: 0px;
 }
 
 	
@@ -154,5 +162,11 @@ scrollbar-width: 0!important;
 scrollbar-width: thin;
 }	
 
+.std-form-layout>.form-layout>.form-page {
+border-radius: 0;
+border: none;
+box-shadow: none;
+background-color: var(--card-bg);
+}	
 	
 }
