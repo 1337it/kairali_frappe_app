@@ -9,6 +9,17 @@ margin-right: auto;
 margin-left: auto;
 }
 
+.editable-form .page-head {
+z-index: 6;
+position: sticky;
+top: var(--navbar-height);
+background: rgba(255, 255, 255, 0);
+margin-bottom: 5px;
+transition: .5s top;
+width: 100%;
+}
+
+	
 .editable-form .layout-main-section {
 background-image: url("/files/jf.jpg")!important;
 padding-top: 0px!important;
@@ -23,7 +34,6 @@ background-color: rgb(255, 255, 255)!important;
 .page-head .page-head-content {
 height: var(--page-head-height);
 padding: 8px 0;
-width: 100vw;
 }	
 
 	
