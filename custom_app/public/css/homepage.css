@@ -1,7 +1,7 @@
 @media screen and (max-width: 567px) {
 
 
-[data-theme="dark"] .layout-main-section {
+[data-theme="dark"] [data-route^="Workspaces/"] .layout-main-section {
 background-image: url("/files/jj-d.jpg")!important;
 padding-top: 80px!important;
 padding-left: 20px!important;
@@ -10,7 +10,12 @@ background-repeat: no-repeat;
 background-size: contain;
 background-color:#12161b!important;
 }
-	
+	[data-theme="dark"] .layout-main-section {
+
+padding-top: 80px!important;
+padding-left: 20px!important;
+padding-right: 20px!important;
+}
 
 .container.page-body {
 width: 100%;
@@ -67,7 +72,7 @@ padding: 8px 0;
 }	
 
 	
-.layout-main-section {
+[data-route^="Workspaces/"] .layout-main-section {
 background-image: url("/files/jf.jpg")!important;
 padding-top: 80px!important;
 padding-left: 20px!important;
@@ -75,6 +80,12 @@ padding-right: 20px!important;
 background-repeat: no-repeat;
 background-size: contain;
 background-color: rgb(240, 240, 240)!important;
+}
+	.layout-main-section {
+
+padding-top: 80px!important;
+padding-left: 20px!important;
+padding-right: 20px!important;
 }
 
 
