@@ -1,6 +1,9 @@
 @media screen and (max-width: 567px) {
 
-
+.form-control {
+height: 40px;
+}
+	
 [data-theme="dark"] [data-route^="Workspaces/"] .layout-main-section {
 background-image: url("/files/jj-d.jpg")!important;
 padding-top: 80px!important;
