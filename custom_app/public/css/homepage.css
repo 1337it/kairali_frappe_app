@@ -2,9 +2,24 @@
 .raven-container[data-open-state=false] .raven-header .open-raven-button {
 display: none!important;
 }
-
+	
+.raven-chat {
+position: fixed;
+width: var(--raven-content-width);
+background-color: rgba(255, 255, 255, 0.53);
+box-shadow: var(--shadow-md);
+border-top: 1px solid var(--border-color);
+border-left: 1px solid var(--border-color);
+border-right: 1px solid var(--border-color);
+overflow-x: hidden;
+z-index: 1000;
+bottom: 0;
+border-top-right-radius: var(--border-radius-md);
+border-top-left-radius: var(--border-radius-md);
+left: 0px;
+}
 .raven-container[data-open-state=false] {
-height: 55px;
+height: 55px!important;
 overflow: hidden;
 position: fixed;
 right: 40px;
@@ -13,13 +28,13 @@ bottom: 40px;
 }
 	.raven-logo {
 font-weight: 700;
-font-size: 0;
+font-size: 0!important;
 color: var(--heading-color);
 padding-right: 4px;
 background-image: url('/files/chat-k.png');
 background-size: cover;
-width: 36px;
-height: 36px;
+width: 30px;
+height: 30px;
 opacity: 0.5;
 }
 
