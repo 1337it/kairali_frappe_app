@@ -3,7 +3,7 @@
 display: none!important;
 }
 .raven-container {
-transition: --webkit-backkdrop-filter, height 0.05s ease!important;
+transition: --webkit-backkdrop-filter, height 0.1s ease!important;
 }
 	.raven-container[data-open-state=true] {
 transition: height .1s ease;
