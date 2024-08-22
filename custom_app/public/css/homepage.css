@@ -19,7 +19,6 @@ border-right: 1px solid var(--border-color);
 overflow-x: hidden;
 z-index: 1000;
 bottom: 0;
-	top:100px!important;
 border-top-right-radius: var(--border-radius-md);
 border-top-left-radius: var(--border-radius-md);
 left: 0px!important;
