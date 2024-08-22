@@ -1,7 +1,46 @@
 @media screen and (max-width: 567px) {
+.raven-container[data-open-state=false] .raven-header .open-raven-button {
+display: none!important;
+}
+.raven-container[data-open-state=false] {
+height: 55px;
+overflow: hidden;
+width: 55px;
+opacity: .5;
+}
 
+
+
+
+	.raven-container[data-open-state=false] .raven-header .back-button {
+display: none;
+}
 .form-control {
 height: 40px;
+}
+
+.raven-container[data-open-state=false] .raven-header {
+height: var(--raven-header-height);
+padding-inline: 0;
+display: block;
+align-items: non;
+justify-content: non;
+padding-block: 0;
+width: 55px;
+height: 55px;
+background: transparent;
+}
+
+
+	.raven-container[data-open-state=false] .raven-logo {
+font-weight: 700;
+font-size: 0;
+color: var(--heading-color);
+padding-right: 4px;
+background-image: url('/files/chat-k.png');
+background-size: cover;
+width: 55px;
+height: 55px;
 }
 	
 [data-theme="dark"] [data-route^="Workspaces/"] .layout-main-section {
