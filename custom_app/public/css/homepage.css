@@ -2,11 +2,16 @@
 .raven-container[data-open-state=false] .raven-header .open-raven-button {
 display: none!important;
 }
-	
+	.raven-container {
+transition: height .05s ease!important;
+}
+	.raven-container[data-open-state=true] {
+transition: height .1s ease;
+}
 .raven-chat {
 position: fixed;
-width: var(--raven-content-width);
-background-color: rgba(255, 255, 255, 0.53);
+width: var(--raven-content-width)!important;
+background-color: rgba(255, 255, 255, 0.53)!important;
 box-shadow: var(--shadow-md);
 border-top: 1px solid var(--border-color);
 border-left: 1px solid var(--border-color);
@@ -14,9 +19,10 @@ border-right: 1px solid var(--border-color);
 overflow-x: hidden;
 z-index: 1000;
 bottom: 0;
+	top:100px!important;
 border-top-right-radius: var(--border-radius-md);
 border-top-left-radius: var(--border-radius-md);
-left: 0px;
+left: 0px!important;
 }
 .raven-container[data-open-state=false] {
 height: 55px!important;
