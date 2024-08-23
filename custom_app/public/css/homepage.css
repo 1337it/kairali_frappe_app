@@ -8,9 +8,7 @@ transition: --webkit-backkdrop-filter, height 0.1s ease!important;
 	.raven-container[data-open-state=true] {
 transition: height .1s ease;
 }
-	.navbar {
-overflow: hidden;
-}
+
 .raven-chat {
 position: fixed;
 width: var(--raven-content-width)!important;
