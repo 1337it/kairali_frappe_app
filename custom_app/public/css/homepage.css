@@ -8,7 +8,13 @@ transition: --webkit-backkdrop-filter, height 0.1s ease!important;
 	.raven-container[data-open-state=true] {
 transition: height .1s ease;
 }
-
+.rt-r-position-fixed {
+display: none!important;
+}
+.rt-r-fd-row {
+flex-direction: row;
+display: none;
+}
 .raven-chat {
 position: fixed;
 width: var(--raven-content-width)!important;
