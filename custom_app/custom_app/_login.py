@@ -1,3 +1,7 @@
+import frappe
+
+
+
 import json
 from pathlib import Path
 
@@ -11,7 +15,7 @@ from findmy.reports import (
 )
 
 ACCOUNT_STORE = "account.json"
-
+@frappe.whitelist(allow_guest=True)
 
 def _login_sync(account: AppleAccount) -> None:
     email = input("email?  > ")
