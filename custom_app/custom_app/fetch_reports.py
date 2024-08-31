@@ -1,3 +1,4 @@
+import frappe
 import logging
 import sys
 
@@ -11,6 +12,9 @@ ANISETTE_SERVER = "http://localhost:6969"
 
 logging.basicConfig(level=logging.INFO)
 
+
+
+@frappe.whitelist(allow_guest=True)
 
 def fetch_reports(priv_key: str) -> int:
     key = KeyPair.from_b64(priv_key)
