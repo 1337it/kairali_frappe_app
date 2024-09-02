@@ -11,6 +11,16 @@ transition: height .1s ease;
 .rt-r-position-fixed {
 display: none!important;
 }
+	.indicator-pill, .indicator-pill-right {
+font-size: var(--text-sm);
+font-weight: var(--weight-regular);
+letter-spacing: 0.02em;
+padding: 4.5px 8px;
+border-radius: 0;
+/* height: 20px; */
+background-color: transparent !important;
+/* color: darkcyan !important; */
+}
 .rt-r-fd-row {
 flex-direction: row;
 display: none;
@@ -21,6 +31,12 @@ white-space: wrap!important;
 
 	[data-page-route=Workspaces] .icon-xs {
 display: none;
+}
+	.widget.shortcut-widget-box {
+cursor: pointer;
+padding: 15px 10px;
+align-items: start;
+justify-content: center;
 }
 .raven-chat {
 position: fixed;
