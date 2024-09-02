@@ -2,6 +2,10 @@
 .raven-container[data-open-state=false] .raven-header .open-raven-button {
 display: none!important;
 }
+	.col-sm-6 {
+flex-wrap: 0 0 33%!important;
+max-width: 33%!important;
+}
 .raven-container {
 transition: --webkit-backkdrop-filter, height 0.1s ease!important;
 }
