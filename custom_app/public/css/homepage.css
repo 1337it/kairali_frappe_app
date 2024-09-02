@@ -15,6 +15,13 @@ display: none!important;
 flex-direction: row;
 display: none;
 }
+	.ellipsis {
+white-space: wrap!important;
+}
+
+	[data-page-route=Workspaces] .icon-xs {
+display: none;
+}
 .raven-chat {
 position: fixed;
 width: var(--raven-content-width)!important;
@@ -37,6 +44,17 @@ position: fixed;
 right: 40px;
 bottom: 40px;
 	opacity: .5;
+}
+	.widget.shortcut-widget-box {
+cursor: pointer;
+padding: 10px 7px;
+align-items: start;
+}
+	.col-sm-6 {
+
+flex: 0 0 50%!important;
+max-width: 50%!important;
+/* text-wrap: wrap; */
 }
 	.raven-logo {
 font-weight: 700;
