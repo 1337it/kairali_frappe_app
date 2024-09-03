@@ -26,7 +26,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 /* justify-content: center; */
-background: rgba(255, 255, 255, 0.48);
+background: rgba(255, 255, 255, 0.8);
 /* border-radius: 15px; */
 box-shadow: 20px 20px 15px 0 #ababab4d;
 /* cursor: pointer; */
@@ -34,7 +34,7 @@ box-shadow: 20px 20px 15px 0 #ababab4d;
 /* align-items: center; */
 border-radius: 10px;
 min-height: 60px;
-border: 1px solid var(--dark-border-color);
+border: 1px solid #ffffff;
 -webkit-backdrop-filter: blur(10px);
 }
 	.indicator-pill, .indicator-pill-right {
@@ -67,9 +67,9 @@ display: none;
 }
 	.widget.shortcut-widget-box {
 cursor: pointer;
-padding: 15px 10px!important;
+padding: 12px 12px!important;
 align-items: start!important;
-justify-content: center;
+justify-content: start;
 }
 .raven-chat {
 position: fixed;
