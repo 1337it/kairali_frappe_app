@@ -64,7 +64,7 @@ display: none;
 	.widget.shortcut-widget-box {
 cursor: pointer;
 padding: 15px 10px!important;
-align-items: start;
+align-items: start!important;
 justify-content: center;
 }
 .raven-chat {
@@ -97,9 +97,9 @@ display: flex;
 flex-direction: column;
 align-items: center;
 /* justify-content: center; */
-background: rgba(255, 255, 255, 0.48);
+background: rgba(255, 255, 255, 0.8);
 /* border-radius: 15px; */
-box-shadow: 20px 20px 15px 0 #ababab4d;
+box-shadow: 10px 10px 14px 0 #ababab4d;
 /* cursor: pointer; */
 /* padding: 10px 7px; */
 /* align-items: center; */
@@ -108,6 +108,21 @@ min-height: 60px;
 border: 1px solid var(--dark-border-color);
 -webkit-backdrop-filter: blur(10px);
 }
+	.form-tabs-list {
+border-radius: 0!important;
+position: fixed!important;
+bottom: 0!important;
+width: 100%!important;
+		background-color: rgba(255, 255, 255, 0.35)!important;
+		-webkit-backdrop-filter: blur(10px)!important;
+/* left: 5%; */
+}
+.widget {
+
+box-shadow: 10px 10px 14px 0 #ababab4d;
+
+}
+	
 	.raven-logo {
 font-weight: 700;
 font-size: 0!important;
