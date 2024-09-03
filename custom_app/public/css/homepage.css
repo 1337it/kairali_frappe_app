@@ -55,7 +55,7 @@ display: none;
 }
 	.ellipsis {
 white-space: wrap!important;
-		text-align: center;
+		text-align: start;
 }
 
 	[data-page-route=Workspaces] .icon-xs {
