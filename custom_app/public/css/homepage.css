@@ -114,13 +114,11 @@ border: 1px solid var(--dark-border-color);
 }
 	.form-tabs-list {
 border-radius: 0!important;
-position: fixed!important;
-bottom: 0!important;
 width: 100%!important;
 		
 		left: 0;
 height: 50px!important;
-background: rgba(255, 255, 255, 0.48)!important;
+background: rgba(255, 255, 255, 0.8)!important;
 /* border-radius: 15px; */
 box-shadow: 0 2px 15px 0 #ababab4d;
 /* cursor: pointer; */
@@ -129,19 +127,11 @@ box-shadow: 0 2px 15px 0 #ababab4d;
 
 /* min-height: 60px; */
 border: 1px solid var(--dark-border-color);
-
+-webkit-backdrop-filter: blur(10px);
 /* left: 5%; */
 }
 
-.form-tabs-sticky-down {
-position: fixed!important;
-bottom: 0!important;
-}
-.form-tabs-sticky-up {
-position: fixed!important;
-bottom: 0!important;
-}
-	
+
 .widget {
 
 box-shadow: 10px 10px 14px 0 #ababab4d;
@@ -266,7 +256,7 @@ background-color: rgb(255, 255, 255)!important;
 
 
 .page-head .page-head-content {
-height: var(--page-head-height);
+height: 50px;
 padding: 8px 0;
 }	
 
