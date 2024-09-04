@@ -6,6 +6,7 @@ display: none!important;
 flex-wrap: 0 0 33%!important;
 max-width: 33%!important;
 }
+	
 .page-head .ellipsis {
 white-space: nowrap!important;
 text-align: left;
@@ -118,19 +119,21 @@ width: 100%!important;
 		
 		left: 0;
 height: 50px!important;
-background: rgba(255, 255, 255, 0.8)!important;
+background: rgba(255, 255, 255, 0)!important;
 /* border-radius: 15px; */
-box-shadow: 0 2px 15px 0 #ababab4d;
+box-shadow: none;
 /* cursor: pointer; */
 /* padding: 10px 7px; */
 /* align-items: center; */
 
 /* min-height: 60px; */
-border: 1px solid var(--dark-border-color);
+border:none;
 -webkit-backdrop-filter: blur(10px);
 /* left: 5%; */
 }
-
+.col.layout-main-section-wrapper {
+	padding:0!important;
+}
 
 .widget {
 
@@ -241,6 +244,7 @@ background: rgba(255, 255, 255, 0);
 margin-bottom: 5px;
 transition: .5s top;
 width: 100%;
+	-webkit-backdrop-filter: blur(10px);
 }
 
 	
