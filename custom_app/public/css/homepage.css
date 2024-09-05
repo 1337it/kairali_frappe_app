@@ -6,7 +6,10 @@ display: none!important;
 flex-wrap: 0 0 33%!important;
 max-width: 33%!important;
 }
-	
+.col.layout-main-section-wrapper {
+padding-left: 0.1px !important;
+padding-right: 0.1px !important;
+}	
 .page-head .ellipsis {
 white-space: nowrap!important;
 text-align: left;
@@ -246,6 +249,7 @@ margin-bottom: 5px;
 transition: .5s top;
 width: 100%;
 	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 }
 
 	
@@ -302,6 +306,8 @@ background: rgba(255, 255, 255, 0);
 margin-bottom: 5px;
 transition: .5s top;
 width: 100%;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 
 }
 
