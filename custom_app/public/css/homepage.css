@@ -116,13 +116,20 @@ min-height: 60px;
 border: 1px solid var(--dark-border-color);
 -webkit-backdrop-filter: blur(10px);
 }
+	.send-raven-button
+{
+display:none!important;
+	
+}
+
+
 	.form-tabs-list {
 border-radius: 0!important;
 width: 100%!important;
 		
 		left: 0;
 height: 50px!important;
-background: var(--white-overlay-200)!important;
+background: transparent !important;
 /* border-radius: 15px; */
 box-shadow: none;
 /* cursor: pointer; */
