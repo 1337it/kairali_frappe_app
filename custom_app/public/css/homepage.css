@@ -163,7 +163,7 @@ border:none;
 
 .widget {
 
-box-shadow: 10px 10px 14px 0 #ababab4d;
+box-shadow: none !important;
 
 }
 	
