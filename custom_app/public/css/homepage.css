@@ -15,9 +15,9 @@ padding-right: 20px!important;
 padding-left: 20px !important;
 padding-right: 0px!important;
 }
-		.ce-block.col-sm-6:nth-child(2n) {
-padding-left: 20px !important;
-padding-right: 20px!important;
+		.ce-block.col-sm-6:nth-child(3n-1) {
+padding-left: 10px !important;
+padding-right: 10px!important;
 }
 .col.layout-main-section-wrapper {
 padding-left: 0.1px !important;
