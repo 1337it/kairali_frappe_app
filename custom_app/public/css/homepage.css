@@ -3,8 +3,10 @@
 display: none!important;
 }
 	.ce-block.col-sm-6 {
-flex-wrap: 0 0 33%!important;
-max-width: 33%!important;
+flex-wrap: 0 0 33.33%!important;
+max-width: 33.33%!important;
+		padding-left: 10px !important;
+padding-right: 10px !important;
 }
 .col.layout-main-section-wrapper {
 padding-left: 0.1px !important;
