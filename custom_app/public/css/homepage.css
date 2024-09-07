@@ -14,6 +14,20 @@ width: 0;
 background: rgba(56, 56, 56, 0);
 width: 0;
 }
+	[data-page-route=Workspaces] .codex-editor .codex-editor__redactor {
+
+padding-bottom: 0px !important;
+}
+	[data-page-route=Workspaces] .workspace-footer {
+height: 30px;
+display: none;
+flex-direction: row-reverse;
+}
+	.col-xs-12:not(.col-sm-6) {
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+background:var(--bg-color);
+margin-bottom: 5px;
+}
 	.ce-block.col-sm-6 {
 flex-wrap: 0 0 33.33%!important;
 max-width: 33.33%!important;
@@ -431,7 +445,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 /* justify-content: center; */
-background: rgba(0, 0, 0, 0.57);
+background: var(--bg-color);
 /* border-radius: 15px; */
 
 /* cursor: pointer; */
