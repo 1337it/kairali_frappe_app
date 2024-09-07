@@ -4,3 +4,4 @@ $("meta[name='theme-color']").attr('content', '#232323');
 if ($('html').attr('data-theme') == 'light'){
 $("meta[name='theme-color']").attr('content', '#ffffff');
 };
+$('body[data-route]').append($('.search-bar'));
