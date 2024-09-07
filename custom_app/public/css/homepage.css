@@ -7,6 +7,9 @@ background: rgba(124, 124, 124, 0);
 border-radius: 6px;
 width: 0;
 }
+	[data-page-route=Workspaces] .codex-editor .codex-editor__redactor {
+		margin: 0px 0px!important;
+}
 	*::-webkit-scrollbar-track, *::-webkit-scrollbar-corner {
 background: rgba(56, 56, 56, 0);
 width: 0;
