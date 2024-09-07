@@ -49,6 +49,8 @@ transition: height .1s ease;
 .rt-r-position-fixed {
 display: none!important;
 }
+
+
 .widget.shortcut-widget-box {
 width: 100px;
 height: 100px;
@@ -58,7 +60,7 @@ align-items: center;
 /* justify-content: center; */
 background: rgba(255, 255, 255, 0.8);
 /* border-radius: 15px; */
-box-shadow: 20px 20px 15px 0 #ababab4d;
+
 /* cursor: pointer; */
 /* padding: 10px 7px; */
 /* align-items: center; */
