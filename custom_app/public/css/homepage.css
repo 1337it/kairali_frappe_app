@@ -7,27 +7,6 @@ background: rgba(124, 124, 124, 0);
 border-radius: 6px;
 width: 0;
 }
-	.p-2 {
-padding: 0;
-}
-	.z-\[100\] {
-z-index: 100;
-transform: translate3d(50%, 50%, 0) !important;
-background-color: white;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-	.flex.mb-2.justify-between {
-justify-content: center;
-flex-direction: column-reverse;
-justify-content: center;
-text-align: center;
-}
-	.text-black {
-display: none;
-}
-	.border-gray-200 {
-border-color: #dadadaff!important;
-}
 	[data-page-route=Workspaces] .codex-editor .codex-editor__redactor {
 		margin: 0px 0px!important;
 }
