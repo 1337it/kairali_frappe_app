@@ -38,7 +38,6 @@ web_include_js = "/assets/custom_app/js/homepage.js"
 # ----------
 
 # application home page (will override Website Settings)
-home_page = "index"
 
 # website user home page (by Role)
 # role_home_page = {
