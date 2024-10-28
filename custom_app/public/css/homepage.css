@@ -1,4 +1,15 @@
 @media screen and (max-width: 567px) {
+	.widget .widget-head .widget-label .widget-title {
+display: flex;
+align-items: center;
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 2px;
+font-family: inherit;
+line-height: 1.3em;
+color: var(--text-color);
+cursor: default;
+}
 .raven-container[data-open-state=false] .raven-header .open-raven-button {
 display: none!important;
 }
@@ -102,8 +113,8 @@ display: none;
 	.widget.shortcut-widget-box {
 cursor: pointer;
 padding: 12px 12px!important;
-align-items: start!important;
-justify-content: start;
+align-items: center!important;
+justify-content: center;
 }
 .raven-chat {
 position: fixed;
