@@ -39,3 +39,8 @@ def log(mac_address):
         send_whatsapp(employee_mac)
         return {"status": "ok"}
     return {"status": "not found"}
+
+@frappe.whitelist(allow_guest=True)
+def get_employee_macs():
+    macs = frappe.get_all("Employee MAC", fields=["mac_address"])
+    return [m["mac_address"].lower() for m in macs]
