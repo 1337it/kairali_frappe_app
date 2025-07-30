@@ -1,4 +1,9 @@
 @media screen and (max-width: 567px) {
+	.col-xs-12:not(.col-sm-6) {
+
+display: none;
+}
+	
 	.list-row, .list-row-head {
 
 height: 50px !important;
@@ -121,7 +126,7 @@ align-items: center;
 border-radius: 0px;
 min-height: 60px;
 border: 1px solid #ffffff;
-
+background-color: white;
 }
 	.indicator-pill, .indicator-pill-right {
 font-size: var(--text-sm);
@@ -280,7 +285,7 @@ height: 55px;
 	
 [data-theme="dark"] [data-route^="Workspaces/"] .layout-main-section {
 background-image: url("/files/jj-d.jpg")!important;
-padding-top: 80px!important;
+padding-top: 0px!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 background-repeat: no-repeat;
@@ -350,7 +355,7 @@ padding: 8px 0;
 	
 [data-route^="Workspaces/"] .layout-main-section {
 background-image: url("/files/jf.jpg")!important;
-padding-top: 20px!important;
+padding-top: 0px!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 background-repeat: no-repeat;
