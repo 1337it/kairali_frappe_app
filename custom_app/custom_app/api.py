@@ -24,3 +24,18 @@ def sync_stock():
         item.save()
 
     frappe.log("Stock quantity sync complete.")
+    
+@frappe.whitelist(allow_guest=True)
+def log(mac_address):
+    mac = mac_address.lower()
+    employee_mac = frappe.get_value("Employee MAC", {"mac_address": mac}, "employee")
+    if employee_mac:
+        doc = frappe.new_doc("Attendance")
+        doc.employee = employee_mac
+        doc.status = "Present"
+        doc.attendance_date = frappe.utils.today()
+        doc.save()
+        frappe.db.commit()
+        send_whatsapp(employee_mac)
+        return {"status": "ok"}
+    return {"status": "not found"}
