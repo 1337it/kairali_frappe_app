@@ -19,7 +19,13 @@ app_include_js = "/assets/custom_app/js/homepage.js"
 web_include_css = "/assets/custom_app/css/homepage.css"
 web_include_js = "/assets/custom_app/js/homepage.js"
 
-
+override_whitelisted_methods = {
+    # None yet
+}
+after_install = "frappe_whatsapp_login.install.after_install"
+# Optional: Add web templates
+website_route_rules = [
+    {"from_route": "/whatsapp-login", "to_route": "whatsapp_login"},
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "custom_app/public/scss/website"
 
