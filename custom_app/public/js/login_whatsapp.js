@@ -16,7 +16,7 @@ frappe.ready(function() {
             btn.style.border = "none";
             btn.style.color = "#fff";
             btn.innerHTML = `
-                <img src="/assets/frappe_whatspp_login/img/whatsapp-logo.png" 
+                <img src="/assets/custom_app/img/whatsapp-logo.png" 
                      alt="WhatsApp" 
                      style="height:24px; margin-right:8px;">
                 Login with WhatsApp
