@@ -313,7 +313,7 @@ height: 55px;
 	
 [data-theme="dark"] [data-route^="Workspaces/"] .layout-main-section {
 background-image: url("/files/jj-d.jpg")!important;
-padding-top: 0px!important;
+padding-top: 6px!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 background-repeat: no-repeat;
@@ -383,7 +383,7 @@ padding: 8px 0;
 	
 [data-route^="Workspaces/"] .layout-main-section {
 background-image: url("/files/jf.jpg")!important;
-padding-top: 0px!important;
+padding-top: 6px!important;
 padding-left: 0px!important;
 padding-right: 0px!important;
 background-repeat: no-repeat;
@@ -553,3 +553,4 @@ background-color: var(--card-bg);
 }	
 	
 }
+
