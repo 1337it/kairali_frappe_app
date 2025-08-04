@@ -2,6 +2,11 @@
 	[data-route^="Form/"] .control-input-wrapper {
 max-width: 50%;
 }
+	.form-group:has(textarea) {
+margin-bottom: 1rem;
+display: block !important;
+width: 100% !important;
+}
 .page-form .filter-section {
 display: none!important;
 padding: 0 var(--padding-xs);
@@ -9,6 +14,10 @@ padding: 0 var(--padding-xs);
 	input[type=checkbox] {
 box-sizing: border-box;
 padding: 15px !important;
+}
+	textarea.form-control {
+height: 120px;
+text-align: start !important;
 }
 	[data-route^="Form/"] .form-control {
 display: block;
@@ -21,11 +30,10 @@ line-height: 1.5;
 color: var(--text-color);
 background-color: rgba(0,0,0,0);
 background-clip: padding-box;
-border-bottom: 1px dotted #c7c7c7;
+border-bottom: 1px solid #c7c7c7;
 border-radius: 0;
 box-shadow: none;
 transition: none;
-text-align: end;
 }
 	[data-route^="Form/"] .form-group {
 margin-bottom: 1rem;
@@ -561,5 +569,6 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
