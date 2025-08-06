@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const phoneInputs = document.querySelectorAll('input[data-fieldtype="Phone"][type="text"]');
+
+    phoneInputs.forEach(function(input) {
+        input.setAttribute("type", "tel");
+        input.setAttribute("inputmode", "numeric");
+        input.setAttribute("pattern", "[0-9]*");
+    });
+});
 frappe.ready(function() {
     // Wait for login form to be available
     const interval = setInterval(() => {
