@@ -125,7 +125,7 @@ top: 40px;
 bottom: 0;
 height: 50vh;
 }
-.awesomplete > [role="listbox"] > li {
+.navbar .awesomplete > [role="listbox"] > li {
 padding: 9px;
 font-size: 16px;
 font-weight: 300;
@@ -715,6 +715,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
