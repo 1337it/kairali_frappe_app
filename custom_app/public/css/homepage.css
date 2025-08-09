@@ -50,7 +50,7 @@ font-weight: 300;
 letter-spacing: 0.02em;
 border: 1px solid rgba(60, 60, 60, 0.39);
 }
-	.search-bar .awesomplete input:focus {
+	.navbar .search-bar .awesomplete input:focus {
 border-bottom-left-radius: 0px;
 border-bottom-right-radius: 0px;
 box-shadow: var(--awesomebar-shadow);
@@ -91,7 +91,7 @@ background-color: transparent;
 box-shadow: 0 15px 20px rgba(0,0,0,0.5);
 line-height: 35px;
 }
-	.awesomplete > [role=listbox] {
+	.navbar .awesomplete > [role=listbox] {
 /* position: fixed !important; */
 width: 100%;
 /* list-style: none; */
@@ -715,6 +715,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
