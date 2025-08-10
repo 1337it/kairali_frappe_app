@@ -1,4 +1,41 @@
 @media screen and (max-width: 567px) {
+	.awesomplete > [role=listbox] > [role=option][aria-selected=true] {
+background-color: transparent;
+color: var(--text-color);
+margin-left: 5px 5px 5px 5px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 0;
+}
+	.control-input .awesomplete > [role=listbox] {
+position: absolute;
+left: 0 !important;
+width: 100vw !important;
+/* bottom: 0; */
+/* height: 50vh; */
+margin-left: -50vw !important;
+margin-top: 5px;
+background-color: transparent !important;
+-webkit-backdrop-filter: blur(20px) !important;
+		padding:10px !important;
+}
+	.awesomplete > [role=listbox] > [role=option] strong {
+font-size: 16px !important;
+font-weight: 600;
+letter-spacing: 0.015em;
+/* background-color: transparent; */
+}
+	.menu-btn-group .dropdown-menu, .custom-btn-group .dropdown-menu, .page-icon-group .dropdown-menu {
+width: -moz-max-content;
+width: max-content;
+left: 0;
+transform: none !important;
+top: 100px !important;
+}
+.form-tabs-list {
+border-radius: 0px;
+position: fixed;
+bottom: 0px;
+}
 	.page-form .form-control {
 padding-left: 10px !important;
 }
@@ -755,6 +792,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
