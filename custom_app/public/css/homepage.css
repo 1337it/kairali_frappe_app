@@ -1,10 +1,27 @@
 @media screen and (max-width: 567px) {
+	.form-tabs-list .form-tabs .nav-item .nav-link.active {
+font-weight: 600;
+border-bottom: none !important;
+
+}
 	.awesomplete > [role=listbox] > [role=option][aria-selected=true] {
 background-color: transparent;
 color: var(--text-color);
 margin-left: 5px 5px 5px 5px;
 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 0;
+}
+	.form-tabs-sticky-up {
+top: auto !important;
+position: fixed;
+bottom: 0;
+padding-left: 0;
+}
+	.form-tabs-sticky-down {
+top: auto !important;
+position: fixed;
+bottom: 0;
+padding-left: 0;
 }
 	.control-input .awesomplete > [role=listbox] {
 position: absolute;
@@ -98,8 +115,11 @@ top: calc(var(--navbar-height) - 0px)!important;
 box-sizing: border-box;
 scrollbar-width: none !important;
 }
-	.nav-item.show:has(> .nav-link.active) {
+	[data-theme="dark"] .nav-item.show:has(> .nav-link.active) {
 background-color: rgba(60, 60, 60, 0.39);
+}
+	.nav-item.show:has(> .nav-link.active) {
+background-color: rgba(255, 255, 255, 1);
 }
 	.form-tabs-list .form-tabs .nav-item {
 white-space: nowrap;
@@ -124,6 +144,7 @@ font-size: 16px;
 font-weight: 300;
 letter-spacing: 0.02em;
 border: 1px solid rgba(60, 60, 60, 0.39);
+		background-color: black;
 }
 	.navbar .search-bar .awesomplete input:focus {
 border-bottom-left-radius: 0px;
@@ -792,6 +813,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
