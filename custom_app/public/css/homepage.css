@@ -11,18 +11,7 @@ margin-left: 5px 5px 5px 5px;
 border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 0;
 }
-	.form-tabs-sticky-up {
-top: auto !important;
-position: fixed;
-bottom: 0;
-padding-left: 0;
-}
-	.form-tabs-sticky-down {
-top: auto !important;
-position: fixed;
-bottom: 0;
-padding-left: 0;
-}
+
 	.control-input .awesomplete > [role=listbox] {
 position: absolute;
 left: 0 !important;
@@ -813,6 +802,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
