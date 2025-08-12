@@ -1,4 +1,22 @@
 @media screen and (max-width: 567px) {
+.btn.btn-default, div#driver-popover-item .driver-popover-footer button.btn-default {
+background-color: #cbcbcb;
+color: var(--text-color);
+width: 60px;
+}
+
+	.datepicker {
+direction: ltr;
+font-family: inherit;
+z-index: 9999 !important;
+background: var(--fg-color);
+color: var(--text-color);
+border-radius: var(--border-radius-lg);
+border: 1px solid var(--border-color);
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+position: fixed;
+width: calc(100vw - 20px);
+}
 	.form-tabs-list .form-tabs .nav-item .nav-link.active {
 font-weight: 600;
 border-bottom: none !important;
@@ -23,14 +41,14 @@ border-radius: 0;
 	.control-input .awesomplete > [role=listbox] {
 position: absolute;
 left: 0 !important;
-width: 100vw !important;
+width: calc(100vw - 20px) !important;
 /* bottom: 0; */
 /* height: 50vh; */
-margin-left: -50vw !important;
+/* margin-left: -50vw !important; */
 margin-top: 5px;
 background-color: transparent !important;
 -webkit-backdrop-filter: blur(20px) !important;
-		padding:10px !important;
+padding: 10px !important;
 }
 	.awesomplete > [role=listbox] > [role=option] strong {
 font-size: 16px !important;
@@ -83,9 +101,7 @@ padding: 10px 10px 16px 10px;
 border: none;
 }
 	
-	[data-route^="Form/"] .control-input-wrapper {
-max-width: 50%;
-}
+	
 	.dropdown-notifications .notifications-list {
 max-height: 100vh;
 min-width: 100vw;
@@ -122,7 +138,7 @@ white-space: nowrap;
 /* font-size: 16px; */
 /* font-weight: 300; */
 letter-spacing: 0.02em;
-border: 1px solid gray;
+border: 1px solid gray !important;
 scrollbar-width: none;
 scrollbar-gutter: unset;
 		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -130,7 +146,7 @@ z-index: 999;
 }
 	
 	.form-tabs-list .form-tabs .nav-item .nav-link {
-color: #d1d1d1;
+color: #9d9d9d;
 padding: 5px 0px;
 margin: 0 var(--margin-md);
 font-size: 18px !important;
@@ -263,27 +279,21 @@ z-index: 1020;
 [data-route^="Form/"] .form-control {
 display: block;
 width: 100%;
-height: 28px;
+height: 45px;
 padding: 0;
 font-size: 0.875rem;
 font-weight: 400;
 line-height: 1.5;
 color: var(--text-color);
-background-color: rgba(1,1,1,0);
+background-color: rgba(77, 77, 77, 0.06);
 background-clip: padding-box;
-border: 1px solid rgba(199, 199, 199, 0.07);
-border-radius: 5px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+border-radius: 0;
 box-shadow: none;
 transition: none;
+padding-left: 15px;
 }
-	[data-route^="Form/"] .form-group {
-margin-bottom: 1rem;
-display: inline-flex;
-width: 100%;
-align-items: center;
-justify-content: space-between;
-border-bottom: 0px solid rgba(128, 128, 128, 0.26)!important;
-}
+
 	.col-xs-12:not(.col-sm-6) {
 
 display: none;
@@ -619,6 +629,9 @@ top: var(--navbar-height);
 margin-bottom: 5px;
 transition: .5s top;
 width: 100%;
+top: var(--navbar-height) !important;
+/* background-color: rgb(102, 102, 102); */
+filter: invert();
 }
 
 	
@@ -811,6 +824,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
