@@ -4,6 +4,22 @@ background-color: #cbcbcb;
 color: var(--text-color);
 width: 60px;
 }
+	kbd {
+
+display: none;
+}
+.recent-item {
+
+font-size: 16px !important;
+font-weight: 300!important;
+
+color: #dadada!important;
+
+}
+	.notifications-list .notification-item-tabs .notifications-category.active {
+color: #ffffff !important;
+border-bottom: 2px solid #ffffff !important;
+}
 
 	.datepicker {
 direction: ltr;
@@ -191,16 +207,17 @@ font-weight: var(--weight-regular);
 letter-spacing: 0.02em;
 max-height: 500px;
 overflow: auto;
-border: 1px solid var(--subtle-accent);
+border: 1px solid rgba(249, 249, 249, 0);
 max-height: 100vh;
 min-width: 100vw;
 width: calc(100vw - 0px);
 left: 0;
 position: fixed !important;
-background-color: transparent;
--webkit-backdrop-filter: blur(20px);
-box-shadow: 0 15px 20px rgba(0,0,0,0.5);
+background-color: black;
+box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 line-height: 35px;
+/* filter: invert(); */
+color: white;
 }
 	.navbar .awesomplete > [role=listbox] {
 /* position: fixed !important; */
@@ -254,6 +271,7 @@ border-radius: 0;
 padding: 6px 8px !important;
 border-bottom: 1px solid rgba(255, 255, 255, 0.13);
 border-radius: 0;
+color:white !important;
 }
 	.form-group:has(textarea) {
 margin-bottom: 1rem;
@@ -824,6 +842,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
