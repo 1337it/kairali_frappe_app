@@ -114,13 +114,15 @@ white-space: nowrap;
 /* font-size: 16px; */
 /* font-weight: 300; */
 letter-spacing: 0.02em;
-border: 1px solid rgba(60, 60, 60, 0.39);
+border: 1px solid gray;
 scrollbar-width: none;
 scrollbar-gutter: unset;
+		box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+z-index: 999;
 }
 	
 	.form-tabs-list .form-tabs .nav-item .nav-link {
-color: var(--text-muted);
+color: #d1d1d1;
 padding: 5px 0px;
 margin: 0 var(--margin-md);
 font-size: 18px !important;
@@ -801,6 +803,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
