@@ -40,7 +40,6 @@ top: 100px !important;
 .form-tabs-list {
 border-radius: 0px;
 padding-left: 0 !important;
-bottom: 0px;
 }
 	.page-form .form-control {
 padding-left: 10px !important;
@@ -802,6 +801,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
