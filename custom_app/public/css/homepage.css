@@ -1,4 +1,7 @@
 @media screen and (max-width: 567px) {
+	[data-route^="Workspaces/"] .sticky-top {
+display: flex !important;
+}
 	.layout-main-section .frappe-list, .layout-main-section .report-wrapper {
 padding: 0!important;
 }
@@ -60,7 +63,7 @@ font-size: 16px !important;
 .page-head {
 z-index: 6;
 position: fixed;
-top: var(--navbar-height);
+top: 0 !important;
 margin-bottom: 0px !important;
 
 filter:invert() !important;
@@ -197,10 +200,10 @@ width: 30px !important;
 height: 30px !important;
 }
 	.form-tabs-sticky-down {
-top: calc(var(--navbar-height) + var(--page-head-height) - 10px) !important;
+top: 50px !important;
 }
 	.form-tabs-sticky-up {
-top: calc(var(--navbar-height) - 0px)!important;
+top: 50px !important;
 		
 }
 	*, ::before, ::after {
@@ -361,6 +364,7 @@ text-align: start !important;
 	.sticky-top {
 top: 0;
 z-index: 1020;
+		display:none;
 }
 [data-route^="Form/"] .form-control {
 display: block;
@@ -718,11 +722,10 @@ border-radius: 0;
 .editable-form .page-head {
 z-index: 6;
 position: sticky;
-top: var(--navbar-height);
 margin-bottom: 0px !important;
 transition: .5s top;
 width: 100%;
-top: var(--navbar-height) !important;
+top: 0 !important;
 /* background-color: rgb(102, 102, 102); */
 filter: invert();
 }
@@ -917,6 +920,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
