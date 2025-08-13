@@ -4,6 +4,14 @@ background-color: #cbcbcb;
 color: var(--text-color);
 
 }
+.page-head {
+z-index: 6;
+position: fixed;
+top: var(--navbar-height);
+margin-bottom: 0px !important;
+
+filter:invert() !important;
+}
 	kbd {
 
 display: none;
@@ -644,7 +652,7 @@ border-radius: 0;
 z-index: 6;
 position: sticky;
 top: var(--navbar-height);
-margin-bottom: 5px;
+margin-bottom: 0px !important;
 transition: .5s top;
 width: 100%;
 top: var(--navbar-height) !important;
@@ -842,6 +850,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
