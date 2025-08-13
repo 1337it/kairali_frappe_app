@@ -4,6 +4,22 @@ background-color: #cbcbcb;
 color: var(--text-color);
 
 }
+.dropdown-item {
+display: block;
+width: 100%;
+padding: var(--padding-sm) var(--padding-sm);
+clear: both;
+font-weight: 400;
+color: #d6d6d6;
+text-align: inherit;
+white-space: nowrap;
+background-color: transparent;
+border: 0;
+border-bottom: 1px solid rgba(255, 255, 255, 0.17)!important;
+border-radius: 0!important;
+font-size: 16px !important;
+}
+	
 .page-head {
 z-index: 6;
 position: fixed;
@@ -85,7 +101,7 @@ width: -moz-max-content;
 width: max-content;
 left: 0;
 transform: none !important;
-top: 100px !important;
+top: var(--navbar-height) !important;
 }
 .form-tabs-list {
 border-radius: 0px;
@@ -209,7 +225,7 @@ height: 100%;
 /* left: 0; */
 }
 	.dropdown-menu {
-padding: 9px;
+padding: 10px;
 font-size: 16px;
 font-weight: var(--weight-regular);
 letter-spacing: 0.02em;
@@ -225,7 +241,13 @@ background-color: black;
 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 line-height: 35px;
 /* filter: invert(); */
-color: white;
+color: rgb(0, 0, 0) !important;
+filter: invert();
+width: 100vw;
+		margin: 0 !important;
+color: var(--text-color) !important;
+background-clip: border-box !important;
+border-radius: 0 !important;
 }
 	.navbar .awesomplete > [role=listbox] {
 /* position: fixed !important; */
@@ -850,6 +872,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
