@@ -1,4 +1,26 @@
 @media screen and (max-width: 567px) {
+	/* Bigger tap target + icon */
+.mobile-back-btn--lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;          /* larger touch target */
+  height: 44px;
+  padding: 0;
+}
+
+.mobile-back-btn--lg .es-icon {
+  width: 28px;          /* bigger icon */
+  height: 28px;
+}
+
+/* Optional: visually match your navbar tone */
+.mobile-back-btn--lg {
+  border-radius: 999px;
+}
+.mobile-back-btn--lg:hover {
+  background: rgba(0,0,0,0.05); /* adjust for dark/light themes */
+}
 	[data-route^="Workspaces/"] .sticky-top {
 display: flex !important;
 }
@@ -920,6 +942,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
