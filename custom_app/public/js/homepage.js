@@ -44,11 +44,12 @@ $("meta[name='theme-color']").attr('content', '#ffffff');
 };
 
 // Replace the "Toggle Sidebar" button with a Back button
+// backify-sidebar.js
 (function () {
   const SELECTOR = 'button.btn-reset.sidebar-toggle-btn[aria-label="Toggle Sidebar"]';
 
   const backIconSVG = `
-    <svg class="es-icon icon-md" viewBox="0 0 24 24" aria-hidden="true">
+    <svg class="es-icon icon-lg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
       <path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2"
             stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
@@ -56,66 +57,80 @@ $("meta[name='theme-color']").attr('content', '#ffffff');
 
   function convertToBack(btn) {
     if (!btn || btn.dataset.backified === "1") return;
-
-    // Accessibility + title
     btn.dataset.backified = "1";
+
+    // A11y + semantics
     btn.setAttribute("aria-label", "Back");
     btn.title = "Back";
-
-    // Remove any sidebar toggle semantics if present
     btn.removeAttribute("data-action");
     btn.removeAttribute("aria-controls");
     btn.removeAttribute("aria-expanded");
 
-    // Swap icon (remove inner spans/SVGs and insert our back chevron)
+    // Icon swap
     btn.innerHTML = backIconSVG;
+    btn.classList.add("mobile-back-btn", "mobile-back-btn--lg");
 
-    // Back behavior (Desk SPA first, then fallbacks)
+    // Behavior
     btn.onclick = (e) => {
       e.preventDefault();
       try {
+        // Desk SPA first
         if (window.frappe?.router?.back) {
           window.frappe.router.back();
           return;
         }
       } catch (_) {}
+      // Fallbacks
       if (history.length > 1) {
         history.back();
       } else if (window.frappe?.set_route) {
-        window.frappe.set_route("app"); // change to your preferred fallback
+        window.frappe.set_route("app"); // tweak if you want a different landing route
       } else {
         window.location.href = "/";
       }
     };
-
-    // Optional: style hook
-    btn.classList.add("mobile-back-btn");
   }
 
-  function run() {
+  function findAndConvert() {
     const btn = document.querySelector(SELECTOR);
     if (btn) convertToBack(btn);
   }
 
-  // Initial run + retries (for late-mounted navbars)
-  const init = () => {
-    run();
+  function setupObserver() {
+    // Re-run when navbar/sidebar re-renders
+    const obs = new MutationObserver(() => findAndConvert());
+    obs.observe(document.documentElement, {
+      subtree: true,
+      childList: true,
+    });
+  }
+
+  function setupRouterHook() {
+    // Desk SPA route change
+    try {
+      if (window.frappe?.router?.on) {
+        window.frappe.router.on("change", () => {
+          // Allow DOM to mount
+          setTimeout(findAndConvert, 0);
+        });
+      }
+    } catch (_) {}
+  }
+
+  function init() {
+    findAndConvert();
+    setupObserver();
+    setupRouterHook();
+
+    // Safety retries for lazy UIs
     let tries = 0;
     const t = setInterval(() => {
-      if (++tries > 10) return clearInterval(t);
-      if (document.querySelector(SELECTOR) && !document.querySelector(".mobile-back-btn")) run();
-      else clearInterval(t);
-    }, 300);
-
-    // Re-apply on route changes (Desk)
-    if (window.frappe?.router?.on) {
-      window.frappe.router.on("change", () => setTimeout(run, 0));
-    }
-
-    // Re-apply on resize if you only want it on mobile widths
-    // if (window.innerWidth <= 992) run();
-    // window.addEventListener("resize", () => { if (window.innerWidth <= 992) run(); });
-  };
+      findAndConvert();
+      if (++tries > 15 || document.querySelector(`${SELECTOR}[data-backified="1"]`)) {
+        clearInterval(t);
+      }
+    }, 250);
+  }
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init, { once: true });
