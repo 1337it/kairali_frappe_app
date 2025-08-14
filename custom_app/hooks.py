@@ -14,6 +14,8 @@ app_license = "MIT"
 app_include_css = "/assets/custom_app/css/homepage.css"
 app_include_js = "/assets/custom_app/js/homepage.js"
 app_include_js = "/assets/custom_app/js/login_whatsapp.js"
+app_include_js = ["assets/custom_app/js/backify-sidebar.js"]
+website_include_js = ["assets/custom_app/js/backify-sidebar.js"]
 
 
 # include js, css files in header of web template
