@@ -45,7 +45,7 @@ $("meta[name='theme-color']").attr('content', '#ffffff');
 
 // Replace the "Toggle Sidebar" button with a Back button
 // backify-sidebar.js
-(function () {
+frappe.ready(function() {
   const SELECTOR = 'button.btn-reset.sidebar-toggle-btn[aria-label="Toggle Sidebar"]';
 
   const backIconSVG = `
