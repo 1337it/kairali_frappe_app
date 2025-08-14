@@ -1,4 +1,10 @@
 @media screen and (max-width: 567px) {
+	.modal-minimize .modal-dialog {
+right: 0;
+width: 100%;
+min-width: 100%;
+visibility: hidden;
+}
 	.page-form .form-control {
 padding-left: 10px !important;
 color: white;
@@ -10,6 +16,7 @@ height: 20px !important;
 stroke: white !important;
 fill: white !important;
 margin-top: 6px !important;
+		visibility: visible;
 }
 	.awesomplete .input-with-feedback {
 background-color: transparent !important;
@@ -1075,6 +1082,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
