@@ -1,4 +1,11 @@
 @media screen and (max-width: 567px) {
+	.form-control:focus {
+color: white !important;
+background-color: #141414 !important;
+border-color: #ffffff !important;
+outline: 0;
+box-shadow: none !important;
+}
 	.modal-minimize .modal-dialog {
 right: 0;
 width: 100%;
@@ -1082,6 +1089,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
