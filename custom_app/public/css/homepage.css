@@ -1,10 +1,22 @@
 @media screen and (max-width: 567px) {
-	.avatar-medium {
+	.modal .modal-body {
+padding: 10px 0px 0px 5px !important;
+}
+	.results-area.layout-main-section {
+background-image: url("/files/jf.jpg")!important;
+padding-top: 6px!important;
+padding-left: 0px!important;
+padding-right: 0px!important;
+background-repeat: no-repeat;
+background-size: contain;
+background-color: rgb(255, 255, 255)!important;
+}
+	.result-image .avatar-medium {
 width: 80px !important;
 height: 80px !important;
 /* border-radius: 0 !important; */
 }
-	.avatar-frame {
+	.result-image .avatar-frame {
 display: inline-block;
 width: 100%;
 height: 100%;
@@ -80,11 +92,15 @@ box-shadow: none;
 
 	.modal.fade .modal-dialog {
 transition: transform 0.3s ease-out;
-transform: translate(0, -50px);
 height: 100vh !important;
 margin: none !important;
 border-radius: 0 !important;
-background: rgba(255, 255, 255, 0.57);
+background: rgb(255, 255, 255)!important
+bottom: 0;
+position: fixed;
+top: auto !important;
+margin: 0;
+transform: none !important;
 }
 
 	.navbar {
@@ -1037,6 +1053,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
