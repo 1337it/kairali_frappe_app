@@ -1,4 +1,10 @@
 @media screen and (max-width: 567px) {
+	.modal-minimize .modal-dialog .modal-header {
+padding-top: none !important;
+padding-bottom: none !important;
+background-color: rgba(0, 0, 0, 0.8) !important;
+-webkit-backdrop-filter: blur(20px);
+}
 	.modal .modal-body {
 padding: 10px 0px 0px 5px !important;
 }
@@ -1053,6 +1059,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
