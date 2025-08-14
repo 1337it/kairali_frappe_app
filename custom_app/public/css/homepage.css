@@ -1,4 +1,21 @@
 @media screen and (max-width: 567px) {
+	.page-form .form-control {
+padding-left: 10px !important;
+color: white;
+border-top: 0.5px solid gray;
+}
+	[data-fieldtype="Select"] .icon-xs {
+width: 20px !important;
+height: 20px !important;
+stroke: white !important;
+fill: white !important;
+margin-top: 6px !important;
+}
+	.awesomplete .input-with-feedback {
+background-color: transparent !important;
+color: var(--text-color);
+border: none;
+}
 	.modal-minimize .modal-dialog .modal-header {
 padding-top: none !important;
 padding-bottom: none !important;
@@ -101,11 +118,11 @@ transition: transform 0.3s ease-out;
 height: 100vh !important;
 margin: none !important;
 border-radius: 0 !important;
-background: rgb(255, 255, 255)!important
+background: rgb(255, 255, 255)!important;
 bottom: 0;
 position: fixed;
 top: auto !important;
-margin: 0;
+margin: 0 !important;
 transform: none !important;
 }
 
@@ -157,7 +174,6 @@ padding: 15px 15px 15px 5px;
 padding: 0px 0px !important;
 margin: 0px 0px;
 border-radius: 0 !important;
-border-top: 0.5px solid gray;
 background-color: black;
 }
 	.missing-image {
@@ -1059,6 +1075,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
