@@ -1,8 +1,26 @@
 @media screen and (max-width: 567px) {
+	#toolbar-user {
+filter: none !important;
+}
+	.page-actions .btn {
+display: inline-flex;
+align-items: center;
+gap: 6px;
+min-width: 40px !important;
+min-height: 40px;
+border-radius: 3px;
+}
+	.page-head .container {
+	width: 100%;
+padding-right: 0 !important;
+padding-left: 0 !important;
+margin-right: auto;
+margin-left: auto;
+}
 	/* Target the same button everywhere */
 button.btn-reset.sidebar-toggle-btn,
 button[aria-label="Toggle Sidebar"] {
-  --back-size: 56px;        /* adjust to taste */
+  --back-size: 65px;        /* adjust to taste */
   width: var(--back-size);
   height: var(--back-size);
   min-width: var(--back-size);
@@ -10,8 +28,9 @@ button[aria-label="Toggle Sidebar"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 999px;
+  border-radius: 0px;
   padding: 0;
+	background-color: rgb(230, 230, 230);
 }
 
 /* Hide whatever Frappe renders inside */
@@ -385,7 +404,7 @@ width: -moz-max-content;
 width: max-content;
 left: 0;
 transform: none !important;
-top: var(--navbar-height) !important;
+top: 65px !important;
 }
 .form-tabs-list {
 border-radius: 0px;
@@ -522,7 +541,7 @@ letter-spacing: 0.02em;
 max-height: 500px;
 overflow: auto;
 border: 1px solid rgba(249, 249, 249, 0);
-max-height: 100vh;
+max-height: 60vh;
 min-width: 100vw;
 width: calc(100vw - 0px);
 left: 0;
@@ -946,7 +965,7 @@ margin-left: auto;
 .page-title {
 display: flex;
 align-items: center;
-padding: 5px;
+padding: 0px;
 }
 
 	.row, .dialog-assignment-row, .form-section .section-body, .form-dashboard-section .section-body {
@@ -987,7 +1006,7 @@ background-color: rgb(255, 255, 255)!important;
 
 .page-head .page-head-content {
 height: 65px;
-padding: 8px 0;
+padding: 0;
 }	
 
 	
@@ -1161,5 +1180,6 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
