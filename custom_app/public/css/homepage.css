@@ -6,7 +6,7 @@ filter: none;
 cursor: pointer;
 padding: 5px 8px!important;
 align-items: start !important;
-
+	}
 	.awesomplete > [role=listbox] > [role=option] {
 background-color: rgba(244, 244, 244, 0);
 color: var(--text-color);
@@ -312,7 +312,6 @@ margin: 0 var(--margin-md);
 background-color: transparent !important;
 border: 0;
 }
-b
 	.awesomplete > [role=listbox] > [role=option][aria-selected=true] {
 background-color: transparent;
 color: var(--text-color);
@@ -1120,42 +1119,3 @@ background-color: var(--card-bg);
 }	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
