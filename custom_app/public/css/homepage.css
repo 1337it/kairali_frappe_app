@@ -1,4 +1,12 @@
 @media screen and (max-width: 567px) {
+	#toolbar-user {
+filter: none;
+}
+	.widget.shortcut-widget-box {
+cursor: pointer;
+padding: 5px 8px!important;
+align-items: start !important;
+
 	.awesomplete > [role=listbox] > [role=option] {
 background-color: rgba(244, 244, 244, 0);
 color: var(--text-color);
@@ -1042,9 +1050,7 @@ min-height: 1px;
 padding: 15px;
 border-radius: 1px;
 height: 100%;
-background-color: rgba(255, 255, 255, 0);
--webkit-backdrop-filter: blur(5px);
-	backdrop-filter: blur(5px);
+
 }	
 [data-theme="dark"] .widget {
 display: flex;
@@ -1114,6 +1120,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
