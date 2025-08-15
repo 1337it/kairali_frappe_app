@@ -1,21 +1,48 @@
 @media screen and (max-width: 567px) {
-	.ca-back-btn {
-  --ca-back-size: 56px;
-  width: var(--ca-back-size);
-  height: var(--ca-back-size);
+	/* Target the same button everywhere */
+button.btn-reset.sidebar-toggle-btn,
+button[aria-label="Toggle Sidebar"] {
+  --back-size: 56px;        /* adjust to taste */
+  width: var(--back-size);
+  height: var(--back-size);
+  min-width: var(--back-size);
+  min-height: var(--back-size);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
   border-radius: 999px;
+  padding: 0;
 }
-.ca-back-btn .es-icon {
-  width: calc(var(--ca-back-size) * 0.64);
-  height: calc(var(--ca-back-size) * 0.64);
+
+/* Hide whatever Frappe renders inside */
+button.btn-reset.sidebar-toggle-btn .sidebar-toggle-placeholder,
+button.btn-reset.sidebar-toggle-btn .sidebar-toggle-icon,
+button[aria-label="Toggle Sidebar"] .sidebar-toggle-placeholder,
+button[aria-label="Toggle Sidebar"] .sidebar-toggle-icon {
+  display: none !important;
 }
-.ca-back-btn:hover { background: rgba(0,0,0,0.06); } /* adjust for dark mode */
-	#toolbar-user {
-filter: none;
+
+/* Inject our back icon (pure CSS, survives DOM rewrites) */
+button.btn-reset.sidebar-toggle-btn::before,
+button[aria-label="Toggle Sidebar"]::before {
+  content: "";
+  display: block;
+  width: calc(var(--back-size) * 0.64);
+  height: calc(var(--back-size) * 0.64);
+  mask: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\
+<path d='M15 18l-6-6 6-6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>\
+</svg>") center / contain no-repeat;
+  -webkit-mask: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>\
+<path d='M15 18l-6-6 6-6' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/>\
+</svg>") center / contain no-repeat;
+  background: currentColor; /* follows navbar text color */
+}
+
+button.btn-reset.sidebar-toggle-btn:hover,
+button[aria-label="Toggle Sidebar"]:hover {
+  background: rgba(0,0,0,0.06);
 }
 	.widget.shortcut-widget-box {
 cursor: pointer;
@@ -1134,4 +1161,5 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
