@@ -1,4 +1,10 @@
 @media screen and (max-width: 567px) {
+	.frappe-card .list-paging-area, .frappe-card .footnote-area {
+padding: var(--padding-md);
+position: fixed;
+bottom: 0;
+width: 100vw;
+}
 	#toolbar-user {
 filter: none !important;
 }
@@ -1180,6 +1186,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
