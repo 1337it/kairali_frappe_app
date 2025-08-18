@@ -1,4 +1,32 @@
 @media screen and (max-width: 567px) {
+	/* Unified styles for injected/converted Back button */
+.ca-back-btn {
+  --ca-back-size: 56px;
+  width: var(--ca-back-size);
+  height: var(--ca-back-size);
+  min-width: var(--ca-back-size);
+  min-height: var(--ca-back-size);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 999px;
+  line-height: 1;
+}
+
+.ca-back-btn .ca-back-svg {
+  width: calc(var(--ca-back-size) * 0.64);
+  height: calc(var(--ca-back-size) * 0.64);
+}
+
+.ca-back-btn:hover {
+  background: rgba(0,0,0,0.06); /* adjust for your theme */
+}
+
+/* Keep title bar tidy when we inject into .title-area */
+.page-title .title-area {
+  gap: var(--ca-back-gap, 0);
+}
 	.frappe-card .list-paging-area, .frappe-card .footnote-area {
 padding: var(--padding-md);
 position: fixed;
@@ -1186,6 +1214,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
