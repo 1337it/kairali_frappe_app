@@ -1,7 +1,7 @@
 @media screen and (max-width: 567px) {
 	/* Unified styles for injected/converted Back button */
 .ca-back-btn {
-  --ca-back-size: 56px;
+  --ca-back-size: 65px !important;
   width: var(--ca-back-size);
   height: var(--ca-back-size);
   min-width: var(--ca-back-size);
@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  border-radius: 999px;
+  border-radius: 0px;
   line-height: 1;
 }
 
@@ -1214,6 +1214,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
