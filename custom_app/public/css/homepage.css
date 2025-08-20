@@ -114,13 +114,13 @@ padding-bottom: 0 !important;
 position: absolute;
 width: 100%;
 list-style: none;
-background-color: rgb(254, 254, 254) !important;
+background-color: rgb(0, 0, 0) !important;
 max-height: min(60vh, 300px);
 overflow-y: auto;
 overflow-x: hidden;
 border-radius: 0;
 box-shadow: var(--shadow-md);
-border: 1px solid #ffffff !important;
+border-bottom: 1px solid rgba(255, 255, 255, 0.67) !important;
 left: 0;
 margin: 0;
 padding: 10px !important;
@@ -471,6 +471,7 @@ margin: 0 !important;
 /* background-clip: padding-box; */
 border: 1px solid rgba(255, 255, 255, 0.12) !important;
 }
+	
 		[data-theme="dark"] .page-title .title-area .title-text {
 
 color: black;
@@ -583,7 +584,7 @@ content: '';
 margin-bottom: 0px;
 z-index: 99;
 padding-left: 15px;
-filter: invert();
+
 text-align: left;
 }
 .search-bar .search-icon {
@@ -647,7 +648,6 @@ top: 50px;
 bottom: 0;
 height: 50vh;
 color: white !important;
-filter: invert();
 }
 .navbar .awesomplete > [role="listbox"] > li {
 padding: 9px;
@@ -655,11 +655,11 @@ font-size: 16px;
 font-weight: 300;
 letter-spacing: 0.03em;
 overflow: auto;
-border-bottom: 1px solid #d7d7d7;
+border-bottom: 1px solid rgba(215, 215, 215, 0.23);
 min-width: 90vw;
 left: 0;
 position: relative!important;
-background-color: transparent;
+background-color: black;
 line-height: 35px;
 border-radius: 0;
 color: white !important;
