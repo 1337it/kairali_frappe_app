@@ -504,7 +504,9 @@ padding: 0px 0px 0px 0px;
 padding-top: 65px !important;
 	filter: invert();
 }
-	
+[data-theme="dark"] .dropdown-menu {
+filter:none !important;
+}
 	
 	.dropdown-notifications .notifications-list {
 max-height: 100vh;
@@ -516,11 +518,12 @@ background-color: white;
 /* -webkit-backdrop-filter: blur(20px); */
 box-shadow: 0 15px 20px rgba(0,0,0,0.5);
 color: white !important;
+		border-bottom: 0.5px solid black;
 }
 	.notifications-seen .es-icon.icon-sm {
 width: 30px !important;
 height: 30px !important;
-		filter:invert();
+		filter:none;
 }
 	.form-tabs-sticky-down {
 top: 65px !important;
@@ -593,7 +596,7 @@ height: 100%;
 /* left: 0; */
 }
 	.dropdown-menu {
-padding: 10px;
+padding: 10px 10px 0px 10px;
 font-size: 16px;
 font-weight: var(--weight-regular);
 letter-spacing: 0.02em;
@@ -1247,6 +1250,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
