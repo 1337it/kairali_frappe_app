@@ -526,10 +526,16 @@ color: white !important;
 border-bottom: 0.5px solid rgba(0, 0, 0, 0.64);
 filter: invert() !important;
 }
-	.notifications-seen .es-icon.icon-sm {
-width: 30px !important;
-height: 30px !important;
-		filter:none;
+.notifications-seen .es-icon.icon-sm {
+width: 29px !important;
+height: 29px !important;
+filter: none;
+fill: rgb(93, 71, 71);
+--icon-fill: rgb(74, 66, 66);
+stroke: white;
+background: rgb(255, 255, 255);
+border-radius: 50%;
+padding: 6px;
 }
 	.form-tabs-sticky-down {
 top: 65px !important;
@@ -1255,6 +1261,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
