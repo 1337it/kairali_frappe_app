@@ -1,4 +1,8 @@
 @media screen and (max-width: 567px) {
+	[data-path="login"] .form-control:focus {
+color: rgb(45, 45, 45) !important;
+
+}
 	/* Unified styles for injected/converted Back button */
 .ca-back-btn {
   --ca-back-size: 65px !important;
@@ -1251,6 +1255,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
