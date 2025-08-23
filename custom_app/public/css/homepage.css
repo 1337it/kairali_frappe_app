@@ -1,4 +1,8 @@
 @media screen and (max-width: 567px) {
+	.awesomplete a[href] {
+color: #ffffff !important;
+cursor: pointer;
+}
 	[data-path="login"] .form-control:focus {
 color: rgb(45, 45, 45) !important;
 
@@ -1262,6 +1266,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
