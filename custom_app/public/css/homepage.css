@@ -348,6 +348,7 @@ box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 
 	.form-tab-content {
 scroll-margin-top: calc(var(--navbar-height) + 52px);
 margin: 10px !important;
+		margin-top: 117px !important;
 }
 	.form-section .section-head, .form-dashboard-section .section-head {
 display: none;
@@ -375,7 +376,7 @@ font-size: 16px !important;
 	
 .page-head {
 z-index: 6;
-position: fixed;
+position: fixed !important;
 top: 0 !important;
 margin-bottom: 0px !important;
 
@@ -961,7 +962,7 @@ box-shadow: none;
 
 /* min-height: 60px; */
 border:none;
-/* left: 5%; */
+position: fixed !important;
 }
 .col.layout-main-section-wrapper {
 	padding:0.1px !important;
@@ -1066,7 +1067,6 @@ border-radius: 0;
 
 .editable-form .page-head {
 z-index: 6;
-position: sticky;
 margin-bottom: 0px !important;
 transition: .5s top;
 width: 100%;
@@ -1272,6 +1272,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
