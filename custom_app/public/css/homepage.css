@@ -348,7 +348,11 @@ box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 
 	.form-tab-content {
 scroll-margin-top: calc(var(--navbar-height) + 52px);
 margin: 10px !important;
-		margin-top: 117px !important;
+	
+}
+	.tab-content > .tab-pane {
+display: none;
+margin-top: 117px;
 }
 	.form-section .section-head, .form-dashboard-section .section-head {
 display: none;
@@ -1272,6 +1276,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
