@@ -352,7 +352,7 @@ margin: 10px !important;
 }
 	.tab-content > .tab-pane {
 padding-top: 55px;
-margin-top: 117px;
+margin-top: 65px;
 }
 	.form-section .section-head, .form-dashboard-section .section-head {
 display: none;
@@ -1276,6 +1276,7 @@ background-color: var(--card-bg);
 }	
 	
 }
+
 
 
 
